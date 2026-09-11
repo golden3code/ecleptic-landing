@@ -61,6 +61,7 @@
 </style>
 </head>
 <body>
+<div id="home">
 <header class="wrap">
   <div class="logo">Ecleptic</div>
   <h1>Tout <em>s'aligne</em>.</h1>
@@ -69,12 +70,22 @@
     Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui.
     Bêta iOS ouverte — gratuite, toutes fonctionnalités débloquées.
   </p>
-  <a class="cta" href="#quiz">Rejoindre la bêta TestFlight</a>
-  <p class="cta-note">iPhone · iOS 16.4+ · 45 secondes de questions, puis le lien d'installation</p>
 </header>
+<div class="wrap">
+  <div class="shots">
+    <div class="shot"><img src="shots/1.png" alt="Écran d'accueil Ecleptic — score du jour" onerror="this.remove()">Capture 1 — Accueil</div>
+    <div class="shot"><img src="shots/2.png" alt="Alimentation Ecleptic — score et calories" onerror="this.remove()">Capture 2 — Alimentation</div>
+    <div class="shot"><img src="shots/3.png" alt="Le Labo Ecleptic — corrélations" onerror="this.remove()">Capture 3 — Le Labo</div>
+  </div>
+  <div style="text-align:center;margin-bottom:56px">
+    <a class="cta" id="goQuiz" href="#quiz">Rejoindre la bêta TestFlight</a>
+    <p class="cta-note">iPhone · iOS 16.4+ · 45 secondes de questions, puis le lien d'installation</p>
+  </div>
+</div>
+</div>
 
 <main class="wrap">
-  <form id="quiz">
+  <form id="quiz" hidden>
     <h2>Avant d'installer — parle-nous de toi</h2>
     <p class="sub">7 questions, 45 secondes. Ça nous aide à savoir quoi tester avec qui.</p>
 
@@ -170,11 +181,6 @@
     <p style="margin-top:14px">3. Un bug ? Fais une capture d'écran dans l'app, puis « Partager le retour bêta » — ça nous arrive directement.</p>
   </div>
 
-  <div class="shots">
-    <div class="shot"><img src="shots/1.png" alt="Écran d'accueil Ecleptic — score du jour" onerror="this.remove()">Capture 1 — Accueil</div>
-    <div class="shot"><img src="shots/2.png" alt="Alimentation Ecleptic — score et calories" onerror="this.remove()">Capture 2 — Alimentation</div>
-    <div class="shot"><img src="shots/3.png" alt="Le Labo Ecleptic — corrélations" onerror="this.remove()">Capture 3 — Le Labo</div>
-  </div>
 </main>
 
 <footer class="wrap">
@@ -194,6 +200,14 @@
     posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});
   }
   function track(ev,props){ if(window.posthog && POSTHOG_KEY) posthog.capture(ev,props||{}); }
+
+  document.getElementById("goQuiz").addEventListener("click", function(e){
+    e.preventDefault();
+    document.getElementById("home").hidden = true;
+    document.getElementById("quiz").hidden = false;
+    window.scrollTo({top:0});
+    track("beta_cta_click");
+  });
 
   var form = document.getElementById("quiz");
   form.addEventListener("submit", async function(e){
