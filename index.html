@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ecleptic — Bêta iOS</title>
-<meta name="description" content="Ecleptic aligne ton sommeil, ton alimentation et ton sport en un seul score. Rejoins la bêta TestFlight.">
-<meta property="og:title" content="Ecleptic — Tout s'aligne.">
-<meta property="og:description" content="Sommeil, alimentation, sport : un seul score, un coach qui comprend le tout. Bêta iOS ouverte.">
+<title>Ecleptic — iOS Beta</title>
+<meta name="description" content="Ecleptic aligns your sleep, nutrition and training into one score. Join the TestFlight beta.">
+<meta property="og:title" content="Ecleptic — Everything aligns.">
+<meta property="og:description" content="Sleep, nutrition, training: one score, one coach that understands it all. iOS beta open.">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -17,7 +17,11 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
   .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-  header{padding:56px 0 8px;text-align:center}
+  .langbar{display:flex;justify-content:flex-end;gap:4px;padding:16px 24px 0;max-width:960px;margin:0 auto}
+  .langbar button{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+                  padding:6px 14px;font-size:13px;cursor:pointer;font-weight:600}
+  .langbar button.on{background:var(--gold);border-color:var(--gold);color:#1C1710}
+  header{padding:32px 0 8px;text-align:center}
   .logo{font-size:15px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600}
   h1{font-size:clamp(30px,6vw,48px);font-weight:700;letter-spacing:-.02em;margin:20px 0 0}
   h1 em{font-style:normal;color:var(--gold)}
@@ -26,7 +30,7 @@
        padding:16px 34px;border-radius:14px;font-size:17px;font-weight:600;box-shadow:0 8px 24px rgba(217,164,65,.18)}
   .cta:active{transform:translateY(1px)}
   .cta-note{font-size:13px;color:var(--muted);margin-top:10px}
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:56px 0}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 8px}
   @media(max-width:640px){.shots{grid-template-columns:1fr;max-width:320px;margin-left:auto;margin-right:auto}}
   .shot{position:relative;aspect-ratio:9/19.5;border-radius:28px;background:var(--card);border:1px solid var(--line);
         overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
@@ -36,11 +40,12 @@
   .disclaimer{max-width:620px;margin:10px auto 0}
 
   /* Questionnaire */
-  #quiz{max-width:560px;margin:0 auto 56px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
+  #quiz{max-width:560px;margin:24px auto 56px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
   #quiz h2{font-size:19px;margin-bottom:4px}
   #quiz .sub{color:var(--muted);font-size:14px;margin-bottom:20px}
   .q{margin-bottom:20px}
   .q label.title{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+  .q small{font-weight:400;color:var(--muted)}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chips input{position:absolute;opacity:0;pointer-events:none}
   .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);
@@ -53,7 +58,7 @@
   @media(max-width:520px){.row{grid-template-columns:1fr}}
   .submit{width:100%;margin:6px 0 0}
   .hint{font-size:12.5px;color:var(--muted);margin-top:10px;text-align:center}
-  #done{display:none;max-width:560px;margin:0 auto 56px;background:var(--card);border:1px solid var(--line);
+  #done{display:none;max-width:560px;margin:24px auto 56px;background:var(--card);border:1px solid var(--line);
         border-radius:20px;padding:36px 28px;text-align:center}
   #done h2{font-size:22px;margin-bottom:8px}
   #done p{color:var(--muted);font-size:15px;margin-bottom:6px}
@@ -61,139 +66,234 @@
 </style>
 </head>
 <body>
+<div class="langbar">
+  <button id="lang-en" class="on" type="button">EN</button>
+  <button id="lang-fr" type="button">FR</button>
+</div>
+
 <div id="home">
 <header class="wrap">
   <div class="logo">Ecleptic</div>
-  <h1>Tout <em>s'aligne</em>.</h1>
-  <p class="pitch">
-    Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées.
-    Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui.
-    Bêta iOS ouverte — gratuite, toutes fonctionnalités débloquées.
-  </p>
+  <h1 id="t-title"></h1>
+  <p class="pitch" id="t-pitch"></p>
 </header>
 <div class="wrap">
   <div class="shots">
-    <div class="shot"><img src="shots/1.png" alt="Écran d'accueil Ecleptic — score du jour" onerror="this.remove()">Capture 1 — Accueil</div>
-    <div class="shot"><img src="shots/2.png" alt="Alimentation Ecleptic — score et calories" onerror="this.remove()">Capture 2 — Alimentation</div>
-    <div class="shot"><img src="shots/3.png" alt="Le Labo Ecleptic — corrélations" onerror="this.remove()">Capture 3 — Le Labo</div>
+    <div class="shot"><img src="shots/1.png" alt="Ecleptic home screen" onerror="this.remove()"><span id="t-shot1"></span></div>
+    <div class="shot"><img src="shots/2.png" alt="Ecleptic nutrition screen" onerror="this.remove()"><span id="t-shot2"></span></div>
+    <div class="shot"><img src="shots/3.png" alt="Ecleptic Lab screen" onerror="this.remove()"><span id="t-shot3"></span></div>
   </div>
   <div style="text-align:center;margin-bottom:56px">
-    <a class="cta" id="goQuiz" href="#quiz">Rejoindre la bêta TestFlight</a>
-    <p class="cta-note">iPhone · iOS 16.4+ · 45 secondes de questions, puis le lien d'installation</p>
+    <a class="cta" id="goQuiz" href="#quiz"></a>
+    <p class="cta-note" id="t-ctanote"></p>
   </div>
 </div>
 </div>
 
 <main class="wrap">
   <form id="quiz" hidden>
-    <h2>Avant d'installer — parle-nous de toi</h2>
-    <p class="sub">7 questions, 45 secondes. Ça nous aide à savoir quoi tester avec qui.</p>
+    <h2 id="t-qtitle"></h2>
+    <p class="sub" id="t-qsub"></p>
 
     <div class="q row">
       <div>
-        <label class="title" for="first_name">Ton prénom</label>
+        <label class="title" for="first_name" id="t-firstname"></label>
         <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
       </div>
       <div>
-        <label class="title" for="email">Ton email</label>
-        <input type="email" id="email" name="email" autocomplete="email" required
-               placeholder="pour te prévenir des nouveaux builds">
+        <label class="title" for="email" id="t-email"></label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Tu portes une montre connectée ?</label>
-      <div class="chips" data-name="has_apple_watch" data-single>
+      <label class="title" id="t-watch"></label>
+      <div class="chips">
         <label><input type="radio" name="has_apple_watch" value="apple_watch" required><span>Apple Watch</span></label>
-        <label><input type="radio" name="has_apple_watch" value="autre_montre"><span>Autre montre / bracelet</span></label>
-        <label><input type="radio" name="has_apple_watch" value="aucune"><span>Aucune</span></label>
+        <label><input type="radio" name="has_apple_watch" value="autre_montre"><span id="t-watch-other"></span></label>
+        <label><input type="radio" name="has_apple_watch" value="aucune"><span id="t-watch-none"></span></label>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Tu t'entraînes combien de fois par semaine ?</label>
-      <div class="chips" data-single>
+      <label class="title" id="t-freq"></label>
+      <div class="chips">
         <label><input type="radio" name="training_frequency" value="0-2" required><span>0–2</span></label>
         <label><input type="radio" name="training_frequency" value="3-4"><span>3–4</span></label>
-        <label><input type="radio" name="training_frequency" value="5+"><span>5 et +</span></label>
+        <label><input type="radio" name="training_frequency" value="5+"><span id="t-freq5"></span></label>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Quels sports ? <small style="font-weight:400;color:var(--muted)">(plusieurs choix)</small></label>
+      <label class="title"><span id="t-sports"></span> <small id="t-multi1"></small></label>
       <div class="chips">
-        <label><input type="checkbox" name="sports" value="muscu"><span>Muscu</span></label>
-        <label><input type="checkbox" name="sports" value="course"><span>Course</span></label>
-        <label><input type="checkbox" name="sports" value="velo"><span>Vélo</span></label>
-        <label><input type="checkbox" name="sports" value="natation"><span>Natation</span></label>
-        <label><input type="checkbox" name="sports" value="sports_co"><span>Sports co</span></label>
-        <label><input type="checkbox" name="sports" value="combat"><span>Sports de combat</span></label>
+        <label><input type="checkbox" name="sports" value="muscu"><span id="t-s-muscu"></span></label>
+        <label><input type="checkbox" name="sports" value="course"><span id="t-s-course"></span></label>
+        <label><input type="checkbox" name="sports" value="velo"><span id="t-s-velo"></span></label>
+        <label><input type="checkbox" name="sports" value="natation"><span id="t-s-natation"></span></label>
+        <label><input type="checkbox" name="sports" value="sports_co"><span id="t-s-co"></span></label>
+        <label><input type="checkbox" name="sports" value="combat"><span id="t-s-combat"></span></label>
         <label><input type="checkbox" name="sports" value="crossfit"><span>CrossFit / Hyrox</span></label>
-        <label><input type="checkbox" name="sports" value="autre"><span>Autre</span></label>
+        <label><input type="checkbox" name="sports" value="autre"><span id="t-s-autre"></span></label>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Tu utilises déjà… <small style="font-weight:400;color:var(--muted)">(plusieurs choix)</small></label>
+      <label class="title"><span id="t-apps"></span> <small id="t-multi2"></small></label>
       <div class="chips">
         <label><input type="checkbox" name="apps_used" value="whoop"><span>Whoop</span></label>
         <label><input type="checkbox" name="apps_used" value="mfp"><span>MyFitnessPal / Yazio</span></label>
         <label><input type="checkbox" name="apps_used" value="sleep_cycle"><span>Sleep Cycle</span></label>
         <label><input type="checkbox" name="apps_used" value="strava"><span>Strava</span></label>
-        <label><input type="checkbox" name="apps_used" value="apple_sante"><span>Apple Santé seul</span></label>
-        <label><input type="checkbox" name="apps_used" value="aucune"><span>Aucune</span></label>
+        <label><input type="checkbox" name="apps_used" value="apple_sante"><span id="t-a-health"></span></label>
+        <label><input type="checkbox" name="apps_used" value="aucune"><span id="t-a-none"></span></label>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Ton objectif nº1 en ce moment</label>
-      <div class="chips" data-single>
-        <label><input type="radio" name="main_goal" value="perf" required><span>Performance</span></label>
-        <label><input type="radio" name="main_goal" value="masse"><span>Prise de muscle</span></label>
-        <label><input type="radio" name="main_goal" value="perte"><span>Perte de poids</span></label>
-        <label><input type="radio" name="main_goal" value="sommeil"><span>Mieux dormir</span></label>
-        <label><input type="radio" name="main_goal" value="sante"><span>Santé générale</span></label>
+      <label class="title" id="t-goal"></label>
+      <div class="chips">
+        <label><input type="radio" name="main_goal" value="perf" required><span id="t-g-perf"></span></label>
+        <label><input type="radio" name="main_goal" value="masse"><span id="t-g-masse"></span></label>
+        <label><input type="radio" name="main_goal" value="perte"><span id="t-g-perte"></span></label>
+        <label><input type="radio" name="main_goal" value="sommeil"><span id="t-g-sommeil"></span></label>
+        <label><input type="radio" name="main_goal" value="sante"><span id="t-g-sante"></span></label>
       </div>
     </div>
 
     <div class="q">
-      <label class="title">Tu as connu Ecleptic par…</label>
-      <div class="chips" data-single>
+      <label class="title" id="t-source"></label>
+      <div class="chips">
         <label><input type="radio" name="source" value="reddit" required><span>Reddit</span></label>
         <label><input type="radio" name="source" value="instagram"><span>Instagram</span></label>
         <label><input type="radio" name="source" value="tiktok"><span>TikTok</span></label>
         <label><input type="radio" name="source" value="threads"><span>Threads</span></label>
-        <label><input type="radio" name="source" value="ami"><span>Un ami</span></label>
-        <label><input type="radio" name="source" value="autre"><span>Autre</span></label>
+        <label><input type="radio" name="source" value="ami"><span id="t-src-friend"></span></label>
+        <label><input type="radio" name="source" value="autre"><span id="t-src-other"></span></label>
       </div>
     </div>
 
-    <button class="cta submit" type="submit" id="submitBtn">Obtenir mon accès TestFlight</button>
-    <p class="err" id="err">Oups, l'envoi a échoué. Réessaie — ou écris-nous : contact@ecleptic.app</p>
-    <p class="hint">Ton email sert uniquement à la bêta (nouveaux builds, retours). Jamais partagé. <a href="confidentialite.html" style="color:var(--muted)">Confidentialité</a></p>
+    <button class="cta submit" type="submit" id="submitBtn"></button>
+    <p class="err" id="err"></p>
+    <p class="hint"><span id="t-hint"></span> <a href="confidentialite.html" style="color:var(--muted)" id="t-privacy"></a></p>
   </form>
 
   <div id="done">
-    <h2>Bienvenue dans la bêta, <span id="doneName"></span> ✦</h2>
-    <p>1. Installe l'app <strong>TestFlight</strong> depuis l'App Store.</p>
-    <p>2. Puis ouvre ton lien d'accès :</p>
-    <a class="cta" id="tfLink" href="https://testflight.apple.com/join/H5CQgDa7">Installer Ecleptic</a>
-    <p style="margin-top:14px">3. Un bug ? Fais une capture d'écran dans l'app, puis « Partager le retour bêta » — ça nous arrive directement.</p>
+    <h2><span id="t-welcome"></span> <span id="doneName"></span> ✦</h2>
+    <p id="t-step1"></p>
+    <p id="t-step2"></p>
+    <a class="cta" id="tfLink" href="https://testflight.apple.com/join/H5CQgDa7"></a>
+    <p style="margin-top:14px" id="t-step3"></p>
   </div>
-
 </main>
 
 <footer class="wrap">
-  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@ecleptic.app">Contact</a>
-  <p class="disclaimer">Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.</p>
+  <a href="confidentialite.html" id="t-privacy2"></a> · <a href="mailto:contact@ecleptic.app">Contact</a>
+  <p class="disclaimer" id="t-disclaimer"></p>
 </footer>
 
 <script>
-  // ===== À REMPLIR =====
   var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
   var POSTHOG_KEY = "phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
-  // =====================
+
+  var I18N = {
+    en: {
+      htmlTitle: "Ecleptic — iOS Beta",
+      title: 'Everything <em>aligns</em>.',
+      pitch: "Your sleep, your nutrition and your training don't live in three separate apps. Ecleptic crosses them into one score and tells you, every morning, what actually matters today. iOS beta open — free, every feature unlocked.",
+      shot1: "Screenshot 1 — Home", shot2: "Screenshot 2 — Nutrition", shot3: "Screenshot 3 — The Lab",
+      cta: "Join the TestFlight beta",
+      ctanote: "iPhone · iOS 16.4+ · 45 seconds of questions, then your install link",
+      qtitle: "Before you install — tell us about you",
+      qsub: "7 questions, 45 seconds. It helps us know what to test with whom.",
+      firstname: "Your first name", email: "Your email", emailPh: "so we can ping you about new builds",
+      watch: "Do you wear a smartwatch?", watchOther: "Another watch / band", watchNone: "None",
+      freq: "How many times a week do you train?", freq5: "5+",
+      sports: "Which sports?", multi: "(pick several)",
+      sMuscu: "Lifting", sCourse: "Running", sVelo: "Cycling", sNatation: "Swimming", sCo: "Team sports", sCombat: "Combat sports", sAutre: "Other",
+      apps: "You already use…", aHealth: "Apple Health only", aNone: "None",
+      goal: "Your #1 goal right now", gPerf: "Performance", gMasse: "Muscle gain", gPerte: "Weight loss", gSommeil: "Better sleep", gSante: "Overall health",
+      source: "You heard about Ecleptic through…", srcFriend: "A friend", srcOther: "Other",
+      submit: "Get my TestFlight access", submitting: "One moment…",
+      err: "Oops, that didn't go through. Try again — or write us: contact@ecleptic.app",
+      hint: "Your email is only used for the beta (new builds, feedback). Never shared.", privacy: "Privacy",
+      welcome: "Welcome to the beta,",
+      step1: "1. Install the TestFlight app from the App Store.",
+      step2: "2. Then open your access link:",
+      install: "Install Ecleptic",
+      step3: "3. Found a bug? Take a screenshot inside the app, then “Share Beta Feedback” — it reaches us directly.",
+      privacy2: "Privacy policy",
+      disclaimer: "Ecleptic is a wellness app. It does not replace medical advice and is not a medical device."
+    },
+    fr: {
+      htmlTitle: "Ecleptic — Bêta iOS",
+      title: "Tout <em>s'aligne</em>.",
+      pitch: "Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui. Bêta iOS ouverte — gratuite, toutes fonctionnalités débloquées.",
+      shot1: "Capture 1 — Accueil", shot2: "Capture 2 — Alimentation", shot3: "Capture 3 — Le Labo",
+      cta: "Rejoindre la bêta TestFlight",
+      ctanote: "iPhone · iOS 16.4+ · 45 secondes de questions, puis le lien d'installation",
+      qtitle: "Avant d'installer — parle-nous de toi",
+      qsub: "7 questions, 45 secondes. Ça nous aide à savoir quoi tester avec qui.",
+      firstname: "Ton prénom", email: "Ton email", emailPh: "pour te prévenir des nouveaux builds",
+      watch: "Tu portes une montre connectée ?", watchOther: "Autre montre / bracelet", watchNone: "Aucune",
+      freq: "Tu t'entraînes combien de fois par semaine ?", freq5: "5 et +",
+      sports: "Quels sports ?", multi: "(plusieurs choix)",
+      sMuscu: "Muscu", sCourse: "Course", sVelo: "Vélo", sNatation: "Natation", sCo: "Sports co", sCombat: "Sports de combat", sAutre: "Autre",
+      apps: "Tu utilises déjà…", aHealth: "Apple Santé seul", aNone: "Aucune",
+      goal: "Ton objectif nº1 en ce moment", gPerf: "Performance", gMasse: "Prise de muscle", gPerte: "Perte de poids", gSommeil: "Mieux dormir", gSante: "Santé générale",
+      source: "Tu as connu Ecleptic par…", srcFriend: "Un ami", srcOther: "Autre",
+      submit: "Obtenir mon accès TestFlight", submitting: "Un instant…",
+      err: "Oups, l'envoi a échoué. Réessaie — ou écris-nous : contact@ecleptic.app",
+      hint: "Ton email sert uniquement à la bêta (nouveaux builds, retours). Jamais partagé.", privacy: "Confidentialité",
+      welcome: "Bienvenue dans la bêta,",
+      step1: "1. Installe l'app TestFlight depuis l'App Store.",
+      step2: "2. Puis ouvre ton lien d'accès :",
+      install: "Installer Ecleptic",
+      step3: "3. Un bug ? Fais une capture d'écran dans l'app, puis « Partager le retour bêta » — ça nous arrive directement.",
+      privacy2: "Politique de confidentialité",
+      disclaimer: "Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical."
+    }
+  };
+
+  var LANG = "en";
+  try { LANG = localStorage.getItem("ecleptic.lang") || "en"; } catch(_) {}
+  if (LANG !== "fr") LANG = "en";
+
+  function T(id, key, html){
+    var el = document.getElementById(id);
+    if (el) { if (html) el.innerHTML = I18N[LANG][key]; else el.textContent = I18N[LANG][key]; }
+  }
+  function applyLang(){
+    var t = I18N[LANG];
+    document.documentElement.lang = LANG;
+    document.title = t.htmlTitle;
+    T("t-title","title",true); T("t-pitch","pitch");
+    T("t-shot1","shot1"); T("t-shot2","shot2"); T("t-shot3","shot3");
+    T("goQuiz","cta"); T("t-ctanote","ctanote");
+    T("t-qtitle","qtitle"); T("t-qsub","qsub");
+    T("t-firstname","firstname"); T("t-email","email");
+    document.getElementById("email").placeholder = t.emailPh;
+    T("t-watch","watch"); T("t-watch-other","watchOther"); T("t-watch-none","watchNone");
+    T("t-freq","freq"); T("t-freq5","freq5");
+    T("t-sports","sports"); T("t-multi1","multi"); T("t-multi2","multi");
+    T("t-s-muscu","sMuscu"); T("t-s-course","sCourse"); T("t-s-velo","sVelo");
+    T("t-s-natation","sNatation"); T("t-s-co","sCo"); T("t-s-combat","sCombat"); T("t-s-autre","sAutre");
+    T("t-apps","apps"); T("t-a-health","aHealth"); T("t-a-none","aNone");
+    T("t-goal","goal"); T("t-g-perf","gPerf"); T("t-g-masse","gMasse"); T("t-g-perte","gPerte");
+    T("t-g-sommeil","gSommeil"); T("t-g-sante","gSante");
+    T("t-source","source"); T("t-src-friend","srcFriend"); T("t-src-other","srcOther");
+    T("submitBtn","submit"); T("err","err"); T("t-hint","hint"); T("t-privacy","privacy");
+    T("t-welcome","welcome"); T("t-step1","step1"); T("t-step2","step2");
+    T("tfLink","install"); T("t-step3","step3");
+    T("t-privacy2","privacy2"); T("t-disclaimer","disclaimer");
+    document.getElementById("lang-en").classList.toggle("on", LANG === "en");
+    document.getElementById("lang-fr").classList.toggle("on", LANG === "fr");
+  }
+  function setLang(l){ LANG = l; try { localStorage.setItem("ecleptic.lang", l); } catch(_){} applyLang(); }
+  document.getElementById("lang-en").addEventListener("click", function(){ setLang("en"); });
+  document.getElementById("lang-fr").addEventListener("click", function(){ setLang("fr"); });
+  applyLang();
 
   if (POSTHOG_KEY) {
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
@@ -206,7 +306,7 @@
     document.getElementById("home").hidden = true;
     document.getElementById("quiz").hidden = false;
     window.scrollTo({top:0});
-    track("beta_cta_click");
+    track("beta_cta_click", {lang: LANG});
   });
 
   var form = document.getElementById("quiz");
@@ -214,7 +314,7 @@
     e.preventDefault();
     var btn = document.getElementById("submitBtn"), err = document.getElementById("err");
     err.style.display = "none";
-    btn.disabled = true; btn.textContent = "Un instant…";
+    btn.disabled = true; btn.textContent = I18N[LANG].submitting;
 
     var fd = new FormData(form);
     var payload = {
@@ -226,7 +326,7 @@
       apps_used: fd.getAll("apps_used"),
       main_goal: fd.get("main_goal"),
       source: fd.get("source"),
-      locale: navigator.language || null,
+      locale: LANG + " | " + (navigator.language || ""),
       user_agent: navigator.userAgent
     };
 
@@ -239,12 +339,12 @@
                      "Authorization": "Bearer " + SUPABASE_ANON_KEY, "Prefer": "return=minimal" },
           body: JSON.stringify(payload)
         });
-        ok = res.ok || res.status === 409; // 409 = email déjà inscrit → on laisse passer
+        ok = res.ok || res.status === 409;
       } catch(_) {}
-    } else { ok = true; } // clés absentes (préversion locale) : ne bloque pas le testeur
+    } else { ok = true; }
 
     if (ok) {
-      track("beta_form_submitted", { watch: payload.has_apple_watch, goal: payload.main_goal, source: payload.source });
+      track("beta_form_submitted", { watch: payload.has_apple_watch, goal: payload.main_goal, source: payload.source, lang: LANG });
       document.getElementById("doneName").textContent = payload.first_name || "";
       form.style.display = "none";
       var done = document.getElementById("done");
@@ -252,12 +352,12 @@
       done.scrollIntoView({behavior:"smooth", block:"center"});
     } else {
       err.style.display = "block";
-      btn.disabled = false; btn.textContent = "Obtenir mon accès TestFlight";
+      btn.disabled = false; btn.textContent = I18N[LANG].submit;
       track("beta_form_error");
     }
   });
 
-  document.getElementById("tfLink").addEventListener("click", function(){ track("testflight_click"); });
+  document.getElementById("tfLink").addEventListener("click", function(){ track("testflight_click", {lang: LANG}); });
 </script>
 </body>
 </html>
