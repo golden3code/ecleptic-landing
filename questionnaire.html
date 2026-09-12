@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecleptic — Ton bilan de bêta</title>
+<style>
+  :root{--gold:#D9A441;--gold-soft:#B07A2A;--ink:#F2EBDD;--muted:#9A8E77;
+        --bg:#0B0A08;--card:#161310;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:600px;margin:0 auto;padding:48px 24px 64px}
+  .logo{font-size:14px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600;text-align:center}
+  h1{font-size:clamp(26px,5vw,34px);text-align:center;margin:16px 0 8px}
+  .sub{color:var(--muted);text-align:center;margin-bottom:32px}
+  form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
+  .q{margin-bottom:22px}
+  .q .title{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+  .q small{font-weight:400;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips input{position:absolute;opacity:0;pointer-events:none}
+  .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);
+              background:var(--bg);font-size:14px;cursor:pointer;user-select:none}
+  .chips input:checked + span{background:var(--gold);border-color:var(--gold);color:#1C1710;font-weight:600}
+  input[type=email],textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+              font-size:16px;background:var(--bg);color:var(--ink);font-family:inherit}
+  textarea{min-height:80px;resize:vertical}
+  input:focus,textarea:focus{outline:2px solid var(--gold-soft)}
+  .cta{display:inline-block;border:0;cursor:pointer;width:100%;background:var(--gold);color:#1C1710;
+       padding:16px;border-radius:14px;font-size:17px;font-weight:600;margin-top:4px}
+  .err{display:none;color:#E07A50;font-size:14px;margin-top:10px;text-align:center}
+  #done{display:none;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px 28px;text-align:center}
+  #done h2{margin-bottom:8px}
+  #done p{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Ecleptic</div>
+  <h1>Ton bilan de bêta ✦</h1>
+  <p class="sub">2 minutes. Tes réponses décident directement de ce qu'on construit ensuite.</p>
+
+  <form id="survey">
+    <div class="q">
+      <label class="title">Globalement, l'app t'a plu ? <small>(1 = pas du tout, 10 = énormément)</small></label>
+      <div class="chips" id="satisfaction"></div>
+    </div>
+
+    <div class="q">
+      <label class="title">Tu la recommanderais à un ami sportif ? <small>(0 = jamais, 10 = certainement)</small></label>
+      <div class="chips" id="nps"></div>
+    </div>
+
+    <div class="q">
+      <label class="title">Tu l'as utilisée à quelle fréquence ?</label>
+      <div class="chips">
+        <label><input type="radio" name="usage_frequency" value="daily" required><span>Tous les jours</span></label>
+        <label><input type="radio" name="usage_frequency" value="several_week"><span>Plusieurs fois/semaine</span></label>
+        <label><input type="radio" name="usage_frequency" value="rarely"><span>Rarement</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Ce que tu as préféré <small>(plusieurs choix)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="favorite_features" value="scan_repas"><span>Scan de repas</span></label>
+        <label><input type="checkbox" name="favorite_features" value="sommeil"><span>Suivi du sommeil</span></label>
+        <label><input type="checkbox" name="favorite_features" value="score_athlete"><span>Score athlète</span></label>
+        <label><input type="checkbox" name="favorite_features" value="readiness"><span>Readiness</span></label>
+        <label><input type="checkbox" name="favorite_features" value="labo"><span>Le Labo</span></label>
+        <label><input type="checkbox" name="favorite_features" value="coach_ia"><span>Coach IA</span></label>
+        <label><input type="checkbox" name="favorite_features" value="age_bio"><span>Âge biologique</span></label>
+        <label><input type="checkbox" name="favorite_features" value="design"><span>Le design</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Ce qu'on doit améliorer en priorité <small>(plusieurs choix)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="improve_areas" value="scan_precision"><span>Précision du scan</span></label>
+        <label><input type="checkbox" name="improve_areas" value="labo_ui"><span>Interface du Labo</span></label>
+        <label><input type="checkbox" name="improve_areas" value="sommeil"><span>Sommeil</span></label>
+        <label><input type="checkbox" name="improve_areas" value="sport"><span>Sport / séances</span></label>
+        <label><input type="checkbox" name="improve_areas" value="coach"><span>Coach IA</span></label>
+        <label><input type="checkbox" name="improve_areas" value="stabilite"><span>Stabilité / vitesse</span></label>
+        <label><input type="checkbox" name="improve_areas" value="onboarding"><span>Prise en main</span></label>
+        <label><input type="checkbox" name="improve_areas" value="design"><span>Design général</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Il te manque quoi ? <small>(libre, optionnel)</small></label>
+      <textarea name="missing_feature" placeholder="La fonctionnalité qui te ferait rester…"></textarea>
+    </div>
+
+    <div class="q">
+      <label class="title">À 12,99 €/mois (ou 89,99 €/an), tu t'abonnerais ?</label>
+      <div class="chips">
+        <label><input type="radio" name="would_pay" value="oui" required><span>Oui</span></label>
+        <label><input type="radio" name="would_pay" value="peut_etre"><span>Peut-être</span></label>
+        <label><input type="radio" name="would_pay" value="non"><span>Non</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Ton email <small>(celui de la bêta, pour relier tes réponses)</small></label>
+      <input type="email" name="email" autocomplete="email" placeholder="optionnel">
+    </div>
+
+    <button class="cta" id="btn" type="submit">Envoyer mon bilan</button>
+    <p class="err" id="err">L'envoi a échoué — réessaie, ou écris-nous : contact@ecleptic.app</p>
+  </form>
+
+  <div id="done">
+    <h2>Merci ✦</h2>
+    <p>Ton bilan est bien arrivé. Il compte, littéralement : chaque réponse pèse dans ce qu'on construit ensuite. Tout s'aligne.</p>
+  </div>
+</div>
+
+<script>
+  var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
+
+  // Échelles 1-10 / 0-10 générées
+  function scale(el, name, from, to){
+    for (var i=from; i<=to; i++){
+      var l=document.createElement('label');
+      l.innerHTML='<input type="radio" name="'+name+'" value="'+i+'" required><span>'+i+'</span>';
+      el.appendChild(l);
+    }
+  }
+  scale(document.getElementById('satisfaction'),'satisfaction',1,10);
+  scale(document.getElementById('nps'),'nps',0,10);
+
+  document.getElementById("survey").addEventListener("submit", async function(e){
+    e.preventDefault();
+    var btn=document.getElementById("btn"), err=document.getElementById("err");
+    btn.disabled=true; btn.textContent="Un instant…"; err.style.display="none";
+    var fd=new FormData(e.target);
+    var payload={
+      satisfaction:+fd.get("satisfaction"), nps:+fd.get("nps"),
+      usage_frequency:fd.get("usage_frequency"),
+      favorite_features:fd.getAll("favorite_features"),
+      improve_areas:fd.getAll("improve_areas"),
+      missing_feature:(fd.get("missing_feature")||"").trim()||null,
+      would_pay:fd.get("would_pay"),
+      email:(fd.get("email")||"").trim().toLowerCase()||null,
+      locale:navigator.language||null, user_agent:navigator.userAgent
+    };
+    var ok=false;
+    try{
+      var r=await fetch(SUPABASE_URL+"/rest/v1/beta_survey",{method:"POST",
+        headers:{"Content-Type":"application/json","apikey":SUPABASE_ANON_KEY,
+                 "Authorization":"Bearer "+SUPABASE_ANON_KEY,"Prefer":"return=minimal"},
+        body:JSON.stringify(payload)});
+      ok=r.ok||r.status===409;
+    }catch(_){}
+    if(ok){
+      document.getElementById("survey").style.display="none";
+      var d=document.getElementById("done"); d.style.display="block";
+      d.scrollIntoView({behavior:"smooth",block:"center"});
+    }else{
+      err.style.display="block"; btn.disabled=false; btn.textContent="Envoyer mon bilan";
+    }
+  });
+</script>
+</body>
+</html>
