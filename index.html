@@ -86,6 +86,8 @@
   <div style="text-align:center;margin-bottom:56px">
     <a class="cta" id="goQuiz" href="#quiz"></a>
     <p class="cta-note" id="t-ctanote"></p>
+    <p id="spots" hidden style="margin-top:14px;display:inline-block;border:1px solid var(--gold);color:var(--gold);
+       border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600"></p>
   </div>
 </div>
 </div>
@@ -224,7 +226,9 @@
       install: "Install Ecleptic",
       step3: "3. Found a bug? Take a screenshot inside the app, then “Share Beta Feedback” — it reaches us directly.",
       privacy2: "Privacy policy",
-      disclaimer: "Ecleptic is a wellness app. It does not replace medical advice and is not a medical device."
+      disclaimer: "Ecleptic is a wellness app. It does not replace medical advice and is not a medical device.",
+      spots: "{n} of 150 spots left",
+      spotsFull: "Beta full — leave your email anyway, we'll ping you when a spot opens"
     },
     fr: {
       htmlTitle: "Ecleptic — Bêta iOS",
@@ -252,7 +256,9 @@
       install: "Installer Ecleptic",
       step3: "3. Un bug ? Fais une capture d'écran dans l'app, puis « Partager le retour bêta » — ça nous arrive directement.",
       privacy2: "Politique de confidentialité",
-      disclaimer: "Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical."
+      disclaimer: "Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.",
+      spots: "{n} places sur 150 restantes",
+      spotsFull: "Bêta complète — laisse quand même ton email, on te prévient dès qu'une place se libère"
     }
   };
 
@@ -289,7 +295,30 @@
     T("t-privacy2","privacy2"); T("t-disclaimer","disclaimer");
     document.getElementById("lang-en").classList.toggle("on", LANG === "en");
     document.getElementById("lang-fr").classList.toggle("on", LANG === "fr");
+    renderSpots();
   }
+
+  var SPOTS = null; // null = pas encore chargé ; on n'affiche rien tant qu'on ne sait pas
+  function renderSpots(){
+    var el = document.getElementById("spots");
+    if (SPOTS == null) { el.hidden = true; return; } // null OU undefined (applyLang tourne avant l'init)
+    el.hidden = false;
+    el.textContent = SPOTS > 0
+      ? "🔥 " + I18N[LANG].spots.replace("{n}", SPOTS)
+      : I18N[LANG].spotsFull;
+  }
+  (async function loadSpots(){
+    try {
+      var r = await fetch(SUPABASE_URL + "/rest/v1/rpc/beta_spots_left", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "apikey": SUPABASE_ANON_KEY,
+                   "Authorization": "Bearer " + SUPABASE_ANON_KEY },
+        body: "{}"
+      });
+      if (r.ok) { SPOTS = parseInt(await r.text(), 10); if (isNaN(SPOTS)) SPOTS = null; }
+    } catch(_) {}
+    renderSpots();
+  })();
   function setLang(l){ LANG = l; try { localStorage.setItem("ecleptic.lang", l); } catch(_){} applyLang(); }
   document.getElementById("lang-en").addEventListener("click", function(){ setLang("en"); });
   document.getElementById("lang-fr").addEventListener("click", function(){ setLang("fr"); });
