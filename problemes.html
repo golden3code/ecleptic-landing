@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecleptic — Signale ce qui coince</title>
+<style>
+  :root{--gold:#D9A441;--gold-soft:#B07A2A;--ink:#F2EBDD;--muted:#9A8E77;
+        --bg:#0B0A08;--card:#161310;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:600px;margin:0 auto;padding:48px 24px 64px}
+  .logo{font-size:14px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600;text-align:center}
+  h1{font-size:clamp(26px,5vw,34px);text-align:center;margin:16px 0 8px}
+  .sub{color:var(--muted);text-align:center;margin-bottom:32px}
+  form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
+  .q{margin-bottom:22px}
+  .q .title{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+  .q small{font-weight:400;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips input{position:absolute;opacity:0;pointer-events:none}
+  .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);
+              background:var(--bg);font-size:14px;cursor:pointer;user-select:none}
+  .chips input:checked + span{background:var(--gold);border-color:var(--gold);color:#1C1710;font-weight:600}
+  input[type=email],input[type=text],textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+              font-size:16px;background:var(--bg);color:var(--ink);font-family:inherit}
+  textarea{min-height:90px;resize:vertical}
+  input:focus,textarea:focus{outline:2px solid var(--gold-soft)}
+  .cta{display:inline-block;border:0;cursor:pointer;width:100%;background:var(--gold);color:#1C1710;
+       padding:16px;border-radius:14px;font-size:17px;font-weight:600;margin-top:4px}
+  .err{display:none;color:#E07A50;font-size:14px;margin-top:10px;text-align:center}
+  #done{display:none;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px 28px;text-align:center}
+  #done h2{margin-bottom:8px}
+  #done p{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Ecleptic</div>
+  <h1>Signale ce qui coince ✦</h1>
+  <p class="sub">3 minutes. Plus tes réponses sont précises, plus vite on corrige — chaque signalement est croisé avec ceux des autres testeurs pour repérer les problèmes récurrents.</p>
+
+  <form id="survey">
+    <div class="q">
+      <label class="title">Depuis combien de temps tu utilises l'app ?</label>
+      <div class="chips">
+        <label><input type="radio" name="usage_duration" value="lt_week" required><span>Moins d'une semaine</span></label>
+        <label><input type="radio" name="usage_duration" value="one_two_weeks"><span>1–2 semaines</span></label>
+        <label><input type="radio" name="usage_duration" value="more"><span>Plus longtemps</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">As-tu rencontré des problèmes ? <small>(plusieurs choix)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="problem_types" value="crash"><span>L'app se ferme toute seule</span></label>
+        <label><input type="checkbox" name="problem_types" value="freeze_lenteur"><span>Blocages / lenteurs</span></label>
+        <label><input type="checkbox" name="problem_types" value="donnees_fausses"><span>Données incorrectes</span></label>
+        <label><input type="checkbox" name="problem_types" value="sync_sante"><span>Sync Santé / montre</span></label>
+        <label><input type="checkbox" name="problem_types" value="scan_rate"><span>Scan de repas raté</span></label>
+        <label><input type="checkbox" name="problem_types" value="donnees_perdues"><span>Données disparues</span></label>
+        <label><input type="checkbox" name="problem_types" value="notifications"><span>Notifications</span></label>
+        <label><input type="checkbox" name="problem_types" value="connexion"><span>Connexion / compte</span></label>
+        <label><input type="checkbox" name="problem_types" value="affichage"><span>Affichage cassé</span></label>
+        <label><input type="checkbox" name="problem_types" value="batterie"><span>Batterie / chauffe</span></label>
+        <label><input type="checkbox" name="problem_types" value="incomprehension"><span>Je ne comprends pas un écran</span></label>
+        <label><input type="checkbox" name="problem_types" value="aucun"><span>Aucun problème ✦</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Dans quelle partie de l'app ? <small>(plusieurs choix)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="areas" value="accueil"><span>Accueil</span></label>
+        <label><input type="checkbox" name="areas" value="alimentation"><span>Alimentation</span></label>
+        <label><input type="checkbox" name="areas" value="sommeil"><span>Sommeil</span></label>
+        <label><input type="checkbox" name="areas" value="sport"><span>Sport</span></label>
+        <label><input type="checkbox" name="areas" value="labo"><span>Le Labo</span></label>
+        <label><input type="checkbox" name="areas" value="coach"><span>Coach IA</span></label>
+        <label><input type="checkbox" name="areas" value="onboarding"><span>Premiers pas</span></label>
+        <label><input type="checkbox" name="areas" value="widgets"><span>Widgets</span></label>
+        <label><input type="checkbox" name="areas" value="reveil"><span>Réveil</span></label>
+        <label><input type="checkbox" name="areas" value="reglages"><span>Réglages</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Le problème le plus gênant revient à quelle fréquence ?</label>
+      <div class="chips">
+        <label><input type="radio" name="main_frequency" value="chaque_fois"><span>À chaque utilisation</span></label>
+        <label><input type="radio" name="main_frequency" value="souvent"><span>Souvent</span></label>
+        <label><input type="radio" name="main_frequency" value="parfois"><span>Parfois</span></label>
+        <label><input type="radio" name="main_frequency" value="une_fois"><span>Une seule fois</span></label>
+        <label><input type="radio" name="main_frequency" value="na"><span>Pas de problème</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Il t'empêche d'utiliser l'app ?</label>
+      <div class="chips">
+        <label><input type="radio" name="main_severity" value="bloquant"><span>Oui, bloquant</span></label>
+        <label><input type="radio" name="main_severity" value="genant"><span>Gênant mais je contourne</span></label>
+        <label><input type="radio" name="main_severity" value="mineur"><span>Mineur</span></label>
+        <label><input type="radio" name="main_severity" value="na"><span>Pas de problème</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Décris le problème principal <small>(qu'as-tu fait, qu'est-ce qui s'est passé, qu'attendais-tu ?)</small></label>
+      <textarea name="main_description" placeholder="Ex. : j'ouvre le scan de repas, je prends la photo, et l'écran reste bloqué sur…"></textarea>
+    </div>
+
+    <div class="q">
+      <label class="title">Ton iPhone et ta montre <small>(optionnel — ex. « iPhone 15 Pro, Apple Watch S9 »)</small></label>
+      <input type="text" name="device_info" placeholder="iPhone…, montre…">
+    </div>
+
+    <div class="q">
+      <label class="title">Ton email <small>(celui de la bêta, pour relier tes réponses)</small></label>
+      <input type="email" name="email" autocomplete="email" placeholder="optionnel">
+    </div>
+
+    <button class="cta" id="btn" type="submit">Envoyer mon signalement</button>
+    <p class="err" id="err">L'envoi a échoué — réessaie, ou écris-nous : contact@ecleptic.app</p>
+  </form>
+
+  <div id="done">
+    <h2>Merci ✦</h2>
+    <p>C'est bien arrivé. On croise ton signalement avec ceux des autres testeurs, et les problèmes les plus récurrents passent en tête de liste. Tout s'aligne.</p>
+  </div>
+</div>
+
+<script>
+  var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
+
+  document.getElementById("survey").addEventListener("submit", async function(e){
+    e.preventDefault();
+    var btn=document.getElementById("btn"), err=document.getElementById("err");
+    btn.disabled=true; btn.textContent="Un instant…"; err.style.display="none";
+    var fd=new FormData(e.target);
+    var payload={
+      usage_duration:fd.get("usage_duration"),
+      problem_types:fd.getAll("problem_types"),
+      areas:fd.getAll("areas"),
+      main_frequency:fd.get("main_frequency"),
+      main_severity:fd.get("main_severity"),
+      main_description:(fd.get("main_description")||"").trim()||null,
+      device_info:(fd.get("device_info")||"").trim()||null,
+      email:(fd.get("email")||"").trim().toLowerCase()||null,
+      locale:navigator.language||null, user_agent:navigator.userAgent
+    };
+    var ok=false;
+    try{
+      var r=await fetch(SUPABASE_URL+"/rest/v1/beta_problems",{method:"POST",
+        headers:{"Content-Type":"application/json","apikey":SUPABASE_ANON_KEY,
+                 "Authorization":"Bearer "+SUPABASE_ANON_KEY,"Prefer":"return=minimal"},
+        body:JSON.stringify(payload)});
+      ok=r.ok||r.status===409;
+    }catch(_){}
+    if(ok){
+      document.getElementById("survey").style.display="none";
+      var d=document.getElementById("done"); d.style.display="block";
+      d.scrollIntoView({behavior:"smooth",block:"center"});
+    }else{
+      err.style.display="block"; btn.disabled=false; btn.textContent="Envoyer mon signalement";
+    }
+  });
+</script>
+</body>
+</html>
