@@ -185,6 +185,11 @@
     <p id="t-step1"></p>
     <p id="t-step2"></p>
     <a class="cta" id="tfLink" href="https://testflight.apple.com/join/H5CQgDa7"></a>
+    <div style="margin-top:18px;text-align:left;border:1px solid var(--gold);border-radius:14px;padding:14px 16px">
+      <p style="color:var(--gold);font-weight:600;margin-bottom:6px" id="t-tips-title"></p>
+      <p id="t-tip-golden"></p>
+      <p id="t-tip-lang"></p>
+    </div>
     <p style="margin-top:14px" id="t-step3"></p>
   </div>
 </main>
@@ -225,6 +230,9 @@
       step2: "2. Then open your access link:",
       install: "Install Ecleptic",
       step3: "3. Found a bug? Take a screenshot inside the app, then “Share Beta Feedback” — it reaches us directly.",
+      tipsTitle: "Once the app is installed:",
+      tipGolden: "• Open the in-app Settings and switch to the Golden plan to unlock every feature — completely free, because you're a beta tester.",
+      tipLang: "• The app starts in English by default. You can change the language anytime in the same Settings.",
       privacy2: "Privacy policy",
       disclaimer: "Ecleptic is a wellness app. It does not replace medical advice and is not a medical device.",
       spots: "{n} of 150 spots left",
@@ -255,6 +263,9 @@
       step2: "2. Puis ouvre ton lien d'accès :",
       install: "Installer Ecleptic",
       step3: "3. Un bug ? Fais une capture d'écran dans l'app, puis « Partager le retour bêta » — ça nous arrive directement.",
+      tipsTitle: "Une fois l'app installée :",
+      tipGolden: "• Ouvre les Réglages dans l'app et passe en version Golden pour débloquer toutes les fonctionnalités — totalement gratuit, puisque tu fais partie des testeurs.",
+      tipLang: "• L'app démarre en anglais par défaut. Tu peux changer la langue à tout moment dans ces mêmes Réglages.",
       privacy2: "Politique de confidentialité",
       disclaimer: "Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.",
       spots: "{n} places sur 150 restantes",
@@ -292,6 +303,7 @@
     T("submitBtn","submit"); T("err","err"); T("t-hint","hint"); T("t-privacy","privacy");
     T("t-welcome","welcome"); T("t-step1","step1"); T("t-step2","step2");
     T("tfLink","install"); T("t-step3","step3");
+    T("t-tips-title","tipsTitle"); T("t-tip-golden","tipGolden"); T("t-tip-lang","tipLang");
     T("t-privacy2","privacy2"); T("t-disclaimer","disclaimer");
     document.getElementById("lang-en").classList.toggle("on", LANG === "en");
     document.getElementById("lang-fr").classList.toggle("on", LANG === "fr");
@@ -338,11 +350,49 @@
     track("beta_cta_click", {lang: LANG});
   });
 
+  // Un essai d'insert avec timeout (8 s). Renvoie {ok, detail}.
+  async function tryInsert(payload){
+    var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function(){ ctrl.abort(); }, 8000) : null;
+    try {
+      var res = await fetch(SUPABASE_URL + "/rest/v1/beta_testers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "apikey": SUPABASE_ANON_KEY,
+                   "Authorization": "Bearer " + SUPABASE_ANON_KEY, "Prefer": "return=minimal" },
+        body: JSON.stringify(payload),
+        signal: ctrl ? ctrl.signal : undefined
+      });
+      return { ok: res.ok || res.status === 409, detail: "http_" + res.status };
+    } catch(ex) {
+      return { ok: false, detail: (ex && ex.name) || "fetch_error" };
+    } finally { if (timer) clearTimeout(timer); }
+  }
+
+  // Insert avec 1 retry ; en cas d'échec, le payload est gardé en localStorage
+  // et retenté silencieusement au prochain chargement (on ne perd pas l'email).
+  var PENDING_KEY = "ecleptic.pendingSignup";
+  async function saveTester(payload){
+    if (!(SUPABASE_URL && SUPABASE_ANON_KEY)) return { ok: true, detail: "no_keys" };
+    var r = await tryInsert(payload);
+    if (!r.ok) r = await tryInsert(payload);
+    if (r.ok) { try { localStorage.removeItem(PENDING_KEY); } catch(_){} }
+    else { try { localStorage.setItem(PENDING_KEY, JSON.stringify(payload)); } catch(_){} }
+    return r;
+  }
+  (async function flushPending(){
+    var raw = null;
+    try { raw = localStorage.getItem(PENDING_KEY); } catch(_) {}
+    if (!raw) return;
+    try {
+      var r = await saveTester(JSON.parse(raw));
+      if (r.ok) track("beta_form_recovered");
+    } catch(_) {}
+  })();
+
   var form = document.getElementById("quiz");
   form.addEventListener("submit", async function(e){
     e.preventDefault();
-    var btn = document.getElementById("submitBtn"), err = document.getElementById("err");
-    err.style.display = "none";
+    var btn = document.getElementById("submitBtn");
     btn.disabled = true; btn.textContent = I18N[LANG].submitting;
 
     var fd = new FormData(form);
@@ -359,31 +409,20 @@
       user_agent: navigator.userAgent
     };
 
-    var ok = false;
-    if (SUPABASE_URL && SUPABASE_ANON_KEY) {
-      try {
-        var res = await fetch(SUPABASE_URL + "/rest/v1/beta_testers", {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "apikey": SUPABASE_ANON_KEY,
-                     "Authorization": "Bearer " + SUPABASE_ANON_KEY, "Prefer": "return=minimal" },
-          body: JSON.stringify(payload)
-        });
-        ok = res.ok || res.status === 409;
-      } catch(_) {}
-    } else { ok = true; }
+    var r = await saveTester(payload);
 
-    if (ok) {
+    // Règle absolue : le testeur obtient TOUJOURS le lien TestFlight,
+    // même si l'enregistrement a échoué (réseau, bloqueur de contenu…).
+    if (r.ok) {
       track("beta_form_submitted", { watch: payload.has_apple_watch, goal: payload.main_goal, source: payload.source, lang: LANG });
-      document.getElementById("doneName").textContent = payload.first_name || "";
-      form.style.display = "none";
-      var done = document.getElementById("done");
-      done.style.display = "block";
-      done.scrollIntoView({behavior:"smooth", block:"center"});
     } else {
-      err.style.display = "block";
-      btn.disabled = false; btn.textContent = I18N[LANG].submit;
-      track("beta_form_error");
+      track("beta_form_error", { detail: r.detail, lang: LANG });
     }
+    document.getElementById("doneName").textContent = payload.first_name || "";
+    form.style.display = "none";
+    var done = document.getElementById("done");
+    done.style.display = "block";
+    done.scrollIntoView({behavior:"smooth", block:"center"});
   });
 
   document.getElementById("tfLink").addEventListener("click", function(){ track("testflight_click", {lang: LANG}); });
