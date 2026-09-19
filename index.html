@@ -37,19 +37,20 @@
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
   @media(max-width:560px){.fact{grid-template-columns:40px 1fr auto;gap:12px}.fact .what{font-size:12px}}
 
-  .steps{padding-block:100px}
+  .steps{padding-block:38vh 0}
   .steps .display{font-size:clamp(30px,6vw,54px);margin-bottom:70px}
   .step{margin-bottom:54px}
   .step .rn{font-size:22px;font-weight:200;color:var(--gold);letter-spacing:.2em}
   .step h3{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;margin:14px 0 12px}
   .step p{color:var(--muted);font-size:15.5px;max-width:440px}
 
-  .journalhome{padding-block:20px 40px}
+  .journalhome{padding-block:38vh 0}
   .journalhome .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
   .journalhome .all{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none}
   .journalhome .all:hover{color:var(--gold)}
 
-  .finale{padding:150px 24px 320px;text-align:center;border-top:1px solid var(--line);margin-top:80px;
+  .fadeblack{height:38vh;background:linear-gradient(var(--bg), #000)}
+  .finale{padding:110px 24px 320px;text-align:center;margin-top:0;
           background:url('/assets/moon.jpg') center bottom/cover no-repeat #000}
   @media(max-width:640px){.finale{padding-bottom:220px}}
   footer.site{background:#000;border-top:0;margin-top:0}
@@ -150,6 +151,8 @@
 </section>
 
 
+
+<div class="fadeblack" aria-hidden="true"></div>
 
 <section class="finale">
   <span class="label">Sur invitation</span>
