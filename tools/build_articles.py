@@ -99,13 +99,13 @@ footer.site a:hover{color:var(--gold)}
 .stats .l{display:block;margin-top:10px}
 .themes{margin:40px 0 8px}
 .themes .label{display:block;margin-bottom:16px}
-.themescroll{border:1px solid var(--line);max-height:230px;overflow-y:auto;overscroll-behavior:contain;
+.themescroll{border:1px solid var(--line);max-height:264px;overflow-y:auto;overscroll-behavior:contain;
              scrollbar-width:thin;scrollbar-color:rgba(154,142,119,.4) transparent}
 .themescroll::-webkit-scrollbar{width:4px}
 .themescroll::-webkit-scrollbar-thumb{background:rgba(154,142,119,.4)}
 .theme{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;
        background:none;border:0;border-left:2px solid rgba(154,142,119,.45);color:var(--muted);
-       padding:12px 18px;font-size:11.5px;letter-spacing:.25em;text-transform:uppercase;
+       height:52px;padding:0 18px;font-size:11.5px;letter-spacing:.25em;text-transform:uppercase;
        cursor:pointer;transition:color .2s,border-color .2s;font-family:inherit}
 .theme+.theme{border-top:1px solid var(--line)}
 .theme .count{font-size:13px;letter-spacing:0;font-weight:300}
