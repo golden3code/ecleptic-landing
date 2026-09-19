@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ecleptic — Sommeil, nutrition, sport : tout s'aligne</title>
-<meta name="description" content="Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score et te dit chaque matin ce qui compte vraiment. Bêta iOS ouverte, gratuite.">
+<meta name="description" content="Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score et te dit chaque matin ce qui compte vraiment. Journal, guide, bêta iOS.">
 <link rel="canonical" href="https://ecleptic.health/">
 <meta property="og:title" content="Ecleptic — Tout s'aligne.">
-<meta property="og:description" content="Sommeil, nutrition, sport : un seul score, un coach qui comprend tout. Bêta iOS ouverte.">
+<meta property="og:description" content="Sommeil, nutrition, sport : un seul score, un coach qui comprend tout.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ecleptic.health/">
 <script type="application/ld+json">
@@ -18,26 +18,44 @@
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 <style>
-  header.hero{padding:44px 0 8px;text-align:center}
-  header.hero h1{font-size:clamp(32px,6vw,50px);font-weight:700;letter-spacing:-.02em}
-  header.hero h1 em{font-style:normal;color:var(--gold)}
-  .pitch{max-width:560px;margin:18px auto 0;color:var(--muted);font-size:clamp(16px,2.5vw,19px)}
-  .heroctas{margin:30px 0 8px;text-align:center}
-  .cta-note{font-size:13px;color:var(--muted);margin-top:10px}
-  .wrap-wide{max-width:960px;margin:0 auto;padding:0 24px}
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 8px}
-  @media(max-width:640px){.shots{grid-template-columns:1fr;max-width:320px;margin-left:auto;margin-right:auto}}
-  .shot{position:relative;aspect-ratio:9/19.5;border-radius:28px;background:var(--card);border:1px solid var(--line);overflow:hidden}
-  .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-  .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:44px 0}
-  @media(max-width:640px){.feats{grid-template-columns:1fr}}
-  .feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
-  .feat h3{font-size:17px;margin-bottom:8px}
-  .feat h3 span{color:var(--gold);margin-right:8px}
-  .feat p{color:var(--muted);font-size:14.5px;margin:0}
-  .sectionhead{margin:52px 0 6px;font-size:24px;letter-spacing:-.01em}
-  .sectionhead em{font-style:normal;color:var(--gold)}
-  .sectionsub{color:var(--muted);font-size:15px;margin-bottom:8px}
+  .hero{padding-block:110px 90px;text-align:left}
+  .hero .label{display:block;margin-bottom:30px}
+  .hero h1{font-size:clamp(46px,10vw,104px);font-weight:200;text-transform:uppercase;letter-spacing:-.015em;line-height:.98}
+  .hero h1 .gold{color:var(--gold)}
+  .hero .sub{max-width:460px;margin-top:36px;color:var(--muted);font-size:16.5px;line-height:1.75}
+  .hero .actions{margin-top:44px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  .hero .quiet{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:17px 0}
+  .hero .quiet:hover{color:var(--gold)}
+
+  .facts{border-top:1px solid var(--line)}
+  .fact{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line)}
+  .fact .no{font-size:12px;color:var(--muted);letter-spacing:.2em}
+  .fact .what{font-size:15px;text-transform:uppercase;letter-spacing:.12em;font-weight:300}
+  .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
+  @media(max-width:560px){.fact{grid-template-columns:40px 1fr auto;gap:12px}.fact .what{font-size:12px}}
+
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:0}
+  @media(max-width:640px){.shots{grid-template-columns:1fr}}
+  .shot{position:relative;aspect-ratio:9/16;background:var(--card);overflow:hidden}
+  .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:saturate(.92)}
+
+  .steps{padding-block:100px}
+  .steps .display{font-size:clamp(30px,6vw,54px);margin-bottom:70px}
+  .step{margin-bottom:54px}
+  .step .rn{font-size:22px;font-weight:200;color:var(--gold);letter-spacing:.2em}
+  .step h3{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;margin:14px 0 12px}
+  .step p{color:var(--muted);font-size:15.5px;max-width:440px}
+
+  .journalhome{padding-block:20px 40px}
+  .journalhome .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+  .journalhome .all{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+  .journalhome .all:hover{color:var(--gold)}
+
+  .finale{padding:130px 24px;text-align:center;border-top:1px solid var(--line);margin-top:80px}
+  .finale .label{display:block;margin-bottom:30px}
+  .finale h2{font-size:clamp(30px,6.4vw,58px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin-bottom:26px}
+  .finale h2 .gold{color:var(--gold)}
+  .finale p{color:var(--muted);max-width:430px;margin:0 auto 42px;font-size:15.5px}
 </style>
 </head>
 <body>
@@ -45,22 +63,30 @@
   <a class="logo" href="/">Ecleptic</a>
   <div class="links">
     <a href="/" class="on">Accueil</a>
-    <a href="/articles/">Articles</a>
+    <a href="/articles/">Journal</a>
     <a href="/guide.html">Guide</a>
-    <a class="beta" href="/beta.html">Bêta iOS</a>
+    <a href="/beta.html">La bêta</a>
   </div>
 </nav>
 
 <header class="hero wrap-wide">
-  <h1>Tout <em>s'aligne</em>.</h1>
-  <p class="pitch">Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui.</p>
-  <div class="heroctas">
-    <a class="cta" href="/beta.html" onclick="track('home_cta_click',{placement:'hero'})">Rejoindre la bêta iOS</a>
-    <p class="cta-note">iPhone · iOS 16.4+ · gratuite, toutes fonctionnalités débloquées</p>
+  <span class="label">Sommeil &nbsp;·&nbsp; Nutrition &nbsp;·&nbsp; Entraînement</span>
+  <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
+  <p class="sub">Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui.</p>
+  <div class="actions">
+    <a class="btn" href="/articles/" onclick="track('home_cta_click',{placement:'hero_journal'})">Lire le journal</a>
+    <a class="quiet" href="/beta.html" onclick="track('home_cta_click',{placement:'hero_beta'})">Accéder à la bêta →</a>
   </div>
 </header>
 
-<div class="wrap-wide">
+<div class="wrap-wide facts">
+  <div class="fact"><span class="no">01</span><span class="what">Un score de préparation, chaque matin</span><span class="val">1</span></div>
+  <div class="fact"><span class="no">02</span><span class="what">Domaines croisés — sommeil, assiette, effort</span><span class="val">3</span></div>
+  <div class="fact"><span class="no">03</span><span class="what">Ton repas compté, à partir d'une photo</span><span class="val">✓</span></div>
+  <div class="fact"><span class="no">04</span><span class="what">Moyennes génériques dans le calcul</span><span class="val">0</span></div>
+</div>
+
+<div class="wrap-wide" style="margin-top:2px">
   <div class="shots">
     <div class="shot"><img src="/shots/1.png" alt="Ecleptic — écran d'accueil avec le score du jour" onerror="this.parentNode.remove()"></div>
     <div class="shot"><img src="/shots/2.png" alt="Ecleptic — suivi de l'alimentation" onerror="this.parentNode.remove()"></div>
@@ -68,33 +94,49 @@
   </div>
 </div>
 
-<main class="wrap">
-  <div class="feats">
-    <div class="feat"><h3><span>◉</span>Un score chaque matin</h3><p>Sommeil, système nerveux, charge d'entraînement : un readiness score calculé sur tes vraies données, pas sur des moyennes génériques.</p></div>
-    <div class="feat"><h3><span>✦</span>Ton repas en photo</h3><p>Prends ton assiette en photo : calories, protéines et micronutriments sont comptés et déduits de tes cibles du jour.</p></div>
-    <div class="feat"><h3><span>☾</span>Le sommeil, décodé</h3><p>Phases, régularité, efficacité réelle — et ce qui, chez toi précisément, améliore ou dégrade tes nuits.</p></div>
-    <div class="feat"><h3><span>△</span>Un coach qui comprend tout</h3><p>Un coach IA qui voit l'ensemble : il sait que ta séance ratée vient de tes trois nuits courtes, pas de ta motivation.</p></div>
+<section class="steps wrap">
+  <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
+  <div class="step">
+    <span class="rn">I</span>
+    <h3>Mesurer</h3>
+    <p>Ta nuit, tes vitaux, ta charge d'entraînement — captés automatiquement, sans saisie, pendant que tu vis.</p>
   </div>
-
-  <h2 class="sectionhead">Des conseils qui <em>s'appliquent</em></h2>
-  <p class="sectionsub">Nos derniers articles — courts, sourcés, actionnables.</p>
-  <div class="cardlist">
-    <a class="card" href="/articles/readiness-score-definition.html"><h2>Readiness score : c'est quoi, et comment l'utiliser au quotidien</h2><p>Le score qui te dit chaque matin si tu dois pousser ou récupérer.</p></a>
-    <a class="card" href="/articles/hrv-variabilite-cardiaque.html"><h2>HRV : le signal le plus honnête de ton corps</h2><p>Comment lire ta variabilité cardiaque, et ce qui la fait vraiment bouger.</p></a>
-    <a class="card" href="/articles/vo2max-ameliorer.html"><h2>VO₂max : le meilleur marqueur de longévité</h2><p>Pourquoi il prédit autant, et le protocole 80/20 pour le faire monter.</p></a>
+  <div class="step">
+    <span class="rn">II</span>
+    <h3>Comprendre</h3>
+    <p>L'app croise les trois domaines. Elle sait que ta séance ratée vient de tes trois nuits courtes, pas de ta motivation.</p>
   </div>
-  <p style="text-align:center;margin:18px 0 8px"><a href="/articles/" style="color:var(--gold);font-weight:600;text-decoration:none">Tous les articles →</a></p>
-
-  <div class="ctabox">
-    <h2>La bêta est ouverte</h2>
-    <p>Gratuite, toutes fonctionnalités débloquées, en échange de tes retours. Places limitées.</p>
-    <a class="cta" href="/beta.html" onclick="track('home_cta_click',{placement:'footer'})">Rejoindre la bêta iOS</a>
+  <div class="step">
+    <span class="rn">III</span>
+    <h3>Agir</h3>
+    <p>Un chiffre, une direction. Aujourd'hui tu pousses, ou aujourd'hui tu récupères. C'est cette décision, répétée, qui change tout.</p>
   </div>
-</main>
+</section>
 
-<footer class="site wrap">
-  <a href="/confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@ecleptic.app">Contact</a>
-  <p class="disclaimer">Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.</p>
+<section class="journalhome wrap">
+  <div class="head">
+    <span class="label">Journal Ecleptic</span>
+    <a class="all" href="/articles/">Tous les articles →</a>
+  </div>
+  <div class="journal">
+    <a class="entry" href="/articles/readiness-score-definition.html"><span class="label"><span class="gold">Signal</span></span><h2>Readiness score : c'est quoi, et comment l'utiliser au quotidien</h2></a>
+    <a class="entry" href="/articles/sommeil-profond-ameliorer.html"><span class="label"><span class="gold">Sommeil</span></span><h2>Sommeil profond : 6 leviers concrets pour en avoir plus</h2></a>
+    <a class="entry" href="/articles/vo2max-ameliorer.html"><span class="label"><span class="gold">Longévité</span></span><h2>VO₂max : le meilleur marqueur de longévité, et comment l'améliorer</h2></a>
+  </div>
+</section>
+
+<section class="finale">
+  <span class="label">Sur invitation</span>
+  <h2>La bêta n'est pas<br>pour tout le monde.<br><span class="gold">Peut-être pour toi.</span></h2>
+  <p>Un petit cercle de testeurs, toutes les fonctionnalités débloquées, en échange de retours francs. iPhone, iOS 16.4+.</p>
+  <a class="btn gold" href="/beta.html" onclick="track('home_cta_click',{placement:'finale'})">Demander l'accès</a>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialité</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;·&nbsp; <a href="/beta.html">La bêta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.</p>
+  </div>
 </footer>
 
 <script>
