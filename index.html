@@ -75,11 +75,11 @@
   <div class="pin">
     <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
     <div class="constellation" aria-label="Les domaines du Labo Ecleptic, reliés en constellation">
-      <svg viewBox="0 0 1040 420" xmlns="http://www.w3.org/2000/svg" role="img">
+      <svg viewBox="0 0 1040 358" xmlns="http://www.w3.org/2000/svg" role="img">
         <g fill="#F2EBDD" opacity=".22">
-          <circle cx="60" cy="80" r="1.1"/><circle cx="150" cy="360" r="1.4"/><circle cx="240" cy="60" r="1"/>
-          <circle cx="330" cy="380" r="1.2"/><circle cx="360" cy="60" r="1"/><circle cx="470" cy="330" r="1.3"/>
-          <circle cx="560" cy="380" r="1"/><circle cx="600" cy="40" r="1.2"/><circle cx="700" cy="330" r="1"/>
+          <circle cx="60" cy="80" r="1.1"/><circle cx="150" cy="336" r="1.4"/><circle cx="240" cy="60" r="1"/>
+          <circle cx="330" cy="344" r="1.2"/><circle cx="360" cy="60" r="1"/><circle cx="470" cy="330" r="1.3"/>
+          <circle cx="560" cy="342" r="1"/><circle cx="600" cy="40" r="1.2"/><circle cx="700" cy="330" r="1"/>
           <circle cx="760" cy="40" r="1.3"/><circle cx="860" cy="300" r="1.1"/><circle cx="930" cy="260" r="1"/>
           <circle cx="990" cy="180" r="1.2"/><circle cx="110" cy="180" r="1"/><circle cx="510" cy="70" r="1.1"/>
         </g>
@@ -185,9 +185,10 @@
       ticking = false;
       var r = svg.getBoundingClientRect();
       var vh = window.innerHeight;
-      // 0 quand la constellation est collee en bas de l'ecran,
-      // 1 quand son centre atteint 35 % de la hauteur de l'ecran
-      var p = (vh - r.height - r.top) / (vh * 0.65 - r.height * 0.5);
+      var docTop = r.top + window.scrollY; // position fixe du svg dans le document
+      var endTop = vh * 0.35 - r.height * 0.5; // r.top vise quand le centre est a 35 % de l'ecran
+      // p = 0 tout en haut de page, 1 quand le centre du svg atteint 35 % de l'ecran
+      var p = window.scrollY / (docTop - endTop);
       p = Math.max(0, Math.min(1, p));
       path.style.strokeDashoffset = String(L * (1 - p));
     }
