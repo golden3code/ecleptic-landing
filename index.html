@@ -22,7 +22,9 @@
   .hero .label{display:block;margin-bottom:30px}
   .hero h1{font-size:clamp(46px,10vw,104px);font-weight:200;text-transform:uppercase;letter-spacing:-.015em;line-height:.98}
   .hero h1 .gold{color:var(--gold)}
-  .hero .sub{max-width:460px;margin-top:36px;color:var(--muted);font-size:16.5px;line-height:1.75}
+  .constellation{margin-top:52px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .constellation::-webkit-scrollbar{display:none}
+  .constellation svg{display:block;min-width:860px;width:100%;height:auto}
   .hero .actions{margin-top:44px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
   .hero .quiet{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:17px 0}
   .hero .quiet:hover{color:var(--gold)}
@@ -33,11 +35,6 @@
   .fact .what{font-size:15px;text-transform:uppercase;letter-spacing:.12em;font-weight:300}
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
   @media(max-width:560px){.fact{grid-template-columns:40px 1fr auto;gap:12px}.fact .what{font-size:12px}}
-
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:0}
-  @media(max-width:640px){.shots{grid-template-columns:1fr}}
-  .shot{position:relative;aspect-ratio:9/16;background:var(--card);overflow:hidden}
-  .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:saturate(.92)}
 
   .steps{padding-block:100px}
   .steps .display{font-size:clamp(30px,6vw,54px);margin-bottom:70px}
@@ -51,7 +48,9 @@
   .journalhome .all{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none}
   .journalhome .all:hover{color:var(--gold)}
 
-  .finale{padding:130px 24px;text-align:center;border-top:1px solid var(--line);margin-top:80px}
+  .finale{padding:150px 24px 320px;text-align:center;border-top:1px solid var(--line);margin-top:80px;
+          background:url('/assets/moon.jpg') center bottom/cover no-repeat #000}
+  @media(max-width:640px){.finale{padding-bottom:220px}}
   .finale .label{display:block;margin-bottom:30px}
   .finale h2{font-size:clamp(30px,6.4vw,58px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin-bottom:26px}
   .finale h2 .gold{color:var(--gold)}
@@ -72,7 +71,36 @@
 <header class="hero wrap-wide">
   <span class="label">Sommeil &nbsp;·&nbsp; Nutrition &nbsp;·&nbsp; Entraînement</span>
   <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
-  <p class="sub">Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui.</p>
+  <div class="constellation" aria-label="Les domaines du Labo Ecleptic, reliés par une ligne">
+    <svg viewBox="0 0 1000 170" xmlns="http://www.w3.org/2000/svg" role="img">
+      <polyline points="62,78 160,104 258,68 356,98 454,72 552,102 650,70 748,96 846,74 940,86"
+                fill="none" stroke="#D9A441" stroke-width="1" opacity=".8"/>
+      <g fill="#D9A441">
+        <circle cx="62" cy="78" r="5"/>
+        <circle cx="160" cy="104" r="3.4"/>
+        <circle cx="258" cy="68" r="4.4"/>
+        <circle cx="356" cy="98" r="3.8"/>
+        <circle cx="454" cy="72" r="5.4"/>
+        <circle cx="552" cy="102" r="3.4"/>
+        <g><circle cx="650" cy="70" r="4"/><ellipse cx="650" cy="70" rx="9" ry="3" fill="none" stroke="#D9A441" stroke-width=".8" opacity=".7"/></g>
+        <circle cx="748" cy="96" r="3.6"/>
+        <circle cx="846" cy="74" r="4.6"/>
+        <circle cx="940" cy="86" r="3.2"/>
+      </g>
+      <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" letter-spacing="2.2" fill="#9A8E77" text-anchor="middle" style="text-transform:uppercase">
+        <text x="62" y="52">SOMMEIL</text>
+        <text x="160" y="134">READINESS</text>
+        <text x="258" y="42">SPORT</text>
+        <text x="356" y="128">RÉCUPÉRATION</text>
+        <text x="454" y="46">ALIMENTATION</text>
+        <text x="552" y="132">CHARGE</text>
+        <text x="650" y="42">RÉGULARITÉ</text>
+        <text x="748" y="126">HUMEUR</text>
+        <text x="846" y="48">CONTEXTE</text>
+        <text x="940" y="116">ÉNERGIE</text>
+      </g>
+    </svg>
+  </div>
   <div class="actions">
     <a class="btn" href="/articles/" onclick="track('home_cta_click',{placement:'hero_journal'})">Lire le journal</a>
     <a class="quiet" href="/beta.html" onclick="track('home_cta_click',{placement:'hero_beta'})">Accéder à la bêta →</a>
@@ -84,14 +112,6 @@
   <div class="fact"><span class="no">02</span><span class="what">Domaines croisés — sommeil, assiette, effort</span><span class="val">3</span></div>
   <div class="fact"><span class="no">03</span><span class="what">Ton repas compté, à partir d'une photo</span><span class="val">✓</span></div>
   <div class="fact"><span class="no">04</span><span class="what">Moyennes génériques dans le calcul</span><span class="val">0</span></div>
-</div>
-
-<div class="wrap-wide" style="margin-top:2px">
-  <div class="shots">
-    <div class="shot"><img src="/shots/1.png" alt="Ecleptic — écran d'accueil avec le score du jour" onerror="this.parentNode.remove()"></div>
-    <div class="shot"><img src="/shots/2.png" alt="Ecleptic — suivi de l'alimentation" onerror="this.parentNode.remove()"></div>
-    <div class="shot"><img src="/shots/3.png" alt="Ecleptic — le Labo, analyses et tendances" onerror="this.parentNode.remove()"></div>
-  </div>
 </div>
 
 <section class="steps wrap">

@@ -8,75 +8,61 @@
 <meta property="og:title" content="Le Guide d'Optimisation — Ecleptic">
 <meta property="og:description" content="7 leviers scientifiques, 7 jours pour sentir la différence. Sommeil, alimentation, entraînement.">
 <meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/site.css">
 <style>
-  :root{
-    --gold:#D9A441; --gold-soft:#B07A2A; --ink:#F2EBDD; --muted:#9A8E77;
-    --bg:#0B0A08; --card:#161310; --line:#2A241B;
-    color-scheme:dark;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding-bottom:110px}
-  .wrap{max-width:680px;margin:0 auto;padding:0 24px}
-  header{padding:48px 0 8px;text-align:center}
-  .logo{font-size:15px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600}
-  h1{font-size:clamp(30px,6vw,44px);font-weight:700;letter-spacing:-.02em;margin:20px 0 0}
-  h1 em{font-style:normal;color:var(--gold)}
-  .pitch{max-width:520px;margin:16px auto 0;color:var(--muted);font-size:clamp(16px,2.5vw,18px)}
-  .badge{display:inline-block;margin-top:20px;border:1px solid var(--gold);color:var(--gold);
-         border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600}
+  body{padding-bottom:96px}
+  .ghead{padding:80px 0 30px}
+  .ghead .label{display:block;margin-bottom:26px}
+  .ghead h1{font-size:clamp(34px,7vw,58px)}
+  .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:480px}
+  .intro{margin:26px 0 10px}
+  .intro p{color:var(--muted);font-size:16px}
 
-  .lever{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 24px;margin:22px 0}
-  .lever .num{font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:600}
-  .lever h2{font-size:21px;margin:8px 0 10px;letter-spacing:-.01em}
-  .lever p{color:var(--ink);font-size:15.5px;margin-bottom:10px}
+  .lever{border-top:1px solid var(--line);padding:46px 0 40px}
+  .lever:last-of-type{border-bottom:1px solid var(--line)}
+  .lever .num{display:block;margin-bottom:16px}
+  .lever h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:16px}
+  .lever p{font-size:16px;margin-bottom:12px}
   .lever p.why{color:var(--muted)}
-  .proto{border:1px solid var(--line);background:var(--bg);border-radius:14px;padding:14px 16px;margin-top:12px}
-  .proto .lbl{color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
-  .proto p{font-size:15px;margin-bottom:6px}
+  .proto{border:1px solid var(--line);padding:20px 22px;margin-top:20px}
+  .proto .lbl{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  .proto p{font-size:15px;margin-bottom:8px}
   .proto p:last-child{margin-bottom:0}
-  .bridge{margin-top:12px;font-size:13.5px;color:var(--muted);border-left:2px solid var(--gold-soft);padding-left:12px}
+  .bridge{margin-top:16px;font-size:13.5px;color:var(--muted);border-left:1px solid var(--gold);padding-left:14px}
 
-  .intro,.outro{margin:36px 0}
-  .intro p,.outro p{color:var(--muted);font-size:16px;margin-bottom:12px}
-  .outro{background:var(--card);border:1px solid var(--gold-soft);border-radius:20px;padding:32px 26px;text-align:center}
-  .outro h2{font-size:24px;margin-bottom:12px}
-  .outro h2 em{font-style:normal;color:var(--gold)}
-  .outro p{color:var(--ink)}
-  .outro p.sub{color:var(--muted);font-size:14.5px}
-
-  .cta{display:inline-block;border:0;cursor:pointer;background:var(--gold);color:#1C1710;text-decoration:none;
-       padding:16px 34px;border-radius:14px;font-size:17px;font-weight:600;box-shadow:0 8px 24px rgba(217,164,65,.18)}
-  .cta:active{transform:translateY(1px)}
-
-  .stickybar{position:fixed;left:0;right:0;bottom:0;background:rgba(11,10,8,.82);backdrop-filter:blur(14px);
-             -webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:14px 24px calc(14px + env(safe-area-inset-bottom));
-             display:flex;align-items:center;justify-content:center;gap:16px}
-  .stickybar span{font-size:14px;color:var(--muted);max-width:280px}
-  .stickybar .cta{padding:12px 22px;font-size:15px;white-space:nowrap}
-  @media(max-width:520px){.stickybar span{display:none}}
-
-  footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0 48px;text-align:center;color:var(--muted);font-size:13px}
-  footer a{color:var(--muted)}
-  .disclaimer{max-width:560px;margin:10px auto 0}
+  .stickybar{position:fixed;left:0;right:0;bottom:0;background:rgba(11,10,8,.86);backdrop-filter:blur(14px);
+             -webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+             padding:14px 24px calc(14px + env(safe-area-inset-bottom));
+             display:flex;align-items:center;justify-content:center;gap:20px}
+  .stickybar span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .stickybar .btn{padding:13px 24px}
+  @media(max-width:560px){.stickybar span{display:none}}
 </style>
 </head>
 <body>
-
-<header class="wrap">
-  <div class="logo">Ecleptic</div>
-  <h1>Le Guide <em>d'Optimisation</em></h1>
-  <p class="pitch">7 leviers scientifiques. 7 jours pour sentir la différence. Sommeil, énergie, performance — sans supplément miracle, sans gadget à 500 €.</p>
-  <span class="badge">Lecture : 6 minutes · 100 % actionnable</span>
-</header>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/">Accueil</a>
+    <a href="/articles/">Journal</a>
+    <a href="/guide.html" class="on">Guide</a>
+    <a href="/beta.html">La bêta</a>
+  </div>
+</nav>
 
 <main class="wrap">
+  <header class="ghead">
+    <span class="label">Guide gratuit &nbsp;·&nbsp; Lecture : 6 minutes</span>
+    <h1 class="display">Le guide<br><span class="gold">d'optimisation</span>.</h1>
+    <p>7 leviers scientifiques. 7 jours pour sentir la différence. Sommeil, énergie, performance — sans supplément miracle, sans gadget à 500 €.</p>
+  </header>
 
   <div class="intro">
     <p>Le biohacking, ce n'est pas des bains glacés à 5 h du matin. C'est comprendre trois systèmes — ton sommeil, ton alimentation, ton entraînement — et arrêter de les traiter séparément. Chaque levier ci-dessous est simple, gratuit, et appuyé par la recherche. Applique-en un par jour.</p>
   </div>
 
   <section class="lever">
-    <div class="num">Levier 01 · Sommeil</div>
+    <span class="num label"><span class="gold">Levier 01</span> &nbsp;·&nbsp; Sommeil</span>
     <h2>La lumière du matin règle ton horloge</h2>
     <p class="why">Ton rythme circadien pilote quasiment tout : énergie, faim, humeur, hormones. Et il se règle par les yeux. 10 minutes de lumière naturelle dans l'heure qui suit le réveil avancent ta sécrétion de mélatonine le soir — tu t'endors plus vite, tu dors plus profond.</p>
     <div class="proto">
@@ -87,7 +73,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 02 · Énergie</div>
+    <span class="num label"><span class="gold">Levier 02</span> &nbsp;·&nbsp; Énergie</span>
     <h2>Retarde ton premier café de 90 minutes</h2>
     <p class="why">Au réveil, ton cortisol est déjà au maximum — le café n'apporte presque rien à ce moment-là. Pire : la caféine bloque l'adénosine sans l'éliminer, et elle te retombe dessus en début d'après-midi (le fameux coup de barre de 14 h).</p>
     <div class="proto">
@@ -98,7 +84,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 03 · Alimentation</div>
+    <span class="num label"><span class="gold">Levier 03</span> &nbsp;·&nbsp; Alimentation</span>
     <h2>Les protéines d'abord, le reste suit</h2>
     <p class="why">Si tu ne dois suivre qu'un seul chiffre nutritionnel, c'est celui-là : 1,6 à 2,2 g de protéines par kilo de poids de corps et par jour. C'est le facteur nº1 de la récupération musculaire, de la satiété (donc du contrôle du poids) et du maintien de la masse maigre.</p>
     <div class="proto">
@@ -110,7 +96,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 04 · Sommeil</div>
+    <span class="num label"><span class="gold">Levier 04</span> &nbsp;·&nbsp; Sommeil</span>
     <h2>Frais, sombre, régulier</h2>
     <p class="why">Ton corps doit perdre ~1 °C de température interne pour plonger en sommeil profond. Une chambre trop chaude est le saboteur nº1. Et la régularité des horaires compte plus que la durée : se coucher à heure fixe stabilise toute ton architecture de sommeil.</p>
     <div class="proto">
@@ -121,7 +107,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 05 · Entraînement</div>
+    <span class="num label"><span class="gold">Levier 05</span> &nbsp;·&nbsp; Entraînement</span>
     <h2>La zone 2, le moteur que tout le monde néglige</h2>
     <p class="why">80 % du cardio des athlètes d'endurance se fait à basse intensité — et ce n'est pas un hasard. La zone 2 (tu peux parler en phrases complètes) construit tes mitochondries, ta base aérobie et ta récupération. C'est aussi le meilleur prédicteur de longévité mesurable : ta VO₂max.</p>
     <div class="proto">
@@ -132,7 +118,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 06 · Récupération</div>
+    <span class="num label"><span class="gold">Levier 06</span> &nbsp;·&nbsp; Récupération</span>
     <h2>Écoute tes données, pas ta motivation</h2>
     <p class="why">Le progrès ne vient pas de l'entraînement — il vient de la récupération qui suit. Ta fréquence cardiaque au repos et ta variabilité cardiaque (HRV) te disent chaque matin si ton corps a encaissé la veille. S'entraîner à fond un jour où ton système nerveux est dans le rouge, c'est creuser un trou.</p>
     <div class="proto">
@@ -143,7 +129,7 @@
   </section>
 
   <section class="lever">
-    <div class="num">Levier 07 · Le méta-levier</div>
+    <span class="num label"><span class="gold">Levier 07</span> &nbsp;·&nbsp; Le méta-levier</span>
     <h2>Ce qui se mesure s'améliore</h2>
     <p class="why">Le vrai secret des gens « optimisés », ce n'est aucun des leviers ci-dessus. C'est la boucle de feedback : mesurer → ajuster → re-mesurer. Sans mesure, tu navigues au ressenti — et le ressenti ment (le manque de sommeil, par exemple, dégrade ton jugement sur ton propre état).</p>
     <div class="proto">
@@ -153,24 +139,25 @@
     </div>
   </section>
 
-  <div class="outro">
-    <h2>Tu peux tenir tout ça à la main.<br>Ou laisser une app le faire <em>pour toi</em>.</h2>
-    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, et te dit chaque matin ce qui compte vraiment aujourd'hui. Les 7 leviers de ce guide y sont suivis automatiquement.</p>
-    <p class="sub" style="margin:10px 0 22px">Bêta iOS ouverte — gratuite, toutes fonctionnalités débloquées.</p>
-    <a class="cta" id="ctaMain" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger Ecleptic (bêta gratuite)</a>
-    <p class="sub" style="margin-top:12px">iPhone · iOS 16.4+ · via TestFlight, l'app de bêtas officielles d'Apple</p>
+  <div class="reward" style="border-top:0">
+    <span class="label">Pour aller plus loin</span>
+    <h2>Tu peux tenir tout ça à la main.<br>Ou laisser une app le faire pour toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Les 7 leviers de ce guide y sont suivis automatiquement. Bêta iOS ouverte — gratuite.</p>
+    <a class="btn gold" id="ctaMain" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger la bêta</a>
+    <p style="margin-top:18px;font-size:12.5px;color:var(--muted)">iPhone · iOS 16.4+ · via TestFlight, l'app de bêtas officielles d'Apple</p>
   </div>
-
 </main>
 
 <div class="stickybar">
-  <span>Les 7 leviers, suivis automatiquement.</span>
-  <a class="cta" id="ctaSticky" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger la bêta</a>
+  <span>Les 7 leviers, suivis automatiquement</span>
+  <a class="btn gold" id="ctaSticky" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger la bêta</a>
 </div>
 
-<footer class="wrap">
-  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@ecleptic.app">Contact</a>
-  <p class="disclaimer">Ecleptic est une application de bien-être. Ce guide et l'application ne remplacent pas un avis médical et ne constituent pas un dispositif médical.</p>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialité</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-être. Ce guide et l'application ne remplacent pas un avis médical et ne constituent pas un dispositif médical.</p>
+  </div>
 </footer>
 
 <script>
@@ -181,13 +168,10 @@
   }
   function track(ev,props){ if(window.posthog && POSTHOG_KEY) posthog.capture(ev,props||{}); }
 
-  // Provenance (ex: guide.html?src=instagram) pour mesurer le funnel par réseau
   var SRC = null;
   try { SRC = new URLSearchParams(location.search).get("src"); } catch(_) {}
-
   track("guide_view", {src: SRC});
 
-  // Profondeur de lecture (50 % et fin de page), une seule fois chacune
   var fired = {};
   window.addEventListener("scroll", function(){
     var h = document.documentElement;
