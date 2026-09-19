@@ -22,6 +22,9 @@
   .hero .label{display:block;margin-bottom:30px}
   .hero h1{font-size:clamp(46px,10vw,104px);font-weight:200;text-transform:uppercase;letter-spacing:-.015em;line-height:.98}
   .hero h1 .gold{color:var(--gold)}
+  .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.05em);transition:opacity .5s ease-out,transform .5s ease-out}
+  .hero h1 .ch.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.hero h1 .ch{opacity:1;transform:none;transition:none}}
   .skyband{padding:38vh 0 72vh}
   .skyfield{position:relative}
   .starfield{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:56vh;pointer-events:none;z-index:0}
@@ -76,6 +79,42 @@
 <header class="hero">
   <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
 </header>
+<script>
+  // "s'aligne." : les caracteres apparaissent au chargement, vite au debut puis
+  // de plus en plus espaces (delais en i^2 -> deceleration). Le point suit dans
+  // la meme continuite, en gardant sa couleur d'origine (hors .gold).
+  (function(){
+    var gold = document.querySelector('.hero h1 .gold');
+    if (!gold) return;
+    var h1 = gold.closest('h1');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var BASE = 100, SPREAD = 1000, P = 2, DENOM = 7, idx = 0, spans = [];
+    function mkCh(ch){
+      var s = document.createElement('span');
+      s.className = 'ch';
+      s.setAttribute('aria-hidden','true');
+      s.textContent = ch;
+      if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/DENOM, P)).toFixed(0)+'ms';
+      idx++;
+      spans.push(s);
+      return s;
+    }
+    // Lettres de "s'aligne" -> dans .gold (dorees), delais inchanges.
+    var letters = Array.from(gold.textContent);
+    gold.setAttribute('aria-label', gold.textContent);
+    gold.textContent = '';
+    letters.forEach(function(c){ gold.appendChild(mkCh(c)); });
+    // Le point apres .gold -> reste dans le h1, anime en continuite.
+    var after = gold.nextSibling;
+    if (after && after.nodeType === 3 && after.textContent.indexOf('.') !== -1){
+      h1.replaceChild(mkCh(after.textContent), after);
+    }
+    if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      spans.forEach(function(s){ s.classList.add('in'); });
+    });});
+  })();
+</script>
 
 <section class="skyband">
   <div class="skyfield">
