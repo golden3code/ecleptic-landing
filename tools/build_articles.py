@@ -99,16 +99,18 @@ footer.site a:hover{color:var(--gold)}
 .stats .l{display:block;margin-top:10px}
 .themes{margin:40px 0 8px}
 .themes .label{display:block;margin-bottom:16px}
-.themerow{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-left:0;margin-bottom:10px}
-.themerow.single{grid-template-columns:1fr}
+.themescroll{border:1px solid var(--line);max-height:230px;overflow-y:auto;overscroll-behavior:contain;
+             scrollbar-width:thin;scrollbar-color:rgba(154,142,119,.4) transparent}
+.themescroll::-webkit-scrollbar{width:4px}
+.themescroll::-webkit-scrollbar-thumb{background:rgba(154,142,119,.4)}
 .theme{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;
        background:none;border:0;border-left:2px solid rgba(154,142,119,.45);color:var(--muted);
-       padding:11px 18px;font-size:11.5px;letter-spacing:.25em;text-transform:uppercase;
+       padding:12px 18px;font-size:11.5px;letter-spacing:.25em;text-transform:uppercase;
        cursor:pointer;transition:color .2s,border-color .2s;font-family:inherit}
+.theme+.theme{border-top:1px solid var(--line)}
 .theme .count{font-size:13px;letter-spacing:0;font-weight:300}
 .theme:hover{color:var(--ink)}
 .theme.on{color:var(--ink);border-left-color:var(--gold)}
-@media(max-width:560px){.themerow{grid-template-columns:1fr}.themerow .theme+.theme{border-top:1px solid var(--line)}}
 .quote{margin:54px 0 10px;text-align:left}
 .quote p{font-size:clamp(17px,2.8vw,21px);font-weight:300;font-style:italic;color:var(--ink)}
 .quote .label{display:block;margin-top:14px}
@@ -248,15 +250,11 @@ def index_page():
         for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True)
     )
     counts = {d: sum(1 for a in ARTICLES if cat(a) == d) for d in DOMAINS}
-    def btn(d):
-        return """<button class="theme" data-filter="%s"><span>%s</span><span class="count">%d</span></button>""" % (
-            html.escape(d), html.escape(d), counts[d])
-    rows = []
-    for i in range(0, len(DOMAINS), 2):
-        pair = DOMAINS[i:i + 2]
-        cls = "themerow" if len(pair) == 2 else "themerow single"
-        rows.append('<div class="%s">%s</div>' % (cls, "".join(btn(d) for d in pair)))
-    themes = "\n".join(rows)
+    themes = "\n".join(
+        """<button class="theme" data-filter="%s"><span>%s</span><span class="count">%d</span></button>"""
+        % (html.escape(d), html.escape(d), counts[d])
+        for d in DOMAINS
+    )
     empty = "" if ARTICLES else """<div class="empty">Les premiers textes sont en préparation.<br>La station ouvre bientôt son journal.</div>"""
     return """<!doctype html>
 <html lang="fr">
@@ -285,8 +283,10 @@ def index_page():
   </div>
   <div class="themes">
     <span class="label">Thèmes du journal</span>
-    <div class="themerow single"><button class="theme on" data-filter="*"><span>Tout le journal</span><span class="count">%(narticles)d</span></button></div>
+    <div class="themescroll">
+    <button class="theme on" data-filter="*"><span>Tout le journal</span><span class="count">%(narticles)d</span></button>
 %(themes)s
+    </div>
   </div>
   <div class="quote">
     <p>« Chaque décision que tu prends — de ce que tu manges à ce que tu fais de ta soirée — fait de toi qui tu seras demain. »</p>
