@@ -282,8 +282,8 @@ def index_page():
 %(themes)s
   </div>
   <div class="quote">
-    <p>« La qualité d'une journée se décide la veille au soir. »</p>
-    <span class="label">Ecleptic &nbsp;·&nbsp; Le journal</span>
+    <p>« Chaque décision que tu prends — de ce que tu manges à ce que tu fais de ta soirée — fait de toi qui tu seras demain. »</p>
+    <span class="label">Chris Hadfield &nbsp;·&nbsp; Astronaute, commandant de l'ISS</span>
   </div>
   <div class="journal" id="entries">
 %(cards)s
