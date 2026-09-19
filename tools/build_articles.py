@@ -23,6 +23,61 @@ ARTICLES = [
     #     "date": "2026-09-19",
     #     "body": """<p>...</p><h2>...</h2>""",
     # },
+    {
+        "slug": "combien-heures-sommeil-par-nuit",
+        "cat": "Sommeil",
+        "title": "Combien d'heures de sommeil faut-il vraiment par nuit ?",
+        "description": "7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.",
+        "date": "2026-09-19",
+        "body": """
+<p>La réponse courte : <strong>entre 7 et 9 heures</strong> pour la quasi-totalité des adultes. C'est la fourchette retenue par la National Sleep Foundation et par l'American Academy of Sleep Medicine, sur la base de centaines d'études. En dessous de 7 heures de façon répétée, les risques mesurables augmentent — métabolisme, immunité, humeur, accidents. Au-delà de 9 heures chez un adulte en bonne santé, c'est rarement un besoin : c'est souvent le signe d'une dette qui se rembourse, ou d'un sommeil de mauvaise qualité qui se compense en quantité.</p>
+<p>La réponse honnête : <em>ça dépend de toi</em>, et la variation est plus grande qu'on ne le croit. Ton besoin réel est largement génétique. Certaines personnes fonctionnent parfaitement avec 7 heures. D'autres ont besoin de 9 heures pour être au même niveau. Les vrais « courts dormeurs » naturels — moins de 6 heures sans aucun déficit — existent, mais ils sont rarissimes : quelques personnes sur mille. Statistiquement, ce n'est pas toi.</p>
+
+<h2>Pourquoi « 8 heures » est un malentendu</h2>
+<p>Le chiffre de 8 heures n'est pas faux, il est mal compris. C'est une <strong>moyenne de population</strong>, pas une prescription individuelle. Dire « il faut dormir 8 heures » revient à dire « il faut chausser du 42 » : c'est vrai en moyenne et faux pour la moitié des gens.</p>
+<p>Ce que la recherche montre de façon robuste, c'est la forme de la courbe : les risques pour la santé dessinent un U. Ils montent nettement sous 6 heures, restent bas entre 7 et 9, et remontent au-delà — probablement parce que dormir très longtemps est plus souvent un symptôme qu'une cause. Ta cible personnelle se trouve quelque part dans ce creux, et elle bouge selon les périodes de ta vie : charge d'entraînement, stress, maladie, sommeil en retard à rattraper.</p>
+
+<h2>Si tu t'entraînes, vise le haut de la fourchette</h2>
+<p>L'exercice augmente le besoin de sommeil, parce que c'est pendant la nuit que l'essentiel de la réparation se produit : sécrétion d'hormone de croissance en sommeil profond, synthèse protéique, consolidation des apprentissages moteurs.</p>
+<p>Les études d'« extension de sommeil » chez les sportifs sont parlantes : quand des basketteurs universitaires sont passés à 10 heures au lit par nuit pendant plusieurs semaines, leurs sprints se sont améliorés, leur précision au tir a gagné environ 9 points de pourcentage, et leur temps de réaction a chuté. À l'inverse, une seule nuit courte dégrade la force maximale modestement — mais dégrade nettement l'endurance, la motivation et la tolérance à l'effort dès le lendemain.</p>
+<ul>
+<li><strong>Tu t'entraînes 3-4 fois par semaine :</strong> vise 7 h 30 – 8 h 30 de sommeil réel.</li>
+<li><strong>Tu t'entraînes 5 fois ou plus, ou tu es en préparation :</strong> vise 8 – 9 heures, sieste comprise.</li>
+<li><strong>Période de sèche ou de déficit calorique :</strong> le manque de sommeil fait fondre le muscle en priorité — dans une étude célèbre, à déficit égal, les participants qui dormaient 5 h 30 perdaient 60 % de masse maigre en plus que ceux qui dormaient 8 h 30.</li>
+</ul>
+
+<h2>Temps au lit ≠ temps de sommeil</h2>
+<p>Détail qui change tout : ces chiffres parlent de <strong>sommeil réel</strong>, pas de temps passé au lit. Avec une efficacité de sommeil normale de 85-92 %, il faut environ 8 h 30 au lit pour dormir 7 h 45. Si tu te couches à minuit et te lèves à 7 h en croyant « dormir 7 heures », tu en dors probablement 6 h 15. C'est l'erreur de calcul la plus répandue — et elle suffit à créer une dette chronique invisible.</p>
+
+<h2>Les signes que tu ne dors pas assez</h2>
+<p>Ton corps répond à la question mieux qu'aucune règle générale. Les signaux fiables :</p>
+<ul>
+<li>Tu as <strong>besoin d'un réveil</strong> pour émerger, tous les jours, et il t'arrache au sommeil profond.</li>
+<li>Tu dors <strong>1 h 30 de plus ou davantage le week-end</strong> : c'est une dette qui se rembourse, pas de la paresse.</li>
+<li>Tu t'endors <strong>en moins de 5 minutes</strong> le soir — s'endormir instantanément n'est pas un talent, c'est un symptôme de privation.</li>
+<li>Coup de barre marqué en début d'après-midi, café indispensable pour tenir la matinée, irritabilité sans raison claire.</li>
+</ul>
+<p>Aucun de ces signes isolé n'est une preuve. Les quatre ensemble, si.</p>
+
+<h2>Trouver ton chiffre : le protocole des deux semaines</h2>
+<p>La méthode la plus fiable ne demande aucun matériel, juste une période calme (vacances, ou deux semaines sans grosses échéances) :</p>
+<ul>
+<li>Couche-toi chaque soir à la même heure, choisie pour te laisser au moins 8 h 30 devant toi.</li>
+<li><strong>Pas de réveil.</strong> Laisse ton corps se lever seul.</li>
+<li>Ignore les premières nuits : tu rembourses d'abord ta dette, les durées seront gonflées.</li>
+<li>Au bout de 10 à 14 jours, ta durée de réveil spontané se stabilise. <em>Ce chiffre-là est ton besoin réel.</em></li>
+</ul>
+<p>Ensuite, le travail consiste à protéger ce volume en semaine — et c'est là que la régularité des horaires compte presque autant que la durée elle-même : se coucher et se lever à heures fixes stabilise l'horloge circadienne, et améliore la qualité du sommeil à durée égale.</p>
+
+<h2>Ce qu'il faut retenir</h2>
+<ul>
+<li>7 à 9 heures de <strong>sommeil réel</strong> pour presque tout le monde ; le haut de la fourchette si tu t'entraînes sérieusement.</li>
+<li>« 8 heures » est une moyenne, pas ta prescription : ton besoin est personnel et se mesure.</li>
+<li>Compte 30 à 60 minutes de plus au lit que ta cible de sommeil.</li>
+<li>Réveil spontané, énergie stable en journée, pas de rattrapage massif le week-end : voilà à quoi ressemble un sommeil suffisant.</li>
+</ul>
+""",
+    },
 ]
 
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
