@@ -22,9 +22,9 @@
   .hero .label{display:block;margin-bottom:30px}
   .hero h1{font-size:clamp(46px,10vw,104px);font-weight:200;text-transform:uppercase;letter-spacing:-.015em;line-height:.98}
   .hero h1 .gold{color:var(--gold)}
-  .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.05em);transition:opacity .5s ease-out,transform .5s ease-out}
-  .hero h1 .ch.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){.hero h1 .ch{opacity:1;transform:none;transition:none}}
+  .hero h1 .ch, .steps h2 .ch{display:inline-block;opacity:0;transform:translateY(.05em);transition:opacity .5s ease-out,transform .5s ease-out}
+  .hero h1 .ch.in, .steps h2 .ch.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.hero h1 .ch, .steps h2 .ch{opacity:1;transform:none;transition:none}}
   .skyband{padding:38vh 0 72vh}
   .skyfield{position:relative}
   .starfield{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:56vh;pointer-events:none;z-index:0}
@@ -43,12 +43,14 @@
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
   @media(max-width:560px){.fact{grid-template-columns:40px 1fr auto;gap:12px}.fact .what{font-size:12px}}
 
-  .steps{padding-block:38vh 0}
-  .steps .display{font-size:clamp(30px,6vw,54px);margin-bottom:70px}
-  .step{margin-bottom:54px}
+  .steps{max-width:860px;margin:0 auto;padding:38vh 24px 0}
+  .steps .display{font-size:clamp(30px,6vw,54px);margin-bottom:150px}
+  .step{max-width:400px;margin-bottom:130px}
+  .step.right{margin-left:auto;text-align:right}
   .step .rn{font-size:22px;font-weight:200;color:var(--gold);letter-spacing:.2em}
   .step h3{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;margin:14px 0 12px}
   .step p{color:var(--muted);font-size:15.5px;max-width:440px}
+  @media(max-width:640px){.steps{max-width:none}.step{max-width:none}.step.right{margin-left:0;text-align:left}}
 
   .journalhome{padding-block:38vh 0}
   .journalhome .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
@@ -56,9 +58,15 @@
   .journalhome .all:hover{color:var(--gold)}
 
   .fadeblack{height:38vh;background:linear-gradient(var(--bg), #000)}
-  .finale{padding:110px 24px 320px;text-align:center;margin-top:0;
-          background:url('/assets/moon.jpg') center bottom/cover no-repeat #000}
-  @media(max-width:640px){.finale{padding-bottom:220px}}
+  .finale{padding:110px 24px 0;text-align:center;margin-top:0;background:#000}
+  .finale .btn{position:relative;z-index:1}
+  /* Lune : le sommet du disque (a 51 % de la hauteur de moon.jpg, image carree)
+     est cale pour affleurer le bouton, quel que soit l'ecran. */
+  .moonzone{position:relative;height:min(340px,44vw);overflow:hidden;margin:-46px -24px 0;pointer-events:none}
+  .moonzone::before{content:"";position:absolute;left:0;top:0;width:100%;padding-top:100%;
+          background:url('/assets/moon.jpg') top center/100% auto no-repeat;transform:translateY(-51%)}
+  .moonzone::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;
+          background:linear-gradient(rgba(0,0,0,0),#000)}
   footer.site{background:#000;border-top:0;margin-top:0}
   .finale .label{display:block;margin-bottom:30px}
   .finale h2{font-size:clamp(30px,6.4vw,58px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin-bottom:26px}
@@ -80,40 +88,46 @@
   <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
 </header>
 <script>
-  // "s'aligne." : les caracteres apparaissent au chargement, vite au debut puis
-  // de plus en plus espaces (delais en i^2 -> deceleration). Le point suit dans
-  // la meme continuite, en gardant sa couleur d'origine (hors .gold).
-  (function(){
-    var gold = document.querySelector('.hero h1 .gold');
-    if (!gold) return;
-    var h1 = gold.closest('h1');
+  // Apparition caractere par caractere, vite au debut puis de plus en plus
+  // espace (delais en i^2 -> deceleration). Reutilise pour "s'aligne." (au
+  // chargement) et "autrement." (a l'entree dans le viewport).
+  window.__revealWord = function(word){
+    if (!word) return null;
+    var parent = word.parentNode;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var BASE = 100, SPREAD = 1000, P = 2, DENOM = 7, idx = 0, spans = [];
+    var BASE = 100, SPREAD = 1000, P = 2, idx = 0, spans = [];
+    var letters = Array.from(word.textContent);
+    var denom = Math.max(1, letters.length - 1);
     function mkCh(ch){
       var s = document.createElement('span');
       s.className = 'ch';
       s.setAttribute('aria-hidden','true');
       s.textContent = ch;
-      if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/DENOM, P)).toFixed(0)+'ms';
+      if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
       idx++;
       spans.push(s);
       return s;
     }
-    // Lettres de "s'aligne" -> dans .gold (dorees), delais inchanges.
-    var letters = Array.from(gold.textContent);
-    gold.setAttribute('aria-label', gold.textContent);
-    gold.textContent = '';
-    letters.forEach(function(c){ gold.appendChild(mkCh(c)); });
-    // Le point apres .gold -> reste dans le h1, anime en continuite.
-    var after = gold.nextSibling;
+    word.setAttribute('aria-label', word.textContent);
+    word.textContent = '';
+    letters.forEach(function(c){ word.appendChild(mkCh(c)); });
+    // Un point juste apres le mot (hors du span) est anime en continuite,
+    // en gardant sa couleur d'origine.
+    var after = word.nextSibling;
     if (after && after.nodeType === 3 && after.textContent.indexOf('.') !== -1){
-      h1.replaceChild(mkCh(after.textContent), after);
+      parent.replaceChild(mkCh(after.textContent), after);
     }
-    if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+    return {spans: spans, reduce: reduce};
+  };
+  window.__revealPlay = function(r){
+    if (!r) return;
+    if (r.reduce){ r.spans.forEach(function(s){ s.classList.add('in'); }); return; }
     requestAnimationFrame(function(){ requestAnimationFrame(function(){
-      spans.forEach(function(s){ s.classList.add('in'); });
+      r.spans.forEach(function(s){ s.classList.add('in'); });
     });});
-  })();
+  };
+  // "s'aligne." dans le hero : joue au chargement.
+  window.__revealPlay(window.__revealWord(document.querySelector('.hero h1 .gold')));
 </script>
 
 <section class="skyband">
@@ -159,14 +173,14 @@
   <div class="fact"><span class="no">04</span><span class="what">Moyennes génériques dans le calcul</span><span class="val">0</span></div>
 </div>
 
-<section class="steps wrap">
+<section class="steps">
   <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
   <div class="step">
     <span class="rn">I</span>
     <h3>Mesurer</h3>
     <p>Ta nuit, tes vitaux, ta charge d'entraînement — captés automatiquement, sans saisie, pendant que tu vis.</p>
   </div>
-  <div class="step">
+  <div class="step right">
     <span class="rn">II</span>
     <h3>Comprendre</h3>
     <p>L'app croise les trois domaines. Elle sait que ta séance ratée vient de tes trois nuits courtes, pas de ta motivation.</p>
@@ -197,6 +211,7 @@
   <h2>La bêta n'est pas<br>pour tout le monde.<br><span class="gold">Peut-être pour toi.</span></h2>
   <p>Un petit cercle de testeurs, toutes les fonctionnalités débloquées, en échange de retours francs. iPhone, iOS 16.4+.</p>
   <a class="btn gold" href="/beta.html" onclick="track('home_cta_click',{placement:'finale'})">Demander l'accès</a>
+  <div class="moonzone" aria-hidden="true"></div>
 </section>
 
 <footer class="site">
@@ -273,6 +288,21 @@
     window.addEventListener('scroll', onScroll, {passive:true});
     window.addEventListener('resize', onScroll, {passive:true});
     update();
+  })();
+
+  // "autrement." : meme apparition que "s'aligne", jouee quand le titre
+  // "Entre dans ta journee autrement." entre dans le viewport.
+  (function(){
+    var word = document.querySelector('.steps h2 .dim');
+    if (!word || !window.__revealWord) return;
+    var r = window.__revealWord(word);   // decoupe : reste invisible jusqu'au declenchement
+    if (!r) return;
+    var h2 = word.closest('h2');
+    if (r.reduce || !('IntersectionObserver' in window)){ window.__revealPlay(r); return; }
+    var io = new IntersectionObserver(function(entries){
+      if (entries[0].isIntersecting){ window.__revealPlay(r); io.disconnect(); }
+    }, {threshold: 0.6});
+    io.observe(h2);
   })();
 </script>
 </body>

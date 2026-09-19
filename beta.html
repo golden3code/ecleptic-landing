@@ -5,62 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ecleptic — iOS Beta</title>
 <meta name="description" content="Ecleptic aligns your sleep, nutrition and training into one score. Join the TestFlight beta.">
-<meta property="og:title" content="Ecleptic — Everything aligns.">
+<meta property="og:title" content="Ecleptic — Here, it all begins.">
 <meta property="og:description" content="Sleep, nutrition, training: one score, one coach that understands it all. iOS beta open.">
 <meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/site.css">
 <style>
-  :root{
-    --gold:#D9A441; --gold-soft:#B07A2A; --ink:#F2EBDD; --muted:#9A8E77;
-    --bg:#0B0A08; --card:#161310; --line:#2A241B;
-    color-scheme:dark;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  /* Identite du site : typo light, capitales espacees, filets fins, sans arrondi. */
   .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-  .langbar{display:flex;justify-content:flex-end;gap:4px;padding:16px 24px 0;max-width:960px;margin:0 auto}
-  .langbar button{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;
-                  padding:6px 14px;font-size:13px;cursor:pointer;font-weight:600}
-  .langbar button.on{background:var(--gold);border-color:var(--gold);color:#1C1710}
-  header{padding:32px 0 8px;text-align:center}
-  .logo{font-size:15px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600}
-  h1{font-size:clamp(30px,6vw,48px);font-weight:700;letter-spacing:-.02em;margin:20px 0 0}
+  .langbar{display:flex;justify-content:flex-end;gap:10px;padding:20px 24px 0;max-width:960px;margin:0 auto}
+  .langbar button{background:none;border:1px solid var(--line);color:var(--muted);font-family:inherit;
+                  padding:8px 16px;font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;
+                  cursor:pointer;font-weight:400;transition:border-color .25s,color .25s}
+  .langbar button.on{border-color:var(--gold);color:var(--gold)}
+  header{padding:56px 0 8px;text-align:center}
+  .logo{font-size:14px;letter-spacing:.45em;text-transform:uppercase;color:var(--ink);font-weight:300}
+  h1{font-size:clamp(32px,6.4vw,56px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin:26px 0 0}
   h1 em{font-style:normal;color:var(--gold)}
-  .pitch{max-width:560px;margin:18px auto 0;color:var(--muted);font-size:clamp(16px,2.5vw,19px)}
-  .cta{display:inline-block;border:0;cursor:pointer;margin:32px auto 8px;background:var(--gold);color:#1C1710;text-decoration:none;
-       padding:16px 34px;border-radius:14px;font-size:17px;font-weight:600;box-shadow:0 8px 24px rgba(217,164,65,.18)}
+  .pitch{max-width:560px;margin:22px auto 0;color:var(--muted);font-size:clamp(15px,2.3vw,16.5px)}
+  .cta{display:inline-block;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer;
+       margin:40px auto 8px;text-decoration:none;padding:17px 36px;font-size:11.5px;font-weight:400;
+       letter-spacing:.25em;text-transform:uppercase;font-family:inherit;transition:background .25s,color .25s}
+  .cta:hover{background:var(--gold);color:#1C1710}
   .cta:active{transform:translateY(1px)}
-  .cta-note{font-size:13px;color:var(--muted);margin-top:10px}
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 8px}
+  .cta-note{font-size:12.5px;color:var(--muted);margin-top:14px}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:48px 0 8px}
   @media(max-width:640px){.shots{grid-template-columns:1fr;max-width:320px;margin-left:auto;margin-right:auto}}
-  .shot{position:relative;aspect-ratio:9/19.5;border-radius:28px;background:var(--card);border:1px solid var(--line);
-        overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+  .shot{position:relative;aspect-ratio:9/19.5;background:var(--card);border:1px solid var(--line);
+        overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted);
+        font-size:11px;letter-spacing:.2em;text-transform:uppercase}
   .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-  footer{border-top:1px solid var(--line);padding:24px 0 48px;text-align:center;color:var(--muted);font-size:13px}
-  footer a{color:var(--muted)}
-  .disclaimer{max-width:620px;margin:10px auto 0}
+  footer{border-top:1px solid var(--line);margin-top:72px;padding:32px 0 56px;text-align:center;color:var(--muted);
+         font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--gold)}
+  .disclaimer{max-width:620px;margin:16px auto 0;text-transform:none;letter-spacing:0}
 
   /* Questionnaire */
-  #quiz{max-width:560px;margin:24px auto 56px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
-  #quiz h2{font-size:19px;margin-bottom:4px}
-  #quiz .sub{color:var(--muted);font-size:14px;margin-bottom:20px}
-  .q{margin-bottom:20px}
-  .q label.title{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
-  .q small{font-weight:400;color:var(--muted)}
+  #quiz{max-width:560px;margin:24px auto 56px;background:var(--card);border:1px solid var(--line);padding:32px 28px;text-align:left}
+  #quiz h2{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold);margin-bottom:8px}
+  #quiz .sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+  .q{margin-bottom:22px}
+  .q label.title{display:block;font-weight:400;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+  .q small{font-weight:400;color:var(--muted);text-transform:none;letter-spacing:0}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chips input{position:absolute;opacity:0;pointer-events:none}
-  .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);
-              background:var(--bg);font-size:14px;color:var(--ink);cursor:pointer;user-select:none}
-  .chips input:checked + span{background:var(--gold);border-color:var(--gold);color:#1C1710;font-weight:600}
-  input[type=text],input[type=email]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
-              font-size:16px;background:var(--bg);color:var(--ink)}
-  input:focus{outline:2px solid var(--gold-soft)}
+  .chips span{display:inline-block;padding:9px 14px;border:1px solid var(--line);
+              background:none;font-size:13.5px;color:var(--ink);cursor:pointer;user-select:none;
+              transition:border-color .2s,color .2s}
+  .chips input:checked + span{border-color:var(--gold);color:var(--gold)}
+  input[type=text],input[type=email]{width:100%;padding:12px 14px;border:1px solid var(--line);
+              font-size:16px;background:var(--bg);color:var(--ink);font-family:inherit}
+  input:focus{outline:1px solid var(--gold-soft)}
   .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   @media(max-width:520px){.row{grid-template-columns:1fr}}
-  .submit{width:100%;margin:6px 0 0}
-  .hint{font-size:12.5px;color:var(--muted);margin-top:10px;text-align:center}
+  .submit{width:100%;margin:10px 0 0;text-align:center}
+  .hint{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center}
   #done{display:none;max-width:560px;margin:24px auto 56px;background:var(--card);border:1px solid var(--line);
-        border-radius:20px;padding:36px 28px;text-align:center}
-  #done h2{font-size:22px;margin-bottom:8px}
+        padding:40px 28px;text-align:center}
+  #done h2{font-size:17px;font-weight:300;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
   #done p{color:var(--muted);font-size:15px;margin-bottom:6px}
   .err{display:none;color:#E07A50;font-size:14px;margin-top:10px;text-align:center}
 </style>
@@ -87,7 +89,7 @@
     <a class="cta" id="goQuiz" href="#quiz"></a>
     <p class="cta-note" id="t-ctanote"></p>
     <p id="spots" hidden style="margin-top:14px;display:inline-block;border:1px solid var(--gold);color:var(--gold);
-       border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600"></p>
+       padding:8px 16px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:400"></p>
   </div>
 </div>
 </div>
@@ -185,7 +187,7 @@
     <p id="t-step1"></p>
     <p id="t-step2"></p>
     <a class="cta" id="tfLink" href="https://testflight.apple.com/join/H5CQgDa7"></a>
-    <div style="margin-top:18px;text-align:left;border:1px solid var(--gold);border-radius:14px;padding:14px 16px">
+    <div style="margin-top:18px;text-align:left;border:1px solid var(--gold);padding:14px 16px">
       <p style="color:var(--gold);font-weight:600;margin-bottom:6px" id="t-tips-title"></p>
       <p id="t-tip-golden"></p>
       <p id="t-tip-lang"></p>
@@ -207,7 +209,7 @@
   var I18N = {
     en: {
       htmlTitle: "Ecleptic — iOS Beta",
-      title: 'Everything <em>aligns</em>.',
+      title: 'Here, it all <em>begins</em>.',
       pitch: "Your sleep, your nutrition and your training don't live in three separate apps. Ecleptic crosses them into one score and tells you, every morning, what actually matters today. iOS beta open — free, every feature unlocked.",
       shot1: "Screenshot 1 — Home", shot2: "Screenshot 2 — Nutrition", shot3: "Screenshot 3 — The Lab",
       cta: "Join the TestFlight beta",
@@ -240,7 +242,7 @@
     },
     fr: {
       htmlTitle: "Ecleptic — Bêta iOS",
-      title: "Tout <em>s'aligne</em>.",
+      title: "Ici, tout <em>commence</em>.",
       pitch: "Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui. Bêta iOS ouverte — gratuite, toutes fonctionnalités débloquées.",
       shot1: "Capture 1 — Accueil", shot2: "Capture 2 — Alimentation", shot3: "Capture 3 — Le Labo",
       cta: "Rejoindre la bêta TestFlight",
