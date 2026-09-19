@@ -451,7 +451,7 @@ def index_page():
 %(nav)s
 <main class="wrap">
   <div class="pagehead">
-    <span class="label">Journal Ecleptic</span>
+    <span class="label">Journal de la station spatiale</span>
     <h1 class="display" style="margin-top:22px">Des conseils<br>qui <span class="gold">s'appliquent</span>.</h1>
     <p>Sommeil, nutrition, entraînement, récupération. Court, sourcé, actionnable — la même exigence que dans l'app.</p>
   </div>

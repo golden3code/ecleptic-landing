@@ -18,13 +18,14 @@
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 <style>
-  .hero{padding-block:110px 90px;text-align:left}
+  .hero{padding-block:80px 90px;text-align:center}
   .hero .label{display:block;margin-bottom:30px}
   .hero h1{font-size:clamp(46px,10vw,104px);font-weight:200;text-transform:uppercase;letter-spacing:-.015em;line-height:.98}
   .hero h1 .gold{color:var(--gold)}
-  .constellation{margin-top:52px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .constellation::-webkit-scrollbar{display:none}
-  .constellation svg{display:block;min-width:860px;width:100%;height:auto}
+  .constellation{margin:56px auto 0;max-width:760px}
+  .constellation svg{display:block;width:100%;height:auto}
+  @media(max-width:640px){.constellation svg text{font-size:24px;letter-spacing:2px}}
+  .hero .actions{justify-content:center}
   .hero .actions{margin-top:44px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
   .hero .quiet{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:17px 0}
   .hero .quiet:hover{color:var(--gold)}
@@ -51,6 +52,7 @@
   .finale{padding:150px 24px 320px;text-align:center;border-top:1px solid var(--line);margin-top:80px;
           background:url('/assets/moon.jpg') center bottom/cover no-repeat #000}
   @media(max-width:640px){.finale{padding-bottom:220px}}
+  footer.site{background:#000;border-top:0;margin-top:0}
   .finale .label{display:block;margin-bottom:30px}
   .finale h2{font-size:clamp(30px,6.4vw,58px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin-bottom:26px}
   .finale h2 .gold{color:var(--gold)}
@@ -58,8 +60,7 @@
 </style>
 </head>
 <body>
-<nav class="site">
-  <a class="logo" href="/">Ecleptic</a>
+<nav class="site" style="justify-content:flex-end">
   <div class="links">
     <a href="/" class="on">Accueil</a>
     <a href="/articles/">Journal</a>
@@ -69,41 +70,38 @@
 </nav>
 
 <header class="hero wrap-wide">
-  <span class="label">Sommeil &nbsp;·&nbsp; Nutrition &nbsp;·&nbsp; Entraînement</span>
   <h1>Tout<br><span class="gold">s'aligne</span>.</h1>
-  <div class="constellation" aria-label="Les domaines du Labo Ecleptic, reliés par une ligne">
-    <svg viewBox="0 0 1000 170" xmlns="http://www.w3.org/2000/svg" role="img">
-      <polyline points="62,78 160,104 258,68 356,98 454,72 552,102 650,70 748,96 846,74 940,86"
-                fill="none" stroke="#D9A441" stroke-width="1" opacity=".8"/>
+  <div class="constellation" aria-label="Les domaines du Labo Ecleptic, disposés en cercle">
+    <svg viewBox="-130 0 1020 560" xmlns="http://www.w3.org/2000/svg" role="img">
+      <ellipse cx="380" cy="275" rx="290" ry="210" fill="none" stroke="#D9A441" stroke-width="1" opacity=".75"/>
       <g fill="#D9A441">
-        <circle cx="62" cy="78" r="5"/>
-        <circle cx="160" cy="104" r="3.4"/>
-        <circle cx="258" cy="68" r="4.4"/>
-        <circle cx="356" cy="98" r="3.8"/>
-        <circle cx="454" cy="72" r="5.4"/>
-        <circle cx="552" cy="102" r="3.4"/>
-        <g><circle cx="650" cy="70" r="4"/><ellipse cx="650" cy="70" rx="9" ry="3" fill="none" stroke="#D9A441" stroke-width=".8" opacity=".7"/></g>
-        <circle cx="748" cy="96" r="3.6"/>
-        <circle cx="846" cy="74" r="4.6"/>
-        <circle cx="940" cy="86" r="3.2"/>
+        <circle cx="380" cy="65"    r="5"/>
+        <circle cx="550.5" cy="105" r="4.4"/>
+        <circle cx="655.8" cy="210" r="5.2"/>
+        <g><circle cx="655.8" cy="340" r="4"/><ellipse cx="655.8" cy="340" rx="9.5" ry="3.2" fill="none" stroke="#D9A441" stroke-width=".8" opacity=".7"/></g>
+        <circle cx="550.5" cy="445" r="3.4"/>
+        <circle cx="380" cy="485"   r="3.8"/>
+        <circle cx="209.5" cy="445" r="3.6"/>
+        <circle cx="104.2" cy="340" r="4.2"/>
+        <circle cx="104.2" cy="210" r="4.6"/>
+        <circle cx="209.5" cy="105" r="3.4"/>
       </g>
-      <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" letter-spacing="2.2" fill="#9A8E77" text-anchor="middle" style="text-transform:uppercase">
-        <text x="62" y="52">SOMMEIL</text>
-        <text x="160" y="134">READINESS</text>
-        <text x="258" y="42">SPORT</text>
-        <text x="356" y="128">RÉCUPÉRATION</text>
-        <text x="454" y="46">ALIMENTATION</text>
-        <text x="552" y="132">CHARGE</text>
-        <text x="650" y="42">RÉGULARITÉ</text>
-        <text x="748" y="126">HUMEUR</text>
-        <text x="846" y="48">CONTEXTE</text>
-        <text x="940" y="116">ÉNERGIE</text>
+      <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" letter-spacing="2.4" fill="#9A8E77" style="text-transform:uppercase">
+        <text x="380" y="38" text-anchor="middle">SOMMEIL</text>
+        <text x="572" y="84" text-anchor="start">SPORT</text>
+        <text x="676" y="206" text-anchor="start">ALIMENTATION</text>
+        <text x="676" y="345" text-anchor="start">RÉGULARITÉ</text>
+        <text x="572" y="470" text-anchor="start">ÉNERGIE</text>
+        <text x="380" y="518" text-anchor="middle">CONTEXTE</text>
+        <text x="188" y="470" text-anchor="end">HUMEUR</text>
+        <text x="84" y="345" text-anchor="end">CHARGE</text>
+        <text x="84" y="206" text-anchor="end">RÉCUPÉRATION</text>
+        <text x="188" y="84" text-anchor="end">READINESS</text>
       </g>
     </svg>
   </div>
   <div class="actions">
-    <a class="btn" href="/articles/" onclick="track('home_cta_click',{placement:'hero_journal'})">Lire le journal</a>
-    <a class="quiet" href="/beta.html" onclick="track('home_cta_click',{placement:'hero_beta'})">Accéder à la bêta →</a>
+    <a class="btn gold" href="/beta.html" onclick="track('home_cta_click',{placement:'hero_beta'})">Accéder à la bêta</a>
   </div>
 </header>
 
@@ -135,7 +133,7 @@
 
 <section class="journalhome wrap">
   <div class="head">
-    <span class="label">Journal Ecleptic</span>
+    <span class="label">Journal de la station spatiale</span>
     <a class="all" href="/articles/">Tous les articles →</a>
   </div>
   <div class="journal">
