@@ -33,6 +33,33 @@
     <h1>HRV : c&#x27;est quoi la variabilité de fréquence cardiaque ?</h1>
     <p class="standfirst">La HRV mesure les micro-variations entre deux battements de cœur — le meilleur indicateur accessible de ta récupération. Comment la lire, et ce qui la fait bouger.</p>
   </header>
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
+  var letters = Array.from(text);
+  var denom = Math.max(1, letters.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  var spans = [], w = null, idx = 0;
+  letters.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>
   <figure class="hero"><img src="/assets/articles/hrv-variabilite-frequence-cardiaque.jpg" alt="HRV : c&#x27;est quoi la variabilité de fréquence cardiaque ?" width="1600" height="840"></figure>
   <p>La <strong>variabilité de fréquence cardiaque</strong> (HRV, pour heart rate variability) mesure une chose contre-intuitive : ton cœur ne bat pas comme un métronome, et c'est très bien. Entre deux battements, l'intervalle varie de quelques millisecondes — 850 ms, puis 910, puis 870. La HRV quantifie ces variations. <em>Plus elles sont grandes, mieux c'est.</em></p>
 <p>Pourquoi ? Parce que ces micro-ajustements sont le reflet direct de ton système nerveux autonome. Le système <strong>parasympathique</strong> — celui du repos, de la digestion, de la réparation — freine et relâche le cœur en permanence, ce qui crée de la variabilité. Quand le corps est sous pression (entraînement non digéré, nuit courte, stress, alcool, infection), le système <strong>sympathique</strong> — celui de l'alerte — prend le dessus : le cœur bat plus « droit », et la HRV chute. C'est pour ça qu'elle est au cœur de tous les <a href="/articles/readiness-score-comment-ca-marche.html">scores de préparation</a>.</p>

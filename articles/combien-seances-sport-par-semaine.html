@@ -33,6 +33,33 @@
     <h1>Combien de séances de sport par semaine pour progresser ?</h1>
     <p class="standfirst">3 à 5 séances bien récupérées battent 6 séances subies. Ce que dit la recherche sur la fréquence idéale en musculation et en cardio, selon ton niveau.</p>
   </header>
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
+  var letters = Array.from(text);
+  var denom = Math.max(1, letters.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  var spans = [], w = null, idx = 0;
+  letters.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>
   <figure class="hero"><img src="/assets/articles/combien-seances-sport-par-semaine.jpg" alt="Combien de séances de sport par semaine pour progresser ?" width="1600" height="840"></figure>
   <p>La réponse courte : <strong>3 à 5 séances par semaine</strong> suffisent pour progresser sérieusement — et pour la plupart des gens, 3 séances bien construites et bien récupérées battent 6 séances empilées sur un corps qui ne suit pas. La fréquence n'est pas un objectif en soi : c'est un outil pour distribuer du volume d'entraînement que tu peux <em>digérer</em>.</p>
 

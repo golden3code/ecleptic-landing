@@ -439,6 +439,10 @@ article li{margin-bottom:11px;font-size:16.5px;line-height:1.75}
 article li::marker{color:var(--gold)}
 article strong{font-weight:600}
 article em{color:var(--gold);font-style:normal}
+article h1 .w{display:inline-block;white-space:nowrap}
+article h1 .ch{display:inline-block;opacity:0;transform:translateY(.05em);transition:opacity .5s ease-out,transform .5s ease-out}
+article h1 .ch.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){article h1 .ch{opacity:1;transform:none;transition:none}}
 article .hero{margin:40px 0 10px}
 article .hero img{width:100%;height:auto;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.92)}
 /* fin d'article : la beta comme recompense */
@@ -456,8 +460,8 @@ article .hero img{width:100%;height:auto;display:block;border:1px solid var(--li
 .pagehead{padding:72px 0 24px}
 .pagehead h1{font-size:clamp(34px,7vw,60px)}
 .pagehead p{color:var(--muted);margin-top:22px;font-size:16px;max-width:480px}
-.journal{margin:36px 0 0}
-.journal a.entry{display:flex;gap:32px;align-items:center;justify-content:space-between;text-decoration:none;padding:30px 0;border-top:1px solid var(--line)}
+.journal{margin:92px 0 0}
+.journal a.entry{display:flex;gap:32px;align-items:center;justify-content:space-between;text-decoration:none;padding:60px 0;border-top:1px solid var(--line)}
 .journal a.entry:last-child{border-bottom:1px solid var(--line)}
 .entry .etext{flex:1;min-width:0}
 .entry .ethumb{flex:0 0 210px}
@@ -569,6 +573,37 @@ def article_page(a, others):
                 '<meta name="twitter:image" content="%s%s">' % (SITE, img, SITE, img)) if img else ""
     hero = ('\n  <figure class="hero"><img src="%s" alt="%s" width="1600" height="840"></figure>'
             % (img, html.escape(a["title"], quote=True))) if img else ""
+    # Titres-questions : apparition caractère par caractère, même animation que
+    # « s'aligne. » sur l'accueil (délais en i², 100→1100 ms, translateY .05em).
+    # Script inline juste après le header = anti-flash (split avant le 1er paint).
+    reveal = """
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\\u00bb])/g, '\\u00a0$1');
+  var letters = Array.from(text);
+  var denom = Math.max(1, letters.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  var spans = [], w = null, idx = 0;
+  letters.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>""" if "?" in a["title"] else ""
     jsonld_img = '"image":"%s%s",' % (SITE, img) if img else ""
     jsonld = (
         '{"@context":"https://schema.org","@type":"Article","headline":%s,'
@@ -604,7 +639,7 @@ def article_page(a, others):
     <span class="label"><span class="gold">%(cat)s</span> &nbsp;&middot;&nbsp; %(date)s &nbsp;&middot;&nbsp; %(mins)s min</span>
     <h1>%(title)s</h1>
     <p class="standfirst">%(desc)s</p>
-  </header>%(hero)s
+  </header>%(reveal)s%(hero)s
   %(body)s
   <div class="reward">
     <span class="label">Pour aller plus loin</span>
@@ -625,7 +660,7 @@ def article_page(a, others):
 </html>
 """ % {
         "title": html.escape(a["title"]), "desc": html.escape(a["description"], quote=True),
-        "url": url, "jsonld": jsonld, "og_image": og_image, "hero": hero,
+        "url": url, "jsonld": jsonld, "og_image": og_image, "hero": hero, "reveal": reveal,
         "nav": nav("articles"), "date": fr_date(a["date"]),
         "cat": html.escape(cat(a)), "mins": read_min(a),
         "body": a["body"].strip(), "tf": TF_LINK, "slug": a["slug"], "more": more,
