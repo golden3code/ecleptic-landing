@@ -432,12 +432,15 @@ article header{padding:64px 0 28px}
 article header .label{display:block;margin-bottom:22px}
 article h1{font-size:clamp(28px,5.4vw,44px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.08}
 article .standfirst{color:var(--muted);font-size:16px;margin-top:20px;line-height:1.7}
-article h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold);margin:44px 0 14px}
-article p{margin:0 0 16px;font-size:16.5px;color:var(--ink)}
-article ul{margin:0 0 16px 20px}
-article li{margin-bottom:8px;font-size:16.5px}
+article h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold);margin:52px 0 16px;padding-top:26px;border-top:1px solid var(--line)}
+article p{margin:0 0 18px;font-size:16.5px;color:var(--ink);line-height:1.8}
+article ul{margin:0 0 18px 22px}
+article li{margin-bottom:11px;font-size:16.5px;line-height:1.75}
+article li::marker{color:var(--gold)}
 article strong{font-weight:600}
 article em{color:var(--gold);font-style:normal}
+article .hero{margin:40px 0 10px}
+article .hero img{width:100%;height:auto;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.92)}
 /* fin d'article : la beta comme recompense */
 .reward{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:64px 0 8px;padding:52px 0;text-align:center}
 .reward .label{display:block;margin-bottom:20px}
@@ -454,8 +457,13 @@ article em{color:var(--gold);font-style:normal}
 .pagehead h1{font-size:clamp(34px,7vw,60px)}
 .pagehead p{color:var(--muted);margin-top:22px;font-size:16px;max-width:480px}
 .journal{margin:36px 0 0}
-.journal a.entry{display:block;text-decoration:none;padding:30px 0;border-top:1px solid var(--line)}
+.journal a.entry{display:flex;gap:32px;align-items:center;justify-content:space-between;text-decoration:none;padding:30px 0;border-top:1px solid var(--line)}
 .journal a.entry:last-child{border-bottom:1px solid var(--line)}
+.entry .etext{flex:1;min-width:0}
+.entry .ethumb{flex:0 0 210px}
+.entry .ethumb img{width:100%;aspect-ratio:1.9;object-fit:cover;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.9);transition:filter .25s}
+.journal a.entry:hover .ethumb img{filter:saturate(1) brightness(1)}
+@media(max-width:640px){.journal a.entry{flex-direction:column-reverse;align-items:stretch;gap:18px}.entry .ethumb{flex:none}}
 .journal .label{display:block;margin-bottom:12px}
 .journal h2{font-size:clamp(19px,3.4vw,25px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;color:var(--ink);line-height:1.25;transition:color .2s}
 .journal a.entry:hover h2{color:var(--gold)}
@@ -535,6 +543,14 @@ def fr_date(iso):
     return "%d %s %s" % (int(d), MONTHS_FR[int(m) - 1], y)
 
 
+def img_path(a):
+    """Chemin web de l'image de l'article, ou None si elle n'existe pas.
+    Convention : assets/articles/<slug>.jpg (1600x840)."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    rel = "assets/articles/%s.jpg" % a["slug"]
+    return "/" + rel if os.path.exists(os.path.join(root, rel)) else None
+
+
 def read_min(a):
     import re
     words = len(re.sub(r"<[^>]+>", " ", a["body"]).split())
@@ -547,16 +563,23 @@ def article_page(a, others):
         '<a href="/articles/%s.html">%s</a>' % (o["slug"], html.escape(o["title"]))
         for o in others[:3]
     )
+    img = img_path(a)
+    og_image = ('\n<meta property="og:image" content="%s%s">\n'
+                '<meta name="twitter:card" content="summary_large_image">\n'
+                '<meta name="twitter:image" content="%s%s">' % (SITE, img, SITE, img)) if img else ""
+    hero = ('\n  <figure class="hero"><img src="%s" alt="%s" width="1600" height="840"></figure>'
+            % (img, html.escape(a["title"], quote=True))) if img else ""
+    jsonld_img = '"image":"%s%s",' % (SITE, img) if img else ""
     jsonld = (
         '{"@context":"https://schema.org","@type":"Article","headline":%s,'
-        '"description":%s,"datePublished":"%s","inLanguage":"fr",'
+        '"description":%s,%s"datePublished":"%s","inLanguage":"fr",'
         '"author":{"@type":"Organization","name":"Ecleptic","url":"%s"},'
         '"publisher":{"@type":"Organization","name":"Ecleptic","url":"%s"},'
         '"mainEntityOfPage":"%s"}'
     ) % (
         __import__("json").dumps(a["title"], ensure_ascii=False),
         __import__("json").dumps(a["description"], ensure_ascii=False),
-        a["date"], SITE, SITE, url,
+        jsonld_img, a["date"], SITE, SITE, url,
     )
     return """<!doctype html>
 <html lang="fr">
@@ -569,7 +592,7 @@ def article_page(a, others):
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(desc)s">
 <meta property="og:type" content="article">
-<meta property="og:url" content="%(url)s">
+<meta property="og:url" content="%(url)s">%(og_image)s
 <script type="application/ld+json">%(jsonld)s</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
@@ -581,7 +604,7 @@ def article_page(a, others):
     <span class="label"><span class="gold">%(cat)s</span> &nbsp;&middot;&nbsp; %(date)s &nbsp;&middot;&nbsp; %(mins)s min</span>
     <h1>%(title)s</h1>
     <p class="standfirst">%(desc)s</p>
-  </header>
+  </header>%(hero)s
   %(body)s
   <div class="reward">
     <span class="label">Pour aller plus loin</span>
@@ -602,7 +625,8 @@ def article_page(a, others):
 </html>
 """ % {
         "title": html.escape(a["title"]), "desc": html.escape(a["description"], quote=True),
-        "url": url, "jsonld": jsonld, "nav": nav("articles"), "date": fr_date(a["date"]),
+        "url": url, "jsonld": jsonld, "og_image": og_image, "hero": hero,
+        "nav": nav("articles"), "date": fr_date(a["date"]),
         "cat": html.escape(cat(a)), "mins": read_min(a),
         "body": a["body"].strip(), "tf": TF_LINK, "slug": a["slug"], "more": more,
         "footer": FOOTER, "posthog": POSTHOG,
@@ -610,17 +634,21 @@ def article_page(a, others):
 
 
 def index_page():
-    cards = "\n".join(
-        """<a class="entry" href="/articles/%s.html" data-cat="%s">
+    def card(a):
+        img = img_path(a)
+        thumb = ('\n  <span class="ethumb"><img src="%s" alt="" loading="lazy"></span>'
+                 % img) if img else ""
+        return """<a class="entry" href="/articles/%s.html" data-cat="%s">
+  <span class="etext">
   <span class="label meta"><span class="gold">%s</span> &nbsp;&middot;&nbsp; %s &nbsp;&middot;&nbsp; %s min</span>
   <h2>%s</h2>
   <p class="desc">%s</p>
   <span class="readmore">Lire l'article →</span>
-</a>"""
-        % (a["slug"], html.escape(cat(a)), html.escape(cat(a)), fr_date(a["date"]),
-           read_min(a), html.escape(a["title"]), html.escape(a["description"]))
-        for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True)
-    )
+  </span>%s
+</a>""" % (a["slug"], html.escape(cat(a)), html.escape(cat(a)), fr_date(a["date"]),
+           read_min(a), html.escape(a["title"]), html.escape(a["description"]), thumb)
+
+    cards = "\n".join(card(a) for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True))
     counts = {d: sum(1 for a in ARTICLES if cat(a) == d) for d in DOMAINS}
     themes = "\n".join(
         """<button class="theme" data-filter="%s"><span>%s</span><span class="count">%d</span></button>"""
