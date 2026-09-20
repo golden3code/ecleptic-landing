@@ -4,31 +4,63 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le Guide d'Optimisation — Ecleptic</title>
-<meta name="description" content="7 leviers scientifiques pour optimiser ton sommeil, ton énergie et tes performances. Gratuit.">
+<meta name="description" content="7 leviers scientifiques pour optimiser ton sommeil, ton énergie et tes performances. Un chiffre à retenir par levier. Gratuit.">
 <meta property="og:title" content="Le Guide d'Optimisation — Ecleptic">
-<meta property="og:description" content="7 leviers scientifiques, 7 jours pour sentir la différence. Sommeil, alimentation, entraînement.">
+<meta property="og:description" content="7 leviers, 7 chiffres, 7 jours pour sentir la différence. Sommeil, alimentation, entraînement.">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
+  html{scroll-behavior:smooth}
   body{padding-bottom:96px}
-  .ghead{padding:80px 0 30px}
+  .ghead{padding:80px 0 26px}
   .ghead .label{display:block;margin-bottom:26px}
   .ghead h1{font-size:clamp(34px,7vw,58px)}
   .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:480px}
-  .intro{margin:26px 0 10px}
-  .intro p{color:var(--muted);font-size:16px}
 
-  .lever{border-top:1px solid var(--line);padding:46px 0 40px}
+  /* Sommaire — le guide en 30 secondes */
+  .toc{margin:44px 0 8px;position:relative;padding:8px 0 4px}
+  .toc::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .toc .label{display:block;margin:26px 0 6px}
+  .toc a{display:flex;align-items:baseline;gap:18px;text-decoration:none;padding:15px 0;position:relative}
+  .toc a::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .toc a:last-of-type::after{content:none}
+  .toc .n{font-size:11px;letter-spacing:.3em;color:var(--gold);flex:0 0 34px}
+  .toc .t{color:var(--ink);font-weight:300;font-size:15.5px;flex:1;transition:color .2s}
+  .toc .f{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+  .toc a:hover .t{color:var(--gold)}
+
+  /* Leviers */
+  .lever{border-top:1px solid var(--line);padding:52px 0 44px;scroll-margin-top:24px}
+  .toc + .lever{border-top:0}
   .lever:last-of-type{border-bottom:1px solid var(--line)}
+  .lhead{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+  .lhead .lmeta{min-width:0}
   .lever .num{display:block;margin-bottom:16px}
-  .lever h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:16px}
-  .lever p{font-size:16px;margin-bottom:12px}
-  .lever p.why{color:var(--muted)}
-  .proto{border:1px solid var(--line);padding:20px 22px;margin-top:20px}
-  .proto .lbl{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  .lever h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:14px}
+  .fig{flex:0 0 auto;text-align:right;margin-top:-6px}
+  .fig .v{display:block;font-size:clamp(38px,7vw,56px);font-weight:200;line-height:1;color:var(--gold);letter-spacing:-.02em;white-space:nowrap}
+  .fig .u{display:block;margin-top:8px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+  .lever p.why{color:var(--muted);font-size:15.5px;max-width:520px;margin-bottom:12px}
+  .proto{border:1px solid var(--line);padding:18px 22px;margin-top:18px}
   .proto p{font-size:15px;margin-bottom:8px}
   .proto p:last-child{margin-bottom:0}
   .bridge{margin-top:16px;font-size:13.5px;color:var(--muted);border-left:1px solid var(--gold);padding-left:14px}
+  @media(max-width:560px){
+    .lhead{flex-direction:column-reverse;gap:6px}
+    .fig{text-align:left;margin:0 0 18px}
+    .fig .v{font-size:34px}
+  }
+
+  /* Récap */
+  .recap{margin:56px 0 8px;border:1px solid var(--line);padding:36px 30px 30px}
+  .recap .label{display:block;margin-bottom:24px}
+  .recap ul{list-style:none}
+  .recap li{display:flex;align-items:baseline;gap:16px;padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;font-weight:300}
+  .recap li:first-child{border-top:0;padding-top:0}
+  .recap .n{font-size:10.5px;letter-spacing:.25em;color:var(--gold);flex:0 0 30px}
+  .recap .r{flex:1;color:var(--ink)}
+  .recap .c{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+  .recap .tip{margin-top:22px;font-size:12.5px;color:var(--muted)}
 
   .stickybar{position:fixed;left:0;right:0;bottom:0;background:rgba(11,10,8,.86);backdrop-filter:blur(14px);
              -webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
@@ -72,92 +104,141 @@
 
 <main class="wrap">
   <header class="ghead">
-    <span class="label">Guide gratuit &nbsp;·&nbsp; Lecture : 6 minutes</span>
+    <span class="label">Guide gratuit &nbsp;·&nbsp; 7 leviers &nbsp;·&nbsp; Lecture : 4 minutes</span>
     <h1 class="display">Le guide<br><span class="gold">d'optimisation</span>.</h1>
-    <p>7 leviers scientifiques. 7 jours pour sentir la différence. Sommeil, énergie, performance — sans supplément miracle, sans gadget à 500 €.</p>
+    <p>Un levier par jour, un chiffre à retenir par levier. Sommeil, énergie, performance — sans supplément miracle, sans gadget à 500&nbsp;€.</p>
   </header>
 
-  <div class="intro">
-    <p>Le biohacking, ce n'est pas des bains glacés à 5 h du matin. C'est comprendre trois systèmes — ton sommeil, ton alimentation, ton entraînement — et arrêter de les traiter séparément. Chaque levier ci-dessous est simple, gratuit, et appuyé par la recherche. Applique-en un par jour.</p>
-  </div>
+  <nav class="toc">
+    <span class="label">Le guide en 30 secondes</span>
+    <a href="#l1"><span class="n">01</span><span class="t">De la lumière dans l'heure qui suit le réveil</span><span class="f">10 min</span></a>
+    <a href="#l2"><span class="n">02</span><span class="t">Retarde ton premier café</span><span class="f">+90 min</span></a>
+    <a href="#l3"><span class="n">03</span><span class="t">Les protéines d'abord</span><span class="f">2 g/kg</span></a>
+    <a href="#l4"><span class="n">04</span><span class="t">Une chambre fraîche, des horaires fixes</span><span class="f">18 °C</span></a>
+    <a href="#l5"><span class="n">05</span><span class="t">L'essentiel de ton cardio en zone 2</span><span class="f">80 %</span></a>
+    <a href="#l6"><span class="n">06</span><span class="t">Écoute tes données, pas ta motivation</span><span class="f">60 s / matin</span></a>
+    <a href="#l7"><span class="n">07</span><span class="t">Ce qui se mesure s'améliore</span><span class="f">14 jours</span></a>
+  </nav>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 01</span> &nbsp;·&nbsp; Sommeil</span>
-    <h2>La lumière du matin règle ton horloge</h2>
-    <p class="why">Ton rythme circadien pilote quasiment tout : énergie, faim, humeur, hormones. Et il se règle par les yeux. 10 minutes de lumière naturelle dans l'heure qui suit le réveil avancent ta sécrétion de mélatonine le soir — tu t'endors plus vite, tu dors plus profond.</p>
+  <section class="lever" id="l1">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 01</span> &nbsp;·&nbsp; Sommeil</span>
+        <h2>La lumière du matin règle ton horloge</h2>
+      </div>
+      <div class="fig"><span class="v">10</span><span class="u">minutes</span></div>
+    </div>
+    <p class="why">Ton rythme circadien pilote énergie, faim, humeur, hormones — et il se règle par les yeux. La lumière naturelle du matin avance ta mélatonine du soir : tu t'endors plus vite, tu dors plus profond.</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Dans les 60 min après le réveil : 10 min dehors (ou balcon, fenêtre ouverte). Ciel couvert ça compte aussi — c'est 10× plus lumineux qu'un plafonnier.</p>
-      <p>→ Pas de lunettes de soleil pendant ces 10 min.</p>
+      <p>→ Dans les 60 min après le réveil : 10 min dehors, sans lunettes de soleil. Balcon ou fenêtre ouverte, ça compte.</p>
+      <p>→ Ciel couvert aussi : c'est encore 10× plus lumineux qu'un plafonnier.</p>
     </div>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 02</span> &nbsp;·&nbsp; Énergie</span>
-    <h2>Retarde ton premier café de 90 minutes</h2>
-    <p class="why">Au réveil, ton cortisol est déjà au maximum — le café n'apporte presque rien à ce moment-là. Pire : la caféine bloque l'adénosine sans l'éliminer, et elle te retombe dessus en début d'après-midi (le fameux coup de barre de 14 h).</p>
+  <section class="lever" id="l2">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 02</span> &nbsp;·&nbsp; Énergie</span>
+        <h2>Retarde ton premier café de 90 minutes</h2>
+      </div>
+      <div class="fig"><span class="v">+90</span><span class="u">minutes</span></div>
+    </div>
+    <p class="why">Au réveil, ton cortisol est déjà au maximum : le café n'apporte presque rien. Pire, la caféine bloque l'adénosine sans l'éliminer — et elle te retombe dessus vers 14&nbsp;h.</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Premier café 90 min après le réveil, dernier café 8 à 10 h avant le coucher (la demi-vie de la caféine est de ~5 h).</p>
-      <p>→ Au réveil : un grand verre d'eau à la place. Tu perds ~500 ml par nuit rien qu'en respirant.</p>
+      <p>→ Premier café 90 min après le réveil, dernier 8-10 h avant le coucher (demi-vie ≈ 5 h).</p>
+      <p>→ À la place, au réveil : un grand verre d'eau. Tu perds ~500 ml par nuit rien qu'en respirant.</p>
     </div>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 03</span> &nbsp;·&nbsp; Alimentation</span>
-    <h2>Les protéines d'abord, le reste suit</h2>
-    <p class="why">Si tu ne dois suivre qu'un seul chiffre nutritionnel, c'est celui-là : 1,6 à 2,2 g de protéines par kilo de poids de corps et par jour. C'est le facteur nº1 de la récupération musculaire, de la satiété (donc du contrôle du poids) et du maintien de la masse maigre.</p>
-    <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Vise ~30 g de protéines par repas. Repère simple : une portion de viande/poisson de la taille de ta paume ≈ 25-30 g.</p>
-      <p>→ Le petit-déjeuner est le repas le plus souvent raté : œufs, skyr, fromage blanc.</p>
+  <section class="lever" id="l3">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 03</span> &nbsp;·&nbsp; Alimentation</span>
+        <h2>Les protéines d'abord, le reste suit</h2>
+      </div>
+      <div class="fig"><span class="v">2</span><span class="u">g / kg / jour</span></div>
     </div>
-    <p class="bridge">C'est exactement ce genre de calcul qu'Ecleptic fait pour toi : tu prends ton repas en photo, l'app compte les protéines et ajuste ta cible du jour.</p>
+    <p class="why">Si tu ne suis qu'un seul chiffre nutritionnel, c'est celui-là : 1,6 à 2,2 g de protéines par kilo de poids de corps. Facteur nº1 de la récupération, de la satiété — donc du contrôle du poids.</p>
+    <div class="proto">
+      <p>→ Vise ~30 g par repas. Repère : une portion de viande ou poisson de la taille de ta paume ≈ 25-30 g.</p>
+      <p>→ Le repas le plus souvent raté : le petit-déjeuner. Œufs, skyr, fromage blanc.</p>
+    </div>
+    <p class="bridge">C'est exactement ce calcul qu'Ecleptic fait pour toi : tu prends ton repas en photo, l'app compte les protéines et ajuste ta cible du jour.</p>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 04</span> &nbsp;·&nbsp; Sommeil</span>
-    <h2>Frais, sombre, régulier</h2>
-    <p class="why">Ton corps doit perdre ~1 °C de température interne pour plonger en sommeil profond. Une chambre trop chaude est le saboteur nº1. Et la régularité des horaires compte plus que la durée : se coucher à heure fixe stabilise toute ton architecture de sommeil.</p>
+  <section class="lever" id="l4">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 04</span> &nbsp;·&nbsp; Sommeil</span>
+        <h2>Frais, sombre, régulier</h2>
+      </div>
+      <div class="fig"><span class="v">18°</span><span class="u">dans la chambre</span></div>
+    </div>
+    <p class="why">Ton corps doit perdre ~1 °C de température interne pour plonger en sommeil profond : une chambre trop chaude est le saboteur nº1. Et la régularité des horaires compte plus que la durée.</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Chambre entre 17 et 19 °C. Douche chaude 1 à 2 h avant le coucher (elle déclenche la chute de température derrière).</p>
-      <p>→ Heure de coucher fixe à ±30 min, week-end compris. C'est le plus dur — et le plus rentable.</p>
+      <p>→ Chambre entre 17 et 19 °C. Douche chaude 1-2 h avant le coucher : elle déclenche la chute de température derrière.</p>
+      <p>→ Heure de coucher fixe à ±30 min, week-end compris. Le plus dur — et le plus rentable.</p>
     </div>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 05</span> &nbsp;·&nbsp; Entraînement</span>
-    <h2>La zone 2, le moteur que tout le monde néglige</h2>
-    <p class="why">80 % du cardio des athlètes d'endurance se fait à basse intensité — et ce n'est pas un hasard. La zone 2 (tu peux parler en phrases complètes) construit tes mitochondries, ta base aérobie et ta récupération. C'est aussi le meilleur prédicteur de longévité mesurable : ta VO₂max.</p>
+  <section class="lever" id="l5">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 05</span> &nbsp;·&nbsp; Entraînement</span>
+        <h2>La zone 2, le moteur que tout le monde néglige</h2>
+      </div>
+      <div class="fig"><span class="v">80 %</span><span class="u">du cardio</span></div>
+    </div>
+    <p class="why">80 % du cardio des athlètes d'endurance se fait à basse intensité — pas un hasard. La zone 2 construit tes mitochondries, ta base aérobie et ta VO₂max, le meilleur prédicteur mesurable de longévité.</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ 2 à 3 sorties de 30-45 min par semaine où tu peux tenir une conversation. Marche rapide en côte, vélo, rameur — peu importe.</p>
+      <p>→ 2-3 sorties de 30-45 min par semaine où tu peux tenir une conversation. Marche rapide en côte, vélo, rameur.</p>
       <p>→ Le test : si tu ne peux pas parler, ralentis. Oui, ça paraîtra trop facile. C'est normal.</p>
     </div>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 06</span> &nbsp;·&nbsp; Récupération</span>
-    <h2>Écoute tes données, pas ta motivation</h2>
-    <p class="why">Le progrès ne vient pas de l'entraînement — il vient de la récupération qui suit. Ta fréquence cardiaque au repos et ta variabilité cardiaque (HRV) te disent chaque matin si ton corps a encaissé la veille. S'entraîner à fond un jour où ton système nerveux est dans le rouge, c'est creuser un trou.</p>
+  <section class="lever" id="l6">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 06</span> &nbsp;·&nbsp; Récupération</span>
+        <h2>Écoute tes données, pas ta motivation</h2>
+      </div>
+      <div class="fig"><span class="v">60</span><span class="u">secondes / matin</span></div>
+    </div>
+    <p class="why">Le progrès ne vient pas de l'entraînement, mais de la récupération qui suit. Ta fréquence cardiaque au repos et ta HRV te disent chaque matin si ton corps a encaissé la veille. Pousser un jour rouge, c'est creuser un trou.</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Chaque matin, un check rapide : sommeil de la nuit, fréquence cardiaque au repos, sensation au réveil. Rouge → séance légère ou repos. Vert → c'est le jour où tu pousses.</p>
+      <p>→ Chaque matin, 60 secondes : nuit de sommeil, fréquence cardiaque au repos, sensation au réveil. Rouge → séance légère ou repos. Vert → c'est le jour où tu pousses.</p>
     </div>
     <p class="bridge">C'est le cœur d'Ecleptic : un Readiness Score chaque matin, calculé sur tes vraies données (sommeil, HRV, charge d'entraînement), qui te dit si aujourd'hui est un jour pour pousser ou pour récupérer.</p>
   </section>
 
-  <section class="lever">
-    <span class="num label"><span class="gold">Levier 07</span> &nbsp;·&nbsp; Le méta-levier</span>
-    <h2>Ce qui se mesure s'améliore</h2>
-    <p class="why">Le vrai secret des gens « optimisés », ce n'est aucun des leviers ci-dessus. C'est la boucle de feedback : mesurer → ajuster → re-mesurer. Sans mesure, tu navigues au ressenti — et le ressenti ment (le manque de sommeil, par exemple, dégrade ton jugement sur ton propre état).</p>
+  <section class="lever" id="l7">
+    <div class="lhead">
+      <div class="lmeta">
+        <span class="num label"><span class="gold">Levier 07</span> &nbsp;·&nbsp; Le méta-levier</span>
+        <h2>Ce qui se mesure s'améliore</h2>
+      </div>
+      <div class="fig"><span class="v">14</span><span class="u">jours</span></div>
+    </div>
+    <p class="why">Le vrai secret des gens « optimisés », c'est la boucle de feedback : mesurer → ajuster → re-mesurer. Sans mesure, tu navigues au ressenti — et le ressenti ment (le manque de sommeil dégrade ton jugement sur ton propre état).</p>
     <div class="proto">
-      <div class="lbl">Le protocole</div>
-      <p>→ Choisis 3 métriques max : heures de sommeil, grammes de protéines, séances de la semaine. Note-les chaque jour pendant 14 jours.</p>
-      <p>→ Au bout de 14 jours, regarde ce qui corrèle avec tes meilleures journées. Puis ajuste un seul levier à la fois.</p>
+      <p>→ Choisis 3 métriques max : heures de sommeil, grammes de protéines, séances de la semaine. Note-les 14 jours.</p>
+      <p>→ Puis regarde ce qui corrèle avec tes meilleures journées, et ajuste un seul levier à la fois.</p>
     </div>
   </section>
+
+  <aside class="recap">
+    <span class="label">Ce qu'il faut retenir</span>
+    <ul>
+      <li><span class="n">01</span><span class="r">10 min de lumière naturelle dans l'heure du réveil</span><span class="c">Sommeil</span></li>
+      <li><span class="n">02</span><span class="r">Premier café 90 min après le réveil, dernier 8 h avant le coucher</span><span class="c">Énergie</span></li>
+      <li><span class="n">03</span><span class="r">1,6-2,2 g de protéines / kg / jour, ~30 g par repas</span><span class="c">Alimentation</span></li>
+      <li><span class="n">04</span><span class="r">Chambre 17-19 °C, coucher fixe à ±30 min</span><span class="c">Sommeil</span></li>
+      <li><span class="n">05</span><span class="r">2-3 sorties zone 2 par semaine, en pouvant parler</span><span class="c">Sport</span></li>
+      <li><span class="n">06</span><span class="r">Check de 60 s chaque matin — rouge : repos, vert : pousse</span><span class="c">Récupération</span></li>
+      <li><span class="n">07</span><span class="r">3 métriques, 14 jours, un seul ajustement à la fois</span><span class="c">Mesure</span></li>
+    </ul>
+    <p class="tip">Capture cet écran — c'est tout le guide.</p>
+  </aside>
 
   <div class="reward" style="border-top:0">
     <span class="label">Pour aller plus loin</span>
