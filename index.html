@@ -36,8 +36,9 @@
   .hero .quiet{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:17px 0}
   .hero .quiet:hover{color:var(--gold)}
 
-  .facts{border-top:1px solid var(--line)}
-  .fact{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line)}
+  .facts{border-top:0}
+  .fact{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;position:relative}
+  .fact:not(:last-child)::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
   .fact .no{font-size:12px;color:var(--muted);letter-spacing:.2em}
   .fact .what{font-size:15px;text-transform:uppercase;letter-spacing:.12em;font-weight:300}
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}

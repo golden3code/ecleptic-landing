@@ -432,7 +432,8 @@ article header{padding:64px 0 28px}
 article header .label{display:block;margin-bottom:22px}
 article h1{font-size:clamp(28px,5.4vw,44px);font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.08}
 article .standfirst{color:var(--muted);font-size:16px;margin-top:20px;line-height:1.7}
-article h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold);margin:52px 0 16px;padding-top:26px;border-top:1px solid var(--line)}
+article h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold);margin:52px 0 16px;padding-top:26px;position:relative}
+article h2::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
 article p{margin:0 0 18px;font-size:16.5px;color:var(--ink);line-height:1.8}
 article ul{margin:0 0 18px 22px}
 article li{margin-bottom:11px;font-size:16.5px;line-height:1.75}
@@ -446,15 +447,19 @@ article h1 .ch.in{opacity:1;transform:none}
 article .hero{margin:40px 0 10px}
 article .hero img{width:100%;height:auto;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.92)}
 /* fin d'article : la beta comme recompense */
-.reward{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:64px 0 8px;padding:52px 0;text-align:center}
+.reward{margin:64px 0 8px;padding:52px 0;text-align:center;position:relative}
+.reward::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
+.reward::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
+.reward.noafter::after{content:none}
 .reward .label{display:block;margin-bottom:20px}
 .reward h2{font-size:clamp(20px,3.6vw,28px);font-weight:200;text-transform:uppercase;letter-spacing:0;color:var(--ink);margin:0 0 14px;line-height:1.2}
 .reward p{color:var(--muted);font-size:15px;max-width:420px;margin:0 auto 28px}
 .next{padding:40px 0 8px}
 .next .label{display:block;margin-bottom:18px}
-.next a{display:block;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);font-weight:300;
+.next a{display:block;text-decoration:none;padding:16px 0;font-weight:300;position:relative;
         font-size:16px;text-transform:uppercase;letter-spacing:.02em;color:var(--ink)}
-.next a:first-of-type{border-top:1px solid var(--line)}
+.next a::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
+.next a:first-of-type::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
 .next a:hover{color:var(--gold)}
 /* INDEX ARTICLES : liste editoriale */
 .pagehead{padding:72px 0 24px}
@@ -734,7 +739,7 @@ def index_page():
 %(cards)s
   </div>
 %(empty)s
-  <div class="reward" style="border-bottom:0">
+  <div class="reward noafter">
     <span class="label">Et ensuite</span>
     <h2>Lire, c'est bien.<br>Mesurer, c'est mieux.</h2>
     <p>Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. La bêta iOS est ouverte à un petit cercle.</p>
