@@ -523,6 +523,7 @@ NAV = """<nav class="site">
     <a href="/" %(on_home)s>Accueil</a>
     <a href="/articles/" %(on_articles)s>Journal</a>
     <a href="/guide.html">Guide</a>
+    <a href="/science.html">Science-Based</a>
     <a href="/beta.html">La b&ecirc;ta</a>
   </div>
 </nav>"""
@@ -774,7 +775,8 @@ track('articles_index_view');
 
 
 def sitemap():
-    urls = ["%s/" % SITE, "%s/beta.html" % SITE, "%s/guide.html" % SITE, "%s/articles/" % SITE]
+    urls = ["%s/" % SITE, "%s/beta.html" % SITE, "%s/guide.html" % SITE,
+            "%s/science.html" % SITE, "%s/articles/" % SITE]
     urls += ["%s/articles/%s.html" % (SITE, a["slug"]) for a in ARTICLES]
     items = "\n".join("  <url><loc>%s</loc></url>" % u for u in urls)
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n' % items
