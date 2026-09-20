@@ -44,8 +44,9 @@
              font-size:13px;line-height:1.6;color:var(--muted);text-transform:none;letter-spacing:0;
              opacity:0;transform:translateY(4px);pointer-events:none;
              transition:opacity .25s ease-out,transform .25s ease-out}
-  .fact:hover .tip{opacity:1;transform:none}
-  @media(hover:none){.fact .tip{display:none}}
+  @media(hover:hover){.fact:hover .tip{opacity:1;transform:none}}
+  .fact.open .tip{opacity:1;transform:none}
+  @media(hover:none){.fact .val{cursor:pointer}}
   .fact .no{font-size:12px;color:var(--muted);letter-spacing:.2em}
   .fact .what{font-size:15px;text-transform:uppercase;letter-spacing:.12em;font-weight:300}
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
@@ -185,6 +186,26 @@
   <div class="fact"><span class="no">04</span><span class="what">Calibration statistique basée sur tes caractéristiques personnalisées</span><span class="val">100&nbsp;%</span>
     <span class="tip">Objectifs personnalisés, streaks, badges, records perso, coach IA, expériences du Labo, bilans hebdomadaires — tout est calibré sur tes données.</span></div>
 </div>
+<script>
+  // Mobile (pas de survol) : tap sur la valeur = affiche l'infobulle,
+  // nouveau tap ou tap ailleurs = referme.
+  (function(){
+    var facts = document.querySelectorAll('.fact');
+    facts.forEach(function(f){
+      var val = f.querySelector('.val');
+      if (!val) return;
+      val.addEventListener('click', function(e){
+        e.stopPropagation();
+        var was = f.classList.contains('open');
+        facts.forEach(function(x){ x.classList.remove('open'); });
+        if (!was) f.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(){
+      facts.forEach(function(x){ x.classList.remove('open'); });
+    });
+  })();
+</script>
 
 <section class="steps">
   <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
