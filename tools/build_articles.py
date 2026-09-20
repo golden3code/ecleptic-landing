@@ -461,8 +461,10 @@ article .hero img{width:100%;height:auto;display:block;border:1px solid var(--li
 .pagehead h1{font-size:clamp(34px,7vw,60px)}
 .pagehead p{color:var(--muted);margin-top:22px;font-size:16px;max-width:480px}
 .journal{margin:92px 0 0}
-.journal a.entry{display:flex;gap:32px;align-items:center;justify-content:space-between;text-decoration:none;padding:60px 0;border-top:1px solid var(--line)}
-.journal a.entry:last-child{border-bottom:1px solid var(--line)}
+/* filets a 88 % de la largeur, centres (comme le cadre Derniers repas de l'app) */
+.journal a.entry{display:flex;gap:32px;align-items:center;justify-content:space-between;text-decoration:none;padding:60px 0;position:relative}
+.journal a.entry::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
+.journal a.entry:last-child::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
 .entry .etext{flex:1;min-width:0}
 .entry .ethumb{flex:0 0 210px}
 .entry .ethumb img{width:100%;aspect-ratio:1.9;object-fit:cover;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.9);transition:filter .25s}
@@ -491,7 +493,8 @@ footer.site a:hover{color:var(--gold)}
        background:none;border:0;border-left:2px solid rgba(154,142,119,.45);color:var(--muted);
        height:52px;padding:0 18px;font-size:11.5px;letter-spacing:.25em;text-transform:uppercase;
        cursor:pointer;transition:color .2s,border-color .2s;font-family:inherit}
-.theme+.theme{border-top:1px solid var(--line)}
+.theme{position:relative}
+.theme+.theme::after{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
 .theme .count{font-size:13px;letter-spacing:0;font-weight:300}
 .theme:hover{color:var(--ink)}
 .theme.on{color:var(--ink);border-left-color:var(--gold)}
