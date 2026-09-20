@@ -400,9 +400,12 @@ ARTICLES = [
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
            "Charge", "Régularité", "Humeur", "Contexte", "Énergie"]
 
-# Classement « Les plus lus » (/articles/?sort=populaires) — ordre manuel,
-# à actualiser périodiquement depuis PostHog (événement article_view).
-POPULAR = [
+# Classement « Les plus lus » (/articles/?sort=populaires).
+# Actualisation automatique : `python3 tools/update_popular.py` interroge
+# PostHog (article_view, 90 j) et écrit tools/popular.json, prioritaire sur
+# la liste par défaut ci-dessous ; les slugs absents du json (articles trop
+# récents) sont ajoutés à la suite, dans l'ordre par défaut.
+POPULAR_DEFAULT = [
     "combien-heures-sommeil-par-nuit",
     "toujours-fatigue-causes",
     "proteines-par-jour-prise-de-muscle",
@@ -414,6 +417,23 @@ POPULAR = [
     "se-coucher-meme-heure-regularite",
     "stress-recuperation-sport",
 ]
+
+
+def load_popular():
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "popular.json")
+    order = []
+    if os.path.exists(path):
+        try:
+            import json
+            order = [s for s in json.load(open(path)) if isinstance(s, str)]
+        except Exception:
+            order = []
+    known = {a["slug"] for a in ARTICLES}
+    order = [s for s in order if s in known]
+    return order + [s for s in POPULAR_DEFAULT if s not in order]
+
+
+POPULAR = load_popular()
 
 # ---------------------------------------------------------------------------
 
