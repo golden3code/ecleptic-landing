@@ -400,6 +400,21 @@ ARTICLES = [
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
            "Charge", "Régularité", "Humeur", "Contexte", "Énergie"]
 
+# Classement « Les plus lus » (/articles/?sort=populaires) — ordre manuel,
+# à actualiser périodiquement depuis PostHog (événement article_view).
+POPULAR = [
+    "combien-heures-sommeil-par-nuit",
+    "toujours-fatigue-causes",
+    "proteines-par-jour-prise-de-muscle",
+    "readiness-score-comment-ca-marche",
+    "hrv-variabilite-frequence-cardiaque",
+    "alcool-sommeil-effets",
+    "combien-seances-sport-par-semaine",
+    "surentrainement-signes",
+    "se-coucher-meme-heure-regularite",
+    "stress-recuperation-sport",
+]
+
 # ---------------------------------------------------------------------------
 
 CSS = """:root{--gold:#D9A441;--gold-soft:#B07A2A;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--card:#12100C;--line:rgba(242,235,221,.14);color-scheme:dark}
@@ -417,6 +432,23 @@ nav.site .links a{color:var(--muted);text-decoration:none;font-weight:400}
 nav.site .links a.on{color:var(--ink)}
 nav.site .links a:hover{color:var(--gold)}
 @media(max-width:560px){nav.site{flex-direction:column;align-items:flex-start;gap:16px;padding:22px 24px}nav.site .links{gap:14px;font-size:10px;letter-spacing:.16em;flex-wrap:wrap}nav.site .logo{font-size:13px;letter-spacing:.35em}}
+/* menu deroulant Journal (survol, desktop uniquement) */
+.navjournal{position:relative}
+.navjournal .jpanel{position:absolute;top:100%;right:-20px;padding-top:18px;display:none;z-index:60}
+.navjournal .jinner{background:var(--bg);border:1px solid var(--line);min-width:250px;padding:6px 0}
+.jrow{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:13px 22px;
+      font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+      text-decoration:none;white-space:nowrap}
+.jrow:hover{color:var(--gold)}
+.jrow .arr{font-size:12px;letter-spacing:0}
+.jcats{position:relative;cursor:default}
+.jcats .jsub{position:absolute;right:100%;top:-7px;margin-right:1px;display:none;
+             background:var(--bg);border:1px solid var(--line);min-width:190px;padding:6px 0}
+.jcats:hover .jsub{display:block}
+.jsub a{display:block;padding:11px 22px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+        color:var(--muted);text-decoration:none}
+.jsub a:hover{color:var(--gold)}
+@media(hover:hover) and (min-width:561px){.navjournal:hover .jpanel{display:block}}
 .display{font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
 .display .gold{color:var(--gold)}
 .display .dim{color:var(--muted)}
@@ -517,16 +549,33 @@ POSTHOG = """<script>
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
 </script>""" % POSTHOG_KEY
 
+def journal_menu():
+    cats = "\n".join('        <a href="/articles/?theme=%s">%s</a>' % (d, html.escape(d))
+                     for d in DOMAINS)
+    return """<span class="navjournal">
+    <a href="/articles/" %%(on_articles)s>Journal</a>
+    <div class="jpanel"><div class="jinner">
+      <span class="jrow jcats"><span>Cat&eacute;gories</span><span class="arr">&rarr;</span>
+      <span class="jsub">
+%s
+      </span></span>
+      <a class="jrow" href="/articles/">Derniers articles</a>
+      <a class="jrow" href="/articles/?sort=populaires">Les plus lus</a>
+    </div></div>
+    </span>""" % cats
+
+
 NAV = """<nav class="site">
   <a class="logo" href="/">Ecleptic</a>
   <div class="links">
-    <a href="/" %(on_home)s>Accueil</a>
-    <a href="/articles/" %(on_articles)s>Journal</a>
+    <a href="/" %%(on_home)s>Accueil</a>
+    %s
     <a href="/guide.html">Guide</a>
     <a href="/science.html">Science-Based</a>
     <a href="/beta.html">La b&ecirc;ta</a>
   </div>
 </nav>"""
+NAV = NAV % journal_menu()
 
 FOOTER = """<footer class="site">
   <div class="wrap">
@@ -682,14 +731,14 @@ def index_page():
         img = img_path(a)
         thumb = ('\n  <span class="ethumb"><img src="%s" alt="" loading="lazy"></span>'
                  % img) if img else ""
-        return """<a class="entry" href="/articles/%s.html" data-cat="%s">
+        return """<a class="entry" href="/articles/%s.html" data-slug="%s" data-cat="%s">
   <span class="etext">
   <span class="label meta"><span class="gold">%s</span> &nbsp;&middot;&nbsp; %s &nbsp;&middot;&nbsp; %s min</span>
   <h2>%s</h2>
   <p class="desc">%s</p>
   <span class="readmore">Lire l'article →</span>
   </span>%s
-</a>""" % (a["slug"], html.escape(cat(a)), html.escape(cat(a)), fr_date(a["date"]),
+</a>""" % (a["slug"], a["slug"], html.escape(cat(a)), html.escape(cat(a)), fr_date(a["date"]),
            read_min(a), html.escape(a["title"]), html.escape(a["description"]), thumb)
 
     cards = "\n".join(card(a) for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True))
@@ -754,23 +803,43 @@ track('articles_index_view');
 (function(){
   var btns = document.querySelectorAll('.theme');
   var entries = document.querySelectorAll('#entries .entry');
+  function applyFilter(f){
+    btns.forEach(function(x){ x.classList.toggle('on', x.getAttribute('data-filter') === f); });
+    entries.forEach(function(e){
+      e.style.display = (f === '*' || e.getAttribute('data-cat') === f) ? '' : 'none';
+    });
+  }
   btns.forEach(function(b){
     b.addEventListener('click', function(){
-      btns.forEach(function(x){ x.classList.remove('on'); });
-      b.classList.add('on');
-      var f = b.getAttribute('data-filter');
-      entries.forEach(function(e){
-        e.style.display = (f === '*' || e.getAttribute('data-cat') === f) ? '' : 'none';
-      });
-      track('journal_theme_click', {theme: f});
+      applyFilter(b.getAttribute('data-filter'));
+      track('journal_theme_click', {theme: b.getAttribute('data-filter')});
     });
   });
+  // Parametres d'URL (menu Journal de la nav) :
+  //   ?theme=Sommeil    -> filtre active
+  //   ?sort=populaires  -> reordonne selon POPULAR (sinon : plus recent -> plus ancien)
+  var POPULAR = %(popular)s;
+  try {
+    var q = new URLSearchParams(location.search);
+    var theme = q.get('theme');
+    if (theme) applyFilter(theme);
+    if (q.get('sort') === 'populaires'){
+      var list = document.getElementById('entries');
+      Array.from(entries)
+        .sort(function(a, b){
+          return POPULAR.indexOf(a.getAttribute('data-slug')) - POPULAR.indexOf(b.getAttribute('data-slug'));
+        })
+        .forEach(function(e){ list.appendChild(e); });
+      track('journal_sort_popular');
+    }
+  } catch(_) {}
 })();
 </script>
 </body>
 </html>
 """ % {"site": SITE, "nav": nav("articles"), "cards": cards, "themes": themes,
        "empty": empty, "narticles": len(ARTICLES), "nthemes": len(DOMAINS),
+       "popular": __import__("json").dumps(POPULAR),
        "footer": FOOTER, "posthog": POSTHOG}
 
 

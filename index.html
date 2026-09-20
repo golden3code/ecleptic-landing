@@ -61,10 +61,7 @@
   .step p{color:var(--muted);font-size:15.5px;max-width:440px}
   @media(max-width:640px){.steps{max-width:none}.step{max-width:none}.step.right{margin-left:0;text-align:left}}
 
-  .journalhome{padding-block:38vh 0}
-  .journalhome .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
-  .journalhome .all{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);text-decoration:none}
-  .journalhome .all:hover{color:var(--gold)}
+  .facts{padding-block:6vh 30vh}
 
   .fadeblack{height:38vh;background:linear-gradient(var(--bg), #000)}
   .finale{padding:110px 24px 0;text-align:center;margin-top:0;background:#000}
@@ -87,7 +84,26 @@
 <nav class="site" style="justify-content:flex-end">
   <div class="links">
     <a href="/" class="on">Accueil</a>
+    <span class="navjournal">
     <a href="/articles/">Journal</a>
+    <div class="jpanel"><div class="jinner">
+      <span class="jrow jcats"><span>Cat&eacute;gories</span><span class="arr">&rarr;</span>
+      <span class="jsub">
+        <a href="/articles/?theme=Sommeil">Sommeil</a>
+        <a href="/articles/?theme=Readiness">Readiness</a>
+        <a href="/articles/?theme=Sport">Sport</a>
+        <a href="/articles/?theme=Récupération">Récupération</a>
+        <a href="/articles/?theme=Alimentation">Alimentation</a>
+        <a href="/articles/?theme=Charge">Charge</a>
+        <a href="/articles/?theme=Régularité">Régularité</a>
+        <a href="/articles/?theme=Humeur">Humeur</a>
+        <a href="/articles/?theme=Contexte">Contexte</a>
+        <a href="/articles/?theme=Énergie">Énergie</a>
+      </span></span>
+      <a class="jrow" href="/articles/">Derniers articles</a>
+      <a class="jrow" href="/articles/?sort=populaires">Les plus lus</a>
+    </div></div>
+    </span>
     <a href="/guide.html">Guide</a>
     <a href="/science.html">Science-Based</a>
     <a href="/beta.html">La bêta</a>
@@ -176,6 +192,25 @@
   </div>
 </section>
 
+<section class="steps">
+  <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
+  <div class="step">
+    <span class="rn">I</span>
+    <h3>Mesurer</h3>
+    <p>Ta nuit, tes vitaux, ta charge d'entraînement — captés automatiquement, sans saisie, pendant que tu vis.</p>
+  </div>
+  <div class="step right">
+    <span class="rn">II</span>
+    <h3>Comprendre</h3>
+    <p>L'app croise les trois domaines. Elle sait que ta séance ratée vient de tes trois nuits courtes, pas de ta motivation.</p>
+  </div>
+  <div class="step">
+    <span class="rn">III</span>
+    <h3>Agir</h3>
+    <p>Un chiffre, une direction. Aujourd'hui tu pousses, ou aujourd'hui tu récupères. C'est cette décision, répétée, qui change tout.</p>
+  </div>
+</section>
+
 <div class="wrap-wide facts">
   <div class="fact"><span class="no">01</span><span class="what">Ton âge biologique — VO₂max, cohorte HUNT, formules validées</span><span class="val">J0</span>
     <span class="tip">Ton âge biologique est calculé dès le premier jour — dès ton inscription.</span></div>
@@ -207,54 +242,7 @@
   })();
 </script>
 
-<section class="steps">
-  <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
-  <div class="step">
-    <span class="rn">I</span>
-    <h3>Mesurer</h3>
-    <p>Ta nuit, tes vitaux, ta charge d'entraînement — captés automatiquement, sans saisie, pendant que tu vis.</p>
-  </div>
-  <div class="step right">
-    <span class="rn">II</span>
-    <h3>Comprendre</h3>
-    <p>L'app croise les trois domaines. Elle sait que ta séance ratée vient de tes trois nuits courtes, pas de ta motivation.</p>
-  </div>
-  <div class="step">
-    <span class="rn">III</span>
-    <h3>Agir</h3>
-    <p>Un chiffre, une direction. Aujourd'hui tu pousses, ou aujourd'hui tu récupères. C'est cette décision, répétée, qui change tout.</p>
-  </div>
-</section>
 
-<section class="journalhome wrap">
-  <div class="head">
-    <span class="label">Journal de la station spatiale</span>
-    <a class="all" href="/articles/">Tous les articles →</a>
-  </div>
-  <div class="journal">
-    <a class="entry" href="/articles/combien-heures-sommeil-par-nuit.html">
-      <span class="etext">
-      <span class="label"><span class="gold">Sommeil</span> &nbsp;&middot;&nbsp; 4 min</span>
-      <h2>Combien d'heures de sommeil faut-il vraiment par nuit ?</h2>
-      </span>
-      <span class="ethumb"><img src="/assets/articles/combien-heures-sommeil-par-nuit.jpg" alt="" loading="lazy"></span>
-    </a>
-    <a class="entry" href="/articles/readiness-score-comment-ca-marche.html">
-      <span class="etext">
-      <span class="label"><span class="gold">Readiness</span> &nbsp;&middot;&nbsp; 3 min</span>
-      <h2>Readiness score : comment ça marche, et comment l'améliorer</h2>
-      </span>
-      <span class="ethumb"><img src="/assets/articles/readiness-score-comment-ca-marche.jpg" alt="" loading="lazy"></span>
-    </a>
-    <a class="entry" href="/articles/alcool-sommeil-effets.html">
-      <span class="etext">
-      <span class="label"><span class="gold">Contexte</span> &nbsp;&middot;&nbsp; 3 min</span>
-      <h2>Alcool et sommeil : ce qui se passe vraiment la nuit</h2>
-      </span>
-      <span class="ethumb"><img src="/assets/articles/alcool-sommeil-effets.jpg" alt="" loading="lazy"></span>
-    </a>
-  </div>
-</section>
 
 
 

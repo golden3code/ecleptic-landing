@@ -13,6 +13,23 @@ nav.site .links a{color:var(--muted);text-decoration:none;font-weight:400}
 nav.site .links a.on{color:var(--ink)}
 nav.site .links a:hover{color:var(--gold)}
 @media(max-width:560px){nav.site{flex-direction:column;align-items:flex-start;gap:16px;padding:22px 24px}nav.site .links{gap:14px;font-size:10px;letter-spacing:.16em;flex-wrap:wrap}nav.site .logo{font-size:13px;letter-spacing:.35em}}
+/* menu deroulant Journal (survol, desktop uniquement) */
+.navjournal{position:relative}
+.navjournal .jpanel{position:absolute;top:100%;right:-20px;padding-top:18px;display:none;z-index:60}
+.navjournal .jinner{background:var(--bg);border:1px solid var(--line);min-width:250px;padding:6px 0}
+.jrow{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:13px 22px;
+      font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+      text-decoration:none;white-space:nowrap}
+.jrow:hover{color:var(--gold)}
+.jrow .arr{font-size:12px;letter-spacing:0}
+.jcats{position:relative;cursor:default}
+.jcats .jsub{position:absolute;right:100%;top:-7px;margin-right:1px;display:none;
+             background:var(--bg);border:1px solid var(--line);min-width:190px;padding:6px 0}
+.jcats:hover .jsub{display:block}
+.jsub a{display:block;padding:11px 22px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+        color:var(--muted);text-decoration:none}
+.jsub a:hover{color:var(--gold)}
+@media(hover:hover) and (min-width:561px){.navjournal:hover .jpanel{display:block}}
 .display{font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
 .display .gold{color:var(--gold)}
 .display .dim{color:var(--muted)}
