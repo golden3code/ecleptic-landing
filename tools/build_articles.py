@@ -77,6 +77,15 @@ ARTICLES = [
 <li>Réveil spontané, énergie stable en journée, pas de rattrapage massif le week-end : voilà à quoi ressemble un sommeil suffisant.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Combien d'heures de sommeil par nuit pour un adulte ?",
+             "a": "Entre 7 et 9 heures de sommeil réel pour la quasi-totalité des adultes. Si tu t'entraînes sérieusement, vise le haut de la fourchette : 8 à 9 heures."},
+            {"q": "Est-ce que 6 heures de sommeil suffisent ?",
+             "a": "Presque jamais. Les vrais courts dormeurs — moins de 6 heures sans aucun déficit — représentent quelques personnes sur mille. Sous 7 heures répétées, les risques mesurables augmentent : métabolisme, immunité, humeur, accidents."},
+            {"q": "Comment connaître son besoin réel de sommeil ?",
+             "a": "Deux semaines à heure de coucher fixe, sans réveil. Ignore les premières nuits (tu rembourses ta dette), puis la durée de réveil spontané se stabilise : ce chiffre est ton besoin réel."},
+        ],
     },
     {
         "slug": "readiness-score-comment-ca-marche",
@@ -121,6 +130,15 @@ ARTICLES = [
 <li>Sommeil régulier, alternance dur/facile, alcool rare : voilà ce qui le fait monter pour de bon.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "C'est quoi un readiness score ?",
+             "a": "Un chiffre, généralement sur 100, calculé chaque matin à partir de ta HRV, ta fréquence cardiaque de repos, ton sommeil et ta charge d'entraînement récente — le tout comparé à ta propre ligne de base, jamais à une moyenne d'autres gens."},
+            {"q": "Que faire quand mon readiness score est bas ?",
+             "a": "Un score bas isolé n'interdit pas de s'entraîner : réduis l'intensité ou troque-la contre de la technique. C'est cinq matins en baisse d'affilée qui racontent une vraie histoire — là, lève le pied."},
+            {"q": "Comment améliorer son readiness score ?",
+             "a": "Dormir assez à horaires réguliers (le levier nº1), alterner vraiment jours durs et jours faciles, limiter l'alcool le soir, et manger suffisamment les jours de grosse charge."},
+        ],
     },
     {
         "slug": "hrv-variabilite-frequence-cardiaque",
@@ -158,6 +176,15 @@ ARTICLES = [
 <li>Alcool, nuits courtes, charge non digérée et stress sont ses quatre ennemis principaux.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Qu'est-ce qu'une bonne HRV ?",
+             "a": "Il n'existe pas de bonne valeur universelle : la HRV normale va de 20 à plus de 100 ms selon l'âge, la génétique et l'entraînement. Seule compte l'évolution par rapport à ta propre moyenne des dernières semaines."},
+            {"q": "Pourquoi ma HRV chute ?",
+             "a": "Les quatre causes les plus fréquentes, dans l'ordre : l'alcool le soir, une grosse séance non digérée (normal 24-48 h), le manque de sommeil ou des horaires irréguliers, et le stress ou une infection qui couve."},
+            {"q": "Comment augmenter sa HRV ?",
+             "a": "Aucun hack rapide : sommeil suffisant et régulier, endurance à basse intensité (le levier le plus puissant à long terme), respiration lente en fin de journée, sobriété les veilles de jours importants. La ligne de base monte en quelques mois."},
+        ],
     },
     {
         "slug": "proteines-par-jour-prise-de-muscle",
@@ -190,6 +217,15 @@ ARTICLES = [
 <li>La fenêtre anabolique stricte est un mythe ; la régularité sur des mois est ce qui construit.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Combien de grammes de protéines par jour pour prendre du muscle ?",
+             "a": "1,6 à 2,2 g par kilo de poids de corps et par jour — soit 120 à 165 g pour 75 kg. Au-delà de 2,2 g/kg, les gains supplémentaires deviennent indétectables ; en sèche, monte à 2,2-2,6 g/kg."},
+            {"q": "Manger trop de protéines est-il dangereux pour les reins ?",
+             "a": "Chez une personne en bonne santé, aucune étude sérieuse n'a montré de dommage rénal à ces apports, même au-delà de 2,2 g/kg sur des années. La prudence ne concerne que les pathologies rénales existantes."},
+            {"q": "Faut-il prendre des protéines juste après la séance ?",
+             "a": "La « fenêtre anabolique » de 30 minutes est un mythe dans sa version stricte : elle dure plutôt plusieurs heures. Un vrai repas dans les 2-3 heures qui suivent l'entraînement suffit largement."},
+        ],
     },
     {
         "slug": "surentrainement-signes",
@@ -228,6 +264,15 @@ ARTICLES = [
 <li>La réponse est toujours la même : moins d'intensité, plus de sommeil, assez de calories — pendant au moins une semaine.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Quels sont les signes du surentraînement ?",
+             "a": "Performances qui stagnent ou baissent malgré l'entraînement, cœur de repos 5 battements au-dessus de la normale, HRV en baisse sur une semaine, sommeil dégradé malgré la fatigue, envie disparue, maladies à répétition. Trois ou quatre signes en même temps pendant plus d'une semaine doivent alerter."},
+            {"q": "Que faire en cas de surmenage ?",
+             "a": "Une semaine à volume et intensité réduits de moitié, sommeil en haut de ta fourchette à horaires fixes, calories à maintenance minimum. Réévalue à J+7 ; si rien ne bouge après 3-4 semaines, consulte."},
+            {"q": "Peut-on être surentraîné avec 4 séances par semaine ?",
+             "a": "Oui : le surmenage n'est pas une question de volume absolu mais d'équilibre entre charge totale (sport + stress de vie) et récupération. Quatre séances avec 6 heures de sommeil et un gros déficit calorique suffisent à te mettre dans le rouge."},
+        ],
     },
     {
         "slug": "combien-seances-sport-par-semaine",
@@ -264,6 +309,15 @@ ARTICLES = [
 <li>La fréquence idéale est celle que ta récupération encaisse en te laissant progresser.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Combien de séances de sport par semaine pour progresser ?",
+             "a": "3 à 5 séances suffisent pour progresser sérieusement. Pour la plupart des gens, 3 séances bien construites et bien récupérées battent 6 séances empilées sur un corps qui ne suit pas."},
+            {"q": "Combien de fois travailler un muscle par semaine ?",
+             "a": "2 fois par semaine : à volume égal, c'est mieux qu'une fois, et au-delà la différence devient marginale. Un muscle a besoin de 48 à 72 heures pour se réparer après une séance dure."},
+            {"q": "S'entraîner tous les jours, est-ce une bonne idée ?",
+             "a": "Possible, à deux conditions : ne pas entraîner la même chose tous les jours, et garder environ 80 % du cardio à intensité facile — celle où tu peux parler en phrases complètes."},
+        ],
     },
     {
         "slug": "se-coucher-meme-heure-regularite",
@@ -296,6 +350,15 @@ ARTICLES = [
 <li>Tolérance raisonnable : ±30-45 minutes en semaine, une heure le week-end.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Pourquoi se coucher à la même heure tous les soirs ?",
+             "a": "À durée égale, un sommeil à horaires réguliers est plus profond, plus continu et plus réparateur. Dans plusieurs grandes études récentes, la régularité du sommeil prédit la santé à long terme mieux que la durée elle-même."},
+            {"q": "C'est quoi le jetlag social ?",
+             "a": "Le décalage entre tes horaires de semaine et de week-end : te coucher à 22 h 30 en semaine et 2 h le samedi impose à ton horloge circadienne l'équivalent d'un vol Paris–New York chaque vendredi."},
+            {"q": "Heure de coucher fixe ou heure de lever fixe ?",
+             "a": "Le lever d'abord : c'est lui qui fixe l'exposition à la lumière du matin, le signal circadien le plus puissant. Un lever stable à ±30-45 minutes, week-end compris, et le coucher finit par se caler tout seul."},
+        ],
     },
     {
         "slug": "toujours-fatigue-causes",
@@ -328,6 +391,15 @@ ARTICLES = [
 <li>Deux semaines de sommeil suffisant et régulier sont le meilleur test diagnostique gratuit qui existe.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Pourquoi suis-je toujours fatigué alors que je dors ?",
+             "a": "Le piège le plus fréquent : confondre temps au lit et temps de sommeil. Sept heures au lit font environ six heures et quart de sommeil réel — répété cinq nuits, c'est une dette de plus de trois heures par semaine, invisible mais bien réelle."},
+            {"q": "Quand consulter pour une fatigue constante ?",
+             "a": "Si tu dors assez et régulièrement, manges à ta faim, et que deux semaines calmes n'ont rien changé : prise de sang (fer, vitamine D, thyroïde) et dépistage d'apnée du sommeil si tu ronfles et te réveilles la bouche sèche."},
+            {"q": "Quelles carences provoquent de la fatigue ?",
+             "a": "Les suspects fréquents et faciles à tester : le fer (surtout chez les femmes et les coureurs), la vitamine D (quasi générale en hiver) et la thyroïde. Une fatigue qui dure des mois mérite un médecin."},
+        ],
     },
     {
         "slug": "stress-recuperation-sport",
@@ -358,6 +430,13 @@ ARTICLES = [
 <li>Tes vitaux du matin reflètent la charge totale — c'est eux qu'il faut écouter, pas le programme.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "Le stress empêche-t-il de récupérer du sport ?",
+             "a": "Oui : le stress psychologique active les mêmes systèmes que l'entraînement (cortisol, système nerveux sympathique) et puise dans le même budget de récupération. Une semaine de rush professionnel est, pour ton corps, une semaine de gros volume."},
+            {"q": "Faut-il s'entraîner quand on est stressé ?",
+             "a": "Oui, mais moins fort : l'exercice reste l'un des meilleurs régulateurs du stress. En semaine tendue, cardio tranquille et technique ; garde les records pour les semaines calmes, et fie-toi à tes vitaux du matin plutôt qu'à ton planning."},
+        ],
     },
     {
         "slug": "alcool-sommeil-effets",
@@ -394,6 +473,15 @@ ARTICLES = [
 <li>Les deux leviers : la quantité, et surtout l'heure. Tôt et léger change presque tout.</li>
 </ul>
 """,
+        "updated": "2026-09-21",
+        "faq": [
+            {"q": "L'alcool aide-t-il à dormir ?",
+             "a": "Il aide à s'endormir (effet sédatif), mais il fragmente la seconde moitié de la nuit et ampute le sommeil paradoxal, concentré en fin de nuit. Le compte d'heures semble correct, la nuit est objectivement moins réparatrice."},
+            {"q": "Combien de temps avant de dormir arrêter l'alcool ?",
+             "a": "Le corps élimine environ un verre standard par heure : deux verres finis à 19 h sont largement métabolisés au coucher, les mêmes à 23 h occupent la moitié de ta nuit. Plus tôt, moins, avec de l'eau et de la nourriture."},
+            {"q": "Pourquoi ma montre affiche une mauvaise nuit après l'alcool ?",
+             "a": "Parce que la signature est immanquable dans les données : fréquence cardiaque nocturne en hausse de plusieurs battements, HRV écrasée toute la nuit, température plus haute. Une consommation forte peut se lire encore la nuit suivante."},
+        ],
     },
 ]
 
@@ -498,6 +586,9 @@ article h1 .ch.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){article h1 .ch{opacity:1;transform:none;transition:none}}
 article .hero{margin:40px 0 10px}
 article .hero img{width:100%;height:auto;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.92)}
+/* FAQ : questions frequentes (balisees FAQPage en JSON-LD) */
+article .faq h3{font-size:16.5px;font-weight:600;color:var(--ink);margin:26px 0 8px;line-height:1.4}
+article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 /* fin d'article : la beta comme recompense */
 .reward{margin:64px 0 8px;padding:52px 0;text-align:center;position:relative}
 .reward::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
@@ -687,6 +778,36 @@ def article_page(a, others):
   });});
 })();
 </script>""" if " : " in a["title"] else ""
+    # FAQ optionnelle : section visible + JSON-LD FAQPage (Google exige que le
+    # contenu balise soit affiche sur la page).
+    faq = a.get("faq") or []
+    faqblock = ""
+    faqjsonld = ""
+    if faq:
+        _json = __import__("json")
+        faqblock = (
+            '\n  <section class="faq">\n    <h2>Questions fréquentes</h2>\n'
+            + "\n".join(
+                "    <h3>%s</h3>\n    <p>%s</p>" % (html.escape(q["q"]), html.escape(q["a"]))
+                for q in faq
+            )
+            + "\n  </section>"
+        )
+        faqjsonld = '\n<script type="application/ld+json">' + _json.dumps(
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": q["q"],
+                        "acceptedAnswer": {"@type": "Answer", "text": q["a"]},
+                    }
+                    for q in faq
+                ],
+            },
+            ensure_ascii=False,
+        ) + "</script>"
     jsonld_img = '"image":"%s%s",' % (SITE, img) if img else ""
     jsonld = (
         '{"@context":"https://schema.org","@type":"Article","headline":%s,'
@@ -711,7 +832,7 @@ def article_page(a, others):
 <meta property="og:description" content="%(desc)s">
 <meta property="og:type" content="article">
 <meta property="og:url" content="%(url)s">%(og_image)s
-<script type="application/ld+json">%(jsonld)s</script>
+<script type="application/ld+json">%(jsonld)s</script>%(faqjsonld)s
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -723,7 +844,7 @@ def article_page(a, others):
     <h1>%(title)s</h1>
     <p class="standfirst">%(desc)s</p>
   </header>%(reveal)s%(hero)s
-  %(body)s
+  %(body)s%(faqblock)s
   <div class="reward">
     <span class="label">Pour aller plus loin</span>
     <h2>Ce que cet article explique,<br>l'app le mesure chez toi.</h2>
@@ -743,7 +864,8 @@ def article_page(a, others):
 </html>
 """ % {
         "title": html.escape(a["title"]), "desc": html.escape(a["description"], quote=True),
-        "url": url, "jsonld": jsonld, "og_image": og_image, "hero": hero, "reveal": reveal,
+        "url": url, "jsonld": jsonld, "faqjsonld": faqjsonld, "faqblock": faqblock,
+        "og_image": og_image, "hero": hero, "reveal": reveal,
         "nav": nav("articles"), "date": fr_date(a["date"]),
         "cat": html.escape(cat(a)), "mins": read_min(a),
         "body": a["body"].strip(), "tf": TF_LINK, "slug": a["slug"], "more": more,
@@ -868,11 +990,34 @@ track('articles_index_view');
        "footer": FOOTER, "posthog": POSTHOG}
 
 
+def git_lastmod(rel):
+    """Date (YYYY-MM-DD) du dernier commit touchant `rel`, ou None."""
+    try:
+        import subprocess
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        out = subprocess.run(
+            ["git", "-C", root, "log", "-1", "--format=%cs", "--", rel],
+            capture_output=True, text=True, timeout=5,
+        ).stdout.strip()
+        return out or None
+    except Exception:
+        return None
+
+
 def sitemap():
-    urls = ["%s/" % SITE, "%s/beta.html" % SITE, "%s/guide.html" % SITE,
-            "%s/science.html" % SITE, "%s/articles/" % SITE]
-    urls += ["%s/articles/%s.html" % (SITE, a["slug"]) for a in ARTICLES]
-    items = "\n".join("  <url><loc>%s</loc></url>" % u for u in urls)
+    # Pages statiques : lastmod = dernier commit git du fichier.
+    # Articles : cle "updated" si presente, sinon "date".
+    entries = [("%s/" % SITE, git_lastmod("index.html")),
+               ("%s/beta.html" % SITE, git_lastmod("beta.html")),
+               ("%s/guide.html" % SITE, git_lastmod("guide.html")),
+               ("%s/science.html" % SITE, git_lastmod("science.html")),
+               ("%s/articles/" % SITE, git_lastmod("articles/index.html"))]
+    entries += [("%s/articles/%s.html" % (SITE, a["slug"]), a.get("updated", a["date"]))
+                for a in ARTICLES]
+    items = "\n".join(
+        "  <url><loc>%s</loc>%s</url>" % (u, "<lastmod>%s</lastmod>" % d if d else "")
+        for u, d in entries
+    )
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n' % items
 
 
