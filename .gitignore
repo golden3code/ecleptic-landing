@@ -1,1 +1,5 @@
 .posthog_key
+
+# Bytecode Python (généré par le build, ne doit jamais être commité)
+__pycache__/
+*.pyc

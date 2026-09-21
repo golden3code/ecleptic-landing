@@ -32,6 +32,8 @@ jobs:
           python-version: "3.x"
 
       - name: Build (révèle les articles dont la date est atteinte)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"   # ne pas générer de __pycache__/*.pyc
         run: python3 tools/build_articles.py
 
       - name: Commit & push si de nouveaux articles sont publiés
