@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surcharge progressive : la vraie clé pour progresser — Ecleptic</title>
+<meta name="description" content="Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l&#x27;équilibre avec la récup.">
+<link rel="canonical" href="https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html">
+<meta property="og:title" content="Surcharge progressive : la vraie clé pour progresser">
+<meta property="og:description" content="Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l&#x27;équilibre avec la récup.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Surcharge progressive : la vraie clé pour progresser","description":"Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l'équilibre avec la récup.","datePublished":"2026-09-15","inLanguage":"fr","author":{"@type":"Organization","name":"Ecleptic","url":"https://ecleptic.health"},"publisher":{"@type":"Organization","name":"Ecleptic","url":"https://ecleptic.health"},"mainEntityOfPage":"https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "C'est quoi la surcharge progressive ?", "acceptedAnswer": {"@type": "Answer", "text": "C'est augmenter petit à petit la contrainte imposée au corps — charge, répétitions, séries, amplitude ou densité — pour le forcer à s'adapter. C'est le principe nº1 de toute progression : sans elle, on stagne."}}, {"@type": "Question", "name": "Comment appliquer la surcharge progressive ?", "acceptedAnswer": {"@type": "Answer", "text": "Par petits paliers, avec la double progression : garde la même charge jusqu'à atteindre le haut de ta fourchette de répétitions, puis augmente la charge et redescends en bas. Note tout dans un journal pour suivre tes progrès."}}, {"@type": "Question", "name": "Pourquoi je ne progresse plus en musculation ?", "acceptedAnswer": {"@type": "Answer", "text": "Souvent parce que la contrainte n'augmente plus (mêmes charges, mêmes reps) ou parce que la récupération ne suit pas. Reprends une surcharge graduelle, tiens un journal, et place une semaine de décharge si la fatigue s'accumule."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" class="on">Journal</a>
+    <div class="jpanel"><div class="jinner">
+      <span class="jrow jcats"><span>Cat&eacute;gories</span><span class="arr">&rarr;</span>
+      <span class="jsub">
+        <a href="/articles/?theme=Sommeil">Sommeil</a>
+        <a href="/articles/?theme=Readiness">Readiness</a>
+        <a href="/articles/?theme=Sport">Sport</a>
+        <a href="/articles/?theme=Récupération">Récupération</a>
+        <a href="/articles/?theme=Alimentation">Alimentation</a>
+        <a href="/articles/?theme=Charge">Charge</a>
+        <a href="/articles/?theme=Régularité">Régularité</a>
+        <a href="/articles/?theme=Humeur">Humeur</a>
+        <a href="/articles/?theme=Contexte">Contexte</a>
+        <a href="/articles/?theme=Énergie">Énergie</a>
+      </span></span>
+      <a class="jrow" href="/articles/">Derniers articles</a>
+      <a class="jrow" href="/articles/?sort=populaires">Les plus lus</a>
+    </div></div>
+    </span>
+    <a href="/guide.html">Guide</a>
+    <a href="/science.html">Science-Based</a>
+    <a href="/beta.html">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article>
+  <header>
+    <span class="label"><span class="gold">Charge</span> &nbsp;&middot;&nbsp; 15 septembre 2026 &nbsp;&middot;&nbsp; 3 min</span>
+    <h1>Surcharge progressive : la vraie clé pour progresser</h1>
+    <p class="standfirst">Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l&#x27;équilibre avec la récup.</p>
+  </header>
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
+  var cut = text.indexOf(':') + 1;
+  if (cut <= 0) return;
+  var anim = Array.from(text.slice(cut));
+  var denom = Math.max(1, anim.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  h.appendChild(document.createTextNode(text.slice(0, cut)));
+  var spans = [], w = null, idx = 0;
+  anim.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>
+  <p>La réponse courte : la surcharge progressive, c'est <strong>augmenter petit à petit la contrainte que tu imposes à ton corps</strong> — plus de charge, plus de répétitions, plus de séries, plus d'amplitude ou moins de repos. C'est <em>le</em> principe nº1 de toute progression, en musculation comme en endurance. Sans elle, ton corps n'a aucune raison de changer : il s'adapte à ce qu'on lui demande, et si on lui demande toujours la même chose, il reste pareil. Plateau garanti.</p>
+<p>La logique est mécanique : tu imposes un stress un peu supérieur à ce que ton corps sait déjà encaisser, il s'adapte pour être prêt la prochaine fois, et tu montes d'un cran. Répète ce cycle des dizaines de fois et tu obtiens des mois de progrès. Le mot important, c'est <strong>progressive</strong> : par petits paliers, pas par bonds héroïques.</p>
+
+<h2>Les leviers pour surcharger</h2>
+<p>Ajouter du poids sur la barre n'est qu'une façon parmi d'autres. Tu as plusieurs curseurs, et c'est une bonne nouvelle quand l'un d'eux bloque :</p>
+<ul>
+<li><strong>La charge :</strong> plus lourd, à répétitions égales. Le levier le plus évident.</li>
+<li><strong>Les répétitions :</strong> même charge, une ou deux reps de plus.</li>
+<li><strong>Les séries :</strong> une série de travail supplémentaire sur un exercice.</li>
+<li><strong>L'amplitude et la technique :</strong> descendre plus bas, contrôler mieux — une rep plus propre est une rep plus dure.</li>
+<li><strong>La densité :</strong> le même travail en moins de temps, en réduisant les repos (utile en endurance et en circuit).</li>
+</ul>
+
+<h2>La méthode qui marche : la double progression</h2>
+<p>Le piège du débutant, c'est de vouloir ajouter du poids à chaque séance. Ça marche quelques semaines, puis ça casse. La méthode fiable sur la durée, c'est la <strong>double progression</strong> :</p>
+<ul>
+<li>Tu choisis une fourchette de répétitions (par exemple 8 à 12).</li>
+<li>Tu gardes la même charge jusqu'à atteindre le <strong>haut</strong> de la fourchette sur toutes tes séries.</li>
+<li>Alors seulement tu <strong>augmentes la charge</strong>, et tu redescends en bas de la fourchette.</li>
+<li>Puis tu recommences à grimper en répétitions. Et ainsi de suite.</li>
+</ul>
+<p>C'est lent, c'est peu spectaculaire, et c'est précisément pour ça que ça fonctionne : tu progresses sans te cramer. Le choix de la fourchette dépend de ton objectif — <a href="/articles/combien-de-repetitions-pour-prendre-du-muscle.html">combien de répétitions pour prendre du muscle</a> t'aide à la caler.</p>
+
+<h2>Tiens un journal, ou tu tournes en rond</h2>
+<p>On ne surcharge pas de mémoire. Si tu ne notes pas ce que tu as fait la dernière fois — charge, répétitions, séries, sensation —, tu ne peux pas savoir si tu progresses, et tu refais les mêmes séances sans t'en rendre compte. <strong>Le journal est l'outil nº1 de la surcharge progressive.</strong> Une ligne par exercice suffit : c'est ta boussole. Et le progrès mesuré est incroyablement motivant — tu vois la ligne monter.</p>
+
+<h2>Sans récupération, pas de surcharge</h2>
+<p>Attention au contresens : surcharger ne veut pas dire pousser à fond en permanence. L'adaptation se fait au repos, pas à la séance. Si tu montes la contrainte sans laisser ton corps suivre, tu accumules de la fatigue et tu finis par reculer — <a href="/articles/surentrainement-signes.html">ce sont les signes du surmenage</a>. C'est pour ça que la surcharge va toujours de pair avec des phases de récupération, et notamment la <a href="/articles/semaine-de-decharge-deload.html">semaine de décharge</a> : tu montes plusieurs semaines, tu souffles une semaine, tu repars plus haut. La structure de ta semaine compte aussi — <a href="/articles/full-body-ou-split-musculation.html">full-body ou split</a>, l'important est que chaque muscle soit sollicité assez souvent pour progresser.</p>
+
+<h2>Ce qu'il faut retenir</h2>
+<ul>
+<li>La surcharge progressive — augmenter graduellement la contrainte — est le principe nº1 de toute progression. Sans elle, plateau.</li>
+<li>Surcharge par petits paliers via la double progression (reps puis charge), et tiens un journal : sans trace écrite, tu tournes en rond.</li>
+<li>Elle ne marche qu'avec de la récupération : monte plusieurs semaines, décharge, repars plus haut.</li>
+</ul>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>C&#x27;est quoi la surcharge progressive ?</h3>
+    <p>C&#x27;est augmenter petit à petit la contrainte imposée au corps — charge, répétitions, séries, amplitude ou densité — pour le forcer à s&#x27;adapter. C&#x27;est le principe nº1 de toute progression : sans elle, on stagne.</p>
+    <h3>Comment appliquer la surcharge progressive ?</h3>
+    <p>Par petits paliers, avec la double progression : garde la même charge jusqu&#x27;à atteindre le haut de ta fourchette de répétitions, puis augmente la charge et redescends en bas. Note tout dans un journal pour suivre tes progrès.</p>
+    <h3>Pourquoi je ne progresse plus en musculation ?</h3>
+    <p>Souvent parce que la contrainte n&#x27;augmente plus (mêmes charges, mêmes reps) ou parce que la récupération ne suit pas. Reprends une surcharge graduelle, tiens un journal, et place une semaine de décharge si la fatigue s&#x27;accumule.</p>
+  </section>
+  <div class="reward">
+    <span class="label">Pour aller plus loin</span>
+    <h2>Ce que cet article explique,<br>l'app le mesure chez toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'surcharge-progressive-comment-progresser'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">À lire ensuite</span>
+<a href="/articles/temps-de-repos-entre-les-series.html">Combien de temps de repos entre les séries ?</a>
+<a href="/articles/coup-de-barre-apres-manger.html">Coup de barre après manger : pourquoi, et comment l&#x27;éviter ?</a>
+<a href="/articles/carence-en-fer-fatigue.html">Carence en fer : le premier suspect de la fatigue</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('article_view',{article:'surcharge-progressive-comment-progresser'});</script>
+</body>
+</html>

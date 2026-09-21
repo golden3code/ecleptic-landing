@@ -609,6 +609,25 @@ ARTICLES = [
     },
 ]
 
+# Satellites longue traîne : chargés depuis tools/satellites/*.py (chaque fichier
+# expose une liste ENTRIES au meme format que ARTICLES). Garde ce fichier lisible
+# et permet d'ajouter des lots sans toucher au coeur du generateur.
+def _load_satellites():
+    import glob as _glob, importlib.util as _ilu
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "satellites")
+    out = []
+    for f in sorted(_glob.glob(os.path.join(d, "*.py"))):
+        if os.path.basename(f).startswith("_"):
+            continue
+        spec = _ilu.spec_from_file_location(os.path.basename(f)[:-3], f)
+        mod = _ilu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out.extend(getattr(mod, "ENTRIES", []))
+    return out
+
+
+ARTICLES = ARTICLES + _load_satellites()
+
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
            "Charge", "Régularité", "Humeur", "Contexte", "Énergie"]
 
