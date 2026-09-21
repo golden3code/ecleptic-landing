@@ -166,7 +166,7 @@ ARTICLES = [
 <p>Les études d'« extension de sommeil » chez les sportifs sont parlantes : quand des basketteurs universitaires sont passés à 10 heures au lit par nuit pendant plusieurs semaines, leurs sprints se sont améliorés, leur précision au tir a gagné environ 9 points de pourcentage, et leur temps de réaction a chuté. À l'inverse, une seule nuit courte dégrade la force maximale modestement — mais dégrade nettement l'endurance, la motivation et la tolérance à l'effort dès le lendemain.</p>
 <ul>
 <li><strong>Tu t'entraînes 3-4 fois par semaine :</strong> vise 7 h 30 – 8 h 30 de sommeil réel.</li>
-<li><strong>Tu t'entraînes 5 fois ou plus, ou tu es en préparation :</strong> vise 8 – 9 heures, sieste comprise.</li>
+<li><strong>Tu t'entraînes 5 fois ou plus, ou tu es en préparation :</strong> vise 8 – 9 heures, <a href="/articles/sieste-ideale-duree.html">sieste</a> comprise.</li>
 <li><strong>Période de sèche ou de déficit calorique :</strong> le manque de sommeil fait fondre le muscle en priorité — dans une étude célèbre, à déficit égal, les participants qui dormaient 5 h 30 perdaient 60 % de masse maigre en plus que ceux qui dormaient 8 h 30.</li>
 </ul>
 
@@ -367,7 +367,7 @@ ARTICLES = [
 <li><strong>Ta fréquence cardiaque se comporte bizarrement</strong> : cœur de repos 5 battements au-dessus de ta normale plusieurs matins de suite, HRV en baisse sur une semaine (<a href="/articles/hrv-variabilite-frequence-cardiaque.html">comment lire ta HRV</a>), ou cardio anormalement haut sur des efforts faciles.</li>
 <li><strong>Ton sommeil se dégrade alors que tu es épuisé</strong> — le paradoxe classique du système nerveux trop activé : endormissement difficile, réveils à 4 h du matin.</li>
 <li><strong>L'envie disparaît.</strong> Pas la flemme d'un jour : la perte d'appétit pour des séances que tu aimais, l'irritabilité, le moral en pente douce.</li>
-<li><strong>Tu tombes malade en boucle</strong> — rhumes à répétition, petite plaie qui traîne, courbatures qui durent 4-5 jours au lieu de 2.</li>
+<li><strong>Tu tombes malade en boucle</strong> — rhumes à répétition, petite plaie qui traîne, <a href="/articles/courbatures-que-faire.html">courbatures qui durent 4-5 jours</a> au lieu de 2.</li>
 </ul>
 
 <h2>Pourquoi ça arrive (même sans t'entraîner « énormément »)</h2>
@@ -574,7 +574,7 @@ ARTICLES = [
 <h2>Le marché de dupes, heure par heure</h2>
 <p>La soirée se passe en deux actes :</p>
 <ul>
-<li><strong>Première moitié de nuit :</strong> endormissement rapide, sommeil profond parfois même augmenté. Tout va bien en apparence.</li>
+<li><strong>Première moitié de nuit :</strong> endormissement rapide, <a href="/articles/sommeil-profond-comment-augmenter.html">sommeil profond</a> parfois même augmenté. Tout va bien en apparence.</li>
 <li><strong>Seconde moitié :</strong> le corps a métabolisé l'alcool, et l'effet rebond arrive — système nerveux en alerte, sommeil léger et fragmenté, réveils multiples (souvent vers 3-4 h du matin), soif, chaleur. Le <strong>sommeil paradoxal</strong> (REM), concentré en fin de nuit, est le grand sacrifié : c'est lui qui gère la mémoire et la régulation émotionnelle. Résultat au réveil : le compte d'heures semble correct, la tête dit le contraire.</li>
 </ul>
 
@@ -1025,10 +1025,10 @@ def index_page():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Journal de la station spatiale — Ecleptic</title>
+<title>Le Journal de l'ISS — Ecleptic</title>
 <meta name="description" content="Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables pour optimiser ta santé au quotidien.">
 <link rel="canonical" href="%(site)s/articles/">
-<meta property="og:title" content="Le Journal de la station spatiale — Ecleptic">
+<meta property="og:title" content="Le Journal de l'ISS — Ecleptic">
 <meta property="og:description" content="Sommeil, nutrition, entraînement, récupération : des conseils scientifiques et actionnables.">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="/assets/site.css">
@@ -1037,7 +1037,7 @@ def index_page():
 %(nav)s
 <main class="wrap">
   <div class="pagehead">
-    <span class="label">Journal de la station spatiale</span>
+    <span class="label">Journal de l'ISS</span>
     <h1 class="display" style="margin-top:22px">Des jours<br>autrement<br><span class="gold">pensés</span>.</h1>
     <p>Des textes sur le sommeil, l'alimentation, l'entraînement et l'art de construire des journées qui méritent d'être vécues.</p>
     <div class="stats">
