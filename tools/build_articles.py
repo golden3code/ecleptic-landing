@@ -651,8 +651,10 @@ def article_page(a, others):
                 '<meta name="twitter:image" content="%s%s">' % (SITE, img, SITE, img)) if img else ""
     hero = ('\n  <figure class="hero"><img src="%s" alt="%s" width="1600" height="840"></figure>'
             % (img, html.escape(a["title"], quote=True))) if img else ""
-    # Titres-questions : apparition caractère par caractère, même animation que
-    # « s'aligne. » sur l'accueil (délais en i², 100→1100 ms, translateY .05em).
+    # Titres « Préfixe : suite » : le préfixe (jusqu'aux deux-points inclus)
+    # apparaît tel quel, la suite est animée caractère par caractère — même
+    # animation que « s'aligne. » sur l'accueil (délais en i², 100→1100 ms,
+    # translateY .05em). Les titres-questions simples ne sont PAS animés.
     # Script inline juste après le header = anti-flash (split avant le 1er paint).
     reveal = """
 <script>
@@ -662,12 +664,15 @@ def article_page(a, others):
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var BASE = 100, SPREAD = 1000, P = 2;
   var text = h.textContent.replace(/ ([?!:;\\u00bb])/g, '\\u00a0$1');
-  var letters = Array.from(text);
-  var denom = Math.max(1, letters.length - 1);
+  var cut = text.indexOf(':') + 1;
+  if (cut <= 0) return;
+  var anim = Array.from(text.slice(cut));
+  var denom = Math.max(1, anim.length - 1);
   h.setAttribute('aria-label', text);
   h.textContent = '';
+  h.appendChild(document.createTextNode(text.slice(0, cut)));
   var spans = [], w = null, idx = 0;
-  letters.forEach(function(c){
+  anim.forEach(function(c){
     if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
     if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
     var s = document.createElement('span');
@@ -681,7 +686,7 @@ def article_page(a, others):
     spans.forEach(function(s){ s.classList.add('in'); });
   });});
 })();
-</script>""" if "?" in a["title"] else ""
+</script>""" if " : " in a["title"] else ""
     jsonld_img = '"image":"%s%s",' % (SITE, img) if img else ""
     jsonld = (
         '{"@context":"https://schema.org","@type":"Article","headline":%s,'

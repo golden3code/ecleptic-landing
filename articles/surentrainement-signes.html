@@ -53,6 +53,36 @@
     <h1>Surentraînement : les signes que tu en fais trop</h1>
     <p class="standfirst">Performances qui stagnent, sommeil dégradé, cœur de repos qui monte, motivation en berne : les signaux du surentraînement, et comment réagir avant de casser.</p>
   </header>
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
+  var cut = text.indexOf(':') + 1;
+  if (cut <= 0) return;
+  var anim = Array.from(text.slice(cut));
+  var denom = Math.max(1, anim.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  h.appendChild(document.createTextNode(text.slice(0, cut)));
+  var spans = [], w = null, idx = 0;
+  anim.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>
   <figure class="hero"><img src="/assets/articles/surentrainement-signes.jpg" alt="Surentraînement : les signes que tu en fais trop" width="1600" height="840"></figure>
   <p>Le vrai surentraînement — le syndrome médical, celui qui met des mois à se réparer — est rare. Ce qui est fréquent, c'est l'étape d'avant : le <strong>surmenage non compensé</strong>, quand tu empiles les séances plus vite que ton corps ne les digère. La bonne nouvelle : il prévient. La mauvaise : ses signaux ressemblent à de la « baisse de motivation », et beaucoup répondent en s'entraînant <em>plus</em>. C'est exactement l'inverse qu'il faut faire.</p>
 

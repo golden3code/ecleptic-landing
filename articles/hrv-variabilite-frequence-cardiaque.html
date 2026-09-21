@@ -60,12 +60,15 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var BASE = 100, SPREAD = 1000, P = 2;
   var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
-  var letters = Array.from(text);
-  var denom = Math.max(1, letters.length - 1);
+  var cut = text.indexOf(':') + 1;
+  if (cut <= 0) return;
+  var anim = Array.from(text.slice(cut));
+  var denom = Math.max(1, anim.length - 1);
   h.setAttribute('aria-label', text);
   h.textContent = '';
+  h.appendChild(document.createTextNode(text.slice(0, cut)));
   var spans = [], w = null, idx = 0;
-  letters.forEach(function(c){
+  anim.forEach(function(c){
     if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
     if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
     var s = document.createElement('span');

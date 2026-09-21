@@ -53,33 +53,6 @@
     <h1>Toujours fatigué ? Les vraies causes d&#x27;une fatigue constante</h1>
     <p class="standfirst">Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d&#x27;une fatigue qui dure, dans l&#x27;ordre.</p>
   </header>
-<script>
-(function(){
-  var h = document.querySelector('article h1');
-  if (!h) return;
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var BASE = 100, SPREAD = 1000, P = 2;
-  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
-  var letters = Array.from(text);
-  var denom = Math.max(1, letters.length - 1);
-  h.setAttribute('aria-label', text);
-  h.textContent = '';
-  var spans = [], w = null, idx = 0;
-  letters.forEach(function(c){
-    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
-    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
-    var s = document.createElement('span');
-    s.className = 'ch';
-    s.textContent = c;
-    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
-    idx++; w.appendChild(s); spans.push(s);
-  });
-  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
-  requestAnimationFrame(function(){ requestAnimationFrame(function(){
-    spans.forEach(function(s){ s.classList.add('in'); });
-  });});
-})();
-</script>
   <figure class="hero"><img src="/assets/articles/toujours-fatigue-causes.jpg" alt="Toujours fatigué ? Les vraies causes d&#x27;une fatigue constante" width="1600" height="840"></figure>
   <p>« Je dors, mais je suis quand même fatigué. » C'est probablement la phrase qu'on entend le plus dès qu'on parle d'énergie. La fatigue constante a rarement une cause exotique : dans l'immense majorité des cas, c'est l'une des cinq suivantes — et souvent deux ou trois en même temps. Dans l'ordre où il faut les vérifier :</p>
 
