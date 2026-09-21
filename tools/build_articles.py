@@ -24,6 +24,130 @@ ARTICLES = [
     #     "body": """<p>...</p><h2>...</h2>""",
     # },
     {
+        "slug": "sommeil-profond-comment-augmenter",
+        "cat": "Sommeil",
+        "title": "Sommeil profond : comment en avoir plus ?",
+        "description": "Chambre fraîche, horaires fixes, sport le jour, alcool rare : les seuls leviers qui augmentent vraiment le sommeil profond — et ceux qui ne servent à rien.",
+        "date": "2026-09-21",
+        "body": """
+<p>La réponse courte : tu ne peux pas « forcer » le sommeil profond directement — mais tu peux <strong>créer les conditions qui le maximisent</strong> : une chambre fraîche, des horaires réguliers, de l'exercice dans la journée, et pas d'alcool le soir. Le sommeil profond représente environ <strong>15 à 25 % de la nuit</strong> chez l'adulte, concentré dans les premières heures. C'est lui qui fait le gros du travail physique : sécrétion d'hormone de croissance, réparation des tissus, nettoyage du cerveau, consolidation du système immunitaire.</p>
+<p>Première chose à savoir : la quantité de sommeil profond n'est pas un objectif à viser en valeur absolue. Elle est largement génétique, elle baisse naturellement avec l'âge, et elle se régule <em>toute seule</em> quand les conditions sont bonnes. Si tu manques de sommeil profond une nuit, ton cerveau en programme davantage la nuit suivante — c'est le rebond. Ton travail n'est pas de le fabriquer, c'est d'arrêter de le saboter.</p>
+
+<h2>Le levier nº1 : la température</h2>
+<p>Pour plonger en sommeil profond, ton corps doit perdre environ 1 °C de température interne. Tout ce qui gêne cette chute ampute les premières heures de la nuit — précisément celles où le profond se joue :</p>
+<ul>
+<li><strong>Chambre entre 17 et 19 °C.</strong> C'est le réglage au meilleur rendement de tout le sommeil.</li>
+<li><strong>Douche ou bain chaud 1 à 2 heures avant le coucher</strong> : la vasodilatation qui suit accélère la chute de température. L'effet est paradoxal mais bien documenté.</li>
+<li><strong>Pas de sport intense dans les 2-3 heures avant le lit</strong> — il élève la température exactement au mauvais moment. Le même sport fait dans la journée, lui, <em>augmente</em> le sommeil profond de la nuit.</li>
+</ul>
+
+<h2>Ce qui le détruit à coup sûr</h2>
+<ul>
+<li><strong>L'alcool le soir</strong> — le saboteur le plus efficace qui existe. Même deux verres fragmentent la nuit et écrasent la récupération ; <a href="/articles/alcool-sommeil-effets.html">le détail verre par verre est ici</a>.</li>
+<li><strong>Les horaires anarchiques.</strong> Le sommeil profond est programmé par ton horloge circadienne : quand tu te couches à des heures différentes chaque soir, la pression de sommeil et l'horloge ne sont plus synchronisées, et l'architecture de la nuit se désorganise. <a href="/articles/se-coucher-meme-heure-regularite.html">La régularité change plus de choses que la durée</a>.</li>
+<li><strong>La caféine tardive.</strong> Demi-vie d'environ 5 heures : un café à 16 h occupe encore la moitié de ta soirée. Dernier café 8 à 10 heures avant le coucher.</li>
+<li><strong>Manger lourd tard.</strong> Une digestion en cours maintient la température et le cœur plus hauts — dîner idéalement 2-3 heures avant le lit.</li>
+</ul>
+
+<h2>Et les scores de ta montre, on y croit ?</h2>
+<p>Prudence. Les capteurs grand public estiment les stades de sommeil à partir des mouvements et du cœur — c'est une <strong>estimation</strong>, pas une mesure d'ondes cérébrales, et la précision stade par stade est moyenne. La bonne façon de les lire : ignore la valeur absolue d'une nuit (« 42 minutes de profond » ne veut pas dire grand-chose), regarde <em>ta tendance sur plusieurs semaines</em> et ce qui la fait bouger — alcool, horaires, sport, stress. Utilisée comme ça, la donnée devient réellement utile : c'est exactement la logique d'un <a href="/articles/readiness-score-comment-ca-marche.html">score de préparation</a>.</p>
+
+<h2>Ce qu'il faut retenir</h2>
+<ul>
+<li>Le sommeil profond se régule tout seul quand les conditions sont bonnes : fraîcheur, régularité, sport le jour.</li>
+<li>Ses trois pires ennemis : l'alcool le soir, les horaires anarchiques, la caféine tardive.</li>
+<li>Lis les chiffres de ta montre en tendance sur des semaines, jamais en valeur absolue d'une nuit.</li>
+</ul>
+""",
+        "faq": [
+            {"q": "Comment augmenter son sommeil profond ?",
+             "a": "On ne le force pas directement : on crée les conditions. Chambre entre 17 et 19 °C, horaires de coucher réguliers, exercice dans la journée, pas d'alcool ni de caféine le soir. Le sommeil profond se régule ensuite tout seul."},
+            {"q": "Combien de sommeil profond par nuit est normal ?",
+             "a": "Environ 15 à 25 % de la nuit chez l'adulte, concentré dans les premières heures. La quantité exacte est largement génétique et baisse naturellement avec l'âge — c'est la tendance qui compte, pas la valeur d'une nuit."},
+            {"q": "Les montres mesurent-elles bien le sommeil profond ?",
+             "a": "Elles l'estiment à partir des mouvements et de la fréquence cardiaque, sans mesurer les ondes cérébrales : la précision stade par stade est moyenne. Fiable en tendance sur plusieurs semaines, pas en valeur absolue."},
+        ],
+    },
+    {
+        "slug": "courbatures-que-faire",
+        "cat": "Récupération",
+        "title": "Courbatures : que faire pour récupérer plus vite ?",
+        "description": "Bouger léger, dormir, manger assez de protéines : ce qui accélère vraiment la récupération des courbatures, ce qui ne change rien, et quand s'inquiéter.",
+        "date": "2026-09-21",
+        "body": """
+<p>La réponse courte : <strong>bouger léger, dormir, et attendre 24 à 72 heures</strong>. Les courbatures — DOMS pour les intimes, <em>delayed onset muscle soreness</em> — sont des micro-lésions musculaires en cours de réparation, pas de l'acide lactique (ce mythe a la vie dure : le lactate est éliminé en moins d'une heure après l'effort). Elles apparaissent 12 à 24 heures après une séance inhabituelle, culminent vers 48 heures, et disparaissent seules. Rien ne les « soigne » vraiment, mais plusieurs choses accélèrent le retour à la normale — et deux ou trois erreurs classiques le retardent.</p>
+
+<h2>Ce qui aide vraiment</h2>
+<ul>
+<li><strong>La récupération active.</strong> Marche, vélo tranquille, natation facile : 20-30 minutes de mouvement léger augmentent le flux sanguin vers les muscles et réduisent la sensation de raideur. C'est le levier le mieux documenté — et le plus contre-intuitif quand on a envie de ne plus jamais bouger.</li>
+<li><strong>Le sommeil.</strong> C'est pendant la nuit que la réparation se fait : hormone de croissance en sommeil profond, synthèse protéique. Une nuit courte après une grosse séance, et les courbatures durent plus longtemps — <a href="/articles/combien-heures-sommeil-par-nuit.html">vise le haut de ta fourchette</a> les jours qui suivent.</li>
+<li><strong>Les protéines.</strong> Le muscle se répare avec des matériaux : <a href="/articles/proteines-par-jour-prise-de-muscle.html">1,6 à 2,2 g par kilo et par jour</a>, répartis sur la journée, dont une prise le soir.</li>
+<li><strong>La chaleur</strong> (douche chaude, bain) détend et soulage la raideur — effet modeste mais réel sur la sensation.</li>
+</ul>
+
+<h2>Ce qui ne change presque rien</h2>
+<p>Les étirements avant ou après la séance ne préviennent pas les courbatures — c'est l'un des résultats les plus répétés de la littérature. Le massage et les rouleaux soulagent la sensation sans accélérer la réparation ; agréables, pas indispensables. Les bains glacés réduisent un peu la douleur mais pourraient <em>atténuer les adaptations</em> à l'entraînement quand ils sont systématiques — à réserver aux périodes de compétition. Et les anti-inflammatoires en routine sont une mauvaise idée : l'inflammation fait partie du processus de reconstruction.</p>
+
+<h2>Peut-on s'entraîner avec des courbatures ?</h2>
+<p>Oui, avec discernement. Courbatures légères : entraîne-toi normalement, l'échauffement les fait passer. Courbatures marquées : travaille <strong>un autre groupe musculaire</strong> ou fais une séance légère — le muscle en réparation a besoin de ses 48-72 heures, c'est exactement pour ça qu'on alterne les groupes dans une semaine bien construite (<a href="/articles/combien-seances-sport-par-semaine.html">la bonne fréquence est ici</a>). La douleur qui t'oblige à modifier tes mouvements, elle, veut dire repos.</p>
+<p>Deux signaux doivent te faire lever le pied plus sérieusement : des courbatures qui durent <strong>plus de 4-5 jours</strong> régulièrement — c'est un signe que tu accumules plus que tu ne récupères, <a href="/articles/surentrainement-signes.html">les autres signaux du surmenage sont ici</a> — et une douleur asymétrique, localisée et vive, qui ressemble plus à une blessure qu'à une courbature.</p>
+
+<h2>Ce qu'il faut retenir</h2>
+<ul>
+<li>Les courbatures sont une réparation en cours : 24-72 heures, mouvement léger, sommeil, protéines.</li>
+<li>Étirements, glace systématique et anti-inflammatoires en routine : inutiles ou contre-productifs.</li>
+<li>S'entraîner léger avec des courbatures est sain ; des courbatures de 5 jours répétées sont un signal de surmenage.</li>
+</ul>
+""",
+        "faq": [
+            {"q": "Comment faire passer les courbatures rapidement ?",
+             "a": "Récupération active (20-30 min de marche ou vélo tranquille), sommeil en haut de ta fourchette, 1,6-2,2 g de protéines par kilo par jour, chaleur pour la raideur. Le reste est du temps : elles culminent à 48 h et disparaissent seules."},
+            {"q": "Peut-on faire du sport avec des courbatures ?",
+             "a": "Oui : normalement si elles sont légères, sur un autre groupe musculaire ou en séance légère si elles sont marquées. Seule la douleur qui modifie tes mouvements impose le repos."},
+            {"q": "Les courbatures sont-elles dues à l'acide lactique ?",
+             "a": "Non — c'est un mythe. Le lactate est éliminé en moins d'une heure après l'effort. Les courbatures sont des micro-lésions musculaires en cours de réparation, qui apparaissent 12 à 24 heures plus tard."},
+        ],
+    },
+    {
+        "slug": "sieste-ideale-duree",
+        "cat": "Énergie",
+        "title": "Sieste idéale : combien de temps faut-il dormir ?",
+        "description": "10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est le pire choix, et quand la sieste est un signal.",
+        "date": "2026-09-21",
+        "body": """
+<p>La réponse courte : <strong>10 à 20 minutes, avant 15 heures</strong>. C'est la sieste au meilleur rendement : assez longue pour restaurer la vigilance, l'humeur et la concentration, assez courte pour rester en sommeil léger — tu te réveilles net, opérationnel en quelques minutes. Les effets sont mesurables pendant 2 à 3 heures derrière.</p>
+<p>La règle d'or est simple : <em>éviter de plonger en sommeil profond</em>. C'est lui qui crée la fameuse « inertie de sommeil » — ce brouillard pâteux au réveil qui peut durer 30 à 60 minutes et qui fait dire que « la sieste, ce n'est pas pour moi ». Ce n'est pas la sieste le problème, c'est sa durée.</p>
+
+<h2>30 minutes : le pire choix possible</h2>
+<p>Contre-intuitif mais net dans les données : la sieste de 30-45 minutes est la pire des options. Trop longue pour rester en léger, trop courte pour boucler un cycle complet, elle te réveille <strong>en plein sommeil profond</strong> — au moment exact où l'inertie est maximale. Si tu as déjà émergé d'une sieste plus fatigué qu'avant, c'était probablement ça. Les deux formats qui marchent :</p>
+<ul>
+<li><strong>10-20 minutes</strong> — la sieste d'entretien, celle de tous les jours. Mets un réveil à 20-25 minutes (le temps de t'endormir), pas plus.</li>
+<li><strong>90 minutes</strong> — le cycle complet, qui traverse le profond et se termine naturellement. Réservé aux vraies dettes : nuit très courte, gros bloc d'entraînement, décalage horaire. Trop lourd en usage quotidien.</li>
+</ul>
+
+<h2>L'heure compte autant que la durée</h2>
+<p>La fenêtre naturelle se situe <strong>entre 13 et 15 heures</strong> — le creux circadien du début d'après-midi, qui existe même sans déjeuner copieux. Après 15-16 heures, la sieste entame la « pression de sommeil » que tu accumules pour la nuit : tu t'endormiras plus tard et moins facilement. Si tu protèges tes soirées, la règle est stricte : <strong>pas de sieste après 15 heures</strong> — et en cas de coup de barre tardif, préfère une marche dehors ou de la lumière vive.</p>
+
+<h2>Quand la sieste est un symptôme, pas une solution</h2>
+<p>La sieste plaisir est une excellente habitude. Le <em>besoin</em> impérieux de sieste tous les jours, lui, est un message : tu ne dors probablement pas assez la nuit — <a href="/articles/combien-heures-sommeil-par-nuit.html">vérifie ton besoin réel ici</a>. Et si tu dors suffisamment mais que la somnolence de jour reste écrasante, c'est le tableau d'une <a href="/articles/toujours-fatigue-causes.html">fatigue qui mérite un vrai diagnostic</a>. La sieste compense, elle ne remplace pas : ta nuit reste le socle, la sieste est un appoint. Un dernier repère : le week-end, une sieste courte vaut toujours mieux qu'une grasse matinée de trois heures, qui <a href="/articles/se-coucher-meme-heure-regularite.html">décale ton horloge</a> pour les jours suivants.</p>
+
+<h2>Ce qu'il faut retenir</h2>
+<ul>
+<li>10 à 20 minutes avant 15 heures : vigilance restaurée, zéro brouillard. Réveil obligatoire à 25 minutes max.</li>
+<li>30-45 minutes est le pire format (réveil en plein profond) ; 90 minutes se réserve aux vraies dettes.</li>
+<li>Un besoin de sieste quotidien impérieux est un signal de nuits insuffisantes, pas une solution durable.</li>
+</ul>
+""",
+        "faq": [
+            {"q": "Quelle est la durée idéale d'une sieste ?",
+             "a": "10 à 20 minutes : assez pour restaurer vigilance et concentration, assez court pour rester en sommeil léger et se réveiller net. Mets un réveil à 20-25 minutes, le temps de t'endormir compris."},
+            {"q": "Pourquoi je me réveille plus fatigué après une sieste ?",
+             "a": "Ta sieste était trop longue : à 30-45 minutes, tu te réveilles en plein sommeil profond, au maximum de l'inertie de sommeil. Raccourcis à 20 minutes, ou passe au cycle complet de 90 minutes les jours de vraie dette."},
+            {"q": "Jusqu'à quelle heure peut-on faire la sieste ?",
+             "a": "Avant 15 heures, dans le creux circadien de début d'après-midi. Plus tard, la sieste entame la pression de sommeil accumulée pour la nuit et retarde l'endormissement du soir."},
+        ],
+    },
+    {
         "slug": "combien-heures-sommeil-par-nuit",
         "cat": "Sommeil",
         "title": "Combien d'heures de sommeil faut-il vraiment par nuit ?",
@@ -633,7 +757,7 @@ footer.site a:hover{color:var(--gold)}
 .stats .l{display:block;margin-top:10px}
 .themes{margin:40px 0 8px}
 .themes .label{display:block;margin-bottom:16px}
-.themescroll{border:1px solid var(--line);max-height:264px;overflow-y:auto;overscroll-behavior:contain;
+.themescroll{max-height:264px;overflow-y:auto;overscroll-behavior:contain;
              scrollbar-width:thin;scrollbar-color:rgba(154,142,119,.4) transparent}
 .themescroll::-webkit-scrollbar{width:4px}
 .themescroll::-webkit-scrollbar-thumb{background:rgba(154,142,119,.4)}

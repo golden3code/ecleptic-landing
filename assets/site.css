@@ -106,7 +106,7 @@ footer.site a:hover{color:var(--gold)}
 .stats .l{display:block;margin-top:10px}
 .themes{margin:40px 0 8px}
 .themes .label{display:block;margin-bottom:16px}
-.themescroll{border:1px solid var(--line);max-height:264px;overflow-y:auto;overscroll-behavior:contain;
+.themescroll{max-height:264px;overflow-y:auto;overscroll-behavior:contain;
              scrollbar-width:thin;scrollbar-color:rgba(154,142,119,.4) transparent}
 .themescroll::-webkit-scrollbar{width:4px}
 .themescroll::-webkit-scrollbar-thumb{background:rgba(154,142,119,.4)}
