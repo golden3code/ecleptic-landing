@@ -6,7 +6,8 @@ Pour ajouter un article : ajouter une entrée dans ARTICLES puis lancer
     python3 tools/build_articles.py
 depuis la racine du repo landing, et commiter les fichiers générés.
 """
-import os, html
+import os, html, re
+from datetime import date
 
 SITE = "https://ecleptic.health"
 TF_LINK = "https://testflight.apple.com/join/H5CQgDa7"
@@ -628,6 +629,46 @@ def _load_satellites():
 
 ARTICLES = ARTICLES + _load_satellites()
 
+
+# --- Publication programmée (drip) -----------------------------------------
+# tools/schedule.py expose SCHEDULE = {slug: "AAAA-MM-JJ"} : la date à laquelle
+# l'article devient public. Un article dont la date est dans le futur n'est PAS
+# généré (ni page, ni index, ni sitemap) et les liens internes vers lui sont
+# neutralisés — aucun lien mort possible. Le cron GitHub Actions rebuild chaque
+# jour : l'article apparaît tout seul le jour venu. Les articles absents de
+# SCHEDULE gardent leur propre "date" (publication immédiate — piliers, etc.).
+def _load_schedule():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "schedule.py")
+    if not os.path.exists(p):
+        return {}
+    import importlib.util as _ilu
+    spec = _ilu.spec_from_file_location("_ecleptic_schedule", p)
+    mod = _ilu.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return dict(getattr(mod, "SCHEDULE", {}))
+
+
+SCHEDULE = _load_schedule()
+for _a in ARTICLES:
+    if _a["slug"] in SCHEDULE:
+        _a["date"] = SCHEDULE[_a["slug"]]  # la date programmée fait foi (byline + gating)
+
+# Date de build : aujourd'hui, ou override ECLEPTIC_BUILD_DATE (tests / rejeu).
+_bd = os.environ.get("ECLEPTIC_BUILD_DATE")
+TODAY = date.fromisoformat(_bd) if _bd else date.today()
+
+ARTICLES_ALL = ARTICLES  # corpus complet (y compris articles à venir)
+ARTICLES = [a for a in ARTICLES_ALL if date.fromisoformat(a["date"]) <= TODAY]
+LIVE_SLUGS = {a["slug"] for a in ARTICLES}
+
+
+def neutralize_links(body):
+    """Retire les hyperliens vers des articles pas encore publiés (garde le texte)."""
+    def repl(m):
+        return m.group(2) if m.group(1) not in LIVE_SLUGS else m.group(0)
+    return re.sub(r'<a href="/articles/([a-z0-9-]+)\.html">(.*?)</a>', repl, body, flags=re.S)
+
+
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
            "Charge", "Régularité", "Humeur", "Contexte", "Énergie"]
 
@@ -1011,7 +1052,7 @@ def article_page(a, others):
         "og_image": og_image, "hero": hero, "reveal": reveal,
         "nav": nav("articles"), "date": fr_date(a["date"]),
         "cat": html.escape(cat(a)), "mins": read_min(a),
-        "body": a["body"].strip(), "tf": TF_LINK, "slug": a["slug"], "more": more,
+        "body": neutralize_links(a["body"].strip()), "tf": TF_LINK, "slug": a["slug"], "more": more,
         "footer": FOOTER, "posthog": POSTHOG,
     }
 
@@ -1170,15 +1211,24 @@ def main():
     os.makedirs(os.path.join(root, "assets"), exist_ok=True)
     with open(os.path.join(root, "assets", "site.css"), "w") as f:
         f.write(CSS)
+    adir = os.path.join(root, "articles")
+    # Purge les pages d'articles qui ne sont plus publiés (repassés en programmé,
+    # ou slug renommé) : sinon l'ancien HTML resterait servable et indexable.
+    live_files = {a["slug"] + ".html" for a in ARTICLES} | {"index.html"}
+    for fn in os.listdir(adir):
+        if fn.endswith(".html") and fn not in live_files:
+            os.remove(os.path.join(adir, fn))
     for i, a in enumerate(ARTICLES):
         others = ARTICLES[i + 1:] + ARTICLES[:i]
-        with open(os.path.join(root, "articles", a["slug"] + ".html"), "w") as f:
+        with open(os.path.join(adir, a["slug"] + ".html"), "w") as f:
             f.write(article_page(a, others))
-    with open(os.path.join(root, "articles", "index.html"), "w") as f:
+    with open(os.path.join(adir, "index.html"), "w") as f:
         f.write(index_page())
     with open(os.path.join(root, "sitemap.xml"), "w") as f:
         f.write(sitemap())
-    print("OK — %d articles + index + sitemap + css" % len(ARTICLES))
+    scheduled = len(ARTICLES_ALL) - len(ARTICLES)
+    print("OK — %d articles publiés (%d programmés à venir) + index + sitemap + css"
+          % (len(ARTICLES), scheduled))
 
 
 if __name__ == "__main__":

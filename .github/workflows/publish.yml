@@ -1,0 +1,47 @@
+name: Publier les articles programmés
+
+# Rebuild le site chaque jour. Un article dont la date de publication (voir
+# tools/schedule.py) est atteinte apparaît automatiquement : le build le génère,
+# l'ajoute à l'index et au sitemap, et ce workflow commit + push le changement.
+# Les jours sans nouvel article, le build est identique → rien n'est commité.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # tous les jours à 06:00 UTC (~08:00 Paris)
+  workflow_dispatch: {}    # bouton « Run workflow » pour publier à la demande
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-scheduled
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # historique complet : lastmod du sitemap correct
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build (révèle les articles dont la date est atteinte)
+        run: python3 tools/build_articles.py
+
+      - name: Commit & push si de nouveaux articles sont publiés
+        run: |
+          git config user.name "Ecleptic Publisher"
+          git config user.email "bot@ecleptic.health"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Rien de neuf à publier aujourd'hui."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Publication automatique — $(date -u +%Y-%m-%d)"
+          git push
