@@ -385,7 +385,7 @@
     var r = await tryInsert(payload);
     if (!r.ok) r = await tryInsert(payload);
     if (r.ok) { try { localStorage.removeItem(PENDING_KEY); } catch(_){} }
-    else { try { localStorage.setItem(PENDING_KEY, JSON.stringify(payload)); } catch(_){} }
+    else { try { localStorage.setItem(PENDING_KEY, JSON.stringify({ at: Date.now(), payload: payload })); } catch(_){} }
     return r;
   }
   (async function flushPending(){
@@ -393,7 +393,15 @@
     try { raw = localStorage.getItem(PENDING_KEY); } catch(_) {}
     if (!raw) return;
     try {
-      var r = await saveTester(JSON.parse(raw));
+      // Email + prénom en clair dans le navigateur : on ne les garde pas
+      // au-delà de 7 jours si le renvoi n'a jamais abouti.
+      var saved = JSON.parse(raw);
+      var payload = saved && saved.payload ? saved.payload : saved;
+      if (!saved.at || Date.now() - saved.at > 7 * 86400000) {
+        localStorage.removeItem(PENDING_KEY);
+        if (saved.at) return;
+      }
+      var r = await saveTester(payload);
       if (r.ok) track("beta_form_recovered");
     } catch(_) {}
   })();

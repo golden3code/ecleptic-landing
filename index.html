@@ -63,7 +63,10 @@
   .step p{color:var(--muted);font-size:15.5px;max-width:440px}
   @media(max-width:640px){.steps{max-width:none}.step{max-width:none}.step.right{margin-left:0;text-align:left}}
 
-  .facts{padding-block:6vh 30vh}
+  /* Les 4 lignes à égale distance de « III Agir » et de « Sur invitation » :
+     en dessous = fondu noir (38vh) + ~140px d'amorce de la finale ; au-dessus ≈ 175px
+     fixes → on compense en haut, rien en bas (mesuré 390×700 → 1440×900). */
+  .facts{padding-block:calc(38vh - 34px) 0}
 
   .fadeblack{height:38vh;background:linear-gradient(var(--bg), #000)}
   .finale{padding:110px 24px 0;text-align:center;margin-top:0;background:#000}
