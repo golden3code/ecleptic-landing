@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ecleptic — Ton bilan de bêta</title>
 <style>
@@ -107,6 +109,8 @@
       <input type="email" name="email" autocomplete="email" placeholder="optionnel">
     </div>
 
+    <!-- Anti-spam : champ invisible, seuls les robots le remplissent. -->
+    <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
     <button class="cta" id="btn" type="submit">Envoyer mon bilan</button>
     <p class="err" id="err">L'envoi a échoué — réessaie, ou écris-nous : contact@ecleptic.app</p>
   </form>
@@ -137,6 +141,7 @@
     var btn=document.getElementById("btn"), err=document.getElementById("err");
     btn.disabled=true; btn.textContent="Un instant…"; err.style.display="none";
     var fd=new FormData(e.target);
+    if(fd.get("website")){ btn.textContent="Merci !"; return; }
     var payload={
       satisfaction:+fd.get("satisfaction"), nps:+fd.get("nps"),
       usage_frequency:fd.get("usage_frequency"),

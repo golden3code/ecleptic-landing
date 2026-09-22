@@ -1,0 +1,9 @@
+# GitHub Pages (Jekyll) : fichiers du dépôt à NE PAS publier sur ecleptic.health.
+# Les outils de build et les articles programmés (tools/satellites) restaient
+# servis publiquement — ils ne doivent exister que dans le dépôt.
+exclude:
+  - tools
+  - discord-kit.md
+  - README.md
+  - "*.py"
+  - "*.json"

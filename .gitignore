@@ -3,3 +3,7 @@
 # Bytecode Python (généré par le build, ne doit jamais être commité)
 __pycache__/
 *.pyc
+
+# Secrets / fichiers locaux
+.env*
+.DS_Store
