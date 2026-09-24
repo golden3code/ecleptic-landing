@@ -2,7 +2,8 @@
    Bureau : survoler un onglet déroule un panneau pleine largeur sous le bandeau
    (page floutée derrière) ; passer d'un onglet à l'autre remplace le contenu et la
    hauteur suit ce qui est affiché. Journal : thèmes | articles du thème survolé |
-   les plus lus. L'app, Science-Based, La bêta : colonnes définies dans les données.
+   les plus lus. Accueil (panneau « L'app »), Science-Based, La bêta : colonnes
+   définies dans les données.
    Mobile : « Journal » ouvre une feuille plein écran ; les autres onglets restent
    de simples liens. Données : window.ECLEPTIC_NAV, écrit par tools/build_articles.py
    dans /assets/nav-data.js (régénéré à chaque build, donc à chaque publication).
@@ -14,7 +15,7 @@
   if (!nav) return;
 
   // Panneaux visibles par tous ; les autres ne s'ouvrent qu'en aperçu.
-  var LIVE = { journal: true, science: true };
+  var LIVE = { journal: true, science: true, app: true, beta: true };
   var PREVIEW = false;
   try {
     var ap = new URLSearchParams(location.search).get("apercu");
@@ -40,10 +41,6 @@
   var triggers = [].slice.call(nav.querySelectorAll("[data-mega]"))
     .filter(function (t) { return enabled(t.getAttribute("data-mega")); });
   if (!triggers.length) return;
-  if (PREVIEW && NAV.app && NAV.app.label) {
-    var appTab = nav.querySelector('[data-mega="app"]');
-    if (appTab) appTab.textContent = NAV.app.label;
-  }
 
   // ---------------------------------------------------------------- bureau
   var panel = el("div", "mega");

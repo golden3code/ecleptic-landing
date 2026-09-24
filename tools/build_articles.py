@@ -1000,7 +1000,7 @@ def nav_panels(idx):
         {"t": "Tables VDOT de Jack Daniels", "u": mp("age-biologique", "age-biologique")},
         {"t": "National Sleep Foundation", "u": mp("besoin-de-sommeil", "readiness")}]})
     return {
-        "app": {"label": "L'app", "cols": [
+        "app": {"cols": [
             {"label": "L'app en trois temps", "big": True, "items": [
                 {"t": "Mesurer", "d": "Ta nuit, tes vitaux, ta charge. Sans saisie.", "u": "/#mesurer"},
                 {"t": "Comprendre", "d": "Sommeil, repas et séances, enfin croisés.", "u": "/#comprendre"},
