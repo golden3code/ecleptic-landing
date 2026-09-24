@@ -30,8 +30,14 @@
   @media (prefers-reduced-motion:reduce){.hero h1 .ch, .steps h2 .ch{opacity:1;transform:none;transition:none}}
   .skyband{padding:38vh 0 72vh}
   .skyfield{position:relative}
-  .starfield{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:56vh;pointer-events:none;z-index:0}
+  .starfield{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:86vh;pointer-events:none;z-index:0;overflow:hidden}
   .starfield b{position:absolute;display:block;border-radius:50%;background:#F2EBDD;opacity:0;will-change:opacity}
+  /* Etoile filante : trainee ivoire qui s'eclaire vers la tete (a droite, origine
+     de la rotation), tete lumineuse legerement doree. Animee en JS (Web Animations). */
+  .starfield i{position:absolute;left:0;top:0;height:1px;border-radius:1px;opacity:0;transform-origin:100% 50%;will-change:transform,opacity;
+               background:linear-gradient(90deg,rgba(242,235,221,0),rgba(242,235,221,.85))}
+  .starfield i::after{content:"";position:absolute;right:-1px;top:-1px;width:3px;height:3px;border-radius:50%;background:#FFF8EA;
+               box-shadow:0 0 6px 2px rgba(242,235,221,.7),0 0 14px 3px rgba(217,164,65,.35)}
   .constellation{position:relative;z-index:1;max-width:820px;width:100%;margin:0 auto;padding:0 24px}
   .constellation svg{display:block;width:100%;height:auto}
   @media(max-width:640px){.constellation svg text{font-size:24px;letter-spacing:2px}}
@@ -306,7 +312,7 @@
     var field = document.querySelector('.starfield');
     var stars = [];
     if (field){
-      var N = 60, frag = document.createDocumentFragment();
+      var N = 90, frag = document.createDocumentFragment();
       for (var i=0;i<N;i++){
         var b = document.createElement('b');
         var size = (Math.random()<0.8) ? (0.7+Math.random()*0.7) : (1.4+Math.random()*0.9);
@@ -335,9 +341,10 @@
 
       // Etoiles : cloche selon la hauteur du centre de la constellation.
       // c = 1 -> centre au bas de l'ecran ; 0 -> en haut. P monte de ENTER a PEAK
-      // puis redescend jusqu'a EXIT (constellation sortie -> fond noir sous les faits).
+      // puis redescend jusqu'a EXIT. Bande de 86vh (±43vh autour du centre) : les
+      // etoiles arrivent par le bas de l'ecran des ENTER et le quittent par le haut a EXIT.
       var c = (r.top + r.height/2) / vh;
-      var ENTER = 0.98, PEAK = 0.40, EXIT = -0.12, P;
+      var ENTER = 1.20, PEAK = 0.40, EXIT = -0.38, P;
       if (c >= ENTER || c <= EXIT) P = 0;
       else if (c > PEAK) P = (ENTER - c) / (ENTER - PEAK);
       else P = (c - EXIT) / (PEAK - EXIT);
@@ -348,7 +355,49 @@
         a = a<0?0:(a>1?1:a);
         s.el.style.opacity = (a * s.maxOp).toFixed(3);
       }
+      maybeShoot(P);
     }
+
+    // Etoiles filantes : seulement pendant le scroll vers le bas, quand le ciel est
+    // visible. Une fois lancee, l'animation va jusqu'au bout (non liee au scroll).
+    var lastY = window.scrollY || 0, nextAt = 0, live = 0;
+    var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function maybeShoot(P){
+      var y = window.scrollY || 0, down = y > lastY + 1;
+      lastY = y;
+      if (calm || !field || !down || P < 0.2 || live >= 2) return;
+      var now = performance.now();
+      if (now < nextAt || Math.random() > 0.08) return;
+      if (shoot()) nextAt = now + 900 + Math.random() * 1400;
+    }
+    function shoot(){
+      var fr = field.getBoundingClientRect(), vh = window.innerHeight;
+      var top = Math.max(fr.top, 0), bot = Math.min(fr.bottom, vh);
+      if (bot - top < 140) return false;
+      var el = document.createElement('i');
+      if (!el.animate) return false;
+      var len = 60 + Math.random() * 70;                 // longueur de la trainee
+      var dist = 170 + Math.random() * 170;              // distance parcourue
+      var ang = 16 + Math.random() * 24;                 // degres sous l'horizontale
+      var dir = Math.random() < 0.5 ? 1 : -1;            // vers la droite ou la gauche
+      var rad = ang * Math.PI / 180, dx = Math.cos(rad) * dist * dir, dy = Math.sin(rad) * dist;
+      var x0 = fr.width * (0.14 + Math.random() * 0.72);
+      var y0 = (top - fr.top) + (bot - top) * (0.06 + Math.random() * 0.5);
+      var rot = dir > 0 ? ang : 180 - ang;
+      el.style.width = len.toFixed(0) + 'px';
+      el.style.left = (x0 - len).toFixed(1) + 'px';
+      el.style.top = y0.toFixed(1) + 'px';
+      field.appendChild(el); live++;
+      var anim = el.animate([
+        {transform: 'translate(0,0) rotate(' + rot + 'deg) scaleX(.15)', opacity: 0},
+        {opacity: 1, offset: .18},
+        {opacity: .9, offset: .6},
+        {transform: 'translate(' + dx.toFixed(1) + 'px,' + dy.toFixed(1) + 'px) rotate(' + rot + 'deg) scaleX(1)', opacity: 0}
+      ], {duration: 750 + Math.random() * 450, easing: 'cubic-bezier(.25,.6,.35,1)', fill: 'forwards'});
+      anim.onfinish = function(){ el.remove(); live--; };
+      return true;
+    }
+
     function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }
     window.addEventListener('scroll', onScroll, {passive:true});
     window.addEventListener('resize', onScroll, {passive:true});
