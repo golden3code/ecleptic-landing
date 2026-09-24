@@ -367,8 +367,8 @@
       lastY = y;
       if (calm || !field || !down || P < 0.2 || live >= 2) return;
       var now = performance.now();
-      if (now < nextAt || Math.random() > 0.08) return;
-      if (shoot()) nextAt = now + 900 + Math.random() * 1400;
+      if (now < nextAt || Math.random() > 0.1) return;
+      if (shoot()) nextAt = now + 700 + Math.random() * 900;
     }
     function shoot(){
       var fr = field.getBoundingClientRect(), vh = window.innerHeight;
