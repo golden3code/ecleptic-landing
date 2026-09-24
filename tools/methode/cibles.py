@@ -13,13 +13,17 @@ Ajouts du 24/09 (demande du user), vérifiés dans compute-targets et compute-ex
 perte rapide = plus de 1,5 % du poids par semaine ; dette de sommeil (≥ 4 nuits sur
 7 j, manque cumulé ≥ 300 min sous 7 h/nuit) → déficit limité à −15 % ; déficit ≤ 1 %
 du poids par semaine (poids × 0,01 × 7 700 / 7, soit 11 kcal/kg/j) ; planchers dans
-l'ordre métabolisme de repos puis 1 200 kcal (femme) / 1 500 kcal (homme) ; types de
+l'ordre métabolisme de repos puis 1 200 kcal (femme) / 1 500 kcal (homme ou sexe non
+précisé) ; types de
 journée (repos 0, très léger ≥ 1, léger ≥ 30, modéré ≥ 60, intense ≥ 105 min actives ;
 bonus = minutes moyennes du niveau sur 14 j × 4 kcal, ≤ 600 ; repos ≤ −300 ; écart
 porté par les glucides) ; phase lutéale estimée +150 kcal (suivi du cycle activé avec
 consentement, hors pilule combinée, ≥ 2 cycles terminés) ; dépense mesurée écartée à
 ± 3 jours d'un début de règles (rétention d'eau) ; interrupteur Voyage / maladie = gel
 de l'estimation de dépense pendant la pause + 7 jours (les cibles, elles, continuent).
+Sexe non précisé (correctif de l'app du 24/09/2026, supabase/functions/_shared/profileKeys.ts,
+déployé) : constante de Mifflin −78 (moyenne de +5 et −161) et plancher 1 500 kcal ; avant,
+la valeur « unspecified » était lue comme une femme.
 Non publié : le plafond de déficit à 25 % (présent dans le code, inatteignable à −18 %).
 Volontairement absents : Souplesse et Préparation d'un événement (grisés au
 launch, lib/energyGoals.ts launchEnabled:false ; event_date jamais écrit côté client).
@@ -42,7 +46,7 @@ PAGE = {
 <p>Une formule remplie le premier jour donne un ordre de grandeur, pas ton métabolisme. Ecleptic s'en sert seulement comme point de départ : ensuite, <strong>ta dépense est recalibrée en continu par tes pesées et tes repas réels</strong>. C'est la méthode des bilans énergétiques observés, la seule qui converge vers ton métabolisme à toi, et pas vers celui d'une moyenne de population.</p>
 
 <h2>Le point de départ : une formule</h2>
-<p>Le premier jour, l'app ne connaît ni tes repas ni l'évolution de ton poids. Elle calcule donc ton métabolisme de repos avec l'équation de <strong>Mifflin-St Jeor</strong>, publiée en 1990 pour l'adulte en bonne santé, à partir de ton poids, de ta taille, de ton âge et de ton sexe : 10 × poids (kg) + 6,25 × taille (cm) − 5 × âge, puis + 5 pour un homme ou − 161 pour une femme.</p>
+<p>Le premier jour, l'app ne connaît ni tes repas ni l'évolution de ton poids. Elle calcule donc ton métabolisme de repos avec l'équation de <strong>Mifflin-St Jeor</strong>, publiée en 1990 pour l'adulte en bonne santé, à partir de ton poids, de ta taille, de ton âge et de ton sexe : 10 × poids (kg) + 6,25 × taille (cm) − 5 × âge, puis + 5 pour un homme, − 161 pour une femme, ou − 78, la moyenne des deux, si tu n'as pas précisé ton sexe.</p>
 <p>Ce métabolisme de repos est ensuite multiplié par un facteur d'activité, selon ton niveau sportif :</p>
 <ul>
 <li><strong>Débutant :</strong> × 1,3.</li>
@@ -96,7 +100,7 @@ PAGE = {
 <li><strong>Perte trop rapide :</strong> si ta perte observée dépasse 1,5 % de ton poids par semaine, le déficit est ralenti à −10 %. Une perte trop rapide se fait davantage aux dépens du muscle.</li>
 <li><strong>Dette de sommeil :</strong> si tes nuits de la dernière semaine cumulent au moins 5 heures de manque par rapport à 7 heures par nuit, sur 4 nuits enregistrées au minimum, le déficit est limité à −15 %. Une nuit longue ne rattrape pas une nuit courte. En manque de sommeil, un déficit est plus dur à tenir et plus coûteux pour le muscle.</li>
 <li><strong>Un rythme de perte plafonné :</strong> ton déficit ne dépasse jamais l'équivalent d'une perte de 1 % de ton poids par semaine, soit environ 11 kcal par kilo et par jour : 880 kcal au plus à 80 kg.</li>
-<li><strong>Un plancher calorique :</strong> ta cible ne descend jamais sous ton métabolisme de repos, ni sous 1 200 kcal pour une femme et 1 500 kcal pour un homme. Tes protéines restent alors les mêmes ; les lipides sont recalculés et les glucides prennent le reste.</li>
+<li><strong>Un plancher calorique :</strong> ta cible ne descend jamais sous ton métabolisme de repos, ni sous 1 200 kcal pour une femme et 1 500 kcal pour un homme ou si ton sexe n'est pas précisé. Tes protéines restent alors les mêmes ; les lipides sont recalculés et les glucides prennent le reste.</li>
 </ul>
 
 <h2>Quand tes cibles bougent</h2>
