@@ -25,24 +25,7 @@
   <div class="links">
     <a href="/" >Accueil</a>
     <span class="navjournal">
-    <a href="/articles/" class="on">Journal</a>
-    <div class="jpanel"><div class="jinner">
-      <span class="jrow jcats"><span>Cat&eacute;gories</span><span class="arr">&rarr;</span>
-      <span class="jsub">
-        <a href="/articles/?theme=Sommeil">Sommeil</a>
-        <a href="/articles/?theme=Readiness">Readiness</a>
-        <a href="/articles/?theme=Sport">Sport</a>
-        <a href="/articles/?theme=Récupération">Récupération</a>
-        <a href="/articles/?theme=Alimentation">Alimentation</a>
-        <a href="/articles/?theme=Charge">Charge</a>
-        <a href="/articles/?theme=Régularité">Régularité</a>
-        <a href="/articles/?theme=Humeur">Humeur</a>
-        <a href="/articles/?theme=Contexte">Contexte</a>
-        <a href="/articles/?theme=Énergie">Énergie</a>
-      </span></span>
-      <a class="jrow" href="/articles/">Derniers articles</a>
-      <a class="jrow" href="/articles/?sort=populaires">Les plus lus</a>
-    </div></div>
+    <a href="/articles/" data-mega="journal" class="on">Journal</a>
     </span>
     <a href="/science.html">Science-Based</a>
     <a href="/beta.html">La b&ecirc;ta</a>
@@ -148,5 +131,7 @@
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
 </script>
 <script>track('article_view',{article:'cafe-et-sommeil-combien-de-temps-avant'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

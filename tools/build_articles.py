@@ -724,23 +724,65 @@ nav.site .links a{color:var(--muted);text-decoration:none;font-weight:400}
 nav.site .links a.on{color:var(--ink)}
 nav.site .links a:hover{color:var(--gold)}
 @media(max-width:560px){nav.site{flex-direction:column;align-items:flex-start;gap:16px;padding:22px 24px}nav.site .links{gap:14px;font-size:10px;letter-spacing:.16em;flex-wrap:wrap}nav.site .logo{font-size:13px;letter-spacing:.35em}}
-/* menu deroulant Journal (survol, desktop uniquement) */
-.navjournal{position:relative}
-.navjournal .jpanel{position:absolute;top:100%;right:-20px;padding-top:18px;display:none;z-index:60}
-.navjournal .jinner{background:var(--bg);border:1px solid var(--line);min-width:250px;padding:6px 0}
-.jrow{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:13px 22px;
-      font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
-      text-decoration:none;white-space:nowrap}
-.jrow:hover{color:var(--gold)}
-.jrow .arr{font-size:12px;letter-spacing:0}
-.jcats{position:relative;cursor:default}
-.jcats .jsub{position:absolute;right:100%;top:-7px;margin-right:1px;display:none;
-             background:var(--bg);border:1px solid var(--line);min-width:190px;padding:6px 0}
-.jcats:hover .jsub{display:block}
-.jsub a{display:block;padding:11px 22px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-        color:var(--muted);text-decoration:none}
-.jsub a:hover{color:var(--gold)}
-@media(hover:hover) and (min-width:561px){.navjournal:hover .jpanel{display:block}}
+/* Mega-menu du bandeau (facon apple.com), construit par /assets/nav.js :
+   panneau pleine largeur sous le bandeau, hauteur animee selon le contenu,
+   page floutee derriere. Mobile (<=760px) : feuille plein ecran. */
+nav.site{position:relative;z-index:80}
+.mega{position:absolute;left:0;right:0;height:0;overflow:hidden;z-index:75;background:var(--bg);
+      border-bottom:1px solid var(--line);visibility:hidden;
+      transition:height .38s cubic-bezier(.4,0,.2,1),visibility 0s linear .38s}
+.mega.open{visibility:visible;transition:height .38s cubic-bezier(.4,0,.2,1),visibility 0s}
+.mega-in{max-width:1080px;margin:0 auto;padding:30px 24px 46px;display:grid;
+         grid-template-columns:220px minmax(0,1fr) 300px;gap:56px;
+         opacity:0;transform:translateY(-6px);transition:opacity .28s ease,transform .28s ease}
+.mega.open .mega-in{opacity:1;transform:none;transition-delay:.08s}
+.mega-label{display:block;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.mega ul,.mega ol{list-style:none}
+.mega-cats a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:4px 0;
+             font-size:17px;font-weight:300;color:var(--ink);text-decoration:none}
+.mega-cats .k{font-size:10.5px;letter-spacing:.2em;color:var(--muted)}
+.mega-cats li.on a,.mega-cats a:hover{color:var(--gold)}
+.mega-all,.mega-more{display:inline-block;margin-top:18px;font-size:10.5px;letter-spacing:.24em;
+                     text-transform:uppercase;color:var(--gold);text-decoration:none}
+.mega-list li a,.mega-pop li a{display:block;padding:6px 0;font-size:13.5px;line-height:1.45;
+                               color:var(--ink);text-decoration:none;opacity:.86}
+.mega-list li a:hover,.mega-pop li a:hover{color:var(--gold);opacity:1}
+.mega-list .soon{font-size:13.5px;color:var(--muted);padding:6px 0}
+.mega-list.swap{animation:megaswap .28s ease}
+@keyframes megaswap{from{opacity:0;transform:translateX(-4px)}to{opacity:1;transform:none}}
+.mega-pop li a{display:grid;grid-template-columns:28px 1fr}
+.mega-pop .n{font-size:10.5px;letter-spacing:.15em;color:var(--gold);padding-top:2px}
+.mega-shade{position:fixed;inset:0;z-index:70;background:rgba(11,10,8,.5);
+            -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+            opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s linear .3s}
+.mega-on .mega-shade{opacity:1;visibility:visible;transition:opacity .3s,visibility 0s}
+.msheet{position:fixed;inset:0;z-index:90;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;
+        transform:translateY(-100%);visibility:hidden;
+        transition:transform .38s cubic-bezier(.4,0,.2,1),visibility 0s linear .38s}
+.msheet.open{transform:none;visibility:visible;transition:transform .38s cubic-bezier(.4,0,.2,1),visibility 0s}
+.msheet-on,.msheet-on body{overflow:hidden}
+.msheet-top{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;
+            padding:18px 24px;background:var(--bg);border-bottom:1px solid var(--line)}
+.msheet-brand{font-size:12px;letter-spacing:.35em;text-transform:uppercase;font-weight:300}
+.msheet-x{background:none;border:0;color:var(--ink);font-size:30px;line-height:1;cursor:pointer;padding:0 4px}
+.msheet-body{padding:8px 24px 64px}
+.msheet-all{display:block;padding:18px 0;font-size:11px;letter-spacing:.25em;text-transform:uppercase;
+            color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line)}
+.msheet-label{margin:30px 0 4px}
+.msheet details{border-bottom:1px solid var(--line)}
+.msheet summary{list-style:none;display:flex;justify-content:space-between;align-items:baseline;
+                padding:16px 0;font-size:18px;font-weight:300;cursor:pointer}
+.msheet summary::-webkit-details-marker{display:none}
+.msheet summary .k{font-size:11px;letter-spacing:.2em;color:var(--muted)}
+.msheet details[open] summary{color:var(--gold)}
+.msheet ul,.msheet ol{list-style:none;padding:0 0 14px}
+.msheet li a{display:block;padding:8px 0;font-size:14.5px;line-height:1.45;color:var(--ink);text-decoration:none;opacity:.88}
+.msheet li.more a{color:var(--gold);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.msheet ol{counter-reset:p}
+.msheet ol li{counter-increment:p;display:grid;grid-template-columns:30px 1fr}
+.msheet ol li::before{content:counter(p,decimal-leading-zero);font-size:10.5px;color:var(--gold);padding-top:11px;letter-spacing:.12em}
+@media(max-width:760px){.mega,.mega-shade{display:none}}
+@media (prefers-reduced-motion:reduce){.mega,.mega-in,.msheet,.mega-shade{transition:none}.mega-list.swap{animation:none}}
 .display{font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
 .display .gold{color:var(--gold)}
 .display .dim{color:var(--muted)}
@@ -845,19 +887,33 @@ POSTHOG = """<script>
 </script>""" % POSTHOG_KEY
 
 def journal_menu():
-    cats = "\n".join('        <a href="/articles/?theme=%s">%s</a>' % (d, html.escape(d))
-                     for d in DOMAINS)
+    # Le panneau déroulant (méga-menu) est construit par /assets/nav.js à partir de
+    # /assets/nav-data.js, écrit par nav_data() à chaque build.
     return """<span class="navjournal">
-    <a href="/articles/" %%(on_articles)s>Journal</a>
-    <div class="jpanel"><div class="jinner">
-      <span class="jrow jcats"><span>Cat&eacute;gories</span><span class="arr">&rarr;</span>
-      <span class="jsub">
-%s
-      </span></span>
-      <a class="jrow" href="/articles/">Derniers articles</a>
-      <a class="jrow" href="/articles/?sort=populaires">Les plus lus</a>
-    </div></div>
-    </span>""" % cats
+    <a href="/articles/" data-mega="journal" %(on_articles)s>Journal</a>
+    </span>"""
+
+
+# Scripts du méga-menu, à inclure en fin de <body> de chaque page qui a le bandeau.
+NAV_SCRIPTS = """<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>"""
+
+
+def nav_data():
+    """Données du méga-menu Journal : articles publiés par thème (10 plus récents)
+    et les 10 plus lus. Déterministe : identique d'un build à l'autre tant
+    qu'aucun article n'est publié (le cron ne commite rien les jours creux)."""
+    import json as _json
+    by_cat = {d: [] for d in DOMAINS}
+    for a in sorted(ARTICLES, key=lambda a: a["date"], reverse=True):
+        by_cat.setdefault(cat(a), []).append({"t": a["title"], "u": "/articles/%s.html" % a["slug"]})
+    cats = [{"n": d, "u": "/articles/?theme=%s" % d, "c": len(by_cat[d]), "a": by_cat[d][:10]}
+            for d in DOMAINS]
+    idx = {a["slug"]: a for a in ARTICLES}
+    pop = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in POPULAR if s in idx][:10]
+    data = {"journal": {"cats": cats, "popular": pop, "total": len(ARTICLES)}}
+    return ("/* Genere par tools/build_articles.py (nav_data) - ne pas editer a la main. */\n"
+            "window.ECLEPTIC_NAV=%s;\n" % _json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 
 
 NAV = """<nav class="site">
@@ -1045,6 +1101,7 @@ def article_page(a, others):
 %(footer)s
 %(posthog)s
 <script>track('article_view',{article:'%(slug)s'});</script>
+%(navscripts)s
 </body>
 </html>
 """ % {
@@ -1054,7 +1111,7 @@ def article_page(a, others):
         "nav": nav("articles"), "date": fr_date(a["date"]),
         "cat": html.escape(cat(a)), "mins": read_min(a),
         "body": neutralize_links(a["body"].strip()), "tf": TF_LINK, "slug": a["slug"], "more": more,
-        "footer": FOOTER, "posthog": POSTHOG,
+        "footer": FOOTER, "posthog": POSTHOG, "navscripts": NAV_SCRIPTS,
     }
 
 
@@ -1169,6 +1226,8 @@ track('articles_index_view');
   } catch(_) {}
 })();
 </script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>
 """ % {"site": SITE, "nav": nav("articles"), "cards": cards, "themes": themes,
@@ -1228,8 +1287,10 @@ def main():
         f.write(index_page())
     with open(os.path.join(root, "sitemap.xml"), "w") as f:
         f.write(sitemap())
+    with open(os.path.join(root, "assets", "nav-data.js"), "w") as f:
+        f.write(nav_data())
     scheduled = len(ARTICLES_ALL) - len(ARTICLES)
-    print("OK — %d articles publiés (%d programmés à venir) + index + sitemap + css"
+    print("OK — %d articles publiés (%d programmés à venir) + index + sitemap + css + menu"
           % (len(ARTICLES), scheduled))
 
 
