@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cibles caloriques et macros : comment elles sont calculées — Ecleptic</title>
+<meta name="description" content="Comment Ecleptic calcule tes cibles de calories et de macros : une dépense recalibrée par tes pesées et tes repas, ton objectif, et des garde-fous stricts.">
+<link rel="canonical" href="https://ecleptic.health/methode/cibles.html">
+<meta property="og:title" content="Les cibles, calées sur ta dépense réelle">
+<meta property="og:description" content="Comment Ecleptic calcule tes cibles de calories et de macros : une dépense recalibrée par tes pesées et tes repas, ton objectif, et des garde-fous stricts.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/cibles.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Les cibles, calées sur ta dépense réelle", "description": "Comment Ecleptic calcule tes cibles de calories et de macros : une dépense recalibrée par tes pesées et tes repas, ton objectif, et des garde-fous stricts.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/cibles.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "Les cibles", "item": "https://ecleptic.health/methode/cibles.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pourquoi mes calories cibles changent-elles d'une semaine à l'autre ?", "acceptedAnswer": {"@type": "Answer", "text": "Parce que ta dépense est réestimée à partir de tes pesées et de tes repas enregistrés : si ton poids bouge plus vite ou plus lentement que prévu, tes cibles suivent. Les variations sont amorties, jamais plus de 10 % à la baisse ni de 25 % à la hausse d'un calcul à l'autre, pour qu'une semaine de rétention d'eau ne les fasse pas osciller."}}, {"@type": "Question", "name": "Combien de protéines par jour selon son objectif ?", "acceptedAnswer": {"@type": "Answer", "text": "Dans Ecleptic, 2,2 g par kilo de poids pour la perte de poids, la prise de masse et le développement de la force, et 1,6 g par kilo pour le maintien, le cardio et l'endurance. Les lipides couvrent ensuite 30 % des calories, jamais moins de 0,8 g par kilo, et les glucides complètent le reste."}}, {"@type": "Question", "name": "Faut-il se peser tous les jours pour ajuster ses calories ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, mais il faut des pesées régulières : l'app mesure ta dépense réelle quand elle dispose d'au moins 3 pesées et de 10 jours de repas enregistrés sur les 14 derniers jours. Plus tu te pèses, plus la tendance est fiable, et une pesée isolée pèse peu, car les valeurs aberrantes sont écrêtées."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>Les cibles</span></nav>
+    <span class="label"><span class="gold">Moteur V &nbsp;&middot;&nbsp; La méthode</span></span>
+    <h1>Les cibles, calées sur ta dépense réelle</h1>
+    <p class="standfirst">Combien tu dépenses vraiment, et donc combien tu devrais manger : l'app ne le devine pas une fois pour toutes, <strong>elle le mesure sur tes pesées et tes repas réels</strong>. Voici chaque étape du calcul, de la formule de départ à tes cibles de calories et de macros.</p>
+  </header>
+  <h2>Ce que le moteur calcule</h2>
+<p>Le moteur des cibles répond à deux questions, dans cet ordre. D'abord : <strong>combien dépenses-tu vraiment par jour ?</strong> C'est ta <a href="/methode/depense-energetique.html">dépense énergétique</a>, ou TDEE. Ensuite : <strong>compte tenu de ton objectif, combien dois-tu manger, et avec quelle répartition ?</strong> Ce sont tes cibles de calories, de protéines, de lipides et de glucides.</p>
+<p>Une formule remplie le premier jour donne un ordre de grandeur, pas ton métabolisme. Ecleptic s'en sert seulement comme point de départ : ensuite, <strong>ta dépense est recalibrée en continu par tes pesées et tes repas réels</strong>. C'est la méthode des bilans énergétiques observés, la seule qui converge vers ton métabolisme à toi, et pas vers celui d'une moyenne de population.</p>
+
+<h2>Le point de départ : une formule</h2>
+<p>Le premier jour, l'app ne connaît ni tes repas ni l'évolution de ton poids. Elle calcule donc ton métabolisme de repos avec l'équation de <strong>Mifflin-St Jeor</strong>, publiée en 1990 pour l'adulte en bonne santé, à partir de ton poids, de ta taille, de ton âge et de ton sexe : 10 × poids (kg) + 6,25 × taille (cm) − 5 × âge, puis + 5 pour un homme ou − 161 pour une femme.</p>
+<p>Ce métabolisme de repos est ensuite multiplié par un facteur d'activité, selon ton niveau sportif :</p>
+<ul>
+<li><strong>Débutant :</strong> × 1,3.</li>
+<li><strong>Occasionnel :</strong> × 1,4.</li>
+<li><strong>Régulier :</strong> × 1,55.</li>
+<li><strong>Intensif :</strong> × 1,7.</li>
+</ul>
+<p>Exemple : un homme de 30 ans, 80 kg, 1,80 m, a un métabolisme de repos de 1 780 kcal. S'il s'entraîne régulièrement, sa dépense de départ est d'environ 2 760 kcal par jour. C'est une estimation de population : chez une personne donnée, l'erreur peut dépasser plusieurs centaines de kilocalories par jour. D'où l'étape suivante.</p>
+
+<h2>Ta dépense réelle, lue dans ton propre bilan</h2>
+<p>Le principe tient en une phrase : si ton poids est stable, tu manges ce que tu dépenses ; s'il baisse, tu dépenses plus ; s'il monte, moins. En croisant ce que tu manges et l'évolution de ton poids, on remonte donc à ce que tu dépenses vraiment. L'app croise deux séries :</p>
+<ul>
+<li><strong>La tendance de ton poids :</strong> une moyenne lissée de tes pesées, avec une demi-vie de 10 jours, où les pesées récentes comptent davantage. Les pesées aberrantes sont écrêtées : une balance capricieuse ne fait pas la tendance.</li>
+<li><strong>Tes apports réellement enregistrés :</strong> la moyenne de tes repas sur les 14 derniers jours. Comment l'app analyse chaque repas : <a href="/methode/nutrition.html">La nutrition</a>.</li>
+</ul>
+<p>La dépense observée se calcule alors ainsi : <strong>apports moyens − (variation de poids par semaine × densité énergétique) ÷ 7</strong>. La densité énergétique vaut 7 700 kcal par kilo, ou 5 500 kcal par kilo quand ton objectif est la prise de masse, parce que le poids pris en construisant du muscle est moins riche en énergie. Ces valeurs restent des approximations, discutées sur la fiche <a href="/methode/depense-energetique.html">dépense énergétique</a>.</p>
+<p>Exemple : tu enregistres en moyenne 2 200 kcal par jour et ta tendance baisse de 0,4 kg par semaine. Cette perte vaut 0,4 × 7 700 = 3 080 kcal par semaine, soit 440 kcal par jour : ta dépense observée est d'environ 2 640 kcal.</p>
+<p>Cette mesure n'entre en jeu que si elle repose sur assez de données : <strong>au moins 10 jours de repas enregistrés sur 14</strong> et <strong>au moins 3 pesées</strong> sur la période. Sinon, la formule fait foi.</p>
+
+<h2>Un passage progressif et surveillé</h2>
+<p>La mesure ne remplace pas la formule d'un coup. Son poids dans le calcul est égal au nombre de jours valides, c'est-à-dire tes jours de repas enregistrés, <strong>divisé par 21</strong> ; le reste vient de la formule. Tant que les données manquent, c'est la formule ; ensuite, un mélange qui penche d'autant plus vers ta mesure que tu enregistres tes repas régulièrement.</p>
+<p>Chaque nouvelle estimation est ensuite <strong>amortie</strong> par rapport à la précédente : ta dépense ne peut pas baisser de plus de 10 % ni monter de plus de 25 % d'un calcul à l'autre. L'asymétrie est voulue. Une semaine de rétention d'eau ne doit pas faire osciller tes cibles ; en revanche, après une période où tu as moins bien enregistré tes repas, la remontée doit être rapide.</p>
+<p>Enfin, deux garde-fous de plausibilité écartent l'estimation observée quand les données racontent une histoire impossible :</p>
+<ul>
+<li><strong>Sous ton métabolisme de repos :</strong> une dépense totale inférieure à ce que ton corps brûle au repos n'a pas de sens.</li>
+<li><strong>Des apports trop bas pour un poids qui ne baisse pas :</strong> sous 1,2 fois ton métabolisme de repos, sans que ton poids diminue, c'est le signe que des repas n'ont pas été enregistrés, pas d'un vrai déficit.</li>
+</ul>
+<p>Dans ces deux cas, la formule reprend la main. Mieux vaut une estimation honnête qu'une mesure fausse.</p>
+
+<h2>De ta dépense à tes cibles</h2>
+<p>Une fois ta dépense estimée, ton objectif fixe l'écart à appliquer :</p>
+<div class="figs">
+  <div><span class="v">−18 %</span><span class="u">Perte de poids</span></div>
+  <div><span class="v">+12 %</span><span class="u">Prise de masse</span></div>
+  <div><span class="v">+7 %</span><span class="u">Force</span></div>
+  <div><span class="v">0 %</span><span class="u">Maintien, cardio, endurance</span></div>
+</div>
+<p>Les protéines sont fixées en premier, en grammes par kilo de poids :</p>
+<ul>
+<li><strong>2,2 g/kg :</strong> perte de poids, prise de masse et développement de la force. En déficit, elles aident à préserver ton muscle ; en surplus, elles fournissent de quoi le construire.</li>
+<li><strong>1,6 g/kg :</strong> maintien, amélioration du cardio et endurance.</li>
+</ul>
+<p>Viennent ensuite les <strong>lipides, à 30 % des calories</strong>, sans jamais descendre sous 0,8 g par kilo : un minimum de graisses reste indispensable, même en déficit. Les <strong>glucides complètent</strong> le reste. Les repères derrière ces choix : <a href="/articles/proteines-par-jour-prise-de-muscle.html">combien de protéines par jour</a> et combien de glucides quand on fait du sport.</p>
+<p>Reprenons notre exemple. En perte de poids, 2 760 kcal × 0,82 donnent une cible d'environ 2 260 kcal : 176 g de protéines (2,2 × 80 kg), 75 g de lipides (30 % des calories) et environ 220 g de glucides.</p>
+
+<h2>Les garde-fous non négociables</h2>
+<p>Certaines règles passent avant ton objectif, quel qu'il soit :</p>
+<ul>
+<li><strong>IMC sous 18,5 :</strong> aucun déficit. Maigrir n'a pas de sens quand ta corpulence est déjà sous la zone normale.</li>
+<li><strong>Moins de 18 ans :</strong> aucun déficit. Un corps en croissance n'a pas à être mis au régime par une app.</li>
+<li><strong>Perte trop rapide :</strong> si ta perte de poids observée va trop vite, le déficit est ralenti à −10 %. Une perte trop rapide se fait davantage aux dépens du muscle.</li>
+</ul>
+
+<h2>Quand tes cibles bougent</h2>
+<p>Ta dépense est réestimée <strong>chaque nuit</strong>, et tes cibles sont aussi recalculées quand tu te pèses ou que tu enregistres tes repas. Elles suivent donc ta réalité, semaine après semaine : si ton poids bouge plus vite ou plus lentement que prévu, elles s'ajustent.</p>
+<p>Elles comptent aussi dans ton score : l'adéquation de ta journée à tes cibles pèse <strong>40 % du pilier nutrition</strong> du <a href="/methode/readiness-score.html">Readiness Score</a>. Des cibles fausses fausseraient ce pilier ; c'est une raison de plus pour qu'elles collent à ta dépense réelle.</p>
+
+<h2>Ce que ce moteur n'est pas</h2>
+<p>Ce n'est pas une mesure de laboratoire. Tes cibles valent ce que valent tes données : des repas oubliés ou des pesées rares retardent le passage à ta dépense réelle, et la règle des 7 700 kcal par kilo reste une approximation. Le moteur est conçu pour converger vers ta dépense réelle sans à-coups, pas pour être exact à la kilocalorie près.</p>
+<p>Ce n'est pas non plus un suivi diététique médical. Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose aucun diagnostic et ne remplace ni un médecin ni un diététicien. En cas de maladie chronique, de grossesse, d'antécédents de troubles du comportement alimentaire ou de perte de poids inexpliquée, c'est à un professionnel de santé de fixer tes apports.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>.</li>
+      <li>Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Pourquoi mes calories cibles changent-elles d&#x27;une semaine à l&#x27;autre ?</h3>
+    <p>Parce que ta dépense est réestimée à partir de tes pesées et de tes repas enregistrés : si ton poids bouge plus vite ou plus lentement que prévu, tes cibles suivent. Les variations sont amorties, jamais plus de 10 % à la baisse ni de 25 % à la hausse d&#x27;un calcul à l&#x27;autre, pour qu&#x27;une semaine de rétention d&#x27;eau ne les fasse pas osciller.</p>
+    <h3>Combien de protéines par jour selon son objectif ?</h3>
+    <p>Dans Ecleptic, 2,2 g par kilo de poids pour la perte de poids, la prise de masse et le développement de la force, et 1,6 g par kilo pour le maintien, le cardio et l&#x27;endurance. Les lipides couvrent ensuite 30 % des calories, jamais moins de 0,8 g par kilo, et les glucides complètent le reste.</p>
+    <h3>Faut-il se peser tous les jours pour ajuster ses calories ?</h3>
+    <p>Non, mais il faut des pesées régulières : l&#x27;app mesure ta dépense réelle quand elle dispose d&#x27;au moins 3 pesées et de 10 jours de repas enregistrés sur les 14 derniers jours. Plus tu te pèses, plus la tendance est fiable, et une pesée isolée pèse peu, car les valeurs aberrantes sont écrêtées.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'cibles'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/depense-energetique.html">La dépense énergétique (TDEE)</a>
+<a href="/methode/nutrition.html">La nutrition</a>
+<a href="/methode/readiness-score.html">Le Readiness Score</a>
+<a href="/articles/proteines-par-jour-prise-de-muscle.html">Combien de protéines par jour pour prendre du muscle ?</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'cibles'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

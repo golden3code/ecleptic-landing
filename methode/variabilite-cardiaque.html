@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variabilité cardiaque (HRV) : définition, valeurs, lecture — Ecleptic</title>
+<meta name="description" content="Variabilité cardiaque (HRV) : ce qu&#x27;elle mesure, pourquoi elle varie d&#x27;une personne à l&#x27;autre, ce qui la fait baisser et comment l&#x27;app la lit.">
+<link rel="canonical" href="https://ecleptic.health/methode/variabilite-cardiaque.html">
+<meta property="og:title" content="La variabilité cardiaque (HRV), battement par battement">
+<meta property="og:description" content="Variabilité cardiaque (HRV) : ce qu&#x27;elle mesure, pourquoi elle varie d&#x27;une personne à l&#x27;autre, ce qui la fait baisser et comment l&#x27;app la lit.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/variabilite-cardiaque.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "La variabilité cardiaque (HRV), battement par battement", "description": "Variabilité cardiaque (HRV) : ce qu'elle mesure, pourquoi elle varie d'une personne à l'autre, ce qui la fait baisser et comment l'app la lit.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/variabilite-cardiaque.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "La variabilité cardiaque (HRV)", "item": "https://ecleptic.health/methode/variabilite-cardiaque.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quelle est une bonne HRV pour mon âge ?", "acceptedAnswer": {"@type": "Answer", "text": "Il n'existe pas de bonne valeur universelle : selon l'âge, la génétique et la condition physique, la HRV va d'une vingtaine à plus de 100 millisecondes, et elle baisse avec les années. Le bon repère, c'est ta propre moyenne sur plusieurs semaines, mesurée avec le même appareil."}}, {"@type": "Question", "name": "Pourquoi ma HRV a-t-elle chuté cette nuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Les causes les plus courantes sont une nuit trop courte, de l'alcool la veille, une période de stress, une séance dure ou une infection qui démarre. Une seule nuit basse relève souvent du bruit ; plusieurs jours sous ta ligne de base sont un vrai signal pour lever le pied. Si des symptômes inhabituels l'accompagnent, consulte un médecin."}}, {"@type": "Question", "name": "La HRV de l'Apple Watch est-elle fiable ?", "acceptedAnswer": {"@type": "Answer", "text": "La montre suit ton pouls avec un capteur optique, moins précis qu'un électrocardiogramme mais fiable en tendance quand elle est bien portée et que tu es au repos, comme la nuit. Elle exprime la HRV au format SDNN, qui ne se compare pas directement au RMSSD d'autres appareils : compare-toi à toi-même, sur la même montre."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>La variabilité cardiaque (HRV)</span></nav>
+    <span class="label"><span class="gold">La mesure &nbsp;&middot;&nbsp; Fiche</span></span>
+    <h1>La variabilité cardiaque (HRV), battement par battement</h1>
+    <p class="standfirst">Ton cœur ne bat pas comme un métronome, et c'est une excellente nouvelle. Cet écart d'un battement à l'autre, la <strong>variabilité cardiaque</strong>, est l'un des témoins les plus fins de ta récupération, à condition de la comparer à toi-même et jamais aux autres.</p>
+  </header>
+  <h2>La définition, en une phrase</h2>
+<p>La variabilité cardiaque, ou HRV (<em>heart rate variability</em>), c'est <strong>la variation du temps qui sépare deux battements successifs</strong>. Elle s'exprime en millisecondes.</p>
+<p>Même à 60 battements par minute, ton cœur ne bat pas une fois par seconde pile : un intervalle dure 980 millisecondes, le suivant 1030, le troisième 1005. Cette irrégularité n'est pas un défaut. C'est la signature d'un cœur qui s'ajuste en permanence à ce que ton corps lui demande.</p>
+
+<h2>Ce qu'elle reflète : ton système nerveux autonome</h2>
+<p>Deux systèmes pilotent ton cœur, sans que tu y penses :</p>
+<ul>
+<li><strong>Le sympathique, l'accélérateur :</strong> il prend la main face au stress, à l'effort ou à une menace. Les battements deviennent plus réguliers, la HRV baisse.</li>
+<li><strong>Le parasympathique, le frein :</strong> porté en grande partie par le nerf vague, il domine au repos, pendant la digestion et la récupération. Le cœur s'ajuste battement par battement, la HRV monte.</li>
+</ul>
+<p>Une HRV haute par rapport à ta normale signale un corps en mode récupération ; une HRV basse, un corps encore mobilisé. Le même équilibre pilote ta <a href="/methode/frequence-cardiaque-repos.html">fréquence cardiaque au repos</a>, et ta respiration s'en mêle : le cœur accélère un peu à l'inspiration et ralentit à l'expiration, d'où le lien étroit avec ta <a href="/methode/frequence-respiratoire.html">fréquence respiratoire</a>.</p>
+
+<h2>Comment on la mesure : électrocardiogramme ou montre</h2>
+<p>En laboratoire, la référence est l'<strong>électrocardiogramme</strong>. Il repère chaque battement et mesure les intervalles, selon des normes internationales fixées dès 1996.</p>
+<p>Ta montre procède autrement. Son capteur optique au poignet, la <strong>photopléthysmographie</strong>, détecte l'onde de pouls à travers la peau. C'est moins précis qu'un électrocardiogramme, mais fiable en tendance quand la montre est bien portée et que tu ne bouges pas. La nuit réunit ces deux conditions.</p>
+<p>Reste la question du format. Apple Santé enregistre la HRV en <strong>SDNN</strong>, l'écart-type des intervalles entre battements : c'est ce que mesure l'Apple Watch. Beaucoup d'études et d'autres appareils utilisent le <strong>RMSSD</strong>, calculé sur les différences entre battements successifs. Les deux ne se comparent pas directement : un chiffre lu sur un forum, ou sur la montre d'un ami, ne dit rien du tien.</p>
+
+<h2>Pourquoi la tienne ne ressemble à aucune autre</h2>
+<p>La HRV est l'une des mesures <strong>les plus individuelles</strong> qui soient. Selon l'âge, la génétique et la condition physique, elle va d'une vingtaine à plus de 100 millisecondes. Elle baisse avec les années, et l'entraînement d'endurance tend à la faire monter.</p>
+<p>Conséquence directe : comparer ta HRV à un tableau trouvé en ligne n'a presque aucun sens. Deux personnes du même âge, aussi en forme l'une que l'autre, peuvent afficher des valeurs très éloignées. <strong>La seule comparaison qui compte, c'est toi contre toi</strong>, sur plusieurs semaines, avec le même appareil.</p>
+
+<h2>Ce qui la fait baisser, ce qui l'aide</h2>
+<ul>
+<li><strong>Le manque de sommeil :</strong> une nuit courte ou hachée laisse ton système nerveux en alerte.</li>
+<li><strong>L'alcool :</strong> même en petite quantité, un verre le soir fait souvent baisser la HRV de la nuit qui suit.</li>
+<li><strong>Le stress :</strong> une période tendue garde l'accélérateur enfoncé, même au repos.</li>
+<li><strong>La charge d'entraînement :</strong> une séance dure, ou des semaines qui s'enchaînent sans récupération suffisante.</li>
+<li><strong>Une infection qui démarre :</strong> ton corps mobilise ses défenses, parfois avant que tu ne te sentes malade.</li>
+</ul>
+<p>À l'inverse, ce qui l'aide est connu : un <strong>sommeil régulier</strong>, un entraînement d'<strong>endurance</strong> progressif, la <strong>respiration lente</strong>, dont la cohérence cardiaque est la forme la plus simple, et <strong>moins d'alcool</strong>.</p>
+
+<h2>Comment Ecleptic la lit</h2>
+<p>Dans l'app, la HRV est le signal le plus lourd du pilier vitaux du <a href="/methode/readiness-score.html">Readiness Score</a> : <strong>45 % de ses 42 points</strong>, soit près de 19 points sur 100 quand toutes les données sont là.</p>
+<div class="figs">
+  <div><span class="v">45 %</span><span class="u">du pilier vitaux</span></div>
+  <div><span class="v">≈ 19</span><span class="u">points du score sur 100</span></div>
+  <div><span class="v">42 j</span><span class="u">de ligne de base</span></div>
+  <div><span class="v">± 3 ans</span><span class="u">d'âge biologique, au plus</span></div>
+</div>
+<p>L'app la lit dans Apple Santé, au format SDNN, puis la compare à ta <a href="/methode/ligne-de-base.html">ligne de base</a> : ta moyenne et ton écart-type des 42 derniers jours, jour évalué exclu. Il faut 7 jours de données pour démarrer, 28 pour une confiance pleine. Plus ta HRV est haute par rapport à ta normale, plus elle rapporte de points ; au-delà de deux écarts-types sous ta moyenne, elle n'en rapporte plus aucun. Le détail des cinq signaux : <a href="/methode/vitaux.html">Les vitaux</a>.</p>
+<p>Une nuit basse fait baisser ton score du jour, c'est normal. Mais <strong>une HRV qui chute une nuit, c'est du bruit ; une semaine sous ta ligne de base, c'est un signal.</strong></p>
+<p>Elle compte aussi dans ton <a href="/methode/age-biologique.html">âge biologique</a> : comparée aux valeurs attendues pour ton âge, elle peut le déplacer jusqu'à 3 ans dans un sens ou dans l'autre, et n'y compte qu'à moitié si tu prends un traitement qui ralentit le cœur.</p>
+
+<h2>Les limites de la mesure</h2>
+<ul>
+<li><strong>Le capteur optique :</strong> une montre trop lâche ou un bras qui bouge, et la mesure se dégrade. Porte-la bien ajustée, toute la nuit.</li>
+<li><strong>Le rythme lui-même :</strong> des battements irréguliers, comme des extrasystoles, faussent le calcul de la HRV.</li>
+<li><strong>Les traitements :</strong> un traitement qui ralentit le cœur modifie la lecture de ta HRV.</li>
+<li><strong>Le changement d'appareil :</strong> changer de montre, c'est changer d'instrument. Pendant les six semaines qui suivent, ta ligne de base mêle encore les nuits des deux appareils.</li>
+</ul>
+
+<h2>Quand consulter</h2>
+<p>La HRV n'est pas un outil de diagnostic, et Ecleptic n'est pas un dispositif médical. Une HRV basse, même plusieurs jours de suite, n'est pas une maladie : c'est une invitation à agir sur ce qui la fait baisser, à mieux dormir, à alléger l'entraînement.</p>
+<p>En revanche, si une baisse s'installe sans raison apparente avec une fatigue inhabituelle, ou si tu ressens des palpitations, un malaise, une douleur thoracique ou un essoufflement anormal, consulte un médecin. En cas d'urgence, appelle le 15 ou le 112.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, <em>Circulation</em>.</li>
+      <li>Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>.</li>
+      <li>Nunan D. et al. (2010), valeurs normales de la variabilité cardiaque de courte durée chez l'adulte sain, <em>Pacing and Clinical Electrophysiology</em>.</li>
+      <li>Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Quelle est une bonne HRV pour mon âge ?</h3>
+    <p>Il n&#x27;existe pas de bonne valeur universelle : selon l&#x27;âge, la génétique et la condition physique, la HRV va d&#x27;une vingtaine à plus de 100 millisecondes, et elle baisse avec les années. Le bon repère, c&#x27;est ta propre moyenne sur plusieurs semaines, mesurée avec le même appareil.</p>
+    <h3>Pourquoi ma HRV a-t-elle chuté cette nuit ?</h3>
+    <p>Les causes les plus courantes sont une nuit trop courte, de l&#x27;alcool la veille, une période de stress, une séance dure ou une infection qui démarre. Une seule nuit basse relève souvent du bruit ; plusieurs jours sous ta ligne de base sont un vrai signal pour lever le pied. Si des symptômes inhabituels l&#x27;accompagnent, consulte un médecin.</p>
+    <h3>La HRV de l&#x27;Apple Watch est-elle fiable ?</h3>
+    <p>La montre suit ton pouls avec un capteur optique, moins précis qu&#x27;un électrocardiogramme mais fiable en tendance quand elle est bien portée et que tu es au repos, comme la nuit. Elle exprime la HRV au format SDNN, qui ne se compare pas directement au RMSSD d&#x27;autres appareils : compare-toi à toi-même, sur la même montre.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'variabilite-cardiaque'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/vitaux.html">Les vitaux</a>
+<a href="/methode/frequence-cardiaque-repos.html">La fréquence cardiaque au repos</a>
+<a href="/methode/ligne-de-base.html">Ta ligne de base</a>
+<a href="/methode/readiness-score.html">Le Readiness Score</a>
+<a href="/methode/age-biologique.html">L&#x27;âge biologique</a>
+<a href="/articles/hrv-variabilite-frequence-cardiaque.html">HRV : c&#x27;est quoi la variabilité de fréquence cardiaque ?</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'variabilite-cardiaque'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

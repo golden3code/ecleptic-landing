@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dépense énergétique (TDEE) : comment la mesurer vraiment — Ecleptic</title>
+<meta name="description" content="Dépense énergétique (TDEE) : ses trois composantes, pourquoi les formules se trompent de plusieurs centaines de kcal, et comment Ecleptic la mesure sur toi.">
+<link rel="canonical" href="https://ecleptic.health/methode/depense-energetique.html">
+<meta property="og:title" content="La dépense énergétique, mesurée plutôt que devinée">
+<meta property="og:description" content="Dépense énergétique (TDEE) : ses trois composantes, pourquoi les formules se trompent de plusieurs centaines de kcal, et comment Ecleptic la mesure sur toi.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/depense-energetique.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "La dépense énergétique, mesurée plutôt que devinée", "description": "Dépense énergétique (TDEE) : ses trois composantes, pourquoi les formules se trompent de plusieurs centaines de kcal, et comment Ecleptic la mesure sur toi.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/depense-energetique.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "La dépense énergétique (TDEE)", "item": "https://ecleptic.health/methode/depense-energetique.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment calculer sa dépense énergétique journalière ?", "acceptedAnswer": {"@type": "Answer", "text": "Une formule comme Mifflin-St Jeor estime ton métabolisme de repos à partir de ton poids, de ta taille, de ton âge et de ton sexe ; multipliée par un facteur d'activité, elle donne un point de départ. Pour connaître ta dépense réelle, le plus fiable reste de comparer tes apports à l'évolution de ton poids sur au moins deux semaines."}}, {"@type": "Question", "name": "La règle des 7 700 kcal pour perdre un kilo est-elle vraie ?", "acceptedAnswer": {"@type": "Answer", "text": "C'est une approximation utile sur quelques semaines, pas une loi exacte. Sur le long terme, elle surestime la perte, parce que ta dépense baisse à mesure que ton poids diminue, et d'un jour à l'autre, l'eau et le glycogène font varier la balance bien plus que la graisse."}}, {"@type": "Question", "name": "Pourquoi je ne perds pas de poids alors que je suis en déficit calorique ?", "acceptedAnswer": {"@type": "Answer", "text": "Souvent, le déficit n'existe que sur le papier : une formule peut surestimer ta dépense de plusieurs centaines de kilocalories par jour, et des repas oubliés faussent le compte. L'eau retenue peut aussi masquer une perte réelle pendant quelques jours : juge la tendance sur deux semaines ou plus, et parles-en à un médecin si ton poids évolue sans explication."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>La dépense énergétique (TDEE)</span></nav>
+    <span class="label"><span class="gold">La mesure &nbsp;&middot;&nbsp; Fiche</span></span>
+    <h1>La dépense énergétique, mesurée plutôt que devinée</h1>
+    <p class="standfirst">Ta dépense énergétique, c'est tout ce que ton corps brûle en 24 heures. <strong>Aucune formule ne la connaît vraiment</strong> : au quotidien, la façon la plus fiable de l'approcher, c'est de la lire dans l'évolution de ton poids face à ce que tu manges.</p>
+  </header>
+  <h2>Ce que recouvre ta dépense énergétique</h2>
+<p>La dépense énergétique totale, ou <strong>TDEE</strong> (pour <em>total daily energy expenditure</em>), c'est toute l'énergie que ton corps brûle en 24 heures. Elle se répartit en trois postes :</p>
+<ul>
+<li><strong>Le métabolisme de repos :</strong> ce que coûtent ton cœur, ton cerveau, tes organes et le maintien de ta température, même immobile. C'est la plus grosse part, souvent 60 à 70 % du total.</li>
+<li><strong>L'effet thermique des aliments :</strong> l'énergie dépensée pour digérer et assimiler ce que tu manges, environ 10 %.</li>
+<li><strong>L'activité :</strong> le sport et toute l'activité spontanée du quotidien. C'est la part la plus variable, d'un jour à l'autre comme d'une personne à l'autre.</li>
+</ul>
+
+<h2>Comment on la mesure</h2>
+<p>En laboratoire, on la mesure par <strong>calorimétrie indirecte</strong> : l'oxygène consommé et le gaz carbonique rejeté disent combien d'énergie ton corps produit. Sur plusieurs jours, la référence est l'eau doublement marquée, précise mais réservée à la recherche. Au quotidien, il reste trois approches :</p>
+<ul>
+<li><strong>Les formules :</strong> ton métabolisme de repos calculé d'après ton poids, ta taille, ton âge et ton sexe, multiplié par un facteur d'activité.</li>
+<li><strong>Les montres :</strong> tes calories actives, estimées d'après ton cœur et tes mouvements. Utile pour comparer tes journées, beaucoup moins pour connaître ton total.</li>
+<li><strong>Le bilan observé :</strong> ce que tu manges, comparé à l'évolution de ton poids.</li>
+</ul>
+
+<h2>Pourquoi deux personnes ne dépensent pas pareil</h2>
+<p>Les formules les plus connues — Harris-Benedict, la plus ancienne, puis Mifflin-St Jeor en 1990 — ont été construites sur des groupes de personnes. Elles donnent une <strong>moyenne de population</strong>, pas ta valeur : pour un individu, l'erreur peut dépasser plusieurs centaines de kilocalories par jour.</p>
+<p>Un repère : pour une femme de 30 ans, 61 kg, 1,68 m, avec une activité occasionnelle, la formule donne environ 1 350 kcal au repos et 1 890 kcal par jour. Une autre femme du même gabarit peut pourtant dépenser plus, ou moins, pour deux raisons que la formule ignore :</p>
+<ul>
+<li><strong>La composition corporelle :</strong> à poids égal, plus de muscle signifie un métabolisme de repos plus élevé.</li>
+<li><strong>L'activité spontanée :</strong> se lever souvent, marcher en téléphonant, bouger en travaillant. Elle varie énormément d'une personne à l'autre.</li>
+</ul>
+<p>Pour un premier ordre de grandeur selon ton profil : combien de calories par jour.</p>
+
+<h2>Ce qui la fait bouger</h2>
+<ul>
+<li><strong>Ton activité :</strong> une séance, mais aussi la somme de tes pas et de tout ce que tu fais debout. Repères : combien de pas par jour et cardio ou muscu pour maigrir.</li>
+<li><strong>Ton poids :</strong> un corps plus léger dépense moins. Quand tu maigris, ta dépense baisse avec toi, et en déficit on bouge souvent un peu moins sans s'en rendre compte. Une cible fixée une fois pour toutes finit donc par se tromper.</li>
+<li><strong>Ton alimentation :</strong> plus tu manges, plus la digestion coûte, et les protéines coûtent un peu plus à digérer que les glucides ou les lipides.</li>
+</ul>
+
+<h2>Le bilan observé : mesurer plutôt que deviner</h2>
+<p>Si ton poids est stable sur plusieurs semaines, tu manges à peu près ce que tu dépenses. S'il baisse ou monte, l'écart entre tes apports et ta dépense se lit dans la pente. Au lieu de deviner ta dépense, on la <strong>déduit de ce que ton corps fait réellement</strong> : c'est la seule approche du quotidien qui converge vers ton métabolisme, et pas vers celui d'une moyenne.</p>
+<p>Pour convertir des kilos en énergie, on utilise en général <strong>7 700 kcal par kilo</strong>. C'est une approximation utile sur quelques semaines, pas une loi exacte : sur le long terme, elle surestime la perte, parce que la dépense baisse à mesure que le poids diminue, comme l'ont montré des modèles publiés dans <em>The Lancet</em> en 2011.</p>
+<p>Autre piège : d'un jour à l'autre, la balance bouge surtout avec l'<strong>eau et le glycogène</strong>, les réserves de sucre de tes muscles et de ton foie, stockées avec de l'eau. Un dîner salé ou riche en glucides suffit à la faire monter le lendemain, sans un gramme de graisse en plus. D'où l'intérêt d'une tendance lissée plutôt que de la pesée du jour.</p>
+
+<h2>Comment Ecleptic la lit</h2>
+<p>L'app applique exactement ce principe, en deux temps. Au départ, faute de données, elle estime ta dépense avec l'équation de Mifflin-St Jeor, multipliée par un facteur d'activité selon ton niveau sportif : 1,3 débutant, 1,4 occasionnel, 1,55 régulier, 1,7 intensif.</p>
+<p>Ensuite, elle croise la tendance de ton poids, lissée et débarrassée des pesées aberrantes, avec tes apports réellement enregistrés (voir <a href="/methode/nutrition.html">La nutrition</a>) :</p>
+<div class="figs">
+  <div><span class="v">14 j</span><span class="u">D'apports croisés avec ton poids</span></div>
+  <div><span class="v">10 j</span><span class="u">Demi-vie de la tendance de poids</span></div>
+  <div><span class="v">10 / 14</span><span class="u">Jours de repas enregistrés, au minimum</span></div>
+  <div><span class="v">3</span><span class="u">Pesées minimum sur la période</span></div>
+</div>
+<p>La conversion retient 7 700 kcal par kilo, ou 5 500 quand ton objectif est la prise de masse. Le passage de la formule à ta mesure est progressif et amorti, et les estimations invraisemblables, trahies par des repas oubliés, sont écartées. Ta dépense est réestimée chaque nuit, et tes cibles de calories et de macros en découlent : tout le détail sur <a href="/methode/cibles.html">Les cibles</a>. Ces cibles comptent à leur tour dans le pilier nutrition du <a href="/methode/readiness-score.html">Readiness Score</a>.</p>
+
+<h2>Limites, et quand consulter</h2>
+<p>Le bilan observé ne vaut que ce que valent tes données : des repas oubliés font croire à une dépense plus basse, des pesées rares retardent la mesure.</p>
+<p>Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose aucun diagnostic. Une perte ou une prise de poids inexpliquée, sans changement de tes habitudes, mérite l'avis d'un médecin. Même chose si tu es enceinte, si tu as une maladie chronique ou des antécédents de troubles du comportement alimentaire : c'est à un professionnel de fixer tes apports. Et si tu fais des malaises, ressens des palpitations ou un essoufflement anormal en réduisant tes apports, arrête et consulte ; en urgence, appelle le 15 ou le 112.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>.</li>
+      <li>Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Comment calculer sa dépense énergétique journalière ?</h3>
+    <p>Une formule comme Mifflin-St Jeor estime ton métabolisme de repos à partir de ton poids, de ta taille, de ton âge et de ton sexe ; multipliée par un facteur d&#x27;activité, elle donne un point de départ. Pour connaître ta dépense réelle, le plus fiable reste de comparer tes apports à l&#x27;évolution de ton poids sur au moins deux semaines.</p>
+    <h3>La règle des 7 700 kcal pour perdre un kilo est-elle vraie ?</h3>
+    <p>C&#x27;est une approximation utile sur quelques semaines, pas une loi exacte. Sur le long terme, elle surestime la perte, parce que ta dépense baisse à mesure que ton poids diminue, et d&#x27;un jour à l&#x27;autre, l&#x27;eau et le glycogène font varier la balance bien plus que la graisse.</p>
+    <h3>Pourquoi je ne perds pas de poids alors que je suis en déficit calorique ?</h3>
+    <p>Souvent, le déficit n&#x27;existe que sur le papier : une formule peut surestimer ta dépense de plusieurs centaines de kilocalories par jour, et des repas oubliés faussent le compte. L&#x27;eau retenue peut aussi masquer une perte réelle pendant quelques jours : juge la tendance sur deux semaines ou plus, et parles-en à un médecin si ton poids évolue sans explication.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'depense-energetique'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/cibles.html">Les cibles</a>
+<a href="/methode/nutrition.html">La nutrition</a>
+<a href="/methode/readiness-score.html">Le Readiness Score</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'depense-energetique'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

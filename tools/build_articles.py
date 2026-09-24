@@ -662,6 +662,31 @@ ARTICLES = [a for a in ARTICLES_ALL if date.fromisoformat(a["date"]) <= TODAY]
 LIVE_SLUGS = {a["slug"] for a in ARTICLES}
 
 
+# --- La méthode (Science-Based) : pages moteurs et fiches ---------------------
+# tools/methode/*.py exposent chacun PAGE (ou PAGES) : slug, kind ("moteur" |
+# "fiche"), order, label (nom court), title (h1), seo_title, description,
+# lead, body (HTML), refs (liste de textes), related (slugs méthode),
+# journal (slugs d'articles, n'apparaissent qu'une fois publiés), faq, date.
+# Publiées immédiatement (pas de drip) sous /methode/<slug>.html.
+def _load_methode():
+    import glob as _glob, importlib.util as _ilu
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "methode")
+    out = []
+    for f in sorted(_glob.glob(os.path.join(d, "*.py"))):
+        if os.path.basename(f).startswith("_"):
+            continue
+        spec = _ilu.spec_from_file_location("methode_" + os.path.basename(f)[:-3], f)
+        mod = _ilu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out.extend(getattr(mod, "PAGES", []) or ([mod.PAGE] if hasattr(mod, "PAGE") else []))
+    out.sort(key=lambda p: (0 if p["kind"] == "moteur" else 1, p.get("order", 99), p["slug"]))
+    return out
+
+
+METHODE = _load_methode()
+METHODE_IDX = {p["slug"]: p for p in METHODE}
+
+
 def neutralize_links(body):
     """Retire les hyperliens vers des articles pas encore publiés (garde le texte)."""
     def repl(m):
@@ -895,6 +920,20 @@ footer.site a:hover{color:var(--gold)}
 .entry .meta{display:block;margin-bottom:12px}
 .entry .readmore{display:inline-block;margin-top:14px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 .empty{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0;text-align:center;color:var(--muted);font-size:15px}
+/* METHODE (Science-Based) : pages moteurs et fiches */
+.crumbs{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:26px;font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.methode p a,.methode li a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
+.methode p a:hover,.methode li a:hover{color:var(--gold)}
+.methode .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:26px 22px;margin:34px 0 30px;padding:28px 0;position:relative}
+.methode .figs::before,.methode .figs::after{content:"";position:absolute;left:6%;right:6%;border-top:1px solid var(--line)}
+.methode .figs::before{top:0}
+.methode .figs::after{bottom:0}
+.methode .figs .v{display:block;font-size:clamp(34px,6vw,46px);font-weight:200;line-height:1;color:var(--gold);letter-spacing:-.02em}
+.methode .figs .u{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);line-height:1.5}
+.methode .refs ul{list-style:none;margin:0}
+.methode .refs li{font-size:14px;color:var(--muted);margin-bottom:10px;line-height:1.6}
 """
 
 POSTHOG = """<script>
@@ -937,14 +976,29 @@ def nav_data():
 def nav_panels(idx):
     """Panneaux du bandeau hors Journal (L'app, Science-Based, La bêta) : trois
     colonnes chacun, la première en grands liens. Les articles cités ne sont
-    retenus que s'ils sont publiés (idx = articles en ligne)."""
-    sci = "/science.html#"
-    reads = ["readiness-score-comment-ca-marche", "hrv-variabilite-frequence-cardiaque",
-             "vo2max-comment-l-ameliorer", "frequence-cardiaque-repos-normale",
-             "zone-2-cardio-cest-quoi", "combien-heures-sommeil-par-nuit",
-             "proteines-par-jour-prise-de-muscle", "combien-de-calories-par-jour"]
-    reads = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in reads if s in idx][:5]
+    retenus que s'ils sont publiés (idx = articles en ligne) ; les pages de la
+    méthode que si elles existent (repli sur l'ancre de /science.html)."""
+    def mp(slug, anchor):
+        return "/methode/%s.html" % slug if slug in METHODE_IDX else "/science.html#" + anchor
     contact = {"t": "Nous écrire", "u": "mailto:contact@ecleptic.app"}
+    fiches = [{"t": p["label"], "u": "/methode/%s.html" % p["slug"]} for p in METHODE if p["kind"] == "fiche"]
+    science_cols = [
+        {"label": "La méthode, moteur par moteur", "big": True,
+         "more": {"t": "Toute la méthode →", "u": "/science.html"}, "items": [
+            {"t": "Le Readiness Score", "d": "Quatre piliers croisés chaque matin.", "u": mp("readiness-score", "readiness")},
+            {"t": "L'âge biologique", "d": "Ancré sur ta VO₂max et la cohorte HUNT.", "u": mp("age-biologique", "age-biologique")},
+            {"t": "La nutrition", "d": "438 000 références issues des bases officielles.", "u": mp("nutrition", "nutrition")},
+            {"t": "Les vitaux", "d": "Ta ligne de base, pas celle d'un autre.", "u": mp("vitaux", "vitaux")},
+            {"t": "Les cibles", "d": "Un métabolisme mesuré, pas estimé.", "u": mp("cibles", "cibles")}]}]
+    if fiches:
+        science_cols.append({"label": "Les mesures, expliquées", "items": fiches})
+    science_cols.append({"label": "Nos sources", "items": [
+        {"t": "ANSES · table Ciqual", "u": mp("nutrition", "nutrition")},
+        {"t": "USDA · FoodData Central", "u": mp("nutrition", "nutrition")},
+        {"t": "Open Food Facts", "u": mp("nutrition", "nutrition")},
+        {"t": "Cohorte HUNT (Norvège)", "u": mp("age-biologique", "age-biologique")},
+        {"t": "Tables VDOT de Jack Daniels", "u": mp("age-biologique", "age-biologique")},
+        {"t": "National Sleep Foundation", "u": mp("besoin-de-sommeil", "readiness")}]})
     return {
         "app": {"label": "L'app", "cols": [
             {"label": "L'app en trois temps", "big": True, "items": [
@@ -952,30 +1006,17 @@ def nav_panels(idx):
                 {"t": "Comprendre", "d": "Sommeil, repas et séances, enfin croisés.", "u": "/#comprendre"},
                 {"t": "Agir", "d": "Un chiffre, une direction, chaque matin.", "u": "/#agir"}]},
             {"label": "Ce qu'elle calcule pour toi", "items": [
-                {"t": "Ton Readiness Score, chaque matin", "u": sci + "readiness"},
-                {"t": "Ton âge biologique, dès le premier jour", "u": sci + "age-biologique"},
-                {"t": "Tes repas, analysés en une photo", "u": sci + "nutrition"},
-                {"t": "Tes vitaux, lus sur ta ligne de base", "u": sci + "vitaux"},
-                {"t": "Tes cibles, recalibrées en continu", "u": sci + "cibles"}]},
+                {"t": "Ton Readiness Score, chaque matin", "u": mp("readiness-score", "readiness")},
+                {"t": "Ton âge biologique, dès le premier jour", "u": mp("age-biologique", "age-biologique")},
+                {"t": "Tes repas, analysés en une photo", "u": mp("nutrition", "nutrition")},
+                {"t": "Tes vitaux, lus sur ta ligne de base", "u": mp("vitaux", "vitaux")},
+                {"t": "Tes cibles, recalibrées en continu", "u": mp("cibles", "cibles")}]},
             {"label": "Commencer", "items": [
                 {"t": "Demander l'accès à la bêta", "u": "/beta.html", "gold": True},
                 {"t": "Lire le Journal", "u": "/articles/"},
                 {"t": "La méthode scientifique", "u": "/science.html"},
                 contact]}]},
-        "science": {"cols": [
-            {"label": "La méthode, moteur par moteur", "big": True, "items": [
-                {"t": "Le Readiness Score", "d": "Quatre piliers croisés chaque matin.", "u": sci + "readiness"},
-                {"t": "L'âge biologique", "d": "Ancré sur ta VO₂max, calibré sur la cohorte HUNT.", "u": sci + "age-biologique"},
-                {"t": "La nutrition", "d": "400 000 aliments issus des bases officielles.", "u": sci + "nutrition"},
-                {"t": "Les vitaux", "d": "Ta ligne de base, pas celle d'un autre.", "u": sci + "vitaux"},
-                {"t": "Les cibles", "d": "Un métabolisme mesuré, pas estimé.", "u": sci + "cibles"}]},
-            {"label": "Nos sources", "items": [
-                {"t": "ANSES · table Ciqual", "u": sci + "nutrition"},
-                {"t": "USDA · FoodData Central", "u": sci + "nutrition"},
-                {"t": "Open Food Facts", "u": sci + "nutrition"},
-                {"t": "Cohorte HUNT (Norvège)", "u": sci + "age-biologique"},
-                {"t": "Tables VDOT de Jack Daniels", "u": sci + "age-biologique"}]},
-            {"label": "Comprendre en 5 minutes", "items": reads}]},
+        "science": {"cols": science_cols},
         "beta": {"cols": [
             {"label": "Rejoindre la bêta", "big": True, "spots": True, "items": [
                 {"t": "Demander l'accès", "d": "45 secondes de questions, puis le lien d'installation.",
@@ -997,7 +1038,7 @@ NAV = """<nav class="site">
   <div class="links">
     <a href="/" data-mega="app" %%(on_home)s>Accueil</a>
     %s
-    <a href="/science.html" data-mega="science">Science-Based</a>
+    <a href="/science.html" data-mega="science" %%(on_science)s>Science-Based</a>
     <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
   </div>
 </nav>"""
@@ -1015,6 +1056,7 @@ def nav(section):
     return NAV % {
         "on_home": 'class="on"' if section == "home" else "",
         "on_articles": 'class="on"' if section == "articles" else "",
+        "on_science": 'class="on"' if section == "science" else "",
     }
 
 
@@ -1191,6 +1233,109 @@ def article_page(a, others):
     }
 
 
+def methode_page(p):
+    """Page de la méthode (moteur ou fiche) sous /methode/<slug>.html : même
+    typographie que les articles, fil d'Ariane vers Science-Based, références,
+    FAQ balisée, liens vers les autres pages de la méthode et le Journal."""
+    import re as _re, json as _json
+    url = "%s/methode/%s.html" % (SITE, p["slug"])
+    body = neutralize_links(p["body"].strip())
+    # Un lien vers une page de la méthode inexistante casse le build (jamais de 404).
+    for target in _re.findall(r'href="/methode/([a-z0-9-]+)\.html"', body + p.get("lead", "")):
+        if target not in METHODE_IDX:
+            raise ValueError("lien méthode inconnu dans %s : %s" % (p["slug"], target))
+    kicker = ("Moteur %s &nbsp;&middot;&nbsp; La méthode" % p["num"]) if p["kind"] == "moteur" \
+        else "La mesure &nbsp;&middot;&nbsp; Fiche"
+    refs = p.get("refs") or []
+    refsblock = ('\n  <section class="refs">\n    <h2>Références</h2>\n    <ul>\n%s\n    </ul>\n  </section>'
+                 % "\n".join("      <li>%s</li>" % r for r in refs)) if refs else ""
+    faq = p.get("faq") or []
+    faqblock = faqjsonld = ""
+    if faq:
+        faqblock = ('\n  <section class="faq">\n    <h2>Questions fréquentes</h2>\n'
+                    + "\n".join("    <h3>%s</h3>\n    <p>%s</p>" % (html.escape(q["q"]), html.escape(q["a"])) for q in faq)
+                    + "\n  </section>")
+        faqjsonld = '\n<script type="application/ld+json">' + _json.dumps({
+            "@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q["q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": q["a"]}} for q in faq],
+        }, ensure_ascii=False) + "</script>"
+    links = []
+    for s in p.get("related", []):
+        if s in METHODE_IDX and s != p["slug"]:
+            q = METHODE_IDX[s]
+            links.append('<a href="/methode/%s.html">%s</a>' % (s, html.escape(q["label"])))
+    idx = {a["slug"]: a for a in ARTICLES}
+    for s in p.get("journal", []):
+        if s in idx:
+            links.append('<a href="/articles/%s.html">%s</a>' % (s, html.escape(idx[s]["title"])))
+    more = ('\n  <div class="next">\n    <span class="label">Pour aller plus loin</span>\n%s\n  </div>'
+            % "\n".join(links[:6])) if links else ""
+    jsonld = _json.dumps([
+        {"@context": "https://schema.org", "@type": "TechArticle", "headline": p["title"],
+         "description": p["description"], "datePublished": p["date"],
+         "dateModified": p.get("updated", p["date"]), "inLanguage": "fr",
+         "author": {"@type": "Organization", "name": "Ecleptic", "url": SITE},
+         "publisher": {"@type": "Organization", "name": "Ecleptic", "url": SITE},
+         "mainEntityOfPage": url},
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": SITE + "/science.html"},
+            {"@type": "ListItem", "position": 3, "name": p["label"], "item": url}]},
+    ], ensure_ascii=False)
+    return """<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(title)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="article">
+<meta property="og:url" content="%(url)s">
+<meta property="og:image" content="%(site)s/assets/moon.jpg">
+<script type="application/ld+json">%(jsonld)s</script>%(faqjsonld)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>%(label)s</span></nav>
+    <span class="label"><span class="gold">%(kicker)s</span></span>
+    <h1>%(title)s</h1>
+    <p class="standfirst">%(lead)s</p>
+  </header>
+  %(body)s%(refsblock)s%(faqblock)s
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'%(slug)s'})">Demander l'accès</a>
+  </div>%(more)s
+</article>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('methode_view',{page:'%(slug)s'});</script>
+%(navscripts)s
+</body>
+</html>
+""" % {
+        "seo": html.escape(p.get("seo_title") or (p["title"] + " — Ecleptic")),
+        "title": html.escape(p["title"]), "desc": html.escape(p["description"], quote=True),
+        "url": url, "site": SITE, "jsonld": jsonld, "faqjsonld": faqjsonld,
+        "nav": nav("science"), "label": html.escape(p["label"]), "kicker": kicker,
+        "lead": p["lead"].strip(), "body": body, "refsblock": refsblock, "faqblock": faqblock,
+        "slug": p["slug"], "more": more, "footer": FOOTER, "posthog": POSTHOG, "navscripts": NAV_SCRIPTS,
+    }
+
+
 def index_page():
     def card(a):
         img = img_path(a)
@@ -1335,6 +1480,8 @@ def sitemap():
                ("%s/articles/" % SITE, git_lastmod("articles/index.html"))]
     entries += [("%s/articles/%s.html" % (SITE, a["slug"]), a.get("updated", a["date"]))
                 for a in ARTICLES]
+    entries += [("%s/methode/%s.html" % (SITE, p["slug"]), p.get("updated", p["date"]))
+                for p in METHODE]
     items = "\n".join(
         "  <url><loc>%s</loc>%s</url>" % (u, "<lastmod>%s</lastmod>" % d if d else "")
         for u, d in entries
@@ -1363,6 +1510,15 @@ def main():
         f.write(index_page())
     with open(os.path.join(root, "sitemap.xml"), "w") as f:
         f.write(sitemap())
+    mdir = os.path.join(root, "methode")
+    os.makedirs(mdir, exist_ok=True)
+    keep = {p["slug"] + ".html" for p in METHODE}
+    for fn in os.listdir(mdir):
+        if fn.endswith(".html") and fn not in keep:
+            os.remove(os.path.join(mdir, fn))
+    for p in METHODE:
+        with open(os.path.join(mdir, p["slug"] + ".html"), "w") as f:
+            f.write(methode_page(p))
     with open(os.path.join(root, "assets", "nav-data.js"), "w") as f:
         f.write(nav_data())
     scheduled = len(ARTICLES_ALL) - len(ARTICLES)

@@ -14,7 +14,7 @@
   if (!nav) return;
 
   // Panneaux visibles par tous ; les autres ne s'ouvrent qu'en aperçu.
-  var LIVE = { journal: true };
+  var LIVE = { journal: true, science: true };
   var PREVIEW = false;
   try {
     var ap = new URLSearchParams(location.search).get("apercu");

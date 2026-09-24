@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Readiness Score : comment il est calculé, pilier par pilier — Ecleptic</title>
+<meta name="description" content="Le Readiness Score croise tes vitaux de la nuit, ton sommeil, ta nutrition et ton rythme. Ses 4 piliers, leurs poids et la méthode, sans boîte noire.">
+<link rel="canonical" href="https://ecleptic.health/methode/readiness-score.html">
+<meta property="og:title" content="Le Readiness Score, pilier par pilier">
+<meta property="og:description" content="Le Readiness Score croise tes vitaux de la nuit, ton sommeil, ta nutrition et ton rythme. Ses 4 piliers, leurs poids et la méthode, sans boîte noire.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/readiness-score.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Le Readiness Score, pilier par pilier", "description": "Le Readiness Score croise tes vitaux de la nuit, ton sommeil, ta nutrition et ton rythme. Ses 4 piliers, leurs poids et la méthode, sans boîte noire.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/readiness-score.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "Le Readiness Score", "item": "https://ecleptic.health/methode/readiness-score.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment est calculé le Readiness Score d'Ecleptic ?", "acceptedAnswer": {"@type": "Answer", "text": "Il combine quatre piliers : les vitaux de la nuit (42 points), le sommeil (21), la nutrition (21) et le rythme avec la charge d'entraînement (16). Tes vitaux sont comparés à ta propre moyenne des 42 derniers jours, jamais à une norme de population ; ton sommeil est jugé face à ton besoin, ta nutrition face à tes cibles."}}, {"@type": "Question", "name": "Faut-il une montre connectée pour avoir un Readiness Score ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Sans montre, les vitaux ne sont pas mesurés : leur poids est redistribué entre le sommeil, la nutrition et le rythme, et un indice de confiance indique sur combien de données repose le score. Avec une montre, le score gagne son pilier le plus précis."}}, {"@type": "Question", "name": "Pourquoi mon Readiness Score est-il bas alors que je me sens bien ?", "acceptedAnswer": {"@type": "Answer", "text": "Le score compare tes vitaux à ta propre normale : une variabilité cardiaque ou une fréquence au repos qui s'écarte de tes habitudes peut précéder la sensation de fatigue. Regarde le pilier en rouge et le sous-facteur à surveiller, puis la tendance des jours suivants."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>Le Readiness Score</span></nav>
+    <span class="label"><span class="gold">Moteur I &nbsp;&middot;&nbsp; La méthode</span></span>
+    <h1>Le Readiness Score, pilier par pilier</h1>
+    <p class="standfirst">Chaque matin, un chiffre sur 100 te dit si ton corps est prêt à pousser ou s'il a besoin de récupérer. Voici exactement comment il est construit : quatre piliers, dix-sept signaux, et une règle qui change tout : tes vitaux ne sont comparés qu'à toi-même.</p>
+  </header>
+  <h2>Ce que le score mesure vraiment</h2>
+<p>Le Readiness Score répond à une seule question : <strong>aujourd'hui, ton corps est-il en état d'encaisser une charge ?</strong> Ce n'est ni une note de forme physique, ni une note de santé. C'est une lecture de ton état de récupération à un instant donné, construite à partir de tout ce que l'app sait de ta nuit, de tes repas et de tes séances.</p>
+<p>Le score est calculé à partir de ta nuit dès ton réveil, puis se met à jour au fil de la journée à mesure que tu enregistres tes repas et tes séances. Il repose sur quatre piliers, pondérés selon leur poids dans la récupération :</p>
+<div class="figs">
+  <div><span class="v">42</span><span class="u">Vitaux de la nuit</span></div>
+  <div><span class="v">21</span><span class="u">Sommeil</span></div>
+  <div><span class="v">21</span><span class="u">Nutrition</span></div>
+  <div><span class="v">16</span><span class="u">Rythme et charge</span></div>
+</div>
+
+<h2>Pilier 1 · Les vitaux de la nuit (42 points)</h2>
+<p>C'est le pilier le plus lourd, parce que c'est le reflet le plus direct et le plus objectif de l'état de ton système nerveux autonome. Cinq signaux, mesurés par ta montre au repos, pour l'essentiel pendant ton sommeil, et lus via Apple Santé :</p>
+<ul>
+<li><strong>La <a href="/methode/variabilite-cardiaque.html">variabilité cardiaque (HRV)</a> — 45 % du pilier.</strong> Plus elle est haute par rapport à ta normale, mieux tu as récupéré.</li>
+<li><strong>La <a href="/methode/frequence-cardiaque-repos.html">fréquence cardiaque au repos</a> — 30 %.</strong> Plus elle est basse par rapport à ta normale, mieux c'est.</li>
+<li><strong>La <a href="/methode/frequence-respiratoire.html">fréquence respiratoire</a> — 12 %.</strong> Une hausse inhabituelle est souvent le premier signe d'une fatigue ou d'une infection qui démarre.</li>
+<li><strong>La <a href="/methode/saturation-oxygene.html">saturation en oxygène</a> — 7 %.</strong></li>
+<li><strong>La <a href="/methode/temperature-poignet.html">température du poignet</a> — 6 %.</strong> Ici, c'est l'écart qui compte, dans un sens comme dans l'autre.</li>
+</ul>
+<p>Le détail de chaque signal est sur la page <a href="/methode/vitaux.html">Les vitaux</a>.</p>
+
+<h2>Pilier 2 · Le sommeil (21 points)</h2>
+<ul>
+<li><strong>La durée face à ton besoin — 40 %.</strong> Ton besoin part des repères de la National Sleep Foundation pour ton âge, puis s'ajuste à la longueur de tes propres cycles dès qu'elle est connue. Le détail : <a href="/methode/besoin-de-sommeil.html">ton besoin de sommeil</a>.</li>
+<li><strong>Les phases profondes et paradoxales — 25 %.</strong> Uniquement quand ta montre les a réellement mesurées : l'app n'invente jamais de phases pour une nuit saisie à la main.</li>
+<li><strong>L'efficacité — 20 %.</strong> La part du temps passé au lit où tu dormais vraiment.</li>
+<li><strong>La régularité — 15 %.</strong> Des heures de coucher et de lever stables, le facteur le plus sous-estimé du sommeil.</li>
+</ul>
+
+<h2>Pilier 3 · La nutrition (21 points)</h2>
+<ul>
+<li><strong>L'adéquation à tes cibles — 40 %.</strong> Calories et macronutriments de la journée, face aux cibles calculées par le moteur <a href="/methode/cibles.html">Les cibles</a>.</li>
+<li><strong>Le refuel après l'effort — 25 %.</strong> Les protéines prises après une séance. Les jours de repos, ce critère disparaît et son poids passe aux autres.</li>
+<li><strong>Les micronutriments — 20 %.</strong> La couverture de tes besoins, calculée à partir des valeurs mesurées de la <a href="/methode/nutrition.html">table Ciqual de l'ANSES</a>.</li>
+<li><strong>L'hydratation — 15 %.</strong> Ce que tu as bu face à ce qui est recommandé pour toi.</li>
+</ul>
+<p>Une règle à part : <strong>si tu as bu de l'alcool la veille, le pilier nutrition est plafonné à 80</strong>, quelle que soit la qualité du reste. L'alcool pèse sur la récupération, et aucun repas parfait ne l'efface.</p>
+
+<h2>Pilier 4 · Le rythme et la charge (16 points)</h2>
+<ul>
+<li><strong>La charge d'entraînement — 40 %.</strong> L'équilibre entre ta charge récente et ta charge habituelle. Une hausse brutale fait baisser le score : une séance dure se paie en général 24 à 72 heures.</li>
+<li><strong>La régularité de tes rythmes — 30 %.</strong> Coucher, lever et repas à heures stables.</li>
+<li><strong>La cadence — 20 %.</strong> Tes jours actifs face à ta norme, et la dérive du week-end.</li>
+<li><strong>Les courbatures — 10 %.</strong> Ce que tu ressens au réveil, quand tu le renseignes.</li>
+</ul>
+
+<h2>Toi contre toi : la ligne de base</h2>
+<p>C'est le cœur de la méthode. <strong>Tes vitaux ne sont jamais comparés à une norme de population.</strong> Une HRV de 45 ms peut être excellente pour toi et basse pour quelqu'un d'autre : ce qui compte, c'est l'écart à ta propre normale.</p>
+<p>Pour chacun des cinq vitaux, l'app calcule ta moyenne et ta variabilité habituelle sur les <strong>42 derniers jours</strong> (environ six semaines), sans compter le jour évalué, puis mesure de combien la valeur du matin s'en écarte. Il faut au moins 7 jours de données pour qu'une ligne de base existe, et 28 jours pour qu'elle soit pleinement fiable. Le fonctionnement complet : <a href="/methode/ligne-de-base.html">ta ligne de base</a>.</p>
+<p>Les autres piliers suivent la même logique personnelle, avec leur propre référence : ton sommeil est jugé face à ton besoin, ta nutrition face à tes cibles, ta charge face à ta charge habituelle.</p>
+
+<h2>Sans montre, le score s'adapte</h2>
+<p>Quand un pilier n'a pas de données, il n'est pas remplacé par une valeur inventée : il est retiré, et <strong>son poids est redistribué entre les autres</strong>. Sans montre, pas de vitaux : le sommeil, la nutrition et le rythme se partagent alors les 100 points. Le même principe s'applique à l'intérieur de chaque pilier.</p>
+<p>En parallèle, un indice de confiance indique sur quelle quantité de données repose le score du jour. Un score construit sur trois jours d'historique ne se lit pas comme un score construit sur deux mois.</p>
+
+<h2>Ce que tu vois dans l'app</h2>
+<ul>
+<li><strong>Le score du jour</strong> sur l'écran d'accueil ; un toucher l'ouvre en détail, avec un verdict pour ta journée.</li>
+<li><strong>Le détail des quatre piliers</strong>, avec en rouge celui qui te tire vers le bas, et le sous-facteur précis à surveiller.</li>
+<li><strong>Tes tendances</strong> sur plusieurs semaines, pour le score et pour chaque pilier.</li>
+<li><strong>Les croisements du Labo</strong>, qui montrent par exemple l'effet d'un verre d'alcool ou d'un dîner tardif sur ton score du lendemain, chez toi.</li>
+</ul>
+
+<h2>Ce que le score n'est pas</h2>
+<p>Le Readiness Score est un outil de bien-être pour doser ton effort. Ce n'est pas un dispositif médical et il ne pose aucun diagnostic. Une journée basse n'est pas une alerte : c'est la tendance sur plusieurs jours qui compte. Si tu ressens des symptômes inhabituels, c'est un médecin qu'il faut consulter, pas un score.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, <em>Sleep Health</em>.</li>
+      <li>Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.</li>
+      <li>Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Comment est calculé le Readiness Score d&#x27;Ecleptic ?</h3>
+    <p>Il combine quatre piliers : les vitaux de la nuit (42 points), le sommeil (21), la nutrition (21) et le rythme avec la charge d&#x27;entraînement (16). Tes vitaux sont comparés à ta propre moyenne des 42 derniers jours, jamais à une norme de population ; ton sommeil est jugé face à ton besoin, ta nutrition face à tes cibles.</p>
+    <h3>Faut-il une montre connectée pour avoir un Readiness Score ?</h3>
+    <p>Non. Sans montre, les vitaux ne sont pas mesurés : leur poids est redistribué entre le sommeil, la nutrition et le rythme, et un indice de confiance indique sur combien de données repose le score. Avec une montre, le score gagne son pilier le plus précis.</p>
+    <h3>Pourquoi mon Readiness Score est-il bas alors que je me sens bien ?</h3>
+    <p>Le score compare tes vitaux à ta propre normale : une variabilité cardiaque ou une fréquence au repos qui s&#x27;écarte de tes habitudes peut précéder la sensation de fatigue. Regarde le pilier en rouge et le sous-facteur à surveiller, puis la tendance des jours suivants.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'readiness-score'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/variabilite-cardiaque.html">La variabilité cardiaque (HRV)</a>
+<a href="/methode/frequence-cardiaque-repos.html">La fréquence cardiaque au repos</a>
+<a href="/methode/ligne-de-base.html">Ta ligne de base</a>
+<a href="/methode/besoin-de-sommeil.html">Ton besoin de sommeil</a>
+<a href="/methode/vitaux.html">Les vitaux</a>
+<a href="/methode/cibles.html">Les cibles</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'readiness-score'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

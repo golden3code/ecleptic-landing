@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Âge biologique : comment il est calculé, étape par étape — Ecleptic</title>
+<meta name="description" content="Ton âge biologique part de ta VO₂max, convertie en âge de forme, puis sept facteurs de ton quotidien l&#x27;ajustent. Sources, bornes, marge d&#x27;erreur : la méthode.">
+<link rel="canonical" href="https://ecleptic.health/methode/age-biologique.html">
+<meta property="og:title" content="L&#x27;âge biologique, ancré sur ta VO₂max">
+<meta property="og:description" content="Ton âge biologique part de ta VO₂max, convertie en âge de forme, puis sept facteurs de ton quotidien l&#x27;ajustent. Sources, bornes, marge d&#x27;erreur : la méthode.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/age-biologique.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "L'âge biologique, ancré sur ta VO₂max", "description": "Ton âge biologique part de ta VO₂max, convertie en âge de forme, puis sept facteurs de ton quotidien l'ajustent. Sources, bornes, marge d'erreur : la méthode.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/age-biologique.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "L'âge biologique", "item": "https://ecleptic.health/methode/age-biologique.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment est calculé l'âge biologique dans Ecleptic ?", "acceptedAnswer": {"@type": "Answer", "text": "En deux temps. Ta VO₂max, mesurée par ta montre, calculée depuis tes courses ou estimée sans effort, est convertie en âge de forme ; puis sept facteurs l'ajustent, chacun dans une limite fixe : variabilité cardiaque, fréquence cardiaque au repos, tour de taille, activité, sommeil, alimentation et hygiène de vie."}}, {"@type": "Question", "name": "Peut-on connaître son âge biologique sans montre connectée ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Sans VO₂max mesurée par une montre, Ecleptic l'estime sans effort avec l'équation HUNT (tour de taille, fréquence cardiaque au repos, niveau d'activité) ou celle de Jackson (IMC), et une course soutenue peut relever cette estimation grâce à la formule VDOT. Le résultat est simplement moins précis : sa marge d'incertitude de départ passe de ±3 ans avec une VO₂max mesurée par la montre à ±4, ±6 ou ±6,5 ans selon la source."}}, {"@type": "Question", "name": "Pourquoi mon âge biologique est-il plus élevé que mon âge réel ?", "acceptedAnswer": {"@type": "Answer", "text": "Soit ta VO₂max, l'ancre du calcul, est sous la valeur de référence pour ton âge et ton sexe, soit certains facteurs te vieillissent, comme des nuits hors du créneau de 7 h à 8 h 30, une variabilité cardiaque basse pour ton âge, la nicotine ou l'alcool. Garde aussi en tête la marge d'incertitude : avec une estimation sans effort, elle est large, et un écart de quelques années peut ne rien signifier."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>L&#x27;âge biologique</span></nav>
+    <span class="label"><span class="gold">Moteur II &nbsp;&middot;&nbsp; La méthode</span></span>
+    <h1>L&#x27;âge biologique, ancré sur ta VO₂max</h1>
+    <p class="standfirst">Ecleptic estime l'âge de ton corps en deux temps : ta VO₂max donne un <strong>âge de forme</strong>, puis sept facteurs tirés de tes habitudes l'ajustent, chacun dans des limites strictes. Voici le calcul exact, avec ses sources et sa marge d'erreur.</p>
+  </header>
+  <h2>Ce que le moteur calcule</h2>
+<p>Ton âge réel compte les années écoulées. Ton âge biologique estime autre chose : <strong>l'âge qu'a ton corps, à en juger par ta forme et par tes habitudes</strong>. Deux personnes nées la même année peuvent avoir des années d'écart sur ce terrain, et c'est cet écart que le moteur chiffre.</p>
+<p>Le calcul se fait en deux temps. D'abord, ta <a href="/methode/vo2max.html">VO₂max</a>, l'indicateur que la recherche associe le plus fortement à la longévité, est convertie en âge de forme. Ensuite, sept modificateurs issus de tes habitudes ajustent cet âge. Chacun est borné et signé : en « + », il te vieillit ; en « − », il te rajeunit.</p>
+
+<h2>Étape 1 · Trouver ta meilleure VO₂max</h2>
+<p>La VO₂max, c'est le volume maximal d'oxygène que ton corps peut utiliser par minute pendant un effort maximal. L'app la prend à la <strong>meilleure source disponible</strong>, dans cet ordre :</p>
+<ul>
+<li><strong>Mesurée par ta montre :</strong> la « forme cardio » enregistrée dans Apple Santé, calculée pendant tes efforts en extérieur.</li>
+<li><strong>Calculée depuis tes courses :</strong> avec la formule VDOT de Jack Daniels, standard de l'entraînement d'endurance depuis plus de quarante ans, qui déduit une VO₂max d'une distance et d'un temps.</li>
+<li><strong>Estimée sans effort :</strong> avec l'équation de Nes et al., établie sur la cohorte norvégienne HUNT, à partir de ton tour de taille, de ta <a href="/methode/frequence-cardiaque-repos.html">fréquence cardiaque au repos</a> et de ton niveau d'activité.</li>
+<li><strong>À défaut :</strong> avec l'équation de Jackson et al. (1990), à partir de ton IMC.</li>
+</ul>
+<p>Les courses obéissent à une règle de prudence. <strong>Une course n'est pas forcément un effort maximal</strong>, et un footing tranquille sous-estime ta VO₂max. La VDOT ne peut donc que relever l'estimation sans effort, jamais la faire baisser. Sans estimation de base, une VDOT inférieure à la valeur attendue pour ton âge est ignorée : un simple footing ne doit pas te vieillir.</p>
+<p>Plus la source est directe, plus le résultat est précis. Voici la demi-largeur de départ de la marge d'incertitude calculée pour ton âge biologique, selon la source :</p>
+<div class="figs">
+  <div><span class="v">±3</span><span class="u">ans · mesurée par la montre</span></div>
+  <div><span class="v">±4</span><span class="u">ans · calculée sur tes courses</span></div>
+  <div><span class="v">±6</span><span class="u">ans · équation HUNT</span></div>
+  <div><span class="v">±6,5</span><span class="u">ans · équation de Jackson</span></div>
+</div>
+
+<h2>Étape 2 · Convertir ta VO₂max en âge de forme</h2>
+<p>Une VO₂max seule ne veut pas dire grand-chose : la même valeur peut être excellente à 60 ans et banale à 25. L'app la compare donc à la <strong>valeur de référence pour ton âge et ton sexe</strong>, puis traduit l'écart en années. Au-dessus de la référence, ton âge de forme passe sous ton âge réel ; en dessous, il passe au-dessus.</p>
+<p>Cette conversion s'appuie sur les travaux menés sur la cohorte HUNT, une vaste étude de population norvégienne où la VO₂max de milliers d'adultes a été mesurée en laboratoire. C'est l'ancre du calcul : tout le reste vient l'ajuster, jamais la remplacer.</p>
+
+<h2>Étape 3 · Sept modificateurs, bornés et signés</h2>
+<p>L'âge de forme est ensuite ajusté par tes habitudes. Chaque facteur a son plafond, pour qu'aucun ne puisse à lui seul emporter le résultat :</p>
+<ul>
+<li><strong>La variabilité cardiaque — jusqu'à ±3 ans.</strong> Ta <a href="/methode/variabilite-cardiaque.html">HRV</a> est comparée aux valeurs attendues pour ton âge : au-dessus, elle te rajeunit ; en dessous, elle te vieillit. Si tu prends un traitement qui ralentit le cœur, elle peut ne compter qu'à demi-poids.</li>
+<li><strong>La fréquence cardiaque au repos — jusqu'à ±2 ans.</strong> Elle est située face à une référence d'environ 60 battements par minute (± 9) : plus basse, elle te rajeunit ; plus haute, elle te vieillit.</li>
+<li><strong>Le tour de taille — jusqu'à ±2 ans.</strong> Il est comparé aux seuils de risque de l'OMS : 94 cm chez l'homme, 80 cm chez la femme.</li>
+<li><strong>L'activité — jusqu'à ±2 ans.</strong> Tes minutes d'activité par semaine, face aux 150 minutes recommandées par l'OMS.</li>
+<li><strong>Le sommeil — de −6 mois à +1,5 an.</strong> Ce facteur n'est pas symétrique : le sommeil peut t'ajouter jusqu'à un an et demi, et te faire gagner au plus six mois. Une durée comprise entre 7 h et 8 h 30 et des heures de coucher régulières jouent en ta faveur ; des nuits hors de ce créneau et des couchers irréguliers pèsent dans l'autre sens. Le détail : <a href="/methode/besoin-de-sommeil.html">ton besoin de sommeil</a>.</li>
+<li><strong>L'alimentation — jusqu'à ±1 an.</strong> La qualité de ce que tu manges, telle que la mesure ton <a href="/methode/nutrition.html">score nutrition</a>.</li>
+<li><strong>L'hygiène de vie — jusqu'à +3 ans.</strong> Ce que tu déclares : la nicotine ajoute 2 ans, l'alcool jusqu'à 1,5 an selon le nombre de jours par semaine où tu bois. Ce facteur ne peut jamais te rajeunir.</li>
+</ul>
+<p>Une règle évite de compter deux fois la même chose. <strong>La fréquence cardiaque au repos, le tour de taille et l'activité ne jouent comme modificateurs que si ta VO₂max est mesurée par ta montre ou calculée depuis tes courses.</strong> Quand elle est estimée sans effort, ils sont désactivés : l'équation HUNT les contient déjà tous les trois, et les recompter doublerait leur poids. La variabilité cardiaque, le sommeil, l'alimentation et l'hygiène de vie, qu'aucune équation ne contient, s'appliquent dès que la donnée existe.</p>
+
+<h2>Étape 4 · Borner, lisser, encadrer</h2>
+<ul>
+<li><strong>Des bornes :</strong> ton âge biologique reste dans une fenêtre de 25 ans de part et d'autre de ton âge réel, et toujours entre 18 et 95 ans. C'est un garde-fou contre les valeurs aberrantes.</li>
+<li><strong>Un lissage :</strong> la valeur affichée est une moyenne mobile exponentielle de tes estimations successives. Les plus récentes pèsent davantage, mais une mesure isolée ne fait pas sauter le chiffre.</li>
+<li><strong>Une marge d'incertitude :</strong> chaque résultat est calculé avec la sienne, dont la largeur de départ dépend de la source de ta VO₂max.</li>
+</ul>
+
+<h2>Pourquoi ces choix</h2>
+<ul>
+<li><strong>La VO₂max comme ancre :</strong> c'est l'indicateur de forme que la recherche relie le plus fortement à la longévité. Même estimée sans le moindre effort, à partir de quelques données simples, la capacité cardiorespiratoire prédit la mortalité à long terme : l'équipe norvégienne à l'origine de l'équation HUNT l'a montré.</li>
+<li><strong>Une ancre et des modificateurs, pas une moyenne de tout :</strong> additionner des facteurs qui se recoupent gonflerait artificiellement leur effet. Chaque donnée compte une fois, et une seule.</li>
+<li><strong>La prudence avec les courses :</strong> une sortie lente ne prouve pas une faible capacité. Mieux vaut ignorer une course que d'en tirer un verdict faux.</li>
+<li><strong>Un chiffre honnête plutôt que flatteur :</strong> la référence n'est pas choisie pour faire plaisir. Un âge biologique complaisant ne t'apprendrait rien ; un chiffre juste te montre ce qu'il te reste à gagner.</li>
+<li><strong>Un résultat dès le premier jour :</strong> les équations sans effort permettent une première estimation dès ton inscription, sans attendre des semaines d'historique. Sa marge d'incertitude, plus large au départ, tient compte de ce que vaut ce premier chiffre.</li>
+</ul>
+
+<h2>Ce que tu vois dans l'app</h2>
+<ul>
+<li><strong>Ton âge biologique</strong>, lissé dans le temps, et son écart avec ton âge réel.</li>
+<li><strong>Le détail des facteurs</strong>, chacun avec son effet en années : en « + » s'il te vieillit, en « − » s'il te rajeunit.</li>
+<li><strong>Une première estimation dès ton inscription</strong>, qui s'affine à mesure que ta montre, tes séances, tes nuits et tes repas alimentent le calcul.</li>
+</ul>
+<p>Le levier le plus puissant reste l'ancre : ta VO₂max s'entraîne à tout âge, et chaque progrès se retrouve dans ton âge de forme. La méthode pour la faire monter : comment améliorer ta VO₂max.</p>
+
+<h2>Ce que l'âge biologique n'est pas</h2>
+<p>C'est un indicateur de bien-être, pas un diagnostic médical, et Ecleptic n'est pas un dispositif médical. Il ne prédit ni ta durée de vie ni ta santé future : c'est une estimation, avec sa marge d'erreur, de l'âge qu'a ton corps à en juger par ta forme et tes habitudes. Vu cette marge, un écart d'un an ne signifie rien en soi ; c'est la tendance sur plusieurs mois qui compte.</p>
+<p>Ce n'est pas non plus un indicateur du jour. Pour savoir si tu peux pousser aujourd'hui, regarde ton <a href="/methode/readiness-score.html">Readiness Score</a> ; l'âge biologique, lui, évolue au rythme de tes habitudes. Et si tu ressens un essoufflement inhabituel, une douleur thoracique, des palpitations ou un malaise, c'est un médecin qu'il faut consulter ; en cas d'urgence, appelle le 15 ou le 112.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.</li>
+      <li>Nes B. M. et al. (2014), un modèle simple de capacité cardiorespiratoire sans effort prédit la mortalité à long terme, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.</li>
+      <li>Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.</li>
+      <li>Daniels J. et Gilbert J. (1979), tables de performance VDOT, <em>Oxygen Power</em>.</li>
+      <li>OMS (2011), tour de taille et rapport taille-hanches : rapport d'une consultation d'experts.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Comment est calculé l&#x27;âge biologique dans Ecleptic ?</h3>
+    <p>En deux temps. Ta VO₂max, mesurée par ta montre, calculée depuis tes courses ou estimée sans effort, est convertie en âge de forme ; puis sept facteurs l&#x27;ajustent, chacun dans une limite fixe : variabilité cardiaque, fréquence cardiaque au repos, tour de taille, activité, sommeil, alimentation et hygiène de vie.</p>
+    <h3>Peut-on connaître son âge biologique sans montre connectée ?</h3>
+    <p>Oui. Sans VO₂max mesurée par une montre, Ecleptic l&#x27;estime sans effort avec l&#x27;équation HUNT (tour de taille, fréquence cardiaque au repos, niveau d&#x27;activité) ou celle de Jackson (IMC), et une course soutenue peut relever cette estimation grâce à la formule VDOT. Le résultat est simplement moins précis : sa marge d&#x27;incertitude de départ passe de ±3 ans avec une VO₂max mesurée par la montre à ±4, ±6 ou ±6,5 ans selon la source.</p>
+    <h3>Pourquoi mon âge biologique est-il plus élevé que mon âge réel ?</h3>
+    <p>Soit ta VO₂max, l&#x27;ancre du calcul, est sous la valeur de référence pour ton âge et ton sexe, soit certains facteurs te vieillissent, comme des nuits hors du créneau de 7 h à 8 h 30, une variabilité cardiaque basse pour ton âge, la nicotine ou l&#x27;alcool. Garde aussi en tête la marge d&#x27;incertitude : avec une estimation sans effort, elle est large, et un écart de quelques années peut ne rien signifier.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'age-biologique'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/vo2max.html">La VO₂max</a>
+<a href="/methode/variabilite-cardiaque.html">La variabilité cardiaque (HRV)</a>
+<a href="/methode/frequence-cardiaque-repos.html">La fréquence cardiaque au repos</a>
+<a href="/methode/besoin-de-sommeil.html">Ton besoin de sommeil</a>
+<a href="/methode/nutrition.html">La nutrition</a>
+<a href="/methode/readiness-score.html">Le Readiness Score</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'age-biologique'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

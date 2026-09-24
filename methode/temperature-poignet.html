@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Température du poignet la nuit : que signifie l&#x27;écart ? — Ecleptic</title>
+<meta name="description" content="La température du poignet mesurée la nuit est un écart à ta propre normale, pas une fièvre. Ce qui la fait varier, et comment Ecleptic l&#x27;intègre à ton score.">
+<link rel="canonical" href="https://ecleptic.health/methode/temperature-poignet.html">
+<meta property="og:title" content="La température du poignet, un écart plutôt qu&#x27;un chiffre">
+<meta property="og:description" content="La température du poignet mesurée la nuit est un écart à ta propre normale, pas une fièvre. Ce qui la fait varier, et comment Ecleptic l&#x27;intègre à ton score.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/methode/temperature-poignet.html">
+<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "La température du poignet, un écart plutôt qu'un chiffre", "description": "La température du poignet mesurée la nuit est un écart à ta propre normale, pas une fièvre. Ce qui la fait varier, et comment Ecleptic l'intègre à ton score.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "author": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "publisher": {"@type": "Organization", "name": "Ecleptic", "url": "https://ecleptic.health"}, "mainEntityOfPage": "https://ecleptic.health/methode/temperature-poignet.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "La température du poignet", "item": "https://ecleptic.health/methode/temperature-poignet.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "À quoi sert la température du poignet sur l'Apple Watch ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle suit, pendant ton sommeil, l'écart de la température de ton poignet par rapport à ta propre normale, établie sur quelques nuits. Ce n'est pas une température corporelle : elle sert à repérer une nuit qui sort de tes habitudes, pas à mesurer une fièvre."}}, {"@type": "Question", "name": "Pourquoi ma température du poignet est-elle plus élevée que d'habitude ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle peut monter pour des raisons banales : chambre ou couette trop chaude, alcool, repas tardif, ou seconde moitié du cycle menstruel, après l'ovulation. Une fièvre ou une infection peuvent aussi la faire grimper : si tu te sens mal, vérifie avec un vrai thermomètre."}}, {"@type": "Question", "name": "Une montre connectée peut-elle détecter la fièvre ?", "acceptedAnswer": {"@type": "Answer", "text": "Non : elle mesure la peau du poignet, influencée par la chambre et la literie, et non ta température interne. Un écart peut t'inviter à vérifier, mais seul un thermomètre confirme une fièvre ; si elle persiste ou s'accompagne de symptômes inquiétants, consulte un médecin."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/">Ecleptic</a>
+  <div class="links">
+    <a href="/" data-mega="app" >Accueil</a>
+    <span class="navjournal">
+    <a href="/articles/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/science.html">Science-Based</a><span aria-hidden="true">/</span><span>La température du poignet</span></nav>
+    <span class="label"><span class="gold">La mesure &nbsp;&middot;&nbsp; Fiche</span></span>
+    <h1>La température du poignet, un écart plutôt qu&#x27;un chiffre</h1>
+    <p class="standfirst">Ta montre ne prend pas ta température : elle suit, nuit après nuit, <strong>l'écart de ton poignet par rapport à ta propre normale</strong>. Un signal discret, qui réagit à ton cycle, à un virus, à un verre de vin comme à une couette trop chaude.</p>
+  </header>
+  <h2>Ce que mesure la montre, exactement</h2>
+<p>La température du poignet, telle que ta montre la suit, c'est <strong>l'écart entre la température de ta peau au poignet pendant ton sommeil et ta propre normale</strong>. Ce n'est pas ta température corporelle, et ta montre n'est pas un thermomètre : c'est un repère relatif, qui dit si ta nuit a été plus chaude ou plus fraîche que d'habitude.</p>
+<p>Dans Ecleptic, c'est le plus léger des cinq signaux du pilier « vitaux » du <a href="/methode/readiness-score.html">Readiness Score</a>, et le seul qui se lit dans les deux sens.</p>
+
+<h2>Ce que ça reflète dans ton corps</h2>
+<p>Ta température interne n'est pas fixe : elle suit un rythme sur 24 heures. Le soir, elle baisse pour préparer l'endormissement, et atteint son point bas en fin de nuit. Pour se refroidir, ton corps évacue de la chaleur par la peau, surtout par les mains et les pieds, dont les vaisseaux se dilatent.</p>
+<p>Ton poignet se trouve au carrefour : sa température dépend à la fois de ce qui se passe à l'intérieur (ton rythme, tes hormones, une fièvre qui monte) et de ce qui l'entoure (la chambre, la couette). C'est ce qui rend ce signal riche, et difficile à interpréter seul.</p>
+
+<h2>Thermomètre et montre, deux mesures différentes</h2>
+<p>Un thermomètre médical mesure ta température interne, dans la bouche, l'oreille ou le rectum ; chez l'adulte, elle tourne autour de 37 °C. La montre, elle, mesure la surface de ta peau, plus fraîche et bien plus sensible à l'environnement. Sa valeur brute n'a donc pas de norme universelle : c'est pour ça qu'on raisonne en écart, par rapport à une référence qui t'est propre.</p>
+<p>Il faut à ta montre <strong>quelques nuits pour établir cette référence</strong>, avant de pouvoir te donner un écart. Et tous les modèles ne mesurent pas ce signal : c'est une fonction des Apple Watch récentes. Ecleptic lit ensuite ces données dans Apple Santé.</p>
+<div class="figs">
+  <div><span class="v">6 %</span><span class="u">Du pilier vitaux</span></div>
+  <div><span class="v">±2</span><span class="u">Écarts-types : 0 point</span></div>
+  <div><span class="v">42</span><span class="u">Jours de ligne de base</span></div>
+  <div><span class="v">7</span><span class="u">Jours pour démarrer</span></div>
+</div>
+
+<h2>Ce qui la fait bouger</h2>
+<ul>
+<li><strong>Le cycle menstruel :</strong> après l'ovulation, la température de base monte de quelques dixièmes de degré et reste plus haute jusqu'aux règles suivantes. Si tu as des règles, ton écart ondule donc au fil du mois, et c'est normal. Pour adapter l'entraînement : cycle menstruel et sport.</li>
+<li><strong>La fièvre ou une infection :</strong> la température monte, et la <a href="/methode/frequence-respiratoire.html">fréquence respiratoire</a> grimpe souvent avec elle.</li>
+<li><strong>L'alcool :</strong> il dilate les vaisseaux de la peau, ton poignet chauffe, et ta nuit s'en ressent. Le détail dans <a href="/articles/alcool-sommeil-effets.html">alcool et sommeil</a>.</li>
+<li><strong>Un repas tardif :</strong> la digestion produit de la chaleur au moment où ton corps cherche à se refroidir.</li>
+<li><strong>La chambre et la literie :</strong> une pièce chaude, une couette épaisse, et l'écart grimpe ; une chambre froide, et il baisse. Les bons repères : la température idéale pour dormir.</li>
+</ul>
+
+<h2>Comment Ecleptic l'utilise</h2>
+<p>Ecleptic récupère dans Apple Santé la température du poignet mesurée pendant ton sommeil, et la compare à <a href="/methode/ligne-de-base.html">ta ligne de base</a> : ta moyenne et ton écart-type sur les 42 derniers jours, sans compter le jour évalué. Il faut au moins 7 jours de données pour que le signal compte, et 28 jours pour que sa confiance soit pleine. Avec les quelques nuits dont ta montre a besoin au départ, ce signal demande donc un peu de patience.</p>
+<ul>
+<li><strong>Le sens :</strong> ici, il n'y a pas de « mieux ». Tout écart à ta normale, vers le chaud comme vers le froid, fait perdre des points.</li>
+<li><strong>Le seuil :</strong> au-delà de 2 écarts-types, dans un sens ou dans l'autre, ce signal ne rapporte plus aucun point.</li>
+<li><strong>Le poids :</strong> 6 % du pilier <a href="/methode/vitaux.html">vitaux</a>, qui vaut 42 points sur 100. Une journée où toutes les données sont là, la température pèse donc environ 2,5 points du score.</li>
+</ul>
+<p>Pourquoi si peu ? C'est un choix. La température est utile pour repérer une nuit qui sort de l'ordinaire, mais elle est plus bruitée et moins directement liée à ta récupération que la variabilité cardiaque ou la fréquence cardiaque au repos : une chambre surchauffée ou une couette trop épaisse la font bouger sans rapport avec ta forme. Si ta montre ne la mesure pas, son poids est réparti entre les autres vitaux ; sans montre, c'est tout le pilier qui est redistribué.</p>
+
+<h2>Les limites de la mesure</h2>
+<ul>
+<li><strong>Ce n'est pas un thermomètre :</strong> la montre ne sert pas à diagnostiquer une fièvre. Si tu te sens fiévreux, prends ta température avec un vrai thermomètre.</li>
+<li><strong>L'environnement brouille le signal :</strong> une nuit ailleurs, une fenêtre ouverte, un bras sous la couette ou par-dessus, autant de nuances que la montre ne distingue pas d'un changement interne.</li>
+<li><strong>Le score constate, il n'explique pas :</strong> Ecleptic voit que ta température s'écarte de ta normale, pas pourquoi. Virus, verre de vin, cycle ou radiateur : c'est à toi de faire le lien.</li>
+</ul>
+
+<h2>Quand consulter</h2>
+<p>Un écart isolé, surtout après une soirée arrosée ou dans une chambre surchauffée, n'a en général rien d'inquiétant. En revanche, si tu te sens fiévreux, vérifie avec un thermomètre, et consulte un médecin si la fièvre persiste plusieurs jours ou s'accompagne de symptômes qui t'inquiètent. Laisse aussi ton corps guérir avant de t'entraîner à nouveau : les règles sont dans reprendre le sport après une maladie.</p>
+<p>Un malaise, une douleur dans la poitrine, un essoufflement anormal ou des palpitations ne se surveillent pas avec une montre : consulte sans attendre et, en cas d'urgence, appelle le 15 ou le 112. Ecleptic est un outil de bien-être, pas un dispositif médical.</p>
+  <section class="refs">
+    <h2>Références</h2>
+    <ul>
+      <li>Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.</li>
+      <li>Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>.</li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>À quoi sert la température du poignet sur l&#x27;Apple Watch ?</h3>
+    <p>Elle suit, pendant ton sommeil, l&#x27;écart de la température de ton poignet par rapport à ta propre normale, établie sur quelques nuits. Ce n&#x27;est pas une température corporelle : elle sert à repérer une nuit qui sort de tes habitudes, pas à mesurer une fièvre.</p>
+    <h3>Pourquoi ma température du poignet est-elle plus élevée que d&#x27;habitude ?</h3>
+    <p>Elle peut monter pour des raisons banales : chambre ou couette trop chaude, alcool, repas tardif, ou seconde moitié du cycle menstruel, après l&#x27;ovulation. Une fièvre ou une infection peuvent aussi la faire grimper : si tu te sens mal, vérifie avec un vrai thermomètre.</p>
+    <h3>Une montre connectée peut-elle détecter la fièvre ?</h3>
+    <p>Non : elle mesure la peau du poignet, influencée par la chambre et la literie, et non ta température interne. Un écart peut t&#x27;inviter à vérifier, mais seul un thermomètre confirme une fièvre ; si elle persiste ou s&#x27;accompagne de symptômes inquiétants, consulte un médecin.</p>
+  </section>
+  <div class="reward">
+    <span class="label">La suite logique</span>
+    <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'temperature-poignet'})">Demander l'accès</a>
+  </div>
+  <div class="next">
+    <span class="label">Pour aller plus loin</span>
+<a href="/methode/vitaux.html">Les vitaux</a>
+<a href="/methode/readiness-score.html">Le Readiness Score</a>
+<a href="/methode/ligne-de-base.html">Ta ligne de base</a>
+<a href="/methode/frequence-respiratoire.html">La fréquence respiratoire</a>
+<a href="/methode/saturation-oxygene.html">La saturation en oxygène (SpO₂)</a>
+<a href="/articles/alcool-sommeil-effets.html">Alcool et sommeil : ce qui se passe vraiment la nuit</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+</script>
+<script>track('methode_view',{page:'temperature-poignet'});</script>
+<script src="/assets/nav-data.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

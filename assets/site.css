@@ -184,3 +184,17 @@ footer.site a:hover{color:var(--gold)}
 .entry .meta{display:block;margin-bottom:12px}
 .entry .readmore{display:inline-block;margin-top:14px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 .empty{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0;text-align:center;color:var(--muted);font-size:15px}
+/* METHODE (Science-Based) : pages moteurs et fiches */
+.crumbs{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:26px;font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.methode p a,.methode li a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
+.methode p a:hover,.methode li a:hover{color:var(--gold)}
+.methode .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:26px 22px;margin:34px 0 30px;padding:28px 0;position:relative}
+.methode .figs::before,.methode .figs::after{content:"";position:absolute;left:6%;right:6%;border-top:1px solid var(--line)}
+.methode .figs::before{top:0}
+.methode .figs::after{bottom:0}
+.methode .figs .v{display:block;font-size:clamp(34px,6vw,46px);font-weight:200;line-height:1;color:var(--gold);letter-spacing:-.02em}
+.methode .figs .u{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);line-height:1.5}
+.methode .refs ul{list-style:none;margin:0}
+.methode .refs li{font-size:14px;color:var(--muted);margin-bottom:10px;line-height:1.6}
