@@ -865,7 +865,6 @@ NAV = """<nav class="site">
   <div class="links">
     <a href="/" %%(on_home)s>Accueil</a>
     %s
-    <a href="/guide.html">Guide</a>
     <a href="/science.html">Science-Based</a>
     <a href="/beta.html">La b&ecirc;ta</a>
   </div>
@@ -1197,7 +1196,6 @@ def sitemap():
     # Articles : cle "updated" si presente, sinon "date".
     entries = [("%s/" % SITE, git_lastmod("index.html")),
                ("%s/beta.html" % SITE, git_lastmod("beta.html")),
-               ("%s/guide.html" % SITE, git_lastmod("guide.html")),
                ("%s/science.html" % SITE, git_lastmod("science.html")),
                ("%s/articles/" % SITE, git_lastmod("articles/index.html"))]
     entries += [("%s/articles/%s.html" % (SITE, a["slug"]), a.get("updated", a["date"]))
