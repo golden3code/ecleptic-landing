@@ -4,264 +4,317 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Guide d'Optimisation — Ecleptic</title>
-<meta name="description" content="7 leviers scientifiques pour optimiser ton sommeil, ton énergie et tes performances. Un chiffre à retenir par levier. Gratuit.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B0A08">
+<title>Le guide d'optimisation — Ecleptic</title>
+<meta name="description" content="7 leviers scientifiques pour ton sommeil, ton énergie et tes performances. Un chiffre à retenir par levier. Gratuit, 4 minutes de lecture.">
 <link rel="canonical" href="https://ecleptic.health/guide">
-<meta property="og:title" content="Le Guide d'Optimisation — Ecleptic">
-<meta property="og:description" content="7 leviers, 7 chiffres, 7 jours pour sentir la différence. Sommeil, alimentation, entraînement.">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Le guide d'optimisation — Ecleptic">
+<meta property="og:description" content="7 leviers, 7 chiffres, 4 minutes de lecture. Sommeil, alimentation, entraînement.">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://ecleptic.health/guide">
-<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Le Guide d'Optimisation",
-"description":"7 leviers scientifiques pour optimiser ton sommeil, ton énergie et tes performances. Un chiffre à retenir par levier.",
-"inLanguage":"fr","author":{"@type":"Organization","name":"Ecleptic","url":"https://ecleptic.health"},
-"publisher":{"@type":"Organization","name":"Ecleptic","url":"https://ecleptic.health"},
-"mainEntityOfPage":"https://ecleptic.health/guide.html"}
-</script>
-<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:image" content="https://ecleptic.health/assets/guide/og-guide.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/guide/og-guide.jpg">
+<link rel="preload" as="image" href="/assets/guide/couverture-portrait.jpg" media="(max-width: 700px)">
+<link rel="preload" as="image" href="/assets/guide/couverture.jpg" media="(min-width: 701px)">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  html{scroll-behavior:smooth}
-  body{padding-bottom:96px}
-  .ghead{padding:80px 0 26px}
-  .ghead .label{display:block;margin-bottom:26px}
-  .ghead h1{font-size:clamp(34px,7vw,58px)}
-  .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:480px}
+  :root{--bg:#0B0A08;--ink:#F2EBDD;--gold:#D9A441;--muted:#9A8E77;--line:rgba(242,235,221,.14);--card:#12100C;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block;max-width:100%;height:auto}
+  .kicker{display:block;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .kicker b{color:var(--gold);font-weight:400}
 
-  /* Sommaire — le guide en 30 secondes */
-  .toc{margin:44px 0 8px;position:relative;padding:8px 0 4px}
-  .toc::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
-  .toc .label{display:block;margin:26px 0 6px}
-  .toc a{display:flex;align-items:baseline;gap:18px;text-decoration:none;padding:15px 0;position:relative}
-  .toc a::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
-  .toc a:last-of-type::after{content:none}
-  .toc .n{font-size:11px;letter-spacing:.3em;color:var(--gold);flex:0 0 34px}
-  .toc .t{color:var(--ink);font-weight:300;font-size:15.5px;flex:1;transition:color .2s}
-  .toc .f{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+  /* Barre de lecture */
+  .progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:30;pointer-events:none}
+  .progress i{display:block;height:100%;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+
+  /* Couverture plein écran */
+  .cover{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+  .cover picture,.cover img{position:absolute;inset:0;width:100%;height:100%}
+  .cover img{object-fit:cover;object-position:50% 45%}
+  .cover::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(11,10,8,.55) 0%,rgba(11,10,8,0) 20%,rgba(11,10,8,0) 42%,rgba(11,10,8,.8) 70%,var(--bg) 100%)}
+  .brand{position:absolute;top:calc(24px + env(safe-area-inset-top));left:0;right:0;z-index:2;text-align:center;
+    font-size:12px;letter-spacing:.5em;text-transform:uppercase;padding-left:.5em}
+  .cover-in{position:relative;z-index:2;width:100%;max-width:760px;margin:0 auto;padding:0 24px 58px}
+  .cover h1{font-weight:200;text-transform:uppercase;font-size:clamp(42px,11vw,86px);line-height:.98;letter-spacing:-.01em;margin:18px 0 22px}
+  .cover h1 span{color:var(--gold)}
+  .cover p{color:rgba(242,235,221,.82);max-width:520px}
+  .scroll{display:inline-flex;gap:12px;align-items:center;margin-top:30px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-decoration:none}
+  .scroll span{display:inline-block;animation:bob 2.2s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(4px)}}
+
+  main{max-width:760px;margin:0 auto;padding:0 24px}
+
+  /* Le guide en 30 secondes */
+  .resume{padding:92px 0 24px}
+  .resume h2{font-weight:200;text-transform:uppercase;font-size:clamp(26px,6vw,36px);line-height:1.1;margin:12px 0 22px}
+  .toc{list-style:none}
+  .toc a{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+  .toc li:first-child a{border-top:1px solid var(--line)}
+  .toc .n{font-size:11px;letter-spacing:.25em;color:var(--gold)}
+  .toc .t{font-weight:300;transition:color .2s}
+  .toc .f{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
   .toc a:hover .t{color:var(--gold)}
 
-  /* Leviers */
-  .lever{border-top:1px solid var(--line);padding:52px 0 44px;scroll-margin-top:24px}
-  .toc + .lever{border-top:0}
-  .lever:last-of-type{border-bottom:1px solid var(--line)}
-  .lhead{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
-  .lhead .lmeta{min-width:0}
-  .lever .num{display:block;margin-bottom:16px}
-  .lever h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:14px}
-  .fig{flex:0 0 auto;text-align:right;margin-top:-6px}
-  .fig .v{display:block;font-size:clamp(38px,7vw,56px);font-weight:200;line-height:1;color:var(--gold);letter-spacing:-.02em;white-space:nowrap}
-  .fig .u{display:block;margin-top:8px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
-  .lever p.why{color:var(--muted);font-size:15.5px;max-width:520px;margin-bottom:12px}
-  .proto{border:1px solid var(--line);padding:18px 22px;margin-top:18px}
-  .proto p{font-size:15px;margin-bottom:8px}
-  .proto p:last-child{margin-bottom:0}
-  .bridge{margin-top:16px;font-size:13.5px;color:var(--muted);border-left:1px solid var(--gold);padding-left:14px}
-  @media(max-width:560px){
-    .lhead{flex-direction:column-reverse;gap:6px}
-    .fig{text-align:left;margin:0 0 18px}
-    .fig .v{font-size:34px}
-  }
+  /* Un levier = photo, chiffre-clé, titre, pourquoi, protocole */
+  .lever{padding:84px 0 0;scroll-margin-top:10px}
+  .ph{position:relative;margin:0}
+  .ph img{width:100%}
+  .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:48%;background:linear-gradient(rgba(11,10,8,0),var(--bg))}
+  .lbody{position:relative;z-index:1;margin-top:-92px}
+  .fig{display:flex;align-items:baseline;gap:14px;margin:12px 0 16px}
+  .fig .v{font-size:clamp(66px,17vw,116px);font-weight:200;line-height:.9;color:var(--gold);letter-spacing:-.03em;white-space:nowrap}
+  .fig .u{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+  .lever h2{font-weight:250;text-transform:uppercase;font-size:clamp(22px,5.4vw,32px);line-height:1.18;letter-spacing:.01em;margin-bottom:18px}
+  .why{color:rgba(242,235,221,.8)}
+  .why a,.bridge a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
+  .proto{margin-top:28px;border:1px solid var(--line);background:var(--card);padding:22px 22px 6px}
+  .proto ol{list-style:none;counter-reset:s;margin-top:14px}
+  .proto li{counter-increment:s;position:relative;padding:0 0 18px 40px;font-size:16px}
+  .proto li::before{content:"0" counter(s);position:absolute;left:0;top:.2em;font-size:11px;letter-spacing:.2em;color:var(--gold)}
+  .bridge{margin-top:24px;padding:2px 0 2px 16px;border-left:1px solid var(--gold);font-size:15px;color:var(--muted)}
 
-  /* Récap */
-  .recap{margin:56px 0 8px;border:1px solid var(--line);padding:36px 30px 30px}
-  .recap .label{display:block;margin-bottom:24px}
+  /* Récap à capturer */
+  .recap{margin:110px 0 0;border:1px solid rgba(217,164,65,.45);padding:34px 26px 24px}
+  .recap h2{font-weight:200;text-transform:uppercase;font-size:clamp(24px,5.6vw,30px);line-height:1.1;margin:12px 0 20px}
   .recap ul{list-style:none}
-  .recap li{display:flex;align-items:baseline;gap:16px;padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;font-weight:300}
-  .recap li:first-child{border-top:0;padding-top:0}
-  .recap .n{font-size:10.5px;letter-spacing:.25em;color:var(--gold);flex:0 0 30px}
-  .recap .r{flex:1;color:var(--ink)}
-  .recap .c{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-  .recap .tip{margin-top:22px;font-size:12.5px;color:var(--muted)}
+  .recap li{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline;padding:13px 0;border-top:1px solid var(--line)}
+  .recap .v{color:var(--gold);font-weight:200;font-size:25px;line-height:1.1;white-space:nowrap}
+  .recap .r{font-size:15px;font-weight:300;line-height:1.55}
+  .recap .r small{display:block;margin-top:3px;font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+  .recap .tip{margin-top:18px;text-align:center;font-size:12.5px;color:var(--muted)}
 
-  .stickybar{position:fixed;left:0;right:0;bottom:0;background:rgba(11,10,8,.86);backdrop-filter:blur(14px);
-             -webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
-             padding:14px 24px calc(14px + env(safe-area-inset-bottom));
-             display:flex;align-items:center;justify-content:center;gap:20px}
-  .stickybar span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-  .stickybar .btn{padding:13px 24px}
-  @media(max-width:560px){.stickybar span{display:none}}
+  /* Appel final */
+  .cta{text-align:center;padding:96px 0 10px}
+  .moon{width:min(300px,68vw);margin:0 auto 6px;-webkit-mask-image:radial-gradient(circle,#000 50%,transparent 70%);mask-image:radial-gradient(circle,#000 50%,transparent 70%)}
+  .cta h2{font-weight:200;text-transform:uppercase;font-size:clamp(28px,7vw,46px);line-height:1.06;margin:14px 0 20px}
+  .cta h2 span{color:var(--gold)}
+  .cta p{color:var(--muted);max-width:480px;margin:0 auto 34px}
+  .btn{display:inline-block;padding:17px 34px;border:1px solid var(--gold);background:var(--gold);color:#16120B;
+    font-size:12px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background .2s,color .2s}
+  .btn:hover{background:transparent;color:var(--gold)}
+  .cta .note{margin:18px auto 0;font-size:12.5px;color:var(--muted);max-width:420px}
+
+  .more{padding:84px 0 0}
+  .more a{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:300}
+  .more a:first-of-type{border-top:1px solid var(--line);margin-top:18px}
+  .more a:hover{color:var(--gold)}
+
+  footer{max-width:760px;margin:90px auto 0;padding:34px 24px 130px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
+  footer a{display:inline-block;margin-bottom:14px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+
+  /* Barre collante (apparaît après la couverture, s'efface devant l'appel final) */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:20px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(11,10,8,.88);
+    -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);
+    transform:translateY(110%);transition:transform .35s ease}
+  .sticky.on{transform:none}
+  .sticky span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .sticky .btn{padding:13px 24px;font-size:11px}
+
+  /* Apparition douce au scroll */
+  .js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease-out,transform .9s ease-out}
+  .js .rv.in{opacity:1;transform:none}
+
+  @media(max-width:700px){
+    body{font-size:16.5px}
+    .ph{margin:0 -24px}
+    .lbody{margin-top:-70px}
+    .recap{padding:28px 18px 20px}
+    .recap li{grid-template-columns:80px 1fr;gap:12px}
+    .recap .v{font-size:21px}
+    .sticky span{display:none}
+    .sticky .btn{flex:1;text-align:center}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .rv{opacity:1;transform:none;transition:none}
+    .scroll span{animation:none}
+    .sticky{transition:none}
+  }
 </style>
 </head>
 <body>
-<nav class="site">
-  <a class="logo" href="/">Ecleptic</a>
-  <div class="links">
-    <a href="/">Accueil</a>
-    <span class="navjournal">
-    <a href="/articles/">Journal</a>
-    </span>
-    <a href="/guide.html" class="on">Guide</a>
-    <a href="/science.html">Science-Based</a>
-    <a href="/beta.html">La bêta</a>
-  </div>
-</nav>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
 
-<main class="wrap">
-  <header class="ghead">
-    <span class="label">Guide gratuit &nbsp;·&nbsp; 7 leviers &nbsp;·&nbsp; Lecture : 4 minutes</span>
-    <h1 class="display">Le guide<br><span class="gold">d'optimisation</span>.</h1>
+<header class="cover">
+  <picture>
+    <source media="(max-width: 700px)" srcset="/assets/guide/couverture-portrait.jpg">
+    <img src="/assets/guide/couverture.jpg" alt="" width="2000" height="1250" fetchpriority="high">
+  </picture>
+  <div class="brand">Ecleptic</div>
+  <div class="cover-in">
+    <span class="kicker">Guide gratuit &nbsp;·&nbsp; 7 leviers &nbsp;·&nbsp; 4 minutes</span>
+    <h1>Le guide<br><span>d'optimisation</span>.</h1>
     <p>Un levier par jour, un chiffre à retenir par levier. Sommeil, énergie, performance — sans supplément miracle, sans gadget à 500&nbsp;€.</p>
-  </header>
+    <a class="scroll" href="#resume">Commencer <span aria-hidden="true">↓</span></a>
+  </div>
+</header>
 
-  <nav class="toc">
-    <span class="label">Le guide en 30 secondes</span>
-    <a href="#l1"><span class="n">01</span><span class="t">De la lumière dans l'heure qui suit le réveil</span><span class="f">10 min</span></a>
-    <a href="#l2"><span class="n">02</span><span class="t">Retarde ton premier café</span><span class="f">+90 min</span></a>
-    <a href="#l3"><span class="n">03</span><span class="t">Les protéines d'abord</span><span class="f">2 g/kg</span></a>
-    <a href="#l4"><span class="n">04</span><span class="t">Une chambre fraîche, des horaires fixes</span><span class="f">18 °C</span></a>
-    <a href="#l5"><span class="n">05</span><span class="t">L'essentiel de ton cardio en zone 2</span><span class="f">80 %</span></a>
-    <a href="#l6"><span class="n">06</span><span class="t">Écoute tes données, pas ta motivation</span><span class="f">60 s / matin</span></a>
-    <a href="#l7"><span class="n">07</span><span class="t">Ce qui se mesure s'améliore</span><span class="f">14 jours</span></a>
-  </nav>
+<main>
+  <section class="resume rv" id="resume">
+    <span class="kicker">Le guide en 30 secondes</span>
+    <h2>7 leviers,<br>7 chiffres.</h2>
+    <ol class="toc">
+      <li><a href="#l1"><span class="n">01</span><span class="t">De la lumière dans l'heure qui suit le réveil</span><span class="f">10 min</span></a></li>
+      <li><a href="#l2"><span class="n">02</span><span class="t">Retarde ton premier café</span><span class="f">+90 min</span></a></li>
+      <li><a href="#l3"><span class="n">03</span><span class="t">Les protéines d'abord</span><span class="f">2 g/kg</span></a></li>
+      <li><a href="#l4"><span class="n">04</span><span class="t">Une chambre fraîche, des horaires fixes</span><span class="f">18&nbsp;°C</span></a></li>
+      <li><a href="#l5"><span class="n">05</span><span class="t">L'essentiel de ton cardio en zone 2</span><span class="f">80&nbsp;%</span></a></li>
+      <li><a href="#l6"><span class="n">06</span><span class="t">Écoute tes données, pas ta motivation</span><span class="f">60 s</span></a></li>
+      <li><a href="#l7"><span class="n">07</span><span class="t">Ce qui se mesure s'améliore</span><span class="f">14 jours</span></a></li>
+    </ol>
+  </section>
 
-  <section class="lever" id="l1">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 01</span> &nbsp;·&nbsp; Sommeil</span>
-        <h2>La lumière du matin règle ton horloge</h2>
-      </div>
+  <article class="lever" id="l1" data-n="1">
+    <figure class="ph"><img src="/assets/guide/levier-1.jpg" alt="Soleil du matin qui perce à travers une fenêtre" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 01</b> &nbsp;·&nbsp; Sommeil</span>
       <div class="fig"><span class="v">10</span><span class="u">minutes</span></div>
+      <h2>La lumière du matin règle ton horloge</h2>
+      <p class="why">Ton rythme circadien pilote énergie, faim, humeur, hormones — et il se règle par les yeux. La lumière naturelle du matin avance ta mélatonine du soir : tu t'endors plus vite, tu dors plus profond.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Dans les 60&nbsp;minutes après le réveil : 10&nbsp;minutes dehors, sans lunettes de soleil. Balcon ou fenêtre ouverte, ça compte.</li>
+        <li>Ciel couvert aussi : c'est encore 10× plus lumineux qu'un plafonnier.</li>
+      </ol></div>
     </div>
-    <p class="why">Ton rythme circadien pilote énergie, faim, humeur, hormones — et il se règle par les yeux. La lumière naturelle du matin avance ta mélatonine du soir : tu t'endors plus vite, tu dors plus profond.</p>
-    <div class="proto">
-      <p>→ Dans les 60 min après le réveil : 10 min dehors, sans lunettes de soleil. Balcon ou fenêtre ouverte, ça compte.</p>
-      <p>→ Ciel couvert aussi : c'est encore 10× plus lumineux qu'un plafonnier.</p>
-    </div>
-  </section>
+  </article>
 
-  <section class="lever" id="l2">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 02</span> &nbsp;·&nbsp; Énergie</span>
-        <h2>Retarde ton premier café de 90 minutes</h2>
-      </div>
+  <article class="lever" id="l2" data-n="2">
+    <figure class="ph"><img src="/assets/guide/levier-2.jpg" alt="Main tenant une tasse de café face à la mer, à l'aube" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 02</b> &nbsp;·&nbsp; Énergie</span>
       <div class="fig"><span class="v">+90</span><span class="u">minutes</span></div>
+      <h2>Retarde ton premier café de 90 minutes</h2>
+      <p class="why">Au réveil, ton cortisol est déjà au maximum : le café n'apporte presque rien. Pire, la caféine bloque l'adénosine sans l'éliminer — et elle te retombe dessus vers 14&nbsp;h.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Premier café 90&nbsp;minutes après le réveil, dernier 8 à 10&nbsp;heures avant le coucher (demi-vie ≈ 5&nbsp;h).</li>
+        <li>À la place, au réveil : un grand verre d'eau. Tu perds ~500&nbsp;ml par nuit rien qu'en respirant.</li>
+      </ol></div>
     </div>
-    <p class="why">Au réveil, ton cortisol est déjà au maximum : le café n'apporte presque rien. Pire, la caféine bloque l'adénosine sans l'éliminer — et elle te retombe dessus vers 14&nbsp;h.</p>
-    <div class="proto">
-      <p>→ Premier café 90 min après le réveil, dernier 8-10 h avant le coucher (demi-vie ≈ 5 h).</p>
-      <p>→ À la place, au réveil : un grand verre d'eau. Tu perds ~500 ml par nuit rien qu'en respirant.</p>
-    </div>
-  </section>
+  </article>
 
-  <section class="lever" id="l3">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 03</span> &nbsp;·&nbsp; Alimentation</span>
-        <h2>Les protéines d'abord, le reste suit</h2>
-      </div>
+  <article class="lever" id="l3" data-n="3">
+    <figure class="ph"><img src="/assets/guide/levier-3.jpg" alt="Œufs mollets coupés en deux sur une ardoise sombre" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 03</b> &nbsp;·&nbsp; Alimentation</span>
       <div class="fig"><span class="v">2</span><span class="u">g / kg / jour</span></div>
+      <h2>Les protéines d'abord, le reste suit</h2>
+      <p class="why">Si tu ne suis qu'un seul chiffre nutritionnel, c'est celui-là : 1,6 à 2,2&nbsp;g de protéines par kilo de poids de corps. Facteur nº1 de la récupération, de la satiété — donc du contrôle du poids.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Vise ~30&nbsp;g par repas. Repère : une portion de viande ou de poisson de la taille de ta paume ≈ 25-30&nbsp;g.</li>
+        <li>Le repas le plus souvent raté : le petit-déjeuner. Œufs, skyr, fromage blanc.</li>
+      </ol></div>
+      <p class="bridge">C'est exactement ce calcul qu'Ecleptic fait pour toi : tu prends ton repas en photo, l'app compte les protéines et ajuste ta cible du jour.</p>
     </div>
-    <p class="why">Si tu ne suis qu'un seul chiffre nutritionnel, c'est celui-là : 1,6 à 2,2 g de protéines par kilo de poids de corps. Facteur nº1 de la récupération, de la satiété — donc du contrôle du poids.</p>
-    <div class="proto">
-      <p>→ Vise ~30 g par repas. Repère : une portion de viande ou poisson de la taille de ta paume ≈ 25-30 g.</p>
-      <p>→ Le repas le plus souvent raté : le petit-déjeuner. Œufs, skyr, fromage blanc.</p>
-    </div>
-    <p class="bridge">C'est exactement ce calcul qu'Ecleptic fait pour toi : tu prends ton repas en photo, l'app compte les protéines et ajuste ta cible du jour.</p>
-  </section>
+  </article>
 
-  <section class="lever" id="l4">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 04</span> &nbsp;·&nbsp; Sommeil</span>
-        <h2>Frais, sombre, régulier</h2>
-      </div>
+  <article class="lever" id="l4" data-n="4">
+    <figure class="ph"><img src="/assets/guide/levier-4.jpg" alt="Chambre sous les toits dans la pénombre, lumière froide de la lucarne" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 04</b> &nbsp;·&nbsp; Sommeil</span>
       <div class="fig"><span class="v">18°</span><span class="u">dans la chambre</span></div>
+      <h2>Frais, sombre, régulier</h2>
+      <p class="why">Ton corps doit perdre ~1&nbsp;°C de température interne pour plonger en sommeil profond : une chambre trop chaude est le saboteur nº1. Et <a href="/articles/se-coucher-meme-heure-regularite.html">la régularité des horaires compte plus que la durée</a>.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Chambre entre 17 et 19&nbsp;°C. Douche chaude 1 à 2&nbsp;heures avant le coucher : elle déclenche la chute de température derrière.</li>
+        <li>Heure de coucher fixe à ±30&nbsp;minutes, week-end compris. Le plus dur — et le plus rentable.</li>
+      </ol></div>
     </div>
-    <p class="why">Ton corps doit perdre ~1 °C de température interne pour plonger en sommeil profond : une chambre trop chaude est le saboteur nº1. Et <a href="/articles/se-coucher-meme-heure-regularite.html" style="color:inherit">la régularité des horaires compte plus que la durée</a>.</p>
-    <div class="proto">
-      <p>→ Chambre entre 17 et 19 °C. Douche chaude 1-2 h avant le coucher : elle déclenche la chute de température derrière.</p>
-      <p>→ Heure de coucher fixe à ±30 min, week-end compris. Le plus dur — et le plus rentable.</p>
-    </div>
-  </section>
+  </article>
 
-  <section class="lever" id="l5">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 05</span> &nbsp;·&nbsp; Entraînement</span>
-        <h2>La zone 2, le moteur que tout le monde néglige</h2>
-      </div>
-      <div class="fig"><span class="v">80 %</span><span class="u">du cardio</span></div>
+  <article class="lever" id="l5" data-n="5">
+    <figure class="ph"><img src="/assets/guide/levier-5.jpg" alt="Deux coureurs côte à côte sur une route, dans la brume dorée du matin" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 05</b> &nbsp;·&nbsp; Entraînement</span>
+      <div class="fig"><span class="v">80&nbsp;%</span><span class="u">du cardio</span></div>
+      <h2>La zone 2, le moteur que tout le monde néglige</h2>
+      <p class="why">80&nbsp;% du cardio des athlètes d'endurance se fait à basse intensité — pas un hasard. La <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a> construit tes mitochondries, ta base aérobie et ta VO₂max, le meilleur prédicteur mesurable de longévité.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>2 à 3 sorties de 30-45&nbsp;minutes par semaine où tu peux tenir une conversation. Marche rapide en côte, vélo, rameur.</li>
+        <li>Le test : si tu ne peux pas parler, ralentis. Oui, ça paraîtra trop facile. C'est normal.</li>
+      </ol></div>
     </div>
-    <p class="why">80 % du cardio des athlètes d'endurance se fait à basse intensité — pas un hasard. La zone 2 construit tes mitochondries, ta base aérobie et ta VO₂max, le meilleur prédicteur mesurable de longévité.</p>
-    <div class="proto">
-      <p>→ 2-3 sorties de 30-45 min par semaine où tu peux tenir une conversation. Marche rapide en côte, vélo, rameur.</p>
-      <p>→ Le test : si tu ne peux pas parler, ralentis. Oui, ça paraîtra trop facile. C'est normal.</p>
-    </div>
-  </section>
+  </article>
 
-  <section class="lever" id="l6">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 06</span> &nbsp;·&nbsp; Récupération</span>
-        <h2>Écoute tes données, pas ta motivation</h2>
-      </div>
+  <article class="lever" id="l6" data-n="6">
+    <figure class="ph"><img src="/assets/guide/levier-6.jpg" alt="Écran de montre connectée affichant l'activité et la fréquence cardiaque" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 06</b> &nbsp;·&nbsp; Récupération</span>
       <div class="fig"><span class="v">60</span><span class="u">secondes / matin</span></div>
+      <h2>Écoute tes données, pas ta motivation</h2>
+      <p class="why">Le progrès ne vient pas de l'entraînement, mais de la récupération qui suit. Ta fréquence cardiaque au repos et ta HRV te disent chaque matin si ton corps a encaissé la veille. Pousser un jour rouge, c'est creuser un trou.</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Chaque matin, 60&nbsp;secondes : nuit de sommeil, fréquence cardiaque au repos, sensation au réveil.</li>
+        <li>Rouge → séance légère ou repos. Vert → c'est le jour où tu pousses.</li>
+      </ol></div>
+      <p class="bridge">C'est le cœur d'Ecleptic : un <a href="/articles/readiness-score-comment-ca-marche.html">Readiness Score</a> chaque matin, calculé sur tes vraies données (sommeil, <a href="/articles/hrv-variabilite-frequence-cardiaque.html">HRV</a>, charge d'entraînement), qui te dit si aujourd'hui est un jour pour pousser ou pour récupérer.</p>
     </div>
-    <p class="why">Le progrès ne vient pas de l'entraînement, mais de la récupération qui suit. Ta fréquence cardiaque au repos et ta HRV te disent chaque matin si ton corps a encaissé la veille. Pousser un jour rouge, c'est creuser un trou.</p>
-    <div class="proto">
-      <p>→ Chaque matin, 60 secondes : nuit de sommeil, fréquence cardiaque au repos, sensation au réveil. Rouge → séance légère ou repos. Vert → c'est le jour où tu pousses.</p>
-    </div>
-    <p class="bridge">C'est le cœur d'Ecleptic : un <a href="/articles/readiness-score-comment-ca-marche.html">Readiness Score</a> chaque matin, calculé sur tes vraies données (sommeil, <a href="/articles/hrv-variabilite-frequence-cardiaque.html">HRV</a>, charge d'entraînement), qui te dit si aujourd'hui est un jour pour pousser ou pour récupérer.</p>
-  </section>
+  </article>
 
-  <section class="lever" id="l7">
-    <div class="lhead">
-      <div class="lmeta">
-        <span class="num label"><span class="gold">Levier 07</span> &nbsp;·&nbsp; Le méta-levier</span>
-        <h2>Ce qui se mesure s'améliore</h2>
-      </div>
+  <article class="lever" id="l7" data-n="7">
+    <figure class="ph"><img src="/assets/guide/levier-7.jpg" alt="Carnet ouvert et stylo plume sur un bureau, lumière chaude" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Levier 07</b> &nbsp;·&nbsp; Le méta-levier</span>
       <div class="fig"><span class="v">14</span><span class="u">jours</span></div>
+      <h2>Ce qui se mesure s'améliore</h2>
+      <p class="why">Le vrai secret des gens « optimisés », c'est la boucle de feedback : mesurer → ajuster → re-mesurer. Sans mesure, tu navigues au ressenti — et le ressenti ment (le manque de sommeil dégrade ton jugement sur ton propre état).</p>
+      <div class="proto"><span class="kicker">Le protocole</span><ol>
+        <li>Choisis 3 métriques maximum : heures de sommeil, grammes de protéines, séances de la semaine. Note-les 14&nbsp;jours.</li>
+        <li>Puis regarde ce qui corrèle avec tes meilleures journées, et ajuste un seul levier à la fois.</li>
+      </ol></div>
     </div>
-    <p class="why">Le vrai secret des gens « optimisés », c'est la boucle de feedback : mesurer → ajuster → re-mesurer. Sans mesure, tu navigues au ressenti — et le ressenti ment (le manque de sommeil dégrade ton jugement sur ton propre état).</p>
-    <div class="proto">
-      <p>→ Choisis 3 métriques max : heures de sommeil, grammes de protéines, séances de la semaine. Note-les 14 jours.</p>
-      <p>→ Puis regarde ce qui corrèle avec tes meilleures journées, et ajuste un seul levier à la fois.</p>
-    </div>
-  </section>
+  </article>
 
-  <aside class="recap">
-    <span class="label">Ce qu'il faut retenir</span>
+  <aside class="recap rv" id="recap">
+    <span class="kicker">Ce qu'il faut retenir</span>
+    <h2>Tout le guide,<br>en un écran.</h2>
     <ul>
-      <li><span class="n">01</span><span class="r">10 min de lumière naturelle dans l'heure du réveil</span><span class="c">Sommeil</span></li>
-      <li><span class="n">02</span><span class="r">Premier café 90 min après le réveil, dernier 8 h avant le coucher</span><span class="c">Énergie</span></li>
-      <li><span class="n">03</span><span class="r">1,6-2,2 g de protéines / kg / jour, ~30 g par repas</span><span class="c">Alimentation</span></li>
-      <li><span class="n">04</span><span class="r">Chambre 17-19 °C, coucher fixe à ±30 min</span><span class="c">Sommeil</span></li>
-      <li><span class="n">05</span><span class="r">2-3 sorties zone 2 par semaine, en pouvant parler</span><span class="c">Sport</span></li>
-      <li><span class="n">06</span><span class="r">Check de 60 s chaque matin — rouge : repos, vert : pousse</span><span class="c">Récupération</span></li>
-      <li><span class="n">07</span><span class="r">3 métriques, 14 jours, un seul ajustement à la fois</span><span class="c">Mesure</span></li>
+      <li><span class="v">10 min</span><span class="r">de lumière naturelle dans l'heure du réveil<small>Sommeil</small></span></li>
+      <li><span class="v">+90 min</span><span class="r">avant le premier café, dernier 8&nbsp;h avant le coucher<small>Énergie</small></span></li>
+      <li><span class="v">2 g/kg</span><span class="r">de protéines par jour, ~30&nbsp;g par repas<small>Alimentation</small></span></li>
+      <li><span class="v">18&nbsp;°C</span><span class="r">dans la chambre, coucher fixe à ±30&nbsp;min<small>Sommeil</small></span></li>
+      <li><span class="v">80&nbsp;%</span><span class="r">du cardio en zone 2, en pouvant parler<small>Sport</small></span></li>
+      <li><span class="v">60 s</span><span class="r">de check chaque matin : rouge, repos ; vert, tu pousses<small>Récupération</small></span></li>
+      <li><span class="v">14 j</span><span class="r">pour 3 métriques, un seul ajustement à la fois<small>Mesure</small></span></li>
     </ul>
     <p class="tip">Capture cet écran — c'est tout le guide.</p>
   </aside>
 
-  <div class="next">
-    <span class="label">Pour creuser chaque levier</span>
-<a href="/articles/combien-heures-sommeil-par-nuit.html">Combien d'heures de sommeil faut-il vraiment par nuit ?</a>
-<a href="/articles/proteines-par-jour-prise-de-muscle.html">Combien de protéines par jour pour prendre du muscle ?</a>
-<a href="/articles/readiness-score-comment-ca-marche.html">Readiness score : comment ça marche, et comment l'améliorer</a>
-  </div>
+  <section class="cta rv" id="cta">
+    <img class="moon" src="/assets/moon.jpg" alt="" width="1254" height="1254" loading="lazy" decoding="async">
+    <span class="kicker">Pour aller plus loin</span>
+    <h2>Tu peux tout tenir<br>à la main. <span>Ou laisser<br>Ecleptic le faire.</span></h2>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Les 7 leviers de ce guide y sont suivis automatiquement.</p>
+    <a class="btn" id="ctaMain" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
+    <p class="note" data-store-text="iPhone · gratuit sur l'App Store">iPhone · bêta gratuite via TestFlight, l'app de bêtas officielle d'Apple · bientôt sur l'App Store</p>
+  </section>
 
-  <div class="reward" style="border-top:0">
-    <span class="label">Pour aller plus loin</span>
-    <h2>Tu peux tenir tout ça à la main.<br>Ou laisser une app le faire pour toi.</h2>
-    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Les 7 leviers de ce guide y sont suivis automatiquement. Bêta iOS ouverte — gratuite.</p>
-    <a class="btn gold" id="ctaMain" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger la bêta</a>
-    <p style="margin-top:18px;font-size:12.5px;color:var(--muted)">iPhone · iOS 16.4+ · via TestFlight, l'app de bêtas officielles d'Apple</p>
-  </div>
+  <nav class="more rv" aria-label="Articles du Journal">
+    <span class="kicker">Pour creuser, dans le Journal</span>
+    <a href="/articles/combien-heures-sommeil-par-nuit.html">Combien d'heures de sommeil faut-il vraiment par nuit ?</a>
+    <a href="/articles/proteines-par-jour-prise-de-muscle.html">Combien de protéines par jour pour prendre du muscle ?</a>
+    <a href="/articles/readiness-score-comment-ca-marche.html">Readiness score : comment ça marche, et comment l'améliorer</a>
+  </nav>
 </main>
 
-<div class="stickybar">
+<div class="sticky" id="sticky">
   <span>Les 7 leviers, suivis automatiquement</span>
-  <a class="btn gold" id="ctaSticky" href="https://testflight.apple.com/join/H5CQgDa7">Télécharger la bêta</a>
+  <a class="btn" id="ctaSticky" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
 </div>
 
-<footer class="site">
-  <div class="wrap">
-    <p class="flinks"><a href="/confidentialite.html">Confidentialité</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
-    <p class="disclaimer">Ecleptic est une application de bien-être. Ce guide et l'application ne remplacent pas un avis médical et ne constituent pas un dispositif médical.</p>
-  </div>
+<footer>
+  <a href="/confidentialite.html">Confidentialité</a>
+  <p>Ecleptic est une application de bien-être. Ce guide et l'application ne remplacent pas un avis médical et ne constituent pas un dispositif médical.</p>
 </footer>
 
 <script>
@@ -276,16 +329,53 @@
   try { SRC = new URLSearchParams(location.search).get("src"); } catch(_) {}
   track("guide_view", {src: SRC});
 
-  var fired = {};
-  window.addEventListener("scroll", function(){
-    var h = document.documentElement;
-    var pct = (h.scrollTop + window.innerHeight) / h.scrollHeight;
-    if (pct > 0.5 && !fired.half)  { fired.half = true;  track("guide_scroll_50", {src: SRC}); }
-    if (pct > 0.95 && !fired.full) { fired.full = true;  track("guide_scroll_end", {src: SRC}); }
-  }, {passive:true});
+  // Lien de téléchargement : le jour du lancement, coller ici le lien App Store.
+  // Tous les boutons (et leurs textes) basculent seuls vers l'App Store.
+  var APP_STORE_URL = "";
+  if (APP_STORE_URL) {
+    document.querySelectorAll("[data-app]").forEach(function(a){ a.href = APP_STORE_URL; });
+    document.querySelectorAll("[data-store-text]").forEach(function(el){ el.textContent = el.getAttribute("data-store-text"); });
+  }
 
-  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement:"outro", src: SRC}); });
-  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement:"sticky", src: SRC}); });
+  var bar = document.getElementById("bar"), sticky = document.getElementById("sticky");
+  var cover = document.querySelector(".cover"), cta = document.getElementById("cta");
+  var fired = {}, ticking = false;
+  function onFrame(){
+    ticking = false;
+    var h = document.documentElement, max = h.scrollHeight - window.innerHeight;
+    var pct = max > 0 ? h.scrollTop / max : 0;
+    bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, pct)).toFixed(4) + ")";
+    var afterCover = cover.getBoundingClientRect().bottom < window.innerHeight * 0.35;
+    var ctaTop = cta.getBoundingClientRect().top;
+    sticky.classList.toggle("on", afterCover && ctaTop > window.innerHeight * 0.9);
+    if (pct > 0.5 && !fired.half) { fired.half = true; track("guide_scroll_50", {src: SRC}); }
+    if (pct > 0.95 && !fired.full) { fired.full = true; track("guide_scroll_end", {src: SRC}); }
+  }
+  window.addEventListener("scroll", function(){ if (!ticking) { ticking = true; requestAnimationFrame(onFrame); } }, {passive: true});
+  window.addEventListener("resize", onFrame, {passive: true});
+  onFrame();
+
+  // Apparition douce des blocs + mesure de lecture levier par levier.
+  var rv = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    rv.forEach(function(el){ io.observe(el); });
+    var seen = {};
+    var lo = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var n = e.target.getAttribute("data-n");
+        if (e.isIntersecting && !seen[n]) { seen[n] = true; track("guide_lever_view", {lever: +n, src: SRC}); }
+      });
+    }, {threshold: 0.3});
+    document.querySelectorAll(".lever").forEach(function(el){ lo.observe(el); });
+  } else {
+    rv.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", src: SRC}); });
+  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", src: SRC}); });
 </script>
 </body>
 </html>
