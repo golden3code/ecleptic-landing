@@ -9,6 +9,18 @@ repas + ≥ 3 pesées, fusion jours valides/21 (fenêtre 14 j : jamais 100 % obs
 amortissement −10 %/+25 %, garde-fous BMR et 1,2 × BMR, 7 700 kcal/kg (5 500 si
 objectif prise de masse), règles des 6 objectifs sélectionnables, lipides 30 %
 (≥ 0,8 g/kg), garde-fous IMC 18,5 / moins de 18 ans / perte rapide (−10 %).
+Ajouts du 24/09 (demande du user), vérifiés dans compute-targets et compute-expenditure :
+perte rapide = plus de 1,5 % du poids par semaine ; dette de sommeil (≥ 4 nuits sur
+7 j, manque cumulé ≥ 300 min sous 7 h/nuit) → déficit limité à −15 % ; déficit ≤ 1 %
+du poids par semaine (poids × 0,01 × 7 700 / 7, soit 11 kcal/kg/j) ; planchers dans
+l'ordre métabolisme de repos puis 1 200 kcal (femme) / 1 500 kcal (homme) ; types de
+journée (repos 0, très léger ≥ 1, léger ≥ 30, modéré ≥ 60, intense ≥ 105 min actives ;
+bonus = minutes moyennes du niveau sur 14 j × 4 kcal, ≤ 600 ; repos ≤ −300 ; écart
+porté par les glucides) ; phase lutéale estimée +150 kcal (suivi du cycle activé avec
+consentement, hors pilule combinée, ≥ 2 cycles terminés) ; dépense mesurée écartée à
+± 3 jours d'un début de règles (rétention d'eau) ; interrupteur Voyage / maladie = gel
+de l'estimation de dépense pendant la pause + 7 jours (les cibles, elles, continuent).
+Non publié : le plafond de déficit à 25 % (présent dans le code, inatteignable à −18 %).
 Volontairement absents : Souplesse et Préparation d'un événement (grisés au
 launch, lib/energyGoals.ts launchEnabled:false ; event_date jamais écrit côté client).
 """
@@ -81,11 +93,19 @@ PAGE = {
 <ul>
 <li><strong>IMC sous 18,5 :</strong> aucun déficit. Maigrir n'a pas de sens quand ta corpulence est déjà sous la zone normale.</li>
 <li><strong>Moins de 18 ans :</strong> aucun déficit. Un corps en croissance n'a pas à être mis au régime par une app.</li>
-<li><strong>Perte trop rapide :</strong> si ta perte de poids observée va trop vite, le déficit est ralenti à −10 %. Une perte trop rapide se fait davantage aux dépens du muscle.</li>
+<li><strong>Perte trop rapide :</strong> si ta perte observée dépasse 1,5 % de ton poids par semaine, le déficit est ralenti à −10 %. Une perte trop rapide se fait davantage aux dépens du muscle.</li>
+<li><strong>Dette de sommeil :</strong> si tes nuits de la dernière semaine cumulent au moins 5 heures de manque par rapport à 7 heures par nuit, sur 4 nuits enregistrées au minimum, le déficit est limité à −15 %. Une nuit longue ne rattrape pas une nuit courte. En manque de sommeil, un déficit est plus dur à tenir et plus coûteux pour le muscle.</li>
+<li><strong>Un rythme de perte plafonné :</strong> ton déficit ne dépasse jamais l'équivalent d'une perte de 1 % de ton poids par semaine, soit environ 11 kcal par kilo et par jour : 880 kcal au plus à 80 kg.</li>
+<li><strong>Un plancher calorique :</strong> ta cible ne descend jamais sous ton métabolisme de repos, ni sous 1 200 kcal pour une femme et 1 500 kcal pour un homme. Tes protéines restent alors les mêmes ; les lipides sont recalculés et les glucides prennent le reste.</li>
 </ul>
 
 <h2>Quand tes cibles bougent</h2>
-<p>Ta dépense est réestimée <strong>chaque nuit</strong>, et tes cibles sont aussi recalculées quand tu te pèses ou que tu enregistres tes repas. Elles suivent donc ta réalité, semaine après semaine : si ton poids bouge plus vite ou plus lentement que prévu, elles s'ajustent.</p>
+<p>Ta dépense est réestimée <strong>chaque nuit</strong>, et tes cibles sont aussi recalculées quand tu te pèses ou que tu enregistres tes repas. Elles suivent donc ta réalité, semaine après semaine : si ton poids bouge plus vite ou plus lentement que prévu, elles s'ajustent. Trois situations les modifient aussi :</p>
+<ul>
+<li><strong>Ta journée :</strong> l'app distingue cinq niveaux selon tes minutes actives, du repos à la journée intense (1 h 45 et plus), en passant par très léger, léger (30 min) et modéré (1 h). Un jour actif reçoit un bonus de 4 kcal par minute active, calculé sur tes journées du même niveau des deux dernières semaines, 600 kcal au plus ; un jour de repos, une baisse qui compense, 300 kcal au plus, pour qu'en moyenne ta semaine reste proche de ta cible. Tout l'écart passe par les glucides : protéines et lipides ne bougent pas. Le niveau du jour se lit sur tes séances et tes pas.</li>
+<li><strong>Ton cycle :</strong> si tu suis ton cycle menstruel dans l'app, avec ton accord explicite et hors pilule combinée, ta cible est relevée de 150 kcal pendant ta phase lutéale estimée, dès que deux cycles complets sont enregistrés. Autour du début de tes règles, la mesure de ta dépense est mise de côté et la formule reprend la main : la rétention d'eau fausserait la tendance de ton poids.</li>
+<li><strong>Un voyage ou une maladie :</strong> l'interrupteur « Voyage / maladie » gèle l'estimation de ta dépense tant qu'il est activé, puis sept jours encore. Des repas pris au hasard ou un appétit coupé ne doivent pas réécrire ton métabolisme. Seule la mesure est gelée : ton objectif ne change pas.</li>
+</ul>
 <p>Elles comptent aussi dans ton score : l'adéquation de ta journée à tes cibles pèse <strong>40 % du pilier nutrition</strong> du <a href="/methode/readiness-score.html">Readiness Score</a>. Des cibles fausses fausseraient ce pilier ; c'est une raison de plus pour qu'elles collent à ta dépense réelle.</p>
 
 <h2>Ce que ce moteur n'est pas</h2>

@@ -31,7 +31,7 @@ N'édite AUCUN autre fichier. Pas de commande git. Ne lance pas `tools/build_art
 - À la différence des articles du Journal, ces pages PARLENT de l'app : dis « l'app » ou « Ecleptic » et explique exactement ce qu'elle fait, avec les chiffres réels de la fiche de faits. C'est la promesse de la section : « Rien n'est inventé. »
 - **Exception : l'âge biologique** (décision du user, 24/09/2026). Aucun chiffre de son calcul n'est publié, ni sur sa page ni ailleurs (plafonds des modificateurs, marges d'incertitude, bornes, références chiffrées comme la FC de référence ou le créneau de sommeil). On en décrit la logique sans la chiffrer : ancre VO₂max, ordre des sources, facteurs signés et bornés, sommeil asymétrique, pas de double comptage, lissage, marge plus large quand la source est indirecte. Le Readiness Score, lui, publie ses poids et sous-poids (transparence assumée face à Whoop).
 - Paragraphes courts, 5 à 8 `<h2>`, listes `<li><strong>Repère :</strong> explication</li>`.
-- Longueur du body (texte hors balises) : **moteur 900 à 1 400 mots**, **fiche 650 à 1 000 mots**.
+- Longueur du body (texte hors balises) : **moteur 900 à 1 400 mots**, **fiche 650 à 1 000 mots**. Exception : `cibles` va jusqu'à 1 700 mots depuis l'ajout des garde-fous demandé par le user le 24/09/2026.
 - Structure conseillée d'une FICHE : définition en une phrase → ce que ça reflète dans le corps → comment on la mesure (labo vs montre) → valeurs de repère et pourquoi elles varient d'une personne à l'autre → ce qui la fait bouger → comment Ecleptic la lit et l'utilise (chiffres réels) → limites de la mesure → quand consulter.
 - Structure conseillée d'un MOTEUR : ce que le moteur calcule → les données d'entrée → la méthode pas à pas (chiffres réels) → pourquoi ces choix → ce que tu vois dans l'app → limites / ce que ce n'est pas.
 
@@ -106,7 +106,7 @@ for f in sys.argv[1:]:
     for k in ("slug","kind","num","order","label","title","seo_title","description","lead","body","refs","faq","related","journal","date"):
         if k not in p: pb.append("champ manquant " + k)
     w = len(re.sub(r"<[^>]+>", " ", p["body"]).split())
-    lo, hi = (900, 1400) if p["kind"] == "moteur" else (650, 1000)
+    lo, hi = ((900, 1700) if p["slug"] == "cibles" else (900, 1400)) if p["kind"] == "moteur" else (650, 1000)
     if not lo <= w <= hi: pb.append("mots %d hors [%d-%d]" % (w, lo, hi))
     if not 140 <= len(p["description"]) <= 160: pb.append("description %d car." % len(p["description"]))
     if len(p["seo_title"]) > 70 or not p["seo_title"].endswith("— Ecleptic"): pb.append("seo_title")
