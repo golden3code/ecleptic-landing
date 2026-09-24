@@ -1297,7 +1297,7 @@ def methode_page(p):
 <meta property="og:description" content="%(desc)s">
 <meta property="og:type" content="article">
 <meta property="og:url" content="%(url)s">
-<meta property="og:image" content="%(site)s/assets/moon.jpg">
+<meta property="og:image" content="%(site)s/assets/science/file-d-etoiles-og.jpg">
 <script type="application/ld+json">%(jsonld)s</script>%(faqjsonld)s
 <link rel="stylesheet" href="/assets/site.css">
 </head>

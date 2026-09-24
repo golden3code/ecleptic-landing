@@ -12,7 +12,7 @@
 <meta property="og:description" content="Les formules, les cohortes et les sources de données derrière chaque chiffre de l'application.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ecleptic.health/science.html">
-<meta property="og:image" content="https://ecleptic.health/assets/moon.jpg">
+<meta property="og:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Science-Based — la méthode Ecleptic",
 "description":"Cohorte HUNT, VO₂max, VDOT, bases ANSES et USDA, ligne de base personnelle : les formules et les sources scientifiques derrière chaque chiffre d'Ecleptic.",
@@ -26,6 +26,15 @@
   .ghead .label{display:block;margin-bottom:26px}
   .ghead h1{font-size:clamp(34px,7vw,58px)}
   .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:520px}
+
+  /* Ouverture : filé d'étoiles en pleine largeur, fondu dans le noir en haut et en bas */
+  .pose{margin:6px 0 0}
+  .pose-img{position:relative;overflow:hidden}
+  .pose-img img{display:block;width:100%;height:clamp(280px,46vw,720px);object-fit:cover;object-position:50% 22%}
+  .pose-img::before,.pose-img::after{content:"";position:absolute;left:0;right:0;pointer-events:none}
+  .pose-img::before{top:0;height:16%;background:linear-gradient(var(--bg),rgba(11,10,8,0))}
+  .pose-img::after{bottom:0;height:34%;background:linear-gradient(rgba(11,10,8,0),var(--bg))}
+  .pose figcaption{margin-top:14px;font-size:13.5px;line-height:1.6;color:var(--muted)}
 
   .engine{padding:52px 0 46px;position:relative;scroll-margin-top:16px}
   .engine::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
@@ -65,12 +74,21 @@
   </div>
 </nav>
 
-<main class="wrap">
+<main>
+  <div class="wrap">
   <header class="ghead">
     <span class="label">La méthode &nbsp;·&nbsp; Rien n'est inventé</span>
     <h1 class="display">Science<br><span class="gold">based</span>.</h1>
     <p>Chaque chiffre de l'application sort d'une formule publiée, d'une cohorte d'étude ou d'une base de données officielle. Voici lesquelles, moteur par moteur.</p>
   </header>
+  </div>
+
+  <figure class="pose">
+    <div class="pose-img"><img src="/assets/science/file-d-etoiles-1600.jpg" srcset="/assets/science/file-d-etoiles-1000.jpg 1000w, /assets/science/file-d-etoiles-1600.jpg 1600w, /assets/science/file-d-etoiles-2400.jpg 2400w" sizes="100vw" width="2400" height="1602" alt="Filé d'étoiles en cercles au-dessus d'une vallée de montagne, photographié en pose longue" decoding="async" fetchpriority="high"></div>
+    <figcaption class="wrap">Une pose longue : les étoiles ne dessinent leur course qu'avec le temps. Tes données aussi.</figcaption>
+  </figure>
+
+  <div class="wrap">
 
   <section class="engine" id="readiness">
     <span class="num label"><span class="gold">I</span> &nbsp;·&nbsp; Le Readiness Score</span>
@@ -141,6 +159,7 @@
     <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
     <p>Tout ce qui est décrit ici tourne automatiquement sur tes données, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
     <a class="btn gold" href="/beta.html" onclick="track('science_cta_click')">Demander l'accès</a>
+  </div>
   </div>
 </main>
 
