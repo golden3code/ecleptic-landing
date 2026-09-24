@@ -6,7 +6,7 @@ Faits vérifiés dans le code de l'app (lib/readiness/physio.ts, baseline.ts) le
 24/09/2026 : HRV lue dans Apple Santé au format SDNN (ms), 45 % du pilier vitaux
 (42 points), plus haute = mieux, ligne de base 42 j (jour exclu, min 7, confiance
 pleine 28), 0 point au-delà de 2 écarts-types sous la normale ; modificateur de
-l'âge biologique jusqu'à ±3 ans, demi-poids sous traitement qui ralentit le cœur.
+l'âge biologique, poids réduit sous traitement qui ralentit le cœur (chiffres non publiés).
 """
 
 PAGE = {
@@ -58,11 +58,11 @@ PAGE = {
   <div><span class="v">45 %</span><span class="u">du pilier vitaux</span></div>
   <div><span class="v">≈ 19</span><span class="u">points du score sur 100</span></div>
   <div><span class="v">42 j</span><span class="u">de ligne de base</span></div>
-  <div><span class="v">± 3 ans</span><span class="u">d'âge biologique, au plus</span></div>
+  <div><span class="v">28 j</span><span class="u">pour une confiance pleine</span></div>
 </div>
 <p>L'app la lit dans Apple Santé, au format SDNN, puis la compare à ta <a href="/methode/ligne-de-base.html">ligne de base</a> : ta moyenne et ton écart-type des 42 derniers jours, jour évalué exclu. Il faut 7 jours de données pour démarrer, 28 pour une confiance pleine. Plus ta HRV est haute par rapport à ta normale, plus elle rapporte de points ; au-delà de deux écarts-types sous ta moyenne, elle n'en rapporte plus aucun. Le détail des cinq signaux : <a href="/methode/vitaux.html">Les vitaux</a>.</p>
 <p>Une nuit basse fait baisser ton score du jour, c'est normal. Mais <strong>une HRV qui chute une nuit, c'est du bruit ; une semaine sous ta ligne de base, c'est un signal.</strong></p>
-<p>Elle compte aussi dans ton <a href="/methode/age-biologique.html">âge biologique</a> : comparée aux valeurs attendues pour ton âge, elle peut le déplacer jusqu'à 3 ans dans un sens ou dans l'autre, et n'y compte qu'à moitié si tu prends un traitement qui ralentit le cœur.</p>
+<p>Elle compte aussi dans ton <a href="/methode/age-biologique.html">âge biologique</a> : comparée aux valeurs attendues pour ton âge, elle peut le faire bouger dans un sens ou dans l'autre, et y compte moins si tu prends un traitement qui ralentit le cœur.</p>
 
 <h2>Les limites de la mesure</h2>
 <ul>

@@ -7,7 +7,7 @@ score.ts) le 24/09/2026 : cinq signaux lus dans Apple Santé, poids internes
 45/30/12/7/6 du pilier vitaux (42 points), ligne de base 42 j (jour exclu,
 min 7, confiance pleine 28), sens de chaque signal, 0 point au-delà de
 2 écarts-types, signal absent retiré et poids réparti, pilier retiré sans
-montre ; modificateurs HRV (±3 ans) et FC repos (±2 ans) de l'âge biologique.
+montre ; HRV et FC repos = modificateurs de l'âge biologique (chiffres non publiés).
 """
 
 PAGE = {
@@ -70,8 +70,8 @@ PAGE = {
 </ul>
 
 <h2>Au-delà du score, ton âge biologique</h2>
-<p>Deux de ces signaux servent aussi ailleurs. Dans le calcul de ton <a href="/methode/age-biologique.html">âge biologique</a>, la HRV joue le rôle de modificateur : comparée aux valeurs attendues pour ton âge, elle peut le déplacer jusqu'à 3 ans dans un sens ou dans l'autre. Elle n'y compte qu'à moitié si tu prends un traitement qui ralentit le cœur.</p>
-<p>La FC au repos fait de même, face à une référence d'environ 60 ± 9 bpm et avec jusqu'à 2 ans d'effet, sauf quand elle entre déjà dans l'équation de ta VO₂max. Elle n'est jamais comptée deux fois.</p>
+<p>Deux de ces signaux servent aussi ailleurs. Dans le calcul de ton <a href="/methode/age-biologique.html">âge biologique</a>, la HRV joue le rôle de modificateur : comparée aux valeurs attendues pour ton âge, elle peut le faire bouger dans un sens ou dans l'autre. Elle y compte moins si tu prends un traitement qui ralentit le cœur.</p>
+<p>La FC au repos fait de même, face à une valeur de référence, sauf quand elle entre déjà dans l'équation de ta VO₂max. Elle n'est jamais comptée deux fois.</p>
 
 <h2>Sans montre, et les limites de la mesure</h2>
 <p><strong>Sans montre, pas de vitaux.</strong> Le pilier est alors retiré et son poids redistribué entre le sommeil, la nutrition et le rythme. Un indice de confiance te l'indique : un score privé de ses vitaux ne se lit pas comme un score complet.</p>

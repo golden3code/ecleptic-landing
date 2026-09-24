@@ -7,8 +7,8 @@ lib/bioAge/model.ts) le 24/09/2026 : besoin NSF au milieu de la fourchette
 (9 h / 8 h / 7 h 30), mélange 70/30 cycles entiers / besoin brut seulement si
 la longueur de cycle est connue (pas le 90 min par défaut), pilier sommeil 21
 pts (durée 40, phases 25 si mesurées, efficacité 20, régularité 15),
-redistribution des poids, modificateur âge biologique 7 h–8 h 30 + régularité
-(pénalité plafonnée à 1,5 an ; le bonus, lui, reste plus petit).
+redistribution des poids, modificateur âge biologique durée + régularité
+(asymétrique : la pénalité dépasse le bonus ; chiffres non publiés).
 """
 
 PAGE = {
@@ -63,7 +63,7 @@ PAGE = {
 
 <h2>La régularité, le facteur sous-estimé</h2>
 <p>On parle toujours de durée. Pourtant, <strong>la régularité compte parfois plus</strong> : une étude publiée en 2024 a trouvé que la régularité du sommeil prédisait mieux le risque de mortalité que sa durée. <a href="/articles/se-coucher-meme-heure-regularite.html">Se coucher et se lever à heures fixes</a>, week-end compris, reste l'un des leviers les plus simples.</p>
-<p>Le sommeil pèse aussi sur ton <a href="/methode/age-biologique.html">âge biologique</a>. Une durée entre 7 h et 8 h 30, à heures régulières, joue en ta faveur ; un sommeil trop court, trop long ou irrégulier peut t'ajouter jusqu'à un an et demi.</p>
+<p>Le sommeil pèse aussi sur ton <a href="/methode/age-biologique.html">âge biologique</a>. Des nuits de durée suffisante, sans excès, à heures régulières, jouent en ta faveur ; un sommeil trop court, trop long ou irrégulier peut te vieillir, davantage qu'un bon sommeil ne peut te rajeunir.</p>
 
 <h2>Les limites de la mesure</h2>
 <p>En laboratoire, le sommeil se mesure par polysomnographie : activité cérébrale, mouvements des yeux, tonus musculaire. Une montre, elle, l'estime à partir de tes mouvements et de ton rythme cardiaque. Elle est plutôt fiable pour la durée et les horaires, nettement moins pour le découpage fin des phases.</p>

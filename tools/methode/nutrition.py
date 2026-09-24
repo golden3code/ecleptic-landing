@@ -9,7 +9,7 @@ fusionnées, l'IA reconnaît et estime les portions, les valeurs viennent des
 bases ; 21 micronutriments, antioxydants, eau des aliments dans l'hydratation ;
 pilier nutrition 21 pts (40/25/20/15, refuel retiré les jours de repos, plafond
 alcool 80 sur 100, cf. lib/readiness/nutrition.ts) ; modificateur de l'âge
-biologique jusqu'à ±1 an. Le fournisseur du modèle d'IA n'est pas nommé.
+biologique (plafond non publié). Le fournisseur du modèle d'IA n'est pas nommé.
 """
 
 PAGE = {
@@ -69,7 +69,7 @@ PAGE = {
 <li><strong>L'hydratation — 15 %.</strong> Ton hydratation de la journée, face à ce qui est recommandé pour toi (<a href="/articles/combien-d-eau-boire-par-jour.html">combien d'eau boire par jour</a>).</li>
 </ul>
 <p>Une règle à part : <strong>si tu as bu de l'alcool la veille, le pilier est plafonné à 80 sur 100</strong>, même avec des repas irréprochables. L'alcool pèse sur la récupération, et aucune assiette ne l'efface.</p>
-<p>Ta nutrition compte aussi à plus long terme : son score est l'un des modificateurs de ton <a href="/methode/age-biologique.html">âge biologique</a>, qu'il peut faire bouger jusqu'à un an, dans un sens ou dans l'autre. Quant à ta cible calorique, elle n'a de sens que rapportée à ce que tu dépenses : la fiche <a href="/methode/depense-energetique.html">dépense énergétique</a> explique comment ta dépense est estimée.</p>
+<p>Ta nutrition compte aussi à plus long terme : son score est l'un des modificateurs de ton <a href="/methode/age-biologique.html">âge biologique</a>, qu'il peut faire bouger dans un sens ou dans l'autre. Quant à ta cible calorique, elle n'a de sens que rapportée à ce que tu dépenses : la fiche <a href="/methode/depense-energetique.html">dépense énergétique</a> explique comment ta dépense est estimée.</p>
 
 <h2>Les limites, sans maquillage</h2>
 <p>Un moteur nutrition honnête doit dire ce qu'il ne sait pas faire.</p>

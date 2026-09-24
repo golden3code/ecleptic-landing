@@ -5,7 +5,7 @@ Chargé par tools/build_articles.py (_load_methode) → /methode/vo2max.html.
 Faits vérifiés dans le code de l'app (lib/bioAge/*, lib/readiness/*) le 24/09/2026 :
 ancre de l'âge biologique, sources par ordre de priorité (forme cardio Apple Santé,
 VDOT de Daniels en relèvement prudent, équation HUNT de Nes, équation de Jackson/IMC),
-demi-largeurs de départ 3 / 4 / 6 / 6,5 ans ; la VO₂max n'entre pas dans le
+marge d'incertitude de départ selon la source (chiffres non publiés, décision du user 24/09) ; la VO₂max n'entre pas dans le
 Readiness Score.
 """
 
@@ -51,12 +51,12 @@ PAGE = {
 <p>Surtout, elle s'entraîne à tout âge. Passé 40 ans, la progression reste réelle, à condition de soigner davantage la <a href="/articles/recuperation-apres-40-ans.html">récupération</a>. Le plan complet : <a href="/articles/vo2max-comment-l-ameliorer.html">comment améliorer ta VO₂max</a>.</p>
 
 <h2>Comment Ecleptic la lit et l'utilise</h2>
-<p>Dans l'app, la VO₂max est <strong>l'ancre de ton <a href="/methode/age-biologique.html">âge biologique</a></strong> : elle donne un âge de forme, que tes habitudes ajustent ensuite. L'app la prend à la meilleure source disponible, et la marge d'incertitude de départ de ton âge biologique en dépend :</p>
+<p>Dans l'app, la VO₂max est <strong>l'ancre de ton <a href="/methode/age-biologique.html">âge biologique</a></strong> : elle donne un âge de forme, que tes habitudes ajustent ensuite. L'app la prend à la meilleure source disponible, dans cet ordre ; plus la source est directe, plus ton âge biologique est précis :</p>
 <ul>
-<li><strong>Mesurée par ta montre, ±3 ans :</strong> la « forme cardio » lue dans Apple Santé.</li>
-<li><strong>Calculée depuis tes courses, ±4 ans :</strong> avec la formule VDOT.</li>
-<li><strong>Estimée sans effort, ±6 ans :</strong> par l'équation HUNT, à partir de ton tour de taille, de ta <a href="/methode/frequence-cardiaque-repos.html">fréquence cardiaque au repos</a> et de ton niveau d'activité.</li>
-<li><strong>À défaut, ±6,5 ans :</strong> par l'équation de Jackson, à partir de ton IMC.</li>
+<li><strong>Mesurée par ta montre :</strong> la « forme cardio » lue dans Apple Santé.</li>
+<li><strong>Calculée depuis tes courses :</strong> avec la formule VDOT.</li>
+<li><strong>Estimée sans effort :</strong> par l'équation HUNT, à partir de ton tour de taille, de ta <a href="/methode/frequence-cardiaque-repos.html">fréquence cardiaque au repos</a> et de ton niveau d'activité.</li>
+<li><strong>À défaut :</strong> par l'équation de Jackson, à partir de ton IMC.</li>
 </ul>
 <p>Une règle de prudence encadre les courses : comme une course n'est pas forcément un effort maximal, <strong>la VDOT ne peut que relever l'estimation sans effort, jamais la faire baisser</strong>. Sans estimation de base, une VDOT inférieure à la valeur attendue pour ton âge est ignorée : un simple footing ne doit pas te vieillir.</p>
 <p>Contrairement à ta <a href="/methode/variabilite-cardiaque.html">variabilité cardiaque</a>, la VO₂max n'entre pas dans le <a href="/methode/readiness-score.html">Readiness Score</a> : elle décrit ta capacité, qui évolue sur des semaines, pas ton état du jour.</p>

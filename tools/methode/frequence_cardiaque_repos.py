@@ -6,7 +6,7 @@ Faits vérifiés dans le code de l'app (lib/readiness/physio.ts, baseline.ts) le
 24/09/2026 : FC repos lue dans Apple Santé (bpm), 30 % du pilier vitaux
 (42 points), plus basse = mieux, ligne de base 42 j (jour exclu, min 7, confiance
 pleine 28), 0 point au-delà de 2 écarts-types au-dessus de la normale ;
-modificateur de l'âge biologique (référence ~60 ± 9 bpm, jusqu'à ±2 ans) quand
+modificateur de l'âge biologique (référence et plafond non publiés) quand
 elle n'entre pas déjà dans l'équation de VO₂max.
 """
 
@@ -59,10 +59,10 @@ PAGE = {
   <div><span class="v">30 %</span><span class="u">du pilier vitaux</span></div>
   <div><span class="v">≈ 13</span><span class="u">points du score sur 100</span></div>
   <div><span class="v">42 j</span><span class="u">de ligne de base</span></div>
-  <div><span class="v">± 2 ans</span><span class="u">d'âge biologique, au plus</span></div>
+  <div><span class="v">28 j</span><span class="u">pour une confiance pleine</span></div>
 </div>
 <p>L'app la lit dans Apple Santé, en bpm, puis la compare à ta <a href="/methode/ligne-de-base.html">ligne de base</a> : ta moyenne et ton écart-type des 42 derniers jours, jour évalué exclu, avec 7 jours minimum pour démarrer et 28 pour une confiance pleine. <strong>Plus elle est basse par rapport à ta normale, mieux c'est</strong> ; au-delà de deux écarts-types au-dessus, elle ne rapporte plus aucun point. Le détail des cinq signaux est sur la page <a href="/methode/vitaux.html">Les vitaux</a>.</p>
-<p>Elle compte aussi dans ton <a href="/methode/age-biologique.html">âge biologique</a>, face à une référence d'environ 60 ± 9 bpm, avec un effet de 2 ans au plus dans un sens ou dans l'autre. Sauf quand elle entre déjà dans l'estimation de ta <a href="/methode/vo2max.html">VO₂max</a>, dont elle est l'une des données dans certains modèles sans test d'effort : elle n'est jamais comptée deux fois.</p>
+<p>Elle compte aussi dans ton <a href="/methode/age-biologique.html">âge biologique</a>, face à une valeur de référence, avec un effet plafonné dans un sens comme dans l'autre. Sauf quand elle entre déjà dans l'estimation de ta <a href="/methode/vo2max.html">VO₂max</a>, dont elle est l'une des données dans certains modèles sans test d'effort : elle n'est jamais comptée deux fois.</p>
 
 <h2>Les limites de la mesure</h2>
 <ul>
