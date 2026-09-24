@@ -39,7 +39,7 @@
   .hero .quiet:hover{color:var(--gold)}
 
   .facts{border-top:0}
-  .fact{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;position:relative}
+  .fact{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:baseline;padding:26px 0;position:relative}
   .fact:not(:last-child)::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
   .fact .tip{position:absolute;right:0;bottom:calc(100% - 12px);z-index:2;max-width:380px;
              background:var(--bg);border:1px solid var(--line);padding:14px 18px;
@@ -49,10 +49,9 @@
   @media(hover:hover){.fact:hover .tip{opacity:1;transform:none}}
   .fact.open .tip{opacity:1;transform:none}
   @media(hover:none){.fact .val{cursor:pointer}}
-  .fact .no{font-size:12px;color:var(--muted);letter-spacing:.2em}
   .fact .what{font-size:15px;text-transform:uppercase;letter-spacing:.12em;font-weight:300}
   .fact .val{font-size:clamp(22px,4vw,34px);font-weight:200;color:var(--gold)}
-  @media(max-width:560px){.fact{grid-template-columns:40px 1fr auto;gap:12px}.fact .what{font-size:12px}}
+  @media(max-width:560px){.fact{gap:12px}.fact .what{font-size:12px}}
 
   .steps{max-width:1320px;margin:0 auto;padding:38vh 24px 0}
   .steps .display{font-size:clamp(30px,6vw,54px);max-width:812px;margin:0 auto 150px}
@@ -217,13 +216,13 @@
 </section>
 
 <div class="wrap-wide facts">
-  <div class="fact"><span class="no">01</span><span class="what">Ton âge biologique — VO₂max, cohorte HUNT, formules validées</span><span class="val">J0</span>
+  <div class="fact"><span class="what">Ton âge biologique — VO₂max, cohorte HUNT, formules validées</span><span class="val">J0</span>
     <span class="tip">Ton âge biologique est calculé dès le premier jour — dès ton inscription.</span></div>
-  <div class="fact"><span class="no">02</span><span class="what">Aliments référencés — bases scientifiques ANSES &amp; USDA</span><span class="val">400&nbsp;K</span>
+  <div class="fact"><span class="what">Aliments référencés — bases scientifiques ANSES &amp; USDA</span><span class="val">400&nbsp;K</span>
     <span class="tip">438&nbsp;267 références : 433&nbsp;631 produits USDA, 3&nbsp;484 aliments Ciqual (ANSES), 1&nbsp;152 plats composés — plus les produits à code-barres Open Food Facts.</span></div>
-  <div class="fact"><span class="no">03</span><span class="what">Piliers physiologiques et habitudes croisés dans un score unique</span><span class="val">100+</span>
+  <div class="fact"><span class="what">Piliers physiologiques et habitudes croisés dans un score unique</span><span class="val">100+</span>
     <span class="tip">Sommeil, sport, alimentation, 21 micronutriments, charge, récupération, régularité, énergie, humeur, corps, contexte : plus de 100 valeurs distinctes entrent dans les calculs.</span></div>
-  <div class="fact"><span class="no">04</span><span class="what">Calibration statistique basée sur tes caractéristiques personnalisées</span><span class="val">100&nbsp;%</span>
+  <div class="fact"><span class="what">Calibration statistique basée sur tes caractéristiques personnalisées</span><span class="val">100&nbsp;%</span>
     <span class="tip">Objectifs personnalisés, streaks, badges, records perso, coach IA, expériences du Labo, bilans hebdomadaires — tout est calibré sur tes données.</span></div>
 </div>
 <script>
