@@ -732,10 +732,12 @@ nav.site{position:relative;z-index:80}
       border-bottom:1px solid var(--line);visibility:hidden;
       transition:height .38s cubic-bezier(.4,0,.2,1),visibility 0s linear .38s}
 .mega.open{visibility:visible;transition:height .38s cubic-bezier(.4,0,.2,1),visibility 0s}
-.mega-in{max-width:1080px;margin:0 auto;padding:30px 24px 46px;display:grid;
-         grid-template-columns:210px minmax(0,1fr) 380px;gap:56px;
+.mega-in{max-width:1080px;margin:0 auto;padding:30px 24px 46px;display:grid;gap:56px;
          opacity:0;transform:translateY(-6px);transition:opacity .28s ease,transform .28s ease}
+.mega-in.is-journal{grid-template-columns:210px minmax(0,1fr) 380px}
+.mega-in.is-cols{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr)}
 .mega.open .mega-in{opacity:1;transform:none;transition-delay:.08s}
+.mega.open .mega-in.swap-out{opacity:0;transform:none;transition:opacity .12s ease;transition-delay:0s}
 .mega-label{display:block;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
 .mega ul,.mega ol{list-style:none}
 .mega-cats a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:4px 0;
@@ -781,6 +783,21 @@ nav.site{position:relative;z-index:80}
 .msheet ol{counter-reset:p}
 .msheet ol li{counter-increment:p;display:grid;grid-template-columns:30px 1fr}
 .msheet ol li::before{content:counter(p,decimal-leading-zero);font-size:10.5px;color:var(--gold);padding-top:11px;letter-spacing:.12em}
+/* panneaux en colonnes (L'app, Science-Based, La beta) : grands liens + liens courts */
+.mega-big li{margin:0 0 16px}
+.mega-big a,.mega-big .txt{display:block;text-decoration:none}
+.mega-big .t{display:block;font-size:19px;font-weight:300;line-height:1.3;color:var(--ink);transition:color .2s}
+.mega-big .d{display:block;margin-top:4px;font-size:12.5px;line-height:1.5;color:var(--muted)}
+.mega-big a:hover .t,.mega-big a.gold .t{color:var(--gold)}
+.mega-small li a,.mega-small li .txt{display:block;padding:6px 0;font-size:13.5px;line-height:1.45;color:var(--ink);text-decoration:none;opacity:.86}
+.mega-small li .txt{opacity:.72}
+.mega-small li a:hover{color:var(--gold);opacity:1}
+.mega-small li a.gold{color:var(--gold);opacity:1}
+.mega-small .d{display:block;font-size:12px;color:var(--muted)}
+.mega-spots{display:inline-block;margin-top:2px;padding:7px 12px;border:1px solid var(--gold);color:var(--gold);
+            font-size:10.5px;letter-spacing:.2em;text-transform:uppercase}
+.mega-apercu{position:fixed;left:16px;bottom:16px;z-index:95;padding:8px 12px;border:1px solid var(--gold);
+             background:var(--bg);color:var(--gold);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
 @media(max-width:760px){.mega,.mega-shade{display:none}}
 @media (prefers-reduced-motion:reduce){.mega,.mega-in,.msheet,.mega-shade{transition:none}.mega-list.swap{animation:none}}
 .display{font-weight:200;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
@@ -912,17 +929,76 @@ def nav_data():
     idx = {a["slug"]: a for a in ARTICLES}
     pop = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in POPULAR if s in idx][:10]
     data = {"journal": {"cats": cats, "popular": pop, "total": len(ARTICLES)}}
+    data.update(nav_panels(idx))
     return ("/* Genere par tools/build_articles.py (nav_data) - ne pas editer a la main. */\n"
             "window.ECLEPTIC_NAV=%s;\n" % _json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+
+
+def nav_panels(idx):
+    """Panneaux du bandeau hors Journal (L'app, Science-Based, La bêta) : trois
+    colonnes chacun, la première en grands liens. Les articles cités ne sont
+    retenus que s'ils sont publiés (idx = articles en ligne)."""
+    sci = "/science.html#"
+    reads = ["readiness-score-comment-ca-marche", "hrv-variabilite-frequence-cardiaque",
+             "vo2max-comment-l-ameliorer", "frequence-cardiaque-repos-normale",
+             "zone-2-cardio-cest-quoi", "combien-heures-sommeil-par-nuit",
+             "proteines-par-jour-prise-de-muscle", "combien-de-calories-par-jour"]
+    reads = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in reads if s in idx][:5]
+    contact = {"t": "Nous écrire", "u": "mailto:contact@ecleptic.app"}
+    return {
+        "app": {"label": "L'app", "cols": [
+            {"label": "L'app en trois temps", "big": True, "items": [
+                {"t": "Mesurer", "d": "Ta nuit, tes vitaux, ta charge. Sans saisie.", "u": "/#mesurer"},
+                {"t": "Comprendre", "d": "Sommeil, repas et séances, enfin croisés.", "u": "/#comprendre"},
+                {"t": "Agir", "d": "Un chiffre, une direction, chaque matin.", "u": "/#agir"}]},
+            {"label": "Ce qu'elle calcule pour toi", "items": [
+                {"t": "Ton Readiness Score, chaque matin", "u": sci + "readiness"},
+                {"t": "Ton âge biologique, dès le premier jour", "u": sci + "age-biologique"},
+                {"t": "Tes repas, analysés en une photo", "u": sci + "nutrition"},
+                {"t": "Tes vitaux, lus sur ta ligne de base", "u": sci + "vitaux"},
+                {"t": "Tes cibles, recalibrées en continu", "u": sci + "cibles"}]},
+            {"label": "Commencer", "items": [
+                {"t": "Demander l'accès à la bêta", "u": "/beta.html", "gold": True},
+                {"t": "Lire le Journal", "u": "/articles/"},
+                {"t": "La méthode scientifique", "u": "/science.html"},
+                contact]}]},
+        "science": {"cols": [
+            {"label": "La méthode, moteur par moteur", "big": True, "items": [
+                {"t": "Le Readiness Score", "d": "Quatre piliers croisés chaque matin.", "u": sci + "readiness"},
+                {"t": "L'âge biologique", "d": "Ancré sur ta VO₂max, calibré sur la cohorte HUNT.", "u": sci + "age-biologique"},
+                {"t": "La nutrition", "d": "400 000 aliments issus des bases officielles.", "u": sci + "nutrition"},
+                {"t": "Les vitaux", "d": "Ta ligne de base, pas celle d'un autre.", "u": sci + "vitaux"},
+                {"t": "Les cibles", "d": "Un métabolisme mesuré, pas estimé.", "u": sci + "cibles"}]},
+            {"label": "Nos sources", "items": [
+                {"t": "ANSES · table Ciqual", "u": sci + "nutrition"},
+                {"t": "USDA · FoodData Central", "u": sci + "nutrition"},
+                {"t": "Open Food Facts", "u": sci + "nutrition"},
+                {"t": "Cohorte HUNT (Norvège)", "u": sci + "age-biologique"},
+                {"t": "Tables VDOT de Jack Daniels", "u": sci + "age-biologique"}]},
+            {"label": "Comprendre en 5 minutes", "items": reads}]},
+        "beta": {"cols": [
+            {"label": "Rejoindre la bêta", "big": True, "spots": True, "items": [
+                {"t": "Demander l'accès", "d": "45 secondes de questions, puis le lien d'installation.",
+                 "u": "/beta.html", "gold": True}]},
+            {"label": "Ce qui t'attend", "items": [
+                {"t": "Toutes les fonctionnalités Golden, offertes aux testeurs"},
+                {"t": "Sur iPhone, iOS 16.4 ou plus récent"},
+                {"t": "Installation via TestFlight, l'app de bêtas d'Apple"},
+                {"t": "Un bug ? Une capture d'écran suffit à nous le signaler"}]},
+            {"label": "Questions", "items": [
+                {"t": "TestFlight, c'est quoi ?", "u": "https://testflight.apple.com/"},
+                {"t": "Confidentialité", "u": "/confidentialite.html"},
+                contact]}]},
+    }
 
 
 NAV = """<nav class="site">
   <a class="logo" href="/">Ecleptic</a>
   <div class="links">
-    <a href="/" %%(on_home)s>Accueil</a>
+    <a href="/" data-mega="app" %%(on_home)s>Accueil</a>
     %s
-    <a href="/science.html">Science-Based</a>
-    <a href="/beta.html">La b&ecirc;ta</a>
+    <a href="/science.html" data-mega="science">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
   </div>
 </nav>"""
 NAV = NAV % journal_menu()

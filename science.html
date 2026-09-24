@@ -27,7 +27,7 @@
   .ghead h1{font-size:clamp(34px,7vw,58px)}
   .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:520px}
 
-  .engine{padding:52px 0 46px;position:relative}
+  .engine{padding:52px 0 46px;position:relative;scroll-margin-top:16px}
   .engine::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
   .engine:last-of-type::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
   .engine .num{display:block;margin-bottom:16px}
@@ -46,12 +46,12 @@
 <nav class="site">
   <a class="logo" href="/">Ecleptic</a>
   <div class="links">
-    <a href="/">Accueil</a>
+    <a href="/" data-mega="app">Accueil</a>
     <span class="navjournal">
     <a href="/articles/" data-mega="journal">Journal</a>
     </span>
-    <a href="/science.html" class="on">Science-Based</a>
-    <a href="/beta.html">La b&ecirc;ta</a>
+    <a href="/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
   </div>
 </nav>
 
@@ -62,14 +62,14 @@
     <p>Chaque chiffre de l'application sort d'une formule publiée, d'une cohorte d'étude ou d'une base de données officielle. Voici lesquelles, moteur par moteur.</p>
   </header>
 
-  <section class="engine">
+  <section class="engine" id="readiness">
     <span class="num label"><span class="gold">I</span> &nbsp;·&nbsp; Le Readiness Score</span>
     <h2>Quatre piliers physiologiques, croisés chaque matin</h2>
     <p>Ton score de préparation croise <strong>quatre piliers</strong> : ton sommeil (durée et qualité de la nuit face à ton besoin), ta charge d'entraînement récente (une séance dure se paie 24 à 72 heures), tes vitaux nocturnes (variabilité cardiaque, fréquence cardiaque de repos), et la régularité de tes horaires — le facteur le plus sous-estimé de la littérature sur le sommeil.</p>
     <p class="why">Le point décisif : rien n'est comparé à une norme de population. Chaque pilier est évalué contre <em>ta propre ligne de base</em>, construite sur tes dernières semaines de données. Une HRV de 45 ms peut être excellente pour toi et médiocre pour quelqu'un d'autre — le score le sait.</p>
   </section>
 
-  <section class="engine">
+  <section class="engine" id="age-biologique">
     <span class="num label"><span class="gold">II</span> &nbsp;·&nbsp; L'âge biologique</span>
     <h2>Ancré sur ta VO₂max, calibré sur la cohorte HUNT</h2>
     <p>Ton âge biologique part de l'indicateur que la recherche associe le plus fortement à la longévité : la <strong>capacité cardiorespiratoire (VO₂max)</strong>. L'estimation est confrontée aux normes de la <strong>cohorte HUNT</strong> — l'étude norvégienne de référence, l'une des plus grandes bases de condition cardiorespiratoire mesurée au monde — puis affinée par des modificateurs issus de tes habitudes réelles : sommeil, activité, composition corporelle.</p>
@@ -81,7 +81,7 @@
     </div>
   </section>
 
-  <section class="engine">
+  <section class="engine" id="nutrition">
     <span class="num label"><span class="gold">III</span> &nbsp;·&nbsp; La nutrition</span>
     <h2>400 000 aliments issus des bases officielles</h2>
     <p>Quand tu scannes un repas, l'analyse ne sort pas de nulle part : chaque aliment est résolu contre les <strong>bases de données nutritionnelles publiques de référence</strong> — la table <strong>Ciqual de l'ANSES</strong> (l'agence sanitaire française : 3 484 aliments, 257 000 valeurs nutritionnelles mesurées en laboratoire), <strong>USDA FoodData Central</strong> (plus de 400 000 références américaines) et Open Food Facts pour les produits à code-barres.</p>
@@ -93,14 +93,14 @@
     </div>
   </section>
 
-  <section class="engine">
+  <section class="engine" id="vitaux">
     <span class="num label"><span class="gold">IV</span> &nbsp;·&nbsp; Les vitaux</span>
     <h2>Ta ligne de base, pas celle d'un autre</h2>
     <p><a href="/articles/hrv-variabilite-frequence-cardiaque.html" style="color:inherit">La variabilité de fréquence cardiaque</a> et la fréquence cardiaque de repos sont mesurées <strong>pendant ta nuit</strong> — le seul moment où les conditions sont comparables d'un jour à l'autre. L'app les lit comme la recherche le recommande : en écart à ta moyenne personnelle et en tendance sur plusieurs jours, jamais en valeur absolue isolée.</p>
     <p class="why">Une HRV qui chute une nuit, c'est du bruit. Une semaine sous ta ligne de base, c'est un signal — et c'est précisément ce que <a href="/articles/readiness-score-comment-ca-marche.html" style="color:inherit">le score</a> surveille.</p>
   </section>
 
-  <section class="engine">
+  <section class="engine" id="cibles">
     <span class="num label"><span class="gold">V</span> &nbsp;·&nbsp; Les cibles</span>
     <h2>Un métabolisme mesuré, pas estimé une fois pour toutes</h2>
     <p>Ta dépense énergétique n'est pas figée dans une formule remplie le premier jour : elle est <strong>recalibrée en continu</strong> par tes pesées et tes repas réels. Si ton poids bouge plus vite ou plus lentement que prévu, tes cibles s'ajustent — c'est la méthode des bilans énergétiques observés, la seule qui converge vers <em>ton</em> métabolisme réel.</p>

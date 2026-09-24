@@ -66,6 +66,7 @@
      photo : le bas de « III Agir » ne bouge pas (écart mesuré avec les 4 lignes). */
   .step{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,8fr);gap:clamp(36px,6vw,96px);align-items:end;max-width:1136px;margin:0 auto 130px}
   .step.right{grid-template-columns:minmax(0,8fr) minmax(0,5fr);text-align:right}
+  .step{scroll-margin-top:18vh}
   .step.right .shot{order:-1}
   .step .rn{font-size:22px;font-weight:200;color:var(--gold);letter-spacing:.2em}
   .step h3{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;margin:14px 0 12px}
@@ -103,12 +104,12 @@
 <body>
 <nav class="site" style="justify-content:flex-end">
   <div class="links">
-    <a href="/" class="on">Accueil</a>
+    <a href="/" data-mega="app" class="on">Accueil</a>
     <span class="navjournal">
     <a href="/articles/" data-mega="journal">Journal</a>
     </span>
-    <a href="/science.html">Science-Based</a>
-    <a href="/beta.html">La bêta</a>
+    <a href="/science.html" data-mega="science">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">La bêta</a>
   </div>
 </nav>
 
@@ -196,7 +197,7 @@
 
 <section class="steps">
   <h2 class="display">Entre dans<br>ta journée<br><span class="dim">autrement.</span></h2>
-  <div class="step">
+  <div class="step" id="mesurer">
     <div class="txt">
       <span class="rn">I</span>
       <h3>Mesurer</h3>
@@ -204,7 +205,7 @@
     </div>
     <figure class="shot"><img src="/assets/home/mesurer.jpg" alt="Bracelet connecté porté au poignet, dans la pénombre" width="1200" height="800" loading="lazy" decoding="async"></figure>
   </div>
-  <div class="step right">
+  <div class="step right" id="comprendre">
     <div class="txt">
       <span class="rn">II</span>
       <h3>Comprendre</h3>
@@ -212,7 +213,7 @@
     </div>
     <figure class="shot"><img src="/assets/home/comprendre.jpg" alt="Cadran solaire ancien en laiton doré, qui lit la course du soleil" width="1200" height="800" loading="lazy" decoding="async"></figure>
   </div>
-  <div class="step">
+  <div class="step" id="agir">
     <div class="txt">
       <span class="rn">III</span>
       <h3>Agir</h3>
