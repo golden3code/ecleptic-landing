@@ -917,17 +917,17 @@ NAV_SCRIPTS = """<script src="/assets/nav-data.js" defer></script>
 
 
 def nav_data():
-    """Données du méga-menu Journal : articles publiés par thème (10 plus récents)
-    et les 10 plus lus. Déterministe : identique d'un build à l'autre tant
+    """Données du méga-menu Journal : articles publiés par thème (5 plus récents,
+    le compteur garde le total) et les 5 plus lus. Déterministe : identique d'un build à l'autre tant
     qu'aucun article n'est publié (le cron ne commite rien les jours creux)."""
     import json as _json
     by_cat = {d: [] for d in DOMAINS}
     for a in sorted(ARTICLES, key=lambda a: a["date"], reverse=True):
         by_cat.setdefault(cat(a), []).append({"t": a["title"], "u": "/articles/%s.html" % a["slug"]})
-    cats = [{"n": d, "u": "/articles/?theme=%s" % d, "c": len(by_cat[d]), "a": by_cat[d][:10]}
+    cats = [{"n": d, "u": "/articles/?theme=%s" % d, "c": len(by_cat[d]), "a": by_cat[d][:5]}
             for d in DOMAINS]
     idx = {a["slug"]: a for a in ARTICLES}
-    pop = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in POPULAR if s in idx][:10]
+    pop = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in POPULAR if s in idx][:5]
     data = {"journal": {"cats": cats, "popular": pop, "total": len(ARTICLES)}}
     data.update(nav_panels(idx))
     return ("/* Genere par tools/build_articles.py (nav_data) - ne pas editer a la main. */\n"
