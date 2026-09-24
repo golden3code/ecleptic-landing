@@ -81,6 +81,12 @@
   var shade = el("div", "mega-shade");
   document.body.appendChild(shade);
   document.body.appendChild(panel);
+  // Garde-fou : si la feuille de style du menu n'est pas chargée (ancien site.css
+  // en cache), on n'installe rien — « Journal » reste un simple lien.
+  if (getComputedStyle(panel).position !== "absolute") {
+    shade.remove(); panel.remove();
+    return;
+  }
 
   function place() { panel.style.top = (nav.getBoundingClientRect().bottom + window.scrollY) + "px"; }
   function isOpen() { return panel.classList.contains("open"); }
