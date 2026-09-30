@@ -1066,11 +1066,21 @@ a.theme{text-decoration:none}
 .prose .updated{margin-top:44px;font-size:13px;color:var(--muted)}
 """
 
+# Visites venant d'un assistant IA (ChatGPT, Perplexity, Claude, Gemini, Copilot…) :
+# événement PostHog « ai_referral » + propriété « first_ai_source » gardée sur la
+# personne (attribue une inscription bêta à l'IA qui a amené le visiteur).
+# Même bloc, recopié tel quel, dans index/science/beta/guide (pages écrites à la main).
+AI_REFERRAL_JS = r"""  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();"""
+
 POSTHOG = """<script>
   var POSTHOG_KEY="%s";
   if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
-</script>""" % POSTHOG_KEY
+%s
+</script>""" % (POSTHOG_KEY, AI_REFERRAL_JS)
+
+# Pages indexables : extraits longs et grandes images autorisés (Google, AI Overviews, Bing).
+META_ROBOTS = '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">'
 
 # Icônes (favicon Google, onglet, écran d'accueil iOS) : dans le <head> de chaque page.
 HEAD_ICONS = """<link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -1368,6 +1378,7 @@ def article_page(a, others):
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 %(icons)s
+%(metarobots)s
 <title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
@@ -1410,7 +1421,7 @@ def article_page(a, others):
 """ % {
         "title": html.escape(a["title"]), "desc": html.escape(a["description"], quote=True),
         "seo": html.escape(title_tag(SEO_TITLES.get(a["slug"], a["title"]))),
-        "icons": HEAD_ICONS, "catlink": catlink, "byline": byline(a["date"], a.get("updated")),
+        "icons": HEAD_ICONS, "metarobots": META_ROBOTS, "catlink": catlink, "byline": byline(a["date"], a.get("updated")),
         "url": url, "jsonld": jsonld, "faqjsonld": faqjsonld, "faqblock": faqblock,
         "og_image": og_image, "hero": hero, "reveal": reveal,
         "nav": nav("articles"), "date": fr_date(a["date"]),
@@ -1478,6 +1489,7 @@ def methode_page(p):
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 %(icons)s
+%(metarobots)s
 <title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
@@ -1517,7 +1529,7 @@ def methode_page(p):
 </html>
 """ % {
         "seo": html.escape(title_tag(p.get("seo_title") or p["title"])),
-        "icons": HEAD_ICONS, "ogimg": og_image_tags("/assets/science/file-d-etoiles-og.jpg"),
+        "icons": HEAD_ICONS, "metarobots": META_ROBOTS, "ogimg": og_image_tags("/assets/science/file-d-etoiles-og.jpg"),
         "byline": byline(p["date"], p.get("updated")),
         "title": html.escape(p["title"]), "desc": html.escape(p["description"], quote=True),
         "url": url, "site": SITE, "jsonld": jsonld, "faqjsonld": faqjsonld,
@@ -1559,6 +1571,7 @@ def index_page():
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 %(icons)s
+%(metarobots)s
 <title>Le Journal : sommeil, nutrition, sport — Ecleptic</title>
 <meta name="description" content="Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables pour optimiser ta santé au quotidien.">
 <link rel="canonical" href="%(site)s/articles/">
@@ -1649,7 +1662,7 @@ track('articles_index_view');
 </body>
 </html>
 """ % {"site": SITE, "nav": nav("articles"), "cards": cards, "themes": themes,
-       "icons": HEAD_ICONS, "ogimg": og_image_tags("/assets/og/journal.jpg"),
+       "icons": HEAD_ICONS, "metarobots": META_ROBOTS, "ogimg": og_image_tags("/assets/og/journal.jpg"),
        "jsonld": ld({"@context": "https://schema.org", "@type": "CollectionPage",
                      "name": "Le Journal d'Ecleptic", "url": SITE + "/articles/", "inLanguage": "fr",
                      "description": "Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables.",
@@ -1669,7 +1682,7 @@ def theme_page(d):
     t = THEMES[d]
     url = SITE + theme_url(d)
     arts = theme_articles(d)
-    robots = "" if len(arts) >= THEME_MIN_INDEX else '\n<meta name="robots" content="noindex, follow">'
+    robots = META_ROBOTS if len(arts) >= THEME_MIN_INDEX else '<meta name="robots" content="noindex, follow">'
     cards = "\n".join(entry_card(a) for a in arts)
     empty = "" if arts else '<div class="empty">Les premiers textes de ce thème arrivent bientôt.</div>'
     og = (img_path(arts[0]) if arts else None) or "/assets/og/journal.jpg"
@@ -1695,8 +1708,9 @@ def theme_page(d):
 <meta charset="utf-8">
 %(csp)s
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="viewport" content="width=device-width, initial-scale=1">%(robots)s
+<meta name="viewport" content="width=device-width, initial-scale=1">
 %(icons)s
+%(metarobots)s
 <title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
@@ -1741,7 +1755,7 @@ def theme_page(d):
 %(navscripts)s
 </body>
 </html>
-""" % {"csp": CSP, "robots": robots, "icons": HEAD_ICONS, "seo": html.escape(title_tag(t["seo"])),
+""" % {"csp": CSP, "metarobots": robots, "icons": HEAD_ICONS, "seo": html.escape(title_tag(t["seo"])),
        "desc": html.escape(t["desc"], quote=True), "url": url, "ogimg": og_image_tags(og),
        "jsonld": ld(jsonld), "nav": nav("articles"), "name": html.escape(d), "intro": html.escape(t["intro"]),
        "n": n, "nlabel": "Article" if n == 1 else "Articles", "cards": cards, "empty": empty,
@@ -1760,6 +1774,7 @@ def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event):
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 %(icons)s
+%(metarobots)s
 <title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
@@ -1789,7 +1804,7 @@ def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event):
 %(navscripts)s
 </body>
 </html>
-""" % {"csp": CSP, "icons": HEAD_ICONS, "seo": html.escape(seo), "desc": html.escape(desc, quote=True),
+""" % {"csp": CSP, "icons": HEAD_ICONS, "metarobots": META_ROBOTS, "seo": html.escape(seo), "desc": html.escape(desc, quote=True),
        "url": url, "ogimg": og_image_tags(og), "jsonld": ld(jsonld), "nav": nav(""), "label": label,
        "h1": h1, "body": body.strip(), "updated": fr_date(ABOUT_UPDATED), "footer": FOOTER,
        "posthog": POSTHOG, "track": track_event, "navscripts": NAV_SCRIPTS}
@@ -1856,6 +1871,78 @@ def legal_page():
                       "Mentions légales du site ecleptic.health : éditeur, directeur de la publication, hébergeur, propriété intellectuelle et contact.",
                       "Informations légales", "Mentions légales", body, jsonld,
                       "/assets/og/accueil.jpg", "legal_view")
+
+
+def html_to_md(h):
+    """HTML maison des articles → Markdown lisible (llms-full.txt)."""
+    h = neutralize_links(h)
+    h = re.sub(r'<a href="(/[^"]*)"[^>]*>(.*?)</a>', lambda m: "[%s](%s%s)" % (m.group(2), SITE, m.group(1)), h, flags=re.S)
+    h = re.sub(r'<a href="(https?://[^"]*)"[^>]*>(.*?)</a>', r"[\2](\1)", h, flags=re.S)
+    h = re.sub(r"<h2[^>]*>(.*?)</h2>", r"\n## \1\n", h, flags=re.S)
+    h = re.sub(r"<h3[^>]*>(.*?)</h3>", r"\n### \1\n", h, flags=re.S)
+    h = re.sub(r"<(strong|b)>(.*?)</\1>", r"**\2**", h, flags=re.S)
+    h = re.sub(r"<em>(.*?)</em>", r"*\1*", h, flags=re.S)
+    h = re.sub(r"<li[^>]*>(.*?)</li>", r"- \1\n", h, flags=re.S)
+    h = re.sub(r"<tr[^>]*>(.*?)</tr>", lambda m: "| " + " | ".join(
+        c.strip() for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", m.group(1), re.S)) + " |\n", h, flags=re.S)
+    h = re.sub(r"</p>|<br\s*/?>", "\n", h)
+    h = re.sub(r"<[^>]+>", "", h)
+    h = html.unescape(h)
+    return re.sub(r"\n{3,}", "\n\n", h).strip()
+
+
+LLMS_INTRO = """# Ecleptic
+
+> Ecleptic est une application iOS de bien-être qui croise le sommeil, l'alimentation et l'entraînement en un seul score quotidien, le Readiness Score. Ce site publie la méthode de calcul de l'application (formules, cohortes et bases de données citées) et le Journal, des articles sourcés qui répondent aux questions les plus posées sur le sommeil, la nutrition, l'entraînement et la récupération.
+
+- Auteur et éditeur : Auguste Phily-Priou, fondateur d'Ecleptic ({site}/a-propos.html)
+- Langue : français
+- Les contenus sont informatifs : ils ne remplacent pas un avis médical, et Ecleptic n'est pas un dispositif médical.
+- Citation : merci de citer la page utilisée et de lier son URL.
+"""
+
+
+def llms_txt():
+    """/llms.txt (format llmstxt.org) : sommaire du site pour les assistants IA."""
+    out = [LLMS_INTRO.format(site=SITE)]
+    out.append("## La méthode : comment l'application calcule\n")
+    out += ["- [%s](%s/methode/%s.html): %s" % (p["title"], SITE, p["slug"], p["description"]) for p in METHODE]
+    out.append("\n## Le Journal\n")
+    out.append("- [Tous les articles](%s/articles/): articles courts et sourcés, classés par thème." % SITE)
+    for d in DOMAINS:
+        arts = theme_articles(d)
+        if not arts:
+            continue
+        out.append("\n### %s\n" % d)
+        out.append("- [Thème %s](%s%s): %s" % (d, SITE, theme_url(d), THEMES[d]["desc"]))
+        out += ["- [%s](%s/articles/%s.html): %s" % (a["title"], SITE, a["slug"], a["description"]) for a in arts]
+    out.append("\n## À propos\n")
+    out.append("- [À propos](%s/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour." % SITE)
+    out.append("- [Science-Based](%s/science.html): vue d'ensemble de la méthode et des sources." % SITE)
+    out.append("- [Mentions légales](%s/mentions-legales.html)" % SITE)
+    out.append("\n## Optional\n")
+    out.append("- [Texte intégral du site](%s/llms-full.txt): tous les articles et pages de la méthode en Markdown." % SITE)
+    return "\n".join(out) + "\n"
+
+
+def llms_full():
+    """/llms-full.txt : texte intégral (Markdown) des pages de la méthode et des articles publiés."""
+    parts = [LLMS_INTRO.format(site=SITE)]
+    for p in METHODE:
+        parts.append("\n---\n\n# %s\n\nURL : %s/methode/%s.html\nAuteur : %s · Publié le %s\n\n%s\n\n%s" % (
+            p["title"], SITE, p["slug"], AUTHOR["name"], p["date"], html_to_md(p["lead"]), html_to_md(p["body"])))
+        if p.get("refs"):
+            parts.append("\n## Références\n\n" + "\n".join("- " + html_to_md(r) for r in p["refs"]))
+    for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True):
+        upd = a.get("updated") if a.get("updated", "") > a["date"] else None
+        parts.append("\n---\n\n# %s\n\nURL : %s/articles/%s.html\nThème : %s · Auteur : %s · Publié le %s%s\n\n%s\n\n%s" % (
+            a["title"], SITE, a["slug"], cat(a), AUTHOR["name"], a["date"],
+            " · Mis à jour le %s" % upd if upd else "", a["description"], html_to_md(a["body"])))
+        if a.get("faq"):
+            parts.append("\n## Questions fréquentes\n\n" + "\n\n".join("### %s\n\n%s" % (q["q"], q["a"]) for q in a["faq"]))
+        if a.get("sources"):
+            parts.append("\n## Sources\n\n" + "\n".join("- %s — %s" % (html_to_md(x["t"]), x["u"]) for x in a["sources"]))
+    return "\n".join(parts) + "\n"
 
 
 def git_lastmod(rel):
@@ -1940,6 +2027,10 @@ def main():
         f.write(about_page())
     with open(os.path.join(root, "mentions-legales.html"), "w") as f:
         f.write(legal_page())
+    with open(os.path.join(root, "llms.txt"), "w") as f:
+        f.write(llms_txt())
+    with open(os.path.join(root, "llms-full.txt"), "w") as f:
+        f.write(llms_full())
     with open(os.path.join(root, "assets", "nav-data.js"), "w") as f:
         f.write(nav_data())
     scheduled = len(ARTICLES_ALL) - len(ARTICLES)

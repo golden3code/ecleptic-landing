@@ -34,7 +34,9 @@ jobs:
       - name: Build (révèle les articles dont la date est atteinte)
         env:
           PYTHONDONTWRITEBYTECODE: "1"   # ne pas générer de __pycache__/*.pyc
-        run: python3 tools/build_articles.py
+        run: |
+          cp sitemap.xml "$RUNNER_TEMP/sitemap-avant.xml"
+          python3 tools/build_articles.py
 
       - name: Commit & push si de nouveaux articles sont publiés
         run: |
@@ -47,3 +49,15 @@ jobs:
           git add -A
           git commit -m "Publication automatique — $(date -u +%Y-%m-%d)"
           git push
+          echo "published=1" >> "$GITHUB_OUTPUT"
+        id: publish
+
+      # Bing (donc ChatGPT, Copilot, DuckDuckGo), Yandex, Seznam, Naver : prévenus
+      # des nouvelles URL et des lastmod changés, une fois GitHub Pages déployé.
+      - name: IndexNow
+        if: steps.publish.outputs.published == '1'
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          sleep 120
+          python3 tools/indexnow.py --diff "$RUNNER_TEMP/sitemap-avant.xml" sitemap.xml || true

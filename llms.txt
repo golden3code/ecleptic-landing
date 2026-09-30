@@ -1,0 +1,97 @@
+# Ecleptic
+
+> Ecleptic est une application iOS de bien-être qui croise le sommeil, l'alimentation et l'entraînement en un seul score quotidien, le Readiness Score. Ce site publie la méthode de calcul de l'application (formules, cohortes et bases de données citées) et le Journal, des articles sourcés qui répondent aux questions les plus posées sur le sommeil, la nutrition, l'entraînement et la récupération.
+
+- Auteur et éditeur : Auguste Phily-Priou, fondateur d'Ecleptic (https://ecleptic.health/a-propos.html)
+- Langue : français
+- Les contenus sont informatifs : ils ne remplacent pas un avis médical, et Ecleptic n'est pas un dispositif médical.
+- Citation : merci de citer la page utilisée et de lier son URL.
+
+## La méthode : comment l'application calcule
+
+- [Le Readiness Score, pilier par pilier](https://ecleptic.health/methode/readiness-score.html): Le Readiness Score croise tes vitaux de la nuit, ton sommeil, ta nutrition et ton rythme. Ses 4 piliers, leurs poids et la méthode, sans boîte noire.
+- [L'âge biologique, ancré sur ta VO₂max](https://ecleptic.health/methode/age-biologique.html): Ton âge biologique part de ta VO₂max, convertie en âge de forme, puis sept facteurs de ton quotidien l'ajustent. Sources, bornes, marge d'erreur : la méthode.
+- [La nutrition, de la photo à la source officielle](https://ecleptic.health/methode/nutrition.html): Scan de repas : l'IA reconnaît les aliments et estime les portions, les bases Ciqual, USDA et Open Food Facts donnent les valeurs. La méthode et ses limites.
+- [Les vitaux de la nuit, signal par signal](https://ecleptic.health/methode/vitaux.html): Les vitaux de la nuit pèsent 42 points du Readiness Score : HRV, FC au repos, respiration, SpO₂, température. Comment l'app les compare à ta normale.
+- [Les cibles, calées sur ta dépense réelle](https://ecleptic.health/methode/cibles.html): Comment Ecleptic calcule tes cibles de calories et de macros : une dépense recalibrée par tes pesées et tes repas, ton objectif, et des garde-fous stricts.
+- [La variabilité cardiaque (HRV), battement par battement](https://ecleptic.health/methode/variabilite-cardiaque.html): Variabilité cardiaque (HRV) : ce qu'elle mesure, pourquoi elle varie d'une personne à l'autre, ce qui la fait baisser et comment l'app la lit.
+- [La fréquence cardiaque au repos, le ralenti de ton moteur](https://ecleptic.health/methode/frequence-cardiaque-repos.html): Fréquence cardiaque au repos : ce qu'elle reflète, les valeurs normales, ce qui la fait monter, quand consulter, et comment l'app la compare à ta normale.
+- [La VO₂max, ta capacité cardiorespiratoire](https://ecleptic.health/methode/vo2max.html): La VO₂max mesure l'oxygène maximal que ton corps utilise à l'effort. Définition, mesure en labo ou par la montre, repères, et son rôle dans ton âge biologique.
+- [La fréquence respiratoire, l'alerte discrète de tes nuits](https://ecleptic.health/methode/frequence-respiratoire.html): La fréquence respiratoire nocturne est l'un de tes vitaux les plus stables. Valeurs normales, causes d'une hausse et comment Ecleptic la compare à ta normale.
+- [La saturation en oxygène, mesurée au poignet](https://ecleptic.health/methode/saturation-oxygene.html): La saturation en oxygène (SpO₂) est en général de 95 à 100 % chez l'adulte sain. Ce qu'elle mesure, les limites de la montre et comment Ecleptic la lit.
+- [La température du poignet, un écart plutôt qu'un chiffre](https://ecleptic.health/methode/temperature-poignet.html): La température du poignet mesurée la nuit est un écart à ta propre normale, pas une fièvre. Ce qui la fait varier, et comment Ecleptic l'intègre à ton score.
+- [Ta ligne de base, toi contre toi](https://ecleptic.health/methode/ligne-de-base.html): Ta ligne de base, c'est ta normale sur 42 jours. Comment Ecleptic s'en sert pour juger ta HRV, ta fréquence cardiaque et tes vitaux : calcul, z-score, limites.
+- [Ton besoin de sommeil, de ton âge à tes cycles](https://ecleptic.health/methode/besoin-de-sommeil.html): Ton besoin de sommeil part des repères de ton âge et s'ajuste à tes cycles. Comment Ecleptic le calcule et note ta nuit : durée, phases, efficacité, régularité.
+- [La dépense énergétique, mesurée plutôt que devinée](https://ecleptic.health/methode/depense-energetique.html): Dépense énergétique (TDEE) : ses trois composantes, pourquoi les formules se trompent de plusieurs centaines de kcal, et comment Ecleptic la mesure sur toi.
+
+## Le Journal
+
+- [Tous les articles](https://ecleptic.health/articles/): articles courts et sourcés, classés par thème.
+
+### Sommeil
+
+- [Thème Sommeil](https://ecleptic.health/articles/sommeil/): Durée idéale, sommeil profond, café, écrans, réveils nocturnes : des articles courts et sourcés pour comprendre ton sommeil et mieux dormir dès ce soir.
+- [Café et sommeil : combien de temps avant de dormir l'arrêter ?](https://ecleptic.health/articles/cafe-et-sommeil-combien-de-temps-avant.html): La caféine a une demi-vie de 5 à 6 heures : un café à 16 h occupe encore ta soirée. Pourquoi couper 8 à 10 heures avant le coucher, et ce que ça change.
+- [Sommeil profond : comment en avoir plus ?](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html): Chambre fraîche, horaires fixes, sport le jour, alcool rare : les seuls leviers qui augmentent vraiment le sommeil profond — et ceux qui ne servent à rien.
+- [Combien d'heures de sommeil faut-il vraiment par nuit ?](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html): 7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.
+
+### Readiness
+
+- [Thème Readiness](https://ecleptic.health/articles/readiness/): Score de préparation, fréquence cardiaque au repos, HRV basse, jours de repos : comment lire les signaux de ton corps chaque matin et décider si tu pousses.
+- [Fréquence cardiaque au repos : quelle est la normale ?](https://ecleptic.health/articles/frequence-cardiaque-repos-normale.html): La fréquence cardiaque au repos normale est de 60 à 100 bpm, et de 40 à 60 chez les sportifs d'endurance. Comment la mesurer au réveil et la lire en tendance.
+- [Readiness score : comment ça marche, et comment l'améliorer](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html): HRV, fréquence cardiaque de repos, sommeil, charge récente : ce que mesure vraiment un score de préparation, ses limites, et comment le faire monter durablement.
+
+### Sport
+
+- [Thème Sport](https://ecleptic.health/articles/sport/): Séances par semaine, zone 2, VO₂max, répétitions, cardio ou musculation : des articles clairs et sourcés pour t'entraîner mieux, progresser et durer.
+- [Zone 2 : c'est quoi et pourquoi c'est le meilleur cardio ?](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html): La zone 2, c'est le cardio facile où tu peux parler en phrases complètes. Pourquoi cette intensité basse construit ta base aérobie mieux que le reste.
+- [Combien de séances de sport par semaine pour progresser ?](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html): 3 à 5 séances bien récupérées battent 6 séances subies. Ce que dit la recherche sur la fréquence idéale en musculation et en cardio, selon ton niveau.
+
+### Récupération
+
+- [Thème Récupération](https://ecleptic.health/articles/recuperation/): Courbatures, HRV, bain froid, sauna, étirements, massage : ce qui accélère vraiment la récupération après le sport, ce qui ne sert à rien, et pourquoi.
+- [Bain froid : vrais bienfaits ou effet de mode ?](https://ecleptic.health/articles/bain-froid-recuperation-bienfaits.html): Il soulage vraiment les courbatures et rafraîchit le mental — mais juste après la muscu, il freine tes gains. Quand l'utiliser, quand l'éviter.
+- [Courbatures : que faire pour récupérer plus vite ?](https://ecleptic.health/articles/courbatures-que-faire.html): Bouger léger, dormir, manger assez de protéines : ce qui accélère vraiment la récupération des courbatures, ce qui ne change rien, et quand s'inquiéter.
+- [HRV : c'est quoi la variabilité de fréquence cardiaque ?](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html): La HRV mesure les micro-variations entre deux battements de cœur — le meilleur indicateur accessible de ta récupération. Comment la lire, et ce qui la fait bouger.
+
+### Alimentation
+
+- [Thème Alimentation](https://ecleptic.health/articles/alimentation/): Calories, protéines, déficit calorique, créatine, hydratation, repas autour du sport : des repères chiffrés et sourcés pour bien manger selon ton objectif.
+- [Combien de calories par jour faut-il vraiment ?](https://ecleptic.health/articles/combien-de-calories-par-jour.html): Combien de calories par jour ? Ça dépend de ton métabolisme et de ton activité. Ordres de grandeur, limites des formules, et comment trouver ton vrai chiffre.
+- [Combien de protéines par jour pour prendre du muscle ?](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html): 1,6 à 2,2 g par kilo de poids de corps et par jour : ce que dit la recherche, pourquoi manger plus n'apporte rien, et comment répartir tes apports.
+
+### Charge
+
+- [Thème Charge](https://ecleptic.health/articles/charge/): Surentraînement, surcharge progressive, repos entre les séries, RPE, semaine de décharge : doser ta charge d'entraînement pour progresser sans te blesser.
+- [Surentraînement : les signes que tu en fais trop](https://ecleptic.health/articles/surentrainement-signes.html): Performances qui stagnent, sommeil dégradé, cœur de repos qui monte, motivation en berne : les signaux du surentraînement, et comment réagir avant de casser.
+
+### Régularité
+
+- [Thème Régularité](https://ecleptic.health/articles/regularite/): Horaires de coucher, routine du soir, décalage horaire, habitudes qui durent : pourquoi la régularité compte autant que la durée, et comment la construire.
+- [Se coucher à la même heure : ce que ça change vraiment](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html): À durée de sommeil égale, des horaires réguliers améliorent la qualité des nuits, l'énergie et même la santé métabolique. Pourquoi, et comment y arriver.
+
+### Humeur
+
+- [Thème Humeur](https://ecleptic.health/articles/humeur/): Stress, anxiété, cortisol, cohérence cardiaque, irritabilité : ce que le mental fait à ta récupération, et les leviers simples qui aident vraiment au quotidien.
+- [Stress et sport : pourquoi ton corps ne récupère plus](https://ecleptic.health/articles/stress-recuperation-sport.html): Ton système nerveux ne fait pas la différence entre une semaine de rush et une semaine de gros volume : le stress mental se paie en récupération physique.
+
+### Contexte
+
+- [Thème Contexte](https://ecleptic.health/articles/contexte/): Alcool, maladie, cycle menstruel, âge, tabac, chaleur, altitude : les facteurs qui changent ta récupération et tes performances, et comment t'y adapter.
+- [Alcool et sommeil : ce qui se passe vraiment la nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html): L'alcool endort plus vite mais détruit la seconde moitié de la nuit : sommeil paradoxal amputé, réveils, HRV écrasée. Ce que montrent les données, verre par verre.
+
+### Énergie
+
+- [Thème Énergie](https://ecleptic.health/articles/energie/): Fatigue constante, coup de barre après manger, sieste, carence en fer, glycémie : comprendre d'où vient ta fatigue et retrouver une énergie stable toute la journée.
+- [Sieste idéale : combien de temps faut-il dormir ?](https://ecleptic.health/articles/sieste-ideale-duree.html): 10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est le pire choix, et quand la sieste est un signal.
+- [Toujours fatigué ? Les vraies causes d'une fatigue constante](https://ecleptic.health/articles/toujours-fatigue-causes.html): Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d'une fatigue qui dure, dans l'ordre.
+
+## À propos
+
+- [À propos](https://ecleptic.health/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour.
+- [Science-Based](https://ecleptic.health/science.html): vue d'ensemble de la méthode et des sources.
+- [Mentions légales](https://ecleptic.health/mentions-legales.html)
+
+## Optional
+
+- [Texte intégral du site](https://ecleptic.health/llms-full.txt): tous les articles et pages de la méthode en Markdown.
