@@ -209,3 +209,15 @@ a.theme{text-decoration:none}
 .pagehead .crumbs{margin-bottom:26px}
 .prose h2{margin-top:44px}
 .prose .updated{margin-top:44px;font-size:13px;color:var(--muted)}
+/* Sources des articles + tableaux de données */
+article .refs ol{margin:0 0 0 22px}
+article .refs li{font-size:14px;color:var(--muted);margin-bottom:10px;line-height:1.6}
+article .refs li::marker{color:var(--muted)}
+article .refs a{color:var(--muted);text-decoration:underline;text-decoration-color:rgba(217,164,65,.45);text-underline-offset:3px;word-break:break-all}
+article .refs a:hover{color:var(--gold)}
+.tablewrap{overflow-x:auto;margin:6px 0 24px;-webkit-overflow-scrolling:touch}
+article table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+article caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(--muted);padding-top:10px}
+article th{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--gold);text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);white-space:nowrap}
+article td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+article td.n,article th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
