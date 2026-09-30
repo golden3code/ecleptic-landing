@@ -1058,6 +1058,7 @@ article .byline{margin-top:18px;font-size:13px;color:var(--muted);line-height:1.
 article .byline a,.prose p a,.prose li a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
 article .byline a:hover,.prose p a:hover,.prose li a:hover{color:var(--gold)}
 .label a{color:inherit;text-decoration:none}
+article header .label a.gold{text-decoration:underline;text-decoration-color:rgba(217,164,65,.45);text-underline-offset:4px;text-decoration-thickness:1px}
 .label a:hover{color:var(--gold)}
 a.theme{text-decoration:none}
 .pagehead .crumbs{margin-bottom:26px}
