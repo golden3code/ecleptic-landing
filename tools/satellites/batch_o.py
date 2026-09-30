@@ -20,7 +20,7 @@ ENTRIES = [
 <p>Une séance exigeante est un stress volontaire : ton corps puise dans ses ressources, puis se reconstruit un peu plus fort pendant la récupération. La fatigue d'après-séance mélange plusieurs choses :</p>
 <ul>
 <li><strong>Des réserves entamées :</strong> le glycogène, le carburant stocké dans tes muscles et ton foie, baisse surtout après un effort long ou intense.</li>
-<li><strong>Des muscles en chantier :</strong> les micro-lésions de l'effort lancent une réparation, d'où les courbatures du lendemain.</li>
+<li><strong>Des muscles en chantier :</strong> les micro-lésions de l'effort lancent une réparation, d'où les courbatures, qui culminent souvent 2 à 3 jours après une séance inhabituelle.</li>
 <li><strong>Un système nerveux sollicité :</strong> charges lourdes, intervalles ou compétition fatiguent aussi la commande nerveuse, pas seulement les muscles.</li>
 <li><strong>De l'eau et du sel perdus :</strong> la sueur emporte les deux, et un léger déficit suffit à alourdir ta fin de journée.</li>
 </ul>
@@ -29,8 +29,8 @@ ENTRIES = [
 <h2>Combien de temps dure une fatigue normale ?</h2>
 <ul>
 <li><strong>Séance facile :</strong> un footing tranquille ou une séance technique se digèrent en quelques heures. Tu dois te sentir bien, voire mieux, le soir même.</li>
-<li><strong>Séance dure :</strong> intervalles, grosse séance de force, sortie longue. Compte <strong>24 à 48 heures</strong> pour retrouver ta fraîcheur.</li>
-<li><strong>Effort très long ou compétition :</strong> jusqu'à <strong>72 heures</strong>, et davantage après une épreuve comme un marathon.</li>
+<li><strong>Séance dure :</strong> intervalles, grosse séance de force, sortie longue. Compte <strong>24 à 48 heures</strong> pour retrouver ta fraîcheur. En musculation, une étude de 2017 sur des pratiquants entraînés montre que pousser chaque série jusqu'à l'échec ralentit la récupération jusqu'à 24 à 48 heures après la séance, bien plus qu'un volume identique arrêté avant.</li>
+<li><strong>Effort très long ou compétition :</strong> jusqu'à <strong>72 heures</strong>, et davantage après un marathon : chez dix coureurs entraînés, la force des cuisses n'était toujours pas revenue à son niveau d'avant-course après une semaine de repos (étude de 1984).</li>
 </ul>
 <p>La fatigue saine a une signature reconnaissable : une lassitude plutôt agréable, de l'appétit, une nuit profonde, et un corps qui redevient frais dans le délai attendu. Tu es lessivé le soir, mais tu te réveilles réparé.</p>
 
@@ -41,18 +41,18 @@ ENTRIES = [
 <li><strong>Tu dors mal alors que tu es épuisé</strong>, paradoxe typique d'un organisme dépassé.</li>
 <li><strong>Même les séances faciles te vident</strong>, et l'envie de t'entraîner s'éteint.</li>
 </ul>
-<p>Un signe isolé ne veut pas dire grand-chose. Plusieurs ensemble, pendant plus d'une semaine, dessinent le tableau du surmenage : <a href="/articles/surentrainement-signes.html">les signes du surentraînement et le protocole pour en sortir</a> sont détaillés ici.</p>
+<p>Un signe isolé ne veut pas dire grand-chose. Plusieurs ensemble, pendant plus d'une semaine, dessinent le tableau du surmenage. Le consensus européen et américain sur le surentraînement (ECSS et ACSM, 2013) distingue la baisse de forme passagère, suivie d'un rebond après récupération, de celle qui s'installe quand la charge dépasse durablement la récupération : <a href="/articles/surentrainement-signes.html">les signes du surentraînement et le protocole pour en sortir</a> sont détaillés ici.</p>
 
 <h2>Quelles causes chercher si elle traîne ?</h2>
 <p>Le coupable est rarement mystérieux. Dans l'ordre où il faut vérifier :</p>
 <ul>
 <li><strong>Une charge trop élevée :</strong> des séances dures trop rapprochées, sans journée facile entre elles. Le chantier n'a pas le temps de se terminer.</li>
-<li><strong>Un sommeil trop court :</strong> l'essentiel de la réparation se fait la nuit. Sous 7 heures de façon répétée, la fatigue s'empile.</li>
+<li><strong>Un sommeil trop court :</strong> l'essentiel de la réparation se fait la nuit. L'American Academy of Sleep Medicine recommande au moins 7 heures par nuit ; en dessous, de façon répétée, la fatigue s'empile.</li>
 <li><strong>Une assiette trop légère :</strong> pas assez de calories, de glucides pour recharger ou de protéines pour réparer. <a href="/articles/que-manger-apres-le-sport.html">Ce que tu manges après la séance</a> compte, ton total de la journée encore plus.</li>
 <li><strong>Un manque d'eau :</strong> une séance transpirée sans boire assez laisse une fatigue et des maux de tête qu'on met à tort sur le compte de l'effort. Les <a href="/articles/deshydratation-fatigue-signes.html">signes de déshydratation</a> se repèrent facilement.</li>
-<li><strong>Une carence :</strong> chez les femmes et les coureurs surtout, une <a href="/articles/carence-en-fer-fatigue.html">carence en fer</a> imite trait pour trait le surmenage.</li>
+<li><strong>Une carence :</strong> chez les femmes et les coureurs surtout, une <a href="/articles/carence-en-fer-fatigue.html">carence en fer</a> imite trait pour trait le surmenage. Le consensus ECSS-ACSM la range parmi les causes à écarter, avec les apports trop faibles en calories, glucides ou protéines.</li>
 </ul>
-<p>Ajoute le stress de vie : une semaine tendue au travail puise dans le même budget de récupération que tes séances.</p>
+<p>Ajoute le stress de vie : une semaine tendue au travail puise dans le même budget de récupération que tes séances. Chez 31 étudiants en musculation, les plus stressés récupéraient moins bien leur force et leur énergie dans les 96 heures suivant une séance lourde.</p>
 
 <h2>Que faire, et quand consulter ?</h2>
 <p>Face à une fatigue qui traîne, la réponse est presque toujours la même : <strong>allège</strong> quelques jours, dors davantage, mange à ta faim, bois régulièrement, puis reprends progressivement. Si deux semaines plus calmes n'y changent rien, ce n'est plus une question de programme.</p>
@@ -73,6 +73,20 @@ ENTRIES = [
             {"q": "Faut-il continuer à s'entraîner quand on est fatigué ?",
              "a": "Oui si la fatigue est légère et récente : une séance facile passe souvent très bien. Non si elle dure depuis plusieurs jours, si tes performances baissent ou si tu dors mal : allège ou repose-toi quelques jours, puis reprends progressivement."},
         ],
+        "sources": [
+            {"t": "Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. <em>Med Sci Sports Exerc</em>. 2013.",
+             "u": "https://doi.org/10.1249/MSS.0b013e318279a10a"},
+            {"t": "Morán-Navarro R, Pérez CE, Mora-Rodríguez R, et al. Time course of recovery following resistance training leading or not to failure. <em>Eur J Appl Physiol</em>. 2017.",
+             "u": "https://doi.org/10.1007/s00421-017-3725-7"},
+            {"t": "Sherman WM, Armstrong LE, Murray TM, et al. Effect of a 42.2-km footrace and subsequent rest or exercise on muscular strength and work capacity. <em>J Appl Physiol</em>. 1984.",
+             "u": "https://doi.org/10.1152/jappl.1984.57.6.1668"},
+            {"t": "Hotfiel T, Freiwald J, Hoppe MW, et al. Advances in Delayed-Onset Muscle Soreness (DOMS): Part I: Pathogenesis and Diagnostics. <em>Sportverletz Sportschaden</em>. 2018.",
+             "u": "https://doi.org/10.1055/a-0753-1884"},
+            {"t": "Watson NF, Badr MS, Belenky G, et al. Recommended amount of sleep for a healthy adult: a joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society. <em>Sleep</em>. 2015.",
+             "u": "https://doi.org/10.5665/sleep.4716"},
+            {"t": "Stults-Kolehmainen MA, Bartholomew JB, Sinha R. Chronic psychological stress impairs recovery of muscular function and somatic sensations over a 96-hour period. <em>J Strength Cond Res</em>. 2014.",
+             "u": "https://doi.org/10.1519/JSC.0000000000000335"},
+        ],
     },
     {
         "slug": "pic-de-glycemie-fatigue",
@@ -90,22 +104,22 @@ ENTRIES = [
 <li><strong>Arrivée lente :</strong> un plat complet, avec fibres, protéines et un peu de gras, libère son glucose progressivement. La courbe monte en pente douce et redescend sans à-coup.</li>
 <li><strong>Arrivée rapide :</strong> une boisson sucrée, du pain blanc, une viennoiserie ou un dessert pris seuls envoient beaucoup de glucose d'un coup. L'insuline suit fort, et la redescente peut être brutale.</li>
 </ul>
-<p>C'est dans cette phase descendante que beaucoup ressentent le coup de mou : tête lourde, envie de sucre, attention qui décroche. Et le grignotage sucré qui suit relance un tour de manège.</p>
+<p>C'est dans cette phase descendante que beaucoup ressentent le coup de mou : tête lourde, envie de sucre, attention qui décroche. Une méta-analyse de 2019 (31 études, 1 259 participants) va dans ce sens : loin du « coup de fouet » promis, les glucides sont associés à plus de fatigue et moins de vigilance qu'un placebo dans l'heure qui suit. Et le grignotage sucré d'après relance un tour de manège.</p>
 
 <h2>Pourquoi est-on fatigué après un repas sucré ?</h2>
 <p>La chute de glycémie n'est pas seule en cause. En début d'après-midi, ton horloge interne programme de toute façon un creux de vigilance, qui existe même sans déjeuner. Un repas lourd et sucré ne crée pas ce creux, il l'amplifie : c'est tout le mécanisme du <a href="/articles/coup-de-barre-apres-manger.html">coup de barre après manger</a>. Même logique le matin : un petit-déjeuner jus, céréales sucrées et viennoiserie fait grimper la glycémie en flèche, puis te laisse affamé et vaseux en milieu de matinée.</p>
 
 <h2>Comment éviter les pics de glycémie au quotidien ?</h2>
 <ul>
-<li><strong>L'ordre des aliments :</strong> commence par les légumes, puis les protéines, et garde féculents et dessert pour la fin. À repas identique, la hausse est plus douce. L'effet est bien documenté, surtout chez les personnes à la glycémie fragile, et il ne coûte rien.</li>
-<li><strong>Des fibres à chaque repas :</strong> légumes, légumineuses, fruits entiers et céréales complètes ralentissent l'absorption des glucides. L'objectif recommandé tourne autour de 25 à 30 g par jour, et la plupart des adultes restent en dessous.</li>
+<li><strong>L'ordre des aliments :</strong> commence par les légumes, puis les protéines, et garde féculents et dessert pour la fin. À repas identique, la hausse est plus douce : une méta-analyse de 2025 (17 essais, 389 personnes diabétiques de type 2) trouve une glycémie nettement plus basse une heure après le repas quand les glucides arrivent en dernier. L'effet a surtout été étudié chez les personnes à la glycémie fragile, mais le geste ne coûte rien.</li>
+<li><strong>Des fibres à chaque repas :</strong> légumes, légumineuses, fruits entiers et céréales complètes ralentissent l'absorption des glucides. L'objectif recommandé tourne autour de 25 à 30 g par jour : une série de méta-analyses publiée dans <em>The Lancet</em> en 2019 associe les plus fortes baisses de risque de maladies chroniques à 25-29 g par jour.</li>
 <li><strong>Jamais de glucides seuls :</strong> associe ton pain, tes pâtes ou ton fruit à des protéines ou à un peu de bon gras. Une pomme avec une poignée d'amandes ne fait pas le même effet qu'un jus de pomme.</li>
 <li><strong>Le sucre liquide en dernier recours :</strong> sodas et jus à jeun sont le moyen le plus rapide de provoquer un pic. Le fruit entier, avec ses fibres, passe beaucoup mieux.</li>
 <li><strong>Des portions raisonnables :</strong> la quantité de glucides compte autant que leur type. Une énorme assiette de pâtes, même complètes, reste une grosse charge.</li>
 </ul>
 
 <h2>Pourquoi marcher 10 minutes après le repas ?</h2>
-<p>C'est le geste le plus sous-estimé de la liste. Quand tes muscles se contractent, ils captent du glucose par une voie qui ne dépend pas de l'insuline. Une <strong>marche légère de 10 à 15 minutes</strong> juste après le repas suffit à aplatir nettement la courbe, et elle compte dans ton <a href="/articles/combien-de-pas-par-jour.html">total de pas de la journée</a>. Pas besoin de transpirer : un tour du pâté de maisons, quelques étages d'escalier, tout mouvement aide.</p>
+<p>C'est le geste le plus sous-estimé de la liste. Quand tes muscles se contractent, ils captent du glucose par une voie qui ne dépend pas de l'insuline. Une <strong>marche légère de 10 à 15 minutes</strong> juste après le repas aplatit la courbe : chez 41 adultes diabétiques de type 2, marcher 10 minutes après chaque repas a donné une glycémie d'après-repas 12 % plus basse que 30 minutes de marche d'un bloc (essai de 2016). Une méta-analyse de 2023, menée chez des personnes avec ou sans diabète, confirme que bouger après le repas atténue le pic, bien mieux que bouger avant. Et ça compte dans ton <a href="/articles/combien-de-pas-par-jour.html">total de pas de la journée</a>. Pas besoin de transpirer : un tour du pâté de maisons, quelques étages d'escalier, tout mouvement aide.</p>
 <p>Autour de l'entraînement, la logique s'inverse : des glucides rapides avant une séance intense ou pendant un effort long sont un carburant utile, pas un piège. C'est tout le sujet de <a href="/articles/glucides-et-sport-combien.html">combien de glucides pour le sport</a>.</p>
 
 <h2>Diabète : quand faut-il consulter ?</h2>
@@ -127,6 +141,20 @@ ENTRIES = [
             {"q": "Faut-il manger les légumes avant les féculents ?",
              "a": "C'est une bonne habitude : commencer par les légumes et les protéines, puis finir par les féculents, rend la hausse de glycémie plus douce à repas identique. Le geste est simple, gratuit, et se combine très bien avec une courte marche après le repas."},
         ],
+        "sources": [
+            {"t": "Mantantzis K, Schlaghecken F, Sünram-Lea SI, Maylor EA. Sugar rush or sugar crash? A meta-analysis of carbohydrate effects on mood. <em>Neurosci Biobehav Rev</em>. 2019.",
+             "u": "https://doi.org/10.1016/j.neubiorev.2019.03.016"},
+            {"t": "Monk TH. The post-lunch dip in performance. <em>Clin Sports Med</em>. 2005.",
+             "u": "https://doi.org/10.1016/j.csm.2004.12.002"},
+            {"t": "Saldarriaga-Callejas LM, Ratan P, Pasqualotto E, et al. Nutrient intake order on metabolic outcomes in type 2 diabetes: a systematic review and meta-analysis. <em>Acta Diabetol</em>. 2025.",
+             "u": "https://doi.org/10.1007/s00592-025-02586-0"},
+            {"t": "Reynolds A, Mann J, Cummings J, et al. Carbohydrate quality and human health: a series of systematic reviews and meta-analyses. <em>Lancet</em>. 2019.",
+             "u": "https://doi.org/10.1016/S0140-6736(18)31809-9"},
+            {"t": "Reynolds AN, Mann JI, Williams S, Venn BJ. Advice to walk after meals is more effective for lowering postprandial glycaemia in type 2 diabetes mellitus than advice that does not specify timing: a randomised crossover study. <em>Diabetologia</em>. 2016.",
+             "u": "https://doi.org/10.1007/s00125-016-4085-2"},
+            {"t": "Engeroff T, Groneberg DA, Wilke J. After dinner rest a while, after supper walk a mile? A systematic review with meta-analysis on the acute postprandial glycemic response to exercise before and after meal ingestion in healthy subjects and patients with impaired glucose tolerance. <em>Sports Med</em>. 2023.",
+             "u": "https://doi.org/10.1007/s40279-022-01808-7"},
+        ],
     },
     {
         "slug": "vitamine-d-fatigue",
@@ -147,8 +175,8 @@ ENTRIES = [
 </ul>
 
 <h2>Pourquoi en manque-t-on en hiver ?</h2>
-<p>Parce que l'essentiel de ta vitamine D vient du soleil, plus précisément des UVB. Or de l'automne à la fin de l'hiver, en France et plus au nord, le soleil est trop bas pour que la peau en fabrique vraiment. Tu vis sur tes réserves de l'été, qui s'épuisent au fil des mois. Et la vitre ne t'aide pas : le verre arrête les UVB, donc le soleil derrière une fenêtre ne produit rien.</p>
-<p>Certains profils sont plus exposés : <strong>peau foncée</strong>, <strong>personnes âgées</strong>, travail en intérieur, vêtements très couvrants, <strong>surpoids</strong>, grossesse. Cumuler plusieurs de ces facteurs rend l'insuffisance très probable en fin d'hiver.</p>
+<p>Parce que l'essentiel de ta vitamine D vient du soleil, plus précisément des UVB. Or de l'automne à la fin de l'hiver, en France et plus au nord, le soleil est trop bas pour que la peau en fabrique vraiment. Une étude de référence l'a mesuré : à Boston, à peu près à la latitude de Marseille, la peau ne produit plus rien de novembre à février ; à Edmonton, plus au nord que Lille, d'octobre à mars. Tu vis sur tes réserves de l'été, qui s'épuisent au fil des mois. Et la vitre ne t'aide pas : le verre arrête les UVB, donc le soleil derrière une fenêtre ne produit rien.</p>
+<p>À l'échelle européenne, une analyse standardisée de 2016 portant sur près de 56 000 personnes trouve 13 % de taux très bas (sous 30 nmol/l, le seuil de la carence) sur l'année, près de 18 % en hiver, et 40 % de taux sous 50 nmol/l. Certains profils sont plus exposés : <strong>peau foncée</strong>, <strong>personnes âgées</strong>, travail en intérieur, vêtements très couvrants, <strong>surpoids</strong>, grossesse. Cumuler plusieurs de ces facteurs rend l'insuffisance très probable en fin d'hiver.</p>
 
 <h2>Quels symptômes d'une carence en vitamine D ?</h2>
 <p>C'est là que ça se complique : le plus souvent, <strong>aucun</strong>. Une insuffisance modérée passe en général inaperçue. Quand la carence est marquée, elle peut donner :</p>
@@ -160,8 +188,8 @@ ENTRIES = [
 <p>Aucun de ces signes n'est propre à la vitamine D. En hiver, fatigue et douleurs s'expliquent aussi par des nuits trop courtes, moins de lumière, moins d'activité ou une autre carence : le fer, en particulier, est un suspect tout aussi fréquent, surtout chez les femmes et les coureurs (<a href="/articles/carence-en-fer-fatigue.html">voir la carence en fer</a>). D'où l'intérêt de ne pas t'auto-diagnostiquer.</p>
 
 <h2>Faut-il faire un dosage avant de se supplémenter ?</h2>
-<p>La règle est simple : <strong>c'est le médecin qui décide</strong>. Le dosage sanguin de la vitamine D n'est pas systématique : ton médecin juge s'il est utile selon ton profil et tes symptômes, et c'est lui qui fixe, s'il le faut, la forme, la dose et la durée de la supplémentation.</p>
-<p>Pourquoi tant de prudence pour une « simple vitamine » ? Parce qu'elle se stocke dans le corps : en excès, elle fait monter le calcium dans le sang, avec des conséquences réelles sur les reins et le cœur. Les intoxications viennent de compléments mal utilisés, jamais du soleil. Et chez quelqu'un qui n'est pas carencé, les études ne montrent pas de regain d'énergie avec une supplémentation.</p>
+<p>La règle est simple : <strong>c'est le médecin qui décide</strong>. Le dosage sanguin de la vitamine D n'est pas systématique, et la Haute Autorité de santé ne lui reconnaît pas d'utilité en routine : ton médecin juge s'il est utile selon ton profil et tes symptômes, et c'est lui qui fixe, s'il le faut, la forme, la dose et la durée de la supplémentation.</p>
+<p>Pourquoi tant de prudence pour une « simple vitamine » ? Parce qu'elle se stocke dans le corps : en excès, elle fait monter le calcium dans le sang, avec des conséquences réelles sur les reins et le cœur. Les intoxications viennent de compléments mal utilisés, jamais du soleil : selon l'EFSA, seuls les utilisateurs réguliers de compléments fortement dosés risquent de dépasser la limite de sécurité, et au soleil la peau plafonne d'elle-même sa production. Quant à l'énergie, un essai suisse contre placebo a bien vu la fatigue reculer après correction d'une carence, mais chez des adultes carencés : rien ne permet d'étendre ce bénéfice à ceux qui ne le sont pas.</p>
 
 <h2>Soleil et alimentation : que peux-tu faire toi-même ?</h2>
 <ul>
@@ -186,19 +214,34 @@ ENTRIES = [
             {"q": "Quels aliments sont riches en vitamine D ?",
              "a": "Surtout les poissons gras comme la sardine, le maquereau, le hareng ou le saumon, ainsi que le jaune d'œuf et certains produits enrichis. L'alimentation couvre rarement à elle seule les besoins en hiver : la principale source reste la peau exposée au soleil à la belle saison."},
         ],
+        "sources": [
+            {"t": "Cashman KD, Dowling KG, Škrabáková Z, et al. Vitamin D deficiency in Europe: pandemic? <em>Am J Clin Nutr</em>. 2016.",
+             "u": "https://doi.org/10.3945/ajcn.115.120873"},
+            {"t": "Webb AR, Kline L, Holick MF. Influence of season and latitude on the cutaneous synthesis of vitamin D3: exposure to winter sunlight in Boston and Edmonton will not promote vitamin D3 synthesis in human skin. <em>J Clin Endocrinol Metab</em>. 1988.",
+             "u": "https://doi.org/10.1210/jcem-67-2-373"},
+            {"t": "Holick MF, MacLaughlin JA, Doppelt SH. Regulation of cutaneous previtamin D3 photosynthesis in man: skin pigment is not an essential regulator. <em>Science</em>. 1981.",
+             "u": "https://doi.org/10.1126/science.6256855"},
+            {"t": "Haute Autorité de santé. Utilité clinique du dosage de la vitamine D. Rapport d'évaluation. 2013.",
+             "u": "https://www.has-sante.fr/jcms/c_1356838/fr/utilite-clinique-du-dosage-de-la-vitamine-d-rapport-d-evaluation"},
+            {"t": "Nowak A, Boesch L, Andres E, et al. Effect of vitamin D3 on self-perceived fatigue: a double-blind randomized placebo-controlled trial. <em>Medicine (Baltimore)</em>. 2016.",
+             "u": "https://doi.org/10.1097/MD.0000000000005353"},
+            {"t": "EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA). Scientific opinion on the tolerable upper intake level for vitamin D, including the derivation of a conversion factor for calcidiol monohydrate. <em>EFSA J</em>. 2023.",
+             "u": "https://doi.org/10.2903/j.efsa.2023.8145"},
+        ],
     },
     {
         "slug": "deshydratation-fatigue-signes",
         "cat": "Énergie",
         "title": "Déshydratation et fatigue : les signes qui ne trompent pas",
-        "description": "Déshydratation et fatigue : perdre 1 à 2 % de ton poids en eau suffit à freiner concentration et performance. Les signes à repérer et comment te réhydrater.",
+        "description": "Déshydratation et fatigue : dès 1 à 2 % de ton poids perdu en eau, humeur et concentration flanchent. Les signes à repérer et comment bien te réhydrater.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : oui, un manque d'eau fatigue, et bien plus tôt qu'on ne le croit. Une perte de <strong>1 à 2 % de ton poids en eau</strong> suffit à dégrader la <strong>concentration</strong>, l'humeur et la <strong>performance physique</strong>. Pour 70 kg, c'est 0,7 à 1,4 L, soit ce qu'une à deux heures de sport en pleine suée, sans boire, peuvent te faire perdre. Les signes qui ne trompent pas : <strong>soif, urines foncées, bouche sèche, maux de tête</strong>. La réponse : boire régulièrement, sans te noyer.</p>
+<p>La réponse courte : oui, un manque d'eau fatigue, et bien plus tôt qu'on ne le croit. Une perte de <strong>1 à 2 % de ton poids en eau</strong> suffit à dégrader la <strong>concentration</strong> et l'humeur ; au-delà de 2 %, c'est la <strong>performance physique</strong> qui décroche. Pour 70 kg, c'est 0,7 à 1,4 L, soit ce qu'une à deux heures de sport en pleine suée, sans boire, peuvent te faire perdre. Les signes qui ne trompent pas : <strong>soif, urines foncées, bouche sèche, maux de tête</strong>. La réponse : boire régulièrement, sans te noyer.</p>
 <p>La bonne nouvelle, c'est que c'est l'une des causes de fatigue les plus faciles à corriger. Encore faut-il la repérer.</p>
 
 <h2>Pourquoi le manque d'eau fatigue-t-il autant ?</h2>
 <p>L'eau représente plus de la moitié de ton poids, et le moindre déficit se fait sentir. Quand tu en perds, le volume de sang diminue légèrement : le cœur doit battre plus vite pour assurer le même débit, et ta température grimpe plus facilement à l'effort. Le cerveau, lui, réagit par une baisse d'attention, une tête lourde et de l'irritabilité. Résultat : tout te coûte un peu plus, au bureau comme à l'entraînement.</p>
+<p>Dans un essai sur 25 jeunes femmes, une perte d'eau de 1,4 % seulement a suffi à augmenter la fatigue et les maux de tête, et à faire baisser la concentration. Une méta-analyse de 2018 montre que l'attention et la coordination sont les plus touchées, nettement plus au-delà de 2 % du poids perdu. C'est aussi le seuil que retient l'American College of Sports Medicine pour la performance à l'effort.</p>
 
 <h2>Quels sont les signes de déshydratation ?</h2>
 <ul>
@@ -212,7 +255,7 @@ ENTRIES = [
 
 <h2>Qui se déshydrate le plus facilement ?</h2>
 <ul>
-<li><strong>Les sportifs :</strong> une heure de transpiration, c'est souvent 0,5 à 1 L perdu, parfois plus. Une séance transpirée sans boire explique une bonne part de la <a href="/articles/fatigue-apres-le-sport-normal.html">fatigue après le sport</a>.</li>
+<li><strong>Les sportifs :</strong> chez 1 303 sportifs testés, la sueur perdue allait en moyenne de 0,8 à 1,5 L par heure selon le sport. Une séance transpirée sans boire explique une bonne part de la <a href="/articles/fatigue-apres-le-sport-normal.html">fatigue après le sport</a>.</li>
 <li><strong>Les personnes âgées :</strong> elles ressentent moins bien la soif. Les jeunes enfants aussi sont vulnérables.</li>
 <li><strong>Les malades :</strong> fièvre, diarrhée ou vomissements font perdre beaucoup d'eau, et vite.</li>
 <li><strong>Les lendemains de soirée :</strong> l'alcool fait uriner davantage, et une partie des symptômes de la gueule de bois vient de là.</li>
@@ -221,26 +264,40 @@ ENTRIES = [
 <h2>Comment se réhydrater efficacement ?</h2>
 <ul>
 <li><strong>Bois régulièrement plutôt que d'un coup :</strong> un verre à chaque repas et quelques-uns entre les deux valent mieux qu'un litre avalé le soir. Thé, café, soupes et l'eau des fruits et légumes comptent aussi. Pour la quantité de base, vois <a href="/articles/combien-d-eau-boire-par-jour.html">combien d'eau boire par jour</a>.</li>
-<li><strong>Après le sport, pèse-toi :</strong> chaque kilo perdu pendant la séance, c'est environ un litre d'eau à reprendre, progressivement, sur les heures qui suivent.</li>
+<li><strong>Après le sport, pèse-toi :</strong> chaque kilo perdu pendant la séance, c'est environ un litre de sueur. Rebois-en un peu plus, jusqu'à 1,5 L, progressivement sur les heures qui suivent : les essais de réhydratation montrent qu'il faut boire davantage que ce qu'on a perdu, avec un peu de sel, sinon une bonne part repart dans les urines.</li>
 <li><strong>Pense au sel après une grosse suée :</strong> un vrai repas suffit le plus souvent. Sur les efforts longs ou <a href="/articles/sport-quand-il-fait-chaud.html">par forte chaleur</a>, une boisson de l'effort a du sens.</li>
 <li><strong>En cas de diarrhée ou de vomissements :</strong> les solutés de réhydratation vendus en pharmacie sont conçus pour ça, et un avis médical s'impose si ça dure, surtout chez l'enfant ou la personne âgée.</li>
 </ul>
-<p>Inutile de forcer : avaler des litres d'eau plate en peu de temps, lors d'une épreuve longue par exemple, peut trop diluer le sodium du sang, ce qui est dangereux. Et si tu bois correctement, que tes urines sont claires mais que la fatigue persiste plusieurs semaines, l'eau n'est pas en cause : passe en revue les autres <a href="/articles/toujours-fatigue-causes.html">causes d'une fatigue constante</a> et consulte.</p>
+<p>Inutile de forcer : avaler des litres d'eau plate en peu de temps, lors d'une épreuve longue par exemple, peut trop diluer le sodium du sang, ce qui est dangereux. Au marathon de Boston 2002, 13 % des 488 coureurs testés à l'arrivée avaient un sodium trop bas, surtout ceux qui avaient pris du poids pendant la course, signe qu'ils avaient trop bu. Et si tu bois correctement, que tes urines sont claires mais que la fatigue persiste plusieurs semaines, l'eau n'est pas en cause : passe en revue les autres <a href="/articles/toujours-fatigue-causes.html">causes d'une fatigue constante</a> et consulte.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
 <li>Perdre 1 à 2 % de ton poids en eau suffit à freiner concentration, humeur et performance.</li>
 <li>Soif, urines foncées, maux de tête et cœur plus haut à l'effort sont les signes à surveiller.</li>
-<li>Bois régulièrement, reprends environ un litre par kilo perdu après le sport, et consulte si la fatigue persiste ou si des signes graves apparaissent.</li>
+<li>Bois régulièrement, reprends un peu plus d'un litre par kilo perdu après le sport, et consulte si la fatigue persiste ou si des signes graves apparaissent.</li>
 </ul>
 """,
         "faq": [
             {"q": "La déshydratation peut-elle donner des maux de tête et de la fatigue ?",
              "a": "Oui. Même une perte d'eau modérée, de l'ordre de 1 à 2 % du poids, peut entraîner maux de tête, fatigue, baisse de concentration et irritabilité. Boire régulièrement les fait généralement disparaître en quelques heures ; s'ils persistent, consulte."},
             {"q": "Combien de temps faut-il pour se réhydrater ?",
-             "a": "Pour une déshydratation légère, quelques heures suffisent en buvant régulièrement et en mangeant normalement. Après le sport, reprends environ un litre par kilo perdu, étalé sur les heures qui suivent. Une déshydratation importante, avec malaise ou confusion, relève d'un avis médical."},
+             "a": "Pour une déshydratation légère, quelques heures suffisent en buvant régulièrement et en mangeant normalement. Après le sport, reprends un peu plus que ce que tu as perdu, jusqu'à 1,5 L par kilo, étalé sur les heures qui suivent. Une déshydratation importante, avec malaise ou confusion, relève d'un avis médical."},
             {"q": "Quelle couleur d'urine quand on est bien hydraté ?",
              "a": "Jaune pâle. Des urines foncées et peu abondantes signalent qu'il faut boire davantage ; presque transparentes en permanence, tu bois probablement plus que nécessaire. Celles du matin sont naturellement plus foncées, et certains compléments vitaminés les colorent."},
+        ],
+        "sources": [
+            {"t": "Armstrong LE, Ganio MS, Casa DJ, et al. Mild dehydration affects mood in healthy young women. <em>J Nutr</em>. 2012.",
+             "u": "https://doi.org/10.3945/jn.111.142000"},
+            {"t": "Wittbrodt MT, Millard-Stafford M. Dehydration impairs cognitive performance: a meta-analysis. <em>Med Sci Sports Exerc</em>. 2018.",
+             "u": "https://doi.org/10.1249/MSS.0000000000001682"},
+            {"t": "American College of Sports Medicine, Sawka MN, Burke LM, et al. American College of Sports Medicine position stand. Exercise and fluid replacement. <em>Med Sci Sports Exerc</em>. 2007.",
+             "u": "https://doi.org/10.1249/mss.0b013e31802ca597"},
+            {"t": "Barnes KA, Anderson ML, Stofan JR, et al. Normative data for sweating rate, sweat sodium concentration, and sweat sodium loss in athletes: an update and analysis by sport. <em>J Sports Sci</em>. 2019.",
+             "u": "https://doi.org/10.1080/02640414.2019.1633159"},
+            {"t": "Shirreffs SM, Taylor AJ, Leiper JB, Maughan RJ. Post-exercise rehydration in man: effects of volume consumed and drink sodium content. <em>Med Sci Sports Exerc</em>. 1996.",
+             "u": "https://doi.org/10.1097/00005768-199610000-00009"},
+            {"t": "Almond CS, Shin AY, Fortescue EB, et al. Hyponatremia among runners in the Boston Marathon. <em>N Engl J Med</em>. 2005.",
+             "u": "https://doi.org/10.1056/NEJMoa043901"},
         ],
     },
     {
@@ -250,32 +307,45 @@ ENTRIES = [
         "description": "Boissons énergisantes : ce qu'une canette contient vraiment, leurs effets sur le sommeil et le cœur, qui doit les éviter et les meilleures alternatives.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : une boisson énergisante, c'est surtout de la <strong>caféine</strong> et, sauf version « zéro », beaucoup de <strong>sucre</strong>. Une canette de 250 ml contient souvent autour de <strong>80 mg de caféine</strong>, à peu près un expresso, et le double en format 500 ml. Le coup de fouet est réel mais temporaire, et il se paie : <strong>sommeil</strong> dégradé, <strong>cœur</strong> qui s'accélère, redescente brutale. À éviter pour les mineurs, les femmes enceintes et les personnes cardiaques, et <strong>jamais avec de l'alcool</strong>.</p>
+<p>La réponse courte : une boisson énergisante, c'est surtout de la <strong>caféine</strong> et, sauf version « zéro », beaucoup de <strong>sucre</strong>. Selon l'EFSA, une canette standard de 250 ml contient environ <strong>80 mg de caféine</strong>, autant qu'un expresso, et le double en format 500 ml. Le coup de fouet est réel mais temporaire, et il se paie : <strong>sommeil</strong> dégradé, <strong>cœur</strong> qui s'accélère, redescente brutale. À éviter pour les mineurs, les femmes enceintes et les personnes cardiaques, et <strong>jamais avec de l'alcool</strong>.</p>
 
 <h2>Que contient vraiment une boisson énergisante ?</h2>
 <ul>
 <li><strong>La caféine :</strong> c'est elle qui fait l'essentiel de l'effet. Le guarana, souvent ajouté, en est une source de plus.</li>
-<li><strong>Le sucre :</strong> souvent 25 à 30 g par canette de 250 ml, soit cinq à six morceaux. L'OMS recommande de limiter les sucres libres à moins de 10 % de l'énergie de la journée, idéalement 5 %, soit environ 25 g : une seule canette atteint ce seuil idéal.</li>
-<li><strong>Le reste :</strong> taurine, vitamines B, ginseng. Ils font joli sur l'étiquette, mais chez quelqu'un qui mange normalement, rien ne montre qu'ils ajoutent un effet énergisant notable.</li>
+<li><strong>Le sucre :</strong> 28 g en moyenne par canette de 250 ml selon l'ANSES, soit cinq à six morceaux. L'OMS recommande de limiter les sucres libres à moins de 10 % de l'énergie de la journée, idéalement 5 %, soit environ 25 g : une seule canette dépasse ce seuil idéal.</li>
+<li><strong>Le reste :</strong> taurine, vitamines B, ginseng. Ils font joli sur l'étiquette, mais c'est la caféine qui fait le travail : l'ANSES la désigne aussi comme la principale responsable des effets indésirables signalés.</li>
 </ul>
 <p>Les versions sans sucre suppriment le sucre, pas la caféine : les questions de sommeil et de cœur restent entières.</p>
 
 <h2>Quels effets sur le sommeil ?</h2>
-<p>La caféine a une demi-vie de 5 à 6 heures : une canette bue à 17 heures laisse encore environ la moitié de sa caféine active vers 22-23 heures. Même si tu t'endors, ta nuit est plus légère, avec moins de sommeil profond. Le lendemain, tu es plus fatigué, tu reprends une canette, et la boucle est lancée. Les règles de timing sont les mêmes que pour le café : <a href="/articles/cafe-et-sommeil-combien-de-temps-avant.html">combien de temps avant de dormir arrêter la caféine</a>.</p>
+<p>La caféine s'élimine lentement, en plusieurs heures, avec de grosses différences d'une personne à l'autre : une canette bue à 17 heures agit encore à l'heure du coucher. Une méta-analyse de 2023 (24 études) chiffre l'effet : 45 minutes de sommeil en moins en moyenne, et moins de sommeil profond ; pour l'éviter, un café d'environ 107 mg devrait être bu au moins 8,8 heures avant le coucher. Même si tu t'endors, ta nuit est plus légère. Le lendemain, tu es plus fatigué, tu reprends une canette, et la boucle est lancée. Les règles de timing sont les mêmes que pour le café : <a href="/articles/cafe-et-sommeil-combien-de-temps-avant.html">combien de temps avant de dormir arrêter la caféine</a>.</p>
 <p>Le sucre ajoute sa propre redescente : le coup de fouet d'une canette sucrée est souvent suivi d'un coup de mou, par le mécanisme du <a href="/articles/pic-de-glycemie-fatigue.html">pic de glycémie</a>.</p>
 
 <h2>Les boissons énergisantes sont-elles dangereuses pour le cœur ?</h2>
-<p>À dose modérée, chez un adulte en bonne santé, la caféine est bien tolérée : l'autorité européenne de sécurité des aliments estime qu'un apport allant jusqu'à <strong>400 mg par jour</strong>, café et thé compris, ne pose pas de problème de sécurité, hors grossesse. Au-delà, ou chez les personnes sensibles, elle accélère le cœur, élève la tension, et peut provoquer <strong>palpitations</strong>, tremblements, anxiété et troubles digestifs.</p>
-<p>Les ennuis sérieux surviennent surtout quand plusieurs facteurs s'additionnent : grosses quantités, mélange avec l'alcool, effort intense, fragilité cardiaque méconnue. Les autorités sanitaires ont recensé des troubles du rythme cardiaque dans ces contextes. Si tu ressens des palpitations, une douleur dans la poitrine ou un essoufflement anormal après en avoir bu, arrête et consulte un médecin.</p>
+<p>À dose modérée, chez un adulte en bonne santé, la caféine est bien tolérée. Voici les repères de l'autorité européenne de sécurité des aliments, toutes sources comprises, café et thé inclus :</p>
+<div class="tablewrap"><table>
+<caption>Source : Autorité européenne de sécurité des aliments (EFSA, 2015).</caption>
+<thead><tr><th>Situation</th><th class="n">Repère de caféine</th></tr></thead>
+<tbody>
+<tr><td>Canette standard de 250 ml</td><td class="n">environ 80 mg</td></tr>
+<tr><td>Adulte en bonne santé, en une prise</td><td class="n">jusqu'à 200 mg</td></tr>
+<tr><td>Adulte en bonne santé, sur la journée</td><td class="n">jusqu'à 400 mg</td></tr>
+<tr><td>Femme enceinte ou qui allaite, sur la journée</td><td class="n">jusqu'à 200 mg</td></tr>
+<tr><td>Enfant ou adolescent, sur la journée</td><td class="n">3 mg par kg de poids</td></tr>
+<tr><td>Près du coucher</td><td class="n">100 mg peuvent déjà gêner le sommeil</td></tr>
+</tbody>
+</table></div>
+<p>Au-delà, ou chez les personnes sensibles, elle accélère le cœur, élève la tension, et peut provoquer <strong>palpitations</strong>, tremblements, anxiété et troubles digestifs.</p>
+<p>Les ennuis sérieux surviennent surtout quand plusieurs facteurs s'additionnent : grosses quantités, mélange avec l'alcool, effort intense, fragilité cardiaque méconnue. En France, l'ANSES a analysé 212 signalements d'effets indésirables : pour 25 d'entre eux, le lien avec la boisson a été jugé vraisemblable, avec surtout des troubles cardiovasculaires (tachycardie, douleurs dans la poitrine, jusqu'à l'arrêt cardiaque). Si tu ressens des palpitations, une douleur dans la poitrine ou un essoufflement anormal après en avoir bu, arrête et consulte un médecin.</p>
 
 <h2>Qui doit éviter les boissons énergisantes ?</h2>
 <ul>
 <li><strong>Les mineurs :</strong> ils sont plus sensibles à la caféine, et leur sommeil en pâtit vite.</li>
 <li><strong>Les femmes enceintes ou qui allaitent :</strong> la caféine passe au bébé, et les apports doivent de toute façon rester bas.</li>
 <li><strong>Les personnes cardiaques ou hypertendues :</strong> la caféine accélère le cœur et élève la tension, ce qui n'a rien d'anodin pour elles. Même prudence si tu es sensible à la caféine ou sujet à l'anxiété.</li>
-<li><strong>Tout le monde, avec de l'alcool :</strong> la caféine masque l'ivresse sans rien changer à l'alcoolémie. On se sent moins soûl, on boit plus, et les effets sur le cœur s'additionnent. C'est un mélange à ne jamais faire.</li>
+<li><strong>Tout le monde, avec de l'alcool :</strong> la caféine ne change rien à l'alcoolémie. Elle chasse la fatigue de l'alcool et, selon une revue de la littérature de 2015, donne envie de continuer à boire. L'ANSES ajoute que l'alcool peut aggraver les troubles du rythme cardiaque liés à la caféine chez les personnes prédisposées. C'est un mélange à ne jamais faire.</li>
 </ul>
-<p>Autre confusion fréquente : une boisson énergisante n'est pas une <strong>boisson de l'effort</strong>. Trop sucrée, gazeuse et caféinée, elle hydrate mal et ne convient pas pour boire pendant le sport, encore moins par forte chaleur.</p>
+<p>Autre confusion fréquente : une boisson énergisante n'est pas une <strong>boisson de l'effort</strong>. Trop sucrée, gazeuse et caféinée, elle hydrate mal : l'ANSES déconseille d'en boire pendant l'exercice, encore moins par forte chaleur.</p>
 
 <h2>Quelles alternatives pour avoir de l'énergie ?</h2>
 <ul>
@@ -287,18 +357,30 @@ ENTRIES = [
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
-<li>Une canette de 250 ml, c'est souvent autour de 80 mg de caféine et 25 à 30 g de sucre : l'effet est réel, mais court.</li>
+<li>Une canette de 250 ml, c'est environ 80 mg de caféine et 28 g de sucre en moyenne : l'effet est réel, mais court.</li>
 <li>Bue tard, elle dégrade le sommeil ; à forte dose, elle peut provoquer palpitations et hausse de tension.</li>
 <li>À éviter pour les mineurs, les femmes enceintes et les cardiaques, jamais avec de l'alcool ; préfère un café tôt, de l'eau et une sieste courte.</li>
 </ul>
 """,
         "faq": [
             {"q": "Combien de caféine dans une canette de boisson énergisante ?",
-             "a": "Souvent autour de 80 mg pour une canette de 250 ml, à peu près un expresso, et environ le double pour les grands formats de 500 ml. La teneur varie selon les marques : elle figure sur l'étiquette, en général pour 100 ml."},
+             "a": "Souvent autour de 80 mg pour une canette de 250 ml, à peu près un expresso, et environ le double pour les grands formats de 500 ml. La teneur varie selon les marques, de 12 à 32 mg pour 100 ml d'après l'ANSES : elle figure sur l'étiquette, en général pour 100 ml."},
             {"q": "Peut-on boire une boisson énergisante avant le sport ?",
              "a": "Ce n'est pas l'idéal : trop sucrée et gazeuse, elle hydrate mal, et la caféine combinée à un effort intense ou à la chaleur sollicite davantage le cœur. Si tu cherches l'effet de la caféine, un café 30 à 60 minutes avant la séance fait le travail, loin de l'heure du coucher."},
             {"q": "Pourquoi ne faut-il pas mélanger alcool et boisson énergisante ?",
-             "a": "Parce que la caféine masque la sensation d'ivresse sans réduire l'alcoolémie : on se croit en forme, on boit davantage et on prend plus de risques. Les effets sur le cœur s'additionnent aussi. C'est un mélange à ne jamais faire."},
+             "a": "Parce que la caféine ne réduit pas l'alcoolémie : elle chasse la fatigue de l'alcool, donne l'impression d'être plus alerte et pousse à continuer à boire. Chez les personnes prédisposées, l'alcool peut aussi aggraver les troubles du rythme cardiaque liés à la caféine. C'est un mélange à ne jamais faire."},
+        ],
+        "sources": [
+            {"t": "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on the safety of caffeine. <em>EFSA J</em>. 2015.",
+             "u": "https://doi.org/10.2903/j.efsa.2015.4102"},
+            {"t": "Anses. Avis relatif à l'évaluation des risques liés à la consommation de boissons dites « énergisantes » (saisine n° 2012-SA-0212). 2013.",
+             "u": "https://www.anses.fr/fr/system/files/NUT2012sa0212.pdf"},
+            {"t": "World Health Organization. Guideline: sugars intake for adults and children. 2015.",
+             "u": "https://www.who.int/publications/i/item/9789241549028"},
+            {"t": "Gardiner C, Weakley J, Burke LM, et al. The effect of caffeine on subsequent sleep: a systematic review and meta-analysis. <em>Sleep Med Rev</em>. 2023.",
+             "u": "https://doi.org/10.1016/j.smrv.2023.101764"},
+            {"t": "McKetin R, Coen A, Kaye S. A comprehensive review of the effects of mixing caffeinated energy drinks with alcohol. <em>Drug Alcohol Depend</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.drugalcdep.2015.01.047"},
         ],
     },
     {
@@ -309,11 +391,11 @@ ENTRIES = [
         "date": "2026-12-01",
         "body": """
 <p>La réponse courte : l'énergie du matin se joue en deux temps. <strong>La veille</strong>, avec un sommeil suffisant et des horaires réguliers. <strong>Au réveil</strong>, avec une routine simple : te lever à <strong>heure fixe</strong>, prendre la <strong>lumière du jour</strong>, boire un grand <strong>verre d'eau</strong>, <strong>bouger</strong> quelques minutes, décaler un peu ton <strong>café</strong> et manger un <strong>petit-déjeuner protéiné</strong> si tu as faim. Aucun de ces gestes n'est spectaculaire ; ensemble, ils changent tes matinées.</p>
-<p>Et rassure-toi : te sentir vaseux pendant les premières minutes est normal. C'est l'inertie du sommeil, le temps que ton cerveau passe en mode éveil. Elle dure de quelques minutes à une demi-heure, parfois plus après une nuit courte.</p>
+<p>Et rassure-toi : te sentir vaseux pendant les premières minutes est normal. C'est l'inertie du sommeil, le temps que ton cerveau passe en mode éveil. Selon une revue de référence (Tassi et Muzet, 2000), elle dépasse rarement une demi-heure, sauf après une vraie privation de sommeil, où elle peut durer bien plus.</p>
 
 <h2>Pourquoi suis-je fatigué le matin même après une bonne nuit ?</h2>
 <ul>
-<li><strong>Tu dors moins que tu ne crois :</strong> sept heures au lit, c'est souvent un peu plus de six heures de sommeil réel. La plupart des adultes ont besoin de 7 à 9 heures, et <a href="/articles/combien-heures-sommeil-par-nuit.html">ton besoin réel se mesure</a>.</li>
+<li><strong>Tu dors moins que tu ne crois :</strong> dans l'étude américaine CARDIA, mesurée au poignet chez 669 adultes de 38 à 50 ans, 7 h 30 passées au lit en moyenne donnaient à peine plus de 6 heures de sommeil réel. Selon la National Sleep Foundation, la plupart des adultes ont besoin de 7 à 9 heures, et <a href="/articles/combien-heures-sommeil-par-nuit.html">ton besoin réel se mesure</a>.</li>
 <li><strong>Tes horaires bougent :</strong> te coucher à 23 heures en semaine et à 2 heures le samedi dérègle ton horloge interne, qui ne sait plus quand te réveiller.</li>
 <li><strong>Ton réveil t'arrache au sommeil profond :</strong> l'inertie est alors plus lourde et plus longue.</li>
 <li><strong>Ta soirée a pesé sur ta nuit :</strong> alcool, dîner copieux et tardif, écrans jusqu'au coucher.</li>
@@ -321,7 +403,7 @@ ENTRIES = [
 
 <h2>Quelle routine du matin pour avoir de l'énergie ?</h2>
 <ul>
-<li><strong>Un lever à heure fixe, 7 jours sur 7 :</strong> à 30-45 minutes près, week-end compris. C'est le lever qui règle l'horloge, et le coucher finit par suivre : <a href="/articles/se-coucher-meme-heure-regularite.html">la régularité change plus de choses qu'on ne pense</a>. Oublie le snooze, qui ne t'offre que des bribes de sommeil léger entrecoupées de sonneries.</li>
+<li><strong>Un lever à heure fixe, 7 jours sur 7 :</strong> à 30-45 minutes près, week-end compris. C'est le lever qui règle l'horloge, et le coucher finit par suivre : <a href="/articles/se-coucher-meme-heure-regularite.html">la régularité change plus de choses qu'on ne pense</a>. Le snooze, lui, est moins coupable qu'on le dit : chez 31 habitués, une étude suédoise de 2024 n'a trouvé aucun effet négatif net de 30 minutes de snooze sur la vigilance ou l'humeur, pour environ 6 minutes de sommeil perdues. Régler ta sonnerie sur l'heure où tu te lèves vraiment reste plus simple.</li>
 <li><strong>La lumière naturelle dans la première heure :</strong> c'est le signal le plus puissant pour dire à ton horloge qu'il fait jour. Ouvre grand les volets et sors quelques minutes : même sous un ciel gris, la lumière du dehors est bien plus intense que celle d'une pièce éclairée.</li>
 <li><strong>Un grand verre d'eau :</strong> après une nuit sans boire, c'est le geste le plus simple pour démarrer.</li>
 <li><strong>Quelques minutes de mouvement :</strong> marche, mobilité, un escalier. Le corps se réchauffe, le sang circule, la vigilance monte.</li>
@@ -340,22 +422,36 @@ ENTRIES = [
 <p>Pas faim le matin ? Ce n'est pas une faute, et te forcer n'apporte rien. Pense simplement à manger un peu avant une séance intense, et à ne pas compenser par un grignotage sucré à 11 heures.</p>
 
 <h2>Et si tu restes fatigué tous les matins ?</h2>
-<p>Si tu appliques tout ça et que tu te lèves encore épuisé, regarde deux pistes. D'abord ton profil : les « du soir » ont une horloge naturellement décalée, qu'on peut avancer un peu mais pas inverser, d'où l'intérêt de connaître ton <a href="/articles/chronotype-matin-ou-soir.html">chronotype</a>. Ensuite ta santé : ronflements, réveils la bouche sèche, maux de tête au lever et somnolence dans la journée peuvent évoquer une apnée du sommeil. Une fatigue qui persiste plusieurs semaines malgré des nuits suffisantes se discute avec un médecin.</p>
+<p>Si tu appliques tout ça et que tu te lèves encore épuisé, regarde deux pistes. D'abord ton profil : les « du soir » ont une horloge naturellement décalée, qu'on peut avancer un peu mais pas inverser. Dans une étude de 2013, une semaine de camping à la seule lumière naturelle a avancé l'horloge interne des participants, et davantage chez les plus tardifs : d'où l'intérêt de la lumière du matin et de connaître ton <a href="/articles/chronotype-matin-ou-soir.html">chronotype</a>. Ensuite ta santé : ronflements, réveils la bouche sèche, maux de tête au lever et somnolence dans la journée peuvent évoquer une apnée du sommeil. Une fatigue qui persiste plusieurs semaines malgré des nuits suffisantes se discute avec un médecin.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
 <li>L'énergie du matin commence la veille : 7 à 9 heures de sommeil réel, à horaires réguliers.</li>
-<li>Au réveil : lever fixe sans snooze, lumière naturelle, verre d'eau, quelques minutes de mouvement, café décalé.</li>
+<li>Au réveil : lever fixe, lumière naturelle, verre d'eau, quelques minutes de mouvement, café décalé.</li>
 <li>Petit-déjeuner protéiné si tu as faim ; si la fatigue persiste malgré tout, direction le médecin.</li>
 </ul>
 """,
         "faq": [
             {"q": "Comment se réveiller en forme le matin ?",
-             "a": "Garde une heure de lever fixe, même le week-end, sans snooze. Expose-toi à la lumière du jour dans la première heure, bois un grand verre d'eau et bouge quelques minutes. Et surtout, dors assez : 7 à 9 heures de sommeil réel pour la plupart des adultes."},
+             "a": "Garde une heure de lever fixe, même le week-end, et règle ton réveil sur l'heure où tu te lèves vraiment. Expose-toi à la lumière du jour dans la première heure, bois un grand verre d'eau et bouge quelques minutes. Et surtout, dors assez : 7 à 9 heures de sommeil réel pour la plupart des adultes."},
             {"q": "Que boire le matin pour avoir de l'énergie ?",
              "a": "Commence par un grand verre d'eau, puis un café ou un thé si tu en as l'habitude, idéalement 30 à 60 minutes après le lever. Évite les jus et boissons sucrées à jeun, qui provoquent un pic de glycémie suivi d'un coup de mou en milieu de matinée."},
             {"q": "Est-ce grave d'être fatigué tous les matins ?",
              "a": "Le plus souvent, c'est le signe de nuits trop courtes ou d'horaires irréguliers. Mais si tu dors suffisamment et que la fatigue persiste plusieurs semaines, surtout avec ronflements, maux de tête au réveil ou somnolence dans la journée, parles-en à un médecin."},
+        ],
+        "sources": [
+            {"t": "Tassi P, Muzet A. Sleep inertia. <em>Sleep Med Rev</em>. 2000.",
+             "u": "https://doi.org/10.1053/smrv.2000.0098"},
+            {"t": "Lauderdale DS, Knutson KL, Yan LL, et al. Objectively measured sleep characteristics among early-middle-aged adults: the CARDIA study. <em>Am J Epidemiol</em>. 2006.",
+             "u": "https://doi.org/10.1093/aje/kwj199"},
+            {"t": "Hirshkowitz M, Whiton K, Albert SM, et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. <em>Sleep Health</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.sleh.2014.12.010"},
+            {"t": "Sundelin T, Landry S, Axelsson J. Is snoozing losing? Why intermittent morning alarms are used and how they affect sleep, cognition, cortisol, and mood. <em>J Sleep Res</em>. 2024.",
+             "u": "https://doi.org/10.1111/jsr.14054"},
+            {"t": "Wright KP Jr, McHill AW, Birks BR, et al. Entrainment of the human circadian clock to the natural light-dark cycle. <em>Curr Biol</em>. 2013.",
+             "u": "https://doi.org/10.1016/j.cub.2013.06.039"},
+            {"t": "Reichert CF, Deboer T, Landolt HP. Adenosine, caffeine, and sleep-wake regulation: state of the science and perspectives. <em>J Sleep Res</em>. 2022.",
+             "u": "https://doi.org/10.1111/jsr.13597"},
         ],
     },
 ]

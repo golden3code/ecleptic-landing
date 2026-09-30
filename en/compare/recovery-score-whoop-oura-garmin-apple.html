@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Recovery score: Whoop, Oura, Garmin, Apple compared</title>
+<meta name="description" content="Whoop, Oura, Garmin, Apple Watch and Ecleptic: each recovery score&#x27;s name, scale, signals, personal baseline, hardware and subscription, with linked sources.">
+<link rel="canonical" href="https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html">
+<meta property="og:title" content="Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it">
+<meta property="og:description" content="Whoop, Oura, Garmin, Apple Watch and Ecleptic: each recovery score&#x27;s name, scale, signals, personal baseline, hardware and subscription, with linked sources.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html">
+<meta property="og:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it", "description": "Whoop, Oura, Garmin, Apple Watch and Ecleptic: each recovery score's name, scale, signals, personal baseline, hardware and subscription, with linked sources.", "image": "https://ecleptic.health/assets/og/journal.jpg", "datePublished": "2026-09-30", "dateModified": "2026-09-30", "inLanguage": "en", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html", "citation": [{"@type": "CreativeWork", "name": "WHOOP. WHOOP Recovery (support, publié le 11 septembre 2025). Consulté le 30 septembre 2026.", "url": "https://support.whoop.com/s/article/WHOOP-Recovery?language=en_US"}, {"@type": "CreativeWork", "name": "WHOOP for Developers. WHOOP 101. Consulté le 30 septembre 2026.", "url": "https://developer.whoop.com/docs/whoop-101/"}, {"@type": "CreativeWork", "name": "WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026.", "url": "https://support.whoop.com/s/article/Membership-Pricing?language=en_US"}, {"@type": "CreativeWork", "name": "WHOOP. WHOOP Journal Overview (support, publié le 18 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.whoop.com/s/article/WHOOP-Journal-Overview?language=en_US"}, {"@type": "CreativeWork", "name": "Oura. Readiness Score (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/en-us/articles/360025589793-Readiness-Score"}, {"@type": "CreativeWork", "name": "Oura. Readiness Contributors (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/en-us/articles/360057791533-Readiness-Contributors"}, {"@type": "CreativeWork", "name": "Oura. Score de préparation (Member Care, version française). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/fr/articles/360025589793-Score-de-pr%C3%A9paration"}, {"@type": "CreativeWork", "name": "Oura. Oura Membership (Member Care, mis à jour le 8 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"}, {"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Venu X1 : Training Readiness (septembre 2026). Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html"}, {"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Venu X1 : Préparation à l'entraînement (version française). Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html"}, {"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Venu X1 : Heart Rate Variability Status. Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-9282196F-D969-404D-B678-F48A13D8D0CB.html"}, {"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Forerunner 965 : Training Readiness. Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-0221611A-992D-495E-8DED-1DD448F7A066/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html"}, {"@type": "CreativeWork", "name": "Apple. Guide d'utilisation de l'Apple Watch : Use the Readiness app on Apple Watch (watchOS 27). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/guide/watch/readiness-flx4gnzby346/watchos"}, {"@type": "CreativeWork", "name": "Apple. Understand your readiness score on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/en-us/128112"}, {"@type": "CreativeWork", "name": "Apple. Comprendre votre score de préparation sur l'Apple Watch (publié le 28 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/fr-fr/128112"}, {"@type": "CreativeWork", "name": "Apple. Use the Vitals app on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/en-us/120142"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Compare", "item": "https://ecleptic.health/en/compare/"}, {"@type": "ListItem", "position": 2, "name": "Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it", "item": "https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does Whoop calculate its recovery score?", "acceptedAnswer": {"@type": "Answer", "text": "Every night, Whoop combines your HRV, compared with your 30-day baseline, resting heart rate, respiratory rate, sleep versus need, skin temperature, SpO₂ and cycle phase. The score runs from 0 to 100%: green from 67%, red at 33% or below."}}, {"@type": "Question", "name": "What is the difference between the Apple Watch readiness score and Whoop Recovery?", "acceptedAnswer": {"@type": "Answer", "text": "Apple scores from 0 to 10, Whoop from 0 to 100%. Apple factors in your activity and training load and lets its score move during the day; Whoop Recovery stays fixed until the next morning."}}, {"@type": "Question", "name": "Can you get a recovery score without a watch or a ring?", "acceptedAnswer": {"@type": "Answer", "text": "Whoop, Oura, Garmin and Apple calculate their score with their own device. Ecleptic also works without a watch: the vitals pillar is removed and its weight shared among sleep, nutrition and rhythm, with a confidence index."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/comparatifs/score-de-recuperation-whoop-oura-garmin-apple.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/comparatifs/score-de-recuperation-whoop-oura-garmin-apple.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/compare/recovery-score-whoop-oura-garmin-apple.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode data compare">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/compare/">Compare</a><span aria-hidden="true">/</span><span>Recovery score</span></nav>
+    <span class="label"><span class="gold">Comparison &nbsp;&middot;&nbsp; Verified public information</span></span>
+    <h1>Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it</h1>
+    <p class="standfirst">All five compare your overnight signals with your own normal, but not on the same scale or with the same ingredients: Whoop rates Recovery from 0 to 100%, Oura and Ecleptic out of 100, Garmin from 1 to 100, Apple Watch from 0 to 10, and among the signals these five brands publish, only Ecleptic's includes what you eat.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic</p>
+  </header>
+<p><em>Ecleptic is our app; this comparison sticks to each brand's public information, linked in the sources below, checked on September 30, 2026.</em></p>
+<h2>The shared principle: you versus you</h2>
+<p>A recovery score answers one question: is your body ready to take on effort this morning? The five tools compared here start from the same idea: place your overnight signals, starting with your <a href="/en/journal/what-is-hrv-heart-rate-variability.html">heart rate variability (HRV)</a> and your <a href="/en/journal/normal-resting-heart-rate.html">resting heart rate</a>, against your own normal rather than a population average.</p>
+
+<h2>The comparison table</h2>
+<div class="tablewrap"><table>
+<caption>Information published by each brand, checked on September 30, 2026. Sources at the bottom of the page.</caption>
+<thead><tr><th>Brand</th><th>Score</th><th>Scale</th><th>Published signals</th><th>Personal baseline</th><th>Hardware</th><th>Subscription required</th></tr></thead>
+<tbody>
+<tr><td>Whoop</td><td>Recovery</td><td>0 to 100%</td><td>HRV, resting heart rate, respiratory rate, sleep vs. need, light sleep and awake time, skin temperature, SpO₂, cycle phase</td><td>HRV: 30 days</td><td>WHOOP sensor</td><td>Yes, sensor included</td></tr>
+<tr><td>Oura</td><td>Readiness Score</td><td>0 to 100</td><td>9 contributors: resting heart rate, HRV, temperature, recovery index, sleep, activity</td><td>14 days vs. 2 or 3 months</td><td>Oura Ring</td><td>No for the daily score; yes for the details</td></tr>
+<tr><td>Garmin</td><td>Training Readiness</td><td>1 to 100</td><td>Sleep, recovery time, HRV status, acute load, stress over the last 3 days</td><td>HRV: 7-day average vs. your baseline range</td><td>Compatible Garmin watch</td><td>No, calculated on the watch</td></tr>
+<tr><td>Apple Watch</td><td>Readiness score</td><td>0 to 10</td><td>Activity and training load, overnight and daytime vitals, sleep score</td><td>At least 7 of the past 49 nights</td><td>Series 12 or Ultra 4</td><td>None among the requirements</td></tr>
+<tr><td>Ecleptic</td><td>Readiness Score</td><td>Out of 100</td><td>Overnight vitals, sleep, nutrition, rhythm and load</td><td>Vitals: 42 days</td><td>iPhone; watch optional</td><td>Free iOS beta</td></tr>
+</tbody>
+</table></div>
+
+<h2>Whoop: Recovery, from 0 to 100%</h2>
+<p>Calculated every night and delivered when you wake up, Recovery is green from 67% and red at 33% or below. It combines eight signals: HRV, resting heart rate, respiratory rate, hours of sleep versus estimated need, light sleep and awake time, skin temperature, SpO₂ and, where applicable, cycle phase. Whoop states that HRV and resting heart rate weigh the most, and that your HRV is compared with your 30-day baseline. The score does not change during the day unless you edit your sleep.</p>
+
+<h2>Oura: the Readiness Score</h2>
+<p>Rated from 0 to 100 (optimal from 85), it rests on nine contributors: resting heart rate, HRV balance, body temperature, recovery index, sleep, sleep balance, sleep regularity, previous day activity and activity balance. The "balance" contributors compare your last 14 days with your long-term average (two months, three for HRV balance), and Oura allows up to two weeks to learn your values. Without an active membership, the app still shows your three daily scores; the membership unlocks the details.</p>
+
+<h2>Garmin: Training Readiness</h2>
+<p>On compatible watches, such as the Venu X1 or the Forerunner 965, this 1-to-100 score is recalculated continuously from six factors: last night's sleep score, recovery time, HRV status, acute load, sleep over the last three nights and stress over the last three days. The comparison with your normal comes through HRV status: your seven-day average against your baseline range, shown after three weeks of consistent sleep data.</p>
+
+<h2>Apple Watch: the readiness score, from 0 to 10</h2>
+<p>With watchOS 27, the Readiness app on Apple Watch Series 12 and Ultra 4 scores you from 0 to 10, from "Recover" (0-1) to "Go For It" (8-10). It combines your recent activity (active calories, effort ratings, training load), your overnight vitals (heart rate, respiratory rate, wrist temperature, HRV, blood oxygen) and daytime heart rate, and your sleep score. Vitals are compared with your recent baseline, which requires at least 7 nights with the watch out of the past 49. The score changes during the day.</p>
+
+<h2>Ecleptic: a score out of 100 that includes your nutrition</h2>
+<p>Our Readiness Score starts from your night when you wake up, then updates with your meals and workouts. Its four pillars and their weights are published: <a href="/en/method/vitals.html">overnight vitals</a> (42 points), sleep (21), <a href="/en/method/nutrition.html">nutrition</a> (21) and rhythm with training load (16). Each vital is compared with your normal over the last 42 days: 7 days for a <a href="/en/method/baseline.html">baseline</a> to exist, 28 for it to be fully reliable. The details: <a href="/en/method/readiness-score.html">the Readiness Score method</a>.</p>
+
+<h2>What actually differs from one score to the next</h2>
+<ul>
+<li><strong>The scale:</strong> a 70 on one app is not a 70 on another. Compare each score with its own history, never across brands.</li>
+<li><strong>The window:</strong> 30 days for HRV on Whoop, 14 days against two or three months on Oura, 49 nights on Apple Watch, 42 days on Ecleptic. A short window reacts fast; a long one smooths.</li>
+<li><strong>The timing:</strong> Whoop locks Recovery for the day; Garmin, Apple and Ecleptic let their score move.</li>
+<li><strong>The ingredients:</strong> all of them read your heart and your sleep; Garmin, Oura and Apple add activity or load. According to the official pages we checked, food feeds directly into Ecleptic's calculation only; Whoop links it to Recovery through the correlations in its Journal.</li>
+</ul>
+
+<h2>How to read your score</h2>
+<p>Whoop, Apple and Ecleptic all say it: these scores are wellness guides, not diagnoses. One low day is not an alarm; the trend is what counts. To go further: <a href="/en/journal/readiness-score-how-it-works.html">how a readiness score works</a>.</p>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>How does Whoop calculate its recovery score?</h3>
+    <p>Every night, Whoop combines your HRV, compared with your 30-day baseline, resting heart rate, respiratory rate, sleep versus need, skin temperature, SpO₂ and cycle phase. The score runs from 0 to 100%: green from 67%, red at 33% or below.</p>
+    <h3>What is the difference between the Apple Watch readiness score and Whoop Recovery?</h3>
+    <p>Apple scores from 0 to 10, Whoop from 0 to 100%. Apple factors in your activity and training load and lets its score move during the day; Whoop Recovery stays fixed until the next morning.</p>
+    <h3>Can you get a recovery score without a watch or a ring?</h3>
+    <p>Whoop, Oura, Garmin and Apple calculate their score with their own device. Ecleptic also works without a watch: the vitals pillar is removed and its weight shared among sleep, nutrition and rhythm, with a confidence index.</p>
+  </section>
+  <section class="refs">
+    <h2>Sources</h2>
+    <ol>
+      <li>WHOOP. WHOOP Recovery (support, publié le 11 septembre 2025). Consulté le 30 septembre 2026. <a href="https://support.whoop.com/s/article/WHOOP-Recovery?language=en_US" rel="noopener" target="_blank">support.whoop.com</a></li>
+      <li>WHOOP for Developers. WHOOP 101. Consulté le 30 septembre 2026. <a href="https://developer.whoop.com/docs/whoop-101/" rel="noopener" target="_blank">developer.whoop.com</a></li>
+      <li>WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026. <a href="https://support.whoop.com/s/article/Membership-Pricing?language=en_US" rel="noopener" target="_blank">support.whoop.com</a></li>
+      <li>WHOOP. WHOOP Journal Overview (support, publié le 18 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.whoop.com/s/article/WHOOP-Journal-Overview?language=en_US" rel="noopener" target="_blank">support.whoop.com</a></li>
+      <li>Oura. Readiness Score (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/en-us/articles/360025589793-Readiness-Score" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Oura. Readiness Contributors (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/en-us/articles/360057791533-Readiness-Contributors" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Oura. Score de préparation (Member Care, version française). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/fr/articles/360025589793-Score-de-pr%C3%A9paration" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Oura. Oura Membership (Member Care, mis à jour le 8 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Garmin. Manuel d'utilisation Venu X1 : Training Readiness (septembre 2026). Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>Garmin. Manuel d'utilisation Venu X1 : Préparation à l'entraînement (version française). Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>Garmin. Manuel d'utilisation Venu X1 : Heart Rate Variability Status. Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-9282196F-D969-404D-B678-F48A13D8D0CB.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>Garmin. Manuel d'utilisation Forerunner 965 : Training Readiness. Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-0221611A-992D-495E-8DED-1DD448F7A066/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>Apple. Guide d'utilisation de l'Apple Watch : Use the Readiness app on Apple Watch (watchOS 27). Consulté le 30 septembre 2026. <a href="https://support.apple.com/guide/watch/readiness-flx4gnzby346/watchos" rel="noopener" target="_blank">support.apple.com</a></li>
+      <li>Apple. Understand your readiness score on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.apple.com/en-us/128112" rel="noopener" target="_blank">support.apple.com</a></li>
+      <li>Apple. Comprendre votre score de préparation sur l'Apple Watch (publié le 28 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.apple.com/fr-fr/128112" rel="noopener" target="_blank">support.apple.com</a></li>
+      <li>Apple. Use the Vitals app on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.apple.com/en-us/120142" rel="noopener" target="_blank">support.apple.com</a></li>
+    </ol>
+  </section>
+  <div class="reward">
+    <span class="label">Go further</span>
+    <h2>What this article explains,<br>the app measures for you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('compare_cta_click',{page:'recuperation',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Other comparisons</span>
+<a href="/en/compare/app-sleep-nutrition-training-iphone.html">Which app connects sleep, nutrition and training on iPhone?</a>
+<a href="/en/compare/biological-age-app-whoop-garmin-oura.html">Biological age, heart age, fitness age: how apps calculate it</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('compare_view',{page:'recuperation',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

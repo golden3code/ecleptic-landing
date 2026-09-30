@@ -283,7 +283,7 @@ nav.site .links a{color:var(--muted);text-decoration:none;font-weight:400}
 nav.site .links a.on{color:var(--ink)}
 nav.site .links a:hover{color:var(--gold)}
 nav.site .langsw{display:inline-flex;gap:10px;padding-left:18px;border-left:1px solid var(--line)}
-nav.site .langsw a{color:var(--muted)}
+nav.site .langsw a{color:var(--muted);padding:8px 5px;margin:-8px -5px}
 nav.site .langsw a.on{color:var(--gold)}
 @media(max-width:560px){nav.site .langsw{padding-left:12px}nav.site{flex-direction:column;align-items:flex-start;gap:16px;padding:22px 24px}nav.site .links{gap:14px;font-size:10px;letter-spacing:.16em;flex-wrap:wrap}nav.site .logo{font-size:13px;letter-spacing:.35em}}
 /* Mega-menu du bandeau (facon apple.com), construit par /assets/nav.js :
@@ -494,6 +494,7 @@ article caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(-
 article th{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--gold);text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);white-space:nowrap}
 article td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
 article td.n,article th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.compare .tablewrap th:first-child,.compare .tablewrap td:first-child{position:sticky;left:0;background:var(--bg);z-index:1;padding-left:2px}
 @media(max-width:640px){article .grp{display:none}article.data th,article.data td{font-size:14px}article.data th{white-space:normal;letter-spacing:.12em}}
 """
 
@@ -1947,7 +1948,7 @@ def _load_compare():
 
 # Publication des comparatifs : False tant que les pages ne sont pas relues (publicité
 # comparative). ECLEPTIC_COMPARE=1 / 0 force la valeur (tests dans une copie).
-COMPARE_LIVE = False
+COMPARE_LIVE = True
 if os.environ.get("ECLEPTIC_COMPARE") in ("0", "1"):
     COMPARE_LIVE = os.environ["ECLEPTIC_COMPARE"] == "1"
 COMPARE = _load_compare() if COMPARE_LIVE else []
@@ -2018,7 +2019,7 @@ def compare_page(c, lang="fr"):
 <body>
 %(nav)s
 <main class="wrap">
-<article class="methode data">
+<article class="methode data compare">
   <header>
     <nav class="crumbs" aria-label="%(crumbs_aria)s"><a href="%(hub)s">%(crumb)s</a><span aria-hidden="true">/</span><span>%(short)s</span></nav>
     <span class="label"><span class="gold">%(label)s</span></span>

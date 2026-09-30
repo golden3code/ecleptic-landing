@@ -2637,6 +2637,251 @@ Parce que la signature est immanquable dans les données : fréquence cardiaque 
 
 ---
 
+# Score de récupération : comment Whoop, Oura, Garmin, Apple Watch et Ecleptic le calculent
+
+URL : https://ecleptic.health/comparatifs/score-de-recuperation-whoop-oura-garmin-apple.html
+Auteur : Auguste Phily-Priou · Vérifié le 2026-09-30
+
+Les cinq comparent tes signaux de la nuit à ta propre normale, mais pas sur la même échelle : 0 à 100 % chez Whoop, 1 à 100 chez Garmin, 0 à 10 sur l'Apple Watch, sur 100 chez Oura et Ecleptic. D'après les pages officielles consultées, l'alimentation n'entre directement que dans le calcul d'Ecleptic.
+
+*Ecleptic est notre application ; ce comparatif s'en tient aux informations publiques de chaque marque, liées en source, vérifiées le 30 septembre 2026.*
+
+## Le principe commun : toi contre toi
+
+Un score de récupération répond à une question : ce matin, ton corps est-il prêt à encaisser un effort ? Les cinq partent de la même idée : situer tes signaux de la nuit, à commencer par ta [variabilité cardiaque (HRV)](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) et ta [fréquence cardiaque au repos](https://ecleptic.health/articles/frequence-cardiaque-repos-normale.html), face à ta propre normale, pas à une moyenne de population.
+
+## Le tableau comparatif
+
+Informations publiées par chaque marque, vérifiées le 30 septembre 2026. Sources en bas de page.
+| Marque | Score | Échelle | Signaux publiés | Référence personnelle | Matériel | Abonnement requis |
+
+| Whoop | Recovery | 0 à 100 % | HRV, FC au repos, respiration, sommeil face au besoin, sommeil léger et éveils, température cutanée, SpO₂, phase du cycle | HRV : 30 jours | Capteur WHOOP | Oui, capteur inclus |
+
+| Oura | Score de préparation | 0 à 100 | 9 contributeurs : FC au repos, HRV, température, indice de récupération, sommeil, activité | 14 jours face à 2 ou 3 mois | Bague Oura | Non pour le score du jour ; oui pour le détail |
+
+| Garmin | Préparation à l'entraînement | 1 à 100 | Sommeil, temps de récupération, état HRV, charge aiguë, stress des 3 derniers jours | HRV : moyenne sur 7 jours face à ta plage de référence | Montre Garmin compatible | Non, calculé par la montre |
+
+| Apple Watch | Score de préparation | 0 à 10 | Activité et charge d'entraînement, signes vitaux de nuit et de jour, score de sommeil | Au moins 7 des 49 dernières nuits | Series 12 ou Ultra 4 | Aucun dans les prérequis |
+
+| Ecleptic | Readiness Score | Sur 100 | Vitaux de la nuit, sommeil, nutrition, rythme et charge | Vitaux : 42 jours | iPhone ; montre facultative | Bêta iOS gratuite |
+
+## Whoop : la Recovery, de 0 à 100 %
+
+Calculée chaque nuit et livrée au réveil, la Recovery est verte à partir de 67 %, rouge à 33 % et moins. Elle combine huit signaux : HRV, fréquence au repos, fréquence respiratoire, heures de sommeil face au besoin estimé, sommeil léger et éveils, température cutanée, SpO₂ et, le cas échéant, phase du cycle. Whoop précise que la HRV et la fréquence au repos pèsent le plus, et que ta HRV est comparée à ta ligne de base sur 30 jours. Le score ne change pas dans la journée, sauf si tu modifies ta nuit.
+
+## Oura : le score de préparation
+
+Noté de 0 à 100 (optimal à partir de 85), il repose sur neuf contributeurs : fréquence au repos, équilibre HRV, température, indice de récupération, sommeil, équilibre et régularité du sommeil, activité de la veille, équilibre d'activité. Les contributeurs « équilibre » comparent tes 14 derniers jours à ta moyenne de long terme (deux mois, trois pour l'équilibre HRV), et Oura compte jusqu'à deux semaines pour apprendre tes valeurs. Sans abonnement actif, l'app affiche encore tes trois scores du jour ; l'abonnement débloque le détail.
+
+## Garmin : la préparation à l'entraînement
+
+Sur les montres compatibles, comme la Venu X1 ou la Forerunner 965, ce score de 1 à 100 est recalculé en continu à partir de six facteurs : score de sommeil de la nuit, temps de récupération, état HRV, charge aiguë, sommeil des trois dernières nuits et stress des trois derniers jours. La comparaison à ta normale passe par l'état HRV : ta moyenne sur sept jours face à ta plage de référence, affichée après trois semaines de nuits régulières.
+
+## Apple Watch : le score de préparation, de 0 à 10
+
+Avec watchOS 27, l'app Préparation de l'Apple Watch Series 12 et Ultra 4 note de 0 à 10, de « Récupérez » (0-1) à « Foncez » (8-10). Elle croise ton activité récente (calories actives, effort, charge d'entraînement), tes signes vitaux de nuit (fréquence cardiaque et respiratoire, température du poignet, HRV, oxygène sanguin) et de jour, et ton score de sommeil. Les vitaux sont comparés à ta ligne de base récente, qui exige au moins 7 nuits avec la montre sur les 49 dernières. Le score évolue dans la journée.
+
+## Ecleptic : un score sur 100 qui intègre ta nutrition
+
+Notre Readiness Score part de ta nuit au réveil, puis se met à jour avec tes repas et tes séances. Ses quatre piliers et leurs poids sont publiés : [vitaux de la nuit](https://ecleptic.health/methode/vitaux.html) (42 points), sommeil (21), [nutrition](https://ecleptic.health/methode/nutrition.html) (21) et rythme avec charge d'entraînement (16). Chaque vital est comparé à ta normale des 42 derniers jours : 7 jours pour qu'une [ligne de base](https://ecleptic.health/methode/ligne-de-base.html) existe, 28 pour qu'elle soit pleinement fiable. Le détail : [la méthode du Readiness Score](https://ecleptic.health/methode/readiness-score.html).
+
+## Ce qui change vraiment d'un score à l'autre
+
+- **L'échelle :** un 70 chez l'un ne vaut pas un 70 chez l'autre ; compare chaque score à son propre historique.
+
+- **La fenêtre :** 30 jours pour la HRV chez Whoop, 14 jours face à deux ou trois mois chez Oura, 49 nuits chez Apple, 42 jours chez Ecleptic. Courte, elle réagit vite ; longue, elle lisse.
+
+- **Le rythme :** Whoop fige sa Recovery pour la journée ; Garmin, Apple et Ecleptic font évoluer leur score.
+
+- **Les ingrédients :** tous lisent le cœur et le sommeil ; Garmin, Oura et Apple ajoutent l'activité ou la charge. Parmi les signaux publiés, l'alimentation n'apparaît que chez Ecleptic ; Whoop la relie à la Recovery par les corrélations de son Journal.
+
+## Comment lire ton score
+
+Whoop, Apple et Ecleptic le précisent : ces scores sont des repères de bien-être, pas des diagnostics. Une journée basse n'est pas une alerte ; c'est la tendance qui compte. À lire aussi : [comment fonctionne un readiness score](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html).
+
+## Sources
+
+- WHOOP. WHOOP Recovery (support, publié le 11 septembre 2025). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/WHOOP-Recovery?language=en_US
+- WHOOP for Developers. WHOOP 101. Consulté le 30 septembre 2026. — https://developer.whoop.com/docs/whoop-101/
+- WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/Membership-Pricing?language=en_US
+- WHOOP. WHOOP Journal Overview (support, publié le 18 septembre 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/WHOOP-Journal-Overview?language=en_US
+- Oura. Readiness Score (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/360025589793-Readiness-Score
+- Oura. Readiness Contributors (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/360057791533-Readiness-Contributors
+- Oura. Score de préparation (Member Care, version française). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/fr/articles/360025589793-Score-de-pr%C3%A9paration
+- Oura. Oura Membership (Member Care, mis à jour le 8 septembre 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership
+- Garmin. Manuel d'utilisation Venu X1 : Training Readiness (septembre 2026). Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html
+- Garmin. Manuel d'utilisation Venu X1 : Préparation à l'entraînement (version française). Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html
+- Garmin. Manuel d'utilisation Venu X1 : Heart Rate Variability Status. Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-9282196F-D969-404D-B678-F48A13D8D0CB.html
+- Garmin. Manuel d'utilisation Forerunner 965 : Training Readiness. Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-0221611A-992D-495E-8DED-1DD448F7A066/EN-US/GUID-C21BE0C8-A08E-4DA1-B6C6-2E0E2DDDB372.html
+- Apple. Guide d'utilisation de l'Apple Watch : Use the Readiness app on Apple Watch (watchOS 27). Consulté le 30 septembre 2026. — https://support.apple.com/guide/watch/readiness-flx4gnzby346/watchos
+- Apple. Understand your readiness score on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026. — https://support.apple.com/en-us/128112
+- Apple. Comprendre votre score de préparation sur l'Apple Watch (publié le 28 septembre 2026). Consulté le 30 septembre 2026. — https://support.apple.com/fr-fr/128112
+- Apple. Use the Vitals app on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026. — https://support.apple.com/en-us/120142
+
+---
+
+# Quelle app pour relier sommeil, alimentation et sport sur iPhone ?
+
+URL : https://ecleptic.health/comparatifs/application-sommeil-alimentation-sport-iphone.html
+Auteur : Auguste Phily-Priou · Vérifié le 2026-09-30
+
+Sur iPhone, les apps de récupération (Whoop, Oura, Athlytic, Apple) partent du sommeil et du cœur, les journaux alimentaires (MyFitnessPal, Yazio) partent de l'assiette. Pour relier les deux, certaines corrèlent un journal de comportements avec ta récupération ; Ecleptic fait entrer ta nutrition dans le calcul du score du jour lui-même.
+
+*Ecleptic est notre application ; ce comparatif s'en tient aux informations publiques de chaque marque, liées en source, vérifiées le 30 septembre 2026.*
+
+## Relier, ça peut vouloir dire trois choses
+
+- **Juxtaposer :** voir ta nuit, tes repas et tes séances dans la même app.
+
+- **Corréler :** noter un comportement (alcool, dîner tardif, calories) et voir, au fil des semaines, s'il coïncide avec une meilleure ou une moins bonne récupération.
+
+- **Intégrer :** faire entrer l'alimentation dans le calcul du score du jour.
+
+Ce n'est pas un classement : le tableau indique, pour chaque app, ce que décrivent ses pages officielles.
+
+## Le tableau des fonctionnalités
+
+Fonctionnalités décrites par chaque éditeur (pages d'assistance ou fiche App Store), vérifiées le 30 septembre 2026. Sources en bas de page.
+| App | Sommeil | Alimentation | Entraînement | Repère quotidien | Matériel | Abonnement requis |
+
+| Whoop | Oui | Comportements du Journal ; import d'autres apps via Apple Santé | Strain, activités détectées ou importées | Recovery (cœur, sommeil, température, SpO₂) | Capteur WHOOP | Oui |
+
+| Oura | Oui | Meals : photo ou texte, analyse assistée par IA (en anglais) | Activité, détection automatique | Score de préparation (9 contributeurs) | Bague Oura | Oui pour Meals ; score du jour visible sans |
+
+| Athlytic | Oui | Énergie consommée et macros, lues dans Apple Santé | Effort (Exertion), séances | Recovery (HRV et FC au repos de la nuit) | iPhone et Apple Watch pour l'essentiel | Oui pour l'app complète |
+
+| Apple Santé et Fitness | Score de sommeil | Via d'autres apps, dont Santé centralise les données | Activité, charge d'entraînement | Score de préparation (activité, signes vitaux, sommeil) | Apple Watch Series 12 ou Ultra 4 pour la Préparation | Aucun dans les prérequis |
+
+| MyFitnessPal | Non décrit sur sa fiche | Calories et macros ; scans code-barres et repas en Premium | Séances et pas ; plus de 40 appareils et apps connectables | Objectifs caloriques et macros | iPhone | Non pour le journal ; Premium pour les scans |
+
+| Yazio | Non décrit sur sa fiche | Compteur de calories assisté par IA, code-barres, jeûne | Pas et activité ; synchro Fitbit ou Garmin en Pro | Objectif calorique | iPhone | Non pour le compteur ; Pro pour les fonctions avancées |
+
+| Ecleptic | Oui | Scan photo, code-barres, recherche ; valeurs Ciqual, USDA, Open Food Facts | Séances, charge d'entraînement | Readiness Score (vitaux, sommeil, nutrition, rythme) | iPhone ; montre facultative | Bêta iOS gratuite |
+
+## Whoop et Oura : le capteur d'abord
+
+Whoop et Oura mesurent ta nuit avec leur propre appareil. Leur score du jour repose sur le cœur, le sommeil, la température et, chez Oura, l'activité ; l'alimentation ne figure pas parmi leurs signaux publiés. Whoop la relie par corrélation : son Journal propose des comportements de nutrition (calories, protéines, glucides…), peut en recevoir d'autres apps via Apple Santé, et ses Behavior Insights mesurent leur effet sur ta récupération dès 5 réponses « oui » et 5 « non » sur 90 jours. Oura propose Meals : tu photographies ou décris ton repas, une analyse assistée par IA situe ses protéines, fibres, sucres ajoutés ou son degré de transformation (faible, modéré, élevé), et tes repas s'affichent sur une horloge de 24 heures à côté de tes heures de coucher et de lever. Meals demande un abonnement actif et n'existe pour l'instant qu'en anglais.
+
+## Athlytic et Apple : tout part de l'Apple Watch
+
+Avec watchOS 27, l'Apple Watch Series 12 et Ultra 4 calcule déjà un score de préparation qui croise activité, signes vitaux et sommeil, et l'app Santé centralise les données d'autres apps. Athlytic lit ces données dans Apple Santé : sa Recovery compare ta HRV et ta fréquence au repos de la nuit à ta ligne de base, son Journal mesure l'effet de la caféine, de l'alcool ou d'un voyage sur ta récupération et ton sommeil, et ses tendances affichent l'énergie consommée et dépensée.
+
+## MyFitnessPal et Yazio : l'assiette d'abord
+
+MyFitnessPal décrit un journal de calories et de macros avec coach IA, l'enregistrement des séances et des pas, et la connexion à plus de 40 appareils et apps ; les scans de code-barres et de repas font partie de Premium. Yazio décrit un compteur de calories assisté par IA avec scan de code-barres, un suivi du jeûne intermittent et un suivi intégré des pas et de l'activité ; la synchronisation avec Fitbit ou Garmin fait partie de Pro. Ni l'une ni l'autre fiche ne mentionne de score de récupération ou de suivi du sommeil.
+
+## Ecleptic : l'alimentation dans le score du jour
+
+Ecleptic intègre : ta nutrition pèse 21 points sur 100 dans ton [Readiness Score](https://ecleptic.health/methode/readiness-score.html), à côté des vitaux de la nuit (42), du sommeil (21) et du rythme avec la charge d'entraînement (16). Tu photographies ton repas (jusqu'à 3 photos), scannes un code-barres ou cherches un aliment : l'IA reconnaît les aliments et estime les portions, les valeurs viennent des bases officielles (table Ciqual de l'ANSES, USDA FoodData Central, Open Food Facts). Le pilier juge l'adéquation à tes [cibles](https://ecleptic.health/methode/cibles.html), les protéines après l'effort, les micronutriments et l'hydratation, et il est plafonné à 80 si tu as bu de l'alcool la veille. Le détail : [la méthode nutrition](https://ecleptic.health/methode/nutrition.html).
+
+## Comment choisir selon ce que tu as déjà
+
+- **Une Apple Watch Series 12 ou Ultra 4 :** le score de préparation est déjà dans ta montre ; une app qui lit Apple Santé peut y ajouter un journal ou tes repas.
+
+- **Un Whoop :** vérifie que ton app alimentaire écrit dans Apple Santé, d'où Whoop importe la nutrition dans son Journal.
+
+- **Compter tes calories avant tout :** c'est le cœur de MyFitnessPal et de Yazio.
+
+- **Que tes repas pèsent dans ton score du matin :** c'est le principe d'Ecleptic.
+
+Dans tous les cas, c'est dans Apple Santé que tu choisis, catégorie par catégorie, ce que chaque app peut lire.
+
+## Sources
+
+- WHOOP. WHOOP Recovery (support, publié le 11 septembre 2025). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/WHOOP-Recovery?language=en_US
+- WHOOP. WHOOP Journal Overview (support, publié le 18 septembre 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/WHOOP-Journal-Overview?language=en_US
+- WHOOP. Apple Health Integration (support, publié le 16 avril 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/Apple-Health-Integration?language=en_US
+- WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/Membership-Pricing?language=en_US
+- WHOOP for Developers. WHOOP 101. Consulté le 30 septembre 2026. — https://developer.whoop.com/docs/whoop-101/
+- Oura. Readiness Contributors (Member Care, mis à jour le 14 juillet 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/360057791533-Readiness-Contributors
+- Oura. Meals (Member Care, mis à jour le 5 août 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/40264659421843-Meals
+- Oura. Oura Membership (Member Care, mis à jour le 8 septembre 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership
+- MyndArc. Athlytic: Fitness & Recovery, fiche App Store (États-Unis). Consulté le 30 septembre 2026. — https://apps.apple.com/us/app/athlytic-fitness-recovery/id1543571755
+- Athlytic. Site officiel. Consulté le 30 septembre 2026. — https://athlyticapp.com/
+- Apple. Understand your readiness score on Apple Watch (publié le 14 septembre 2026). Consulté le 30 septembre 2026. — https://support.apple.com/en-us/128112
+- Apple. Guide d'utilisation de l'Apple Watch : Use the Readiness app on Apple Watch (watchOS 27). Consulté le 30 septembre 2026. — https://support.apple.com/guide/watch/readiness-flx4gnzby346/watchos
+- Apple. Guide d'utilisation de l'Apple Watch : View your sleep score on Apple Watch. Consulté le 30 septembre 2026. — https://support.apple.com/guide/watch/view-your-sleep-score-apded441a669/watchos
+- Apple. Guide d'utilisation de l'Apple Watch : Track your training load. Consulté le 30 septembre 2026. — https://support.apple.com/guide/watch/track-your-training-load-apde4c07a6cf/watchos
+- Apple. Guide d'utilisation de l'iPhone : Intro to Health data on iPhone. Consulté le 30 septembre 2026. — https://support.apple.com/guide/iphone/intro-to-health-data-iphbb8259c61/ios
+- MyFitnessPal, Inc. MyFitnessPal: Calorie Counter, fiche App Store (États-Unis). Consulté le 30 septembre 2026. — https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718
+- YAZIO GmbH. AI Calorie Tracker by Yazio, fiche App Store (États-Unis). Consulté le 30 septembre 2026. — https://apps.apple.com/us/app/ai-calorie-tracker-by-yazio/id946099227
+
+---
+
+# Âge biologique, âge cardio, âge de forme : comment les apps le calculent
+
+URL : https://ecleptic.health/comparatifs/age-biologique-application-whoop-garmin-oura.html
+Auteur : Auguste Phily-Priou · Vérifié le 2026-09-30
+
+Derrière le mot « âge », ces apps n'estiment pas la même chose : Garmin tire un âge physique de ton IMC, de ta fréquence au repos et de ton activité soutenue ; Whoop combine neuf indicateurs sur six mois ; Oura estime l'âge de ton système cardiovasculaire d'après ton pouls ; Apple classe ta VO₂max selon ton âge et ton sexe ; Ecleptic part de ta VO₂max et l'ajuste avec sept facteurs du quotidien.
+
+*Ecleptic est notre application ; ce comparatif s'en tient aux informations publiques de chaque marque, liées en source, vérifiées le 30 septembre 2026.*
+
+## Trois familles d'« âges »
+
+L'**âge de forme** traduit ta condition physique en années : c'est l'idée de l'âge physique de Garmin, et le point de départ d'Ecleptic avec la VO₂max. L'**âge cardiovasculaire** estime l'état de ton système cardiovasculaire à partir de ton pouls : c'est l'approche d'Oura. L'**âge physiologique global** réunit plusieurs indicateurs de sommeil, d'activité et de forme, comme le WHOOP Age.
+
+## Le tableau comparatif
+
+Informations publiées par chaque marque, vérifiées le 30 septembre 2026. Sources en bas de page.
+| Marque | Nom | Ce qui est estimé | Données utilisées | Délai | Matériel | Abonnement requis |
+
+| Garmin | Âge physique | Ta forme face à une personne du même sexe | Âge, IMC ou masse grasse, FC au repos, activités soutenues | Non précisé | Montre Garmin compatible | Non, affiché sur la montre |
+
+| Whoop | WHOOP Age | Âge physiologique | 9 indicateurs de sommeil, d'activité et de forme ; pas la HRV | 21 Recovery sur 31 jours | Capteur WHOOP | Oui, formule Peak ou Life |
+
+| Oura | Âge cardiovasculaire | Ton système cardiovasculaire | Onde de pouls estimée par capteur optique | 14 nuits sur 30 jours | Bague Gen3 ou plus récente | Oui |
+
+| Apple | Santé cardiovasculaire | Ta VO₂max, par âge et sexe | Effort cardiaque en extérieur, profil, traitements | Plusieurs séances en extérieur | Apple Watch | Aucun dans les prérequis |
+
+| Athlytic | Athlytic Age | Un âge de forme | FC au repos, VO₂max, sommeil, composition corporelle, pas, entraînement | Non précisé | iPhone et Apple Watch | Oui pour l'app complète |
+
+| Ecleptic | Âge biologique | L'âge de ton corps | VO₂max, puis 7 facteurs du quotidien | Dès l'inscription | iPhone ; montre facultative | Bêta iOS gratuite |
+
+## Garmin : l'âge physique
+
+Garmin présente l'âge physique (Fitness Age) comme une façon de comparer ta condition physique à celle d'une personne du même sexe. La montre s'appuie sur ton âge, ton indice de masse corporelle, ta fréquence cardiaque au repos et ton historique d'activités soutenues ; avec une balance Index, le taux de graisse corporelle remplace l'IMC. Un profil utilisateur complet le rend plus précis.
+
+## Whoop : WHOOP Age et Pace of Aging
+
+Dans sa fonction Healthspan, Whoop calcule le WHOOP Age, un âge physiologique moyenné sur six mois à partir de neuf indicateurs : heures et régularité du sommeil ; temps hebdomadaire en zones cardiaques 1 à 3 et 4 à 5, temps de musculation, pas quotidiens ; fréquence au repos, VO₂max et, si elle est connue, masse maigre. Le Pace of Aging, lui, lit tes 30 derniers jours pour dire si cet âge tend à monter ou à descendre. La HRV n'y entre pas, jugée trop individuelle pour une comparaison par âge. La fonction se débloque après 21 Recovery sur tes 31 premiers jours, se calibre en 90 jours et demande 18 ans et une formule Peak ou Life.
+
+## Oura : l'âge cardiovasculaire
+
+L'âge cardiovasculaire d'Oura estime la santé de ton système cardiovasculaire par rapport à ton âge réel. La bague ne mesure pas directement la vitesse de l'onde de pouls : elle l'estime, avec les changements de forme du pouls liés à l'âge, grâce à son capteur optique. Après 14 nuits sur 30 jours, le résultat est classé en dessous, aligné (jusqu'à 5 ans d'écart) ou au-dessus de ton âge. Oura estime à part une capacité cardio, sa VO₂max ajustée à l'âge. Les deux demandent un abonnement actif.
+
+## Apple : ta VO₂max par âge, et un Health Age annoncé
+
+L'Apple Watch estime ta VO₂max, appelée santé cardiovasculaire, pendant une marche, une course ou une randonnée en extérieur, en tenant compte de ton âge, de ton sexe, de ton poids, de ta taille et de certains traitements. L'app Santé l'affiche en VO₂max et la situe face aux niveaux de ton âge et de ton sexe. Le 9 septembre 2026, Apple a annoncé Health Age, qui situera ta VO₂max, ta fréquence au repos, ton sommeil et ta HRV face à ton âge réel, dans une app Santé attendue plus tard dans l'année, d'abord en anglais aux États-Unis.
+
+## Ecleptic : un âge ancré sur ta VO₂max
+
+Notre âge biologique se calcule en deux temps. D'abord, ta [VO₂max](https://ecleptic.health/methode/vo2max.html) vient de la meilleure source disponible : ta montre via Apple Santé, tes courses (formule VDOT, qui ne peut que relever l'estimation), ou une estimation sans effort par l'équation de Nes et al., issue de la cohorte norvégienne HUNT. Comparée à la référence pour ton âge et ton sexe, elle devient un âge de forme. Ensuite, sept facteurs bornés et signés l'ajustent : variabilité cardiaque, fréquence au repos, tour de taille, activité, sommeil, alimentation et hygiène de vie, ce dernier ne pouvant jamais te rajeunir. Aucune donnée n'est comptée deux fois ; le résultat est lissé et accompagné d'une marge d'incertitude. La méthode : [l'âge biologique](https://ecleptic.health/methode/age-biologique.html).
+
+## Ce que ces chiffres ne sont pas
+
+Aucun n'est un diagnostic. Whoop précise qu'il n'existe pas de référence clinique pour valider son WHOOP Age ; Oura, que sa bague n'est pas un dispositif médical ; Ecleptic, que son âge biologique est une estimation, pas une prédiction de ta durée de vie. Tous trois les décrivent comme des indicateurs lents : c'est la tendance sur des semaines ou des mois qui compte.
+
+## Ce qui fait bouger ces âges
+
+Les leviers se recoupent : la VO₂max entre dans le WHOOP Age, l'Athlytic Age, le Health Age d'Apple et l'âge biologique d'Ecleptic ; la fréquence au repos, dans ceux de Garmin, Whoop, Athlytic et Ecleptic. Pour agir : [l'endurance en zone 2](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html) et [des horaires de coucher réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html).
+
+## Sources
+
+- Garmin. Manuel d'utilisation Venu X1 : Viewing Your Fitness Age (septembre 2026). Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html
+- Garmin. Manuel d'utilisation Venu X1 : Affichage de l'âge physique (version française). Consulté le 30 septembre 2026. — https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html
+- WHOOP. Healthspan: WHOOP Age & Pace of Aging Guide (support, publié le 21 avril 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/Healthspan-WHOOP-Age-Pace-of-Aging-Guide?language=en_US
+- WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026. — https://support.whoop.com/s/article/Membership-Pricing?language=en_US
+- Oura. Cardiovascular Age (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/28451491040019-Cardiovascular-Age
+- Oura. L'âge cardiovasculaire (Member Care, version française). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/fr/articles/28451491040019-L-%C3%A2ge-cardiovasculaire
+- Oura. Cardio Capacity (VO2 Max) (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026. — https://support.ouraring.com/hc/en-us/articles/28336620578835-Cardio-Capacity-VO2-Max
+- Apple. Track your cardio fitness levels (publié le 14 septembre 2026). Consulté le 30 septembre 2026. — https://support.apple.com/en-us/108790
+- Apple. Suivre vos niveaux de santé cardiovasculaire (version française). Consulté le 30 septembre 2026. — https://support.apple.com/fr-fr/108790
+- Apple Newsroom. Apple advances health and fitness capabilities using Apple Intelligence (9 septembre 2026). Consulté le 30 septembre 2026. — https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/
+- MyndArc. Athlytic: Fitness & Recovery, fiche App Store (États-Unis). Consulté le 30 septembre 2026. — https://apps.apple.com/us/app/athlytic-fitness-recovery/id1543571755
+
+---
+
 # Aliments riches en protéines : le classement de la table Ciqual
 
 URL : https://ecleptic.health/donnees/aliments-riches-en-proteines.html

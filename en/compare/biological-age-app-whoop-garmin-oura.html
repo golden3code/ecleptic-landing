@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Biological age: how Whoop, Garmin and Oura calculate it</title>
+<meta name="description" content="Garmin Fitness Age, WHOOP Age, Oura Cardiovascular Age, Apple cardio fitness and Ecleptic&#x27;s biological age: what each app estimates and from which data.">
+<link rel="canonical" href="https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html">
+<meta property="og:title" content="Biological age, heart age, fitness age: how apps calculate it">
+<meta property="og:description" content="Garmin Fitness Age, WHOOP Age, Oura Cardiovascular Age, Apple cardio fitness and Ecleptic&#x27;s biological age: what each app estimates and from which data.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html">
+<meta property="og:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Biological age, heart age, fitness age: how apps calculate it", "description": "Garmin Fitness Age, WHOOP Age, Oura Cardiovascular Age, Apple cardio fitness and Ecleptic's biological age: what each app estimates and from which data.", "image": "https://ecleptic.health/assets/og/journal.jpg", "datePublished": "2026-09-30", "dateModified": "2026-09-30", "inLanguage": "en", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html", "citation": [{"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Venu X1 : Viewing Your Fitness Age (septembre 2026). Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html"}, {"@type": "CreativeWork", "name": "Garmin. Manuel d'utilisation Venu X1 : Affichage de l'âge physique (version française). Consulté le 30 septembre 2026.", "url": "https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html"}, {"@type": "CreativeWork", "name": "WHOOP. Healthspan: WHOOP Age & Pace of Aging Guide (support, publié le 21 avril 2026). Consulté le 30 septembre 2026.", "url": "https://support.whoop.com/s/article/Healthspan-WHOOP-Age-Pace-of-Aging-Guide?language=en_US"}, {"@type": "CreativeWork", "name": "WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026.", "url": "https://support.whoop.com/s/article/Membership-Pricing?language=en_US"}, {"@type": "CreativeWork", "name": "Oura. Cardiovascular Age (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/en-us/articles/28451491040019-Cardiovascular-Age"}, {"@type": "CreativeWork", "name": "Oura. L'âge cardiovasculaire (Member Care, version française). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/fr/articles/28451491040019-L-%C3%A2ge-cardiovasculaire"}, {"@type": "CreativeWork", "name": "Oura. Cardio Capacity (VO2 Max) (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026.", "url": "https://support.ouraring.com/hc/en-us/articles/28336620578835-Cardio-Capacity-VO2-Max"}, {"@type": "CreativeWork", "name": "Apple. Track your cardio fitness levels (publié le 14 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/en-us/108790"}, {"@type": "CreativeWork", "name": "Apple. Suivre vos niveaux de santé cardiovasculaire (version française). Consulté le 30 septembre 2026.", "url": "https://support.apple.com/fr-fr/108790"}, {"@type": "CreativeWork", "name": "Apple Newsroom. Apple advances health and fitness capabilities using Apple Intelligence (9 septembre 2026). Consulté le 30 septembre 2026.", "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"}, {"@type": "CreativeWork", "name": "MyndArc. Athlytic: Fitness & Recovery, fiche App Store (États-Unis). Consulté le 30 septembre 2026.", "url": "https://apps.apple.com/us/app/athlytic-fitness-recovery/id1543571755"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Compare", "item": "https://ecleptic.health/en/compare/"}, {"@type": "ListItem", "position": 2, "name": "Biological age, heart age, fitness age: how apps calculate it", "item": "https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does Garmin calculate Fitness Age?", "acceptedAnswer": {"@type": "Answer", "text": "From your age, body mass index, resting heart rate and vigorous activity history; with an Index scale, body fat percentage replaces BMI. The result compares your fitness with that of a person of the same sex."}}, {"@type": "Question", "name": "Does WHOOP Age take HRV into account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Whoop explains that HRV is too individual to compare against age-based benchmarks, and uses resting heart rate instead, alongside eight other sleep, activity and fitness metrics averaged over six months."}}, {"@type": "Question", "name": "What is the difference between biological age and cardiovascular age?", "acceptedAnswer": {"@type": "Answer", "text": "Oura's Cardiovascular Age estimates the state of your cardiovascular system from your pulse signal. Ecleptic's biological age starts from your cardiorespiratory fitness, VO₂ max, then adjusts it for your habits: sleep, activity, diet and lifestyle."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/comparatifs/age-biologique-application-whoop-garmin-oura.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/comparatifs/age-biologique-application-whoop-garmin-oura.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/compare/biological-age-app-whoop-garmin-oura.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode data compare">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/compare/">Compare</a><span aria-hidden="true">/</span><span>Biological age, heart age, fitness age</span></nav>
+    <span class="label"><span class="gold">Comparison &nbsp;&middot;&nbsp; Verified public information</span></span>
+    <h1>Biological age, heart age, fitness age: how apps calculate it</h1>
+    <p class="standfirst">Behind the word "age", these apps do not estimate the same thing: Garmin derives a fitness age from your BMI, resting heart rate and vigorous activity; Whoop combines nine metrics over six months; Oura estimates the age of your cardiovascular system from your pulse; Apple ranks your VO₂ max by age and sex; Ecleptic starts from your VO₂ max and adjusts it with seven everyday factors.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic</p>
+  </header>
+<p><em>Ecleptic is our app; this comparison sticks to each brand's public information, linked in the sources below, checked on September 30, 2026.</em></p>
+<h2>Three families of "ages"</h2>
+<p><strong>Fitness age</strong> turns your physical fitness into years: that is the idea behind Garmin's Fitness Age, and Ecleptic's starting point with VO₂ max. <strong>Cardiovascular age</strong> estimates the state of your cardiovascular system from your pulse: that is Oura's approach. <strong>Overall physiological age</strong> combines several sleep, activity and fitness metrics, like WHOOP Age.</p>
+
+<h2>The comparison table</h2>
+<div class="tablewrap"><table>
+<caption>Information published by each brand, checked on September 30, 2026. Sources at the bottom of the page.</caption>
+<thead><tr><th>Brand</th><th>Name</th><th>What it estimates</th><th>Data used</th><th>Lead time</th><th>Hardware</th><th>Subscription required</th></tr></thead>
+<tbody>
+<tr><td>Garmin</td><td>Fitness Age</td><td>Your fitness vs. a person of the same sex</td><td>Age, BMI or body fat, resting heart rate, vigorous activity</td><td>Not specified</td><td>Compatible Garmin watch</td><td>No, shown on the watch</td></tr>
+<tr><td>Whoop</td><td>WHOOP Age</td><td>Physiological age</td><td>9 sleep, activity and fitness metrics; not HRV</td><td>21 recoveries in 31 days</td><td>WHOOP sensor</td><td>Yes, Peak or Life plan</td></tr>
+<tr><td>Oura</td><td>Cardiovascular Age</td><td>Your cardiovascular system</td><td>Pulse wave estimated by the optical sensor</td><td>14 nights in 30 days</td><td>Gen3 ring or later</td><td>Yes</td></tr>
+<tr><td>Apple</td><td>Cardio Fitness</td><td>Your VO₂ max, by age and sex</td><td>Heart effort outdoors, profile, medications</td><td>Several outdoor workouts</td><td>Apple Watch</td><td>None among the requirements</td></tr>
+<tr><td>Athlytic</td><td>Athlytic Age</td><td>A fitness age</td><td>Resting heart rate, VO₂ max, sleep, body composition, steps, training</td><td>Not specified</td><td>iPhone and Apple Watch</td><td>Yes for the full app</td></tr>
+<tr><td>Ecleptic</td><td>Biological age</td><td>Your body's age</td><td>VO₂ max, then 7 everyday factors</td><td>From sign-up</td><td>iPhone; watch optional</td><td>Free iOS beta</td></tr>
+</tbody>
+</table></div>
+
+<h2>Garmin: Fitness Age</h2>
+<p>Garmin presents Fitness Age as a way to compare your fitness with that of a person of the same sex. The watch uses your age, body mass index, resting heart rate and vigorous activity history; with an Index scale, body fat percentage replaces BMI. A complete user profile makes it more accurate.</p>
+
+<h2>Whoop: WHOOP Age and Pace of Aging</h2>
+<p>Within its Healthspan feature, Whoop calculates WHOOP Age, a physiological age averaged over six months from nine metrics: hours of sleep and sleep consistency; weekly time in heart rate zones 1-3 and 4-5, strength training time, daily steps; resting heart rate, VO₂ max and, when available, lean body mass. Pace of Aging reads your last 30 days to show whether that age is likely to rise or fall. HRV is left out, considered too individual for age-based comparison. The feature unlocks after 21 recoveries in your first 31 days, calibrates over 90 days and requires being 18 or older and a Peak or Life plan.</p>
+
+<h2>Oura: Cardiovascular Age</h2>
+<p>Oura's Cardiovascular Age estimates the health of your cardiovascular system relative to your actual age. The ring does not measure pulse wave velocity directly: it estimates it, along with age-related changes in the shape of your pulse, from its optical sensor. After 14 nights within 30 days, the result is rated below, aligned with (within 5 years) or above your age. Separately, Oura estimates Cardio Capacity, its age-adjusted VO₂ max. Both require an active membership.</p>
+
+<h2>Apple: VO₂ max by age, and an announced Health Age</h2>
+<p>Apple Watch estimates your VO₂ max, called cardio fitness, during an outdoor walk, run or hike, taking into account your age, sex, weight, height and certain medications. The Health app shows it as a VO₂ max value and places it against the levels for your age and sex. On September 9, 2026, Apple announced Health Age, which will place your VO₂ max, resting heart rate, sleep and HRV against your chronological age, in a redesigned Health app due later this year, starting in U.S. English.</p>
+
+<h2>Ecleptic: an age anchored on your VO₂ max</h2>
+<p>Our biological age is calculated in two steps. First, your <a href="/en/method/vo2max.html">VO₂ max</a> comes from the best available source: your watch via Apple Health, your runs (the VDOT formula, which can only raise the estimate), or a no-exercise estimate using the Nes et al. equation from Norway's HUNT cohort. Compared with the reference for your age and sex, it becomes a fitness age. Then seven bounded, signed factors adjust it: heart rate variability, resting heart rate, waist size, activity, sleep, diet and lifestyle, the last of which can never make you younger. No data point is counted twice; the result is smoothed and comes with an uncertainty margin. The method: <a href="/en/method/biological-age.html">biological age</a>.</p>
+
+<h2>What these numbers are not</h2>
+<p>None of them is a diagnosis. Whoop states that there is no clinical benchmark for validating WHOOP Age; Oura, that its ring is not a medical device; Ecleptic, that its biological age is an estimate, not a prediction of your lifespan. All three describe these as slow-moving metrics: the trend over weeks or months is what counts.</p>
+
+<h2>What moves these ages</h2>
+<p>The levers overlap: VO₂ max feeds WHOOP Age, Athlytic Age, Apple's Health Age and Ecleptic's biological age; resting heart rate feeds Garmin's, Whoop's, Athlytic's and Ecleptic's. To act on them: <a href="/en/journal/what-is-zone-2-cardio.html">zone 2 endurance</a> and <a href="/en/journal/going-to-bed-at-the-same-time.html">regular bedtimes</a>.</p>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>How does Garmin calculate Fitness Age?</h3>
+    <p>From your age, body mass index, resting heart rate and vigorous activity history; with an Index scale, body fat percentage replaces BMI. The result compares your fitness with that of a person of the same sex.</p>
+    <h3>Does WHOOP Age take HRV into account?</h3>
+    <p>No. Whoop explains that HRV is too individual to compare against age-based benchmarks, and uses resting heart rate instead, alongside eight other sleep, activity and fitness metrics averaged over six months.</p>
+    <h3>What is the difference between biological age and cardiovascular age?</h3>
+    <p>Oura&#x27;s Cardiovascular Age estimates the state of your cardiovascular system from your pulse signal. Ecleptic&#x27;s biological age starts from your cardiorespiratory fitness, VO₂ max, then adjusts it for your habits: sleep, activity, diet and lifestyle.</p>
+  </section>
+  <section class="refs">
+    <h2>Sources</h2>
+    <ol>
+      <li>Garmin. Manuel d'utilisation Venu X1 : Viewing Your Fitness Age (septembre 2026). Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/EN-US/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>Garmin. Manuel d'utilisation Venu X1 : Affichage de l'âge physique (version française). Consulté le 30 septembre 2026. <a href="https://www8.garmin.com/manuals/webhelp/GUID-C144B465-A0C8-4FE9-AFE6-41A3FE3F1D9A/FR-FR/GUID-A52C695F-A924-4421-B2F9-49C8BDEF65AE.html" rel="noopener" target="_blank">www8.garmin.com</a></li>
+      <li>WHOOP. Healthspan: WHOOP Age & Pace of Aging Guide (support, publié le 21 avril 2026). Consulté le 30 septembre 2026. <a href="https://support.whoop.com/s/article/Healthspan-WHOOP-Age-Pace-of-Aging-Guide?language=en_US" rel="noopener" target="_blank">support.whoop.com</a></li>
+      <li>WHOOP. Membership Pricing (support, publié le 28 mai 2026). Consulté le 30 septembre 2026. <a href="https://support.whoop.com/s/article/Membership-Pricing?language=en_US" rel="noopener" target="_blank">support.whoop.com</a></li>
+      <li>Oura. Cardiovascular Age (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/en-us/articles/28451491040019-Cardiovascular-Age" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Oura. L'âge cardiovasculaire (Member Care, version française). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/fr/articles/28451491040019-L-%C3%A2ge-cardiovasculaire" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Oura. Cardio Capacity (VO2 Max) (Member Care, mis à jour le 29 mai 2026). Consulté le 30 septembre 2026. <a href="https://support.ouraring.com/hc/en-us/articles/28336620578835-Cardio-Capacity-VO2-Max" rel="noopener" target="_blank">support.ouraring.com</a></li>
+      <li>Apple. Track your cardio fitness levels (publié le 14 septembre 2026). Consulté le 30 septembre 2026. <a href="https://support.apple.com/en-us/108790" rel="noopener" target="_blank">support.apple.com</a></li>
+      <li>Apple. Suivre vos niveaux de santé cardiovasculaire (version française). Consulté le 30 septembre 2026. <a href="https://support.apple.com/fr-fr/108790" rel="noopener" target="_blank">support.apple.com</a></li>
+      <li>Apple Newsroom. Apple advances health and fitness capabilities using Apple Intelligence (9 septembre 2026). Consulté le 30 septembre 2026. <a href="https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/" rel="noopener" target="_blank">apple.com</a></li>
+      <li>MyndArc. Athlytic: Fitness & Recovery, fiche App Store (États-Unis). Consulté le 30 septembre 2026. <a href="https://apps.apple.com/us/app/athlytic-fitness-recovery/id1543571755" rel="noopener" target="_blank">apps.apple.com</a></li>
+    </ol>
+  </section>
+  <div class="reward">
+    <span class="label">Go further</span>
+    <h2>What this article explains,<br>the app measures for you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('compare_cta_click',{page:'age-biologique',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Other comparisons</span>
+<a href="/en/compare/recovery-score-whoop-oura-garmin-apple.html">Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it</a>
+<a href="/en/compare/app-sleep-nutrition-training-iphone.html">Which app connects sleep, nutrition and training on iPhone?</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('compare_view',{page:'age-biologique',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

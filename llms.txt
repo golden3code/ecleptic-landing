@@ -101,6 +101,12 @@
 - [Aliments riches en potassium : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-potassium.html): Les aliments les plus riches en potassium selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi la banane n'est pas la championne qu'on croit.
 - [Aliments riches en zinc : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-zinc.html): Les aliments les plus riches en zinc selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi les phytates changent tout si tu manges végétal.
 
+## Comparatifs (informations publiques de chaque marque, sources liées)
+
+- [Score de récupération : comment Whoop, Oura, Garmin, Apple Watch et Ecleptic le calculent](https://ecleptic.health/comparatifs/score-de-recuperation-whoop-oura-garmin-apple.html): Whoop, Oura, Garmin, Apple Watch et Ecleptic : nom du score de récupération, échelle, signaux, fenêtre de référence, matériel et abonnement, sources liées.
+- [Quelle app pour relier sommeil, alimentation et sport sur iPhone ?](https://ecleptic.health/comparatifs/application-sommeil-alimentation-sport-iphone.html): Whoop, Oura, Athlytic, Apple Santé, MyFitnessPal, Yazio, Ecleptic : ce que chaque app relie entre sommeil, alimentation et sport, d'après ses pages officielles.
+- [Âge biologique, âge cardio, âge de forme : comment les apps le calculent](https://ecleptic.health/comparatifs/age-biologique-application-whoop-garmin-oura.html): Âge physique Garmin, WHOOP Age, âge cardiovasculaire Oura, VO₂max Apple, âge biologique Ecleptic : ce que chaque app estime et avec quelles données.
+
 ## À propos
 
 - [À propos](https://ecleptic.health/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour.
@@ -189,6 +195,12 @@ The whole site is also available in English (visitors outside French-speaking co
 - [Foods high in vitamin B12: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-vitamin-b12.html): The foods highest in vitamin B12 in France's official Ciqual table, how much you need according to EFSA and US guidelines, and what vegans should know.
 - [Foods high in potassium: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-potassium.html): The foods highest in potassium in France's official Ciqual table, how much you need according to EFSA and US guidelines, and why bananas aren't the top source.
 - [Foods high in zinc: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-zinc.html): The foods highest in zinc in France's official Ciqual table, how much you need according to EFSA, and why phytates matter if you eat mostly plants.
+
+### Comparisons
+
+- [Recovery score: how Whoop, Oura, Garmin, Apple Watch and Ecleptic calculate it](https://ecleptic.health/en/compare/recovery-score-whoop-oura-garmin-apple.html): Whoop, Oura, Garmin, Apple Watch and Ecleptic: each recovery score's name, scale, signals, personal baseline, hardware and subscription, with linked sources.
+- [Which app connects sleep, nutrition and training on iPhone?](https://ecleptic.health/en/compare/app-sleep-nutrition-training-iphone.html): Whoop, Oura, Athlytic, Apple Health, MyFitnessPal, Yazio and Ecleptic: what each app connects across sleep, food and training, based on official pages.
+- [Biological age, heart age, fitness age: how apps calculate it](https://ecleptic.health/en/compare/biological-age-app-whoop-garmin-oura.html): Garmin Fitness Age, WHOOP Age, Oura Cardiovascular Age, Apple cardio fitness and Ecleptic's biological age: what each app estimates and from which data.
 
 ## Optional
 
