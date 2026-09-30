@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Science-Based — Ecleptic</title>
+<meta name="description" content="HUNT cohort, VO₂max, VDOT, ANSES and USDA databases, personal baseline: the formulas and scientific sources behind every number in Ecleptic.">
+<link rel="canonical" href="https://ecleptic.health/en/science.html">
+<meta property="og:title" content="Science-Based — Ecleptic">
+<meta property="og:description" content="The formulas, cohorts and data sources behind every number in the app.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ecleptic.health/en/science.html">
+<meta property="og:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Science-Based — the Ecleptic method",
+"description":"HUNT cohort, VO₂max, VDOT, ANSES and USDA databases, personal baseline: the formulas and scientific sources behind every number in Ecleptic.",
+"inLanguage":"en","author":{"@type":"Person","@id":"https://ecleptic.health/a-propos.html#auguste","name":"Auguste Phily-Priou","jobTitle":"Founder of Ecleptic","url":"https://ecleptic.health/en/about.html"},
+"publisher":{"@type":"Organization","@id":"https://ecleptic.health/#organization","name":"Ecleptic","url":"https://ecleptic.health/","logo":{"@type":"ImageObject","url":"https://ecleptic.health/assets/icons/icon-512.png","width":512,"height":512}},
+"mainEntityOfPage":"https://ecleptic.health/en/science.html"}
+</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/science.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/science.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/science.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .ghead{padding:80px 0 30px}
+  .ghead .label{display:block;margin-bottom:26px}
+  .ghead h1{font-size:clamp(34px,7vw,58px)}
+  .ghead p{color:var(--muted);margin-top:24px;font-size:16px;max-width:520px}
+
+  /* Ouverture : filé d'étoiles en pleine largeur, fondu dans le noir en haut et en bas */
+  .pose{margin:6px 0 34px}
+  .pose-img{position:relative;overflow:hidden}
+  .pose-img img{display:block;width:100%;height:clamp(280px,46vw,720px);object-fit:cover;object-position:50% 22%}
+  .pose-img::before,.pose-img::after{content:"";position:absolute;left:0;right:0;pointer-events:none}
+  .pose-img::before{top:0;height:30%;background:linear-gradient(var(--bg) 0%,rgba(11,10,8,.82) 20%,rgba(11,10,8,.38) 58%,rgba(11,10,8,0) 100%)}
+  .pose-img::after{bottom:0;height:34%;background:linear-gradient(rgba(11,10,8,0),var(--bg))}
+  .pose figcaption{margin-top:14px;font-size:13.5px;line-height:1.6;color:var(--muted)}
+
+  .engine{padding:52px 0 46px;position:relative;scroll-margin-top:16px}
+  .engine::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .engine:last-of-type::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .engine .num{display:block;margin-bottom:16px}
+  .engine h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:16px}
+  .engine p{font-size:16px;margin-bottom:12px;line-height:1.8}
+  .engine p.why{color:var(--muted)}
+  .engine em{color:var(--gold);font-style:normal}
+  .engine strong{font-weight:600}
+  .src{border:1px solid var(--line);padding:20px 22px;margin-top:20px}
+  .src .lbl{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  .src p{font-size:14.5px;margin-bottom:8px;color:var(--muted)}
+  .src p:last-child{margin-bottom:0}
+  .engine .more{display:inline-block;margin-top:14px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);text-decoration:none}
+  .engine .more:hover{color:var(--ink)}
+  .fiches{padding:52px 0 10px;position:relative}
+  .fiches::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .fiches .label{display:block;margin-bottom:16px}
+  .fiches h2{font-size:clamp(20px,3.8vw,27px);font-weight:250;text-transform:uppercase;letter-spacing:.01em;line-height:1.2;margin-bottom:18px}
+  .fiches a{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:15px 0;text-decoration:none;position:relative;color:var(--ink);font-weight:300}
+  .fiches a::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
+  .fiches a span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .fiches a:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app">Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal">Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/science.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/science.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+  <header class="ghead">
+    <span class="label">The method &nbsp;·&nbsp; Nothing made up</span>
+    <h1 class="display">Science<br><span class="gold">based</span>.</h1>
+    <p>Every number in the app comes from a published formula, a study cohort or an official database. Here they are, engine by engine.</p>
+  </header>
+  </div>
+
+  <figure class="pose">
+    <div class="pose-img"><img src="/assets/science/file-d-etoiles-1600.jpg" srcset="/assets/science/file-d-etoiles-1000.jpg 1000w, /assets/science/file-d-etoiles-1600.jpg 1600w, /assets/science/file-d-etoiles-2400.jpg 2400w" sizes="100vw" width="2400" height="1602" alt="Star trails circling above a mountain valley, photographed as a long exposure" decoding="async" fetchpriority="high"></div>
+    <figcaption class="wrap">A long exposure: stars only draw their path over time. So does your data.</figcaption>
+  </figure>
+
+  <div class="wrap">
+
+  <section class="engine" id="readiness">
+    <span class="num label"><span class="gold">I</span> &nbsp;·&nbsp; The Readiness Score</span>
+    <h2>Four physiological pillars, combined every morning</h2>
+    <p>Your readiness score combines <strong>four pillars</strong>: your overnight vitals (heart rate variability, resting heart rate, breathing), your sleep (duration against your need, stages, efficiency, regularity), your nutrition (how well you hit your targets, protein after training, micronutrients, hydration) and your rhythm, including your recent training load — a hard session is paid for over 24 to 72 hours.</p>
+    <p class="why">The key point: your vitals are never compared with a population norm. Each one is assessed against <em>your own baseline</em>, built on your last six weeks of data. An HRV of 45 ms can be excellent for you and poor for someone else — the score knows it.</p>
+    <a class="more" href="/en/method/readiness-score.html">Read the details →</a>
+  </section>
+
+  <section class="engine" id="age-biologique">
+    <span class="num label"><span class="gold">II</span> &nbsp;·&nbsp; Biological age</span>
+    <h2>Anchored on your VO₂max, backed by the HUNT cohort</h2>
+    <p>Your biological age starts from the marker research links most strongly to longevity: <strong>cardiorespiratory fitness (VO₂max)</strong>. Converting it into years relies on work from the <strong>HUNT cohort</strong> — the benchmark Norwegian study and one of the largest databases of measured cardiorespiratory fitness in the world — and it is then refined by modifiers drawn from your actual habits: heart rate variability, sleep, activity, waist circumference, diet.</p>
+    <p class="why">Your running performances go through Jack Daniels' <em>VDOT</em> formula, the endurance-training standard for forty years. And the calculation runs from day one: no need for a month of history to get a first honest answer.</p>
+    <div class="src">
+      <div class="lbl">References</div>
+      <p>HUNT cohort (Nord-Trøndelag Health Study, Norway) — VO₂max norms by age and sex.</p>
+      <p>Jack Daniels &amp; Jimmy Gilbert — VDOT tables, <em>Oxygen Power</em>.</p>
+    </div>
+    <a class="more" href="/en/method/biological-age.html">Read the details →</a>
+  </section>
+
+  <section class="engine" id="nutrition">
+    <span class="num label"><span class="gold">III</span> &nbsp;·&nbsp; Nutrition</span>
+    <h2>400,000 foods from official databases</h2>
+    <p>When you scan a meal, the analysis does not come out of nowhere: each food is matched against the <strong>reference public nutrition databases</strong> — the <strong>ANSES Ciqual table</strong> (France's food safety agency: 3,484 foods, 257,000 nutrient values measured in the lab), <strong>USDA FoodData Central</strong> (more than 400,000 US entries) and Open Food Facts for barcoded products.</p>
+    <p class="why">Macros, micronutrients, antioxidants: every value shown in the app can be traced back to its official source.</p>
+    <div class="src">
+      <div class="lbl">References</div>
+      <p>ANSES — Ciqual food composition table.</p>
+      <p>U.S. Department of Agriculture — FoodData Central.</p>
+    </div>
+    <a class="more" href="/en/method/nutrition.html">Read the details →</a>
+  </section>
+
+  <section class="engine" id="vitaux">
+    <span class="num label"><span class="gold">IV</span> &nbsp;·&nbsp; Vitals</span>
+    <h2>Your baseline, not someone else's</h2>
+    <p><a href="/en/journal/what-is-hrv-heart-rate-variability.html" style="color:inherit">Heart rate variability</a> and resting heart rate are measured <strong>at rest, mostly during your night</strong> — when conditions are the most comparable from one day to the next. The app reads them the way research recommends: as a deviation from your personal average and as a trend over several days, never as an isolated absolute value.</p>
+    <p class="why">HRV dropping for one night is noise. A week below your baseline is a signal — and that is exactly what the <a href="/en/journal/readiness-score-how-it-works.html" style="color:inherit">score</a> trends bring out.</p>
+    <a class="more" href="/en/method/vitals.html">Read the details →</a>
+  </section>
+
+  <section class="engine" id="cibles">
+    <span class="num label"><span class="gold">V</span> &nbsp;·&nbsp; Targets</span>
+    <h2>A metabolism measured, not estimated once and for all</h2>
+    <p>Your energy expenditure is not frozen in a formula filled in on day one: it is <strong>recalibrated continuously</strong> from your weigh-ins and your actual meals. If your weight moves faster or slower than expected, your targets adjust — the observed energy balance method, the only one that converges on <em>your</em> real metabolism.</p>
+    <p class="why">Protein targets follow the ranges from recent meta-analyses (<a href="/en/journal/how-much-protein-per-day-to-build-muscle.html" style="color:inherit">up to 2.2 g per kilo for building muscle</a>), adjusted to your goal.</p>
+    <a class="more" href="/en/method/targets.html">Read the details →</a>
+  </section>
+
+  <section class="fiches" id="mesures">
+    <span class="label">Explainers</span>
+    <h2>The measures, explained</h2>
+    <a href="/en/method/heart-rate-variability.html">Heart rate variability (HRV)<span>Recovery</span></a>
+    <a href="/en/method/resting-heart-rate.html">Resting heart rate<span>Vitals</span></a>
+    <a href="/en/method/vo2max.html">VO₂max<span>Longevity</span></a>
+    <a href="/en/method/respiratory-rate.html">Respiratory rate<span>Vitals</span></a>
+    <a href="/en/method/blood-oxygen.html">Blood oxygen (SpO₂)<span>Vitals</span></a>
+    <a href="/en/method/wrist-temperature.html">Wrist temperature<span>Vitals</span></a>
+    <a href="/en/method/baseline.html">Your baseline<span>Method</span></a>
+    <a href="/en/method/sleep-need.html">Your sleep need<span>Sleep</span></a>
+    <a href="/en/method/energy-expenditure.html">Energy expenditure (TDEE)<span>Nutrition</span></a>
+  </section>
+
+  <section class="fiches" id="donnees">
+    <span class="label">Go further</span>
+    <h2>Nutrition data</h2>
+    <a href="/en/data/">Foods highest in protein, iron and more<span>Ciqual table 2025</span></a>
+  </section>
+
+  <div class="reward">
+    <span class="label">The next step</span>
+    <h2>You just read the method.<br>The app applies it to you.</h2>
+    <p>Everything described here runs automatically on your data, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('science_cta_click',{lang:'en'})">Request access</a>
+  </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+
+<script>
+  var POSTHOG_KEY = "phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if (POSTHOG_KEY) {
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});
+  }
+  function track(ev,props){ if(window.posthog && POSTHOG_KEY) posthog.capture(ev,props||{}); }
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+  track('science_view',{lang:'en'});
+</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Calorie and macro targets: how they&#x27;re calculated — Ecleptic</title>
+<meta name="description" content="How Ecleptic calculates your calorie and macro targets: expenditure recalibrated from your weigh-ins and meals, your goal, and strict safeguards.">
+<link rel="canonical" href="https://ecleptic.health/en/method/targets.html">
+<meta property="og:title" content="Targets, calibrated on what you actually burn">
+<meta property="og:description" content="How Ecleptic calculates your calorie and macro targets: expenditure recalibrated from your weigh-ins and meals, your goal, and strict safeguards.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/method/targets.html">
+<meta property="og:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Targets, calibrated on what you actually burn", "description": "How Ecleptic calculates your calorie and macro targets: expenditure recalibrated from your weigh-ins and meals, your goal, and strict safeguards.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "en", "image": "https://ecleptic.health/assets/science/file-d-etoiles-og.jpg", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/method/targets.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecleptic.health/en/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/en/science.html"}, {"@type": "ListItem", "position": 3, "name": "Targets", "item": "https://ecleptic.health/en/method/targets.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do my calorie targets change from week to week?", "acceptedAnswer": {"@type": "Answer", "text": "Because your expenditure is re-estimated from your weigh-ins and logged meals: if your weight moves faster or slower than expected, your targets follow. Changes are dampened, never more than 10% down or 25% up from one calculation to the next, so a week of water retention doesn't make them swing."}}, {"@type": "Question", "name": "How much protein do you need per day for your goal?", "acceptedAnswer": {"@type": "Answer", "text": "In Ecleptic, 2.2 g per kilo of body weight for weight loss, muscle gain and strength building, and 1.6 g per kilo for maintenance, cardio and endurance. Fat then covers 30% of calories, never less than 0.8 g per kilo, and carbs make up the rest."}}, {"@type": "Question", "name": "Do you need to weigh yourself every day to adjust your calories?", "acceptedAnswer": {"@type": "Answer", "text": "No, but you do need regular weigh-ins: the app measures your real expenditure once it has at least 3 weigh-ins and 10 days of logged meals out of the last 14. The more often you weigh yourself, the more reliable the trend, and a single weigh-in carries little weight, because outliers are clipped."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/methode/cibles.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/method/targets.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/method/targets.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/methode/cibles.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/method/targets.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/science.html">Science-Based</a><span aria-hidden="true">/</span><span>Targets</span></nav>
+    <span class="label"><span class="gold">Engine V &nbsp;&middot;&nbsp; The method</span></span>
+    <h1>Targets, calibrated on what you actually burn</h1>
+    <p class="standfirst">How much you really burn, and so how much you should eat: the app doesn't guess it once and for all, <strong>it measures it from your actual weigh-ins and meals</strong>. Here is every step of the calculation, from the starting formula to your calorie and macro targets.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic</p>
+  </header>
+  <h2>What the engine calculates</h2>
+<p>The targets engine answers two questions, in this order. First: <strong>how much do you really burn per day?</strong> That's your <a href="/en/method/energy-expenditure.html">energy expenditure</a>, or TDEE. Then: <strong>given your goal, how much should you eat, and in what split?</strong> Those are your calorie, protein, fat and carb targets.</p>
+<p>A formula filled in on day one gives a ballpark figure, not your metabolism. The app only uses it as a starting point: after that, <strong>your expenditure is recalibrated continuously from your actual weigh-ins and meals</strong>. This is the observed energy balance method, the only one that converges on your own metabolism, not on that of a population average.</p>
+
+<h2>The starting point: a formula</h2>
+<p>On day one, the app knows neither your meals nor how your weight is trending. So it calculates your resting metabolic rate with the <strong>Mifflin-St Jeor</strong> equation, published in 1990 for healthy adults, from your weight, height, age and sex: 10 × weight (kg) + 6.25 × height (cm) − 5 × age, then + 5 for a man, − 161 for a woman, or − 78, the average of the two, if you haven't specified your sex.</p>
+<p>This resting metabolic rate is then multiplied by an activity factor, based on your training level:</p>
+<ul>
+<li><strong>Beginner:</strong> × 1.3.</li>
+<li><strong>Occasional:</strong> × 1.4.</li>
+<li><strong>Regular:</strong> × 1.55.</li>
+<li><strong>Intensive:</strong> × 1.7.</li>
+</ul>
+<p>Example: a 30-year-old man who weighs 80 kg (176 lb) and is 1.80 m (5 ft 11 in) tall has a resting metabolic rate of 1,780 kcal. If he trains regularly, his starting expenditure is about 2,760 kcal a day. That's a population estimate: for any given person, the error can exceed several hundred kilocalories a day. Hence the next step.</p>
+
+<h2>Your real expenditure, read from your own energy balance</h2>
+<p>The principle fits in one sentence: if your weight is stable, you eat what you burn; if it drops, you burn more; if it rises, less. So by crossing what you eat with how your weight changes, you can work back to what you really burn. The app crosses two data series:</p>
+<ul>
+<li><strong>Your weight trend:</strong> a smoothed average of your weigh-ins, with a 10-day half-life, where recent weigh-ins count more. Outlier weigh-ins are clipped: a temperamental scale doesn't make the trend.</li>
+<li><strong>The intake you actually logged:</strong> the average of your meals over the last 14 days. How the app analyzes each meal: <a href="/en/method/nutrition.html">Nutrition</a>.</li>
+</ul>
+<p>Observed expenditure is then calculated like this: <strong>average intake − (weight change per week × energy density) ÷ 7</strong>. Energy density is 7,700 kcal per kilo (about 3,500 kcal per pound), or 5,500 kcal per kilo when your goal is muscle gain, because weight gained while building muscle holds less energy. These values remain approximations, discussed in the <a href="/en/method/energy-expenditure.html">energy expenditure</a> explainer.</p>
+<p>Example: you log an average of 2,200 kcal a day and your trend drops by 0.4 kg (about 0.9 lb) a week. That loss is worth 0.4 × 7,700 = 3,080 kcal a week, or 440 kcal a day: your observed expenditure is about 2,640 kcal.</p>
+<p>This measurement only kicks in if it rests on enough data: <strong>at least 10 days of logged meals out of 14</strong> and <strong>at least 3 weigh-ins</strong> over the period. Otherwise, the formula prevails.</p>
+
+<h2>A gradual, monitored handover</h2>
+<p>The measurement doesn't replace the formula all at once. Its weight in the calculation equals the number of valid days, meaning your days with logged meals, <strong>divided by 21</strong>; the rest comes from the formula. As long as data is missing, it's the formula; after that, a blend that leans further toward your measurement the more consistently you log your meals.</p>
+<p>Each new estimate is then <strong>dampened</strong> relative to the previous one: your expenditure can't drop by more than 10% or rise by more than 25% from one calculation to the next. The asymmetry is deliberate. A week of water retention shouldn't make your targets swing; on the other hand, after a stretch when you logged your meals less carefully, the rebound needs to be quick.</p>
+<p>Finally, two plausibility checks set aside the observed estimate when the data tells an impossible story:</p>
+<ul>
+<li><strong>Below your resting metabolic rate:</strong> a total expenditure lower than what your body burns at rest makes no sense.</li>
+<li><strong>Intake too low for a weight that isn't dropping:</strong> below 1.2 times your resting metabolic rate, with no drop in your weight, it's a sign that meals weren't logged, not of a real deficit.</li>
+</ul>
+<p>In both cases, the formula takes over again. An honest estimate beats a wrong measurement.</p>
+
+<h2>From your expenditure to your targets</h2>
+<p>Once your expenditure is estimated, your goal sets the adjustment to apply:</p>
+<div class="figs">
+  <div><span class="v">−18%</span><span class="u">Weight loss</span></div>
+  <div><span class="v">+12%</span><span class="u">Muscle gain</span></div>
+  <div><span class="v">+7%</span><span class="u">Strength</span></div>
+  <div><span class="v">0%</span><span class="u">Maintenance, cardio, endurance</span></div>
+</div>
+<p>Protein is set first, in grams per kilo of body weight:</p>
+<ul>
+<li><strong>2.2 g/kg (about 1 g per pound):</strong> weight loss, muscle gain and strength building. In a deficit, it helps preserve your muscle; in a surplus, it supplies what you need to build it.</li>
+<li><strong>1.6 g/kg (about 0.7 g per pound):</strong> maintenance, better cardio and endurance.</li>
+</ul>
+<p>Next comes <strong>fat, at 30% of calories</strong>, never dropping below 0.8 g per kilo: a minimum of fat remains essential, even in a deficit. <strong>Carbs make up</strong> the rest. The benchmarks behind these choices: <a href="/en/journal/how-much-protein-per-day-to-build-muscle.html">how much protein per day</a> and how many carbs you need when you train.</p>
+<p>Back to our example. For weight loss, 2,760 kcal × 0.82 gives a target of about 2,260 kcal: 176 g of protein (2.2 × 80 kg), 75 g of fat (30% of calories) and about 220 g of carbs.</p>
+
+<h2>Non-negotiable safeguards</h2>
+<p>Some rules come before your goal, whatever it is:</p>
+<ul>
+<li><strong>BMI under 18.5:</strong> no deficit. Losing weight makes no sense when your build is already below the normal range.</li>
+<li><strong>Under 18:</strong> no deficit. A growing body shouldn't be put on a diet by an app.</li>
+<li><strong>Losing too fast:</strong> if your observed loss exceeds 1.5% of your body weight per week, the deficit is slowed to −10%. Losing weight too fast comes more at the expense of muscle.</li>
+<li><strong>Sleep debt:</strong> if your nights over the past week add up to at least 5 hours of shortfall against 7 hours a night, across at least 4 logged nights, the deficit is limited to −15%. A long night doesn't make up for a short one. When you're short on sleep, a deficit is harder to stick to and costlier for your muscle.</li>
+<li><strong>A capped rate of loss:</strong> your deficit never exceeds the equivalent of losing 1% of your body weight per week, about 11 kcal per kilo per day: 880 kcal at most at 80 kg.</li>
+<li><strong>A calorie floor:</strong> your target never drops below your resting metabolic rate, nor below 1,200 kcal for a woman and 1,500 kcal for a man or if you haven't specified your sex. Your protein then stays the same; fat is recalculated and carbs take the rest.</li>
+</ul>
+
+<h2>When your targets change</h2>
+<p>Your expenditure is re-estimated <strong>every night</strong>, and your targets are also recalculated when you weigh in or log your meals. So they follow your reality, week after week: if your weight moves faster or slower than expected, they adjust. Three situations also change them:</p>
+<ul>
+<li><strong>Your day:</strong> the app distinguishes five levels based on your active minutes, from rest to an intense day (1 hr 45 min or more), through very light, light (30 min) and moderate (1 hr). An active day gets a bonus of 4 kcal per active minute, calculated from your days at the same level over the past two weeks, 600 kcal at most; a rest day gets an offsetting cut, 300 kcal at most, so that on average your week stays close to your target. The whole difference goes through carbs: protein and fat don't move. The day's level is read from your workouts and your steps.</li>
+<li><strong>Your cycle:</strong> if you track your menstrual cycle in the app, with your explicit consent and not on the combined pill, your target is raised by 150 kcal during your estimated luteal phase, once two complete cycles are logged. Around the start of your period, the measurement of your expenditure is set aside and the formula takes over again: water retention would skew your weight trend.</li>
+<li><strong>Travel or illness:</strong> the “Travel / illness” switch freezes the estimate of your expenditure while it's on, then for seven more days. Random meals or a lost appetite shouldn't rewrite your metabolism. Only the measurement is frozen: your goal doesn't change.</li>
+</ul>
+<p>Your targets also count in your score: how well your day matches them makes up <strong>40% of the nutrition pillar</strong> of the <a href="/en/method/readiness-score.html">Readiness Score</a>. Wrong targets would skew that pillar; one more reason for them to match your real expenditure.</p>
+
+<h2>What this engine is not</h2>
+<p>It's not a lab measurement. Your targets are only as good as your data: forgotten meals or infrequent weigh-ins delay the switch to your real expenditure, and the 7,700 kcal-per-kilo rule remains an approximation. The engine is designed to converge on your real expenditure smoothly, not to be accurate to the last kilocalorie.</p>
+<p>Nor is it medical dietary care. The app is a wellness tool, not a medical device: it doesn't diagnose anything and replaces neither a doctor nor a dietitian. If you have a chronic disease, are pregnant, have a history of eating disorders or have lost weight without explanation, a health professional should set your intake.</p>
+  <section class="refs">
+    <h2>References</h2>
+    <ul>
+      <li>Mifflin M. D., St Jeor S. T. et al. (1990), a new equation for resting metabolic rate in healthy adults, <em>American Journal of Clinical Nutrition</em>. <a href="https://doi.org/10.1093/ajcn/51.2.241" rel="noopener" target="_blank">doi:10.1093/ajcn/51.2.241</a></li>
+      <li>Hall K. D. et al. (2011), quantifying the effect of energy imbalance on body weight, <em>The Lancet</em>. <a href="https://doi.org/10.1016/S0140-6736(11)60812-X" rel="noopener" target="_blank">doi:10.1016/S0140-6736(11)60812-X</a></li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>Why do my calorie targets change from week to week?</h3>
+    <p>Because your expenditure is re-estimated from your weigh-ins and logged meals: if your weight moves faster or slower than expected, your targets follow. Changes are dampened, never more than 10% down or 25% up from one calculation to the next, so a week of water retention doesn&#x27;t make them swing.</p>
+    <h3>How much protein do you need per day for your goal?</h3>
+    <p>In Ecleptic, 2.2 g per kilo of body weight for weight loss, muscle gain and strength building, and 1.6 g per kilo for maintenance, cardio and endurance. Fat then covers 30% of calories, never less than 0.8 g per kilo, and carbs make up the rest.</p>
+    <h3>Do you need to weigh yourself every day to adjust your calories?</h3>
+    <p>No, but you do need regular weigh-ins: the app measures your real expenditure once it has at least 3 weigh-ins and 10 days of logged meals out of the last 14. The more often you weigh yourself, the more reliable the trend, and a single weigh-in carries little weight, because outliers are clipped.</p>
+  </section>
+  <div class="reward">
+    <span class="label">The next step</span>
+    <h2>You just read the method.<br>The app applies it to you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'cibles',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Go further</span>
+<a href="/en/method/energy-expenditure.html">Energy expenditure (TDEE)</a>
+<a href="/en/method/nutrition.html">Nutrition</a>
+<a href="/en/method/readiness-score.html">The Readiness Score</a>
+<a href="/en/journal/how-many-calories-per-day.html">How many calories do you really need per day?</a>
+<a href="/en/journal/how-much-protein-per-day-to-build-muscle.html">How much protein per day to build muscle?</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('methode_view',{page:'cibles',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

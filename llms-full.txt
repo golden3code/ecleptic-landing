@@ -2634,3 +2634,427 @@ Parce que la signature est immanquable dans les données : fréquence cardiaque 
 - Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. *JMIR Ment Health*. 2018. — https://doi.org/10.2196/mental.9519
 - de Zambotti M, Forouzanfar M, Javitz H, et al. Impact of evening alcohol consumption on nocturnal autonomic and cardiovascular function in adult men and women: a dose-response laboratory investigation. *Sleep*. 2021. — https://doi.org/10.1093/sleep/zsaa135
 - Jones AW. Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework. *Forensic Sci Int*. 2010. — https://doi.org/10.1016/j.forsciint.2010.02.021
+
+---
+
+# Aliments riches en protéines : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-proteines.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Les protéines sont le matériau de construction de ton corps : muscles, peau, cheveux, ongles, matrice des os. Elles font aussi tourner la machine, sous forme d'enzymes, d'hormones, d'anticorps ou d'hémoglobine. Elles sont assemblées à partir de 20 acides aminés, dont 9 que ton corps ne sait pas fabriquer en quantité suffisante : histidine, isoleucine, leucine, lysine, méthionine, phénylalanine, thréonine, tryptophane et valine. Ceux-là, seule ton assiette peut les apporter. Les protéines animales en contiennent généralement davantage et se digèrent un peu mieux que les protéines végétales, rappelle l'ANSES.
+
+Il n'existe pas de VNR pour les protéines : l'étiquetage européen utilise seulement un apport de référence de 50 g par jour pour un adulte type (annexe XIII du règlement 1169/2011). Ton besoin réel dépend de ton poids. L'EFSA (2012) et l'ANSES fixent la référence de l'adulte à 0,83 g par kilo et par jour, soit environ 58 g pour 70 kg, avec un supplément pendant la grossesse et l'allaitement. Si tu t'entraînes, la position 2017 de l'International Society of Sports Nutrition situe les besoins entre 1,4 et 2 g par kilo et par jour pour construire et garder ton muscle. L'EFSA juge sûrs des apports allant jusqu'au double de la référence.
+
+## Classement au quotidien (pour 100 g)
+
+1. Oeuf, blanc (blanc d'oeuf), en poudre — 81,1 g/100 g
+2. Morue, salée, sèche — 47,6 g/100 g
+3. Boeuf, joue, braisée ou bouillie/cuite à l'eau — 39,2 g/100 g
+4. Viande des Grisons — 38,9 g/100 g
+5. Veau, jarret braisé ou bouilli — 37,4 g/100 g
+6. Porc, rouelle de jambon cuite — 36,9 g/100 g
+7. Soja, graine entière — 36,5 g/100 g
+8. Lupin, graine, sec — 36,2 g/100 g
+9. Lait en poudre, écrémé — 35,3 g/100 g
+10. Agneau, gigot braisé — 35,2 g/100 g
+11. Saucisson sec allégé en matière grasse — 34,6 g/100 g
+12. Mimolette vieille (12 mois d'affinage minimum) — 34 g/100 g
+13. Grana Padano — 33,9 g/100 g
+14. Mimolette extra-vieille (18 mois d'affinage minimum) — 33,7 g/100 g
+15. Lapin de garenne, viande cuite — 33 g/100 g
+16. Bresaola — 32,8 g/100 g
+17. Chevreuil, viande rôtie/cuite au four — 32,6 g/100 g
+18. Calmar ou calamar ou encornet, bouilli/cuit à l'eau — 32,5 g/100 g
+19. Faisan, viande rôtie/cuite au four — 32,4 g/100 g
+20. Gésier, canard, confit, appertisé — 32,4 g/100 g
+21. Asiago — 32,1 g/100 g
+22. Boeuf braisé — 32,1 g/100 g
+23. Mélange de fromages râpés (ex : spécial gratins, spécial pâtes, spécial pizzas…) — 32 g/100 g
+24. Confit de canard, viande (cuisse), sans peau, appertisé, réchauffé — 32 g/100 g
+25. Thon germon ou thon blanc, à l'huile d'olive, appertisé, égoutté — 31,3 g/100 g
+
+---
+
+# Aliments riches en fer : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-fer.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Le fer sert d'abord à transporter l'oxygène et à l'utiliser dans tes cellules. Ton corps le recycle très bien, mais il ne sait pas éliminer un excès : tout se règle à l'absorption. Dans l'assiette, il existe sous deux formes. Le fer héminique, présent seulement dans la viande, les abats, le poisson et les fruits de mer, est le mieux absorbé. Le fer non héminique, présent dans presque tous les aliments, végétaux compris, l'est moins, et son absorption dépend du reste du repas et de tes réserves. Un manque prolongé peut conduire à une anémie par carence en fer.
+
+Sur les étiquettes, la VNR européenne du fer est de 14 mg par jour (règlement 1169/2011). Tes besoins réels dépendent surtout des règles. Selon l'EFSA (2015), la référence est de 11 mg par jour pour les hommes et les femmes ménopausées, de 16 mg pour les femmes non ménopausées, grossesse et allaitement compris, et de 13 mg pour les adolescentes. L'ANSES reprend ces valeurs mais distingue les femmes aux règles peu à modérément abondantes (11 mg) de celles aux règles abondantes (16 mg). Ces chiffres tiennent compte du fait que tu n'absorbes qu'une petite partie du fer de ton assiette : 16 à 18 % dans les calculs de l'EFSA.
+
+## Classement au quotidien (pour 100 g)
+
+1. Chocolat noir sans sucres ajoutés, avec édulcorants, en tablette — 22,8 mg/100 g
+2. Boudin noir, grillé/poêlé — 22,8 mg/100 g
+3. Riz soufflé chocolaté, enrichi en vitamines et minéraux — 19 mg/100 g
+4. Foie, porc, cuit — 17,9 mg/100 g
+5. Boudin, grillé/poêlé (aliment moyen) — 16,3 mg/100 g
+6. Pétales de céréales au chocolat, avec ou sans fruits à coque, enrichis en vitamines et minéraux — 16 mg/100 g
+7. Soja, graine entière — 15,7 mg/100 g
+8. Pétales de céréales, nature, sucrées, enrichies en vitamines et minéraux — 15 mg/100 g
+9. Sésame, graine — 14,6 mg/100 g
+10. Coque, cuite — 14 mg/100 g
+11. Luzerne, graine — 12,9 mg/100 g
+12. Confiserie au chocolat dragéifiée — 12,5 mg/100 g
+13. Rognon, agneau, braisé — 12,4 mg/100 g
+14. Sauce au chocolat, préemballée — 12 mg/100 g
+15. Céréales pour petit déjeuner riches en fibres, au chocolat, enrichies en vitamines et minéraux — 12 mg/100 g
+16. Pétales de céréales aux fruits à coque, enrichis en vitamines et minéraux — 11,4 mg/100 g
+17. Chocolat noir 70 % de cacao environ, de dégustation, tablette — 11 mg/100 g
+18. Céréales pour petit déjeuner chocolatées, non fourrées, enrichies en vitamines et minéraux — 11 mg/100 g
+19. Haricot blanc, sec — 10,4 mg/100 g
+20. Clam, praire ou palourde, bouilli/cuit à l'eau — 9,67 mg/100 g
+21. Barre céréalière pour petit déjeuner au lait, au chocolat ou non, enrichie en vitamines et minéraux — 9,65 mg/100 g
+22. Poulpe, cuit — 9,54 mg/100 g
+23. Oeuf, jaune (jaune d'oeuf), en poudre — 9,5 mg/100 g
+24. Pétales de maïs nature, enrichis en vitamines et minéraux — 9,4 mg/100 g
+25. Gésier, canard, confit, appertisé — 9,4 mg/100 g
+
+---
+
+# Aliments riches en magnésium : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-magnesium.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Le magnésium participe à plus de 300 systèmes enzymatiques. Il intervient dans la production d'énergie et dans toutes les réactions qui utilisent l'ATP, le carburant de tes cellules, mais aussi dans le maintien du potentiel électrique des membranes, le transport des ions et le métabolisme du calcium. Un adulte en contient environ 25 g, dont 50 à 60 % dans les os et un quart dans les muscles ; seul 1 % se trouve hors des cellules. Une vraie déficience peut faire chuter le calcium et le potassium du sang, avec des symptômes cardiaques et neurologiques.
+
+La VNR européenne est de 375 mg par jour (règlement 1169/2011). Faute de données pour calculer un besoin moyen, l'EFSA (2015) a fixé un apport satisfaisant de 350 mg par jour pour les hommes et 300 mg pour les femmes, sans supplément pendant la grossesse ou l'allaitement. L'ANSES retient 380 mg pour les hommes et 300 mg pour les femmes. Les références américaines sont plus hautes : 400 à 420 mg pour les hommes, 310 à 320 mg pour les femmes. L'ANSES fixe aussi une limite de sécurité, mais elle ne vise que le magnésium des compléments et des aliments enrichis, pas celui naturellement présent dans les aliments.
+
+## Classement au quotidien (pour 100 g)
+
+1. Chanvre ou chènevis, graine décortiquée — 700 mg/100 g
+2. Courge, graine, séchée — 592 mg/100 g
+3. Noix du Brésil ou noix d'Amazonie, sans sel ajouté — 376 mg/100 g
+4. Tournesol, graine — 364 mg/100 g
+5. Sésame, grillé, graine décortiquée — 346 mg/100 g
+6. Lin, graine — 336 mg/100 g
+7. Chia, graine, séchée — 335 mg/100 g
+8. Bigorneau, cuit — 310 mg/100 g
+9. Biscuit sec fourré à la pâte ou purée de fruits (ex : figue) — 294 mg/100 g
+10. Noix de cajou, grillée à sec, sans sel ajouté — 280 mg/100 g
+11. Soja, graine entière — 280 mg/100 g
+12. Amande, grillée, salée — 279 mg/100 g
+13. Céréales pour petit déjeuner très riches en fibres, nature, enrichies en vitamines et minéraux — 274 mg/100 g
+14. Haricot mungo, sec — 267 mg/100 g
+15. Amarante, crue — 248 mg/100 g
+16. Sarrasin complet, cru — 231 mg/100 g
+17. Pignon de pin — 227 mg/100 g
+18. Chocolat noir 70 % de cacao environ, de dégustation, tablette — 200 mg/100 g
+19. Lupin, graine, sec — 198 mg/100 g
+20. Quinoa, cru — 197 mg/100 g
+21. Biscuit sec à teneur garantie en vitamines et minéraux — 195 mg/100 g
+22. Fruits à coques et cacahuète, salé (aliment moyen) — 194 mg/100 g
+23. Tomate, séchée — 194 mg/100 g
+24. Fève, sèche — 192 mg/100 g
+25. Cacahuète, sans sel ajouté — 190 mg/100 g
+
+---
+
+# Aliments riches en calcium : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-calcium.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Le calcium est le minéral le plus abondant de ton corps : 1 à 2 % de ton poids, dont 99 % dans le squelette. Il donne aux os et aux dents leur solidité, mais il sert aussi à l'excitabilité des nerfs et des muscles, à la coagulation du sang, à la libération des hormones et à l'activation de nombreuses enzymes. Son taux sanguin est réglé très finement, en lien avec les réserves de l'os. À long terme, des apports insuffisants réduisent la masse osseuse et augmentent le risque de fracture. La vitamine D, elle, favorise son absorption.
+
+La VNR européenne est de 800 mg par jour (règlement 1169/2011). Les références de l'EFSA (2015), reprises par l'ANSES, sont plus élevées : 950 mg par jour à partir de 25 ans, 1 000 mg entre 18 et 24 ans, quand l'os continue de se charger en calcium, et 1 150 mg de 11 à 17 ans. Grossesse et allaitement ne changent pas ces valeurs : le métabolisme du calcium s'adapte. À l'inverse, l'ANSES fixe une limite de sécurité de 2 500 mg par jour chez l'adulte : plus n'est pas toujours mieux.
+
+## Classement au quotidien (pour 100 g)
+
+1. Lait en poudre, écrémé — 1 260 mg/100 g
+2. Pecorino (fromage de brebis) — 1 160 mg/100 g
+3. Grana Padano — 1 050 mg/100 g
+4. Crevette grise, cuite — 1 000 mg/100 g
+5. Parmesan — 980 mg/100 g
+6. Emmental ou emmenthal — 978 mg/100 g
+7. Sésame, graine — 962 mg/100 g
+8. Tomme ou tome de vache — 953 mg/100 g
+9. Fromage à pâte pressée cuite type emmental ou emmenthal, allégé en matière grasse — 949 mg/100 g
+10. Fromage à pâte pressée cuite (aliment moyen) — 916 mg/100 g
+11. Mimolette vieille (12 mois d'affinage minimum) — 910 mg/100 g
+12. Comté — 907 mg/100 g
+13. Gruyère IGP France — 898 mg/100 g
+14. Fromage de chèvre sec — 895 mg/100 g
+15. Fromage à effilocher ou à dérouler — 883 mg/100 g
+16. Tomme ou tome, allégée en matière grasse — 852 mg/100 g
+17. Beaufort — 845 mg/100 g
+18. Mimolette jeune (moins de 6 mois d'affinage) — 844 mg/100 g
+19. Fromage à pâte pressée demi-cuite — 833 mg/100 g
+20. Mimolette, sans précision — 825 mg/100 g
+21. Cantal — 817 mg/100 g
+22. Edam — 812 mg/100 g
+23. Gruyère, sans précision (origine France ou Suisse) — 800 mg/100 g
+24. Cantal entre-deux — 791 mg/100 g
+25. Gouda — 774 mg/100 g
+
+---
+
+# Aliments riches en fibres : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-fibres.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Les fibres sont des glucides que ton intestin grêle ne digère pas, auxquels s'ajoute la lignine : elles arrivent intactes dans le côlon. Leur effet le plus direct concerne le transit. Mais leur intérêt va plus loin. Dans une série de méta-analyses publiée dans The Lancet en 2019 (185 études prospectives, 58 essais cliniques), les plus gros mangeurs de fibres présentaient 15 à 30 % de risque en moins de mortalité, de maladie coronarienne, d'AVC, de diabète de type 2 et de cancer colorectal que les plus petits mangeurs. Les essais montraient aussi un poids, une tension et un cholestérol plus bas.
+
+Il n'existe pas de VNR pour les fibres. Le seul repère des étiquettes vient des allégations (règlement 1924/2006) : « source de fibres » à partir de 3 g pour 100 g, « riche en fibres » à partir de 6 g. Côté besoins, l'EFSA (2010) juge 25 g par jour suffisants pour un transit normal chez l'adulte. L'ANSES (2016) vise 30 g par jour, car la baisse du risque de maladies cardiovasculaires, de diabète de type 2 et de cancers du côlon et du sein apparaît parfois dès 25 g et de façon plus nette à 30 g. La méta-analyse du Lancet situe le bénéfice le plus marqué entre 25 et 29 g par jour.
+
+## Classement au quotidien (pour 100 g)
+
+1. Chia, graine, séchée — 34,4 g/100 g
+2. Céréales pour petit déjeuner très riches en fibres, nature, enrichies en vitamines et minéraux — 33,1 g/100 g
+3. Lin, brun, graine — 26,9 g/100 g
+4. Pois cassé, sec — 25,5 g/100 g
+5. Fève, sèche — 25 g/100 g
+6. Carotte, déshydratée — 23,6 g/100 g
+7. Haricot flageolet, vert, sec — 23,4 g/100 g
+8. Tartine croustillante au seigle, source ou riche en fibres — 21,9 g/100 g
+9. Frik (blé dur immature concassé), cru — 19,3 g/100 g
+10. Lupin, graine, sec — 18,9 g/100 g
+11. Haricot mungo, sec — 18,3 g/100 g
+12. Orge complète, crue — 17,3 g/100 g
+13. Sésame, grillé, graine décortiquée — 16,9 g/100 g
+14. Lentille verte, sèche — 16,4 g/100 g
+15. Lentille, sèche (aliment moyen) — 16,3 g/100 g
+16. Haricot coco, bouilli/cuit à l'eau — 15,8 g/100 g
+17. Lentille corail, sèche — 15,4 g/100 g
+18. Haricot blanc, sec — 15,2 g/100 g
+19. Haricot rouge, sec — 15,2 g/100 g
+20. Seigle complet, cru — 15,1 g/100 g
+21. Pêche, chair et peau, sans noyau, sèche — 14,3 g/100 g
+22. Noix de coco, chair, sèche — 13,7 g/100 g
+23. Biscuit sec fin ou tuile, saveur citron ou orange — 13,6 g/100 g
+24. Biscuit sec sans chocolat, allégé en matière grasse — 13 g/100 g
+25. Chocolat noir 70 % de cacao environ, de dégustation, tablette — 12,8 g/100 g
+
+---
+
+# Aliments riches en oméga-3 : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-omega-3.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Les oméga-3 forment une famille d'acides gras essentiels. Leur tête de file, l'acide alpha-linolénique (ALA), est indispensable : ton corps ne sait pas le fabriquer. À partir de lui, il produit l'EPA et le DHA, mais la conversion en DHA est trop faible pour couvrir les besoins : le DHA doit donc lui aussi venir de l'assiette. Ces acides gras sont nécessaires au développement et au fonctionnement de la rétine, du cerveau et du système nerveux. Côté cœur, l'ANSES retient qu'ils font baisser la tension des personnes hypertendues et les triglycérides du sang.
+
+Il n'existe pas de VNR pour les oméga-3. L'EFSA (2010) fixe pour l'adulte un apport satisfaisant de 0,5 % des calories en ALA et de 250 mg par jour d'EPA et de DHA réunis, avec 100 à 200 mg de DHA en plus pendant la grossesse et l'allaitement. L'ANSES vise plus haut : 1 % des calories en ALA, soit environ 2,2 g par jour pour 2 000 kcal, et 250 mg de DHA plus 250 mg d'EPA, soit 500 mg d'EPA et DHA réunis. Les classements de cette page séparent donc les deux familles : l'EPA et le DHA des produits de la mer, l'ALA des végétaux.
+
+## Classement au quotidien (pour 100 g)
+
+1. Foie de morue, appertisé, égoutté — 7,14 g/100 g
+2. Maquereau, filet sauce moutarde, appertisé, égoutté — 4,5 g/100 g
+3. Hareng fumé, à l'huile — 4,21 g/100 g
+4. Oeufs de saumon du Pacifique, semi-conserve — 3,5 g/100 g
+5. Pilchard, sauce tomate, appertisé, égoutté — 3,14 g/100 g
+6. Caviar, semi-conserve — 3,13 g/100 g
+7. Sardine, sauce tomate, appertisée, égouttée — 2,77 g/100 g
+8. Oeufs de truite, semi-conserve — 2,57 g/100 g
+9. Hareng, grillé/poêlé — 2,28 g/100 g
+10. Saumon, grillé/poêlé — 2,28 g/100 g
+11. Rillettes de saumon, préemballées — 1,69 g/100 g
+12. Espadon, rôti/cuit au four — 1,51 g/100 g
+13. Oeufs de lompe ou oeufs de lump, semi-conserve — 1,48 g/100 g
+14. Saumon fumé — 1,42 g/100 g
+15. Hareng mariné ou rollmops, préemballé — 1,23 g/100 g
+16. Oeufs de cabillaud, fumés, semi-conserve — 1,21 g/100 g
+17. Rillettes de poisson, préemballées — 1,08 g/100 g
+18. Thon, au naturel, appertisé, égoutté — 1,07 g/100 g
+19. Truite, élevage, fumée — 0,99 g/100 g
+20. Carpaccio de saumon avec marinade, fait maison — 0,97 g/100 g
+
+---
+
+# Aliments riches en vitamine D : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-vitamine-d.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+La vitamine D règle ton équilibre en calcium et en phosphore et permet la minéralisation des os, du cartilage et des dents. Sans elle, le calcium de l'assiette est mal absorbé : chez l'enfant, cela donne le rachitisme, chez l'adulte une décalcification osseuse (ostéomalacie), et avec l'âge une fragilité qui prédispose à l'ostéoporose et aux fractures. Sa particularité : ta peau la fabrique sous l'effet des UVB du soleil. Cette production dépend de la latitude, de la saison, de ton âge, de ta pigmentation, de tes vêtements et de la crème solaire.
+
+La VNR européenne est de 5 µg par jour (règlement 1169/2011), trois fois moins que les références actuelles : un aliment à 100 % de la VNR ne couvre qu'un tiers de ton besoin. L'EFSA (2016) et l'ANSES fixent un apport satisfaisant de 15 µg par jour à partir d'un an, grossesse et allaitement compris. L'EFSA précise que ce chiffre suppose une synthèse par la peau minimale : quand ta peau en produit, le besoin alimentaire baisse, voire disparaît. Aux États-Unis, la référence est de 15 µg (600 UI) jusqu'à 70 ans, puis de 20 µg (800 UI).
+
+## Classement au quotidien (pour 100 g)
+
+1. Foie de morue, appertisé, égoutté — 54,3 µg/100 g
+2. Oeufs de cabillaud, fumés, semi-conserve — 27,2 µg/100 g
+3. Oeufs de saumon du Pacifique, semi-conserve — 27 µg/100 g
+4. Hareng fumé, au naturel — 22 µg/100 g
+5. Saumon, appertisé, égoutté — 18,1 µg/100 g
+6. Espadon, rôti/cuit au four — 16,6 µg/100 g
+7. Fromage à pâte molle et croûte lavée, allégé en matière grasse — 15 µg/100 g
+8. Truite arc en ciel, élevage, rôtie/cuite au four — 15 µg/100 g
+9. Pilchard, sauce tomate, appertisé, égoutté — 14 µg/100 g
+10. Hareng mariné ou rollmops, préemballé — 13,2 µg/100 g
+11. Sardine, sauce tomate, appertisée, égouttée — 12,5 µg/100 g
+12. Riz soufflé chocolaté, enrichi en vitamines et minéraux — 12,5 µg/100 g
+13. Maquereau, frit — 12,3 µg/100 g
+14. Oeuf, jaune (jaune d'oeuf), en poudre — 11,4 µg/100 g
+15. Truite saumonée, sautée/poêlée — 11,1 µg/100 g
+16. Pétales de maïs glacés au sucre, enrichis en vitamines et minéraux — 11 µg/100 g
+17. Hareng, grillé/poêlé — 10,8 µg/100 g
+18. Perche ou perche européenne, rôtie/cuite au four — 9 µg/100 g
+19. Pétales de maïs nature, enrichis en vitamines et minéraux — 9 µg/100 g
+20. Riz soufflé nature, enrichi en vitamines et minéraux — 8,4 µg/100 g
+21. Grains de blé soufflés au miel ou caramel, enrichis en vitamines et minéraux — 8,1 µg/100 g
+22. Matière grasse tartinable à teneur en MG <= 41%, doux, aux stérols végétaux — 7,5 µg/100 g
+23. Matière grasse tartinable à teneur en MG > 62%, doux, riche en oméga 3 — 7,5 µg/100 g
+24. Matière grasse tartinable à teneur en MG > 41% et <= 62%, demi-sel, standard — 7,5 µg/100 g
+25. Matière grasse tartinable, sans précision sur la teneur en matière grasse, demi-sel, standard (aliment moyen) — 7,5 µg/100 g
+
+---
+
+# Aliments riches en vitamine C : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-vitamine-c.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+La vitamine C, ou acide ascorbique, sert de cofacteur à quelques enzymes clés : celles qui fabriquent le collagène de ta peau, de tes tendons et de tes vaisseaux, la carnitine et certains neurotransmetteurs. C'est pour ça qu'une carence sévère, le scorbut, touche d'abord les tissus conjonctifs. Elle joue aussi un rôle antioxydant et favorise l'absorption du fer des végétaux. Ton corps en perd un peu chaque jour : l'EFSA calcule le besoin de façon à compenser ces pertes et à garder une réserve suffisante. Les fruits et les légumes sont ses grandes sources.
+
+La VNR européenne est de 80 mg par jour (règlement 1169/2011). L'EFSA (2013) recommande 110 mg par jour pour les hommes et 95 mg pour les femmes, avec 10 mg de plus pendant la grossesse et 60 mg de plus pendant l'allaitement. L'ANSES retient 110 mg pour tous les adultes, 120 mg pendant la grossesse et 170 mg pendant l'allaitement. Aux États-Unis, la référence est plus basse (90 mg pour les hommes, 75 mg pour les femmes), mais elle augmente de 35 mg chez les fumeurs, dont le stress oxydatif accélère l'usure de la vitamine C.
+
+## Classement au quotidien (pour 100 g)
+
+1. Cerise acérola, chair et peau, sans noyau, crue (Martinique) — 2 850 mg/100 g
+2. Pomme cajou, chair et peau, crue (Martinique) — 556 mg/100 g
+3. Goyave, chair sans peau, purée (Martinique) — 492 mg/100 g
+4. Guacamole, préemballé — 359 mg/100 g
+5. Cassis, cru — 181 mg/100 g
+6. Poivron rouge, appertisé, égoutté — 171 mg/100 g
+7. Piment, cru — 144 mg/100 g
+8. Moringa, gousse, cru — 141 mg/100 g
+9. Citron, zeste, cru — 129 mg/100 g
+10. Poivron jaune, sauté/poêlé — 126 mg/100 g
+11. Poivron, vert, jaune ou rouge, cru — 121 mg/100 g
+12. Chou frisé, cru — 120 mg/100 g
+13. Graine germée de haricot mungo ou pousse de "soja", appertisée, égouttée — 106 mg/100 g
+14. Chou kale, cru — 93,4 mg/100 g
+15. Sauce pesto, préemballée — 92,6 mg/100 g
+16. Brocoli, cru — 91,2 mg/100 g
+17. Chou romanesco ou brocoli à pomme, cru — 88,1 mg/100 g
+18. Chou de Bruxelles, cru — 85 mg/100 g
+19. Longan, chair sans peau, sans noyau, cru — 84 mg/100 g
+20. Kiwi, chair sans peau, avec pépins, cru — 81,9 mg/100 g
+21. Fruits rouges, crus (framboises, fraises, groseilles, cassis) — 77,5 mg/100 g
+22. Pétales de céréales aux fruits à coque, enrichis en vitamines et minéraux — 75,8 mg/100 g
+23. Poivron vert, cuit — 74,4 mg/100 g
+24. Pétales de céréales aux fruits, non enrichis en vitamines et minéraux — 74 mg/100 g
+25. Massissi, chair, cru (Martinique) — 73,2 mg/100 g
+
+---
+
+# Aliments riches en vitamine B12 : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-vitamine-b12.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+La vitamine B12, ou cobalamine, intervient dans le métabolisme de tes cellules en lien étroit avec la vitamine B9. Une carence se traduit le plus souvent par une anémie, avec fatigue et essoufflement, et peut abîmer progressivement les nerfs, le cerveau et la moelle épinière ; ces atteintes régressent avec la vitamine, mais laissent souvent des séquelles. Elle est fabriquée par des micro-organismes, essentiellement des bactéries et des archées : on la trouve donc surtout dans les produits animaux (abats, poissons, œufs, viande, laitages), et la carence est particulièrement fréquente chez les végétaliens.
+
+La VNR européenne est de 2,5 µg par jour (règlement 1169/2011). L'EFSA (2015) et l'ANSES retiennent un apport satisfaisant de 4 µg par jour pour les adultes, 4,5 µg pendant la grossesse et 5 µg pendant l'allaitement : à ce niveau, les marqueurs sanguins du statut en B12 restent dans les normes. Aux États-Unis, la référence est de 2,4 µg, et l'Institute of Medicine conseille après 50 ans de la tirer surtout d'aliments enrichis ou de compléments, car 10 à 30 % des personnes âgées absorbent mal la B12 naturellement présente dans les aliments.
+
+## Classement au quotidien (pour 100 g)
+
+1. Foie, génisse, cuit — 83,1 µg/100 g
+2. Rognon, agneau, braisé — 78,9 µg/100 g
+3. Bigorneau, cuit — 60,7 µg/100 g
+4. Oeufs de saumon du Pacifique, semi-conserve — 48,6 µg/100 g
+5. Clam, praire ou palourde, bouilli/cuit à l'eau — 39,5 µg/100 g
+6. Coque, cuite — 38 µg/100 g
+7. Poulpe, cuit — 36 µg/100 g
+8. Abat, cuit (aliment moyen) — 22,7 µg/100 g
+9. Sardine, à l'huile d'olive, appertisée, égouttée — 20 µg/100 g
+10. Moules farcies (matière grasse, persillade…), préemballées, crues — 19,3 µg/100 g
+11. Maquereau, rôti/cuit au four — 19 µg/100 g
+12. Moule, bouillie/cuite à l'eau — 17,6 µg/100 g
+13. Anchois, filets, marinés à l'orientale (huile, piments…), semi-conserve, égouttés — 15,3 µg/100 g
+14. Foie gras, canard, entier, cuit — 15 µg/100 g
+15. Foie de morue, appertisé, égoutté — 14,4 µg/100 g
+16. Hareng, grillé/poêlé — 14,1 µg/100 g
+17. Coeur, dinde, cuit — 13,9 µg/100 g
+18. Terrine de canard — 13,6 µg/100 g
+19. Crabe, miettes et ou pattes décortiquées, appertisé, égoutté — 13,5 µg/100 g
+20. Hareng fumé, doux — 13,4 µg/100 g
+21. Pilchard, sauce tomate, appertisé, égoutté — 13 µg/100 g
+22. Crevette grise, cuite — 12,6 µg/100 g
+23. Fruits de mer (aliment moyen) — 12,4 µg/100 g
+24. Oeufs de truite, semi-conserve — 10,4 µg/100 g
+25. Moules, au naturel, appertisées, égouttées — 10,2 µg/100 g
+
+---
+
+# Aliments riches en potassium : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-potassium.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Le potassium joue un rôle central dans la transmission nerveuse, la contraction musculaire et le fonctionnement du cœur. Il participe aussi à la sécrétion d'insuline, au métabolisme des glucides et des protéines et à l'équilibre acido-basique. Un vrai manque (hypokaliémie) se traduit surtout par des troubles du rythme cardiaque, des crampes et de la fatigue ; il vient le plus souvent de pertes digestives, comme des diarrhées ou des vomissements, ou de régimes très pauvres en calories. Sur le long terme, l'EFSA relie des apports suffisants à une tension artérielle plus basse et à un moindre risque d'AVC.
+
+La VNR européenne est de 2 000 mg par jour (règlement 1169/2011). L'EFSA (2016) et l'ANSES visent plus haut : 3 500 mg par jour pour les adultes, 4 000 mg pendant l'allaitement. Ce chiffre s'appuie sur des essais montrant un effet favorable sur la tension et sur des études d'observation où des apports plus faibles sont associés à davantage d'AVC. Aux États-Unis, les références de 2019 sont de 3 400 mg pour les hommes et 2 600 mg pour les femmes. Si tu as une maladie rénale, demande l'avis de ton médecin avant d'augmenter tes apports, et jamais de complément de potassium sans lui.
+
+## Classement au quotidien (pour 100 g)
+
+1. Tomate, séchée — 3 430 mg/100 g
+2. Chips de chair de giraumon (variété phoenix) (Martinique) — 2 580 mg/100 g
+3. Carotte, déshydratée — 2 540 mg/100 g
+4. Haricot blanc, sec — 1 800 mg/100 g
+5. Soja, graine entière — 1 800 mg/100 g
+6. Lait en poudre, écrémé — 1 750 mg/100 g
+7. Flocons de pomme de terre, au lait ou à la crème, déshydratés — 1 650 mg/100 g
+8. Oignon, séché — 1 620 mg/100 g
+9. Baie de goji, séchée — 1 600 mg/100 g
+10. Champignon, lentin comestible ou shiitaké, séché — 1 530 mg/100 g
+11. Banane, chair sans peau, sèche — 1 490 mg/100 g
+12. Abricot, dénoyauté, sec — 1 400 mg/100 g
+13. Haricot rouge, sec — 1 360 mg/100 g
+14. Morue, salée, sèche — 1 300 mg/100 g
+15. Chips de pommes de terre nature ou aromatisées — 1 300 mg/100 g
+16. Chanvre ou chènevis, graine décortiquée — 1 200 mg/100 g
+17. Oeuf, blanc (blanc d'oeuf), en poudre — 1 130 mg/100 g
+18. Fève, sèche — 1 060 mg/100 g
+19. Pistache, grillée, sans sel ajouté — 1 010 mg/100 g
+20. Lupin, graine, sec — 1 010 mg/100 g
+21. Haricot mungo, sec — 983 mg/100 g
+22. Raisin sec — 960 mg/100 g
+23. Blé dur complet, précuit, à cuire — 950 mg/100 g
+24. Pêche, chair et peau, sans noyau, sèche — 945 mg/100 g
+25. Lentille verte, sèche — 940 mg/100 g
+
+---
+
+# Aliments riches en zinc : le classement de la table Ciqual
+
+URL : https://ecleptic.health/donnees/aliments-riches-en-zinc.html
+Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual. (licence CC BY 4.0)
+
+Le zinc est un oligoélément indispensable : il intervient dans l'activité de près de 300 enzymes et de plus de 2 500 facteurs de transcription, ces protéines qui règlent l'expression de tes gènes. Une carence ralentit la croissance et affaiblit les défenses immunitaires. Particularité : son absorption dépend beaucoup du reste de l'assiette. Les phytates, présents dans les céréales et les légumineuses, la réduisent. C'est pour ça que tes besoins changent selon ta façon de manger, et qu'un même chiffre sur une étiquette ne dit pas tout.
+
+La VNR européenne est de 10 mg par jour (règlement 1169/2011). L'EFSA (2014) et l'ANSES vont plus loin : la référence dépend de ta consommation de phytates. Pour un homme, elle va de 9,4 mg par jour avec 300 mg de phytates à 14 mg avec 900 mg (16,3 mg à 1 200 mg selon l'EFSA) ; pour une femme, de 7,5 à 11 mg (12,7 mg). Plus ton alimentation est riche en céréales complètes et en légumineuses, plus ton besoin est haut. Grossesse et allaitement ajoutent respectivement 1,6 et 2,9 mg par jour selon l'EFSA.
+
+## Classement au quotidien (pour 100 g)
+
+1. Boeuf, jarret bouilli/cuit à l'eau — 11 mg/100 g
+2. Boeuf braisé — 10,5 mg/100 g
+3. Sésame, grillé, graine décortiquée — 10,2 mg/100 g
+4. Chanvre ou chènevis, graine décortiquée — 9,9 mg/100 g
+5. Veau, jarret braisé ou bouilli — 8,81 mg/100 g
+6. Crabe, miettes et ou pattes décortiquées, appertisé, égoutté — 8,8 mg/100 g
+7. Pétales de céréales, nature, sucrées, enrichies en vitamines et minéraux — 8,6 mg/100 g
+8. Mont d'or ou vacherin du Haut-Doubs (produit en France) ou vacherin-Mont d'Or (produit en Suisse) — 8 mg/100 g
+9. Pétales de céréales au chocolat, avec ou sans fruits à coque, enrichis en vitamines et minéraux — 8 mg/100 g
+10. Courge, graine, séchée — 7,81 mg/100 g
+11. Oeuf, jaune (jaune d'oeuf), en poudre — 7,73 mg/100 g
+12. Champignon, lentin comestible ou shiitaké, séché — 7,66 mg/100 g
+13. Pétales de céréales aux fruits, enrichis en vitamines et minéraux — 7,53 mg/100 g
+14. Coeur, poulet, cuit — 7,3 mg/100 g
+15. Langouste, bouillie/cuite à l'eau — 7,27 mg/100 g
+16. Agneau, collier braisé ou bouilli — 7,14 mg/100 g
+17. Riz soufflé nature, enrichi en vitamines et minéraux — 7 mg/100 g
+18. Fruits de mer (aliment moyen) — 6,92 mg/100 g
+19. Luzerne, graine — 6,9 mg/100 g
+20. Foie, porc, cuit — 6,72 mg/100 g
+21. Jambon cuit, supérieur, découenné — 6,5 mg/100 g
+22. Lin, graine — 6,1 mg/100 g
+23. Oeufs de cabillaud, fumés, semi-conserve — 6,03 mg/100 g
+24. Carré de l'Est — 6 mg/100 g
+25. Gésier, canard, confit, appertisé — 6 mg/100 g

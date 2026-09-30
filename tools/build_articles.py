@@ -775,6 +775,9 @@ def nav_panels(idx, lang="fr"):
         {"t": T("Cohorte HUNT (Norvège)", "HUNT cohort (Norway)"), "u": mp("age-biologique", "age-biologique")},
         {"t": T("Tables VDOT de Jack Daniels", "Jack Daniels' VDOT tables"), "u": mp("age-biologique", "age-biologique")},
         {"t": "National Sleep Foundation", "u": mp("besoin-de-sommeil", "readiness")}]})
+    if COMPARE:
+        science_cols[-1]["items"].append({"t": T("Comparatifs : Whoop, Oura, Garmin…", "Comparisons: Whoop, Oura, Garmin…"),
+                                          "u": compare_hub_path(lang), "gold": True})
     return {
         "app": {"cols": [
             {"label": T("L'app en trois temps", "The app in three steps"), "big": True, "items": [
@@ -1925,6 +1928,195 @@ def data_hub(lang="fr"):
        "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
 
+# ============================================================================
+# Comparatifs (tools/comparatifs/pages.py) : /comparatifs/ et /en/compare/
+# Faits sur les concurrents tirés de leurs pages officielles (sources liées) ;
+# publicité comparative : comparaison objective, vérifiable, sans dénigrement.
+# ============================================================================
+
+def _load_compare():
+    import importlib.util as _ilu
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "comparatifs", "pages.py")
+    if not os.path.exists(p):
+        return []
+    spec = _ilu.spec_from_file_location("comparatifs_pages", p)
+    mod = _ilu.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return [c for c in getattr(mod, "PAGES", []) if c.get("fr") and c.get("en")]
+
+
+# Publication des comparatifs : False tant que les pages ne sont pas relues (publicité
+# comparative). ECLEPTIC_COMPARE=1 / 0 force la valeur (tests dans une copie).
+COMPARE_LIVE = False
+if os.environ.get("ECLEPTIC_COMPARE") in ("0", "1"):
+    COMPARE_LIVE = os.environ["ECLEPTIC_COMPARE"] == "1"
+COMPARE = _load_compare() if COMPARE_LIVE else []
+COMPARE_UI = {
+    "fr": {"crumb": "Comparatifs", "label": "Comparatif &nbsp;&middot;&nbsp; Informations publiques vérifiées",
+           "hub_seo": "Comparatifs : Whoop, Oura, Garmin, Apple Watch et Ecleptic",
+           "hub_desc": "Scores de récupération, âge biologique, apps qui relient sommeil, alimentation et sport : des comparatifs factuels, sourcés sur les pages officielles de chaque marque.",
+           "hub_label": "Comparatifs", "hub_h1": "Comparer,<br><span class=\"gold\">sources à l'appui</span>.",
+           "hub_p": "Ce que chaque application mesure et calcule, d'après ses propres pages officielles, liées en source. Ecleptic est notre application : nous nous en tenons aux faits publics.",
+           "read": "Lire le comparatif →", "others": "Les autres comparatifs"},
+    "en": {"crumb": "Compare", "label": "Comparison &nbsp;&middot;&nbsp; Verified public information",
+           "hub_seo": "Comparisons: Whoop, Oura, Garmin, Apple Watch and Ecleptic",
+           "hub_desc": "Recovery scores, biological age, apps that connect sleep, nutrition and training: factual comparisons, sourced from each brand's official pages.",
+           "hub_label": "Comparisons", "hub_h1": "Compare,<br><span class=\"gold\">with sources</span>.",
+           "hub_p": "What each app measures and calculates, according to its own official pages, linked as sources. Ecleptic is our app: we stick to public facts.",
+           "read": "Read the comparison →", "others": "Other comparisons"},
+}
+
+
+def compare_path(c, lang="fr"):
+    return ("/comparatifs/%s.html" % c["slug_fr"]) if lang == "fr" else ("/en/compare/%s.html" % c["slug_en"])
+
+
+def compare_hub_path(lang="fr"):
+    return "/comparatifs/" if lang == "fr" else "/en/compare/"
+
+
+def compare_page(c, lang="fr"):
+    import json as _json
+    t = c[lang]
+    CU = COMPARE_UI[lang]
+    path, alt_fr, alt_en = compare_path(c, lang), compare_path(c, "fr"), compare_path(c, "en")
+    url = SITE + path
+    faqblock, faqjsonld = faq_parts(t.get("faq") or [], lang)
+    srcs = c.get("sources", [])
+    others = "\n".join('<a href="%s">%s</a>' % (compare_path(o, lang), html.escape(o[lang]["title"]))
+                       for o in COMPARE if o is not c)
+    jsonld = _json.dumps([
+        {"@context": "https://schema.org", "@type": "Article", "headline": t["title"], "description": t["description"],
+         "image": SITE + "/assets/og/journal.jpg", "datePublished": c.get("date", DATA_DATE),
+         "dateModified": c.get("updated", c.get("date", DATA_DATE)), "inLanguage": lang,
+         "author": AUTHOR_LD, "publisher": PUBLISHER_LD, "mainEntityOfPage": url, "citation": citation_ld(srcs)},
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": CU["crumb"], "item": SITE + compare_hub_path(lang)},
+            {"@type": "ListItem", "position": 2, "name": t["title"], "item": url}]},
+    ], ensure_ascii=False)
+    return """<!doctype html>
+<html lang="%(lang)s">
+<head>
+<meta charset="utf-8">
+%(csp)s
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+%(icons)s
+%(metarobots)s
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(title)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="article">
+<meta property="og:url" content="%(url)s">
+%(ogimg)s
+<script type="application/ld+json">%(jsonld)s</script>%(faqjsonld)s
+%(i18n)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap">
+<article class="methode data">
+  <header>
+    <nav class="crumbs" aria-label="%(crumbs_aria)s"><a href="%(hub)s">%(crumb)s</a><span aria-hidden="true">/</span><span>%(short)s</span></nav>
+    <span class="label"><span class="gold">%(label)s</span></span>
+    <h1>%(title)s</h1>
+    <p class="standfirst">%(lead)s</p>
+    %(byline)s
+  </header>
+%(body)s%(faqblock)s%(sources)s
+  <div class="reward">
+    <span class="label">%(u_rl)s</span>
+    <h2>%(u_rh)s</h2>
+    <p>%(u_rp)s</p>
+    <a class="btn gold" href="/beta.html" onclick="track('compare_cta_click',{page:'%(key)s',lang:'%(lang)s'})">%(u_cta)s</a>
+  </div>
+  <div class="next">
+    <span class="label">%(u_others)s</span>
+%(others)s
+  </div>
+</article>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('compare_view',{page:'%(key)s',lang:'%(lang)s'});</script>
+%(navscripts)s
+</body>
+</html>
+""" % {"lang": lang, "csp": CSP, "icons": HEAD_ICONS, "metarobots": META_ROBOTS,
+       "seo": html.escape(title_tag(t.get("seo_title") or t["title"])), "desc": html.escape(t["description"], quote=True),
+       "url": url, "title": html.escape(t["title"]), "ogimg": og_image_tags("/assets/og/journal.jpg"), "jsonld": jsonld,
+       "faqjsonld": faqjsonld, "i18n": head_i18n(alt_fr, alt_en), "nav": nav("science", lang, alt_fr, alt_en),
+       "crumbs_aria": U(lang, "crumbs_aria"), "hub": compare_hub_path(lang), "crumb": CU["crumb"],
+       "short": html.escape(t["title"].split(":")[0].strip()), "label": CU["label"],
+       "lead": localize_links(t.get("lead", ""), lang), "byline": author_line(lang, c.get("date", DATA_DATE), c.get("updated")),
+       "body": localize_links(t["body"].strip(), lang), "faqblock": faqblock, "sources": sources_block(srcs, lang),
+       "u_rl": U(lang, "reward_label"), "u_rh": U(lang, "reward_h2"), "u_rp": U(lang, "reward_p"), "u_cta": U(lang, "cta"),
+       "key": c["key"], "u_others": CU["others"], "others": others,
+       "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
+
+
+def compare_hub(lang="fr"):
+    CU = COMPARE_UI[lang]
+    path = compare_hub_path(lang)
+    items = "\n".join('<a class="entry" href="%s"><span class="etext"><span class="label meta"><span class="gold">%s</span></span>'
+                      '<h2>%s</h2><p class="desc">%s</p><span class="readmore">%s</span></span></a>'
+                      % (compare_path(c, lang), CU["hub_label"], html.escape(c[lang]["title"]),
+                         html.escape(c[lang]["description"]), CU["read"]) for c in COMPARE)
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": CU["hub_label"], "url": SITE + path,
+              "inLanguage": lang, "description": CU["hub_desc"], "publisher": PUBLISHER_LD,
+              "mainEntity": {"@type": "ItemList", "itemListElement": [
+                  {"@type": "ListItem", "position": i + 1, "url": SITE + compare_path(c, lang)} for i, c in enumerate(COMPARE)]}}
+    return """<!doctype html>
+<html lang="%(lang)s">
+<head>
+<meta charset="utf-8">
+%(csp)s
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+%(icons)s
+%(metarobots)s
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(seo)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(url)s">
+%(ogimg)s
+%(jsonld)s
+%(i18n)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap">
+  <div class="pagehead">
+    <span class="label">%(label)s</span>
+    <h1 class="display" style="margin-top:22px">%(h1)s</h1>
+    <p>%(p)s</p>
+  </div>
+  <div class="journal">
+%(items)s
+  </div>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('compare_hub_view',{lang:'%(lang)s'});</script>
+%(navscripts)s
+</body>
+</html>
+""" % {"lang": lang, "csp": CSP, "icons": HEAD_ICONS, "metarobots": META_ROBOTS,
+       "seo": html.escape(title_tag(CU["hub_seo"])), "desc": html.escape(CU["hub_desc"], quote=True),
+       "url": SITE + path, "ogimg": og_image_tags("/assets/og/journal.jpg"), "jsonld": ld(jsonld),
+       "i18n": head_i18n(compare_hub_path("fr"), compare_hub_path("en")),
+       "nav": nav("science", lang, compare_hub_path("fr"), compare_hub_path("en")),
+       "label": CU["hub_label"], "h1": CU["hub_h1"], "p": CU["hub_p"], "items": items,
+       "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
+
+
 def html_to_md(h):
     """HTML maison des articles → Markdown lisible (llms-full.txt)."""
     h = neutralize_links(h)
@@ -1968,10 +2160,36 @@ def llms_txt():
         out.append("\n### %s\n" % d)
         out.append("- [Thème %s](%s%s): %s" % (d, SITE, theme_url(d), THEMES[d]["desc"]))
         out += ["- [%s](%s/articles/%s.html): %s" % (a["title"], SITE, a["slug"], a["description"]) for a in arts]
+    if DATA_PAGES:
+        out.append("\n## Données nutritionnelles (table Ciqual 2025 de l'ANSES)\n")
+        out.append("- [Toutes les données](%s%s): classements d'aliments par nutriment, pour 100 g, avec méthode et source." % (SITE, data_hub_path("fr")))
+        out += ["- [%s](%s%s): %s" % (DATA_TEXTES[k]["fr"]["title"], SITE, data_path(k, "fr"), DATA_TEXTES[k]["fr"]["description"]) for k in DATA_PAGES]
+    if COMPARE:
+        out.append("\n## Comparatifs (informations publiques de chaque marque, sources liées)\n")
+        out += ["- [%s](%s%s): %s" % (c["fr"]["title"], SITE, compare_path(c, "fr"), c["fr"]["description"]) for c in COMPARE]
     out.append("\n## À propos\n")
     out.append("- [À propos](%s/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour." % SITE)
     out.append("- [Science-Based](%s/science.html): vue d'ensemble de la méthode et des sources." % SITE)
     out.append("- [Mentions légales](%s/mentions-legales.html)" % SITE)
+    if "en" in LANGS_BUILT():
+        out.append("\n## English version\n")
+        out.append("The whole site is also available in English (visitors outside French-speaking countries see it by default).")
+        out.append("- [Home](%s/en/): Ecleptic in English." % SITE)
+        out.append("- [Science-Based](%s/en/science.html): the method and its sources." % SITE)
+        out += ["- [%s](%s%s): %s" % (methode_view(p, "en")["title"], SITE, methode_path(p, "en"), methode_view(p, "en")["description"])
+                for p in METHODE if methode_path(p, "en")]
+        out.append("- [The Journal](%s/en/journal/): short, sourced articles by theme." % SITE)
+        for d in DOMAINS:
+            arts = theme_articles(d, "en")
+            if arts:
+                out.append("\n### %s\n" % theme_name(d, "en"))
+                out += ["- [%s](%s%s): %s" % (article_view(a, "en")["title"], SITE, article_path(a, "en"), article_view(a, "en")["description"]) for a in arts]
+        if DATA_PAGES:
+            out.append("\n### Nutrition data (2025 Ciqual table, ANSES)\n")
+            out += ["- [%s](%s%s): %s" % (DATA_TEXTES[k]["en"]["title"], SITE, data_path(k, "en"), DATA_TEXTES[k]["en"]["description"]) for k in DATA_PAGES]
+        if COMPARE:
+            out.append("\n### Comparisons\n")
+            out += ["- [%s](%s%s): %s" % (c["en"]["title"], SITE, compare_path(c, "en"), c["en"]["description"]) for c in COMPARE]
     out.append("\n## Optional\n")
     out.append("- [Texte intégral du site](%s/llms-full.txt): tous les articles et pages de la méthode en Markdown." % SITE)
     return "\n".join(out) + "\n"
@@ -1994,6 +2212,17 @@ def llms_full():
             parts.append("\n## Questions fréquentes\n\n" + "\n\n".join("### %s\n\n%s" % (q["q"], q["a"]) for q in a["faq"]))
         if a.get("sources"):
             parts.append("\n## Sources\n\n" + "\n".join("- %s — %s" % (html_to_md(x["t"]), x["u"]) for x in a["sources"]))
+    for c in COMPARE:
+        t = c["fr"]
+        parts.append("\n---\n\n# %s\n\nURL : %s%s\nAuteur : %s · Vérifié le %s\n\n%s\n\n%s" % (
+            t["title"], SITE, compare_path(c, "fr"), AUTHOR["name"], c.get("date", ""), html_to_md(t.get("lead", "")), html_to_md(t["body"])))
+        if c.get("sources"):
+            parts.append("\n## Sources\n\n" + "\n".join("- %s — %s" % (html_to_md(x["t"]), x["u"]) for x in c["sources"]))
+    for k in DATA_PAGES:
+        t, n = DATA_TEXTES[k]["fr"], CIQUAL["nutrients"][k]
+        top = "\n".join("%d. %s — %s %s/100 g" % (i + 1, f["fr"], fmt_num(f["v"], "fr"), n["unit"]) for i, f in enumerate(n["top"]))
+        parts.append("\n---\n\n# %s\n\nURL : %s%s\nSource des données : %s (licence CC BY 4.0)\n\n%s\n\n%s\n\n## Classement au quotidien (pour 100 g)\n\n%s" % (
+            t["title"], SITE, data_path(k, "fr"), CIQUAL["source"], html_to_md(t["role"]), html_to_md(t["besoins"]), top))
     return "\n".join(parts) + "\n"
 
 
@@ -2037,6 +2266,9 @@ def sitemap():
         if DATA_PAGES:
             entries.append((SITE + data_hub_path(lang), DATA_DATE))
             entries += [(SITE + data_path(k, lang), DATA_DATE) for k in DATA_PAGES]
+        if COMPARE:
+            entries.append((SITE + compare_hub_path(lang), max(c.get("updated", c["date"]) for c in COMPARE)))
+            entries += [(SITE + compare_path(c, lang), c.get("updated", c["date"])) for c in COMPARE]
     items = "\n".join(
         "  <url><loc>%s</loc>%s</url>" % (u, "<lastmod>%s</lastmod>" % d if d else "")
         for u, d in entries
@@ -2099,6 +2331,12 @@ def main():
             _write(root, data_hub_path(lang).lstrip("/") + "index.html", data_hub(lang))
             for k in DATA_PAGES:
                 _write(root, data_path(k, lang).lstrip("/"), data_page(k, lang))
+        if COMPARE:
+            _purge(os.path.join(root, compare_hub_path(lang).strip("/")),
+                   {os.path.basename(compare_path(c, lang)) for c in COMPARE} | {"index.html"})
+            _write(root, compare_hub_path(lang).lstrip("/") + "index.html", compare_hub(lang))
+            for c in COMPARE:
+                _write(root, compare_path(c, lang).lstrip("/"), compare_page(c, lang))
         _write(root, "assets/" + ("nav-data.js" if lang == "fr" else "nav-data-en.js"), nav_data(lang))
     _write(root, "sitemap.xml", sitemap())
     _write(root, "llms.txt", llms_txt())

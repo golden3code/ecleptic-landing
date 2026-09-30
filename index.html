@@ -28,13 +28,36 @@
 "email":"contact@ecleptic.app","founder":{"@id":"https://ecleptic.health/a-propos.html#auguste"}},
 {"@type":"Person","@id":"https://ecleptic.health/a-propos.html#auguste","name":"Auguste Phily-Priou","jobTitle":"Fondateur d'Ecleptic",
 "url":"https://ecleptic.health/a-propos.html","sameAs":["https://www.instagram.com/_optimisateur/"]},
-{"@type":"WebSite","@id":"https://ecleptic.health/#website","url":"https://ecleptic.health/","name":"Ecleptic","inLanguage":"fr",
+{"@type":"WebSite","@id":"https://ecleptic.health/#website","url":"https://ecleptic.health/","name":"Ecleptic","inLanguage":["fr","en"],
 "publisher":{"@id":"https://ecleptic.health/#organization"}},
 {"@type":"SoftwareApplication","name":"Ecleptic","operatingSystem":"iOS","applicationCategory":"HealthApplication",
 "description":"Ecleptic croise sommeil, alimentation et entraînement en un seul score de préparation quotidien.",
 "url":"https://ecleptic.health/","publisher":{"@id":"https://ecleptic.health/#organization"},
 "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
 ]}
+</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -130,6 +153,7 @@
     </span>
     <a href="/science.html" data-mega="science">Science-Based</a>
     <a href="/beta.html" data-mega="beta">La bêta</a>
+    <span class="langsw"><a href="/" hreflang="fr" lang="fr" data-setlang="fr" class="on" aria-current="true">FR</a><a href="/en/" hreflang="en" lang="en" data-setlang="en">EN</a></span>
   </div>
 </nav>
 
@@ -300,7 +324,7 @@
   if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
-  track('home_view');
+  track('home_view',{lang:'fr'});
 
   // Constellation : le trait se remplit au fil du scroll, et un champ d'etoiles
   // apparait puis disparait autour d'elle (cloche pilotee par sa position).

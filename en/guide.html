@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B0A08">
+<title>The optimization guide — Ecleptic</title>
+<meta name="description" content="7 science-backed levers for your sleep, your energy and your performance. One number to remember per lever. Free, 4-minute read.">
+<link rel="canonical" href="https://ecleptic.health/en/guide">
+<meta property="og:title" content="The optimization guide — Ecleptic">
+<meta property="og:description" content="7 levers, 7 numbers, a 4-minute read. Sleep, nutrition, training.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/guide">
+<meta property="og:image" content="https://ecleptic.health/assets/guide/og-guide.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/guide/og-guide.jpg">
+<link rel="preload" as="image" href="/assets/guide/couverture-portrait.jpg" media="(max-width: 700px)">
+<link rel="preload" as="image" href="/assets/guide/couverture.jpg" media="(min-width: 701px)">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+  :root{--bg:#0B0A08;--ink:#F2EBDD;--gold:#D9A441;--muted:#9A8E77;--line:rgba(242,235,221,.14);--card:#12100C;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block;max-width:100%;height:auto}
+  .kicker{display:block;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .kicker b{color:var(--gold);font-weight:400}
+
+  /* Barre de lecture */
+  .progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:30;pointer-events:none}
+  .progress i{display:block;height:100%;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+
+  /* Couverture plein écran */
+  .cover{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+  .cover picture,.cover img{position:absolute;inset:0;width:100%;height:100%}
+  .cover img{object-fit:cover;object-position:50% 45%}
+  .cover::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(11,10,8,.55) 0%,rgba(11,10,8,0) 20%,rgba(11,10,8,0) 42%,rgba(11,10,8,.8) 70%,var(--bg) 100%)}
+  .brand{position:absolute;top:calc(24px + env(safe-area-inset-top));left:0;right:0;z-index:2;text-align:center;
+    font-size:12px;letter-spacing:.5em;text-transform:uppercase;padding-left:.5em}
+  .cover-in{position:relative;z-index:2;width:100%;max-width:760px;margin:0 auto;padding:0 24px 58px}
+  .cover h1{font-weight:200;text-transform:uppercase;font-size:clamp(42px,11vw,86px);line-height:.98;letter-spacing:-.01em;margin:18px 0 22px}
+  .cover h1 span{color:var(--gold)}
+  .cover p{color:rgba(242,235,221,.82);max-width:520px}
+  .scroll{display:inline-flex;gap:12px;align-items:center;margin-top:30px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-decoration:none}
+  .scroll span{display:inline-block;animation:bob 2.2s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(4px)}}
+
+  main{max-width:760px;margin:0 auto;padding:0 24px}
+
+  /* Le guide en 30 secondes */
+  .resume{padding:92px 0 24px}
+  .resume h2{font-weight:200;text-transform:uppercase;font-size:clamp(26px,6vw,36px);line-height:1.1;margin:12px 0 22px}
+  .toc{list-style:none}
+  .toc a{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+  .toc li:first-child a{border-top:1px solid var(--line)}
+  .toc .n{font-size:11px;letter-spacing:.25em;color:var(--gold)}
+  .toc .t{font-weight:300;transition:color .2s}
+  .toc .f{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .toc a:hover .t{color:var(--gold)}
+
+  /* Un levier = photo, chiffre-clé, titre, pourquoi, protocole */
+  .lever{padding:84px 0 0;scroll-margin-top:10px}
+  .ph{position:relative;margin:0}
+  .ph img{width:100%}
+  .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:48%;background:linear-gradient(rgba(11,10,8,0),var(--bg))}
+  .lbody{position:relative;z-index:1;margin-top:-92px}
+  .fig{display:flex;align-items:baseline;gap:14px;margin:12px 0 16px}
+  .fig .v{font-size:clamp(66px,17vw,116px);font-weight:200;line-height:.9;color:var(--gold);letter-spacing:-.03em;white-space:nowrap}
+  .fig .u{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+  .lever h2{font-weight:250;text-transform:uppercase;font-size:clamp(22px,5.4vw,32px);line-height:1.18;letter-spacing:.01em;margin-bottom:18px}
+  .why{color:rgba(242,235,221,.8)}
+  .why a,.bridge a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
+  .proto{margin-top:28px;border:1px solid var(--line);background:var(--card);padding:22px 22px 6px}
+  .proto ol{list-style:none;counter-reset:s;margin-top:14px}
+  .proto li{counter-increment:s;position:relative;padding:0 0 18px 40px;font-size:16px}
+  .proto li::before{content:"0" counter(s);position:absolute;left:0;top:.2em;font-size:11px;letter-spacing:.2em;color:var(--gold)}
+  .bridge{margin-top:24px;padding:2px 0 2px 16px;border-left:1px solid var(--gold);font-size:15px;color:var(--muted)}
+
+  /* Récap à capturer */
+  .recap{margin:110px 0 0;border:1px solid rgba(217,164,65,.45);padding:34px 26px 24px}
+  .recap h2{font-weight:200;text-transform:uppercase;font-size:clamp(24px,5.6vw,30px);line-height:1.1;margin:12px 0 20px}
+  .recap ul{list-style:none}
+  .recap li{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline;padding:13px 0;border-top:1px solid var(--line)}
+  .recap .v{color:var(--gold);font-weight:200;font-size:25px;line-height:1.1;white-space:nowrap}
+  .recap .r{font-size:15px;font-weight:300;line-height:1.55}
+  .recap .r small{display:block;margin-top:3px;font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+  .recap .tip{margin-top:18px;text-align:center;font-size:12.5px;color:var(--muted)}
+
+  /* Appel final */
+  .cta{text-align:center;padding:96px 0 10px}
+  .moon{width:min(300px,68vw);margin:0 auto 6px;-webkit-mask-image:radial-gradient(circle,#000 50%,transparent 70%);mask-image:radial-gradient(circle,#000 50%,transparent 70%)}
+  .cta h2{font-weight:200;text-transform:uppercase;font-size:clamp(28px,7vw,46px);line-height:1.06;margin:14px 0 20px}
+  .cta h2 span{color:var(--gold)}
+  .cta p{color:var(--muted);max-width:480px;margin:0 auto 34px}
+  .btn{display:inline-block;padding:17px 34px;border:1px solid var(--gold);background:var(--gold);color:#16120B;
+    font-size:12px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background .2s,color .2s}
+  .btn:hover{background:transparent;color:var(--gold)}
+  .cta .note{margin:18px auto 0;font-size:12.5px;color:var(--muted);max-width:420px}
+
+  .more{padding:84px 0 0}
+  .more a{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:300}
+  .more a:first-of-type{border-top:1px solid var(--line);margin-top:18px}
+  .more a:hover{color:var(--gold)}
+
+  footer{max-width:760px;margin:90px auto 0;padding:34px 24px 130px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
+  footer a{display:inline-block;margin-bottom:14px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+
+  /* Barre collante (apparaît après la couverture, s'efface devant l'appel final) */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:20px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(11,10,8,.88);
+    -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);
+    transform:translateY(110%);transition:transform .35s ease}
+  .sticky.on{transform:none}
+  .sticky span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .sticky .btn{padding:13px 24px;font-size:11px}
+
+  /* Apparition douce au scroll */
+  .js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease-out,transform .9s ease-out}
+  .js .rv.in{opacity:1;transform:none}
+
+  @media(max-width:700px){
+    body{font-size:16.5px}
+    .ph{margin:0 -24px}
+    .lbody{margin-top:-70px}
+    .recap{padding:28px 18px 20px}
+    .recap li{grid-template-columns:80px 1fr;gap:12px}
+    .recap .v{font-size:21px}
+    .sticky span{display:none}
+    .sticky .btn{flex:1;text-align:center}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .rv{opacity:1;transform:none;transition:none}
+    .scroll span{animation:none}
+    .sticky{transition:none}
+  }
+</style>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/guide">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/guide">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/guide">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<header class="cover">
+  <picture>
+    <source media="(max-width: 700px)" srcset="/assets/guide/couverture-portrait.jpg">
+    <img src="/assets/guide/couverture.jpg" alt="" width="2000" height="1250" fetchpriority="high">
+  </picture>
+  <div class="brand">Ecleptic</div>
+  <div class="cover-in">
+    <span class="kicker">Free guide &nbsp;·&nbsp; 7 levers &nbsp;·&nbsp; 4 minutes</span>
+    <h1>The<br><span>optimization</span><br>guide.</h1>
+    <p>One lever a day, one number to remember per lever. Sleep, energy, performance — no miracle supplement, no $500 gadget.</p>
+    <a class="scroll" href="#resume">Start <span aria-hidden="true">↓</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="resume rv" id="resume">
+    <span class="kicker">The guide in 30 seconds</span>
+    <h2>7 levers,<br>7 numbers.</h2>
+    <ol class="toc">
+      <li><a href="#l1"><span class="n">01</span><span class="t">Light within an hour of waking up</span><span class="f">10 min</span></a></li>
+      <li><a href="#l2"><span class="n">02</span><span class="t">Delay your first coffee</span><span class="f">+90 min</span></a></li>
+      <li><a href="#l3"><span class="n">03</span><span class="t">Protein first</span><span class="f">2 g/kg</span></a></li>
+      <li><a href="#l4"><span class="n">04</span><span class="t">A cool bedroom, a fixed schedule</span><span class="f">18&nbsp;°C</span></a></li>
+      <li><a href="#l5"><span class="n">05</span><span class="t">Most of your cardio in zone 2</span><span class="f">80%</span></a></li>
+      <li><a href="#l6"><span class="n">06</span><span class="t">Listen to your data, not your motivation</span><span class="f">60 s</span></a></li>
+      <li><a href="#l7"><span class="n">07</span><span class="t">What gets measured improves</span><span class="f">14 days</span></a></li>
+    </ol>
+  </section>
+
+  <article class="lever" id="l1" data-n="1">
+    <figure class="ph"><img src="/assets/guide/levier-1.jpg" alt="Morning sun breaking through a window" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 01</b> &nbsp;·&nbsp; Sleep</span>
+      <div class="fig"><span class="v">10</span><span class="u">minutes</span></div>
+      <h2>Morning light sets your clock</h2>
+      <p class="why">Your circadian rhythm drives your energy, hunger, mood and hormones — and it gets set through your eyes. Natural morning light brings your evening melatonin forward: you fall asleep faster and sleep more deeply.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>Within 60&nbsp;minutes of waking up: 10&nbsp;minutes outside, no sunglasses. A balcony or an open window counts.</li>
+        <li>Overcast skies count too: they're still 10× brighter than a ceiling light.</li>
+      </ol></div>
+    </div>
+  </article>
+
+  <article class="lever" id="l2" data-n="2">
+    <figure class="ph"><img src="/assets/guide/levier-2.jpg" alt="Hand holding a cup of coffee facing the sea at dawn" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 02</b> &nbsp;·&nbsp; Energy</span>
+      <div class="fig"><span class="v">+90</span><span class="u">minutes</span></div>
+      <h2>Delay your first coffee by 90 minutes</h2>
+      <p class="why">When you wake up, your cortisol is already at its peak: coffee adds almost nothing. Worse, caffeine blocks adenosine without clearing it — and it all comes crashing back down on you around 2&nbsp;p.m.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>First coffee 90&nbsp;minutes after waking up, last one 8 to 10&nbsp;hours before bed (half-life ≈ 5&nbsp;h).</li>
+        <li>Instead, when you wake up: a big glass of water. You lose ~500&nbsp;ml (about 17&nbsp;oz) a night just by breathing.</li>
+      </ol></div>
+    </div>
+  </article>
+
+  <article class="lever" id="l3" data-n="3">
+    <figure class="ph"><img src="/assets/guide/levier-3.jpg" alt="Soft-boiled eggs cut in half on a dark slate" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 03</b> &nbsp;·&nbsp; Nutrition</span>
+      <div class="fig"><span class="v">2</span><span class="u">g / kg / day</span></div>
+      <h2>Protein first, the rest follows</h2>
+      <p class="why">If you track only one nutrition number, make it this one: 1.6 to 2.2&nbsp;g of protein per kilo of body weight (about 0.7 to 1&nbsp;g per pound). The No.&nbsp;1 factor in recovery and satiety — and therefore in weight control.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>Aim for ~30&nbsp;g per meal. Rule of thumb: a palm-sized portion of meat or fish ≈ 25–30&nbsp;g.</li>
+        <li>The meal people miss most often: breakfast. Eggs, skyr, cottage cheese.</li>
+      </ol></div>
+      <p class="bridge">That's exactly the math Ecleptic does for you: you snap a photo of your meal, the app counts the protein and adjusts your target for the day.</p>
+    </div>
+  </article>
+
+  <article class="lever" id="l4" data-n="4">
+    <figure class="ph"><img src="/assets/guide/levier-4.jpg" alt="Attic bedroom in the half-light, cool light from the skylight" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 04</b> &nbsp;·&nbsp; Sleep</span>
+      <div class="fig"><span class="v">18°</span><span class="u">in the bedroom (64&nbsp;°F)</span></div>
+      <h2>Cool, dark, regular</h2>
+      <p class="why">Your body needs to drop its core temperature by ~1&nbsp;°C (about 2&nbsp;°F) to sink into deep sleep: a bedroom that's too warm is the No.&nbsp;1 saboteur. And <a href="/en/journal/going-to-bed-at-the-same-time.html">a regular sleep schedule matters more than how long you sleep</a>.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>Keep the bedroom between 17 and 19&nbsp;°C (63–66&nbsp;°F). A hot shower 1 to 2&nbsp;hours before bed: it triggers the temperature drop that follows.</li>
+        <li>A fixed bedtime, within ±30&nbsp;minutes, weekends included. The hardest part — and the one that pays off most.</li>
+      </ol></div>
+    </div>
+  </article>
+
+  <article class="lever" id="l5" data-n="5">
+    <figure class="ph"><img src="/assets/guide/levier-5.jpg" alt="Two runners side by side on a road in the golden morning haze" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 05</b> &nbsp;·&nbsp; Training</span>
+      <div class="fig"><span class="v">80%</span><span class="u">of your cardio</span></div>
+      <h2>Zone 2, the engine everyone neglects</h2>
+      <p class="why">80% of endurance athletes' cardio is done at low intensity — and that's no accident. <a href="/en/journal/what-is-zone-2-cardio.html">Zone 2</a> builds your mitochondria, your aerobic base and your VO₂max, the best measurable predictor of longevity.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>2 to 3 sessions of 30–45&nbsp;minutes a week, at a pace where you can hold a conversation. Brisk uphill walking, cycling, rowing machine.</li>
+        <li>The test: if you can't talk, slow down. Yes, it'll feel too easy. That's normal.</li>
+      </ol></div>
+    </div>
+  </article>
+
+  <article class="lever" id="l6" data-n="6">
+    <figure class="ph"><img src="/assets/guide/levier-6.jpg" alt="Smartwatch screen showing activity and heart rate" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 06</b> &nbsp;·&nbsp; Recovery</span>
+      <div class="fig"><span class="v">60</span><span class="u">seconds / morning</span></div>
+      <h2>Listen to your data, not your motivation</h2>
+      <p class="why">Progress doesn't come from training, but from the recovery that follows it. Every morning, your resting heart rate and your HRV tell you whether your body has absorbed the day before. Pushing hard on a red day is digging yourself into a hole.</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>Every morning, 60&nbsp;seconds: last night's sleep, resting heart rate, how you feel when you wake up.</li>
+        <li>Red → light session or rest. Green → that's the day you push.</li>
+      </ol></div>
+      <p class="bridge">That's the heart of Ecleptic: a <a href="/en/journal/readiness-score-how-it-works.html">Readiness Score</a> every morning, calculated from your real data (sleep, <a href="/en/journal/what-is-hrv-heart-rate-variability.html">HRV</a>, training load), that tells you whether today is a day to push or to recover.</p>
+    </div>
+  </article>
+
+  <article class="lever" id="l7" data-n="7">
+    <figure class="ph"><img src="/assets/guide/levier-7.jpg" alt="Open notebook and fountain pen on a desk in warm light" width="1400" height="933" loading="lazy" decoding="async"></figure>
+    <div class="lbody rv">
+      <span class="kicker"><b>Lever 07</b> &nbsp;·&nbsp; The meta-lever</span>
+      <div class="fig"><span class="v">14</span><span class="u">days</span></div>
+      <h2>What gets measured improves</h2>
+      <p class="why">The real secret of “optimized” people is the feedback loop: measure → adjust → measure again. Without measurement, you're steering by feel — and feel lies (sleep deprivation impairs your judgment of your own state).</p>
+      <div class="proto"><span class="kicker">The protocol</span><ol>
+        <li>Pick 3 metrics max: hours of sleep, grams of protein, workouts per week. Log them for 14&nbsp;days.</li>
+        <li>Then look at what correlates with your best days, and adjust one lever at a time.</li>
+      </ol></div>
+    </div>
+  </article>
+
+  <aside class="recap rv" id="recap">
+    <span class="kicker">Key takeaways</span>
+    <h2>The whole guide,<br>on one screen.</h2>
+    <ul>
+      <li><span class="v">10 min</span><span class="r">of natural light within an hour of waking up<small>Sleep</small></span></li>
+      <li><span class="v">+90 min</span><span class="r">before your first coffee, last one 8&nbsp;h before bed<small>Energy</small></span></li>
+      <li><span class="v">2 g/kg</span><span class="r">of protein a day, ~30&nbsp;g per meal<small>Nutrition</small></span></li>
+      <li><span class="v">18&nbsp;°C</span><span class="r">in the bedroom (64&nbsp;°F), fixed bedtime within ±30&nbsp;min<small>Sleep</small></span></li>
+      <li><span class="v">80%</span><span class="r">of your cardio in zone 2, at a pace where you can talk<small>Training</small></span></li>
+      <li><span class="v">60 s</span><span class="r">check-in every morning: red, rest; green, you push<small>Recovery</small></span></li>
+      <li><span class="v">14 days</span><span class="r">for 3 metrics, one adjustment at a time<small>Measurement</small></span></li>
+    </ul>
+    <p class="tip">Screenshot this — it's the whole guide.</p>
+  </aside>
+
+  <section class="cta rv" id="cta">
+    <img class="moon" src="/assets/moon.jpg" alt="" width="1254" height="1254" loading="lazy" decoding="async">
+    <span class="kicker">Going further</span>
+    <h2>You can track it all<br>by hand. <span>Or let<br>Ecleptic do it.</span></h2>
+    <p>Ecleptic combines your sleep, your nutrition and your training into a single score, every morning. The 7 levers in this guide are tracked automatically.</p>
+    <a class="btn" id="ctaMain" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Download on the App Store">Download the app</a>
+    <p class="note" data-store-text="iPhone · free on the App Store">iPhone · free beta via TestFlight, Apple's official beta-testing app · coming soon to the App Store</p>
+  </section>
+
+  <nav class="more rv" aria-label="Journal articles">
+    <span class="kicker">Dig deeper in the Journal</span>
+    <a href="/en/journal/how-many-hours-of-sleep-do-you-need.html">How many hours of sleep do you really need?</a>
+    <a href="/en/journal/how-much-protein-per-day-to-build-muscle.html">How much protein per day to build muscle?</a>
+    <a href="/en/journal/readiness-score-how-it-works.html">Readiness score: how it works, and how to improve it</a>
+  </nav>
+</main>
+
+<div class="sticky" id="sticky">
+  <span>The 7 levers, tracked automatically</span>
+  <a class="btn" id="ctaSticky" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Download on the App Store">Download the app</a>
+</div>
+
+<footer>
+  <a href="/en/privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="/en/legal-notice.html">Legal notice</a>
+  <p>Ecleptic is a wellness app. This guide and the app do not replace medical advice and are not a medical device.</p>
+</footer>
+
+<script>
+  var POSTHOG_KEY = "phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if (POSTHOG_KEY) {
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});
+  }
+  function track(ev,props){ if(window.posthog && POSTHOG_KEY) posthog.capture(ev,props||{}); }
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname,lang:'en'});}}catch(e){}})();
+
+  var SRC = null;
+  try { SRC = new URLSearchParams(location.search).get("src"); } catch(_) {}
+  track("guide_view", {src: SRC, lang: "en"});
+
+  // Lien de téléchargement : le jour du lancement, coller ici le lien App Store.
+  // Tous les boutons (et leurs textes) basculent seuls vers l'App Store.
+  var APP_STORE_URL = "";
+  if (APP_STORE_URL) {
+    document.querySelectorAll("[data-app]").forEach(function(a){ a.href = APP_STORE_URL; });
+    document.querySelectorAll("[data-store-text]").forEach(function(el){ el.textContent = el.getAttribute("data-store-text"); });
+  }
+
+  var bar = document.getElementById("bar"), sticky = document.getElementById("sticky");
+  var cover = document.querySelector(".cover"), cta = document.getElementById("cta");
+  var fired = {}, ticking = false;
+  function onFrame(){
+    ticking = false;
+    var h = document.documentElement, max = h.scrollHeight - window.innerHeight;
+    var pct = max > 0 ? h.scrollTop / max : 0;
+    bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, pct)).toFixed(4) + ")";
+    var afterCover = cover.getBoundingClientRect().bottom < window.innerHeight * 0.35;
+    var ctaTop = cta.getBoundingClientRect().top;
+    sticky.classList.toggle("on", afterCover && ctaTop > window.innerHeight * 0.9);
+    if (pct > 0.5 && !fired.half) { fired.half = true; track("guide_scroll_50", {src: SRC, lang: "en"}); }
+    if (pct > 0.95 && !fired.full) { fired.full = true; track("guide_scroll_end", {src: SRC, lang: "en"}); }
+  }
+  window.addEventListener("scroll", function(){ if (!ticking) { ticking = true; requestAnimationFrame(onFrame); } }, {passive: true});
+  window.addEventListener("resize", onFrame, {passive: true});
+  onFrame();
+
+  // Apparition douce des blocs + mesure de lecture levier par levier.
+  var rv = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    rv.forEach(function(el){ io.observe(el); });
+    var seen = {};
+    var lo = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var n = e.target.getAttribute("data-n");
+        if (e.isIntersecting && !seen[n]) { seen[n] = true; track("guide_lever_view", {lever: +n, src: SRC, lang: "en"}); }
+      });
+    }, {threshold: 0.3});
+    document.querySelectorAll(".lever").forEach(function(el){ lo.observe(el); });
+  } else {
+    rv.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", src: SRC, lang: "en"}); });
+  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", src: SRC, lang: "en"}); });
+</script>
+</body>
+</html>

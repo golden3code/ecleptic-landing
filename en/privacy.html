@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Privacy policy — Ecleptic</title>
+<meta name="description" content="Ecleptic privacy policy: the data collected, how it is used, AI analysis, processors, retention periods and your rights under the GDPR.">
+<link rel="canonical" href="https://ecleptic.health/en/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/confidentialite.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/privacy.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 24px 64px}
+  a{color:var(--gold)}
+  h1{font-size:28px;margin-bottom:4px}
+  .date{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:19px;margin:28px 0 8px}
+  p,li{font-size:15.5px;color:#CFC5B0}
+  ul{padding-left:22px;margin:6px 0}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy policy — Ecleptic</h1>
+  <p class="date">Last updated: 27 September 2026. This is a translation; the <a href="/confidentialite.html">French version</a> prevails.</p>
+
+  <h2>Who we are</h2>
+  <p>Ecleptic is an iOS wellness app (sleep, nutrition, physical activity). Data controller: the publisher of Ecleptic, who can be reached at <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a> (see the <a href="/en/legal-notice.html">legal notice</a>).</p>
+
+  <h2>Data we collect</h2>
+  <ul>
+    <li><strong>Account</strong>: your Sign in with Apple identifier (hidden or real email, as you choose). No password is stored.</li>
+    <li><strong>Health and activity</strong>: sleep, activity and vitals read from Apple Health, read-only and only with your explicit permission. Ecleptic never writes to Apple Health and never uses this data for advertising.</li>
+    <li><strong>Nutrition</strong>: meals you log and meal photos you choose to have analysed.</li>
+    <li><strong>Contributions</strong> (optional): photos of nutrition labels, food entries you create, corrections and reports. An entry stays private until you submit it for review; once approved, only the product's nutrition values are published, with no link to your account, and never the photo.</li>
+    <li><strong>Profile</strong>: age, height, weight, goal, answers to in-app questionnaires.</li>
+    <li><strong>Gym</strong>: at the end of a strength session recorded live, if you allow location access, the nearest open gym is recognised and its name saved with the session.</li>
+    <li><strong>Usage and stability</strong>: anonymised usage events (PostHog) and crash reports (Sentry), to improve the app.</li>
+  </ul>
+
+  <h2>How we use it</h2>
+  <p>Your data is used only to make Ecleptic work: calculating your scores, Lab analyses, coach advice, tracking your goals. It is never sold or rented, and never used for ad targeting.</p>
+
+  <h2>AI analysis</h2>
+  <p>Meal photos, nutrition label photos and some summaries (coach) are processed by AI models hosted by providers (Google, Anthropic). Only the content needed for the analysis is sent; under their business API terms, it is not used to train their models.</p>
+
+  <h2>Hosting and processors</h2>
+  <ul>
+    <li><strong>Supabase</strong> — database and authentication.</li>
+    <li><strong>RevenueCat</strong> — subscription management (no payment data passes through us: payment is handled by Apple).</li>
+    <li><strong>PostHog</strong> (EU) — usage analytics. <strong>Sentry</strong> — error reports.</li>
+    <li><strong>Google Maps</strong> — gym recognition: receives an area of about 110 m around your position, never your exact position or your identity. Until 27 September 2026, the app queried OpenStreetMap (Overpass service) directly for this.</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <p>Your data is kept as long as your account is active. Deleting your account purges your personal data from our active systems.</p>
+  <p>Label photo: kept only if you submit your entry for review, until the decision and for 90 days at most. The AI's reading of the label, with no link to your account: 30 days. Approved and published values remain in the food database after your account is deleted, with no link to it.</p>
+
+  <h2>Your rights (GDPR)</h2>
+  <p>From the app settings, you can <strong>export</strong> all your data and <strong>delete</strong> your account and data at any time. For any other request (access, rectification, objection): <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>. You can also lodge a complaint with the CNIL, the French data protection authority, or with your local data protection authority.</p>
+
+  <h2>Minimum age</h2>
+  <p>Ecleptic is for people aged 16 and over. Some features (body composition scan, coach) are for adults only.</p>
+
+  <h2>Disclaimer</h2>
+  <p>Ecleptic is a wellness app. It does not provide medical diagnosis and does not replace advice from a health professional.</p>
+
+  <footer>
+    <a href="/en/">← Back</a> · <a href="/en/legal-notice.html">Legal notice</a> · <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>
+  </footer>
+</div>
+</body>
+</html>

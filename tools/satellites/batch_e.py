@@ -341,7 +341,7 @@ ENTRIES = [
         "slug": "reprendre-le-sport-apres-maladie",
         "cat": "Contexte",
         "title": "Reprendre le sport après une maladie : les règles",
-        "description": "La règle au-dessus/au-dessous du cou, la reprise à 50 % et l'alerte fièvre à ne jamais ignorer : reprendre le sport après une maladie sans risque.",
+        "description": "La règle au-dessus/au-dessous du cou, la séance test à 60-70 % et l'alerte fièvre à ne jamais ignorer : reprendre le sport après une maladie sans risque.",
         "date": "2026-09-17",
         "body": """
 <p>La réponse courte : applique la règle <strong>« au-dessus / au-dessous du cou »</strong>. Si tes symptômes sont <strong>au-dessus du cou</strong> — nez qui coule, gorge un peu irritée, éternuements — une activité <strong>légère</strong> est généralement possible, et souvent tu te sens même mieux après. Si tu as de la <strong>fièvre, des courbatures diffuses, des symptômes dans la poitrine (toux grasse, oppression) ou une grosse fatigue générale</strong> : c'est <strong>repos</strong>, sans discuter.</p>

@@ -288,8 +288,18 @@
     }
   };
 
-  var LANG = "en";
-  try { LANG = localStorage.getItem("ecleptic.lang") || "en"; } catch(_) {}
+  // Langue : même règle que le reste du site (tools/i18n.py) — choix mémorisé ou ?lang=,
+  // sinon français si le téléphone est en français ou si le fuseau est celui d'un pays
+  // francophone (Belgique, Suisse, Luxembourg, Canada : langue du téléphone seulement),
+  // sinon anglais.
+  var LANG = null;
+  try { var qm = location.search.match(/[?&]lang=(fr|en)\b/); if (qm) { LANG = qm[1]; localStorage.setItem("ecleptic.lang", LANG); } } catch(_) {}
+  if (!LANG) { try { LANG = localStorage.getItem("ecleptic.lang"); } catch(_) {} }
+  if (!LANG) {
+    var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]);
+    var tz = ""; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch(_) {}
+    LANG = (/^fr\b/i.test(langs[0] || "") || ['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz) >= 0) ? "fr" : "en";
+  }
   if (LANG !== "fr") LANG = "en";
 
   function T(id, key, html){

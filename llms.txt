@@ -86,11 +86,109 @@
 - [Sieste idéale : combien de temps faut-il dormir ?](https://ecleptic.health/articles/sieste-ideale-duree.html): 10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est un format piège, et quand la sieste est un signal.
 - [Toujours fatigué ? Les vraies causes d'une fatigue constante](https://ecleptic.health/articles/toujours-fatigue-causes.html): Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d'une fatigue qui dure, dans l'ordre.
 
+## Données nutritionnelles (table Ciqual 2025 de l'ANSES)
+
+- [Toutes les données](https://ecleptic.health/donnees/): classements d'aliments par nutriment, pour 100 g, avec méthode et source.
+- [Aliments riches en protéines : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-proteines.html): Les aliments les plus riches en protéines selon la table Ciqual de l'ANSES, pour 100 g et pour 100 kcal, et tes vrais besoins selon l'EFSA et le sport.
+- [Aliments riches en fer : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-fer.html): Les aliments les plus riches en fer selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et comment mieux absorber le fer des végétaux au quotidien.
+- [Aliments riches en magnésium : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-magnesium.html): Les aliments les plus riches en magnésium selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA et l'ANSES, et les gestes simples pour en manger plus.
+- [Aliments riches en calcium : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-calcium.html): Les aliments les plus riches en calcium selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi celui des épinards compte moins qu'on le croit.
+- [Aliments riches en fibres : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-fibres.html): Les aliments les plus riches en fibres selon la table Ciqual de l'ANSES, combien en manger selon l'EFSA et l'ANSES, et comment atteindre 30 g par jour.
+- [Aliments riches en oméga-3 : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-omega-3.html): Les aliments les plus riches en oméga-3 selon la table Ciqual de l'ANSES : EPA et DHA des poissons, ALA des végétaux, et tes besoins selon l'EFSA et l'ANSES.
+- [Aliments riches en vitamine D : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-vitamine-d.html): Les aliments les plus riches en vitamine D selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi l'assiette seule a du mal à suivre en hiver.
+- [Aliments riches en vitamine C : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-vitamine-c.html): Les aliments les plus riches en vitamine C selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et comment la cuisson change la donne dans ton assiette.
+- [Aliments riches en vitamine B12 : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-vitamine-b12.html): Les aliments les plus riches en vitamine B12 selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et ce qu'il faut savoir si tu manges peu ou pas animal.
+- [Aliments riches en potassium : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-potassium.html): Les aliments les plus riches en potassium selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi la banane n'est pas la championne qu'on croit.
+- [Aliments riches en zinc : le classement de la table Ciqual](https://ecleptic.health/donnees/aliments-riches-en-zinc.html): Les aliments les plus riches en zinc selon la table Ciqual de l'ANSES, tes besoins selon l'EFSA, et pourquoi les phytates changent tout si tu manges végétal.
+
 ## À propos
 
 - [À propos](https://ecleptic.health/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour.
 - [Science-Based](https://ecleptic.health/science.html): vue d'ensemble de la méthode et des sources.
 - [Mentions légales](https://ecleptic.health/mentions-legales.html)
+
+## English version
+
+The whole site is also available in English (visitors outside French-speaking countries see it by default).
+- [Home](https://ecleptic.health/en/): Ecleptic in English.
+- [Science-Based](https://ecleptic.health/en/science.html): the method and its sources.
+- [The Readiness Score, pillar by pillar](https://ecleptic.health/en/method/readiness-score.html): The Readiness Score combines your overnight vitals, sleep, nutrition and daily rhythm. Its 4 pillars, their weights and the full method, with no black box.
+- [Biological age, anchored on your VO₂max](https://ecleptic.health/en/method/biological-age.html): Your biological age starts from your VO₂max, converted into a fitness age, then seven everyday factors adjust it. Sources, bounds, margin of error: the method.
+- [Nutrition, from photo to official source](https://ecleptic.health/en/method/nutrition.html): Meal scanning: AI recognizes the foods and estimates portions, while Ciqual, USDA and Open Food Facts supply the values. The method, and its limits.
+- [Overnight vitals, signal by signal](https://ecleptic.health/en/method/vitals.html): Overnight vitals carry 42 points of the Readiness Score: HRV, resting heart rate, breathing, SpO₂, temperature. How the app compares them with your normal.
+- [Targets, calibrated on what you actually burn](https://ecleptic.health/en/method/targets.html): How Ecleptic calculates your calorie and macro targets: expenditure recalibrated from your weigh-ins and meals, your goal, and strict safeguards.
+- [Heart rate variability (HRV), beat by beat](https://ecleptic.health/en/method/heart-rate-variability.html): Heart rate variability (HRV): what it measures, why it varies so much from one person to the next, what lowers it, and how the app reads it every night.
+- [Resting heart rate, your engine's idle speed](https://ecleptic.health/en/method/resting-heart-rate.html): Resting heart rate: what it reflects, normal values, what makes it rise, when to see a doctor, and how the app compares it with your own normal.
+- [VO₂max, your cardiorespiratory fitness](https://ecleptic.health/en/method/vo2max.html): VO₂max is the maximum oxygen your body can use during exercise. What it means, lab vs. watch measurement, benchmarks, and its role in your biological age.
+- [Respiratory rate, the quiet alarm of your nights](https://ecleptic.health/en/method/respiratory-rate.html): Your nighttime respiratory rate is one of your most stable vitals. Normal values, what makes it rise, and how the app compares it with your own normal.
+- [Blood oxygen saturation, measured at the wrist](https://ecleptic.health/en/method/blood-oxygen.html): Blood oxygen saturation (SpO₂) is generally 95 to 100% in healthy adults. What it measures, the limits of your watch, and how the app reads it at night.
+- [Wrist temperature, a deviation rather than a number](https://ecleptic.health/en/method/wrist-temperature.html): Overnight wrist temperature is a deviation from your own normal, not a fever reading. What makes it shift, and how Ecleptic factors it into your score.
+- [Your baseline: you versus you](https://ecleptic.health/en/method/baseline.html): Your baseline is your normal over 42 days. How Ecleptic uses it to judge your HRV, resting heart rate and other vitals: the calculation, z-score, limits.
+- [Your sleep need, from your age to your cycles](https://ecleptic.health/en/method/sleep-need.html): Your sleep need starts from age-based guidelines and adjusts to your cycles. How Ecleptic calculates it and scores your night: duration, stages, efficiency.
+- [Energy expenditure, measured rather than guessed](https://ecleptic.health/en/method/energy-expenditure.html): Energy expenditure (TDEE): its three components, why formulas can be off by several hundred kcal, and how Ecleptic measures yours from your own data.
+- [The Journal](https://ecleptic.health/en/journal/): short, sourced articles by theme.
+
+### Sleep
+
+- [Caffeine and sleep: when to stop drinking coffee before bed](https://ecleptic.health/en/journal/caffeine-and-sleep-when-to-stop.html): Caffeine has a half-life of 5 to 6 hours, so a 4 p.m. coffee lingers well into your evening. Why to cut it off 8 to 10 hours before bed, and what that changes.
+- [Deep sleep: how to get more of it](https://ecleptic.health/en/journal/how-to-get-more-deep-sleep.html): A cool bedroom, fixed sleep times, daytime exercise, an early caffeine cutoff: the levers that really boost deep sleep, and the ones that do nothing.
+- [How many hours of sleep do you really need?](https://ecleptic.health/en/journal/how-many-hours-of-sleep-do-you-need.html): 7 to 9 hours for most adults, but the real answer depends on you. What the data actually says, and how to find your own sleep need in just two weeks.
+
+### Readiness
+
+- [Resting heart rate: what is a normal resting heart rate?](https://ecleptic.health/en/journal/normal-resting-heart-rate.html): A normal resting heart rate is 60 to 100 bpm, and 40 to 60 bpm in endurance athletes. How to measure it when you wake up, and how to read it as a trend.
+- [Readiness score: how it works, and how to improve it](https://ecleptic.health/en/journal/readiness-score-how-it-works.html): HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.
+
+### Training
+
+- [Zone 2 cardio: what is it, and why is it the best cardio?](https://ecleptic.health/en/journal/what-is-zone-2-cardio.html): Zone 2 is easy cardio where you can still talk in full sentences. Here's why this low intensity builds your aerobic base better than anything else.
+- [How many workouts per week do you need to make progress?](https://ecleptic.health/en/journal/how-many-workouts-per-week.html): How many workouts per week? From 2 to 5, depending on your level and your goal: what the WHO, the ACSM and the research say about strength training and cardio.
+
+### Recovery
+
+- [Ice bath benefits: real recovery tool or just a fad?](https://ecleptic.health/en/journal/cold-water-immersion-benefits.html): Ice baths really do ease soreness and reset your mind — but right after lifting, they blunt your gains. When to use a cold plunge, and when to skip it.
+- [Sore muscles: how to recover faster](https://ecleptic.health/en/journal/sore-muscles-how-to-recover-faster.html): Light movement, sleep, enough protein: what really speeds up recovery from sore muscles (DOMS), what makes no difference, and when to start worrying.
+- [HRV: what is heart rate variability?](https://ecleptic.health/en/journal/what-is-hrv-heart-rate-variability.html): HRV measures the tiny variations between two heartbeats, the most accessible marker of your recovery. How to read it, and what makes it go up or down.
+
+### Nutrition
+
+- [How many calories do you really need per day?](https://ecleptic.health/en/journal/how-many-calories-per-day.html): How many calories do you need per day? It depends on your metabolism and activity. Typical ranges, the limits of formulas, and how to find your real number.
+- [How much protein per day to build muscle?](https://ecleptic.health/en/journal/how-much-protein-per-day-to-build-muscle.html): 1.6 to 2.2 g per kilogram of body weight per day: what the research says, why eating more adds nothing, and how to spread your protein across the day.
+
+### Training load
+
+- [Overtraining: the signs you're doing too much](https://ecleptic.health/en/journal/signs-of-overtraining.html): Stalled performance, worse sleep, a rising resting heart rate, fading motivation: the warning signs of overtraining, and how to react before you break down.
+
+### Consistency
+
+- [Going to bed at the same time: what it really changes](https://ecleptic.health/en/journal/going-to-bed-at-the-same-time.html): For the same amount of sleep, a regular schedule improves sleep quality, energy and even metabolic health. Here's why it works, and how to make it happen.
+
+### Mood
+
+- [Stress and exercise: why your body stops recovering](https://ecleptic.health/en/journal/stress-and-recovery-from-exercise.html): Your nervous system can't tell a crunch week at work from a high-volume training week: mental stress gets paid for in physical recovery. Here's what to do.
+
+### Context
+
+- [Alcohol and sleep: what really happens during the night](https://ecleptic.health/en/journal/alcohol-and-sleep.html): Alcohol can help you fall asleep, but it fragments the second half of the night: less REM sleep, weaker heart recovery. Here's what happens, drink by drink.
+
+### Energy
+
+- [Ideal nap length: how long should you nap?](https://ecleptic.health/en/journal/ideal-nap-length.html): 10 to 20 minutes before 3 p.m.: the nap formula that recharges you without the grogginess. Why 30 minutes backfires, and when napping is a warning sign.
+- [Why am I always tired? The real causes of constant fatigue](https://ecleptic.health/en/journal/why-am-i-always-tired.html): Hidden sleep debt, irregular hours, undereating, overreaching, deficiencies: the most common causes of fatigue that won't go away, in the order to check them.
+
+### Nutrition data (2025 Ciqual table, ANSES)
+
+- [Foods high in protein: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-protein.html): The foods highest in protein in France's official Ciqual table, per 100 g and per 100 kcal, plus how much you really need according to EFSA and sports science.
+- [Foods high in iron: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-iron.html): The foods highest in iron in France's official Ciqual table, how much you need according to EFSA, and how to absorb more of the iron in plant foods.
+- [Foods high in magnesium: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-magnesium.html): The foods highest in magnesium in France's official Ciqual table, how much you need according to EFSA and US guidelines, and easy ways to eat more.
+- [Foods high in calcium: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-calcium.html): The foods highest in calcium in France's official Ciqual table, how much you need according to EFSA, and why spinach calcium counts less than it seems.
+- [Foods high in fiber: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-fiber.html): The foods highest in fiber in France's official Ciqual table, how much to eat according to EFSA and ANSES, and practical ways to reach 25 to 30 g a day.
+- [Foods high in omega-3: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-omega-3.html): The foods highest in omega-3 in France's official Ciqual table: EPA and DHA from fish, ALA from plants, and how much you need according to EFSA and ANSES.
+- [Foods high in vitamin D: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-vitamin-d.html): The foods highest in vitamin D in France's official Ciqual table, how much you need according to EFSA and US guidelines, and why food alone struggles in winter.
+- [Foods high in vitamin C: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-vitamin-c.html): The foods highest in vitamin C in France's official Ciqual table, how much you need according to EFSA and US guidelines, and how cooking changes the numbers.
+- [Foods high in vitamin B12: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-vitamin-b12.html): The foods highest in vitamin B12 in France's official Ciqual table, how much you need according to EFSA and US guidelines, and what vegans should know.
+- [Foods high in potassium: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-potassium.html): The foods highest in potassium in France's official Ciqual table, how much you need according to EFSA and US guidelines, and why bananas aren't the top source.
+- [Foods high in zinc: ranked by France's official Ciqual table](https://ecleptic.health/en/data/foods-high-in-zinc.html): The foods highest in zinc in France's official Ciqual table, how much you need according to EFSA, and why phytates matter if you eat mostly plants.
 
 ## Optional
 

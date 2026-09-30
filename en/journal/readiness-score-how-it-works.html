@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Readiness score: how it works, and how to improve it</title>
+<meta name="description" content="HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.">
+<link rel="canonical" href="https://ecleptic.health/en/journal/readiness-score-how-it-works.html">
+<meta property="og:title" content="Readiness score: how it works, and how to improve it">
+<meta property="og:description" content="HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/journal/readiness-score-how-it-works.html">
+<meta property="og:image" content="https://ecleptic.health/assets/articles/readiness-score-comment-ca-marche.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/articles/readiness-score-comment-ca-marche.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Readiness score: how it works, and how to improve it", "description": "HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.", "image": "https://ecleptic.health/assets/articles/readiness-score-comment-ca-marche.jpg", "datePublished": "2026-09-19", "dateModified": "2026-09-30", "inLanguage": "en", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/journal/readiness-score-how-it-works.html", "citation": [{"@type": "CreativeWork", "name": "Plews DJ, Laursen PB, Stanley J, et al. Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring. Sports Med. 2013.", "url": "https://doi.org/10.1007/s40279-013-0071-8"}, {"@type": "CreativeWork", "name": "Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. Sports Med. 2013.", "url": "https://doi.org/10.1007/s40279-013-0083-4"}, {"@type": "CreativeWork", "name": "Natarajan A, Pantelopoulos A, Emir-Farinas H, et al. Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study. Lancet Digit Health. 2020.", "url": "https://doi.org/10.1016/S2589-7500(20)30246-6"}, {"@type": "CreativeWork", "name": "Mishra T, Wang M, Metwally AA, et al. Pre-symptomatic detection of COVID-19 from smartwatch data. Nat Biomed Eng. 2020.", "url": "https://doi.org/10.1038/s41551-020-00640-6"}, {"@type": "CreativeWork", "name": "Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. JMIR Ment Health. 2018.", "url": "https://doi.org/10.2196/mental.9519"}, {"@type": "CreativeWork", "name": "Manresa-Rocamora A, Sarabia JM, Javaloyes A, et al. Heart Rate Variability-Guided Training for Enhancing Cardiac-Vagal Modulation, Aerobic Fitness, and Endurance Performance: A Methodological Systematic Review with Meta-Analysis. Int J Environ Res Public Health. 2021.", "url": "https://doi.org/10.3390/ijerph181910299"}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Journal", "item": "https://ecleptic.health/en/journal/"}, {"@type": "ListItem", "position": 2, "name": "Readiness", "item": "https://ecleptic.health/en/journal/readiness/"}, {"@type": "ListItem", "position": 3, "name": "Readiness score: how it works, and how to improve it", "item": "https://ecleptic.health/en/journal/readiness-score-how-it-works.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a readiness score?", "acceptedAnswer": {"@type": "Answer", "text": "A number, usually out of 100, calculated every morning from your HRV, resting heart rate, sleep and recent training load — all compared with your own baseline, never with an average of other people."}}, {"@type": "Question", "name": "What should I do when my readiness score is low?", "acceptedAnswer": {"@type": "Answer", "text": "A single low score doesn't rule out training: lower the intensity or trade it for technique work. It's five mornings of decline in a row that tell a real story — that's when you back off."}}, {"@type": "Question", "name": "How can I improve my readiness score?", "acceptedAnswer": {"@type": "Answer", "text": "Get enough sleep at regular times (the number one lever), truly alternate hard and easy days, limit alcohol in the evening, and eat enough on heavy training days."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/articles/readiness-score-comment-ca-marche.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/journal/readiness-score-how-it-works.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/journal/readiness-score-how-it-works.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" class="on">Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" >Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/articles/readiness-score-comment-ca-marche.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/journal/readiness-score-how-it-works.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article>
+  <header>
+    <span class="label"><a class="gold" href="/en/journal/readiness/">Readiness</a> &nbsp;&middot;&nbsp; September 19, 2026 &nbsp;&middot;&nbsp; 3 min</span>
+    <h1>Readiness score: how it works, and how to improve it</h1>
+    <p class="standfirst">HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic &nbsp;&middot;&nbsp; updated September 30, 2026</p>
+  </header>
+<script>
+(function(){
+  var h = document.querySelector('article h1');
+  if (!h) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = 100, SPREAD = 1000, P = 2;
+  var text = h.textContent.replace(/ ([?!:;\u00bb])/g, '\u00a0$1');
+  var cut = text.indexOf(':') + 1;
+  if (cut <= 0) return;
+  var anim = Array.from(text.slice(cut));
+  var denom = Math.max(1, anim.length - 1);
+  h.setAttribute('aria-label', text);
+  h.textContent = '';
+  h.appendChild(document.createTextNode(text.slice(0, cut)));
+  var spans = [], w = null, idx = 0;
+  anim.forEach(function(c){
+    if (c === ' '){ h.appendChild(document.createTextNode(' ')); w = null; idx++; return; }
+    if (!w){ w = document.createElement('span'); w.className = 'w'; w.setAttribute('aria-hidden','true'); h.appendChild(w); }
+    var s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = c;
+    if (!reduce) s.style.transitionDelay = (BASE + SPREAD*Math.pow(idx/denom, P)).toFixed(0)+'ms';
+    idx++; w.appendChild(s); spans.push(s);
+  });
+  if (reduce){ spans.forEach(function(s){ s.classList.add('in'); }); return; }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    spans.forEach(function(s){ s.classList.add('in'); });
+  });});
+})();
+</script>
+  <figure class="hero"><img src="/assets/articles/readiness-score-comment-ca-marche.jpg" srcset="/assets/articles/640/readiness-score-comment-ca-marche.jpg 640w, /assets/articles/1200/readiness-score-comment-ca-marche.jpg 1200w, /assets/articles/readiness-score-comment-ca-marche.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 592px" alt="Readiness score: how it works, and how to improve it" width="1600" height="840" fetchpriority="high" decoding="async"></figure>
+  <p>A <strong>readiness score</strong> is a number, usually out of 100, that estimates the state of your body every morning: are you ready to handle a big day, or still paying for the previous ones? Popularized by Whoop and Oura, the concept rests on a simple idea: progress doesn't come from training itself, but from the <em>recovery</em> that follows it. The score tells you where you stand in that cycle.</p>
+
+<h2>How is a readiness score calculated?</h2>
+<p>Formulas vary from one app to another, but the ingredients are almost always the same:</p>
+<ul>
+<li><strong>Heart rate variability (HRV)</strong> — the most sensitive signal of the state of your nervous system. It drops when your body is under pressure (<a href="/en/journal/what-is-hrv-heart-rate-variability.html">here's HRV explained in detail</a>).</li>
+<li><strong>Resting heart rate</strong> — measured overnight. A few beats above your normal = incomplete recovery, an illness coming on, or alcohol from the night before. A 2020 Stanford study showed that an abnormal rise in resting heart rate could have flagged 63% of Covid-19 cases before the first symptoms.</li>
+<li><strong>Your sleep</strong> — the duration and quality of your night, compared with your need (<a href="/en/journal/how-many-hours-of-sleep-do-you-need.html">how many hours you really need</a>).</li>
+<li><strong>Your recent load</strong> — your training over the last few days, because a hard session takes its toll: according to a 2013 review, your autonomic nervous system recovers within 24 hours at most from an easy session, in 24 to 48 hours from a threshold session, and in 48 hours or more from a very intense session.</li>
+</ul>
+<p>The key point: everything is compared with <strong>your own baseline</strong>, built over weeks of data. A good score never compares you with an average of other people — an HRV of 45 ms can be excellent for you and mediocre for someone else. Across more than 8 million smartwatch wearers, HRV drops markedly with age and varies over the course of the day.</p>
+
+<h2>How to read your readiness score</h2>
+<p>Three rules prevent most misreadings:</p>
+<ul>
+<li><strong>The trend beats today's number.</strong> A single bad score means almost nothing; five mornings of decline tell a real story. Researchers who monitor Olympic athletes also smooth HRV over several days.</li>
+<li><strong>The score is advice, not an order.</strong> A 55 doesn't forbid you from training — it suggests going easier, or trading intensity for technique work. Even HRV-guided training doesn't work miracles: a 2021 meta-analysis found only a small, non-significant advantage for fitness and performance.</li>
+<li><strong>Don't check it ten times a day.</strong> It's calculated when you wake up, based on your night. The rest of the day doesn't change it.</li>
+</ul>
+
+<h2>How to improve your readiness score</h2>
+<p>The levers are boring, and that's good news: they're all within your control.</p>
+<ul>
+<li>Getting enough sleep, at <a href="/en/journal/going-to-bed-at-the-same-time.html">regular times</a> — the number one lever.</li>
+<li>Truly alternating hard days and easy days, instead of stacking medium-effort sessions every day.</li>
+<li>Limiting <a href="/en/journal/alcohol-and-sleep.html">alcohol in the evening</a>: in 4,098 Finnish employees, recovery measured by HRV dropped by 9 points with a small dose, and by 39 with a large one.</li>
+<li>Eating enough on heavy training days — a large calorie deficit weighs on recovery.</li>
+</ul>
+
+<h2>Key takeaways</h2>
+<ul>
+<li>A readiness score combines HRV, resting heart rate, sleep and recent training load, compared with <strong>your</strong> baseline.</li>
+<li>Read it as a trend; it guides the day's intensity, but it doesn't decide for you.</li>
+<li>Regular sleep, alternating hard and easy days, rare alcohol: that's what raises it for good.</li>
+</ul>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>What is a readiness score?</h3>
+    <p>A number, usually out of 100, calculated every morning from your HRV, resting heart rate, sleep and recent training load — all compared with your own baseline, never with an average of other people.</p>
+    <h3>What should I do when my readiness score is low?</h3>
+    <p>A single low score doesn&#x27;t rule out training: lower the intensity or trade it for technique work. It&#x27;s five mornings of decline in a row that tell a real story — that&#x27;s when you back off.</p>
+    <h3>How can I improve my readiness score?</h3>
+    <p>Get enough sleep at regular times (the number one lever), truly alternate hard and easy days, limit alcohol in the evening, and eat enough on heavy training days.</p>
+  </section>
+  <section class="refs">
+    <h2>Sources</h2>
+    <ol>
+      <li>Plews DJ, Laursen PB, Stanley J, et al. Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring. <em>Sports Med</em>. 2013. <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a></li>
+      <li>Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. <em>Sports Med</em>. 2013. <a href="https://doi.org/10.1007/s40279-013-0083-4" rel="noopener" target="_blank">doi:10.1007/s40279-013-0083-4</a></li>
+      <li>Natarajan A, Pantelopoulos A, Emir-Farinas H, et al. Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study. <em>Lancet Digit Health</em>. 2020. <a href="https://doi.org/10.1016/S2589-7500(20)30246-6" rel="noopener" target="_blank">doi:10.1016/S2589-7500(20)30246-6</a></li>
+      <li>Mishra T, Wang M, Metwally AA, et al. Pre-symptomatic detection of COVID-19 from smartwatch data. <em>Nat Biomed Eng</em>. 2020. <a href="https://doi.org/10.1038/s41551-020-00640-6" rel="noopener" target="_blank">doi:10.1038/s41551-020-00640-6</a></li>
+      <li>Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. <em>JMIR Ment Health</em>. 2018. <a href="https://doi.org/10.2196/mental.9519" rel="noopener" target="_blank">doi:10.2196/mental.9519</a></li>
+      <li>Manresa-Rocamora A, Sarabia JM, Javaloyes A, et al. Heart Rate Variability-Guided Training for Enhancing Cardiac-Vagal Modulation, Aerobic Fitness, and Endurance Performance: A Methodological Systematic Review with Meta-Analysis. <em>Int J Environ Res Public Health</em>. 2021. <a href="https://doi.org/10.3390/ijerph181910299" rel="noopener" target="_blank">doi:10.3390/ijerph181910299</a></li>
+    </ol>
+  </section>
+  <div class="reward">
+    <span class="label">Go further</span>
+    <h2>What this article explains,<br>the app measures for you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'readiness-score-comment-ca-marche',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Read next</span>
+<a href="/en/journal/what-is-hrv-heart-rate-variability.html">HRV: what is heart rate variability?</a>
+<a href="/en/journal/how-much-protein-per-day-to-build-muscle.html">How much protein per day to build muscle?</a>
+<a href="/en/journal/signs-of-overtraining.html">Overtraining: the signs you&#x27;re doing too much</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('article_view',{article:'readiness-score-comment-ca-marche',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

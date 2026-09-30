@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Heart rate variability (HRV): what it is and how to read it</title>
+<meta name="description" content="Heart rate variability (HRV): what it measures, why it varies so much from one person to the next, what lowers it, and how the app reads it every night.">
+<link rel="canonical" href="https://ecleptic.health/en/method/heart-rate-variability.html">
+<meta property="og:title" content="Heart rate variability (HRV), beat by beat">
+<meta property="og:description" content="Heart rate variability (HRV): what it measures, why it varies so much from one person to the next, what lowers it, and how the app reads it every night.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/method/heart-rate-variability.html">
+<meta property="og:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Heart rate variability (HRV), beat by beat", "description": "Heart rate variability (HRV): what it measures, why it varies so much from one person to the next, what lowers it, and how the app reads it every night.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "en", "image": "https://ecleptic.health/assets/science/file-d-etoiles-og.jpg", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/method/heart-rate-variability.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecleptic.health/en/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/en/science.html"}, {"@type": "ListItem", "position": 3, "name": "Heart rate variability (HRV)", "item": "https://ecleptic.health/en/method/heart-rate-variability.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a good HRV for my age?", "acceptedAnswer": {"@type": "Answer", "text": "There's no universal good value: depending on age, genetics and fitness, HRV ranges from around 20 to more than 100 milliseconds, and it declines over the years. The right benchmark is your own average over several weeks, measured with the same device."}}, {"@type": "Question", "name": "Why did my HRV drop last night?", "acceptedAnswer": {"@type": "Answer", "text": "The most common causes are a night that was too short, alcohol the evening before, a stressful period, a hard workout or an infection coming on. A single low night is often just noise; several days below your baseline are a real signal to ease off. If unusual symptoms come with it, see a doctor."}}, {"@type": "Question", "name": "Is Apple Watch HRV accurate?", "acceptedAnswer": {"@type": "Answer", "text": "The watch tracks your pulse with an optical sensor, less precise than an electrocardiogram but reliable for trends when it's worn properly and you're at rest, as you are at night. It expresses HRV in SDNN format, which can't be compared directly with the RMSSD used by other devices: compare yourself with yourself, on the same watch."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/methode/variabilite-cardiaque.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/method/heart-rate-variability.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/method/heart-rate-variability.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/methode/variabilite-cardiaque.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/method/heart-rate-variability.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/science.html">Science-Based</a><span aria-hidden="true">/</span><span>Heart rate variability (HRV)</span></nav>
+    <span class="label"><span class="gold">The measure &nbsp;&middot;&nbsp; Explainer</span></span>
+    <h1>Heart rate variability (HRV), beat by beat</h1>
+    <p class="standfirst">Your heart doesn't beat like a metronome, and that's excellent news. That gap from one beat to the next, <strong>heart rate variability</strong>, is one of the most sensitive markers of your recovery, as long as you compare it with yourself and never with other people.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic</p>
+  </header>
+  <h2>What is heart rate variability (HRV)?</h2>
+<p>Heart rate variability, or HRV, is <strong>the variation in the time between two successive heartbeats</strong>. It's expressed in milliseconds.</p>
+<p>Even at 60 beats per minute, your heart doesn't beat exactly once per second: one interval lasts 980 milliseconds, the next 1,030, the third 1,005. This irregularity isn't a flaw. It's the signature of a heart that's constantly adjusting to what your body asks of it.</p>
+
+<h2>What HRV reflects: your autonomic nervous system</h2>
+<p>Two systems steer your heart, without you ever having to think about it:</p>
+<ul>
+<li><strong>The sympathetic system, the accelerator:</strong> it takes over in response to stress, exertion or a threat. Your heartbeats become more regular, and HRV drops.</li>
+<li><strong>The parasympathetic system, the brake:</strong> carried largely by the vagus nerve, it dominates at rest, during digestion and during recovery. Your heart adjusts beat by beat, and HRV rises.</li>
+</ul>
+<p>An HRV that's high relative to your normal signals a body in recovery mode; a low HRV, a body that's still mobilized. The same balance governs your <a href="/en/method/resting-heart-rate.html">resting heart rate</a>, and your breathing plays a part too: your heart speeds up slightly when you inhale and slows down when you exhale, hence the close link with your <a href="/en/method/respiratory-rate.html">respiratory rate</a>.</p>
+
+<h2>How HRV is measured: ECG or smartwatch</h2>
+<p>In the lab, the gold standard is the <strong>electrocardiogram (ECG)</strong>. It detects every heartbeat and measures the intervals, following international standards set back in 1996.</p>
+<p>Your watch works differently. Its optical sensor on your wrist uses <strong>photoplethysmography (PPG)</strong> to detect the pulse wave through your skin. It's less precise than an ECG, but reliable for trends when the watch is worn properly and you're not moving. Nighttime meets both conditions.</p>
+<p>Then there's the question of format. Apple Health records HRV as <strong>SDNN</strong>, the standard deviation of the intervals between heartbeats: that's what the Apple Watch measures. Many studies and other devices use <strong>RMSSD</strong>, calculated from the differences between successive heartbeats. The two can't be compared directly: a number you read on a forum, or on a friend's watch, tells you nothing about yours.</p>
+
+<h2>Why your HRV looks like no one else's</h2>
+<p>HRV is one of the <strong>most individual</strong> measurements there is. Depending on age, genetics and fitness, it ranges from around 20 to more than 100 milliseconds. It declines over the years, and endurance training tends to raise it.</p>
+<p>The direct consequence: comparing your HRV with a chart you found online makes almost no sense. Two people of the same age, equally fit, can show very different values. <strong>The only comparison that counts is you versus you</strong>, over several weeks, with the same device.</p>
+
+<h2>What lowers HRV, and what helps</h2>
+<ul>
+<li><strong>Lack of sleep:</strong> a short or broken night leaves your nervous system on alert.</li>
+<li><strong>Alcohol:</strong> even in small amounts, a drink in the evening often lowers your HRV the following night.</li>
+<li><strong>Stress:</strong> a tense stretch keeps the accelerator pressed down, even at rest.</li>
+<li><strong>Training load:</strong> a hard session, or weeks strung together without enough recovery.</li>
+<li><strong>An infection coming on:</strong> your body mobilizes its defenses, sometimes before you feel sick.</li>
+</ul>
+<p>Conversely, what helps is well known: <strong>regular sleep</strong>, progressive <strong>endurance</strong> training, <strong>slow breathing</strong>, of which resonance breathing is the simplest form, and <strong>less alcohol</strong>.</p>
+
+<h2>How the app reads your HRV</h2>
+<p>In the app, HRV is the heaviest signal in the vitals pillar of the <a href="/en/method/readiness-score.html">Readiness Score</a>: <strong>45% of its 42 points</strong>, or nearly 19 points out of 100 when all the data is there.</p>
+<div class="figs">
+  <div><span class="v">45%</span><span class="u">of the vitals pillar</span></div>
+  <div><span class="v">≈ 19</span><span class="u">score points out of 100</span></div>
+  <div><span class="v">42</span><span class="u">days of baseline</span></div>
+  <div><span class="v">28</span><span class="u">days to full confidence</span></div>
+</div>
+<p>The app reads it from Apple Health, in SDNN format, then compares it with your <a href="/en/method/baseline.html">baseline</a>: your average and standard deviation over the last 42 days, excluding the day being assessed. It takes 7 days of data to get started, and 28 for full confidence. The higher your HRV relative to your normal, the more points it earns; beyond two standard deviations below your average, it earns none at all. The details of all five signals: <a href="/en/method/vitals.html">Vitals</a>.</p>
+<p>A low night lowers that day's score, and that's normal. But <strong>HRV dropping for one night is noise; a week below your baseline is a signal.</strong></p>
+<p>HRV also counts toward your <a href="/en/method/biological-age.html">biological age</a>: compared with the values expected for your age, it can move it in either direction, and it counts for less there if you take a medication that slows the heart.</p>
+
+<h2>The limits of the measurement</h2>
+<ul>
+<li><strong>The optical sensor:</strong> a watch that's too loose or an arm that moves, and the reading degrades. Wear it snug, all night.</li>
+<li><strong>The heart rhythm itself:</strong> irregular heartbeats, such as premature beats (extrasystoles), throw off the HRV calculation.</li>
+<li><strong>Medications:</strong> a medication that slows the heart changes how your HRV should be read.</li>
+<li><strong>Switching devices:</strong> changing watches means changing instruments. For the six weeks that follow, your baseline still mixes nights from both devices.</li>
+</ul>
+
+<h2>When to see a doctor</h2>
+<p>HRV isn't a diagnostic tool, and this app isn't a medical device. A low HRV, even several days in a row, isn't a disease: it's an invitation to work on what's pulling it down, to sleep better, to lighten your training.</p>
+<p>On the other hand, if a drop settles in for no apparent reason along with unusual fatigue, or if you have palpitations, feel faint, or have chest pain or unusual shortness of breath, see a doctor. In an emergency, call your local emergency number (911 in the US, 999 or 112 in the UK and Europe).</p>
+  <section class="refs">
+    <h2>References</h2>
+    <ul>
+      <li>Task Force of the European Society of Cardiology and NASPE (1996), standards of measurement for heart rate variability, <em>Circulation</em>. <a href="https://doi.org/10.1161/01.CIR.93.5.1043" rel="noopener" target="_blank">doi:10.1161/01.CIR.93.5.1043</a></li>
+      <li>Shaffer F. and Ginsberg J. P. (2017), an overview of heart rate variability metrics and norms, <em>Frontiers in Public Health</em>. <a href="https://doi.org/10.3389/fpubh.2017.00258" rel="noopener" target="_blank">doi:10.3389/fpubh.2017.00258</a></li>
+      <li>Nunan D. et al. (2010), normal values for short-term heart rate variability in healthy adults, <em>Pacing and Clinical Electrophysiology</em>. <a href="https://doi.org/10.1111/j.1540-8159.2010.02841.x" rel="noopener" target="_blank">doi:10.1111/j.1540-8159.2010.02841.x</a></li>
+      <li>Plews D. J. et al. (2013), heart rate variability monitoring and training adaptation in endurance athletes, <em>Sports Medicine</em>. <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a></li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>What is a good HRV for my age?</h3>
+    <p>There&#x27;s no universal good value: depending on age, genetics and fitness, HRV ranges from around 20 to more than 100 milliseconds, and it declines over the years. The right benchmark is your own average over several weeks, measured with the same device.</p>
+    <h3>Why did my HRV drop last night?</h3>
+    <p>The most common causes are a night that was too short, alcohol the evening before, a stressful period, a hard workout or an infection coming on. A single low night is often just noise; several days below your baseline are a real signal to ease off. If unusual symptoms come with it, see a doctor.</p>
+    <h3>Is Apple Watch HRV accurate?</h3>
+    <p>The watch tracks your pulse with an optical sensor, less precise than an electrocardiogram but reliable for trends when it&#x27;s worn properly and you&#x27;re at rest, as you are at night. It expresses HRV in SDNN format, which can&#x27;t be compared directly with the RMSSD used by other devices: compare yourself with yourself, on the same watch.</p>
+  </section>
+  <div class="reward">
+    <span class="label">The next step</span>
+    <h2>You just read the method.<br>The app applies it to you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'variabilite-cardiaque',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Go further</span>
+<a href="/en/method/vitals.html">Vitals</a>
+<a href="/en/method/resting-heart-rate.html">Resting heart rate</a>
+<a href="/en/method/baseline.html">Your baseline</a>
+<a href="/en/method/readiness-score.html">The Readiness Score</a>
+<a href="/en/method/biological-age.html">Biological age</a>
+<a href="/en/journal/what-is-hrv-heart-rate-variability.html">HRV: what is heart rate variability?</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('methode_view',{page:'variabilite-cardiaque',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

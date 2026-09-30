@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Ecleptic — Report what's not working</title>
+<style>
+  :root{--gold:#D9A441;--gold-soft:#B07A2A;--ink:#F2EBDD;--muted:#9A8E77;
+        --bg:#0B0A08;--card:#161310;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:600px;margin:0 auto;padding:48px 24px 64px}
+  .logo{font-size:14px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600;text-align:center}
+  h1{font-size:clamp(26px,5vw,34px);text-align:center;margin:16px 0 8px}
+  .sub{color:var(--muted);text-align:center;margin-bottom:32px}
+  form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:left}
+  .q{margin-bottom:22px}
+  .q .title{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+  .q small{font-weight:400;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips input{position:absolute;opacity:0;pointer-events:none}
+  .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);
+              background:var(--bg);font-size:14px;cursor:pointer;user-select:none}
+  .chips input:checked + span{background:var(--gold);border-color:var(--gold);color:#1C1710;font-weight:600}
+  input[type=email],input[type=text],textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+              font-size:16px;background:var(--bg);color:var(--ink);font-family:inherit}
+  textarea{min-height:90px;resize:vertical}
+  input:focus,textarea:focus{outline:2px solid var(--gold-soft)}
+  .cta{display:inline-block;border:0;cursor:pointer;width:100%;background:var(--gold);color:#1C1710;
+       padding:16px;border-radius:14px;font-size:17px;font-weight:600;margin-top:4px}
+  .err{display:none;color:#E07A50;font-size:14px;margin-top:10px;text-align:center}
+  #done{display:none;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px 28px;text-align:center}
+  #done h2{margin-bottom:8px}
+  #done p{color:var(--muted)}
+</style>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/problemes.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/problemes.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/problemes.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Ecleptic</div>
+  <h1>Report what's not working ✦</h1>
+  <p class="sub">3 minutes. The more precise your answers, the faster we can fix things — every report is cross-checked against other testers' reports to spot recurring problems.</p>
+
+  <form id="survey">
+    <div class="q">
+      <label class="title">How long have you been using the app?</label>
+      <div class="chips">
+        <label><input type="radio" name="usage_duration" value="lt_week" required><span>Less than a week</span></label>
+        <label><input type="radio" name="usage_duration" value="one_two_weeks"><span>1–2 weeks</span></label>
+        <label><input type="radio" name="usage_duration" value="more"><span>Longer</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Have you run into any problems? <small>(select all that apply)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="problem_types" value="crash"><span>The app closes on its own</span></label>
+        <label><input type="checkbox" name="problem_types" value="freeze_lenteur"><span>Freezing / lag</span></label>
+        <label><input type="checkbox" name="problem_types" value="donnees_fausses"><span>Wrong data</span></label>
+        <label><input type="checkbox" name="problem_types" value="sync_sante"><span>Apple Health / watch sync</span></label>
+        <label><input type="checkbox" name="problem_types" value="scan_rate"><span>Meal scan failed</span></label>
+        <label><input type="checkbox" name="problem_types" value="donnees_perdues"><span>Data disappeared</span></label>
+        <label><input type="checkbox" name="problem_types" value="notifications"><span>Notifications</span></label>
+        <label><input type="checkbox" name="problem_types" value="connexion"><span>Sign-in / account</span></label>
+        <label><input type="checkbox" name="problem_types" value="affichage"><span>Broken display</span></label>
+        <label><input type="checkbox" name="problem_types" value="batterie"><span>Battery / overheating</span></label>
+        <label><input type="checkbox" name="problem_types" value="incomprehension"><span>I don't understand a screen</span></label>
+        <label><input type="checkbox" name="problem_types" value="aucun"><span>No problems ✦</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Which part of the app? <small>(select all that apply)</small></label>
+      <div class="chips">
+        <label><input type="checkbox" name="areas" value="accueil"><span>Home</span></label>
+        <label><input type="checkbox" name="areas" value="alimentation"><span>Nutrition</span></label>
+        <label><input type="checkbox" name="areas" value="sommeil"><span>Sleep</span></label>
+        <label><input type="checkbox" name="areas" value="sport"><span>Sport</span></label>
+        <label><input type="checkbox" name="areas" value="labo"><span>The Lab</span></label>
+        <label><input type="checkbox" name="areas" value="coach"><span>AI Coach</span></label>
+        <label><input type="checkbox" name="areas" value="onboarding"><span>Getting started</span></label>
+        <label><input type="checkbox" name="areas" value="widgets"><span>Widgets</span></label>
+        <label><input type="checkbox" name="areas" value="reveil"><span>Alarm</span></label>
+        <label><input type="checkbox" name="areas" value="reglages"><span>Settings</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">How often does the most annoying problem happen?</label>
+      <div class="chips">
+        <label><input type="radio" name="main_frequency" value="chaque_fois"><span>Every time I use it</span></label>
+        <label><input type="radio" name="main_frequency" value="souvent"><span>Often</span></label>
+        <label><input type="radio" name="main_frequency" value="parfois"><span>Sometimes</span></label>
+        <label><input type="radio" name="main_frequency" value="une_fois"><span>Just once</span></label>
+        <label><input type="radio" name="main_frequency" value="na"><span>No problems</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Does it stop you from using the app?</label>
+      <div class="chips">
+        <label><input type="radio" name="main_severity" value="bloquant"><span>Yes, it's a blocker</span></label>
+        <label><input type="radio" name="main_severity" value="genant"><span>Annoying, but I work around it</span></label>
+        <label><input type="radio" name="main_severity" value="mineur"><span>Minor</span></label>
+        <label><input type="radio" name="main_severity" value="na"><span>No problems</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label class="title">Describe the main problem <small>(what did you do, what happened, what did you expect?)</small></label>
+      <textarea name="main_description" placeholder="E.g., I open the meal scan, take the photo, and the screen gets stuck on…"></textarea>
+    </div>
+
+    <div class="q">
+      <label class="title">Your iPhone and watch <small>(optional — e.g., “iPhone 15 Pro, Apple Watch S9”)</small></label>
+      <input type="text" name="device_info" placeholder="iPhone…, watch…">
+    </div>
+
+    <div class="q">
+      <label class="title">Your email <small>(the one you used for the beta, so we can link your answers)</small></label>
+      <input type="email" name="email" autocomplete="email" placeholder="optional">
+    </div>
+
+    <!-- Anti-spam : champ invisible, seuls les robots le remplissent. -->
+    <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="cta" id="btn" type="submit">Send my report</button>
+    <p class="err" id="err">Sending failed — try again, or email us at contact@ecleptic.app</p>
+  </form>
+
+  <div id="done">
+    <h2>Thank you ✦</h2>
+    <p>Got it. We cross-check your report against other testers' reports, and the most common problems move to the top of the list. Everything aligns.</p>
+  </div>
+</div>
+
+<script>
+  var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
+
+  document.getElementById("survey").addEventListener("submit", async function(e){
+    e.preventDefault();
+    var btn=document.getElementById("btn"), err=document.getElementById("err");
+    btn.disabled=true; btn.textContent="One moment…"; err.style.display="none";
+    var fd=new FormData(e.target);
+    if(fd.get("website")){ btn.textContent="Thanks!"; return; }
+    var payload={
+      usage_duration:fd.get("usage_duration"),
+      problem_types:fd.getAll("problem_types"),
+      areas:fd.getAll("areas"),
+      main_frequency:fd.get("main_frequency"),
+      main_severity:fd.get("main_severity"),
+      main_description:(fd.get("main_description")||"").trim()||null,
+      device_info:(fd.get("device_info")||"").trim()||null,
+      email:(fd.get("email")||"").trim().toLowerCase()||null,
+      locale:navigator.language||null, user_agent:navigator.userAgent
+    };
+    var ok=false;
+    try{
+      var r=await fetch(SUPABASE_URL+"/rest/v1/beta_problems",{method:"POST",
+        headers:{"Content-Type":"application/json","apikey":SUPABASE_ANON_KEY,
+                 "Authorization":"Bearer "+SUPABASE_ANON_KEY,"Prefer":"return=minimal"},
+        body:JSON.stringify(payload)});
+      ok=r.ok||r.status===409;
+    }catch(_){}
+    if(ok){
+      document.getElementById("survey").style.display="none";
+      var d=document.getElementById("done"); d.style.display="block";
+      d.scrollIntoView({behavior:"smooth",block:"center"});
+    }else{
+      err.style.display="block"; btn.disabled=false; btn.textContent="Send my report";
+    }
+  });
+</script>
+</body>
+</html>

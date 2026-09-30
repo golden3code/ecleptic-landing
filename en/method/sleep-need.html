@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<title>Sleep need by age and sleep cycle: how it&#x27;s calculated</title>
+<meta name="description" content="Your sleep need starts from age-based guidelines and adjusts to your cycles. How Ecleptic calculates it and scores your night: duration, stages, efficiency.">
+<link rel="canonical" href="https://ecleptic.health/en/method/sleep-need.html">
+<meta property="og:title" content="Your sleep need, from your age to your cycles">
+<meta property="og:description" content="Your sleep need starts from age-based guidelines and adjusts to your cycles. How Ecleptic calculates it and scores your night: duration, stages, efficiency.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecleptic.health/en/method/sleep-need.html">
+<meta property="og:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Your sleep need, from your age to your cycles", "description": "Your sleep need starts from age-based guidelines and adjusts to your cycles. How Ecleptic calculates it and scores your night: duration, stages, efficiency.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "en", "image": "https://ecleptic.health/assets/science/file-d-etoiles-og.jpg", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/en/method/sleep-need.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecleptic.health/en/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/en/science.html"}, {"@type": "ListItem", "position": 3, "name": "Your sleep need", "item": "https://ecleptic.health/en/method/sleep-need.html"}]}]</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many hours of sleep do you need by age?", "acceptedAnswer": {"@type": "Answer", "text": "The National Sleep Foundation recommends 8 to 10 hours between ages 14 and 17, 7 to 9 hours between 18 and 64, and 7 to 8 hours from age 65. Ecleptic starts from the middle of your range, meaning 9 hours, 8 hours or 7 hours 30 minutes, then adjusts it to your cycles once their length is known."}}, {"@type": "Question", "name": "How long is a sleep cycle?", "acceptedAnswer": {"@type": "Answer", "text": "About 90 minutes on average, but the length varies from person to person. Waking up at the end of a cycle rather than in the middle of deep sleep makes waking up easier. That's why Ecleptic judges your sleep duration 70% against the number of whole cycles closest to your need, as soon as your cycles are known."}}, {"@type": "Question", "name": "Is it better to sleep longer or at regular times?", "acceptedAnswer": {"@type": "Answer", "text": "Both matter, but regularity is often underrated: a study published in 2024 found that it predicted mortality risk better than duration. In Ecleptic's Readiness Score, duration against your need accounts for 40% of the sleep pillar, and the regularity of your bedtimes and wake-up times for 15%."}}]}</script>
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/methode/besoin-de-sommeil.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/method/sleep-need.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/method/sleep-need.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav class="site">
+  <a class="logo" href="/en/">Ecleptic</a>
+  <div class="links">
+    <a href="/en/" data-mega="app" >Home</a>
+    <span class="navjournal">
+    <a href="/en/journal/" data-mega="journal" >Journal</a>
+    </span>
+    <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
+    <a href="/beta.html" data-mega="beta">The beta</a>
+    <span class="langsw"><a href="/methode/besoin-de-sommeil.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/method/sleep-need.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
+  </div>
+</nav>
+<main class="wrap">
+<article class="methode">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/en/science.html">Science-Based</a><span aria-hidden="true">/</span><span>Your sleep need</span></nav>
+    <span class="label"><span class="gold">The measure &nbsp;&middot;&nbsp; Explainer</span></span>
+    <h1>Your sleep need, from your age to your cycles</h1>
+    <p class="standfirst">"Eight hours for everyone" is a starting point, not a truth. Here's how the app starts from the recommendations for your age, adjusts them to the length of your own cycles, then scores each night on four criteria.</p>
+    <p class="byline">By <a href="/en/about.html" rel="author">Auguste Phily-Priou</a>, founder of Ecleptic</p>
+  </header>
+  <h2>A need, not an average</h2>
+<p>Your sleep need is <strong>the amount of sleep that lets you function at your best, day after day, without building up debt</strong>. It changes with age and varies from one person to another. In the app, it's the reference your nights' duration is judged against.</p>
+<p>Sleeping below that need several nights in a row creates a debt: your attention drops, your mood frays, your recovery slows down. And sleeping in isn't always enough to catch up on sleep debt.</p>
+
+<h2>What your nights repair</h2>
+<p>Sleep isn't downtime. It's organized into cycles of about 90 minutes on average, each moving through three main types of sleep:</p>
+<ul>
+<li><strong>Light sleep:</strong> the transition between wakefulness and deeper sleep, which takes up a good part of the night.</li>
+<li><strong>Deep sleep:</strong> the most restorative for the body, concentrated early in the night. There are concrete ways to <a href="/en/journal/how-to-get-more-deep-sleep.html">get more deep sleep</a>.</li>
+<li><strong>REM sleep:</strong> the dreaming stage, which plays a role in memory and emotional balance, and is more abundant toward the end of the night.</li>
+</ul>
+<p>Cutting your night short therefore mostly eats into the last cycles, the ones richest in REM sleep.</p>
+
+<h2>The starting point: your age</h2>
+<p>The app starts from the National Sleep Foundation's recommendations, which set a duration range for each age group, and uses <strong>the middle of each range</strong>:</p>
+<div class="figs">
+  <div><span class="v">9 h</span><span class="u">Ages 14 to 17 (8 to 10 h)</span></div>
+  <div><span class="v">8 h</span><span class="u">Ages 18 to 64 (7 to 9 h)</span></div>
+  <div><span class="v">7 h 30 min</span><span class="u">Ages 65 and up (7 to 8 h)</span></div>
+  <div><span class="v">90</span><span class="u">Minutes per cycle, on average</span></div>
+</div>
+<p>These ranges are wide for a good reason: at the same age, some people really need 7 hours, others 9. The middle is just an honest starting point until the app knows more about you.</p>
+
+<h2>Then the length of your cycles</h2>
+<p>A cycle lasts about 90 minutes on average, but that length varies from person to person. And waking up in the middle of deep sleep leaves you groggier than waking up at the end of a cycle.</p>
+<p>When the length of your own cycles is known, the app takes it into account: your sleep duration is judged <strong>70% against the number of whole cycles closest to your need</strong>, and 30% against the raw need. Example: with 100-minute cycles and a starting need of 8 hours, the closest target falls at 5 cycles, or 8 hours 20 minutes.</p>
+<p>The remaining 30% keeps an anchor in the benchmarks for your age. As long as your cycles aren't known, the raw need serves as the reference.</p>
+
+<h2>How the app scores your night</h2>
+<p>Your need feeds the sleep pillar of the <a href="/en/method/readiness-score.html">Readiness Score</a>, which weighs <strong>21 points out of 100</strong> and is made up of four criteria:</p>
+<ul>
+<li><strong>Duration against your need (40%):</strong> the heaviest criterion, calculated as described above.</li>
+<li><strong>Deep and REM stages (25%):</strong> only when your watch measured them. For a night you log by hand, the app never makes up stages.</li>
+<li><strong>Efficiency (20%):</strong> the share of your time in bed actually spent asleep.</li>
+<li><strong>Regularity (15%):</strong> how consistent your bedtimes and wake-up times are.</li>
+</ul>
+<p>A criterion with no data is removed, and its weight is redistributed among the others. Your night also counts elsewhere in the score: while you sleep, your watch records your <a href="/en/method/vitals.html">vitals</a>, judged against <a href="/en/method/baseline.html">your baseline</a>.</p>
+
+<h2>Regularity, the underrated factor</h2>
+<p>Everyone talks about duration. Yet <strong>regularity sometimes matters more</strong>: a study published in 2024 found that sleep regularity predicted mortality risk better than sleep duration. <a href="/en/journal/going-to-bed-at-the-same-time.html">Going to bed and getting up at set times</a>, weekends included, remains one of the simplest levers.</p>
+<p>Sleep also weighs on your <a href="/en/method/biological-age.html">biological age</a>. Nights of sufficient length, without excess, at regular times, work in your favor; sleep that's too short, too long or irregular can age you, by more than good sleep can make you younger.</p>
+
+<h2>The limits of the measurement</h2>
+<p>In a lab, sleep is measured by polysomnography: brain activity, eye movements, muscle tone. A watch, by contrast, estimates it from your movements and your heart rate. It's fairly reliable for duration and timing, much less so for the fine breakdown of stages.</p>
+<p>Your need, for its part, remains an estimate, not a prescription. If you feel fully rested on a little less, or always tired on a little more, that information counts as much as the number.</p>
+
+<h2>When to talk to a doctor</h2>
+<p>The app is a wellness tool, not a medical device: it doesn't diagnose any sleep disorder. If you get enough sleep but stay exhausted, if the people around you notice loud snoring or pauses in your breathing, or if your trouble sleeping has lasted several weeks, talk to a doctor. And if you wake up with chest pain, palpitations or unusual shortness of breath, call your local emergency number (911 in the US, 999 or 112 in the UK and Europe).</p>
+  <section class="refs">
+    <h2>References</h2>
+    <ul>
+      <li>Hirshkowitz M. et al. (2015), the National Sleep Foundation's sleep duration recommendations, <em>Sleep Health</em>. <a href="https://doi.org/10.1016/j.sleh.2014.12.010" rel="noopener" target="_blank">doi:10.1016/j.sleh.2014.12.010</a></li>
+      <li>Windred D. P. et al. (2024), sleep regularity is a stronger predictor of mortality than sleep duration, <em>Sleep</em>. <a href="https://doi.org/10.1093/sleep/zsad253" rel="noopener" target="_blank">doi:10.1093/sleep/zsad253</a></li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <h3>How many hours of sleep do you need by age?</h3>
+    <p>The National Sleep Foundation recommends 8 to 10 hours between ages 14 and 17, 7 to 9 hours between 18 and 64, and 7 to 8 hours from age 65. Ecleptic starts from the middle of your range, meaning 9 hours, 8 hours or 7 hours 30 minutes, then adjusts it to your cycles once their length is known.</p>
+    <h3>How long is a sleep cycle?</h3>
+    <p>About 90 minutes on average, but the length varies from person to person. Waking up at the end of a cycle rather than in the middle of deep sleep makes waking up easier. That&#x27;s why Ecleptic judges your sleep duration 70% against the number of whole cycles closest to your need, as soon as your cycles are known.</p>
+    <h3>Is it better to sleep longer or at regular times?</h3>
+    <p>Both matter, but regularity is often underrated: a study published in 2024 found that it predicted mortality risk better than duration. In Ecleptic&#x27;s Readiness Score, duration against your need accounts for 40% of the sleep pillar, and the regularity of your bedtimes and wake-up times for 15%.</p>
+  </section>
+  <div class="reward">
+    <span class="label">The next step</span>
+    <h2>You just read the method.<br>The app applies it to you.</h2>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'besoin-de-sommeil',lang:'en'})">Request access</a>
+  </div>
+  <div class="next">
+    <span class="label">Go further</span>
+<a href="/en/method/readiness-score.html">The Readiness Score</a>
+<a href="/en/method/vitals.html">Vitals</a>
+<a href="/en/method/baseline.html">Your baseline</a>
+<a href="/en/method/biological-age.html">Biological age</a>
+<a href="/en/journal/how-many-hours-of-sleep-do-you-need.html">How many hours of sleep do you really need?</a>
+<a href="/en/journal/going-to-bed-at-the-same-time.html">Going to bed at the same time: what it really changes</a>
+  </div>
+</article>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
+  </div>
+</footer>
+<script>
+  var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
+  function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
+  (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
+</script>
+<script>track('methode_view',{page:'besoin-de-sommeil',lang:'en'});</script>
+<script src="/assets/nav-data-en.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>
