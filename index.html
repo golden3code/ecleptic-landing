@@ -5,6 +5,9 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Ecleptic — Sommeil, Nutrition, Sport : Tout s'aligne</title>
 <meta name="description" content="Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score et te dit chaque matin ce qui compte vraiment. Journal, science, bêta iOS.">
 <link rel="canonical" href="https://ecleptic.health/">
@@ -12,11 +15,25 @@
 <meta property="og:description" content="Sommeil, nutrition, sport : un seul score, un coach qui comprend tout.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ecleptic.health/">
+<meta property="og:image" content="https://ecleptic.health/assets/og/accueil.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/og/accueil.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Ecleptic",
-"operatingSystem":"iOS","applicationCategory":"HealthApplication",
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://ecleptic.health/#organization","name":"Ecleptic","url":"https://ecleptic.health/",
+"logo":{"@type":"ImageObject","url":"https://ecleptic.health/assets/icons/icon-512.png","width":512,"height":512},
+"email":"contact@ecleptic.app","founder":{"@id":"https://ecleptic.health/a-propos.html#auguste"}},
+{"@type":"Person","@id":"https://ecleptic.health/a-propos.html#auguste","name":"Auguste Phily-Priou","jobTitle":"Fondateur d'Ecleptic",
+"url":"https://ecleptic.health/a-propos.html","sameAs":["https://www.instagram.com/_optimisateur/"]},
+{"@type":"WebSite","@id":"https://ecleptic.health/#website","url":"https://ecleptic.health/","name":"Ecleptic","inLanguage":"fr",
+"publisher":{"@id":"https://ecleptic.health/#organization"}},
+{"@type":"SoftwareApplication","name":"Ecleptic","operatingSystem":"iOS","applicationCategory":"HealthApplication",
 "description":"Ecleptic croise sommeil, alimentation et entraînement en un seul score de préparation quotidien.",
-"url":"https://ecleptic.health/","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+"url":"https://ecleptic.health/","publisher":{"@id":"https://ecleptic.health/#organization"},
+"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+]}
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -91,7 +108,9 @@
      est cale pour affleurer le bouton, quel que soit l'ecran. */
   .moonzone{position:relative;height:min(340px,44vw);overflow:hidden;margin:-46px -24px 0;pointer-events:none}
   .moonzone::before{content:"";position:absolute;left:0;top:0;width:100%;padding-top:100%;
-          background:url('/assets/moon.jpg') top center/100% auto no-repeat;transform:translateY(-51%)}
+          background:top center/100% auto no-repeat;transform:translateY(-51%)}
+  /* Image chargée à l'approche de la finale (JS plus bas) ; sans JS, tout de suite. */
+  .moonzone.in::before,html:not(.js) .moonzone::before{background-image:url('/assets/moon.jpg')}
   .moonzone::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;
           background:linear-gradient(rgba(0,0,0,0),#000)}
   footer.site{background:#000;border-top:0;margin-top:0}
@@ -270,14 +289,14 @@
 
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/confidentialite.html">Confidentialité</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;·&nbsp; <a href="/beta.html">La bêta</a></p>
+    <p class="flinks"><a href="/a-propos.html">À propos</a> &nbsp;·&nbsp; <a href="/mentions-legales.html">Mentions légales</a> &nbsp;·&nbsp; <a href="/confidentialite.html">Confidentialité</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;·&nbsp; <a href="/beta.html">La bêta</a></p>
     <p class="disclaimer">Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.</p>
   </div>
 </footer>
 
 <script>
   var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
-  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
   track('home_view');
 
@@ -400,6 +419,17 @@
       if (entries[0].isIntersecting){ window.__revealPlay(r); io.disconnect(); }
     }, {threshold: 0.6});
     io.observe(h2);
+  })();
+
+  // Lune de la finale : l'image (214 Ko) ne se charge qu'à l'approche du bas de page.
+  (function(){
+    var m = document.querySelector('.moonzone');
+    if (!m) return;
+    if (!('IntersectionObserver' in window)){ m.classList.add('in'); return; }
+    var io = new IntersectionObserver(function(entries){
+      if (entries[0].isIntersecting){ m.classList.add('in'); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(m);
   })();
 
   // Photos des étapes : apparition douce à l'entrée dans l'écran.

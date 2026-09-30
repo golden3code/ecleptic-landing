@@ -697,6 +697,125 @@ def neutralize_links(body):
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
            "Charge", "Régularité", "Humeur", "Contexte", "Énergie"]
 
+# Pages thème du Journal (/articles/<slug>/) : une page indexable par domaine,
+# avec une introduction propre, la liste des articles publiés du thème et les
+# pages de la méthode liées. Une page qui n'a pas encore 2 articles en ligne
+# sort en noindex et hors sitemap (elle bascule seule avec le drip).
+THEMES = {
+    "Sommeil": {
+        "slug": "sommeil",
+        "seo": "Sommeil : nos articles pour mieux dormir — Ecleptic",
+        "desc": "Durée idéale, sommeil profond, café, écrans, réveils nocturnes : des articles courts et sourcés pour comprendre ton sommeil et mieux dormir dès ce soir.",
+        "intro": "Le sommeil conditionne tout le reste : ta récupération, ton appétit, ton humeur, ta progression à l'entraînement. Ici, on répond aux vraies questions (combien d'heures il te faut, comment gagner du sommeil profond, à quelle heure couper le café, que faire quand tu te réveilles à 3 h du matin) avec des réponses directes, des chiffres issus de la recherche, et ce que tu peux changer dès ce soir.",
+        "methode": ["besoin-de-sommeil", "readiness-score"],
+    },
+    "Readiness": {
+        "slug": "readiness",
+        "seo": "Readiness score, HRV et cœur au repos : nos articles — Ecleptic",
+        "desc": "Score de préparation, fréquence cardiaque au repos, HRV basse, jours de repos : comment lire les signaux de ton corps chaque matin et décider si tu pousses.",
+        "intro": "Chaque matin, ton corps envoie des signaux mesurables : ta variabilité cardiaque, ta fréquence cardiaque au repos, la qualité de ta nuit. Lus sur ta propre ligne de base, ils disent si tu peux pousser ou s'il vaut mieux lever le pied. Ces articles t'apprennent à les lire sans te tromper : ce qui est normal, ce qui doit alerter, et comment faire remonter ces chiffres durablement.",
+        "methode": ["readiness-score", "variabilite-cardiaque", "frequence-cardiaque-repos", "ligne-de-base"],
+    },
+    "Sport": {
+        "slug": "sport",
+        "seo": "Sport et entraînement : progresser, nos articles — Ecleptic",
+        "desc": "Séances par semaine, zone 2, VO₂max, répétitions, cardio ou musculation : des articles clairs et sourcés pour t'entraîner mieux, progresser et durer.",
+        "intro": "Progresser ne demande pas de t'entraîner plus, mais mieux : la bonne fréquence, la bonne intensité, et assez de variété pour que ton corps s'adapte. Zone 2, VO₂max, nombre de séances, répétitions, cardio ou musculation : chaque article part d'une question concrète et y répond franchement, avec ce que dit la recherche et la façon de l'appliquer à ta semaine.",
+        "methode": ["vo2max", "depense-energetique"],
+    },
+    "Récupération": {
+        "slug": "recuperation",
+        "seo": "Récupération sportive : nos articles — Ecleptic",
+        "desc": "Courbatures, HRV, bain froid, sauna, étirements, massage : ce qui accélère vraiment la récupération après le sport, ce qui ne sert à rien, et pourquoi.",
+        "intro": "Tu ne progresses pas pendant la séance, mais pendant la récupération qui la suit. Courbatures, bain froid, sauna, étirements, massage : autour de la récupération circulent beaucoup de promesses. On trie : ce qui accélère vraiment le retour à la forme, ce qui soulage sans changer grand-chose, et ce que ta variabilité cardiaque dit de l'état de ton corps.",
+        "methode": ["variabilite-cardiaque", "vitaux"],
+    },
+    "Alimentation": {
+        "slug": "alimentation",
+        "seo": "Alimentation et nutrition sportive : nos articles — Ecleptic",
+        "desc": "Calories, protéines, déficit calorique, créatine, hydratation, repas autour du sport : des repères chiffrés et sourcés pour bien manger selon ton objectif.",
+        "intro": "Bien manger pour ton objectif tient en quelques repères solides : combien de calories, combien de protéines, quoi manger avant et après l'effort, combien boire. Ces articles te donnent les chiffres, tirés des bases officielles et de la recherche en nutrition, et la façon de les adapter à toi, sans régime miracle ni aliment interdit.",
+        "methode": ["nutrition", "cibles", "depense-energetique"],
+    },
+    "Charge": {
+        "slug": "charge",
+        "seo": "Charge d'entraînement : doser tes séances — Ecleptic",
+        "desc": "Surentraînement, surcharge progressive, repos entre les séries, RPE, semaine de décharge : doser ta charge d'entraînement pour progresser sans te blesser.",
+        "intro": "La charge d'entraînement, c'est ce que tes séances demandent à ton corps, semaine après semaine. Trop peu, tu stagnes ; trop, tu t'épuises ou tu te blesses. Surcharge progressive, surentraînement, temps de repos, échelle d'effort perçu : ces articles t'aident à doser, à reconnaître les signaux d'alerte et à construire une progression qui dure.",
+        "methode": ["readiness-score"],
+    },
+    "Régularité": {
+        "slug": "regularite",
+        "seo": "Régularité et habitudes : nos articles — Ecleptic",
+        "desc": "Horaires de coucher, routine du soir, décalage horaire, habitudes qui durent : pourquoi la régularité compte autant que la durée, et comment la construire.",
+        "intro": "Ton corps fonctionne sur une horloge. Te coucher, te lever, manger et t'entraîner à des heures régulières la garde bien réglée, et tout le reste en profite : sommeil, énergie, appétit. Ces articles expliquent pourquoi la régularité compte parfois plus que la durée, et comment la tenir malgré un décalage horaire, des horaires de nuit ou des semaines chargées.",
+        "methode": ["besoin-de-sommeil", "ligne-de-base"],
+    },
+    "Humeur": {
+        "slug": "humeur",
+        "seo": "Stress, humeur et récupération : nos articles — Ecleptic",
+        "desc": "Stress, anxiété, cortisol, cohérence cardiaque, irritabilité : ce que le mental fait à ta récupération, et les leviers simples qui aident vraiment au quotidien.",
+        "intro": "Ton système nerveux ne fait pas la différence entre une semaine de rush au travail et une semaine de gros entraînement : le stress mental se paie aussi en récupération. Ces articles parlent de stress, d'anxiété, de cortisol et d'humeur, et des leviers simples qui aident, du sport à la respiration. Ils ne remplacent pas un professionnel : si tu traverses une période difficile, parles-en à ton médecin ; en cas de détresse, le 3114 répond jour et nuit.",
+        "methode": ["variabilite-cardiaque"],
+    },
+    "Contexte": {
+        "slug": "contexte",
+        "seo": "Alcool, âge, cycle, chaleur : le contexte compte — Ecleptic",
+        "desc": "Alcool, maladie, cycle menstruel, âge, tabac, chaleur, altitude : les facteurs qui changent ta récupération et tes performances, et comment t'y adapter.",
+        "intro": "Les mêmes séances et les mêmes nuits ne donnent pas les mêmes résultats selon ton contexte : un verre la veille, une maladie qui couve, ton cycle, ton âge, la chaleur, l'altitude. Ces articles expliquent comment chacun de ces facteurs pèse sur ton corps, et comment ajuster ton entraînement et ta récupération au lieu de lutter contre.",
+        "methode": ["temperature-poignet", "ligne-de-base"],
+    },
+    "Énergie": {
+        "slug": "energie",
+        "seo": "Fatigue et énergie : nos articles — Ecleptic",
+        "desc": "Fatigue constante, coup de barre après manger, sieste, carence en fer, glycémie : comprendre d'où vient ta fatigue et retrouver une énergie stable toute la journée.",
+        "intro": "Une fatigue qui dure a presque toujours une cause identifiable : des nuits trop courtes, des horaires irréguliers, des repas mal calés, un manque de fer, trop de charge. Ces articles t'aident à remonter la piste, du coup de barre de 14 h à la fatigue qui s'installe, et à retrouver une énergie stable. Si la fatigue persiste malgré tout, un bilan chez ton médecin s'impose.",
+        "methode": ["besoin-de-sommeil", "depense-energetique"],
+    },
+}
+THEME_MIN_INDEX = 2  # articles en ligne requis pour qu'une page thème soit indexable
+
+
+def theme_url(d):
+    return "/articles/%s/" % THEMES[d]["slug"]
+
+
+# Auteur (E-E-A-T) : signature des articles et des pages de la méthode, page /a-propos.html.
+AUTHOR = {
+    "name": "Auguste Phily-Priou",
+    "role": "fondateur d'Ecleptic",
+    "url": SITE + "/a-propos.html",
+    "instagram": "https://www.instagram.com/_optimisateur/",
+}
+AUTHOR_LD = {"@type": "Person", "@id": SITE + "/a-propos.html#auguste", "name": AUTHOR["name"],
+             "jobTitle": "Fondateur d'Ecleptic", "url": AUTHOR["url"], "sameAs": [AUTHOR["instagram"]]}
+PUBLISHER_LD = {"@type": "Organization", "@id": SITE + "/#organization", "name": "Ecleptic", "url": SITE + "/",
+                "logo": {"@type": "ImageObject", "url": SITE + "/assets/icons/icon-512.png", "width": 512, "height": 512}}
+ABOUT_UPDATED = "2026-09-30"   # date affichée et lastmod de /a-propos.html et /mentions-legales.html
+
+# Titres Google (<title>) : Google coupe vers 60 caractères. Le suffixe « — Ecleptic »
+# n'est ajouté que s'il tient ; au-delà de 60 sans suffixe, un titre court dédié.
+SEO_TITLES = {
+    "lumiere-bleue-ecrans-avant-de-dormir": "Écrans avant de dormir : la lumière bleue, vrai problème ?",
+    "frequence-cardiaque-repos-elevee": "Fréquence cardiaque au repos élevée : les causes fréquentes",
+    "manque-de-sommeil-irritabilite": "Manque de sommeil et irritabilité : pourquoi tu t'énerves",
+    "sommeil-et-recuperation-musculaire": "Sommeil et récupération musculaire : tout se joue la nuit",
+    "magnesium-sport-fatigue": "Magnésium : son rôle pour le sport, le sommeil et la fatigue",
+    "rpe-echelle-effort-percu": "RPE : l'échelle d'effort perçu pour doser tes séances",
+    "glucides-et-sport-combien": "Glucides et sport : combien en manger selon ta séance ?",
+    "cafe-et-sommeil-combien-de-temps-avant": "Café : combien de temps avant de dormir faut-il l'arrêter ?",
+    "sommeil-paradoxal-role": "Sommeil paradoxal : à quoi sert-il, comment en avoir plus ?",
+    "cycle-menstruel-et-sport": "Cycle menstruel et sport : faut-il adapter l'entraînement ?",
+}
+
+
+def title_tag(t):
+    """<title> : « t — Ecleptic » si ça tient dans 60 caractères, sinon t seul."""
+    suffix = " — Ecleptic"
+    if t.endswith(suffix):
+        t = t[:-len(suffix)]
+    return t + suffix if len(t) + len(suffix) <= 60 else t
+
 # Classement « Les plus lus » (/articles/?sort=populaires).
 # Actualisation automatique : `python3 tools/update_popular.py` interroge
 # PostHog (article_view, 90 j) et écrit tools/popular.json, prioritaire sur
@@ -883,7 +1002,7 @@ article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 .journal a.entry:last-child::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
 .entry .etext{flex:1;min-width:0}
 .entry .ethumb{flex:0 0 210px}
-.entry .ethumb img{width:100%;aspect-ratio:1.9;object-fit:cover;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.9);transition:filter .25s}
+.entry .ethumb img{width:100%;height:auto;aspect-ratio:1.9;object-fit:cover;display:block;border:1px solid var(--line);filter:saturate(.85) brightness(.9);transition:filter .25s}
 .journal a.entry:hover .ethumb img{filter:saturate(1) brightness(1)}
 @media(max-width:640px){.journal a.entry{flex-direction:column-reverse;align-items:stretch;gap:18px}.entry .ethumb{flex:none}}
 .journal .label{display:block;margin-bottom:12px}
@@ -934,13 +1053,51 @@ footer.site a:hover{color:var(--gold)}
 .methode .figs .u{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);line-height:1.5}
 .methode .refs ul{list-style:none;margin:0}
 .methode .refs li{font-size:14px;color:var(--muted);margin-bottom:10px;line-height:1.6}
+/* Signature (auteur), liens de catégorie, pages thème, À propos et mentions légales */
+article .byline{margin-top:18px;font-size:13px;color:var(--muted);line-height:1.6}
+article .byline a,.prose p a,.prose li a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(217,164,65,.55);text-underline-offset:3px}
+article .byline a:hover,.prose p a:hover,.prose li a:hover{color:var(--gold)}
+.label a{color:inherit;text-decoration:none}
+.label a:hover{color:var(--gold)}
+a.theme{text-decoration:none}
+.pagehead .crumbs{margin-bottom:26px}
+.prose h2{margin-top:44px}
+.prose .updated{margin-top:44px;font-size:13px;color:var(--muted)}
 """
 
 POSTHOG = """<script>
   var POSTHOG_KEY="%s";
-  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
 </script>""" % POSTHOG_KEY
+
+# Icônes (favicon Google, onglet, écran d'accueil iOS) : dans le <head> de chaque page.
+HEAD_ICONS = """<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">"""
+
+CSP = """<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">"""
+
+
+def og_image_tags(path):
+    """og:image + carte Twitter/X grand format pour une image du site (chemin absolu /…)."""
+    return ('<meta property="og:image" content="%s%s">\n'
+            '<meta name="twitter:card" content="summary_large_image">\n'
+            '<meta name="twitter:image" content="%s%s">' % (SITE, path, SITE, path))
+
+
+def ld(obj):
+    import json as _json
+    return '<script type="application/ld+json">%s</script>' % _json.dumps(obj, ensure_ascii=False)
+
+
+def byline(date_iso=None, updated_iso=None):
+    """Signature visible : « Par Auguste Phily-Priou, fondateur d'Ecleptic · mis à jour le … »."""
+    upd = ""
+    if updated_iso and updated_iso != date_iso:
+        upd = " &nbsp;&middot;&nbsp; mis à jour le %s" % fr_date(updated_iso)
+    return ('<p class="byline">Par <a href="/a-propos.html" rel="author">%s</a>, %s%s</p>'
+            % (AUTHOR["name"], AUTHOR["role"], upd))
 
 def journal_menu():
     # Le panneau déroulant (méga-menu) est construit par /assets/nav.js à partir de
@@ -963,7 +1120,7 @@ def nav_data():
     by_cat = {d: [] for d in DOMAINS}
     for a in sorted(ARTICLES, key=lambda a: a["date"], reverse=True):
         by_cat.setdefault(cat(a), []).append({"t": a["title"], "u": "/articles/%s.html" % a["slug"]})
-    cats = [{"n": d, "u": "/articles/?theme=%s" % d, "c": len(by_cat[d]), "a": by_cat[d][:5]}
+    cats = [{"n": d, "u": theme_url(d), "c": len(by_cat[d]), "a": by_cat[d][:5]}
             for d in DOMAINS]
     idx = {a["slug"]: a for a in ARTICLES}
     pop = [{"t": idx[s]["title"], "u": "/articles/%s.html" % s} for s in POPULAR if s in idx][:5]
@@ -1046,7 +1203,7 @@ NAV = NAV % journal_menu()
 
 FOOTER = """<footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
     <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
   </div>
 </footer>"""
@@ -1081,6 +1238,29 @@ def img_path(a):
     return "/" + rel if os.path.exists(os.path.join(root, rel)) else None
 
 
+def img_srcset(a):
+    """srcset de la photo : variantes 640/1200 (tools/image_variants.py) si elles
+    existent, puis l'original 1600. Chaîne vide si l'article n'a pas de photo."""
+    img = img_path(a)
+    if not img:
+        return ""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    parts = ["/assets/articles/%d/%s.jpg %dw" % (w, a["slug"], w) for w in (640, 1200)
+             if os.path.exists(os.path.join(root, "assets", "articles", str(w), a["slug"] + ".jpg"))]
+    return ", ".join(parts + ["%s 1600w" % img])
+
+
+def thumb_img(a):
+    """Vignette du Journal : 640 px par défaut (affichée en 210 px), 1200 px en
+    pleine largeur sur mobile."""
+    img = img_path(a)
+    if not img:
+        return ""
+    return ('\n  <span class="ethumb"><img src="%s" srcset="%s" sizes="(max-width: 640px) calc(100vw - 48px), 210px" '
+            'width="1600" height="840" alt="" loading="lazy" decoding="async"></span>'
+            % (img, img_srcset(a)))
+
+
 def read_min(a):
     import re
     words = len(re.sub(r"<[^>]+>", " ", a["body"]).split())
@@ -1094,11 +1274,11 @@ def article_page(a, others):
         for o in others[:3]
     )
     img = img_path(a)
-    og_image = ('\n<meta property="og:image" content="%s%s">\n'
-                '<meta name="twitter:card" content="summary_large_image">\n'
-                '<meta name="twitter:image" content="%s%s">' % (SITE, img, SITE, img)) if img else ""
-    hero = ('\n  <figure class="hero"><img src="%s" alt="%s" width="1600" height="840"></figure>'
-            % (img, html.escape(a["title"], quote=True))) if img else ""
+    og_image = ("\n" + og_image_tags(img)) if img else ""
+    # Photo = élément LCP sur mobile : chargée en priorité, version adaptée à l'écran.
+    hero = ('\n  <figure class="hero"><img src="%s" srcset="%s" sizes="(max-width: 640px) calc(100vw - 48px), 592px" '
+            'alt="%s" width="1600" height="840" fetchpriority="high" decoding="async"></figure>'
+            % (img, img_srcset(a), html.escape(a["title"], quote=True))) if img else ""
     # Titres « Préfixe : suite » : le préfixe (jusqu'aux deux-points inclus)
     # apparaît tel quel, la suite est animée caractère par caractère — même
     # animation que « s'aligne. » sur l'accueil (délais en i², 100→1100 ms,
@@ -1165,18 +1345,20 @@ def article_page(a, others):
             },
             ensure_ascii=False,
         ) + "</script>"
-    jsonld_img = '"image":"%s%s",' % (SITE, img) if img else ""
-    jsonld = (
-        '{"@context":"https://schema.org","@type":"Article","headline":%s,'
-        '"description":%s,%s"datePublished":"%s","inLanguage":"fr",'
-        '"author":{"@type":"Organization","name":"Ecleptic","url":"%s"},'
-        '"publisher":{"@type":"Organization","name":"Ecleptic","url":"%s"},'
-        '"mainEntityOfPage":"%s"}'
-    ) % (
-        __import__("json").dumps(a["title"], ensure_ascii=False),
-        __import__("json").dumps(a["description"], ensure_ascii=False),
-        jsonld_img, a["date"], SITE, SITE, url,
-    )
+    art = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"],
+           "description": a["description"]}
+    if img:
+        art["image"] = SITE + img
+    art.update({"datePublished": a["date"], "dateModified": a.get("updated", a["date"]),
+                "inLanguage": "fr", "author": AUTHOR_LD, "publisher": PUBLISHER_LD,
+                "mainEntityOfPage": url})
+    crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Journal", "item": SITE + "/articles/"},
+        {"@type": "ListItem", "position": 2, "name": cat(a), "item": SITE + theme_url(cat(a))},
+        {"@type": "ListItem", "position": 3, "name": a["title"], "item": url}]} if cat(a) in THEMES else None
+    jsonld = __import__("json").dumps([x for x in (art, crumbs) if x], ensure_ascii=False)
+    catlink = ('<a class="gold" href="%s">%s</a>' % (theme_url(cat(a)), html.escape(cat(a)))
+               if cat(a) in THEMES else '<span class="gold">%s</span>' % html.escape(cat(a)))
     return """<!doctype html>
 <html lang="fr">
 <head>
@@ -1184,7 +1366,8 @@ def article_page(a, others):
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>%(title)s — Ecleptic</title>
+%(icons)s
+<title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
 <meta property="og:title" content="%(title)s">
@@ -1199,9 +1382,10 @@ def article_page(a, others):
 <main class="wrap">
 <article>
   <header>
-    <span class="label"><span class="gold">%(cat)s</span> &nbsp;&middot;&nbsp; %(date)s &nbsp;&middot;&nbsp; %(mins)s min</span>
+    <span class="label">%(catlink)s &nbsp;&middot;&nbsp; %(date)s &nbsp;&middot;&nbsp; %(mins)s min</span>
     <h1>%(title)s</h1>
     <p class="standfirst">%(desc)s</p>
+    %(byline)s
   </header>%(reveal)s%(hero)s
   %(body)s%(faqblock)s
   <div class="reward">
@@ -1224,10 +1408,12 @@ def article_page(a, others):
 </html>
 """ % {
         "title": html.escape(a["title"]), "desc": html.escape(a["description"], quote=True),
+        "seo": html.escape(title_tag(SEO_TITLES.get(a["slug"], a["title"]))),
+        "icons": HEAD_ICONS, "catlink": catlink, "byline": byline(a["date"], a.get("updated")),
         "url": url, "jsonld": jsonld, "faqjsonld": faqjsonld, "faqblock": faqblock,
         "og_image": og_image, "hero": hero, "reveal": reveal,
         "nav": nav("articles"), "date": fr_date(a["date"]),
-        "cat": html.escape(cat(a)), "mins": read_min(a),
+        "mins": read_min(a),
         "body": neutralize_links(a["body"].strip()), "tf": TF_LINK, "slug": a["slug"], "more": more,
         "footer": FOOTER, "posthog": POSTHOG, "navscripts": NAV_SCRIPTS,
     }
@@ -1275,8 +1461,8 @@ def methode_page(p):
         {"@context": "https://schema.org", "@type": "TechArticle", "headline": p["title"],
          "description": p["description"], "datePublished": p["date"],
          "dateModified": p.get("updated", p["date"]), "inLanguage": "fr",
-         "author": {"@type": "Organization", "name": "Ecleptic", "url": SITE},
-         "publisher": {"@type": "Organization", "name": "Ecleptic", "url": SITE},
+         "image": SITE + "/assets/science/file-d-etoiles-og.jpg",
+         "author": AUTHOR_LD, "publisher": PUBLISHER_LD,
          "mainEntityOfPage": url},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE + "/"},
@@ -1290,6 +1476,7 @@ def methode_page(p):
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+%(icons)s
 <title>%(seo)s</title>
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(url)s">
@@ -1297,7 +1484,7 @@ def methode_page(p):
 <meta property="og:description" content="%(desc)s">
 <meta property="og:type" content="article">
 <meta property="og:url" content="%(url)s">
-<meta property="og:image" content="%(site)s/assets/science/file-d-etoiles-og.jpg">
+%(ogimg)s
 <script type="application/ld+json">%(jsonld)s</script>%(faqjsonld)s
 <link rel="stylesheet" href="/assets/site.css">
 </head>
@@ -1310,6 +1497,7 @@ def methode_page(p):
     <span class="label"><span class="gold">%(kicker)s</span></span>
     <h1>%(title)s</h1>
     <p class="standfirst">%(lead)s</p>
+    %(byline)s
   </header>
   %(body)s%(refsblock)s%(faqblock)s
   <div class="reward">
@@ -1327,7 +1515,9 @@ def methode_page(p):
 </body>
 </html>
 """ % {
-        "seo": html.escape(p.get("seo_title") or (p["title"] + " — Ecleptic")),
+        "seo": html.escape(title_tag(p.get("seo_title") or p["title"])),
+        "icons": HEAD_ICONS, "ogimg": og_image_tags("/assets/science/file-d-etoiles-og.jpg"),
+        "byline": byline(p["date"], p.get("updated")),
         "title": html.escape(p["title"]), "desc": html.escape(p["description"], quote=True),
         "url": url, "site": SITE, "jsonld": jsonld, "faqjsonld": faqjsonld,
         "nav": nav("science"), "label": html.escape(p["label"]), "kicker": kicker,
@@ -1336,12 +1526,9 @@ def methode_page(p):
     }
 
 
-def index_page():
-    def card(a):
-        img = img_path(a)
-        thumb = ('\n  <span class="ethumb"><img src="%s" alt="" loading="lazy"></span>'
-                 % img) if img else ""
-        return """<a class="entry" href="/articles/%s.html" data-slug="%s" data-cat="%s">
+def entry_card(a):
+    """Carte d'article du Journal (index et pages thème)."""
+    return """<a class="entry" href="/articles/%s.html" data-slug="%s" data-cat="%s">
   <span class="etext">
   <span class="label meta"><span class="gold">%s</span> &nbsp;&middot;&nbsp; %s &nbsp;&middot;&nbsp; %s min</span>
   <h2>%s</h2>
@@ -1349,13 +1536,17 @@ def index_page():
   <span class="readmore">Lire l'article →</span>
   </span>%s
 </a>""" % (a["slug"], a["slug"], html.escape(cat(a)), html.escape(cat(a)), fr_date(a["date"]),
-           read_min(a), html.escape(a["title"]), html.escape(a["description"]), thumb)
+           read_min(a), html.escape(a["title"]), html.escape(a["description"]), thumb_img(a))
 
-    cards = "\n".join(card(a) for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True))
+
+def index_page():
+    cards = "\n".join(entry_card(a) for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True))
     counts = {d: sum(1 for a in ARTICLES if cat(a) == d) for d in DOMAINS}
+    # Liens réels vers les pages thème (explorables par Google) ; au clic, le
+    # Journal filtre sur place comme avant (JS plus bas).
     themes = "\n".join(
-        """<button class="theme" data-filter="%s"><span>%s</span><span class="count">%d</span></button>"""
-        % (html.escape(d), html.escape(d), counts[d])
+        """<a class="theme" href="%s" data-filter="%s"><span>%s</span><span class="count">%d</span></a>"""
+        % (theme_url(d), html.escape(d), html.escape(d), counts[d])
         for d in DOMAINS
     )
     empty = "" if ARTICLES else """<div class="empty">Les premiers textes sont en préparation.<br>La station ouvre bientôt son journal.</div>"""
@@ -1366,12 +1557,16 @@ def index_page():
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Journal de l'ISS — Ecleptic</title>
+%(icons)s
+<title>Le Journal : sommeil, nutrition, sport — Ecleptic</title>
 <meta name="description" content="Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables pour optimiser ta santé au quotidien.">
 <link rel="canonical" href="%(site)s/articles/">
-<meta property="og:title" content="Le Journal de l'ISS — Ecleptic">
+<meta property="og:title" content="Le Journal : sommeil, nutrition, sport — Ecleptic">
 <meta property="og:description" content="Sommeil, nutrition, entraînement, récupération : des conseils scientifiques et actionnables.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="%(site)s/articles/">
+%(ogimg)s
+%(jsonld)s
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -1389,7 +1584,7 @@ def index_page():
   <div class="themes">
     <span class="label">Thèmes du journal</span>
     <div class="themescroll">
-    <button class="theme on" data-filter="*"><span>Tout le journal</span><span class="count">%(narticles)d</span></button>
+    <a class="theme on" href="/articles/" data-filter="*"><span>Tout le journal</span><span class="count">%(narticles)d</span></a>
 %(themes)s
     </div>
   </div>
@@ -1422,7 +1617,8 @@ track('articles_index_view');
     });
   }
   btns.forEach(function(b){
-    b.addEventListener('click', function(){
+    b.addEventListener('click', function(e){
+      e.preventDefault();
       applyFilter(b.getAttribute('data-filter'));
       track('journal_theme_click', {theme: b.getAttribute('data-filter')});
     });
@@ -1452,9 +1648,213 @@ track('articles_index_view');
 </body>
 </html>
 """ % {"site": SITE, "nav": nav("articles"), "cards": cards, "themes": themes,
+       "icons": HEAD_ICONS, "ogimg": og_image_tags("/assets/og/journal.jpg"),
+       "jsonld": ld({"@context": "https://schema.org", "@type": "CollectionPage",
+                     "name": "Le Journal d'Ecleptic", "url": SITE + "/articles/", "inLanguage": "fr",
+                     "description": "Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables.",
+                     "publisher": PUBLISHER_LD}),
        "empty": empty, "narticles": len(ARTICLES), "nthemes": len(DOMAINS),
        "popular": __import__("json").dumps(POPULAR),
        "footer": FOOTER, "posthog": POSTHOG}
+
+
+def theme_articles(d):
+    return sorted([a for a in ARTICLES if cat(a) == d], key=lambda x: x["date"], reverse=True)
+
+
+def theme_page(d):
+    """Page thème /articles/<slug>/ : introduction, articles publiés du thème,
+    pages de la méthode liées, autres thèmes. noindex tant que < THEME_MIN_INDEX."""
+    t = THEMES[d]
+    url = SITE + theme_url(d)
+    arts = theme_articles(d)
+    robots = "" if len(arts) >= THEME_MIN_INDEX else '\n<meta name="robots" content="noindex, follow">'
+    cards = "\n".join(entry_card(a) for a in arts)
+    empty = "" if arts else '<div class="empty">Les premiers textes de ce thème arrivent bientôt.</div>'
+    og = (img_path(arts[0]) if arts else None) or "/assets/og/journal.jpg"
+    methode = [METHODE_IDX[s] for s in t["methode"] if s in METHODE_IDX]
+    mblock = ('\n  <div class="next">\n    <span class="label">La méthode, côté app</span>\n%s\n  </div>'
+              % "\n".join('<a href="/methode/%s.html">%s</a>' % (p["slug"], html.escape(p["label"])) for p in methode)
+              ) if methode else ""
+    others = "\n".join('<a href="%s">%s</a>' % (theme_url(o), html.escape(o)) for o in DOMAINS if o != d)
+    jsonld = [
+        {"@context": "https://schema.org", "@type": "CollectionPage", "name": "%s — Le Journal d'Ecleptic" % d,
+         "description": t["desc"], "url": url, "inLanguage": "fr", "publisher": PUBLISHER_LD,
+         "mainEntity": {"@type": "ItemList", "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "url": "%s/articles/%s.html" % (SITE, a["slug"])}
+             for i, a in enumerate(arts)]}},
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Journal", "item": SITE + "/articles/"},
+            {"@type": "ListItem", "position": 2, "name": d, "item": url}]},
+    ]
+    n = len(arts)
+    return """<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+%(csp)s
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">%(robots)s
+%(icons)s
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(seo)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(url)s">
+%(ogimg)s
+%(jsonld)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap">
+  <div class="pagehead">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/articles/">Journal</a><span aria-hidden="true">/</span><span>%(name)s</span></nav>
+    <span class="label">Le Journal &nbsp;&middot;&nbsp; Thème</span>
+    <h1 class="display" style="margin-top:22px">%(name)s<span class="gold">.</span></h1>
+    <p>%(intro)s</p>
+    <div class="stats">
+      <div><span class="n">%(n)d</span><span class="l label">%(nlabel)s</span></div>
+    </div>
+  </div>
+  <div class="journal">
+%(cards)s
+  </div>
+%(empty)s%(mblock)s
+  <div class="next">
+    <span class="label">Les autres thèmes</span>
+%(others)s
+  </div>
+  <div class="reward noafter">
+    <span class="label">Et ensuite</span>
+    <h2>Lire, c'est bien.<br>Mesurer, c'est mieux.</h2>
+    <p>Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. La bêta iOS est ouverte à un petit cercle.</p>
+    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'theme-%(slug)s'})">Demander l'accès</a>
+  </div>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('journal_theme_view',{theme:'%(slug)s'});</script>
+%(navscripts)s
+</body>
+</html>
+""" % {"csp": CSP, "robots": robots, "icons": HEAD_ICONS, "seo": html.escape(title_tag(t["seo"])),
+       "desc": html.escape(t["desc"], quote=True), "url": url, "ogimg": og_image_tags(og),
+       "jsonld": ld(jsonld), "nav": nav("articles"), "name": html.escape(d), "intro": html.escape(t["intro"]),
+       "n": n, "nlabel": "Article" if n == 1 else "Articles", "cards": cards, "empty": empty,
+       "mblock": mblock, "others": others, "slug": t["slug"], "footer": FOOTER, "posthog": POSTHOG,
+       "navscripts": NAV_SCRIPTS}
+
+
+def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event):
+    """Page de texte simple (À propos, mentions légales) : même typographie que les articles."""
+    url = SITE + "/" + path
+    return """<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+%(csp)s
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+%(icons)s
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(seo)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(url)s">
+%(ogimg)s
+%(jsonld)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap">
+<article class="prose">
+  <header>
+    <span class="label">%(label)s</span>
+    <h1>%(h1)s</h1>
+  </header>
+%(body)s
+  <p class="updated">Dernière mise à jour : %(updated)s</p>
+</article>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('%(track)s');</script>
+%(navscripts)s
+</body>
+</html>
+""" % {"csp": CSP, "icons": HEAD_ICONS, "seo": html.escape(seo), "desc": html.escape(desc, quote=True),
+       "url": url, "ogimg": og_image_tags(og), "jsonld": ld(jsonld), "nav": nav(""), "label": label,
+       "h1": h1, "body": body.strip(), "updated": fr_date(ABOUT_UPDATED), "footer": FOOTER,
+       "posthog": POSTHOG, "track": track_event, "navscripts": NAV_SCRIPTS}
+
+
+def about_page():
+    body = """
+  <h2>Auguste Phily-Priou, fondateur</h2>
+  <p>Je m'appelle Auguste, j'ai 27 ans, et je construis Ecleptic quasiment seul. Je ne suis pas médecin : je suis quelqu'un qui a repris sa santé en main, et qui a voulu comprendre ce qui marche vraiment.</p>
+  <p>J'ai fumé pendant onze ans, de 14 à 25 ans, et j'ai arrêté fin 2024. En 2025, j'ai repris le sport de façon régulière, sans chercher l'intensité, j'ai appris à mieux manger, et j'ai commencé à optimiser à peu près tous les aspects de ma vie. C'est de là que vient mon pseudo sur Instagram, <a href="%(ig)s" rel="me noopener" target="_blank">@_optimisateur</a>.</p>
+  <p>Ecleptic est né de cette démarche : relier ce qui est d'habitude suivi séparément, le sommeil, l'alimentation et l'entraînement, pour comprendre comment chacun agit sur les autres, et savoir chaque matin ce qui compte vraiment.</p>
+
+  <h2>Comment les articles sont écrits</h2>
+  <ul>
+  <li><strong>Une vraie question, une réponse directe.</strong> Chaque article part d'une question que les gens se posent vraiment, et y répond dès la première phrase.</li>
+  <li><strong>Des chiffres sourcés.</strong> Les repères viennent de sources publiées : sociétés savantes (National Sleep Foundation, American Academy of Sleep Medicine…), études et méta-analyses, bases officielles comme la table Ciqual de l'ANSES ou FoodData Central de l'USDA. Les pages de <a href="/science.html">la méthode</a> listent leurs références.</li>
+  <li><strong>Des garde-fous santé.</strong> Aucun diagnostic, aucune posologie. Dès qu'un sujet devient médical (cœur, carences, santé mentale, grossesse), l'article renvoie vers un professionnel de santé.</li>
+  <li><strong>Des mises à jour datées.</strong> Quand un article change sur le fond, sa date de mise à jour s'affiche sous le titre.</li>
+  </ul>
+  <p>Une erreur, une étude plus récente, un point à préciser ? Écris-moi à <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a> : je vérifie, je corrige, et la correction est datée.</p>
+
+  <h2>Ecleptic en bref</h2>
+  <p>Ecleptic est une application iOS de bien-être, en bêta privée. Elle croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Elle ne remplace pas un avis médical et n'est pas un dispositif médical. L'éditeur et l'hébergeur du site sont indiqués dans les <a href="/mentions-legales.html">mentions légales</a>.</p>
+""" % {"ig": AUTHOR["instagram"]}
+    person = dict(AUTHOR_LD, worksFor={"@id": PUBLISHER_LD["@id"]})
+    jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/a-propos.html",
+              "name": "À propos d'Ecleptic", "inLanguage": "fr", "mainEntity": person,
+              "publisher": PUBLISHER_LD}
+    return prose_page("a-propos.html", "À propos : qui écrit sur Ecleptic — Ecleptic",
+                      "Auguste Phily-Priou, fondateur d'Ecleptic : son parcours, pourquoi il construit l'app, et comment les articles du Journal sont écrits, sourcés et mis à jour.",
+                      "À propos", "Qui écrit<br><span class=\"gold\">ici</span>.", body, jsonld,
+                      "/assets/og/accueil.jpg", "about_view")
+
+
+def legal_page():
+    body = """
+  <h2>Éditeur du site</h2>
+  <p>Le site ecleptic.health est édité par <strong>Auguste Phily-Priou</strong>, entrepreneur individuel (EI).<br>
+  Adresse : 10 Rue du Commerce, 86400 Civray, France<br>
+  E-mail : <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a><br>
+  SIREN : immatriculation en cours, le numéro sera ajouté ici dès son obtention.</p>
+
+  <h2>Directeur de la publication</h2>
+  <p>Auguste Phily-Priou.</p>
+
+  <h2>Hébergement</h2>
+  <p>GitHub, Inc. (service GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis — <a href="https://github.com" rel="noopener" target="_blank">github.com</a>.</p>
+
+  <h2>Propriété intellectuelle</h2>
+  <p>« Ecleptic » fait l'objet d'un dépôt de marque de l'Union européenne auprès de l'EUIPO (demande nº 019418299, déposée le 4 septembre 2026). Les textes du site sont la propriété de l'éditeur : toute reproduction sans autorisation est interdite. Les photographies d'illustration proviennent pour la plupart d'<a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash</a>, sous licence Unsplash.</p>
+
+  <h2>Données personnelles</h2>
+  <p>Le site mesure son audience avec PostHog, sur des serveurs situés dans l'Union européenne. Le traitement des données de l'application est décrit dans la <a href="/confidentialite.html">politique de confidentialité</a>.</p>
+
+  <h2>Avertissement santé</h2>
+  <p>Les contenus du site sont informatifs. Ils ne remplacent pas un avis médical, un diagnostic ou un traitement. Ecleptic est une application de bien-être, pas un dispositif médical.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a></p>
+"""
+    jsonld = {"@context": "https://schema.org", "@type": "WebPage", "url": SITE + "/mentions-legales.html",
+              "name": "Mentions légales", "inLanguage": "fr", "publisher": PUBLISHER_LD}
+    return prose_page("mentions-legales.html", "Mentions légales — Ecleptic",
+                      "Mentions légales du site ecleptic.health : éditeur, directeur de la publication, hébergeur, propriété intellectuelle et contact.",
+                      "Informations légales", "Mentions légales", body, jsonld,
+                      "/assets/og/accueil.jpg", "legal_view")
 
 
 def git_lastmod(rel):
@@ -1482,6 +1882,12 @@ def sitemap():
                 for a in ARTICLES]
     entries += [("%s/methode/%s.html" % (SITE, p["slug"]), p.get("updated", p["date"]))
                 for p in METHODE]
+    # Pages thème indexables (>= THEME_MIN_INDEX articles) : lastmod = article le plus récent.
+    for d in DOMAINS:
+        arts = theme_articles(d)
+        if len(arts) >= THEME_MIN_INDEX:
+            entries.append((SITE + theme_url(d), max(a.get("updated", a["date"]) for a in arts)))
+    entries.append(("%s/a-propos.html" % SITE, ABOUT_UPDATED))
     items = "\n".join(
         "  <url><loc>%s</loc>%s</url>" % (u, "<lastmod>%s</lastmod>" % d if d else "")
         for u, d in entries
@@ -1491,6 +1897,11 @@ def sitemap():
 
 def main():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    unknown = [s for s in SEO_TITLES if s not in {a["slug"] for a in ARTICLES_ALL}]
+    if unknown:
+        raise ValueError("SEO_TITLES : slugs inconnus %s" % unknown)
+    if set(THEMES) != set(DOMAINS):
+        raise ValueError("THEMES doit couvrir exactement DOMAINS")
     os.makedirs(os.path.join(root, "articles"), exist_ok=True)
     os.makedirs(os.path.join(root, "assets"), exist_ok=True)
     with open(os.path.join(root, "assets", "site.css"), "w") as f:
@@ -1519,6 +1930,15 @@ def main():
     for p in METHODE:
         with open(os.path.join(mdir, p["slug"] + ".html"), "w") as f:
             f.write(methode_page(p))
+    for d in DOMAINS:
+        tdir = os.path.join(adir, THEMES[d]["slug"])
+        os.makedirs(tdir, exist_ok=True)
+        with open(os.path.join(tdir, "index.html"), "w") as f:
+            f.write(theme_page(d))
+    with open(os.path.join(root, "a-propos.html"), "w") as f:
+        f.write(about_page())
+    with open(os.path.join(root, "mentions-legales.html"), "w") as f:
+        f.write(legal_page())
     with open(os.path.join(root, "assets", "nav-data.js"), "w") as f:
         f.write(nav_data())
     scheduled = len(ARTICLES_ALL) - len(ARTICLES)

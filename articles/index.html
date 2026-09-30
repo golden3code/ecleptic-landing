@@ -5,12 +5,20 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Journal de l'ISS — Ecleptic</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Le Journal : sommeil, nutrition, sport — Ecleptic</title>
 <meta name="description" content="Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables pour optimiser ta santé au quotidien.">
 <link rel="canonical" href="https://ecleptic.health/articles/">
-<meta property="og:title" content="Le Journal de l'ISS — Ecleptic">
+<meta property="og:title" content="Le Journal : sommeil, nutrition, sport — Ecleptic">
 <meta property="og:description" content="Sommeil, nutrition, entraînement, récupération : des conseils scientifiques et actionnables.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://ecleptic.health/articles/">
+<meta property="og:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ecleptic.health/assets/og/journal.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Le Journal d'Ecleptic", "url": "https://ecleptic.health/articles/", "inLanguage": "fr", "description": "Sommeil, nutrition, entraînement, récupération : des articles courts, scientifiques et actionnables.", "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}}</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -31,24 +39,24 @@
     <h1 class="display" style="margin-top:22px">Des jours<br>autrement<br><span class="gold">pensés</span>.</h1>
     <p>Des textes sur le sommeil, l'alimentation, l'entraînement et l'art de construire des journées qui méritent d'être vécues.</p>
     <div class="stats">
-      <div><span class="n">17</span><span class="l label">Articles</span></div>
+      <div><span class="n">18</span><span class="l label">Articles</span></div>
       <div><span class="n">10</span><span class="l label">Thèmes</span></div>
     </div>
   </div>
   <div class="themes">
     <span class="label">Thèmes du journal</span>
     <div class="themescroll">
-    <button class="theme on" data-filter="*"><span>Tout le journal</span><span class="count">17</span></button>
-<button class="theme" data-filter="Sommeil"><span>Sommeil</span><span class="count">3</span></button>
-<button class="theme" data-filter="Readiness"><span>Readiness</span><span class="count">2</span></button>
-<button class="theme" data-filter="Sport"><span>Sport</span><span class="count">2</span></button>
-<button class="theme" data-filter="Récupération"><span>Récupération</span><span class="count">2</span></button>
-<button class="theme" data-filter="Alimentation"><span>Alimentation</span><span class="count">2</span></button>
-<button class="theme" data-filter="Charge"><span>Charge</span><span class="count">1</span></button>
-<button class="theme" data-filter="Régularité"><span>Régularité</span><span class="count">1</span></button>
-<button class="theme" data-filter="Humeur"><span>Humeur</span><span class="count">1</span></button>
-<button class="theme" data-filter="Contexte"><span>Contexte</span><span class="count">1</span></button>
-<button class="theme" data-filter="Énergie"><span>Énergie</span><span class="count">2</span></button>
+    <a class="theme on" href="/articles/" data-filter="*"><span>Tout le journal</span><span class="count">18</span></a>
+<a class="theme" href="/articles/sommeil/" data-filter="Sommeil"><span>Sommeil</span><span class="count">3</span></a>
+<a class="theme" href="/articles/readiness/" data-filter="Readiness"><span>Readiness</span><span class="count">2</span></a>
+<a class="theme" href="/articles/sport/" data-filter="Sport"><span>Sport</span><span class="count">2</span></a>
+<a class="theme" href="/articles/recuperation/" data-filter="Récupération"><span>Récupération</span><span class="count">3</span></a>
+<a class="theme" href="/articles/alimentation/" data-filter="Alimentation"><span>Alimentation</span><span class="count">2</span></a>
+<a class="theme" href="/articles/charge/" data-filter="Charge"><span>Charge</span><span class="count">1</span></a>
+<a class="theme" href="/articles/regularite/" data-filter="Régularité"><span>Régularité</span><span class="count">1</span></a>
+<a class="theme" href="/articles/humeur/" data-filter="Humeur"><span>Humeur</span><span class="count">1</span></a>
+<a class="theme" href="/articles/contexte/" data-filter="Contexte"><span>Contexte</span><span class="count">1</span></a>
+<a class="theme" href="/articles/energie/" data-filter="Énergie"><span>Énergie</span><span class="count">2</span></a>
     </div>
   </div>
   <div class="quote">
@@ -56,6 +64,15 @@
     <span class="label">Chris Hadfield &nbsp;·&nbsp; Astronaute, commandant de l'ISS</span>
   </div>
   <div class="journal" id="entries">
+<a class="entry" href="/articles/bain-froid-recuperation-bienfaits.html" data-slug="bain-froid-recuperation-bienfaits" data-cat="Récupération">
+  <span class="etext">
+  <span class="label meta"><span class="gold">Récupération</span> &nbsp;&middot;&nbsp; 30 septembre 2026 &nbsp;&middot;&nbsp; 3 min</span>
+  <h2>Bain froid : vrais bienfaits ou effet de mode ?</h2>
+  <p class="desc">Il soulage vraiment les courbatures et rafraîchit le mental — mais juste après la muscu, il freine tes gains. Quand l&#x27;utiliser, quand l&#x27;éviter.</p>
+  <span class="readmore">Lire l'article →</span>
+  </span>
+  <span class="ethumb"><img src="/assets/articles/bain-froid-recuperation-bienfaits.jpg" srcset="/assets/articles/640/bain-froid-recuperation-bienfaits.jpg 640w, /assets/articles/1200/bain-froid-recuperation-bienfaits.jpg 1200w, /assets/articles/bain-froid-recuperation-bienfaits.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
+</a>
 <a class="entry" href="/articles/frequence-cardiaque-repos-normale.html" data-slug="frequence-cardiaque-repos-normale" data-cat="Readiness">
   <span class="etext">
   <span class="label meta"><span class="gold">Readiness</span> &nbsp;&middot;&nbsp; 28 septembre 2026 &nbsp;&middot;&nbsp; 4 min</span>
@@ -63,7 +80,7 @@
   <p class="desc">La fréquence cardiaque au repos normale est de 60 à 100 bpm, et de 40 à 60 chez les sportifs d&#x27;endurance. Comment la mesurer au réveil et la lire en tendance.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/frequence-cardiaque-repos-normale.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/frequence-cardiaque-repos-normale.jpg" srcset="/assets/articles/640/frequence-cardiaque-repos-normale.jpg 640w, /assets/articles/1200/frequence-cardiaque-repos-normale.jpg 1200w, /assets/articles/frequence-cardiaque-repos-normale.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/combien-de-calories-par-jour.html" data-slug="combien-de-calories-par-jour" data-cat="Alimentation">
   <span class="etext">
@@ -72,7 +89,7 @@
   <p class="desc">Combien de calories par jour ? Ça dépend de ton métabolisme et de ton activité. Ordres de grandeur, limites des formules, et comment trouver ton vrai chiffre.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/combien-de-calories-par-jour.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/combien-de-calories-par-jour.jpg" srcset="/assets/articles/640/combien-de-calories-par-jour.jpg 640w, /assets/articles/1200/combien-de-calories-par-jour.jpg 1200w, /assets/articles/combien-de-calories-par-jour.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/zone-2-cardio-cest-quoi.html" data-slug="zone-2-cardio-cest-quoi" data-cat="Sport">
   <span class="etext">
@@ -81,7 +98,7 @@
   <p class="desc">La zone 2, c&#x27;est le cardio facile où tu peux parler en phrases complètes. Pourquoi cette intensité basse construit ta base aérobie mieux que le reste.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/zone-2-cardio-cest-quoi.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/zone-2-cardio-cest-quoi.jpg" srcset="/assets/articles/640/zone-2-cardio-cest-quoi.jpg 640w, /assets/articles/1200/zone-2-cardio-cest-quoi.jpg 1200w, /assets/articles/zone-2-cardio-cest-quoi.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/cafe-et-sommeil-combien-de-temps-avant.html" data-slug="cafe-et-sommeil-combien-de-temps-avant" data-cat="Sommeil">
   <span class="etext">
@@ -90,7 +107,7 @@
   <p class="desc">La caféine a une demi-vie de 5 à 6 heures : un café à 16 h occupe encore ta soirée. Pourquoi couper 8 à 10 heures avant le coucher, et ce que ça change.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/cafe-et-sommeil-combien-de-temps-avant.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/cafe-et-sommeil-combien-de-temps-avant.jpg" srcset="/assets/articles/640/cafe-et-sommeil-combien-de-temps-avant.jpg 640w, /assets/articles/1200/cafe-et-sommeil-combien-de-temps-avant.jpg 1200w, /assets/articles/cafe-et-sommeil-combien-de-temps-avant.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/sommeil-profond-comment-augmenter.html" data-slug="sommeil-profond-comment-augmenter" data-cat="Sommeil">
   <span class="etext">
@@ -99,7 +116,7 @@
   <p class="desc">Chambre fraîche, horaires fixes, sport le jour, alcool rare : les seuls leviers qui augmentent vraiment le sommeil profond — et ceux qui ne servent à rien.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/sommeil-profond-comment-augmenter.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/sommeil-profond-comment-augmenter.jpg" srcset="/assets/articles/640/sommeil-profond-comment-augmenter.jpg 640w, /assets/articles/1200/sommeil-profond-comment-augmenter.jpg 1200w, /assets/articles/sommeil-profond-comment-augmenter.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/courbatures-que-faire.html" data-slug="courbatures-que-faire" data-cat="Récupération">
   <span class="etext">
@@ -108,7 +125,7 @@
   <p class="desc">Bouger léger, dormir, manger assez de protéines : ce qui accélère vraiment la récupération des courbatures, ce qui ne change rien, et quand s&#x27;inquiéter.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/courbatures-que-faire.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/courbatures-que-faire.jpg" srcset="/assets/articles/640/courbatures-que-faire.jpg 640w, /assets/articles/1200/courbatures-que-faire.jpg 1200w, /assets/articles/courbatures-que-faire.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/sieste-ideale-duree.html" data-slug="sieste-ideale-duree" data-cat="Énergie">
   <span class="etext">
@@ -117,7 +134,7 @@
   <p class="desc">10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est le pire choix, et quand la sieste est un signal.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/sieste-ideale-duree.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/sieste-ideale-duree.jpg" srcset="/assets/articles/640/sieste-ideale-duree.jpg 640w, /assets/articles/1200/sieste-ideale-duree.jpg 1200w, /assets/articles/sieste-ideale-duree.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/combien-heures-sommeil-par-nuit.html" data-slug="combien-heures-sommeil-par-nuit" data-cat="Sommeil">
   <span class="etext">
@@ -126,7 +143,7 @@
   <p class="desc">7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/combien-heures-sommeil-par-nuit.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/combien-heures-sommeil-par-nuit.jpg" srcset="/assets/articles/640/combien-heures-sommeil-par-nuit.jpg 640w, /assets/articles/1200/combien-heures-sommeil-par-nuit.jpg 1200w, /assets/articles/combien-heures-sommeil-par-nuit.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/readiness-score-comment-ca-marche.html" data-slug="readiness-score-comment-ca-marche" data-cat="Readiness">
   <span class="etext">
@@ -135,7 +152,7 @@
   <p class="desc">HRV, fréquence cardiaque de repos, sommeil, charge récente : ce que mesure vraiment un score de préparation, ses limites, et comment le faire monter durablement.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/readiness-score-comment-ca-marche.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/readiness-score-comment-ca-marche.jpg" srcset="/assets/articles/640/readiness-score-comment-ca-marche.jpg 640w, /assets/articles/1200/readiness-score-comment-ca-marche.jpg 1200w, /assets/articles/readiness-score-comment-ca-marche.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/hrv-variabilite-frequence-cardiaque.html" data-slug="hrv-variabilite-frequence-cardiaque" data-cat="Récupération">
   <span class="etext">
@@ -144,7 +161,7 @@
   <p class="desc">La HRV mesure les micro-variations entre deux battements de cœur — le meilleur indicateur accessible de ta récupération. Comment la lire, et ce qui la fait bouger.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/hrv-variabilite-frequence-cardiaque.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/hrv-variabilite-frequence-cardiaque.jpg" srcset="/assets/articles/640/hrv-variabilite-frequence-cardiaque.jpg 640w, /assets/articles/1200/hrv-variabilite-frequence-cardiaque.jpg 1200w, /assets/articles/hrv-variabilite-frequence-cardiaque.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/proteines-par-jour-prise-de-muscle.html" data-slug="proteines-par-jour-prise-de-muscle" data-cat="Alimentation">
   <span class="etext">
@@ -153,7 +170,7 @@
   <p class="desc">1,6 à 2,2 g par kilo de poids de corps et par jour : ce que dit la recherche, pourquoi manger plus n&#x27;apporte rien, et comment répartir tes apports.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/proteines-par-jour-prise-de-muscle.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/proteines-par-jour-prise-de-muscle.jpg" srcset="/assets/articles/640/proteines-par-jour-prise-de-muscle.jpg 640w, /assets/articles/1200/proteines-par-jour-prise-de-muscle.jpg 1200w, /assets/articles/proteines-par-jour-prise-de-muscle.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/surentrainement-signes.html" data-slug="surentrainement-signes" data-cat="Charge">
   <span class="etext">
@@ -162,7 +179,7 @@
   <p class="desc">Performances qui stagnent, sommeil dégradé, cœur de repos qui monte, motivation en berne : les signaux du surentraînement, et comment réagir avant de casser.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/surentrainement-signes.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/surentrainement-signes.jpg" srcset="/assets/articles/640/surentrainement-signes.jpg 640w, /assets/articles/1200/surentrainement-signes.jpg 1200w, /assets/articles/surentrainement-signes.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/combien-seances-sport-par-semaine.html" data-slug="combien-seances-sport-par-semaine" data-cat="Sport">
   <span class="etext">
@@ -171,7 +188,7 @@
   <p class="desc">3 à 5 séances bien récupérées battent 6 séances subies. Ce que dit la recherche sur la fréquence idéale en musculation et en cardio, selon ton niveau.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/combien-seances-sport-par-semaine.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/combien-seances-sport-par-semaine.jpg" srcset="/assets/articles/640/combien-seances-sport-par-semaine.jpg 640w, /assets/articles/1200/combien-seances-sport-par-semaine.jpg 1200w, /assets/articles/combien-seances-sport-par-semaine.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/se-coucher-meme-heure-regularite.html" data-slug="se-coucher-meme-heure-regularite" data-cat="Régularité">
   <span class="etext">
@@ -180,7 +197,7 @@
   <p class="desc">À durée de sommeil égale, des horaires réguliers améliorent la qualité des nuits, l&#x27;énergie et même la santé métabolique. Pourquoi, et comment y arriver.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/se-coucher-meme-heure-regularite.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/se-coucher-meme-heure-regularite.jpg" srcset="/assets/articles/640/se-coucher-meme-heure-regularite.jpg 640w, /assets/articles/1200/se-coucher-meme-heure-regularite.jpg 1200w, /assets/articles/se-coucher-meme-heure-regularite.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/toujours-fatigue-causes.html" data-slug="toujours-fatigue-causes" data-cat="Énergie">
   <span class="etext">
@@ -189,7 +206,7 @@
   <p class="desc">Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d&#x27;une fatigue qui dure, dans l&#x27;ordre.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/toujours-fatigue-causes.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/toujours-fatigue-causes.jpg" srcset="/assets/articles/640/toujours-fatigue-causes.jpg 640w, /assets/articles/1200/toujours-fatigue-causes.jpg 1200w, /assets/articles/toujours-fatigue-causes.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/stress-recuperation-sport.html" data-slug="stress-recuperation-sport" data-cat="Humeur">
   <span class="etext">
@@ -198,7 +215,7 @@
   <p class="desc">Ton système nerveux ne fait pas la différence entre une semaine de rush et une semaine de gros volume : le stress mental se paie en récupération physique.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/stress-recuperation-sport.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/stress-recuperation-sport.jpg" srcset="/assets/articles/640/stress-recuperation-sport.jpg 640w, /assets/articles/1200/stress-recuperation-sport.jpg 1200w, /assets/articles/stress-recuperation-sport.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
 <a class="entry" href="/articles/alcool-sommeil-effets.html" data-slug="alcool-sommeil-effets" data-cat="Contexte">
   <span class="etext">
@@ -207,7 +224,7 @@
   <p class="desc">L&#x27;alcool endort plus vite mais détruit la seconde moitié de la nuit : sommeil paradoxal amputé, réveils, HRV écrasée. Ce que montrent les données, verre par verre.</p>
   <span class="readmore">Lire l'article →</span>
   </span>
-  <span class="ethumb"><img src="/assets/articles/alcool-sommeil-effets.jpg" alt="" loading="lazy"></span>
+  <span class="ethumb"><img src="/assets/articles/alcool-sommeil-effets.jpg" srcset="/assets/articles/640/alcool-sommeil-effets.jpg 640w, /assets/articles/1200/alcool-sommeil-effets.jpg 1200w, /assets/articles/alcool-sommeil-effets.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 48px), 210px" width="1600" height="840" alt="" loading="lazy" decoding="async"></span>
 </a>
   </div>
 
@@ -220,13 +237,13 @@
 </main>
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
     <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
   </div>
 </footer>
 <script>
   var POSTHOG_KEY="phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
-  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com"});}
+  if(POSTHOG_KEY){!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init(POSTHOG_KEY,{api_host:"https://eu.i.posthog.com",disable_surveys:true});}
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
 </script>
 <script>
@@ -241,7 +258,8 @@ track('articles_index_view');
     });
   }
   btns.forEach(function(b){
-    b.addEventListener('click', function(){
+    b.addEventListener('click', function(e){
+      e.preventDefault();
       applyFilter(b.getAttribute('data-filter'));
       track('journal_theme_click', {theme: b.getAttribute('data-filter')});
     });
