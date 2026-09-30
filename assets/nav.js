@@ -11,6 +11,19 @@
    sortie : ?apercu=off. */
 (function () {
   var NAV = window.ECLEPTIC_NAV || {};
+  // Libellés selon la langue de la page (<html lang>) ; données : nav-data.js / nav-data-en.js.
+  var EN = (document.documentElement.lang || "").slice(0, 2) === "en";
+  var T = EN ? {
+    themes: "Themes", popular: "Most read", seeTheme: "See the theme →", all: "All articles →", allUrl: "/en/journal/",
+    spots: function (n) { return n + " of 150 places left"; }, full: "Beta full · waiting list open",
+    journal: "Journal", preview: "Menu preview · exit",
+    ranking: "See the ranking →", rankUrl: "/en/journal/?sort=popular", soon: "First articles very soon."
+  } : {
+    themes: "Thèmes", popular: "Les plus lus", seeTheme: "Voir le thème →", all: "Tous les articles →", allUrl: "/articles/",
+    spots: function (n) { return n + " places sur 150 restantes"; }, full: "Bêta complète · liste d'attente ouverte",
+    journal: "Journal", preview: "Aperçu du menu · quitter",
+    ranking: "Voir le classement →", rankUrl: "/articles/?sort=populaires", soon: "Premiers articles très bientôt."
+  };
   var nav = document.querySelector("nav.site");
   if (!nav) return;
 
@@ -64,13 +77,13 @@
     inner.className = "mega-in is-journal";
     inner.textContent = "";
     var colCats = el("div", "mega-col mega-cats");
-    colCats.appendChild(el("span", "mega-label", "Thèmes"));
+    colCats.appendChild(el("span", "mega-label", T.themes));
     var catList = el("ul");
     colCats.appendChild(catList);
-    colCats.appendChild(link("/articles/", "Tous les articles →", "mega-all"));
+    colCats.appendChild(link(T.allUrl, T.all, "mega-all"));
     var colList = el("div", "mega-col mega-list");
     var colPop = el("div", "mega-col mega-pop");
-    colPop.appendChild(el("span", "mega-label", "Les plus lus"));
+    colPop.appendChild(el("span", "mega-label", T.popular));
     var popList = el("ol");
     D.popular.forEach(function (p, i) {
       var a = link(p.u, "");
@@ -79,7 +92,7 @@
       var li = el("li"); li.appendChild(a); popList.appendChild(li);
     });
     colPop.appendChild(popList);
-    colPop.appendChild(link("/articles/?sort=populaires", "Voir le classement →", "mega-more"));
+    colPop.appendChild(link(T.rankUrl, T.ranking, "mega-more"));
     inner.appendChild(colCats);
     inner.appendChild(colList);
     inner.appendChild(colPop);
@@ -94,9 +107,9 @@
       colList.appendChild(el("span", "mega-label", c.n + " · " + count(c.c)));
       var ul = el("ul");
       c.a.forEach(function (x) { var li = el("li"); li.appendChild(link(x.u, x.t)); ul.appendChild(li); });
-      if (!c.a.length) ul.appendChild(el("li", "soon", "Premiers articles très bientôt."));
+      if (!c.a.length) ul.appendChild(el("li", "soon", T.soon));
       colList.appendChild(ul);
-      colList.appendChild(link(c.u, "Voir le thème →", "mega-more"));
+      colList.appendChild(link(c.u, T.seeTheme, "mega-more"));
       colList.classList.remove("swap");
       void colList.offsetWidth;          // relance l'animation de transition
       colList.classList.add("swap");
@@ -120,7 +133,7 @@
   var SPOTS;                                            // undefined = pas chargé, null = indisponible
   function renderSpots(sp) {
     if (SPOTS == null) { sp.hidden = true; return; }
-    sp.textContent = SPOTS > 0 ? SPOTS + " places sur 150 restantes" : "Bêta complète · liste d'attente ouverte";
+    sp.textContent = SPOTS > 0 ? T.spots(SPOTS) : T.full;
     sp.hidden = false;
     fit();
   }
@@ -248,9 +261,9 @@
     sheet = el("div", "msheet");
     sheet.setAttribute("role", "dialog");
     sheet.setAttribute("aria-modal", "true");
-    sheet.setAttribute("aria-label", "Journal");
+    sheet.setAttribute("aria-label", T.journal);
     var head = el("div", "msheet-top");
-    head.appendChild(el("span", "msheet-brand", "Journal"));
+    head.appendChild(el("span", "msheet-brand", T.journal));
     var shut = el("button", "msheet-x", "×");
     shut.type = "button";
     shut.setAttribute("aria-label", "Fermer");
@@ -258,18 +271,18 @@
     sheet.appendChild(head);
 
     var body = el("div", "msheet-body");
-    body.appendChild(link("/articles/", "Tous les articles →", "msheet-all"));
+    body.appendChild(link(T.allUrl, T.all, "msheet-all"));
     var pop = el("details");
     pop.open = true;
     var ps = el("summary");
-    ps.appendChild(el("span", null, "Les plus lus"));
+    ps.appendChild(el("span", null, T.popular));
     ps.appendChild(el("span", "k", "Top " + D.popular.length));
     pop.appendChild(ps);
     var pol = el("ol");
     D.popular.forEach(function (p) { var li = el("li"); li.appendChild(link(p.u, p.t)); pol.appendChild(li); });
     pop.appendChild(pol);
     body.appendChild(pop);
-    body.appendChild(el("span", "mega-label msheet-label", "Thèmes"));
+    body.appendChild(el("span", "mega-label msheet-label", T.themes));
     D.cats.forEach(function (c) {
       var d = el("details");
       var s = el("summary");
@@ -278,7 +291,7 @@
       d.appendChild(s);
       var ul = el("ul");
       c.a.forEach(function (x) { var li = el("li"); li.appendChild(link(x.u, x.t)); ul.appendChild(li); });
-      var more = el("li", "more"); more.appendChild(link(c.u, "Voir le thème →")); ul.appendChild(more);
+      var more = el("li", "more"); more.appendChild(link(c.u, T.seeTheme)); ul.appendChild(more);
       d.appendChild(ul);
       body.appendChild(d);
     });
@@ -313,7 +326,7 @@
 
   // Badge discret tant que l'aperçu est actif (pour en sortir en un clic).
   if (PREVIEW) {
-    var badge = link(location.pathname + "?apercu=off", "Aperçu du menu · quitter", "mega-apercu");
+    var badge = link(location.pathname + "?apercu=off", T.preview, "mega-apercu");
     document.body.appendChild(badge);
   }
 })();

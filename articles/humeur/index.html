@@ -20,6 +20,26 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://ecleptic.health/assets/articles/stress-recuperation-sport.jpg">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Humeur — Le Journal d'Ecleptic", "description": "Stress, anxiété, cortisol, cohérence cardiaque, irritabilité : ce que le mental fait à ta récupération, et les leviers simples qui aident vraiment au quotidien.", "url": "https://ecleptic.health/articles/humeur/", "inLanguage": "fr", "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://ecleptic.health/articles/stress-recuperation-sport.html"}]}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Journal", "item": "https://ecleptic.health/articles/"}, {"@type": "ListItem", "position": 2, "name": "Humeur", "item": "https://ecleptic.health/articles/humeur/"}]}]</script>
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -32,6 +52,7 @@
     </span>
     <a href="/science.html" data-mega="science" >Science-Based</a>
     <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+    
   </div>
 </nav>
 <main class="wrap">
@@ -47,7 +68,7 @@
   <div class="journal">
 <a class="entry" href="/articles/stress-recuperation-sport.html" data-slug="stress-recuperation-sport" data-cat="Humeur">
   <span class="etext">
-  <span class="label meta"><span class="gold">Humeur</span> &nbsp;&middot;&nbsp; 19 septembre 2026 &nbsp;&middot;&nbsp; 2 min</span>
+  <span class="label meta"><span class="gold">Humeur</span> &nbsp;&middot;&nbsp; 19 septembre 2026 &nbsp;&middot;&nbsp; 3 min</span>
   <h2>Stress et sport : pourquoi ton corps ne récupère plus</h2>
   <p class="desc">Ton système nerveux ne fait pas la différence entre une semaine de rush et une semaine de gros volume : le stress mental se paie en récupération physique.</p>
   <span class="readmore">Lire l'article →</span>
@@ -76,7 +97,7 @@
     <span class="label">Et ensuite</span>
     <h2>Lire, c'est bien.<br>Mesurer, c'est mieux.</h2>
     <p>Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. La bêta iOS est ouverte à un petit cercle.</p>
-    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'theme-humeur'})">Demander l'accès</a>
+    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'theme-humeur',lang:'fr'})">Demander l'accès</a>
   </div>
 </main>
 <footer class="site">
@@ -91,7 +112,7 @@
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
 </script>
-<script>track('journal_theme_view',{theme:'humeur'});</script>
+<script>track('journal_theme_view',{theme:'humeur',lang:'fr'});</script>
 <script src="/assets/nav-data.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 </body>

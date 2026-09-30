@@ -1,0 +1,4754 @@
+{
+ "atypical": {
+  "zinc:15045": "Tournesol, graine, grillé, salé : 36 mg/100 g, environ 7 fois les autres graines de tournesol de la table"
+ },
+ "doi": "https://doi.org/10.5281/zenodo.17550133",
+ "licence": "CC BY 4.0",
+ "n_foods": 3484,
+ "nutrients": {
+  "calcium": {
+   "condiments": [
+    {
+     "code": "20989",
+     "en": "Lithothamnion (Lithothamnion), dried or dehydrated",
+     "fr": "Maërl ou lithothamne (Lithothamnion), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 30400.0
+    },
+    {
+     "code": "11032",
+     "en": "Basil, dried",
+     "fr": "Basilic, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 2240.0
+    },
+    {
+     "code": "11062",
+     "en": "Savory, dried",
+     "fr": "Sarriette, séchée",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 2130.0
+    },
+    {
+     "code": "51500",
+     "en": "Molokhia powder (dried jute leaves)",
+     "fr": "Meloukhia, feuilles de corète séchées, en poudre",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 2000.0
+    },
+    {
+     "code": "11034",
+     "en": "Marjoram, dried",
+     "fr": "Marjolaine, séchée",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 1990.0
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "28401",
+       "en": "Pork, spare-ribs, braised",
+       "fr": "Porc, travers braisé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 30.4
+      },
+      {
+       "code": "6511",
+       "en": "Veal, chop, grilled/pan-fried",
+       "fr": "Veau, côte grillée/poêlée",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 29.0
+      },
+      {
+       "code": "6257",
+       "en": "Beef, minced steak, 20% fat, cooked",
+       "fr": "Boeuf, steak haché 20% MG cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 24.0
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10006",
+       "en": "Grey shrimp, boiled",
+       "fr": "Crevette grise, cuite",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 1000.0
+      },
+      {
+       "code": "26040",
+       "en": "European pilchard or sardine, in olive oil, canned, drained",
+       "fr": "Sardine, à l'huile d'olive, appertisée, égouttée",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 432.0
+      },
+      {
+       "code": "26027",
+       "en": "Pilchard, in tomato sauce, canned, drained",
+       "fr": "Pilchard, sauce tomate, appertisé, égoutté",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 250.0
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "19054",
+       "en": "Milk powder, skimmed",
+       "fr": "Lait en poudre, écrémé",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 1260.0
+      },
+      {
+       "code": "12122",
+       "en": "Pecorino cheese, from ewe's milk",
+       "fr": "Pecorino (fromage de brebis)",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 1160.0
+      },
+      {
+       "code": "12123",
+       "en": "Grana Padano cheese, from cow's milk",
+       "fr": "Grana Padano",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 1050.0
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20501",
+       "en": "Haricot bean, dried",
+       "fr": "Haricot blanc, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 240.0
+      },
+      {
+       "code": "20534",
+       "en": "Lupin, seed, dried",
+       "fr": "Lupin, graine, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 176.0
+      },
+      {
+       "code": "7257",
+       "en": "English muffin, prepacked",
+       "fr": "Muffin anglais, petit pain spécial, préemballé",
+       "grp_en": "breads and similar",
+       "grp_fr": "pains et assimilés",
+       "v": 162.0
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20180",
+       "en": "Onion, dried",
+       "fr": "Oignon, séché",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 257.0
+      },
+      {
+       "code": "20346",
+       "en": "Kale, raw",
+       "fr": "Chou kale, cru",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 254.0
+      },
+      {
+       "code": "20336",
+       "en": "Spinach, boiled/cooked in water",
+       "fr": "Épinard, bouilli/cuit à l'eau",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 240.0
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "15010",
+       "en": "Sesame seed",
+       "fr": "Sésame, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 962.0
+      },
+      {
+       "code": "15047",
+       "en": "Chia, seed, dried",
+       "fr": "Chia, graine, séchée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 631.0
+      },
+      {
+       "code": "15203",
+       "en": "Tahini (sesame paste)",
+       "fr": "Tahin ou purée de sésame",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 284.0
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2677,
+   "nrv": 800,
+   "top": [
+    {
+     "code": "19054",
+     "en": "Milk powder, skimmed",
+     "fr": "Lait en poudre, écrémé",
+     "grp_en": "milk",
+     "grp_fr": "laits",
+     "v": 1260.0
+    },
+    {
+     "code": "12122",
+     "en": "Pecorino cheese, from ewe's milk",
+     "fr": "Pecorino (fromage de brebis)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 1160.0
+    },
+    {
+     "code": "12123",
+     "en": "Grana Padano cheese, from cow's milk",
+     "fr": "Grana Padano",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 1050.0
+    },
+    {
+     "code": "10006",
+     "en": "Grey shrimp, boiled",
+     "fr": "Crevette grise, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 1000.0
+    },
+    {
+     "code": "12120",
+     "en": "Parmesan cheese, from cow's milk",
+     "fr": "Parmesan",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 980.0
+    },
+    {
+     "code": "12115",
+     "en": "Emmental cheese, from cow's milk",
+     "fr": "Emmental ou emmenthal",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 978.0
+    },
+    {
+     "code": "15010",
+     "en": "Sesame seed",
+     "fr": "Sésame, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 962.0
+    },
+    {
+     "code": "12758",
+     "en": "Tomme cheese, from cow's milk",
+     "fr": "Tomme ou tome de vache",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 953.0
+    },
+    {
+     "code": "12116",
+     "en": "Hard cheese, emmental-type cheese, reduced fat, from cow's milk",
+     "fr": "Fromage à pâte pressée cuite type emmental ou emmenthal, allégé en matière grasse",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 949.0
+    },
+    {
+     "code": "12100",
+     "en": "Hard cheese (average)",
+     "fr": "Fromage à pâte pressée cuite (aliment moyen)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 916.0
+    },
+    {
+     "code": "12738",
+     "en": "Mimolette cheese, old, from cow's milk (cured 12 months minimum)",
+     "fr": "Mimolette vieille (12 mois d'affinage minimum)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 910.0
+    },
+    {
+     "code": "12110",
+     "en": "Comté cheese, from cow's milk",
+     "fr": "Comté",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 907.0
+    },
+    {
+     "code": "12113",
+     "en": "Gruyere cheese, France, Protected Geographical Indication, from cow's milk",
+     "fr": "Gruyère IGP France",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 898.0
+    },
+    {
+     "code": "12815",
+     "en": "Cheese, dry, from goat's milk",
+     "fr": "Fromage de chèvre sec",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 895.0
+    },
+    {
+     "code": "12111",
+     "en": "Processed cheese, to unroll or to shred, from cow's milk",
+     "fr": "Fromage à effilocher ou à dérouler",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 883.0
+    },
+    {
+     "code": "12760",
+     "en": "Tomme cheese, reduced fat, around 13% fat",
+     "fr": "Tomme ou tome, allégée en matière grasse",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 852.0
+    },
+    {
+     "code": "12105",
+     "en": "Beaufort cheese, from cow's milk",
+     "fr": "Beaufort",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 845.0
+    },
+    {
+     "code": "12735",
+     "en": "Mimolette cheese, young, from cow's milk (cured less than 6 months)",
+     "fr": "Mimolette jeune (moins de 6 mois d'affinage)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 844.0
+    },
+    {
+     "code": "12816",
+     "en": "Hard cheese, from cow's milk",
+     "fr": "Fromage à pâte pressée demi-cuite",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 833.0
+    },
+    {
+     "code": "12740",
+     "en": "Mimolette cheese, from cow's milk",
+     "fr": "Mimolette, sans précision",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 825.0
+    },
+    {
+     "code": "12724",
+     "en": "Cantal cheese, from cow's milk",
+     "fr": "Cantal",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 817.0
+    },
+    {
+     "code": "12729",
+     "en": "Edam cheese, from cow's milk",
+     "fr": "Edam",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 812.0
+    },
+    {
+     "code": "12114",
+     "en": "Gruyere cheese, from cow's milk",
+     "fr": "Gruyère, sans précision (origine France ou Suisse)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 800.0
+    },
+    {
+     "code": "12722",
+     "en": "Cantal cheese, half matured, from cow's milk",
+     "fr": "Cantal entre-deux",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 791.0
+    },
+    {
+     "code": "12736",
+     "en": "Gouda cheese, from cow's milk",
+     "fr": "Gouda",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 774.0
+    }
+   ],
+   "unit": "mg"
+  },
+  "fer": {
+   "condiments": [
+    {
+     "code": "20995",
+     "en": "Gut weed (Ulva sp.), dried or dehydrated",
+     "fr": "Ao-nori (Ulva sp., ex Enteromorpha sp.), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 205.0
+    },
+    {
+     "code": "20997",
+     "en": "Chlorella, dried or dehydrated",
+     "fr": "Chlorelle (chlorella), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 177.0
+    },
+    {
+     "code": "20989",
+     "en": "Lithothamnion (Lithothamnion), dried or dehydrated",
+     "fr": "Maërl ou lithothamne (Lithothamnion), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 144.0
+    },
+    {
+     "code": "11038",
+     "en": "Thyme, dried",
+     "fr": "Thym, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 124.0
+    },
+    {
+     "code": "11032",
+     "en": "Basil, dried",
+     "fr": "Basilic, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 89.8
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "40113",
+       "en": "Liver, pork, cooked",
+       "fr": "Foie, porc, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 17.9
+      },
+      {
+       "code": "40406",
+       "en": "Kidney, lamb, braised",
+       "fr": "Rognon, agneau, braisé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 12.4
+      },
+      {
+       "code": "40701",
+       "en": "Preserved gizzards, duck, canned",
+       "fr": "Gésier, canard, confit, appertisé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 9.4
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10034",
+       "en": "Cockle, cooked",
+       "fr": "Coque, cuite",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 14.0
+      },
+      {
+       "code": "10027",
+       "en": "Clam, boiled/cooked in water",
+       "fr": "Clam, praire ou palourde, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 9.67
+      },
+      {
+       "code": "10079",
+       "en": "Octopus, common, cooked",
+       "fr": "Poulpe, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 9.54
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "22003",
+       "en": "Egg yolk, powder",
+       "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 9.5
+      },
+      {
+       "code": "39248",
+       "en": "Chocolate mousse, plant-based, refrigerated",
+       "fr": "Mousse au chocolat végétale, rayon frais",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 6.0
+      },
+      {
+       "code": "39206",
+       "en": "Chocolate mousse (milk-based), refrigerated",
+       "fr": "Mousse au chocolat (base laitière), rayon frais",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 4.64
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20501",
+       "en": "Haricot bean, dried",
+       "fr": "Haricot blanc, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 10.4
+      },
+      {
+       "code": "7425",
+       "en": "Rusk, slice, multigrain, prepacked",
+       "fr": "Pain grillé aux céréales, tranches, préemballé",
+       "grp_en": "breads and similar",
+       "grp_fr": "pains et assimilés",
+       "v": 9.0
+      },
+      {
+       "code": "9345",
+       "en": "Amaranth, raw",
+       "fr": "Amarante, crue",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 7.61
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 9.09
+      },
+      {
+       "code": "13118",
+       "en": "Peach, flesh and skin, pitted, dried",
+       "fr": "Pêche, chair et peau, sans noyau, sèche",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 6.8
+      },
+      {
+       "code": "13183",
+       "en": "Goji berry, dried",
+       "fr": "Baie de goji, séchée",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 4.9
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "20901",
+       "en": "Soybean, seed, whole",
+       "fr": "Soja, graine entière",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 15.7
+      },
+      {
+       "code": "15010",
+       "en": "Sesame seed",
+       "fr": "Sésame, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 14.6
+      },
+      {
+       "code": "15032",
+       "en": "Alfalfa, seeds",
+       "fr": "Luzerne, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 12.9
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2465,
+   "nrv": 14,
+   "top": [
+    {
+     "code": "31030",
+     "en": "Dark chocolate, no added sugars, with sweetener(s), bar",
+     "fr": "Chocolat noir sans sucres ajoutés, avec édulcorants, en tablette",
+     "grp_en": "chocolate and chocolate products",
+     "grp_fr": "chocolats et produits à base de chocolat",
+     "v": 22.8
+    },
+    {
+     "code": "8704",
+     "en": "Black pudding, grilled/pan-fried",
+     "fr": "Boudin noir, grillé/poêlé",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 22.8
+    },
+    {
+     "code": "32131",
+     "en": "Puffed rice, with chocolate, fortified with vitamins and minerals",
+     "fr": "Riz soufflé chocolaté, enrichi en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 19.0
+    },
+    {
+     "code": "40113",
+     "en": "Liver, pork, cooked",
+     "fr": "Foie, porc, cuit",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 17.9
+    },
+    {
+     "code": "8705",
+     "en": "Black or white pudding (blood sausage), grilled/pan-fried (average)",
+     "fr": "Boudin, grillé/poêlé (aliment moyen)",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 16.3
+    },
+    {
+     "code": "32022",
+     "en": "Cereal flakes with chocolate, with or without nuts, fortified with vitamins and minerals",
+     "fr": "Pétales de céréales au chocolat, avec ou sans fruits à coque, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 16.0
+    },
+    {
+     "code": "20901",
+     "en": "Soybean, seed, whole",
+     "fr": "Soja, graine entière",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 15.7
+    },
+    {
+     "code": "32030",
+     "en": "Cereal flakes, plain, with sugar(s), fortified with vitamins and minerals",
+     "fr": "Pétales de céréales, nature, sucrées, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 15.0
+    },
+    {
+     "code": "15010",
+     "en": "Sesame seed",
+     "fr": "Sésame, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 14.6
+    },
+    {
+     "code": "10034",
+     "en": "Cockle, cooked",
+     "fr": "Coque, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 14.0
+    },
+    {
+     "code": "15032",
+     "en": "Alfalfa, seeds",
+     "fr": "Luzerne, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 12.9
+    },
+    {
+     "code": "31041",
+     "en": "Chocolate confectionery, coated",
+     "fr": "Confiserie au chocolat dragéifiée",
+     "grp_en": "chocolate and chocolate products",
+     "grp_fr": "chocolats et produits à base de chocolat",
+     "v": 12.5
+    },
+    {
+     "code": "40406",
+     "en": "Kidney, lamb, braised",
+     "fr": "Rognon, agneau, braisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 12.4
+    },
+    {
+     "code": "11300",
+     "en": "Chocolate sauce, prepacked",
+     "fr": "Sauce au chocolat, préemballée",
+     "grp_en": "sauces",
+     "grp_fr": "sauces",
+     "v": 12.0
+    },
+    {
+     "code": "32008",
+     "en": "Breakfast cereals, rich in fibre, with chocolate, fortified with vitamins and minerals",
+     "fr": "Céréales pour petit déjeuner riches en fibres, au chocolat, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 12.0
+    },
+    {
+     "code": "32025",
+     "en": "Cereal flakes with nuts, fortified with vitamins and minerals",
+     "fr": "Pétales de céréales aux fruits à coque, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 11.4
+    },
+    {
+     "code": "31074",
+     "en": "Dark chocolate, 70% cocoa, bar",
+     "fr": "Chocolat noir 70 % de cacao environ, de dégustation, tablette",
+     "grp_en": "chocolate and chocolate products",
+     "grp_fr": "chocolats et produits à base de chocolat",
+     "v": 11.0
+    },
+    {
+     "code": "32001",
+     "en": "Breakfast cereals with chocolate, extruded, not filled, fortified with vitamins and minerals",
+     "fr": "Céréales pour petit déjeuner chocolatées, non fourrées, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 11.0
+    },
+    {
+     "code": "20501",
+     "en": "Haricot bean, dried",
+     "fr": "Haricot blanc, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 10.4
+    },
+    {
+     "code": "10027",
+     "en": "Clam, boiled/cooked in water",
+     "fr": "Clam, praire ou palourde, bouilli/cuit à l'eau",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 9.67
+    },
+    {
+     "code": "31100",
+     "en": "Cereal bar, for breakfast, with milk, with chocolate or not, fortified with vitamins and minerals",
+     "fr": "Barre céréalière pour petit déjeuner au lait, au chocolat ou non, enrichie en vitamines et minéraux",
+     "grp_en": "cereal bars",
+     "grp_fr": "barres céréalières",
+     "v": 9.65
+    },
+    {
+     "code": "10079",
+     "en": "Octopus, common, cooked",
+     "fr": "Poulpe, cuit",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 9.54
+    },
+    {
+     "code": "22003",
+     "en": "Egg yolk, powder",
+     "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 9.5
+    },
+    {
+     "code": "32005",
+     "en": "Corn flakes, plain, fortified with vitamins and minerals",
+     "fr": "Pétales de maïs nature, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 9.4
+    },
+    {
+     "code": "40701",
+     "en": "Preserved gizzards, duck, canned",
+     "fr": "Gésier, canard, confit, appertisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 9.4
+    }
+   ],
+   "unit": "mg"
+  },
+  "fibres": {
+   "condiments": [
+    {
+     "code": "11005",
+     "en": "Curry, powder",
+     "fr": "Curry, poudre",
+     "grp_en": "spices",
+     "grp_fr": "épices",
+     "v": 53.2
+    },
+    {
+     "code": "11025",
+     "en": "Cinnamon, powder",
+     "fr": "Cannelle, poudre",
+     "grp_en": "spices",
+     "grp_fr": "épices",
+     "v": 53.1
+    },
+    {
+     "code": "20994",
+     "en": "Toothed wrack or bladder wrack (Fucus serratus et vesiculosus), dried or dehydrated",
+     "fr": "Fucus vésiculeux (Fucus serratus ou Fucus vesiculosus), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 46.3
+    },
+    {
+     "code": "11062",
+     "en": "Savory, dried",
+     "fr": "Sarriette, séchée",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 45.7
+    },
+    {
+     "code": "20998",
+     "en": "North Atlantic rockweed (Ascophyllum nodosum), dried or dehydrated",
+     "fr": "Ascophylle noueux ou goémon noir (Ascophyllum nodosum), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 43.6
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "6999",
+       "en": "Meat, cooked (average)",
+       "fr": "Viande cuite (aliment moyen)",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 0.008
+      },
+      {
+       "code": "36900",
+       "en": "Poultry, cooked (average)",
+       "fr": "Volaille, cuite (aliment moyen)",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 0.003
+      },
+      {
+       "code": "6584",
+       "en": "Meat, white, cooked (average)",
+       "fr": "Viande blanche, cuite (aliment moyen)",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 0.002
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "25433",
+       "en": "Caribbean-style fish fritters, fish acras, prepacked",
+       "fr": "Accra de poisson, préemballé",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 3.0
+      },
+      {
+       "code": "8059",
+       "en": "Rillettes, crab, prepacked",
+       "fr": "Rillettes de crabe, préemballées",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 2.61
+      },
+      {
+       "code": "26028",
+       "en": "Fish nuggets, breaded croquette, prepacked",
+       "fr": "Nuggets ou croquette panée de poisson, préemballé",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 2.5
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "39248",
+       "en": "Chocolate mousse, plant-based, refrigerated",
+       "fr": "Mousse au chocolat végétale, rayon frais",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 5.1
+      },
+      {
+       "code": "39506",
+       "en": "Custard dessert, chocolate, canned",
+       "fr": "Crème dessert au chocolat, appertisée",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 3.6
+      },
+      {
+       "code": "39234",
+       "en": "Chocolate cake, with creamy chocolate heart, refrigerated",
+       "fr": "Gâteau au chocolat, coeur fondant, rayon frais",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 3.07
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20515",
+       "en": "Split pea, dried",
+       "fr": "Pois cassé, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 25.5
+      },
+      {
+       "code": "20518",
+       "en": "Broad bean, dried",
+       "fr": "Fève, sèche",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 25.0
+      },
+      {
+       "code": "20539",
+       "en": "Flageolet bean, green, dried",
+       "fr": "Haricot flageolet, vert, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 23.4
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20092",
+       "en": "Carrot, dehydrated",
+       "fr": "Carotte, déshydratée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 23.6
+      },
+      {
+       "code": "13118",
+       "en": "Peach, flesh and skin, pitted, dried",
+       "fr": "Pêche, chair et peau, sans noyau, sèche",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 14.3
+      },
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 12.3
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "15047",
+       "en": "Chia, seed, dried",
+       "fr": "Chia, graine, séchée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 34.4
+      },
+      {
+       "code": "15052",
+       "en": "Flaxseed, brown, seed",
+       "fr": "Lin, brun, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 26.9
+      },
+      {
+       "code": "15038",
+       "en": "Sesame seed, grilled, husked",
+       "fr": "Sésame, grillé, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 16.9
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 3284,
+   "nrv": null,
+   "top": [
+    {
+     "code": "15047",
+     "en": "Chia, seed, dried",
+     "fr": "Chia, graine, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 34.4
+    },
+    {
+     "code": "32116",
+     "en": "Breakfast cereals, very rich in fibre, plain, fortified with vitamins and minerals",
+     "fr": "Céréales pour petit déjeuner très riches en fibres, nature, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 33.1
+    },
+    {
+     "code": "15052",
+     "en": "Flaxseed, brown, seed",
+     "fr": "Lin, brun, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 26.9
+    },
+    {
+     "code": "20515",
+     "en": "Split pea, dried",
+     "fr": "Pois cassé, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 25.5
+    },
+    {
+     "code": "20518",
+     "en": "Broad bean, dried",
+     "fr": "Fève, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 25.0
+    },
+    {
+     "code": "20092",
+     "en": "Carrot, dehydrated",
+     "fr": "Carotte, déshydratée",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 23.6
+    },
+    {
+     "code": "20539",
+     "en": "Flageolet bean, green, dried",
+     "fr": "Haricot flageolet, vert, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 23.4
+    },
+    {
+     "code": "7359",
+     "en": "Crispbread, with bran, source or rich in fibre",
+     "fr": "Tartine croustillante au seigle, source ou riche en fibres",
+     "grp_en": "breads and similar",
+     "grp_fr": "pains et assimilés",
+     "v": 21.9
+    },
+    {
+     "code": "51510",
+     "en": "Frik (crushed immature durum wheat), raw",
+     "fr": "Frik (blé dur immature concassé), cru",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 19.3
+    },
+    {
+     "code": "20534",
+     "en": "Lupin, seed, dried",
+     "fr": "Lupin, graine, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 18.9
+    },
+    {
+     "code": "20530",
+     "en": "Beans, mung, mature, seeds, dried",
+     "fr": "Haricot mungo, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 18.3
+    },
+    {
+     "code": "9320",
+     "en": "Barley, wholegrain, raw",
+     "fr": "Orge complète, crue",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 17.3
+    },
+    {
+     "code": "15038",
+     "en": "Sesame seed, grilled, husked",
+     "fr": "Sésame, grillé, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 16.9
+    },
+    {
+     "code": "20585",
+     "en": "Lentil, green, dried",
+     "fr": "Lentille verte, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 16.4
+    },
+    {
+     "code": "20359",
+     "en": "Lentil, dried (average)",
+     "fr": "Lentille, sèche (aliment moyen)",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 16.3
+    },
+    {
+     "code": "20293",
+     "en": "Coco bean, boiled/cooked in water",
+     "fr": "Haricot coco, bouilli/cuit à l'eau",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 15.8
+    },
+    {
+     "code": "20535",
+     "en": "Lentil, pink or red, dried",
+     "fr": "Lentille corail, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 15.4
+    },
+    {
+     "code": "20501",
+     "en": "Haricot bean, dried",
+     "fr": "Haricot blanc, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 15.2
+    },
+    {
+     "code": "20525",
+     "en": "Red kidney bean, dried",
+     "fr": "Haricot rouge, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 15.2
+    },
+    {
+     "code": "9390",
+     "en": "Rye, wholegrain, raw",
+     "fr": "Seigle complet, cru",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 15.1
+    },
+    {
+     "code": "13118",
+     "en": "Peach, flesh and skin, pitted, dried",
+     "fr": "Pêche, chair et peau, sans noyau, sèche",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 14.3
+    },
+    {
+     "code": "15007",
+     "en": "Coconut, pulp, dried",
+     "fr": "Noix de coco, chair, sèche",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 13.7
+    },
+    {
+     "code": "24616",
+     "en": "Biscuit (cookie), thin, lemon or orange lavour",
+     "fr": "Biscuit sec fin ou tuile, saveur citron ou orange",
+     "grp_en": "sweet biscuits",
+     "grp_fr": "biscuits sucrés",
+     "v": 13.6
+    },
+    {
+     "code": "24031",
+     "en": "Biscuit (cookie), without chocolate, reduced fat",
+     "fr": "Biscuit sec sans chocolat, allégé en matière grasse",
+     "grp_en": "sweet biscuits",
+     "grp_fr": "biscuits sucrés",
+     "v": 13.0
+    },
+    {
+     "code": "31074",
+     "en": "Dark chocolate, 70% cocoa, bar",
+     "fr": "Chocolat noir 70 % de cacao environ, de dégustation, tablette",
+     "grp_en": "chocolate and chocolate products",
+     "grp_fr": "chocolats et produits à base de chocolat",
+     "v": 12.8
+    }
+   ],
+   "unit": "g"
+  },
+  "magnesium": {
+   "condiments": [
+    {
+     "code": "20985",
+     "en": "Sea lettuce (Ulva sp.), dried or dehydrated",
+     "fr": "Laitue de mer (Ulva sp.), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 2660.0
+    },
+    {
+     "code": "20989",
+     "en": "Lithothamnion (Lithothamnion), dried or dehydrated",
+     "fr": "Maërl ou lithothamne (Lithothamnion), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 2650.0
+    },
+    {
+     "code": "20995",
+     "en": "Gut weed (Ulva sp.), dried or dehydrated",
+     "fr": "Ao-nori (Ulva sp., ex Enteromorpha sp.), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 2260.0
+    },
+    {
+     "code": "20996",
+     "en": "Carragheen mosses (Chondrus crispus), dried or dehydrated",
+     "fr": "Lichen de mer ou pioca ou goémon rouge (Chondrus crispus), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 1110.0
+    },
+    {
+     "code": "20992",
+     "en": "Sea thong (Himanthalia elongata), dried or dehydrated",
+     "fr": "Haricot de mer (Himanthalia elongata), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 1050.0
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "36306",
+       "en": "Turkey, escalope, grilled/pan-fried",
+       "fr": "Dinde, escalope grillée/poêlée",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 44.4
+      },
+      {
+       "code": "36005",
+       "en": "Chicken, meat and skin, roasted/baked",
+       "fr": "Poulet, viande et peau rôties/cuites au four",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 39.6
+      },
+      {
+       "code": "36202",
+       "en": "Duck, meat, roasted/baked",
+       "fr": "Canard, viande rôtie/cuite au four",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 35.8
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10000",
+       "en": "Winkle, cooked",
+       "fr": "Bigorneau, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 310.0
+      },
+      {
+       "code": "10020",
+       "en": "Whelk, cooked",
+       "fr": "Bulot ou buccin, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 144.0
+      },
+      {
+       "code": "26700",
+       "en": "Anchovy, marinated, semi-preserved, drained (average)",
+       "fr": "Anchois, filets, marinés, semi-conserve, égouttés (aliment moyen)",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 120.0
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "1028",
+       "en": "Plant-based cheese, with cashew, prepacked",
+       "fr": "Spécialité végétale type fromage, à la noix de cajou, préemballée",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 120.0
+      },
+      {
+       "code": "19054",
+       "en": "Milk powder, skimmed",
+       "fr": "Lait en poudre, écrémé",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 114.0
+      },
+      {
+       "code": "22004",
+       "en": "Egg white, powder",
+       "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 88.0
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20530",
+       "en": "Beans, mung, mature, seeds, dried",
+       "fr": "Haricot mungo, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 267.0
+      },
+      {
+       "code": "9345",
+       "en": "Amaranth, raw",
+       "fr": "Amarante, crue",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 248.0
+      },
+      {
+       "code": "9380",
+       "en": "Buckwheat, wholegrain, raw",
+       "fr": "Sarrasin complet, cru",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 231.0
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 194.0
+      },
+      {
+       "code": "20211",
+       "en": "Shiitake mushroom, dried",
+       "fr": "Champignon, lentin comestible ou shiitaké, séché",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 132.0
+      },
+      {
+       "code": "20092",
+       "en": "Carrot, dehydrated",
+       "fr": "Carotte, déshydratée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 118.0
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "15063",
+       "en": "Hemp, seed, hulled",
+       "fr": "Chanvre ou chènevis, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 700.0
+      },
+      {
+       "code": "15064",
+       "en": "Pumpkin and squash, seed, dried",
+       "fr": "Courge, graine, séchée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 592.0
+      },
+      {
+       "code": "15008",
+       "en": "Brazil nut, no added salt",
+       "fr": "Noix du Brésil ou noix d'Amazonie, sans sel ajouté",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 376.0
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2566,
+   "nrv": 375,
+   "top": [
+    {
+     "code": "15063",
+     "en": "Hemp, seed, hulled",
+     "fr": "Chanvre ou chènevis, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 700.0
+    },
+    {
+     "code": "15064",
+     "en": "Pumpkin and squash, seed, dried",
+     "fr": "Courge, graine, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 592.0
+    },
+    {
+     "code": "15008",
+     "en": "Brazil nut, no added salt",
+     "fr": "Noix du Brésil ou noix d'Amazonie, sans sel ajouté",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 376.0
+    },
+    {
+     "code": "15011",
+     "en": "Sunflower, seed",
+     "fr": "Tournesol, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 364.0
+    },
+    {
+     "code": "15038",
+     "en": "Sesame seed, grilled, husked",
+     "fr": "Sésame, grillé, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 346.0
+    },
+    {
+     "code": "15034",
+     "en": "Flaxseed, seed",
+     "fr": "Lin, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 336.0
+    },
+    {
+     "code": "15047",
+     "en": "Chia, seed, dried",
+     "fr": "Chia, graine, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 335.0
+    },
+    {
+     "code": "10000",
+     "en": "Winkle, cooked",
+     "fr": "Bigorneau, cuit",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 310.0
+    },
+    {
+     "code": "24037",
+     "en": "Biscuit (cookie) filled with fruit paste or fruit puree",
+     "fr": "Biscuit sec fourré à la pâte ou purée de fruits (ex : figue)",
+     "grp_en": "sweet biscuits",
+     "grp_fr": "biscuits sucrés",
+     "v": 294.0
+    },
+    {
+     "code": "15055",
+     "en": "Cashew nut, dry-grilled, no added salt",
+     "fr": "Noix de cajou, grillée à sec, sans sel ajouté",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 280.0
+    },
+    {
+     "code": "20901",
+     "en": "Soybean, seed, whole",
+     "fr": "Soja, graine entière",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 280.0
+    },
+    {
+     "code": "15042",
+     "en": "Almond, grilled, salted",
+     "fr": "Amande, grillée, salée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 279.0
+    },
+    {
+     "code": "32116",
+     "en": "Breakfast cereals, very rich in fibre, plain, fortified with vitamins and minerals",
+     "fr": "Céréales pour petit déjeuner très riches en fibres, nature, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 274.0
+    },
+    {
+     "code": "20530",
+     "en": "Beans, mung, mature, seeds, dried",
+     "fr": "Haricot mungo, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 267.0
+    },
+    {
+     "code": "9345",
+     "en": "Amaranth, raw",
+     "fr": "Amarante, crue",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 248.0
+    },
+    {
+     "code": "9380",
+     "en": "Buckwheat, wholegrain, raw",
+     "fr": "Sarrasin complet, cru",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 231.0
+    },
+    {
+     "code": "15025",
+     "en": "Pine nut",
+     "fr": "Pignon de pin",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 227.0
+    },
+    {
+     "code": "31074",
+     "en": "Dark chocolate, 70% cocoa, bar",
+     "fr": "Chocolat noir 70 % de cacao environ, de dégustation, tablette",
+     "grp_en": "chocolate and chocolate products",
+     "grp_fr": "chocolats et produits à base de chocolat",
+     "v": 200.0
+    },
+    {
+     "code": "20534",
+     "en": "Lupin, seed, dried",
+     "fr": "Lupin, graine, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 198.0
+    },
+    {
+     "code": "9340",
+     "en": "Quinoa, raw",
+     "fr": "Quinoa, cru",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 197.0
+    },
+    {
+     "code": "24003",
+     "en": "Biscuit (cookie), vitamin and mineral content guaranteed",
+     "fr": "Biscuit sec à teneur garantie en vitamines et minéraux",
+     "grp_en": "sweet biscuits",
+     "grp_fr": "biscuits sucrés",
+     "v": 195.0
+    },
+    {
+     "code": "15065",
+     "en": "Seeds and peanuts, dried, salted (average)",
+     "fr": "Fruits à coques et cacahuète, salé (aliment moyen)",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 194.0
+    },
+    {
+     "code": "20189",
+     "en": "Tomato, dried",
+     "fr": "Tomate, séchée",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 194.0
+    },
+    {
+     "code": "20518",
+     "en": "Broad bean, dried",
+     "fr": "Fève, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 192.0
+    },
+    {
+     "code": "15001",
+     "en": "Peanut, no added salt",
+     "fr": "Cacahuète, sans sel ajouté",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 190.0
+    }
+   ],
+   "unit": "mg"
+  },
+  "omega-3": {
+   "ala": [
+    {
+     "code": "17180",
+     "en": "Linseed oil",
+     "fr": "Huile de lin",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 53.4
+    },
+    {
+     "code": "17800",
+     "en": "Camelina oil",
+     "fr": "Huile de cameline",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 36.4
+    },
+    {
+     "code": "15052",
+     "en": "Flaxseed, brown, seed",
+     "fr": "Lin, brun, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 21.0
+    },
+    {
+     "code": "15047",
+     "en": "Chia, seed, dried",
+     "fr": "Chia, graine, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 17.8
+    },
+    {
+     "code": "17850",
+     "en": "Hemp oil",
+     "fr": "Huile de chanvre",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 16.6
+    },
+    {
+     "code": "17220",
+     "en": "Walnut oil",
+     "fr": "Huile de noix",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 11.9
+    },
+    {
+     "code": "15063",
+     "en": "Hemp, seed, hulled",
+     "fr": "Chanvre ou chènevis, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 8.68
+    },
+    {
+     "code": "16593",
+     "en": "Spreadable fat > 62% fat, half-salted",
+     "fr": "Matière grasse tartinable à teneur en MG > 62%, demi-sel, standard",
+     "grp_en": "margarines",
+     "grp_fr": "margarines",
+     "v": 8.3
+    },
+    {
+     "code": "17130",
+     "en": "Rapeseed oil",
+     "fr": "Huile de colza",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 7.83
+    },
+    {
+     "code": "15005",
+     "en": "Walnut, kernel, dried",
+     "fr": "Noix, cerneau, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 7.5
+    },
+    {
+     "code": "17420",
+     "en": "Soy oil",
+     "fr": "Huile de soja",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 6.79
+    },
+    {
+     "code": "11054",
+     "en": "Mayonnaise (70% fat min.), prepacked",
+     "fr": "Mayonnaise (70% MG min.), préemballée",
+     "grp_en": "sauces",
+     "grp_fr": "sauces",
+     "v": 6.0
+    },
+    {
+     "code": "17110",
+     "en": "Wheat germ oil",
+     "fr": "Huile de germe de blé",
+     "grp_en": "vegetable oils",
+     "grp_fr": "huiles et graisses végétales",
+     "v": 5.91
+    },
+    {
+     "code": "11051",
+     "en": "Tartare sauce, prepacked",
+     "fr": "Sauce tartare, préemballée",
+     "grp_en": "sauces",
+     "grp_fr": "sauces",
+     "v": 4.52
+    },
+    {
+     "code": "8293",
+     "en": "Taramasalata, with cod eggs, prepacked",
+     "fr": "Tarama, aux oeufs de cabillaud, préemballé",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 4.32
+    }
+   ],
+   "condiments": [],
+   "families": [],
+   "n_known": 1451,
+   "nrv": null,
+   "top": [
+    {
+     "code": "26142",
+     "en": "Cod liver, canned, drained",
+     "fr": "Foie de morue, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 7.14
+    },
+    {
+     "code": "26096",
+     "en": "Mackerel, fillet, in mustard sauce, canned, drained",
+     "fr": "Maquereau, filet sauce moutarde, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 4.5
+    },
+    {
+     "code": "26232",
+     "en": "Atlantic herring, smoked, in oil",
+     "fr": "Hareng fumé, à l'huile",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 4.21
+    },
+    {
+     "code": "26275",
+     "en": "Salmon roe, semi-preserved",
+     "fr": "Oeufs de saumon du Pacifique, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 3.5
+    },
+    {
+     "code": "26027",
+     "en": "Pilchard, in tomato sauce, canned, drained",
+     "fr": "Pilchard, sauce tomate, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 3.14
+    },
+    {
+     "code": "26005",
+     "en": "Caviar, semi-preserved",
+     "fr": "Caviar, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 3.13
+    },
+    {
+     "code": "26035",
+     "en": "European pilchard or sardine, in tomato sauce, canned, drained",
+     "fr": "Sardine, sauce tomate, appertisée, égouttée",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 2.77
+    },
+    {
+     "code": "26151",
+     "en": "Trout roe, canned",
+     "fr": "Oeufs de truite, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 2.57
+    },
+    {
+     "code": "26014",
+     "en": "Atlantic herring, grilled/pan-fried without added fat",
+     "fr": "Hareng, grillé/poêlé",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 2.28
+    },
+    {
+     "code": "26229",
+     "en": "Salmon, grilled/pan-fried without added fat",
+     "fr": "Saumon, grillé/poêlé",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 2.28
+    },
+    {
+     "code": "8081",
+     "en": "Rillettes, salmon, prepacked",
+     "fr": "Rillettes de saumon, préemballées",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.69
+    },
+    {
+     "code": "26093",
+     "en": "Swordfish, roasted/baked",
+     "fr": "Espadon, rôti/cuit au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 1.51
+    },
+    {
+     "code": "26004",
+     "en": "Lump roe, semi-preserved",
+     "fr": "Oeufs de lompe ou oeufs de lump, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.48
+    },
+    {
+     "code": "26037",
+     "en": "Salmon, smoked",
+     "fr": "Saumon fumé",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.42
+    },
+    {
+     "code": "26010",
+     "en": "Atlantic herring, marinated, or rollmops, prepacked",
+     "fr": "Hareng mariné ou rollmops, préemballé",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.23
+    },
+    {
+     "code": "26056",
+     "en": "Cod roe, smoked, semi-preserved",
+     "fr": "Oeufs de cabillaud, fumés, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.21
+    },
+    {
+     "code": "8080",
+     "en": "Rillette, fish, prepacked",
+     "fr": "Rillettes de poisson, préemballées",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.08
+    },
+    {
+     "code": "26039",
+     "en": "Tuna, canned in brine, drained",
+     "fr": "Thon, au naturel, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1.07
+    },
+    {
+     "code": "27029",
+     "en": "Trout, smoked, farmed",
+     "fr": "Truite, élevage, fumée",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 0.99
+    },
+    {
+     "code": "25537",
+     "en": "Salmon carpaccio, with marinade, home-made",
+     "fr": "Carpaccio de saumon avec marinade, fait maison",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 0.97
+    }
+   ],
+   "unit": "g"
+  },
+  "potassium": {
+   "condiments": [
+    {
+     "code": "20990",
+     "en": "Kombu or Japanese kelp (Saccharina japonica), dried or dehydrated",
+     "fr": "Kombu ou kombu japonais (Saccharina japonica), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 10400.0
+    },
+    {
+     "code": "20988",
+     "en": "Dulse (Palmaria palmata), dried or dehydrated",
+     "fr": "Dulse (Palmaria palmata), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 7020.0
+    },
+    {
+     "code": "20992",
+     "en": "Sea thong (Himanthalia elongata), dried or dehydrated",
+     "fr": "Haricot de mer (Himanthalia elongata), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 6770.0
+    },
+    {
+     "code": "20986",
+     "en": "Sea belt (Saccharina latissima), dried or dehydrated",
+     "fr": "Kombu royal (Saccharina latissima), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 5910.0
+    },
+    {
+     "code": "20993",
+     "en": "Gracilaria seaweeds (Gracilaria sp.), dried or dehydrated",
+     "fr": "Gracilaire ou ogonori (Gracilaria verrucosa), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 4980.0
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "28461",
+       "en": "Pork, ham escalope, cooked",
+       "fr": "Porc, escalope de jambon cuite",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 512.0
+      },
+      {
+       "code": "36302",
+       "en": "Turkey, meat, roasted/baked",
+       "fr": "Dinde, viande rôtie/cuite au four",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 483.0
+      },
+      {
+       "code": "40107",
+       "en": "Liver, calf, cooked",
+       "fr": "Foie, veau, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 450.0
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "26098",
+       "en": "Cod, salted, dried",
+       "fr": "Morue, salée, sèche",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 1300.0
+      },
+      {
+       "code": "10037",
+       "en": "Squid, boiled/cooked in water",
+       "fr": "Calmar ou calamar ou encornet, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 637.0
+      },
+      {
+       "code": "10079",
+       "en": "Octopus, common, cooked",
+       "fr": "Poulpe, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 630.0
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "19054",
+       "en": "Milk powder, skimmed",
+       "fr": "Lait en poudre, écrémé",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 1750.0
+      },
+      {
+       "code": "22004",
+       "en": "Egg white, powder",
+       "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 1130.0
+      },
+      {
+       "code": "22510",
+       "en": "Spanish-style tortilla with onions (omelette with potatoes and onions), prepacked",
+       "fr": "Tortilla espagnole aux oignons (omelette aux pommes de terre et oignons), préemballée",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 450.0
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20501",
+       "en": "Haricot bean, dried",
+       "fr": "Haricot blanc, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 1800.0
+      },
+      {
+       "code": "4016",
+       "en": "Potato flakes, dehydrated, with milk or cream",
+       "fr": "Flocons de pomme de terre, au lait ou à la crème, déshydratés",
+       "grp_en": "potatoes and other tubers",
+       "grp_fr": "pommes de terre et autres tubercules",
+       "v": 1650.0
+      },
+      {
+       "code": "20525",
+       "en": "Red kidney bean, dried",
+       "fr": "Haricot rouge, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 1360.0
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 3430.0
+      },
+      {
+       "code": "20802",
+       "en": "Pumpkin (phoenix variety), crisps (Martinique)",
+       "fr": "Chips de chair de giraumon (variété phoenix) (Martinique)",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 2580.0
+      },
+      {
+       "code": "20092",
+       "en": "Carrot, dehydrated",
+       "fr": "Carotte, déshydratée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 2540.0
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "20901",
+       "en": "Soybean, seed, whole",
+       "fr": "Soja, graine entière",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 1800.0
+      },
+      {
+       "code": "15063",
+       "en": "Hemp, seed, hulled",
+       "fr": "Chanvre ou chènevis, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 1200.0
+      },
+      {
+       "code": "15044",
+       "en": "Pistachio nut, grilled, no added salt",
+       "fr": "Pistache, grillée, sans sel ajouté",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 1010.0
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2604,
+   "nrv": 2000,
+   "top": [
+    {
+     "code": "20189",
+     "en": "Tomato, dried",
+     "fr": "Tomate, séchée",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 3430.0
+    },
+    {
+     "code": "20802",
+     "en": "Pumpkin (phoenix variety), crisps (Martinique)",
+     "fr": "Chips de chair de giraumon (variété phoenix) (Martinique)",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 2580.0
+    },
+    {
+     "code": "20092",
+     "en": "Carrot, dehydrated",
+     "fr": "Carotte, déshydratée",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 2540.0
+    },
+    {
+     "code": "20501",
+     "en": "Haricot bean, dried",
+     "fr": "Haricot blanc, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 1800.0
+    },
+    {
+     "code": "20901",
+     "en": "Soybean, seed, whole",
+     "fr": "Soja, graine entière",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 1800.0
+    },
+    {
+     "code": "19054",
+     "en": "Milk powder, skimmed",
+     "fr": "Lait en poudre, écrémé",
+     "grp_en": "milk",
+     "grp_fr": "laits",
+     "v": 1750.0
+    },
+    {
+     "code": "4016",
+     "en": "Potato flakes, dehydrated, with milk or cream",
+     "fr": "Flocons de pomme de terre, au lait ou à la crème, déshydratés",
+     "grp_en": "potatoes and other tubers",
+     "grp_fr": "pommes de terre et autres tubercules",
+     "v": 1650.0
+    },
+    {
+     "code": "20180",
+     "en": "Onion, dried",
+     "fr": "Oignon, séché",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 1620.0
+    },
+    {
+     "code": "13183",
+     "en": "Goji berry, dried",
+     "fr": "Baie de goji, séchée",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 1600.0
+    },
+    {
+     "code": "20211",
+     "en": "Shiitake mushroom, dried",
+     "fr": "Champignon, lentin comestible ou shiitaké, séché",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 1530.0
+    },
+    {
+     "code": "13089",
+     "en": "Banana, flesh without skin, dried",
+     "fr": "Banane, chair sans peau, sèche",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 1490.0
+    },
+    {
+     "code": "13001",
+     "en": "Apricot, pitted, dried",
+     "fr": "Abricot, dénoyauté, sec",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 1400.0
+    },
+    {
+     "code": "20525",
+     "en": "Red kidney bean, dried",
+     "fr": "Haricot rouge, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 1360.0
+    },
+    {
+     "code": "26098",
+     "en": "Cod, salted, dried",
+     "fr": "Morue, salée, sèche",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 1300.0
+    },
+    {
+     "code": "4004",
+     "en": "Potato, crisps, plain or flavoured, standard",
+     "fr": "Chips de pommes de terre nature ou aromatisées",
+     "grp_en": "potatoes and other tubers",
+     "grp_fr": "pommes de terre et autres tubercules",
+     "v": 1300.0
+    },
+    {
+     "code": "15063",
+     "en": "Hemp, seed, hulled",
+     "fr": "Chanvre ou chènevis, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 1200.0
+    },
+    {
+     "code": "22004",
+     "en": "Egg white, powder",
+     "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 1130.0
+    },
+    {
+     "code": "20518",
+     "en": "Broad bean, dried",
+     "fr": "Fève, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 1060.0
+    },
+    {
+     "code": "15044",
+     "en": "Pistachio nut, grilled, no added salt",
+     "fr": "Pistache, grillée, sans sel ajouté",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 1010.0
+    },
+    {
+     "code": "20534",
+     "en": "Lupin, seed, dried",
+     "fr": "Lupin, graine, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 1010.0
+    },
+    {
+     "code": "20530",
+     "en": "Beans, mung, mature, seeds, dried",
+     "fr": "Haricot mungo, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 983.0
+    },
+    {
+     "code": "13046",
+     "en": "Raisin",
+     "fr": "Raisin sec",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 960.0
+    },
+    {
+     "code": "9080",
+     "en": "Wheat, wholewheat, pre-cooked, raw",
+     "fr": "Blé dur complet, précuit, à cuire",
+     "grp_en": "pasta, rice and grains",
+     "grp_fr": "pâtes, riz et céréales",
+     "v": 950.0
+    },
+    {
+     "code": "13118",
+     "en": "Peach, flesh and skin, pitted, dried",
+     "fr": "Pêche, chair et peau, sans noyau, sèche",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 945.0
+    },
+    {
+     "code": "20585",
+     "en": "Lentil, green, dried",
+     "fr": "Lentille verte, sèche",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 940.0
+    }
+   ],
+   "unit": "mg"
+  },
+  "proteines": {
+   "condiments": [
+    {
+     "code": "11086",
+     "en": "Spirulina (spirulina sp.), dried or dehydrated",
+     "fr": "Spiruline (Spirulina sp.), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 60.4
+    },
+    {
+     "code": "20997",
+     "en": "Chlorella, dried or dehydrated",
+     "fr": "Chlorelle (chlorella), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 48.5
+    },
+    {
+     "code": "20987",
+     "en": "Laver (Porphyra sp.), dried or dehydrated",
+     "fr": "Nori (Porphyra sp., Pyropia), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 30.2
+    },
+    {
+     "code": "11024",
+     "en": "Parsley, dried",
+     "fr": "Persil, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 29.0
+    },
+    {
+     "code": "11077",
+     "en": "Fenugreek, seed",
+     "fr": "Fenugrec, graine",
+     "grp_en": "spices",
+     "grp_fr": "épices",
+     "v": 27.1
+    }
+   ],
+   "density": [
+    {
+     "code": "26234",
+     "en": "Ling, cooked",
+     "fr": "Julienne ou lingue, cuite",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 25.0
+    },
+    {
+     "code": "26248",
+     "en": "Common sole, grilled/pan-fried without added fat",
+     "fr": "Sole, grillée/poêlée",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 25.0
+    },
+    {
+     "code": "26192",
+     "en": "Pollock, cooked",
+     "fr": "Lieu jaune ou colin, cuit",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 24.949
+    },
+    {
+     "code": "26033",
+     "en": "Nursehound or lesser spotted dogfish, cooked",
+     "fr": "Roussette ou petite roussette ou saumonette, cuite",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 24.423
+    },
+    {
+     "code": "26031",
+     "en": "Ray, roasted/baked",
+     "fr": "Raie, rôtie/cuite au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.884
+    },
+    {
+     "code": "26023",
+     "en": "Cod, roasted/baked",
+     "fr": "Cabillaud, rôti/cuit au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.573
+    },
+    {
+     "code": "26126",
+     "en": "Haddock, grilled/pan-fried without added fat",
+     "fr": "Églefin, grillé/poêlé",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.557
+    },
+    {
+     "code": "26081",
+     "en": "Anglerfish, grilled/pan-fried without added fat",
+     "fr": "Lotte ou baudroie, grillée/poêlée",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.422
+    },
+    {
+     "code": "26022",
+     "en": "Whiting, steamed",
+     "fr": "Merlan, cuit à la vapeur",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.398
+    },
+    {
+     "code": "26090",
+     "en": "Haddock, smoked",
+     "fr": "Haddock (fumé) ou églefin fumé",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 23.299
+    },
+    {
+     "code": "26015",
+     "en": "Saithe, cooked",
+     "fr": "Lieu noir, cuit",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.17
+    },
+    {
+     "code": "27002",
+     "en": "Northern pike, roasted/baked",
+     "fr": "Brochet, rôti/cuit au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.1
+    },
+    {
+     "code": "26024",
+     "en": "Cod, salted, boiled/cooked in water",
+     "fr": "Morue, salée, bouillie/cuite à l'eau",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 23.009
+    },
+    {
+     "code": "36306",
+     "en": "Turkey, escalope, grilled/pan-fried",
+     "fr": "Dinde, escalope grillée/poêlée",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 22.984
+    },
+    {
+     "code": "34501",
+     "en": "Frog, leg, grilled/pan-fried without added fat",
+     "fr": "Grenouille, cuisse, grillée/poêlée",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 22.884
+    },
+    {
+     "code": "22004",
+     "en": "Egg white, powder",
+     "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 22.781
+    },
+    {
+     "code": "10064",
+     "en": "Pinkspotted shrimp, boiled",
+     "fr": "Crevette tropicale (rose), cuite (Penaeus brasiliensis)",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 22.735
+    },
+    {
+     "code": "10061",
+     "en": "White shrimp or tropical shrimp (rose), boiled",
+     "fr": "Crevette blanche ou crevette tropicale (rose), élevage, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 22.667
+    },
+    {
+     "code": "10100",
+     "en": "Shrimp or prawn, wild, boiled",
+     "fr": "Crevette sauvage, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 22.61
+    },
+    {
+     "code": "10089",
+     "en": "Grey shrimp, peeled, boiled, refrigerated, prepacked",
+     "fr": "Crevettes grises, décortiquées, cuites, réfrigérées, préemballées",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 22.574
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "6141",
+       "en": "Beef, cheek, braised or boiled",
+       "fr": "Boeuf, joue, braisée ou bouillie/cuite à l'eau",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 39.2
+      },
+      {
+       "code": "6581",
+       "en": "Veal, knuckle or shank, braised or boiled",
+       "fr": "Veau, jarret braisé ou bouilli",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 37.4
+      },
+      {
+       "code": "28103",
+       "en": "Pork, round steak, cooked",
+       "fr": "Porc, rouelle de jambon cuite",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 36.9
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "26098",
+       "en": "Cod, salted, dried",
+       "fr": "Morue, salée, sèche",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 47.6
+      },
+      {
+       "code": "10037",
+       "en": "Squid, boiled/cooked in water",
+       "fr": "Calmar ou calamar ou encornet, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 32.5
+      },
+      {
+       "code": "26179",
+       "en": "Albacore, in olive oil, canned, drained",
+       "fr": "Thon germon ou thon blanc, à l'huile d'olive, appertisé, égoutté",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 31.3
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "22004",
+       "en": "Egg white, powder",
+       "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 81.1
+      },
+      {
+       "code": "19054",
+       "en": "Milk powder, skimmed",
+       "fr": "Lait en poudre, écrémé",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 35.3
+      },
+      {
+       "code": "12738",
+       "en": "Mimolette cheese, old, from cow's milk (cured 12 months minimum)",
+       "fr": "Mimolette vieille (12 mois d'affinage minimum)",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 34.0
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20534",
+       "en": "Lupin, seed, dried",
+       "fr": "Lupin, graine, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 36.2
+      },
+      {
+       "code": "20535",
+       "en": "Lentil, pink or red, dried",
+       "fr": "Lentille corail, sèche",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 27.7
+      },
+      {
+       "code": "20518",
+       "en": "Broad bean, dried",
+       "fr": "Fève, sèche",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 26.1
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20833",
+       "en": "Pigeon pea, whole, steamed (Martinique)",
+       "fr": "Pois d'Angole, entier, cuit à la vapeur (Martinique)",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 16.3
+      },
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 14.1
+      },
+      {
+       "code": "13183",
+       "en": "Goji berry, dried",
+       "fr": "Baie de goji, séchée",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 12.1
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "20901",
+       "en": "Soybean, seed, whole",
+       "fr": "Soja, graine entière",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 36.5
+      },
+      {
+       "code": "15063",
+       "en": "Hemp, seed, hulled",
+       "fr": "Chanvre ou chènevis, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 30.8
+      },
+      {
+       "code": "15032",
+       "en": "Alfalfa, seeds",
+       "fr": "Luzerne, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 29.7
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 3455,
+   "nrv": null,
+   "top": [
+    {
+     "code": "22004",
+     "en": "Egg white, powder",
+     "fr": "Oeuf, blanc (blanc d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 81.1
+    },
+    {
+     "code": "26098",
+     "en": "Cod, salted, dried",
+     "fr": "Morue, salée, sèche",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 47.6
+    },
+    {
+     "code": "6141",
+     "en": "Beef, cheek, braised or boiled",
+     "fr": "Boeuf, joue, braisée ou bouillie/cuite à l'eau",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 39.2
+    },
+    {
+     "code": "28860",
+     "en": "Viande des Grisons or dried beef meat",
+     "fr": "Viande des Grisons",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 38.9
+    },
+    {
+     "code": "6581",
+     "en": "Veal, knuckle or shank, braised or boiled",
+     "fr": "Veau, jarret braisé ou bouilli",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 37.4
+    },
+    {
+     "code": "28103",
+     "en": "Pork, round steak, cooked",
+     "fr": "Porc, rouelle de jambon cuite",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 36.9
+    },
+    {
+     "code": "20901",
+     "en": "Soybean, seed, whole",
+     "fr": "Soja, graine entière",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 36.5
+    },
+    {
+     "code": "20534",
+     "en": "Lupin, seed, dried",
+     "fr": "Lupin, graine, sec",
+     "grp_en": "legumes",
+     "grp_fr": "légumineuses",
+     "v": 36.2
+    },
+    {
+     "code": "19054",
+     "en": "Milk powder, skimmed",
+     "fr": "Lait en poudre, écrémé",
+     "grp_en": "milk",
+     "grp_fr": "laits",
+     "v": 35.3
+    },
+    {
+     "code": "21519",
+     "en": "Lamb, leg, braised",
+     "fr": "Agneau, gigot braisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 35.2
+    },
+    {
+     "code": "30314",
+     "en": "Dry sausage, reduced fat",
+     "fr": "Saucisson sec allégé en matière grasse",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 34.6
+    },
+    {
+     "code": "12738",
+     "en": "Mimolette cheese, old, from cow's milk (cured 12 months minimum)",
+     "fr": "Mimolette vieille (12 mois d'affinage minimum)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 34.0
+    },
+    {
+     "code": "12123",
+     "en": "Grana Padano cheese, from cow's milk",
+     "fr": "Grana Padano",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 33.9
+    },
+    {
+     "code": "12742",
+     "en": "Mimolette cheese, extra old, from cow's milk (cured 18 months minimum)",
+     "fr": "Mimolette extra-vieille (18 mois d'affinage minimum)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 33.7
+    },
+    {
+     "code": "34004",
+     "en": "Rabbit, wild, meat, cooked",
+     "fr": "Lapin de garenne, viande cuite",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 33.0
+    },
+    {
+     "code": "28503",
+     "en": "Bresaola",
+     "fr": "Bresaola",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 32.8
+    },
+    {
+     "code": "14000",
+     "en": "Venison, roebuck, roasted/baked",
+     "fr": "Chevreuil, viande rôtie/cuite au four",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 32.6
+    },
+    {
+     "code": "10037",
+     "en": "Squid, boiled/cooked in water",
+     "fr": "Calmar ou calamar ou encornet, bouilli/cuit à l'eau",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 32.5
+    },
+    {
+     "code": "36402",
+     "en": "Pheasant, meat, roasted/baked",
+     "fr": "Faisan, viande rôtie/cuite au four",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 32.4
+    },
+    {
+     "code": "40701",
+     "en": "Preserved gizzards, duck, canned",
+     "fr": "Gésier, canard, confit, appertisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 32.4
+    },
+    {
+     "code": "12761",
+     "en": "Asiago cheese, from cow's milk",
+     "fr": "Asiago",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 32.1
+    },
+    {
+     "code": "6101",
+     "en": "Beef, braised",
+     "fr": "Boeuf braisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 32.1
+    },
+    {
+     "code": "12775",
+     "en": "Cheese mix, grated, from cow's milk",
+     "fr": "Mélange de fromages râpés (ex : spécial gratins, spécial pâtes, spécial pizzas…)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 32.0
+    },
+    {
+     "code": "8109",
+     "en": "Duck confit (conserved in rendered fat), meat (leg) without skin, canned, reheated",
+     "fr": "Confit de canard, viande (cuisse), sans peau, appertisé, réchauffé",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 32.0
+    },
+    {
+     "code": "26179",
+     "en": "Albacore, in olive oil, canned, drained",
+     "fr": "Thon germon ou thon blanc, à l'huile d'olive, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 31.3
+    }
+   ],
+   "unit": "g"
+  },
+  "vitamine-b12": {
+   "condiments": [
+    {
+     "code": "13147",
+     "en": "Olive, green, stuffed (anchovy, sweet peppers, etc…)",
+     "fr": "Olives vertes, fourrées ou farcies (anchois, poivrons, etc.)",
+     "grp_en": "condiments",
+     "grp_fr": "condiments",
+     "v": 0.08
+    },
+    {
+     "code": "20916",
+     "en": "Miso",
+     "fr": "Miso",
+     "grp_en": "condiments",
+     "grp_fr": "condiments",
+     "v": 0.08
+    },
+    {
+     "code": "13184",
+     "en": "Olive (average)",
+     "fr": "Olive (aliment moyen)",
+     "grp_en": "condiments",
+     "grp_fr": "condiments",
+     "v": 0.011
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "40105",
+       "en": "Liver, heifer, cooked",
+       "fr": "Foie, génisse, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 83.1
+      },
+      {
+       "code": "40406",
+       "en": "Kidney, lamb, braised",
+       "fr": "Rognon, agneau, braisé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 78.9
+      },
+      {
+       "code": "40601",
+       "en": "Offal, cooked (average)",
+       "fr": "Abat, cuit (aliment moyen)",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 22.7
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10000",
+       "en": "Winkle, cooked",
+       "fr": "Bigorneau, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 60.7
+      },
+      {
+       "code": "26275",
+       "en": "Salmon roe, semi-preserved",
+       "fr": "Oeufs de saumon du Pacifique, semi-conserve",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 48.6
+      },
+      {
+       "code": "10027",
+       "en": "Clam, boiled/cooked in water",
+       "fr": "Clam, praire ou palourde, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 39.5
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "22003",
+       "en": "Egg yolk, powder",
+       "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 6.02
+      },
+      {
+       "code": "22060",
+       "en": "Duck egg, raw",
+       "fr": "Oeuf de cane, cru",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 5.4
+      },
+      {
+       "code": "22070",
+       "en": "Goose egg, raw",
+       "fr": "Oeuf d'oie, cru",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 5.1
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "4021",
+       "en": "Dauphine potato, frozen, cooked",
+       "fr": "Pomme de terre dauphine, surgelée, cuite",
+       "grp_en": "potatoes and other tubers",
+       "grp_fr": "pommes de terre et autres tubercules",
+       "v": 0.39
+      },
+      {
+       "code": "9821",
+       "en": "Pasta, dry, with egg, raw",
+       "fr": "Pâtes sèches, aux oeufs, crues",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 0.29
+      },
+      {
+       "code": "23805",
+       "en": "Blinis",
+       "fr": "Blinis",
+       "grp_en": "breads and similar",
+       "grp_fr": "pains et assimilés",
+       "v": 0.28
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20258",
+       "en": "Vegetables (3-4 types), mashed",
+       "fr": "Légumes (3-4 sortes en mélange), purée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 0.019
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2038,
+   "nrv": 2.5,
+   "top": [
+    {
+     "code": "40105",
+     "en": "Liver, heifer, cooked",
+     "fr": "Foie, génisse, cuit",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 83.1
+    },
+    {
+     "code": "40406",
+     "en": "Kidney, lamb, braised",
+     "fr": "Rognon, agneau, braisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 78.9
+    },
+    {
+     "code": "10000",
+     "en": "Winkle, cooked",
+     "fr": "Bigorneau, cuit",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 60.7
+    },
+    {
+     "code": "26275",
+     "en": "Salmon roe, semi-preserved",
+     "fr": "Oeufs de saumon du Pacifique, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 48.6
+    },
+    {
+     "code": "10027",
+     "en": "Clam, boiled/cooked in water",
+     "fr": "Clam, praire ou palourde, bouilli/cuit à l'eau",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 39.5
+    },
+    {
+     "code": "10034",
+     "en": "Cockle, cooked",
+     "fr": "Coque, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 38.0
+    },
+    {
+     "code": "10079",
+     "en": "Octopus, common, cooked",
+     "fr": "Poulpe, cuit",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 36.0
+    },
+    {
+     "code": "40601",
+     "en": "Offal, cooked (average)",
+     "fr": "Abat, cuit (aliment moyen)",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 22.7
+    },
+    {
+     "code": "26040",
+     "en": "European pilchard or sardine, in olive oil, canned, drained",
+     "fr": "Sardine, à l'huile d'olive, appertisée, égouttée",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 20.0
+    },
+    {
+     "code": "10083",
+     "en": "Mussels, filled (fat, parsley and garlic…), prepacked, raw",
+     "fr": "Moules farcies (matière grasse, persillade…), préemballées, crues",
+     "grp_en": "dishes",
+     "grp_fr": "plats composés",
+     "v": 19.3
+    },
+    {
+     "code": "26019",
+     "en": "Mackerel, roasted/baked",
+     "fr": "Maquereau, rôti/cuit au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 19.0
+    },
+    {
+     "code": "10013",
+     "en": "Mussel, boiled/cooked in water",
+     "fr": "Moule, bouillie/cuite à l'eau",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 17.6
+    },
+    {
+     "code": "26692",
+     "en": "Anchovy, fillets, marinated in oriental style (oil,chili pepper…), semi-preserved, drained",
+     "fr": "Anchois, filets, marinés à l'orientale (huile, piments…), semi-conserve, égouttés",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 15.3
+    },
+    {
+     "code": "8321",
+     "en": "Foie gras, duck, whole, cooked",
+     "fr": "Foie gras, canard, entier, cuit",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 15.0
+    },
+    {
+     "code": "26142",
+     "en": "Cod liver, canned, drained",
+     "fr": "Foie de morue, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 14.4
+    },
+    {
+     "code": "26014",
+     "en": "Atlantic herring, grilled/pan-fried without added fat",
+     "fr": "Hareng, grillé/poêlé",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 14.1
+    },
+    {
+     "code": "40057",
+     "en": "Heart, turkey, cooked",
+     "fr": "Coeur, dinde, cuit",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 13.9
+    },
+    {
+     "code": "8232",
+     "en": "Duck terrine",
+     "fr": "Terrine de canard",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 13.6
+    },
+    {
+     "code": "10005",
+     "en": "Flaked crab and/or decorticated crab leg, canned, drained",
+     "fr": "Crabe, miettes et ou pattes décortiquées, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 13.5
+    },
+    {
+     "code": "25998",
+     "en": "Atlantic herring, smoked",
+     "fr": "Hareng fumé, doux",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 13.4
+    },
+    {
+     "code": "26027",
+     "en": "Pilchard, in tomato sauce, canned, drained",
+     "fr": "Pilchard, sauce tomate, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 13.0
+    },
+    {
+     "code": "10006",
+     "en": "Grey shrimp, boiled",
+     "fr": "Crevette grise, cuite",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 12.6
+    },
+    {
+     "code": "10043",
+     "en": "Crustacean or mollusc (average)",
+     "fr": "Fruits de mer (aliment moyen)",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 12.4
+    },
+    {
+     "code": "26151",
+     "en": "Trout roe, canned",
+     "fr": "Oeufs de truite, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 10.4
+    },
+    {
+     "code": "10028",
+     "en": "Mussel, canned in brine, drained",
+     "fr": "Moules, au naturel, appertisées, égouttées",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 10.2
+    }
+   ],
+   "unit": "µg"
+  },
+  "vitamine-c": {
+   "condiments": [
+    {
+     "code": "11070",
+     "en": "Thyme, fresh",
+     "fr": "Thym, frais",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 160.0
+    },
+    {
+     "code": "11024",
+     "en": "Parsley, dried",
+     "fr": "Persil, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 137.0
+    },
+    {
+     "code": "11016",
+     "en": "Horseradish, raw",
+     "fr": "Raifort, frais",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 134.0
+    },
+    {
+     "code": "20992",
+     "en": "Sea thong (Himanthalia elongata), dried or dehydrated",
+     "fr": "Haricot de mer (Himanthalia elongata), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 120.0
+    },
+    {
+     "code": "20994",
+     "en": "Toothed wrack or bladder wrack (Fucus serratus et vesiculosus), dried or dehydrated",
+     "fr": "Fucus vésiculeux (Fucus serratus ou Fucus vesiculosus), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 109.0
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "40305",
+       "en": "Sweetbread, calf, braised or grilled/pan-fried",
+       "fr": "Ris, veau, braisé ou grillé/poêlé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 39.4
+      },
+      {
+       "code": "40116",
+       "en": "Liver, chicken, cooked",
+       "fr": "Foie, poulet, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 27.9
+      },
+      {
+       "code": "40004",
+       "en": "Brain, pork, braised",
+       "fr": "Cervelle, porc, braisée",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 14.0
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10027",
+       "en": "Clam, boiled/cooked in water",
+       "fr": "Clam, praire ou palourde, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 22.1
+      },
+      {
+       "code": "10037",
+       "en": "Squid, boiled/cooked in water",
+       "fr": "Calmar ou calamar ou encornet, bouilli/cuit à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 8.5
+      },
+      {
+       "code": "10079",
+       "en": "Octopus, common, cooked",
+       "fr": "Poulpe, cuit",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 8.0
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "19225",
+       "en": "Mare's milk, whole",
+       "fr": "Lait de jument, entier",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 15.0
+      },
+      {
+       "code": "19021",
+       "en": "Milk powder, whole",
+       "fr": "Lait en poudre, entier",
+       "grp_en": "milk",
+       "grp_fr": "laits",
+       "v": 7.55
+      },
+      {
+       "code": "19542",
+       "en": "Fermented milk, yogurt type with bifidus, with fruits, with sugar(s)",
+       "fr": "Lait fermenté type yaourt au bifidus, aux fruits, sucré",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 7.42
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20527",
+       "en": "Pigeon-pea, immature, fresh, raw",
+       "fr": "Pois d'Angole vert, frais, cru",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 39.0
+      },
+      {
+       "code": "4022",
+       "en": "Potato flakes, dehydrated, plain",
+       "fr": "Flocons de pomme de terre, nature, déshydratés",
+       "grp_en": "potatoes and other tubers",
+       "grp_fr": "pommes de terre et autres tubercules",
+       "v": 31.0
+      },
+      {
+       "code": "4023",
+       "en": "Potato, new, raw",
+       "fr": "Pomme de terre nouvelle ou primeur, crue",
+       "grp_en": "potatoes and other tubers",
+       "grp_fr": "pommes de terre et autres tubercules",
+       "v": 25.0
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "13404",
+       "en": "Acerola, flesh and skin, pitted, raw (Martinique)",
+       "fr": "Cerise acérola, chair et peau, sans noyau, crue (Martinique)",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 2850.0
+      },
+      {
+       "code": "13434",
+       "en": "Cashew apple,flesh and skin,, raw (Martinique)",
+       "fr": "Pomme cajou, chair et peau, crue (Martinique)",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 556.0
+      },
+      {
+       "code": "13407",
+       "en": "Guava, flesh without skin, mashed (Martinique)",
+       "fr": "Goyave, chair sans peau, purée (Martinique)",
+       "grp_en": "fruits",
+       "grp_fr": "fruits",
+       "v": 492.0
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "15024",
+       "en": "Chestnut, raw",
+       "fr": "Châtaigne, crue",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 41.6
+      },
+      {
+       "code": "15032",
+       "en": "Alfalfa, seeds",
+       "fr": "Luzerne, graine",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 26.0
+      },
+      {
+       "code": "20901",
+       "en": "Soybean, seed, whole",
+       "fr": "Soja, graine entière",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 6.0
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 1830,
+   "nrv": 80,
+   "top": [
+    {
+     "code": "13404",
+     "en": "Acerola, flesh and skin, pitted, raw (Martinique)",
+     "fr": "Cerise acérola, chair et peau, sans noyau, crue (Martinique)",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 2850.0
+    },
+    {
+     "code": "13434",
+     "en": "Cashew apple,flesh and skin,, raw (Martinique)",
+     "fr": "Pomme cajou, chair et peau, crue (Martinique)",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 556.0
+    },
+    {
+     "code": "13407",
+     "en": "Guava, flesh without skin, mashed (Martinique)",
+     "fr": "Goyave, chair sans peau, purée (Martinique)",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 492.0
+    },
+    {
+     "code": "25620",
+     "en": "Guacamole, prepacked",
+     "fr": "Guacamole, préemballé",
+     "grp_en": "plant-based spreads",
+     "grp_fr": "tartinables végétariens",
+     "v": 359.0
+    },
+    {
+     "code": "13007",
+     "en": "Black currant, raw",
+     "fr": "Cassis, cru",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 181.0
+    },
+    {
+     "code": "20275",
+     "en": "Sweet pepper, red, canned, drained",
+     "fr": "Poivron rouge, appertisé, égoutté",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 171.0
+    },
+    {
+     "code": "20151",
+     "en": "Chili pepper, raw",
+     "fr": "Piment, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 144.0
+    },
+    {
+     "code": "20347",
+     "en": "Drumstick or moringa pods, raw",
+     "fr": "Moringa, gousse, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 141.0
+    },
+    {
+     "code": "13125",
+     "en": "Lemon zest, raw",
+     "fr": "Citron, zeste, cru",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 129.0
+    },
+    {
+     "code": "20328",
+     "en": "Sweet pepper, yellow, sautéed/pan-fried, without added fat",
+     "fr": "Poivron jaune, sauté/poêlé",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 126.0
+    },
+    {
+     "code": "20041",
+     "en": "Sweet pepper, green, yellow or red, raw",
+     "fr": "Poivron, vert, jaune ou rouge, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 121.0
+    },
+    {
+     "code": "20218",
+     "en": "Curly kale, raw",
+     "fr": "Chou frisé, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 120.0
+    },
+    {
+     "code": "20029",
+     "en": "Mung bean, sprouted, canned, drained",
+     "fr": "Graine germée de haricot mungo ou pousse de \"soja\", appertisée, égouttée",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 106.0
+    },
+    {
+     "code": "20346",
+     "en": "Kale, raw",
+     "fr": "Chou kale, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 93.4
+    },
+    {
+     "code": "11179",
+     "en": "Pesto sauce, prepacked",
+     "fr": "Sauce pesto, préemballée",
+     "grp_en": "sauces",
+     "grp_fr": "sauces",
+     "v": 92.6
+    },
+    {
+     "code": "20057",
+     "en": "Broccoli, raw",
+     "fr": "Brocoli, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 91.2
+    },
+    {
+     "code": "20280",
+     "en": "Romanesco cauliflower or romanesco broccoli, raw",
+     "fr": "Chou romanesco ou brocoli à pomme, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 88.1
+    },
+    {
+     "code": "20058",
+     "en": "Brussels sprout, raw",
+     "fr": "Chou de Bruxelles, cru",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 85.0
+    },
+    {
+     "code": "13552",
+     "en": "Longan, flesh without skin, pitted, raw",
+     "fr": "Longan, chair sans peau, sans noyau, cru",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 84.0
+    },
+    {
+     "code": "13021",
+     "en": "Kiwi fruit, flesh without skin, with seeds, raw",
+     "fr": "Kiwi, chair sans peau, avec pépins, cru",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 81.9
+    },
+    {
+     "code": "13997",
+     "en": "Red berries (raspberries, strawberries, red currants, black currants), raw",
+     "fr": "Fruits rouges, crus (framboises, fraises, groseilles, cassis)",
+     "grp_en": "fruits",
+     "grp_fr": "fruits",
+     "v": 77.5
+    },
+    {
+     "code": "32025",
+     "en": "Cereal flakes with nuts, fortified with vitamins and minerals",
+     "fr": "Pétales de céréales aux fruits à coque, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 75.8
+    },
+    {
+     "code": "20086",
+     "en": "Sweet pepper, green, cooked",
+     "fr": "Poivron vert, cuit",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 74.4
+    },
+    {
+     "code": "32029",
+     "en": "Cereal flakes with fruits, not fortified",
+     "fr": "Pétales de céréales aux fruits, non enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 74.0
+    },
+    {
+     "code": "20828",
+     "en": "Massissi, flesh, raw (Martinique)",
+     "fr": "Massissi, chair, cru (Martinique)",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 73.2
+    }
+   ],
+   "unit": "mg"
+  },
+  "vitamine-d": {
+   "condiments": [
+    {
+     "code": "20991",
+     "en": "Tangle (Laminaria digitata), dried or dehydrated",
+     "fr": "Kombu breton (Laminaria digitata), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 2.25
+    },
+    {
+     "code": "20986",
+     "en": "Sea belt (Saccharina latissima), dried or dehydrated",
+     "fr": "Kombu royal (Saccharina latissima), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 1.3
+    },
+    {
+     "code": "20985",
+     "en": "Sea lettuce (Ulva sp.), dried or dehydrated",
+     "fr": "Laitue de mer (Ulva sp.), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 1.29
+    },
+    {
+     "code": "20998",
+     "en": "North Atlantic rockweed (Ascophyllum nodosum), dried or dehydrated",
+     "fr": "Ascophylle noueux ou goémon noir (Ascophyllum nodosum), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 1.0
+    },
+    {
+     "code": "20988",
+     "en": "Dulse (Palmaria palmata), dried or dehydrated",
+     "fr": "Dulse (Palmaria palmata), séchée ou déshydratée",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 0.92
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "40107",
+       "en": "Liver, calf, cooked",
+       "fr": "Foie, veau, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 2.52
+      },
+      {
+       "code": "36005",
+       "en": "Chicken, meat and skin, roasted/baked",
+       "fr": "Poulet, viande et peau rôties/cuites au four",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 1.5
+      },
+      {
+       "code": "40403",
+       "en": "Kidney, beef, cooked",
+       "fr": "Rognon, boeuf, cuit",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 1.1
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "26142",
+       "en": "Cod liver, canned, drained",
+       "fr": "Foie de morue, appertisé, égoutté",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 54.3
+      },
+      {
+       "code": "26056",
+       "en": "Cod roe, smoked, semi-preserved",
+       "fr": "Oeufs de cabillaud, fumés, semi-conserve",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 27.2
+      },
+      {
+       "code": "26275",
+       "en": "Salmon roe, semi-preserved",
+       "fr": "Oeufs de saumon du Pacifique, semi-conserve",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 27.0
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "12035",
+       "en": "Soft-ripened washed-rind cheese, reduced fat, from cow's milk",
+       "fr": "Fromage à pâte molle et croûte lavée, allégé en matière grasse",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 15.0
+      },
+      {
+       "code": "22003",
+       "en": "Egg yolk, powder",
+       "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 11.4
+      },
+      {
+       "code": "19648",
+       "en": "Quark, plain, 2-3% fat, fortified with vitamin D",
+       "fr": "Fromage blanc, nature, 2-3% MG, enrichi en vitamine D",
+       "grp_en": "dairy products",
+       "grp_fr": "produits laitiers frais et alternatives végétales",
+       "v": 6.07
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "7110",
+       "en": "Bread, French bread, wholemeal or integral bread (made with flour type 150)",
+       "fr": "Pain complet ou intégral (à la farine T150)",
+       "grp_en": "breads and similar",
+       "grp_fr": "pains et assimilés",
+       "v": 0.86
+      },
+      {
+       "code": "4017",
+       "en": "Mashed potatoes, made from flakes, reconstituted with whole milk, with added fat",
+       "fr": "Purée de pomme de terre, à base de flocons, reconstituée avec lait entier et matière grasse",
+       "grp_en": "potatoes and other tubers",
+       "grp_fr": "pommes de terre et autres tubercules",
+       "v": 0.3
+      },
+      {
+       "code": "9821",
+       "en": "Pasta, dry, with egg, raw",
+       "fr": "Pâtes sèches, aux oeufs, crues",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 0.3
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20103",
+       "en": "Chanterelle or girolle mushroom, raw",
+       "fr": "Champignon, chanterelle ou girolle, crue",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 5.3
+      },
+      {
+       "code": "20056",
+       "en": "Button mushroom or cultivated mushroom, raw",
+       "fr": "Champignon de Paris ou champignon de couche, cru",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 0.3
+      },
+      {
+       "code": "25616",
+       "en": "Raw vegetables, without dressing (average)",
+       "fr": "Crudité, sans assaisonnement (aliment moyen)",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 0.08
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 1570,
+   "nrv": 5,
+   "top": [
+    {
+     "code": "26142",
+     "en": "Cod liver, canned, drained",
+     "fr": "Foie de morue, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 54.3
+    },
+    {
+     "code": "26056",
+     "en": "Cod roe, smoked, semi-preserved",
+     "fr": "Oeufs de cabillaud, fumés, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 27.2
+    },
+    {
+     "code": "26275",
+     "en": "Salmon roe, semi-preserved",
+     "fr": "Oeufs de saumon du Pacifique, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 27.0
+    },
+    {
+     "code": "26013",
+     "en": "Atlantic herring, smoked, canned in brine",
+     "fr": "Hareng fumé, au naturel",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 22.0
+    },
+    {
+     "code": "26119",
+     "en": "Salmon, canned, drained",
+     "fr": "Saumon, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 18.1
+    },
+    {
+     "code": "26093",
+     "en": "Swordfish, roasted/baked",
+     "fr": "Espadon, rôti/cuit au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 16.6
+    },
+    {
+     "code": "12035",
+     "en": "Soft-ripened washed-rind cheese, reduced fat, from cow's milk",
+     "fr": "Fromage à pâte molle et croûte lavée, allégé en matière grasse",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 15.0
+    },
+    {
+     "code": "27014",
+     "en": "Rainbow trout, farmed, roasted/baked",
+     "fr": "Truite arc en ciel, élevage, rôtie/cuite au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 15.0
+    },
+    {
+     "code": "26027",
+     "en": "Pilchard, in tomato sauce, canned, drained",
+     "fr": "Pilchard, sauce tomate, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 14.0
+    },
+    {
+     "code": "26010",
+     "en": "Atlantic herring, marinated, or rollmops, prepacked",
+     "fr": "Hareng mariné ou rollmops, préemballé",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 13.2
+    },
+    {
+     "code": "26035",
+     "en": "European pilchard or sardine, in tomato sauce, canned, drained",
+     "fr": "Sardine, sauce tomate, appertisée, égouttée",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 12.5
+    },
+    {
+     "code": "32131",
+     "en": "Puffed rice, with chocolate, fortified with vitamins and minerals",
+     "fr": "Riz soufflé chocolaté, enrichi en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 12.5
+    },
+    {
+     "code": "26020",
+     "en": "Mackerel, fried",
+     "fr": "Maquereau, frit",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 12.3
+    },
+    {
+     "code": "22003",
+     "en": "Egg yolk, powder",
+     "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 11.4
+    },
+    {
+     "code": "26998",
+     "en": "Salmon trout, sautéed/pan-fried without added fat",
+     "fr": "Truite saumonée, sautée/poêlée",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 11.1
+    },
+    {
+     "code": "32121",
+     "en": "Corn flakes, sugar frosted, fortified with vitamins and minerals",
+     "fr": "Pétales de maïs glacés au sucre, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 11.0
+    },
+    {
+     "code": "26014",
+     "en": "Atlantic herring, grilled/pan-fried without added fat",
+     "fr": "Hareng, grillé/poêlé",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 10.8
+    },
+    {
+     "code": "27005",
+     "en": "European perch, roasted/baked",
+     "fr": "Perche ou perche européenne, rôtie/cuite au four",
+     "grp_en": "fish, cooked",
+     "grp_fr": "poissons cuits",
+     "v": 9.0
+    },
+    {
+     "code": "32005",
+     "en": "Corn flakes, plain, fortified with vitamins and minerals",
+     "fr": "Pétales de maïs nature, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 9.0
+    },
+    {
+     "code": "32006",
+     "en": "Puffed rice, plain, fortified with vitamins and minerals",
+     "fr": "Riz soufflé nature, enrichi en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 8.4
+    },
+    {
+     "code": "32000",
+     "en": "Puffed wheat, with honey or caramel, fortified with vitamins and minerals",
+     "fr": "Grains de blé soufflés au miel ou caramel, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 8.1
+    },
+    {
+     "code": "16588",
+     "en": "Spreadable fat <= 41% fat, unsalted, with plant strols",
+     "fr": "Matière grasse tartinable à teneur en MG <= 41%, doux, aux stérols végétaux",
+     "grp_en": "margarines",
+     "grp_fr": "margarines",
+     "v": 7.5
+    },
+    {
+     "code": "16589",
+     "en": "Spreadable fat > 62% fat, unsalted, rich in omega 3",
+     "fr": "Matière grasse tartinable à teneur en MG > 62%, doux, riche en oméga 3",
+     "grp_en": "margarines",
+     "grp_fr": "margarines",
+     "v": 7.5
+    },
+    {
+     "code": "16594",
+     "en": "Spreadable fat > 41% fat and <= 62% fat, half-salted",
+     "fr": "Matière grasse tartinable à teneur en MG > 41% et <= 62%, demi-sel, standard",
+     "grp_en": "margarines",
+     "grp_fr": "margarines",
+     "v": 7.5
+    },
+    {
+     "code": "16602",
+     "en": "Spreadable fat, fat % unknown, half-salted (average)",
+     "fr": "Matière grasse tartinable, sans précision sur la teneur en matière grasse, demi-sel, standard (aliment moyen)",
+     "grp_en": "margarines",
+     "grp_fr": "margarines",
+     "v": 7.5
+    }
+   ],
+   "unit": "µg"
+  },
+  "zinc": {
+   "condiments": [
+    {
+     "code": "10999",
+     "en": "Chervil, dried",
+     "fr": "Cerfeuil, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 8.8
+    },
+    {
+     "code": "11061",
+     "en": "Poppy, seed",
+     "fr": "Pavot, graine",
+     "grp_en": "spices",
+     "grp_fr": "épices",
+     "v": 7.9
+    },
+    {
+     "code": "11075",
+     "en": "Cardamom, powder",
+     "fr": "Cardamome, poudre",
+     "grp_en": "spices",
+     "grp_fr": "épices",
+     "v": 7.47
+    },
+    {
+     "code": "20994",
+     "en": "Toothed wrack or bladder wrack (Fucus serratus et vesiculosus), dried or dehydrated",
+     "fr": "Fucus vésiculeux (Fucus serratus ou Fucus vesiculosus), séché ou déshydraté",
+     "grp_en": "seaweed",
+     "grp_fr": "algues",
+     "v": 7.28
+    },
+    {
+     "code": "11032",
+     "en": "Basil, dried",
+     "fr": "Basilic, séché",
+     "grp_en": "herbs",
+     "grp_fr": "herbes",
+     "v": 7.1
+    }
+   ],
+   "families": [
+    {
+     "en": "Meat",
+     "fr": "Viandes",
+     "items": [
+      {
+       "code": "6151",
+       "en": "Beef, knuckle, boiled/cooked in water",
+       "fr": "Boeuf, jarret bouilli/cuit à l'eau",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 11.0
+      },
+      {
+       "code": "6101",
+       "en": "Beef, braised",
+       "fr": "Boeuf braisé",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 10.5
+      },
+      {
+       "code": "6581",
+       "en": "Veal, knuckle or shank, braised or boiled",
+       "fr": "Veau, jarret braisé ou bouilli",
+       "grp_en": "cooked meat",
+       "grp_fr": "viandes cuites",
+       "v": 8.81
+      }
+     ],
+     "slug": "viandes"
+    },
+    {
+     "en": "Fish and seafood",
+     "fr": "Poissons et fruits de mer",
+     "items": [
+      {
+       "code": "10005",
+       "en": "Flaked crab and/or decorticated crab leg, canned, drained",
+       "fr": "Crabe, miettes et ou pattes décortiquées, appertisé, égoutté",
+       "grp_en": "fish products",
+       "grp_fr": "produits à base de poissons et produits de la mer",
+       "v": 8.8
+      },
+      {
+       "code": "10022",
+       "en": "Spiny lobster, boiled/cooked in water",
+       "fr": "Langouste, bouillie/cuite à l'eau",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 7.27
+      },
+      {
+       "code": "10043",
+       "en": "Crustacean or mollusc (average)",
+       "fr": "Fruits de mer (aliment moyen)",
+       "grp_en": "seafood, cooked",
+       "grp_fr": "mollusques et crustacés cuits",
+       "v": 6.92
+      }
+     ],
+     "slug": "poissons"
+    },
+    {
+     "en": "Eggs and dairy",
+     "fr": "Œufs et produits laitiers",
+     "items": [
+      {
+       "code": "12051",
+       "en": "Vacherin cheese or Mont d'or cheese, from cow's milk",
+       "fr": "Mont d'or ou vacherin du Haut-Doubs (produit en France) ou vacherin-Mont d'Or (produit en Suisse)",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 8.0
+      },
+      {
+       "code": "22003",
+       "en": "Egg yolk, powder",
+       "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+       "grp_en": "eggs",
+       "grp_fr": "oeufs",
+       "v": 7.73
+      },
+      {
+       "code": "12025",
+       "en": "Carré de l'Est cheese, from cow's milk",
+       "fr": "Carré de l'Est",
+       "grp_en": "cheese and similar",
+       "grp_fr": "fromages et alternatives végétales",
+       "v": 6.0
+      }
+     ],
+     "slug": "oeufs-laitiers"
+    },
+    {
+     "en": "Legumes, grains, tubers",
+     "fr": "Légumineuses, céréales, tubercules",
+     "items": [
+      {
+       "code": "20534",
+       "en": "Lupin, seed, dried",
+       "fr": "Lupin, graine, sec",
+       "grp_en": "legumes",
+       "grp_fr": "légumineuses",
+       "v": 4.75
+      },
+      {
+       "code": "7359",
+       "en": "Crispbread, with bran, source or rich in fibre",
+       "fr": "Tartine croustillante au seigle, source ou riche en fibres",
+       "grp_en": "breads and similar",
+       "grp_fr": "pains et assimilés",
+       "v": 4.2
+      },
+      {
+       "code": "9060",
+       "en": "Durum wheat, wholewheat, raw",
+       "fr": "Blé dur complet, cru",
+       "grp_en": "pasta, rice and grains",
+       "grp_fr": "pâtes, riz et céréales",
+       "v": 4.16
+      }
+     ],
+     "slug": "feculents"
+    },
+    {
+     "en": "Fruits and vegetables",
+     "fr": "Fruits et légumes",
+     "items": [
+      {
+       "code": "20211",
+       "en": "Shiitake mushroom, dried",
+       "fr": "Champignon, lentin comestible ou shiitaké, séché",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 7.66
+      },
+      {
+       "code": "20189",
+       "en": "Tomato, dried",
+       "fr": "Tomate, séchée",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 1.99
+      },
+      {
+       "code": "20180",
+       "en": "Onion, dried",
+       "fr": "Oignon, séché",
+       "grp_en": "vegetables",
+       "grp_fr": "légumes",
+       "v": 1.89
+      }
+     ],
+     "slug": "fruits-legumes"
+    },
+    {
+     "en": "Nuts and seeds",
+     "fr": "Fruits à coque et graines",
+     "items": [
+      {
+       "code": "15038",
+       "en": "Sesame seed, grilled, husked",
+       "fr": "Sésame, grillé, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 10.2
+      },
+      {
+       "code": "15063",
+       "en": "Hemp, seed, hulled",
+       "fr": "Chanvre ou chènevis, graine décortiquée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 9.9
+      },
+      {
+       "code": "15064",
+       "en": "Pumpkin and squash, seed, dried",
+       "fr": "Courge, graine, séchée",
+       "grp_en": "nuts and seeds",
+       "grp_fr": "fruits à coque et graines oléagineuses",
+       "v": 7.81
+      }
+     ],
+     "slug": "oleagineux"
+    }
+   ],
+   "n_known": 2377,
+   "nrv": 10,
+   "top": [
+    {
+     "code": "6151",
+     "en": "Beef, knuckle, boiled/cooked in water",
+     "fr": "Boeuf, jarret bouilli/cuit à l'eau",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 11.0
+    },
+    {
+     "code": "6101",
+     "en": "Beef, braised",
+     "fr": "Boeuf braisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 10.5
+    },
+    {
+     "code": "15038",
+     "en": "Sesame seed, grilled, husked",
+     "fr": "Sésame, grillé, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 10.2
+    },
+    {
+     "code": "15063",
+     "en": "Hemp, seed, hulled",
+     "fr": "Chanvre ou chènevis, graine décortiquée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 9.9
+    },
+    {
+     "code": "6581",
+     "en": "Veal, knuckle or shank, braised or boiled",
+     "fr": "Veau, jarret braisé ou bouilli",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 8.81
+    },
+    {
+     "code": "10005",
+     "en": "Flaked crab and/or decorticated crab leg, canned, drained",
+     "fr": "Crabe, miettes et ou pattes décortiquées, appertisé, égoutté",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 8.8
+    },
+    {
+     "code": "32030",
+     "en": "Cereal flakes, plain, with sugar(s), fortified with vitamins and minerals",
+     "fr": "Pétales de céréales, nature, sucrées, enrichies en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 8.6
+    },
+    {
+     "code": "12051",
+     "en": "Vacherin cheese or Mont d'or cheese, from cow's milk",
+     "fr": "Mont d'or ou vacherin du Haut-Doubs (produit en France) ou vacherin-Mont d'Or (produit en Suisse)",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 8.0
+    },
+    {
+     "code": "32022",
+     "en": "Cereal flakes with chocolate, with or without nuts, fortified with vitamins and minerals",
+     "fr": "Pétales de céréales au chocolat, avec ou sans fruits à coque, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 8.0
+    },
+    {
+     "code": "15064",
+     "en": "Pumpkin and squash, seed, dried",
+     "fr": "Courge, graine, séchée",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 7.81
+    },
+    {
+     "code": "22003",
+     "en": "Egg yolk, powder",
+     "fr": "Oeuf, jaune (jaune d'oeuf), en poudre",
+     "grp_en": "eggs",
+     "grp_fr": "oeufs",
+     "v": 7.73
+    },
+    {
+     "code": "20211",
+     "en": "Shiitake mushroom, dried",
+     "fr": "Champignon, lentin comestible ou shiitaké, séché",
+     "grp_en": "vegetables",
+     "grp_fr": "légumes",
+     "v": 7.66
+    },
+    {
+     "code": "32023",
+     "en": "Cereal flakes with fruits, fortified with vitamins and minerals",
+     "fr": "Pétales de céréales aux fruits, enrichis en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 7.53
+    },
+    {
+     "code": "40056",
+     "en": "Heart, chicken, cooked",
+     "fr": "Coeur, poulet, cuit",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 7.3
+    },
+    {
+     "code": "10022",
+     "en": "Spiny lobster, boiled/cooked in water",
+     "fr": "Langouste, bouillie/cuite à l'eau",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 7.27
+    },
+    {
+     "code": "21508",
+     "en": "Lamb, neck, braised or boiled",
+     "fr": "Agneau, collier braisé ou bouilli",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 7.14
+    },
+    {
+     "code": "32006",
+     "en": "Puffed rice, plain, fortified with vitamins and minerals",
+     "fr": "Riz soufflé nature, enrichi en vitamines et minéraux",
+     "grp_en": "breakfast cereals",
+     "grp_fr": "céréales de petit-déjeuner",
+     "v": 7.0
+    },
+    {
+     "code": "10043",
+     "en": "Crustacean or mollusc (average)",
+     "fr": "Fruits de mer (aliment moyen)",
+     "grp_en": "seafood, cooked",
+     "grp_fr": "mollusques et crustacés cuits",
+     "v": 6.92
+    },
+    {
+     "code": "15032",
+     "en": "Alfalfa, seeds",
+     "fr": "Luzerne, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 6.9
+    },
+    {
+     "code": "40113",
+     "en": "Liver, pork, cooked",
+     "fr": "Foie, porc, cuit",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 6.72
+    },
+    {
+     "code": "28902",
+     "en": "Cooked ham, superior quality, rind less",
+     "fr": "Jambon cuit, supérieur, découenné",
+     "grp_en": "delicatessen meat and similar",
+     "grp_fr": "charcuteries et alternatives végétales",
+     "v": 6.5
+    },
+    {
+     "code": "15034",
+     "en": "Flaxseed, seed",
+     "fr": "Lin, graine",
+     "grp_en": "nuts and seeds",
+     "grp_fr": "fruits à coque et graines oléagineuses",
+     "v": 6.1
+    },
+    {
+     "code": "26056",
+     "en": "Cod roe, smoked, semi-preserved",
+     "fr": "Oeufs de cabillaud, fumés, semi-conserve",
+     "grp_en": "fish products",
+     "grp_fr": "produits à base de poissons et produits de la mer",
+     "v": 6.03
+    },
+    {
+     "code": "12025",
+     "en": "Carré de l'Est cheese, from cow's milk",
+     "fr": "Carré de l'Est",
+     "grp_en": "cheese and similar",
+     "grp_fr": "fromages et alternatives végétales",
+     "v": 6.0
+    },
+    {
+     "code": "40701",
+     "en": "Preserved gizzards, duck, canned",
+     "fr": "Gésier, canard, confit, appertisé",
+     "grp_en": "cooked meat",
+     "grp_fr": "viandes cuites",
+     "v": 6.0
+    }
+   ],
+   "unit": "mg"
+  }
+ },
+ "source": "Anses. 2025. Table de composition nutritionnelle des aliments Ciqual.",
+ "source_en": "Anses. 2025. Ciqual French food composition table.",
+ "version": "2025-11-03"
+}

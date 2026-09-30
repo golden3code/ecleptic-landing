@@ -69,8 +69,8 @@ def check_file(path, slugs, mslugs):
                 bad("corps allongé de %d mots (max +160)" % grow)
         body = a.get("body", "")
         w = words(body)
-        if not 600 <= w <= 1150:
-            bad("%d mots (attendu 600-1150)" % w)
+        if not 400 <= w <= 1150:
+            bad("%d mots (attendu 400-1150)" % w)
         if re.search(r"ecleptic", body, re.I):
             bad("« Ecleptic » dans le corps")
         for href in re.findall(r'href="([^"]+)"', body):

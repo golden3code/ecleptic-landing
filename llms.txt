@@ -32,7 +32,7 @@
 
 - [Thème Sommeil](https://ecleptic.health/articles/sommeil/): Durée idéale, sommeil profond, café, écrans, réveils nocturnes : des articles courts et sourcés pour comprendre ton sommeil et mieux dormir dès ce soir.
 - [Café et sommeil : combien de temps avant de dormir l'arrêter ?](https://ecleptic.health/articles/cafe-et-sommeil-combien-de-temps-avant.html): La caféine a une demi-vie de 5 à 6 heures : un café à 16 h occupe encore ta soirée. Pourquoi couper 8 à 10 heures avant le coucher, et ce que ça change.
-- [Sommeil profond : comment en avoir plus ?](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html): Chambre fraîche, horaires fixes, sport le jour, alcool rare : les seuls leviers qui augmentent vraiment le sommeil profond — et ceux qui ne servent à rien.
+- [Sommeil profond : comment en avoir plus ?](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html): Chambre fraîche, horaires fixes, sport dans la journée, café coupé tôt : les leviers qui favorisent vraiment le sommeil profond, et ceux qui ne servent à rien.
 - [Combien d'heures de sommeil faut-il vraiment par nuit ?](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html): 7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.
 
 ### Readiness
@@ -45,7 +45,7 @@
 
 - [Thème Sport](https://ecleptic.health/articles/sport/): Séances par semaine, zone 2, VO₂max, répétitions, cardio ou musculation : des articles clairs et sourcés pour t'entraîner mieux, progresser et durer.
 - [Zone 2 : c'est quoi et pourquoi c'est le meilleur cardio ?](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html): La zone 2, c'est le cardio facile où tu peux parler en phrases complètes. Pourquoi cette intensité basse construit ta base aérobie mieux que le reste.
-- [Combien de séances de sport par semaine pour progresser ?](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html): 3 à 5 séances bien récupérées battent 6 séances subies. Ce que dit la recherche sur la fréquence idéale en musculation et en cardio, selon ton niveau.
+- [Combien de séances de sport par semaine pour progresser ?](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html): Combien de séances de sport par semaine ? De 2 à 5 selon ton niveau et ton objectif : ce que disent l'OMS, l'ACSM et la recherche, en musculation et en cardio.
 
 ### Récupération
 
@@ -78,12 +78,12 @@
 ### Contexte
 
 - [Thème Contexte](https://ecleptic.health/articles/contexte/): Alcool, maladie, cycle menstruel, âge, tabac, chaleur, altitude : les facteurs qui changent ta récupération et tes performances, et comment t'y adapter.
-- [Alcool et sommeil : ce qui se passe vraiment la nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html): L'alcool endort plus vite mais détruit la seconde moitié de la nuit : sommeil paradoxal amputé, réveils, HRV écrasée. Ce que montrent les données, verre par verre.
+- [Alcool et sommeil : ce qui se passe vraiment la nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html): L'alcool aide parfois à s'endormir, mais fragmente la seconde moitié de la nuit : sommeil paradoxal réduit, récupération cardiaque en baisse. Verre par verre.
 
 ### Énergie
 
 - [Thème Énergie](https://ecleptic.health/articles/energie/): Fatigue constante, coup de barre après manger, sieste, carence en fer, glycémie : comprendre d'où vient ta fatigue et retrouver une énergie stable toute la journée.
-- [Sieste idéale : combien de temps faut-il dormir ?](https://ecleptic.health/articles/sieste-ideale-duree.html): 10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est le pire choix, et quand la sieste est un signal.
+- [Sieste idéale : combien de temps faut-il dormir ?](https://ecleptic.health/articles/sieste-ideale-duree.html): 10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est un format piège, et quand la sieste est un signal.
 - [Toujours fatigué ? Les vraies causes d'une fatigue constante](https://ecleptic.health/articles/toujours-fatigue-causes.html): Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d'une fatigue qui dure, dans l'ordre.
 
 ## À propos

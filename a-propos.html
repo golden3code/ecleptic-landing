@@ -20,6 +20,26 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://ecleptic.health/assets/og/accueil.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "url": "https://ecleptic.health/a-propos.html", "name": "À propos d'Ecleptic", "inLanguage": "fr", "mainEntity": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"], "worksFor": {"@id": "https://ecleptic.health/#organization"}}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}}</script>
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -32,6 +52,7 @@
     </span>
     <a href="/science.html" data-mega="science" >Science-Based</a>
     <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+    
   </div>
 </nav>
 <main class="wrap">
@@ -48,7 +69,7 @@
   <h2>Comment les articles sont écrits</h2>
   <ul>
   <li><strong>Une vraie question, une réponse directe.</strong> Chaque article part d'une question que les gens se posent vraiment, et y répond dès la première phrase.</li>
-  <li><strong>Des chiffres sourcés.</strong> Les repères viennent de sources publiées : sociétés savantes (National Sleep Foundation, American Academy of Sleep Medicine…), études et méta-analyses, bases officielles comme la table Ciqual de l'ANSES ou FoodData Central de l'USDA. Les pages de <a href="/science.html">la méthode</a> listent leurs références.</li>
+  <li><strong>Des chiffres sourcés.</strong> Les repères viennent de sources publiées : sociétés savantes (National Sleep Foundation, American Academy of Sleep Medicine…), études et méta-analyses, bases officielles comme la table Ciqual de l'ANSES ou FoodData Central de l'USDA. Chaque article liste ses sources, et les pages de <a href="/science.html">la méthode</a> leurs références.</li>
   <li><strong>Des garde-fous santé.</strong> Aucun diagnostic, aucune posologie. Dès qu'un sujet devient médical (cœur, carences, santé mentale, grossesse), l'article renvoie vers un professionnel de santé.</li>
   <li><strong>Des mises à jour datées.</strong> Quand un article change sur le fond, sa date de mise à jour s'affiche sous le titre.</li>
   </ul>
@@ -71,7 +92,7 @@
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
 </script>
-<script>track('about_view');</script>
+<script>track('about_view',{lang:'fr'});</script>
 <script src="/assets/nav-data.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 </body>

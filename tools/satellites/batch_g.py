@@ -22,10 +22,11 @@ ENTRIES = [
 <li><strong>10 à 20 minutes :</strong> la zone normale chez un adulte qui dort bien. Le cerveau ralentit progressivement, sans drame.</li>
 <li><strong>Plus de 30 minutes, régulièrement :</strong> quelque chose freine — coucher trop précoce, caféine, écrans, stress, chambre trop chaude.</li>
 </ul>
+<p>Selon la National Sleep Foundation, s'endormir en 30 minutes ou moins est un signe de sommeil de bonne qualité chez l'adulte. Et une analyse de vingt ans d'essais sur l'insomnie (2003) fixe le seuil de référence des chercheurs : plus de 30 minutes, au moins trois nuits par semaine, depuis six mois ou plus.</p>
 <p>Le piège le plus courant ? Aller au lit parce que « c'est l'heure », alors que la pression de sommeil n'est pas encore là. Couche-toi quand tes paupières tombent, pas quand l'horloge l'ordonne — et garde surtout une <strong>heure de lever fixe</strong> : c'est elle qui cale ton endormissement du soir.</p>
 
 <h2>Quelle technique de respiration pour s'endormir vite ?</h2>
-<p>La respiration est l'un des rares boutons de ton système nerveux que tu peux actionner à volonté. Une <strong>expiration plus longue que l'inspiration</strong> active le frein parasympathique : le cœur ralentit, les muscles se relâchent, la vigilance baisse.</p>
+<p>La respiration est l'un des rares boutons de ton système nerveux que tu peux actionner à volonté. Une <strong>expiration plus longue que l'inspiration</strong> active le frein parasympathique : le cœur ralentit, les muscles se relâchent, la vigilance baisse. Une revue systématique de 2018 (15 études) le confirme : sous 10 respirations par minute, l'activité parasympathique et la détente augmentent, l'anxiété recule.</p>
 <ul>
 <li><strong>Le rythme :</strong> inspire par le nez sur 4 secondes, expire doucement sur 6, soit environ six respirations par minute : le principe de la <a href="/articles/coherence-cardiaque-respiration.html">cohérence cardiaque</a>.</li>
 <li><strong>La durée :</strong> 5 minutes, allongé dans le noir.</li>
@@ -35,7 +36,7 @@ ENTRIES = [
 
 <h2>Que faire quand on n'arrive pas à s'endormir ?</h2>
 <p>Te lever. C'est la règle la plus efficace, et la plus contre-intuitive. Si tu ne dors toujours pas au bout d'une vingtaine de minutes — estime-les, ne regarde pas l'heure —, <strong>sors du lit</strong>. Va dans une autre pièce, lumière tamisée, et fais quelque chose de calme, un peu ennuyeux : lire un livre papier, plier du linge. Tu ne retournes te coucher que quand la somnolence revient.</p>
-<p>Pourquoi ça marche ? Ton cerveau apprend par association. Chaque soirée passée à te retourner sous la couette lui enseigne que le lit est un lieu d'éveil et d'agacement. Te lever casse ce conditionnement : en quelques semaines, le lit redevient un signal de sommeil. Cette technique, le contrôle du stimulus, est au cœur de la <strong>thérapie cognitive et comportementale de l'insomnie</strong>, le traitement recommandé en première intention.</p>
+<p>Pourquoi ça marche ? Ton cerveau apprend par association. Chaque soirée passée à te retourner sous la couette lui enseigne que le lit est un lieu d'éveil et d'agacement. Te lever casse ce conditionnement : en quelques semaines, le lit redevient un signal de sommeil. Cette technique, le contrôle du stimulus, est au cœur de la <strong>thérapie cognitive et comportementale de l'insomnie</strong>, le traitement recommandé en première intention. L'American Academy of Sleep Medicine en fait une recommandation forte (2021), et suggère aussi le contrôle du stimulus et la relaxation utilisés seuls.</p>
 <p>Même logique au quotidien : ton lit sert à dormir, pas à travailler ni à scroller.</p>
 
 <h2>Que faire avant de dormir pour s'endormir plus vite ?</h2>
@@ -43,13 +44,13 @@ ENTRIES = [
 <ul>
 <li><strong>Une chambre fraîche :</strong> ton corps doit perdre un peu de chaleur pour basculer dans le sommeil. La <a href="/articles/temperature-ideale-chambre-dormir.html">bonne température de chambre</a> tourne autour de 18 °C.</li>
 <li><strong>Des écrans en retrait :</strong> coupe réseaux, mails et actualités 30 à 60 minutes avant le lit, et tamise les lumières.</li>
-<li><strong>Un café coupé tôt :</strong> dernier café 8 à 10 heures avant le coucher, car la caféine reste active des heures.</li>
+<li><strong>Un café coupé tôt :</strong> dernier café 8 à 10 heures avant le coucher. Une méta-analyse de 2023 (24 études) fixe le seuil à 8,8 heures pour une tasse de café ; en moyenne, la caféine raccourcit la nuit de 45 minutes.</li>
 <li><strong>Un sas de décompression :</strong> les mêmes gestes chaque soir, à la même heure. C'est tout le principe d'une <a href="/articles/routine-du-soir-pour-bien-dormir.html">routine du soir</a> bien construite.</li>
 </ul>
-<p>Et si ton esprit tourne en boucle, note sur papier ce qui te préoccupe et ce que tu dois faire demain, pour ne pas le ruminer dans le noir.</p>
+<p>Et si ton esprit tourne en boucle, note sur papier ce qui te préoccupe et ce que tu dois faire demain, pour ne pas le ruminer dans le noir. Ces réglages aident, mais ils ne traitent pas une vraie insomnie : l'American Academy of Sleep Medicine déconseille de s'en contenter.</p>
 
 <h2>Faut-il prendre un somnifère pour s'endormir ?</h2>
-<p>Pas pour t'endormir plus vite au quotidien. Les somnifères sont des médicaments prescrits par un médecin, en principe <strong>sur une courte durée</strong> : ils exposent à l'accoutumance, à la dépendance et à une somnolence le lendemain, et ils ne traitent pas la cause. La mélatonine, elle, n'est pas un somnifère mais un signal d'horloge, utile dans des cas précis : <a href="/articles/melatonine-efficace-pour-dormir.html">on fait le point sur son efficacité réelle</a>.</p>
+<p>Pas pour t'endormir plus vite au quotidien. Les somnifères sont des médicaments prescrits par un médecin, en principe <strong>sur une courte durée</strong>, quatre semaines au plus en règle générale selon la recommandation européenne de 2023 : ils exposent à l'accoutumance, à la dépendance et à une somnolence le lendemain, et ils ne traitent pas la cause. La mélatonine, elle, n'est pas un somnifère mais un signal d'horloge, utile dans des cas précis : <a href="/articles/melatonine-efficace-pour-dormir.html">on fait le point sur son efficacité réelle</a>.</p>
 <p>Si tu mets régulièrement plus d'une demi-heure à t'endormir, plusieurs soirs par semaine depuis des semaines, et que tes journées en pâtissent, parles-en à un médecin. Même chose si tu ronfles fort ou te réveilles épuisé malgré des nuits complètes : une insomnie ou un trouble du sommeil se prennent en charge.</p>
 
 <h2>Ce qu'il faut retenir</h2>
@@ -66,6 +67,20 @@ ENTRIES = [
              "a": "Les causes les plus fréquentes sont un coucher trop précoce pour ton horloge, la caféine de l'après-midi, les écrans et les contenus stimulants, le stress qui tourne en boucle et une chambre trop chaude. Si la difficulté dure des semaines et pèse sur tes journées, parles-en à un médecin."},
             {"q": "Est-ce grave de mettre une heure à s'endormir ?",
              "a": "Une soirée isolée, non : le corps compense très bien. Si c'est régulier, plusieurs soirs par semaine depuis des semaines, il peut s'agir d'une insomnie qui s'installe : un médecin pourra t'orienter vers la thérapie cognitive et comportementale, le traitement recommandé en première intention."},
+        ],
+        "sources": [
+            {"t": "National Sleep Foundation. What Is Sleep Quality? 2024.",
+             "u": "https://www.thensf.org/what-is-sleep-quality/"},
+            {"t": "Lichstein KL, Durrence HH, Taylor DJ, Bush AJ, Riedel BW. Quantitative criteria for insomnia. <em>Behav Res Ther</em>. 2003.",
+             "u": "https://doi.org/10.1016/s0005-7967(02)00023-2"},
+            {"t": "Zaccaro A, Piarulli A, Laurino M, et al. How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing. <em>Front Hum Neurosci</em>. 2018.",
+             "u": "https://doi.org/10.3389/fnhum.2018.00353"},
+            {"t": "Edinger JD, Arnedt JT, Bertisch SM, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline. <em>J Clin Sleep Med</em>. 2021.",
+             "u": "https://doi.org/10.5664/jcsm.8986"},
+            {"t": "Riemann D, Espie CA, Altena E, et al. The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. <em>J Sleep Res</em>. 2023.",
+             "u": "https://doi.org/10.1111/jsr.14035"},
+            {"t": "Gardiner C, Weakley J, Burke LM, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. <em>Sleep Med Rev</em>. 2023.",
+             "u": "https://doi.org/10.1016/j.smrv.2023.101764"},
         ],
     },
     {
@@ -85,20 +100,20 @@ ENTRIES = [
 <h2>À quoi sert le sommeil paradoxal ?</h2>
 <p>La science n'a pas percé tous ses secrets, mais plusieurs fonctions sont bien établies :</p>
 <ul>
-<li><strong>La mémoire :</strong> il participe à la consolidation de ce que tu as appris dans la journée, notamment les savoir-faire, et relie les nouvelles informations aux anciennes.</li>
-<li><strong>Les émotions :</strong> il aide à « digérer » les expériences chargées. Privé de sommeil paradoxal, on devient plus réactif, plus irritable, moins stable face au stress.</li>
+<li><strong>La mémoire :</strong> il participe à la consolidation de ce que tu as appris dans la journée. Selon une grande revue de 2013, le sommeil profond réactive et transfère les souvenirs récents, puis le sommeil paradoxal qui suit contribuerait à les stabiliser : les deux phases travaillent en équipe.</li>
+<li><strong>Les émotions :</strong> il aide à « digérer » les expériences chargées. Une revue de 2009 lui attribue un rôle clé dans le retraitement des souvenirs émotionnels et dans la réactivité émotionnelle du lendemain. Privé de sommeil paradoxal, on devient plus réactif, plus irritable, moins stable face au stress.</li>
 <li><strong>La créativité :</strong> en associant des idées éloignées, il favoriserait la résolution de problèmes. La nuit porte conseil, presque au sens propre.</li>
 <li><strong>Le développement du cerveau :</strong> chez le nouveau-né, il représente environ la moitié du sommeil.</li>
 </ul>
 
 <h2>Pourquoi se concentre-t-il en fin de nuit ?</h2>
-<p>C'est le point décisif. En début de nuit, ton cerveau donne la priorité au sommeil profond. Puis, cycle après cycle, les épisodes de sommeil paradoxal s'allongent : quelques minutes au premier cycle, une demi-heure ou davantage au petit matin. L'essentiel se joue donc dans la <strong>seconde moitié de la nuit</strong>, et surtout dans le dernier tiers.</p>
+<p>C'est le point décisif. En début de nuit, ton cerveau donne la priorité au sommeil profond. Puis, cycle après cycle, les épisodes de sommeil paradoxal s'allongent : quelques minutes au premier cycle, une demi-heure ou davantage au petit matin. C'est ce que décrit StatPearls, la synthèse médicale hébergée par la Bibliothèque nationale de médecine des États-Unis, qui chiffre aussi le sommeil paradoxal à 20 à 25 % du sommeil de l'adulte. L'essentiel se joue donc dans la <strong>seconde moitié de la nuit</strong>, et surtout dans le dernier tiers.</p>
 <p>Conséquence directe : <strong>raccourcir ta nuit coupe d'abord le sommeil paradoxal</strong>. Si tu as besoin de 8 heures et que ton réveil sonne au bout de 6, tu ne perds pas un peu de chaque phase : tu amputes précisément les cycles les plus riches en sommeil paradoxal. D'où l'intérêt de viser une durée suffisante, soit <a href="/articles/combien-heures-sommeil-par-nuit.html">7 à 9 heures pour la plupart des adultes</a>.</p>
 
 <h2>Qu'est-ce qui réduit le sommeil paradoxal ?</h2>
 <ul>
 <li><strong>Les nuits trop courtes</strong> et le réveil qui sonne trop tôt, pour les raisons qu'on vient de voir.</li>
-<li><strong>L'alcool le soir :</strong> il freine le sommeil paradoxal en début de nuit, puis fragmente la seconde moitié. Une double peine <a href="/articles/alcool-sommeil-effets.html">détaillée verre par verre ici</a>.</li>
+<li><strong>L'alcool le soir :</strong> une revue de 2013 de toutes les études chez des volontaires en bonne santé montre qu'il retarde le premier épisode de sommeil paradoxal, en réduit la part sur la nuit dès des doses modérées, et fragmente la seconde moitié. Une double peine <a href="/articles/alcool-sommeil-effets.html">détaillée verre par verre ici</a>.</li>
 <li><strong>Le cannabis</strong>, qui réduit aussi cette phase ; à l'arrêt, les rêves reviennent souvent en force.</li>
 <li><strong>Les horaires irréguliers :</strong> ton horloge interne programme le sommeil paradoxal surtout au petit matin. Des horaires qui bougent sans cesse désorganisent l'ensemble.</li>
 <li><strong>Certains médicaments</strong>, dont plusieurs antidépresseurs, modifient aussi cette phase. Ne change jamais un traitement de toi-même : parles-en à ton médecin.</li>
@@ -110,7 +125,7 @@ ENTRIES = [
 <li><strong>Protège la fin de ta nuit :</strong> couche-toi assez tôt pour que ton réveil ne coupe pas les derniers cycles.</li>
 <li><strong>Garde un lever régulier</strong>, week-end compris, à une heure près.</li>
 <li><strong>Laisse l'alcool de côté</strong> les soirs où ta nuit compte, ou arrête-le tôt dans la soirée.</li>
-<li><strong>Garde la chambre fraîche :</strong> pendant le sommeil paradoxal, ton corps régule mal sa température, et la chaleur écourte cette phase.</li>
+<li><strong>Garde la chambre fraîche :</strong> pendant le sommeil paradoxal, ton corps régule mal sa température. Une revue de 2012 sur l'environnement thermique le confirme : la chaleur multiplie les éveils et réduit le sommeil paradoxal comme le sommeil profond.</li>
 </ul>
 <p>Côté montre, prudence : les capteurs au poignet estiment les phases à partir du cœur et des mouvements, sans lire l'activité du cerveau. Suis ta tendance sur plusieurs semaines, pas le chiffre d'une nuit. Et si ton ou ta partenaire te voit vivre tes rêves — coups, cris, chutes du lit —, parles-en à un médecin : ce n'est pas anodin, et ça se prend en charge.</p>
 
@@ -129,6 +144,18 @@ ENTRIES = [
             {"q": "Que se passe-t-il quand on manque de sommeil paradoxal ?",
              "a": "On devient souvent plus irritable et plus réactif émotionnellement, et on retient moins bien ce qu'on apprend. Le cerveau compense en partie les nuits suivantes par un effet rebond, avec des rêves plus intenses. La meilleure prévention reste une nuit assez longue, sans alcool le soir."},
         ],
+        "sources": [
+            {"t": "Kabrita CS, Ghanem FK, Khalil B. Physiology of Sleep. In: StatPearls. StatPearls Publishing. 2026.",
+             "u": "https://pubmed.ncbi.nlm.nih.gov/29494118/"},
+            {"t": "Rasch B, Born J. About sleep's role in memory. <em>Physiol Rev</em>. 2013.",
+             "u": "https://doi.org/10.1152/physrev.00032.2012"},
+            {"t": "Walker MP, van der Helm E. Overnight therapy? The role of sleep in emotional brain processing. <em>Psychol Bull</em>. 2009.",
+             "u": "https://doi.org/10.1037/a0016570"},
+            {"t": "Ebrahim IO, Shapiro CM, Williams AJ, Fenwick PB. Alcohol and sleep I: effects on normal sleep. <em>Alcohol Clin Exp Res</em>. 2013.",
+             "u": "https://doi.org/10.1111/acer.12006"},
+            {"t": "Okamoto-Mizuno K, Mizuno K. Effects of thermal environment on sleep and circadian rhythm. <em>J Physiol Anthropol</em>. 2012.",
+             "u": "https://doi.org/10.1186/1880-6805-31-14"},
+        ],
     },
     {
         "slug": "melatonine-efficace-pour-dormir",
@@ -145,31 +172,31 @@ ENTRIES = [
 <p>Elle ne t'assomme pas. Elle <strong>donne l'heure</strong> à ton horloge interne, qui déclenche ensuite toute la cascade du sommeil : baisse de la température, ralentissement, somnolence. Un chef d'orchestre, pas un interrupteur.</p>
 
 <h2>La mélatonine fait-elle vraiment dormir ?</h2>
-<p>Pour la plupart des gens qui dorment mal, l'effet est <strong>réel mais faible</strong> : en moyenne, les études montrent un endormissement plus rapide de quelques minutes seulement, et peu d'effet sur la durée de la nuit. Si ton problème vient du stress, de la caféine, d'une chambre surchauffée ou des écrans jusqu'à minuit, la mélatonine ne corrigera rien. Il faut traiter la cause, et les <a href="/articles/s-endormir-rapidement.html">techniques pour s'endormir rapidement</a> font bien mieux.</p>
+<p>Pour la plupart des gens qui dorment mal, l'effet est <strong>réel mais faible</strong> : une méta-analyse de 2013 (19 études, 1 683 participants) mesure en moyenne un endormissement plus rapide de 7 minutes et 8 minutes de sommeil en plus. C'est pourquoi l'American Academy of Sleep Medicine suggère de ne pas l'utiliser contre l'insomnie chronique de l'adulte (2017). Si ton problème vient du stress, de la caféine, d'une chambre surchauffée ou des écrans jusqu'à minuit, la mélatonine ne corrigera rien. Il faut traiter la cause, et les <a href="/articles/s-endormir-rapidement.html">techniques pour s'endormir rapidement</a> font bien mieux.</p>
 <p>Là où elle brille, c'est quand ton problème est un problème d'<strong>horaire</strong>, pas de sommeil.</p>
 
 <h2>Dans quels cas la mélatonine est-elle utile ?</h2>
 <ul>
-<li><strong>Le décalage horaire :</strong> c'est l'usage le mieux documenté, surtout vers l'est et au-delà de quelques fuseaux. Elle aide l'horloge à se recaler plus vite, en complément de la lumière, qui reste le <a href="/articles/decalage-horaire-que-faire.html">levier nº1 contre le jet lag</a>.</li>
+<li><strong>Le décalage horaire :</strong> c'est l'usage le mieux documenté. Dans une revue Cochrane (2002), 9 essais sur 10 montrent qu'elle réduit le jet lag après un vol d'au moins cinq fuseaux horaires, surtout vers l'est. Elle aide l'horloge à se recaler plus vite, en complément de la lumière, qui reste le <a href="/articles/decalage-horaire-que-faire.html">levier nº1 contre le jet lag</a>.</li>
 <li><strong>L'endormissement très tardif :</strong> certaines personnes ont une horloge décalée et ne trouvent pas le sommeil avant 2 ou 3 heures du matin, malgré tous leurs efforts. Un médecin peut alors proposer la mélatonine pour avancer leur rythme.</li>
 <li><strong>Le travail de nuit :</strong> les résultats sont plus mitigés ; l'obscurité le jour et la régularité priment.</li>
 </ul>
-<p>Dans tous les cas, le <strong>moment de la prise compte plus que la quantité</strong>. Mal placée, la mélatonine peut même décaler ton horloge dans le mauvais sens. C'est pour ça que le bon usage se définit avec un médecin ou un pharmacien, pas à l'instinct.</p>
+<p>Dans tous les cas, le <strong>moment de la prise compte plus que la quantité</strong>. Mal placée, la mélatonine peut même décaler ton horloge dans le mauvais sens : prise trop tôt dans la journée, note la même revue, elle retarde l'adaptation à l'heure locale. C'est pour ça que le bon usage se définit avec un médecin ou un pharmacien, pas à l'instinct.</p>
 
 <h2>Quels sont les effets secondaires de la mélatonine ?</h2>
 <p>Vendue librement comme complément alimentaire, la mélatonine a l'air anodine. Elle ne l'est pas tout à fait :</p>
 <ul>
-<li><strong>Des effets indésirables</strong> sont possibles : somnolence le lendemain, maux de tête, vertiges, nausées, rêves agités. Prudence au volant si tu te sens groggy.</li>
-<li><strong>Des publics à protéger :</strong> l'Anses, l'agence sanitaire française, déconseille ces compléments aux femmes enceintes ou allaitantes, aux enfants et adolescents, et aux personnes atteintes de maladies inflammatoires ou auto-immunes. En cas d'épilepsie, d'asthme, de troubles de l'humeur ou de traitement en cours, demande d'abord l'avis d'un médecin.</li>
+<li><strong>Des effets indésirables</strong> sont possibles : l'Anses, l'agence sanitaire française, en a recensé 90 cas en 2018, avec maux de tête, vertiges, somnolence, cauchemars, irritabilité ou nausées. Prudence au volant si tu te sens groggy.</li>
+<li><strong>Des publics à protéger :</strong> l'Anses déconseille ces compléments aux femmes enceintes ou allaitantes, aux enfants et adolescents, aux personnes atteintes de maladies inflammatoires ou auto-immunes, et à toute personne dont l'activité exige une vigilance soutenue. En cas d'épilepsie, d'asthme, de troubles de l'humeur ou de traitement en cours, demande d'abord l'avis d'un médecin.</li>
 <li><strong>Des interactions</strong> avec certains médicaments, notamment ceux qui agissent sur la coagulation ou sur le système nerveux.</li>
-<li><strong>Une qualité inégale :</strong> la teneur réelle de certains produits s'écarte nettement de l'étiquette.</li>
+<li><strong>Une qualité inégale :</strong> une analyse de 2017 portant sur une trentaine de compléments a mesuré des teneurs allant de 83 % de moins à 478 % de plus que l'étiquette.</li>
 </ul>
 <p>La règle est simple : pas d'automédication au long cours. Ton pharmacien ou ton médecin tiendra compte de ta situation et de tes traitements. Et si tes difficultés de sommeil durent depuis des semaines, c'est une consultation qu'il te faut, pas un flacon.</p>
 
 <h2>Comment augmenter sa mélatonine naturellement ?</h2>
 <ul>
 <li><strong>Lumière vive le matin :</strong> sortir dans la première heure après le lever cale ton horloge, donc l'heure à laquelle la mélatonine monte le soir.</li>
-<li><strong>Lumière douce le soir :</strong> la lumière vive freine sa sécrétion. Tamise la pièce et baisse les écrans la dernière heure : <a href="/articles/lumiere-bleue-ecrans-avant-de-dormir.html">l'intensité compte plus que la seule lumière bleue</a>.</li>
+<li><strong>Lumière douce le soir :</strong> la lumière freine sa sécrétion. Dans une étude de 2011 sur 116 volontaires, un simple éclairage de pièce avant le coucher retardait sa montée chez 99 % d'entre eux et raccourcissait sa sécrétion d'environ 90 minutes. Tamise la pièce et baisse les écrans la dernière heure : <a href="/articles/lumiere-bleue-ecrans-avant-de-dormir.html">l'intensité compte plus que la seule lumière bleue</a>.</li>
 <li><strong>Le noir complet la nuit :</strong> rideaux occultants ou masque de sommeil.</li>
 <li><strong>Des horaires réguliers :</strong> ton horloge anticipe ce qui se répète, et la mélatonine arrive alors pile au bon moment. C'est tout l'intérêt de <a href="/articles/se-coucher-meme-heure-regularite.html">se coucher à la même heure</a>.</li>
 </ul>
@@ -188,6 +215,20 @@ ENTRIES = [
              "a": "En l'état des connaissances, elle n'entraîne pas la dépendance des somnifères classiques. Mais elle ne traite pas la cause d'un mauvais sommeil et les données sur un usage prolongé restent limitées : mieux vaut en parler à un professionnel de santé que d'en prendre chaque soir par habitude."},
             {"q": "Quelle différence entre mélatonine et somnifère ?",
              "a": "Un somnifère agit directement sur le cerveau pour provoquer le sommeil ; la mélatonine transmet un signal d'horloge qui indique que c'est la nuit. C'est pour ça qu'elle aide peu dans l'insomnie classique, et davantage quand l'horloge est décalée. Dans les deux cas, l'avis d'un médecin ou d'un pharmacien s'impose."},
+        ],
+        "sources": [
+            {"t": "Ferracioli-Oda E, Qawasmi A, Bloch MH. Meta-analysis: melatonin for the treatment of primary sleep disorders. <em>PLoS One</em>. 2013.",
+             "u": "https://doi.org/10.1371/journal.pone.0063773"},
+            {"t": "Sateia MJ, Buysse DJ, Krystal AD, Neubauer DN, Heald JL. Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline. <em>J Clin Sleep Med</em>. 2017.",
+             "u": "https://doi.org/10.5664/jcsm.6470"},
+            {"t": "Herxheimer A, Petrie KJ. Melatonin for the prevention and treatment of jet lag. <em>Cochrane Database Syst Rev</em>. 2002.",
+             "u": "https://doi.org/10.1002/14651858.CD001520"},
+            {"t": "Anses. L'Anses recommande à certaines populations d'éviter la consommation de compléments alimentaires contenant de la mélatonine. 2018.",
+             "u": "https://www.anses.fr/fr/content/lanses-recommande-certaines-populations-deviter-la-consommation-de-complements-alimentaires"},
+            {"t": "Erland LA, Saxena PK. Melatonin Natural Health Products and Supplements: Presence of Serotonin and Significant Variability of Melatonin Content. <em>J Clin Sleep Med</em>. 2017.",
+             "u": "https://doi.org/10.5664/jcsm.6462"},
+            {"t": "Gooley JJ, Chamberlain K, Smith KA, et al. Exposure to room light before bedtime suppresses melatonin onset and shortens melatonin duration in humans. <em>J Clin Endocrinol Metab</em>. 2011.",
+             "u": "https://doi.org/10.1210/jc.2010-2098"},
         ],
     },
     {
@@ -212,10 +253,10 @@ ENTRIES = [
 
 <h2>Dette aiguë ou chronique : peut-on tout récupérer ?</h2>
 <p>Après une nuit blanche ou deux nuits écourtées, ton cerveau n'exige pas un remboursement heure pour heure. Il <strong>compresse</strong> : les nuits suivantes, il donne la priorité au sommeil profond, puis au sommeil paradoxal, et l'essentiel de tes capacités revient en une à trois nuits normales ou un peu allongées.</p>
-<p>La dette chronique est une autre histoire. Des expériences en laboratoire l'ont bien montré : après deux semaines à six heures par nuit, l'attention et le temps de réaction se dégradent jusqu'au niveau d'une nuit blanche, alors que les participants se disent seulement un peu fatigués. <strong>On s'habitue à la sensation, pas aux déficits.</strong> Et quelques nuits de rattrapage ne remettent pas tout à zéro : les effets sur la vigilance, l'appétit et la régulation du sucre traînent plus longtemps.</p>
+<p>La dette chronique est une autre histoire. Une expérience de 2003 sur 48 adultes en laboratoire l'a bien montré : après deux semaines à six heures au lit par nuit, l'attention et le temps de réaction se dégradent jusqu'au niveau d'une nuit blanche, alors que les participants se disent seulement un peu fatigués. <strong>On s'habitue à la sensation, pas aux déficits.</strong> Et quelques nuits de rattrapage ne remettent pas tout à zéro. Dans une étude de 2010 sur 159 adultes, après cinq nuits à quatre heures, même une nuit de rattrapage de dix heures au lit ne suffisait pas à retrouver la vigilance de départ. Les effets sur l'appétit et la régulation du sucre traînent eux aussi.</p>
 
 <h2>La grasse matinée du week-end, bonne ou mauvaise idée ?</h2>
-<p>Elle soulage, mais elle a un prix. Dormir trois heures de plus le samedi décale ton horloge comme un voyage de quelques fuseaux horaires : endormissement difficile le dimanche soir, lundi dans le brouillard. C'est le <a href="/articles/se-coucher-meme-heure-regularite.html">jetlag social</a>, qui dégrade les nuits suivantes.</p>
+<p>Elle soulage, mais elle a un prix. Dormir trois heures de plus le samedi décale ton horloge comme un voyage de quelques fuseaux horaires : endormissement difficile le dimanche soir, lundi dans le brouillard. C'est le <a href="/articles/se-coucher-meme-heure-regularite.html">jetlag social</a>, décrit en 2006 par l'équipe du chronobiologiste Till Roenneberg comme le décalage entre ton horloge biologique et tes horaires sociaux. Il dégrade les nuits suivantes, et il ne protège même pas ton métabolisme : en 2019, une étude a montré que dormir à volonté le week-end n'empêchait pas la sensibilité à l'insuline de chuter de 9 à 27 % dès le retour des nuits courtes.</p>
 <ul>
 <li><strong>Repère :</strong> limite le décalage de ton lever à une heure environ par rapport à la semaine.</li>
 <li><strong>Mieux :</strong> couche-toi plus tôt le vendredi et le samedi plutôt que de te lever beaucoup plus tard.</li>
@@ -225,7 +266,7 @@ ENTRIES = [
 <h2>La sieste peut-elle rembourser la dette ?</h2>
 <p>Oui, c'est même l'outil le plus propre pour limiter la casse sans dérégler ton horloge :</p>
 <ul>
-<li><strong>10 à 20 minutes avant 15 heures :</strong> assez pour restaurer la vigilance, sans brouillard au réveil.</li>
+<li><strong>10 à 20 minutes avant 15 heures :</strong> assez pour restaurer la vigilance, sans brouillard au réveil. Dans une étude de 2006, après une nuit de cinq heures, la sieste de 10 minutes était la plus efficace, avec un bénéfice immédiat ; celle de 30 minutes laissait d'abord groggy.</li>
 <li><strong>Environ 90 minutes :</strong> un cycle complet, à réserver aux vraies dettes — nuit très courte, garde, voyage.</li>
 </ul>
 <p>Évite seulement la sieste tardive, qui entame ta pression de sommeil du soir : tu te coucherais plus tard et creuserais la dette que tu voulais combler. Tous les réglages sont détaillés dans l'article sur la <a href="/articles/sieste-ideale-duree.html">sieste idéale</a>.</p>
@@ -251,9 +292,23 @@ ENTRIES = [
             {"q": "Combien de temps pour récupérer d'une nuit blanche ?",
              "a": "En général une à trois nuits normales, éventuellement un peu allongées. Le cerveau ne rembourse pas heure pour heure : il donne la priorité au sommeil profond, puis au sommeil paradoxal. Évite simplement de dormir jusqu'à midi, ce qui décalerait ton horloge."},
             {"q": "Peut-on dormir en avance pour faire des réserves ?",
-             "a": "On ne stocke pas vraiment le sommeil, mais arriver sans dette avant une période chargée aide nettement. Quelques études suggèrent que dormir un peu plus les nuits qui précèdent une privation en atténue les effets. Le plus efficace reste de ne pas creuser de dette au quotidien."},
+             "a": "On ne stocke pas vraiment le sommeil, mais arriver sans dette avant une période chargée aide nettement. Dans une étude de 2009, une semaine à 10 heures au lit avant une privation limitait la baisse de vigilance et accélérait la récupération. Le plus efficace reste de ne pas creuser de dette au quotidien."},
             {"q": "Dormir 10 heures le week-end suffit-il pour récupérer ?",
              "a": "Ça soulage la fatigue ressentie, mais ça ne compense pas une dette chronique : les effets sur la vigilance et le métabolisme persistent. Une longue grasse matinée décale aussi ton horloge et complique les nuits suivantes. Mieux vaut dormir un peu plus chaque soir de la semaine."},
+        ],
+        "sources": [
+            {"t": "Van Dongen HP, Maislin G, Mullington JM, Dinges DF. The cumulative cost of additional wakefulness: dose-response effects on neurobehavioral functions and sleep physiology from chronic sleep restriction and total sleep deprivation. <em>Sleep</em>. 2003.",
+             "u": "https://doi.org/10.1093/sleep/26.2.117"},
+            {"t": "Banks S, Van Dongen HP, Maislin G, Dinges DF. Neurobehavioral dynamics following chronic sleep restriction: dose-response effects of one night for recovery. <em>Sleep</em>. 2010.",
+             "u": "https://doi.org/10.1093/sleep/33.8.1013"},
+            {"t": "Wittmann M, Dinich J, Merrow M, Roenneberg T. Social jetlag: misalignment of biological and social time. <em>Chronobiol Int</em>. 2006.",
+             "u": "https://doi.org/10.1080/07420520500545979"},
+            {"t": "Depner CM, Melanson EL, Eckel RH, et al. Ad libitum Weekend Recovery Sleep Fails to Prevent Metabolic Dysregulation during a Repeating Pattern of Insufficient Sleep and Weekend Recovery Sleep. <em>Curr Biol</em>. 2019.",
+             "u": "https://doi.org/10.1016/j.cub.2019.01.069"},
+            {"t": "Brooks A, Lack L. A brief afternoon nap following nocturnal sleep restriction: which nap duration is most recuperative? <em>Sleep</em>. 2006.",
+             "u": "https://doi.org/10.1093/sleep/29.6.831"},
+            {"t": "Rupp TL, Wesensten NJ, Bliese PD, Balkin TJ. Banking sleep: realization of benefits during subsequent sleep restriction and recovery. <em>Sleep</em>. 2009.",
+             "u": "https://doi.org/10.1093/sleep/32.3.311"},
         ],
     },
     {
@@ -264,31 +319,31 @@ ENTRIES = [
         "date": "2026-12-01",
         "body": """
 <p>La réponse courte : vise une chambre <strong>entre 16 et 19 °C</strong>, avec <strong>18 °C</strong> comme bon point de départ. Pour s'endormir puis dormir profondément, ton corps doit perdre un peu de chaleur, et une pièce fraîche lui facilite la tâche. L'idéal tient en une formule : <strong>chambre fraîche, lit tiède, pieds au chaud</strong>.</p>
-<p>Le chiffre exact varie selon ta literie, ton pyjama et ta sensibilité au froid. Mais une chose ne varie pas : la plupart des chambres sont trop chauffées l'hiver et trop chaudes l'été.</p>
+<p>La National Sleep Foundation situe la zone idéale entre 60 et 67 °F, soit environ 16 à 19 °C ; l'Institut national du sommeil et de la vigilance (INSV) retient 18 à 19 °C, sans dépasser 20 °C. Le chiffre exact varie selon ta literie, ton pyjama et ta sensibilité au froid. Mais une chose ne varie pas : la plupart des chambres sont trop chauffées l'hiver et trop chaudes l'été.</p>
 
 <h2>Pourquoi dort-on mieux dans une chambre fraîche ?</h2>
 <p>Ta température interne suit un rythme sur 24 heures. Elle commence à baisser en soirée, continue de descendre pendant la nuit, atteint son point le plus bas au petit matin, puis remonte vers le réveil. Cette baisse, de l'ordre d'un degré, fait partie des <strong>signaux qui déclenchent l'endormissement</strong>.</p>
-<p>Pour évacuer cette chaleur, ton corps dilate les vaisseaux des mains et des pieds, qui jouent le rôle de radiateurs. Une pièce fraîche accélère l'échange, une pièce surchauffée le freine. Résultat : endormissement plus lent, et <a href="/articles/sommeil-profond-comment-augmenter.html">sommeil profond</a> amputé, alors qu'il se concentre justement en début de nuit.</p>
+<p>Pour évacuer cette chaleur, ton corps dilate les vaisseaux des mains et des pieds, qui jouent le rôle de radiateurs. Une revue de 2007 le résume : le sommeil démarre quand la température interne descend, la perte de chaleur par les extrémités accélère l'endormissement, et les personnes aux mains et aux pieds froids s'endorment plus lentement. Une pièce fraîche accélère l'échange, une pièce surchauffée le freine. Résultat : endormissement plus lent, et <a href="/articles/sommeil-profond-comment-augmenter.html">sommeil profond</a> amputé, alors qu'il se concentre justement en début de nuit.</p>
 
 <h2>Trop chaud ou trop froid : que se passe-t-il ?</h2>
 <ul>
 <li><strong>Trop chaud :</strong> c'est le cas le plus fréquent et le plus pénalisant. Tu te retournes, tu transpires, tu te réveilles plus souvent : la chaleur figure parmi les causes classiques des <a href="/articles/se-reveiller-la-nuit-3h-du-matin.html">réveils en pleine nuit</a>. Le <a href="/articles/sommeil-paradoxal-role.html">sommeil paradoxal</a> trinque particulièrement, car pendant cette phase ton corps régule mal sa température.</li>
 <li><strong>Trop froid :</strong> moins gênant tant que tu es bien couvert. Mais si tu grelottes ou si tes pieds restent glacés, les vaisseaux se resserrent, la chaleur ne s'évacue plus par les extrémités et l'endormissement traîne.</li>
 </ul>
-<p>Le vrai critère n'est donc pas le thermomètre seul, mais le <strong>confort sous la couette</strong> : une pièce fraîche où tu as bien chaud dans ton lit. Avec l'âge, le corps régule moins bien sa température, et les écarts se paient davantage dans un sens comme dans l'autre.</p>
+<p>Une revue de 2012 le confirme : avec couette et pyjama, la chaleur multiplie les éveils et réduit sommeil profond et paradoxal, alors que le froid ne modifie pas les stades du sommeil. Le vrai critère n'est donc pas le thermomètre seul, mais le <strong>confort sous la couette</strong> : une pièce fraîche où tu as bien chaud dans ton lit. Avec l'âge, le corps régule moins bien sa température, et les écarts se paient davantage dans un sens comme dans l'autre.</p>
 <p>Pour connaître ton point de départ, un simple thermomètre de chambre lève le doute : une chambre chauffée comme le séjour dépasse facilement les 20 °C sans qu'on s'en rende compte. En hiver, baisse le chauffage de la chambre pour la nuit — ta facture te dira merci.</p>
 
 <h2>Douche chaude, chaussettes, literie : quels réglages pour bien dormir ?</h2>
 <ul>
-<li><strong>Une douche ou un bain chaud 1 à 2 heures avant le coucher :</strong> paradoxal mais efficace. La chaleur dilate les vaisseaux de la peau, puis ton corps se refroidit plus vite une fois sorti — l'une des <a href="/articles/s-endormir-rapidement.html">techniques pour s'endormir rapidement</a> les plus simples.</li>
+<li><strong>Une douche ou un bain chaud 1 à 2 heures avant le coucher :</strong> paradoxal mais efficace. La chaleur dilate les vaisseaux de la peau, puis ton corps se refroidit plus vite une fois sorti. Une méta-analyse de 2019 (17 études) l'a vérifié : une eau à 40-42,5 °C, 1 à 2 heures avant le coucher, même 10 minutes, raccourcit l'endormissement. C'est l'une des <a href="/articles/s-endormir-rapidement.html">techniques pour s'endormir rapidement</a> les plus simples.</li>
 <li><strong>Les pieds au chaud :</strong> des chaussettes légères ou une bouillotte au pied du lit réchauffent les pieds froids, qui dilatent alors leurs vaisseaux et évacuent la chaleur.</li>
 <li><strong>Une literie qui respire :</strong> couette adaptée à la saison, draps en coton ou en lin, pyjama léger. Si ton ou ta partenaire n'a pas les mêmes besoins, deux couettes séparées règlent bien des conflits.</li>
-<li><strong>Une humidité modérée</strong>, autour de 40 à 60 %, et une chambre aérée chaque jour.</li>
+<li><strong>Une humidité modérée</strong>, ni air desséché ni air moite : la chaleur humide alourdit encore la charge thermique de la nuit. Et une chambre aérée chaque jour.</li>
 <li><strong>Pas de sport intense ni de repas lourd</strong> dans les 2 à 3 heures avant le lit : ils font remonter la température au mauvais moment.</li>
 </ul>
 
 <h2>Comment dormir quand il fait trop chaud ?</h2>
-<p>En pleine canicule, l'objectif est de garder la chambre la plus fraîche possible et d'aider ton corps à dissiper sa chaleur :</p>
+<p>En pleine canicule, l'objectif est de garder la chambre la plus fraîche possible et d'aider ton corps à dissiper sa chaleur. Les trois premiers réglages figurent dans les conseils de l'INSV :</p>
 <ul>
 <li><strong>Volets et fenêtres fermés le jour</strong>, puis aération large la nuit et tôt le matin, quand l'air extérieur est plus frais.</li>
 <li><strong>Un ventilateur :</strong> l'air en mouvement accélère l'évaporation de la sueur.</li>
@@ -312,6 +367,20 @@ ENTRIES = [
             {"q": "Faut-il dormir avec des chaussettes ?",
              "a": "Si tu as les pieds froids, des chaussettes légères peuvent aider : réchauffer les pieds dilate leurs vaisseaux, ce qui favorise l'évacuation de la chaleur et l'endormissement. Évite les modèles serrés, et retire-les si tu as trop chaud."},
         ],
+        "sources": [
+            {"t": "National Sleep Foundation. How to Make a Sleep-Friendly Bedroom. 2020.",
+             "u": "https://www.thensf.org/how-to-make-a-sleep-friendly-bedroom/"},
+            {"t": "Institut national du sommeil et de la vigilance (INSV). Une chambre idéale pour bien dormir : jeu des 6 erreurs. 2025.",
+             "u": "https://institut-sommeil-vigilance.org/une-chambre-ideale-pour-bien-dormir-les-6-erreurs-a-eviter/"},
+            {"t": "Kräuchi K. The thermophysiological cascade leading to sleep initiation in relation to phase of entrainment. <em>Sleep Med Rev</em>. 2007.",
+             "u": "https://doi.org/10.1016/j.smrv.2007.07.001"},
+            {"t": "Okamoto-Mizuno K, Mizuno K. Effects of thermal environment on sleep and circadian rhythm. <em>J Physiol Anthropol</em>. 2012.",
+             "u": "https://doi.org/10.1186/1880-6805-31-14"},
+            {"t": "Haghayegh S, Khoshnevis S, Smolensky MH, Diller KR, Castriotta RJ. Before-bedtime passive body heating by warm shower or bath to improve sleep: A systematic review and meta-analysis. <em>Sleep Med Rev</em>. 2019.",
+             "u": "https://doi.org/10.1016/j.smrv.2019.04.008"},
+            {"t": "Institut national du sommeil et de la vigilance (INSV). Sommeil et chaleur. 2022.",
+             "u": "https://institut-sommeil-vigilance.org/sommeil-et-chaleur/"},
+        ],
     },
     {
         "slug": "magnesium-sport-fatigue",
@@ -324,14 +393,14 @@ ENTRIES = [
 <p>Le magnésium traîne une réputation de remède à tout, des crampes au stress. La réalité est plus nuancée, et beaucoup plus utile.</p>
 
 <h2>À quoi sert le magnésium dans le corps ?</h2>
-<p>Il participe à plus de 300 réactions enzymatiques. Les plus importantes pour toi :</p>
+<p>Selon l'Anses, il intervient dans plus de 300 systèmes enzymatiques. Les plus importants pour toi :</p>
 <ul>
 <li><strong>L'énergie :</strong> l'ATP, la molécule qui alimente tes cellules, n'est active qu'associée au magnésium. Sans lui, la machine énergétique tourne mal.</li>
 <li><strong>Les muscles :</strong> il aide le muscle à se relâcher après la contraction et participe à la fabrication des protéines.</li>
 <li><strong>Les nerfs et le cœur :</strong> il contribue à la transmission nerveuse et à un rythme cardiaque normal.</li>
-<li><strong>Les os :</strong> plus de la moitié du magnésium de ton corps y est stockée.</li>
+<li><strong>Les os :</strong> ton corps contient environ 25 g de magnésium, dont 50 à 60 % dans les os et environ 25 % dans les muscles.</li>
 </ul>
-<p>Détail qui compte : moins de 1 % de ton magnésium circule dans le sang. Une prise de sang normale ne reflète donc pas toujours tes réserves, et c'est au médecin d'interpréter l'ensemble du tableau.</p>
+<p>Détail qui compte : à peine 1 % de ton magnésium se trouve hors des cellules, sang compris. Une prise de sang normale ne reflète donc pas toujours tes réserves, et c'est au médecin d'interpréter l'ensemble du tableau.</p>
 
 <h2>Où trouver du magnésium dans l'alimentation ?</h2>
 <p>Bonne nouvelle : les meilleures sources sont aussi des aliments qui te font du bien pour tout le reste.</p>
@@ -342,14 +411,26 @@ ENTRIES = [
 <li><strong>Légumes verts à feuilles</strong>, comme les épinards, et <strong>cacao</strong> ou chocolat noir.</li>
 <li><strong>Certaines eaux minérales</strong> riches en magnésium : la teneur figure sur l'étiquette.</li>
 </ul>
-<p>Une alimentation variée et peu transformée, avec des légumineuses et des céréales complètes, couvre en général les besoins. C'est aussi une bonne base pour <a href="/articles/que-manger-apres-le-sport.html">bien manger après le sport</a>.</p>
+<p>Une alimentation variée et peu transformée, avec des légumineuses et des céréales complètes, couvre en général les besoins. C'est aussi une bonne base pour <a href="/articles/que-manger-apres-le-sport.html">bien manger après le sport</a>. Pour te situer, les apports satisfaisants fixés par l'Anses :</p>
+<div class="tablewrap"><table>
+<caption>Source : Anses, références nutritionnelles en vitamines et minéraux (2021).</caption>
+<thead><tr><th>Profil</th><th class="n">Apport satisfaisant par jour</th></tr></thead>
+<tbody>
+<tr><td>Enfants de 7 à 10 ans</td><td class="n">240 mg</td></tr>
+<tr><td>Adolescents de 11 à 14 ans</td><td class="n">265 mg</td></tr>
+<tr><td>Garçons de 15 à 17 ans</td><td class="n">295 mg</td></tr>
+<tr><td>Filles de 15 à 17 ans</td><td class="n">225 mg</td></tr>
+<tr><td>Hommes de 18 ans et plus</td><td class="n">380 mg</td></tr>
+<tr><td>Femmes de 18 ans et plus, enceintes ou allaitantes comprises</td><td class="n">300 mg</td></tr>
+</tbody>
+</table></div>
 
 <h2>Qui risque de manquer de magnésium ?</h2>
 <p>Les carences sévères sont rares, mais une part importante de la population n'atteint pas les apports conseillés. Les profils les plus exposés :</p>
 <ul>
 <li><strong>Les alimentations très transformées</strong>, pauvres en végétaux et en céréales complètes.</li>
 <li><strong>Les régimes restrictifs :</strong> moins tu manges, moins tu en apportes.</li>
-<li><strong>Les sportifs qui transpirent beaucoup</strong>, surtout s'ils mangent peu : la sueur en emporte une partie.</li>
+<li><strong>Les sportifs qui transpirent beaucoup</strong>, surtout s'ils mangent peu. Selon une revue de 2006, un effort intense augmente les pertes par la sueur et l'urine, et pourrait accroître les besoins de 10 à 20 %.</li>
 <li><strong>Les personnes âgées</strong>, qui l'absorbent moins bien.</li>
 <li><strong>Certaines situations médicales :</strong> maladies digestives chroniques, diabète, excès d'alcool, ou certains traitements au long cours, comme des diurétiques ou des médicaments contre l'acidité gastrique.</li>
 </ul>
@@ -357,9 +438,9 @@ ENTRIES = [
 
 <h2>Magnésium, sport et sommeil : que disent les études ?</h2>
 <ul>
-<li><strong>Performance :</strong> corriger un manque aide ; en rajouter chez un sportif qui en a assez n'améliore pas la performance.</li>
-<li><strong>Crampes :</strong> on les attribue volontiers à un manque de magnésium, mais dans les études, les compléments se montrent décevants contre les crampes courantes. Pour les crampes d'effort, la fatigue neuromusculaire est aujourd'hui une piste majeure.</li>
-<li><strong>Sommeil :</strong> le magnésium participe à la détente du système nerveux, mais les preuves qu'un complément améliore le sommeil restent minces. Les bases pèsent bien plus lourd : <a href="/articles/s-endormir-rapidement.html">les techniques pour s'endormir rapidement</a>.</li>
+<li><strong>Performance :</strong> corriger un manque aide ; en rajouter chez un sportif qui en a assez n'améliore pas la performance, conclut la revue de 2006.</li>
+<li><strong>Crampes :</strong> on les attribue volontiers à un manque de magnésium, mais une revue Cochrane de 2020 (11 essais, 735 participants) juge peu probable un bénéfice réel contre les crampes des adultes âgés, et n'a trouvé aucun essai sur les crampes d'effort. Pour celles-ci, un contrôle neuromusculaire perturbé par la fatigue est aujourd'hui la piste principale.</li>
+<li><strong>Sommeil :</strong> le magnésium participe à la détente du système nerveux, mais les preuves qu'un complément améliore le sommeil restent minces : une méta-analyse de 2021 n'a trouvé que 3 essais, sur 151 personnes âgées, de qualité faible à très faible. Les bases pèsent bien plus lourd : <a href="/articles/s-endormir-rapidement.html">les techniques pour s'endormir rapidement</a>.</li>
 <li><strong>Fatigue :</strong> utile si elle vient d'un vrai manque, sans effet sinon. Une <a href="/articles/toujours-fatigue-causes.html">fatigue constante</a> se cherche d'abord ailleurs.</li>
 </ul>
 
@@ -386,6 +467,20 @@ ENTRIES = [
              "a": "Les graines (courge, lin, sésame), les oléagineux comme les amandes et les noix de cajou, ainsi que le cacao et le chocolat noir figurent parmi les plus riches. Les légumineuses, les céréales complètes et les légumes verts à feuilles complètent bien l'apport au quotidien."},
             {"q": "Le magnésium aide-t-il à récupérer après le sport ?",
              "a": "Il participe au relâchement musculaire et à la production d'énergie, donc un manque peut freiner la récupération. Mais chez un sportif qui en apporte assez, un complément n'accélère pas la récupération : sommeil, protéines et glucides pèsent bien plus lourd."},
+        ],
+        "sources": [
+            {"t": "Anses. Les références nutritionnelles en vitamines et minéraux. 2021, mise à jour 2025.",
+             "u": "https://www.anses.fr/fr/content/les-references-nutritionnelles-en-vitamines-et-mineraux"},
+            {"t": "de Baaij JH, Hoenderop JG, Bindels RJ. Magnesium in man: implications for health and disease. <em>Physiol Rev</em>. 2015.",
+             "u": "https://doi.org/10.1152/physrev.00012.2014"},
+            {"t": "Nielsen FH, Lukaski HC. Update on the relationship between magnesium and exercise. <em>Magnes Res</em>. 2006.",
+             "u": "https://pubmed.ncbi.nlm.nih.gov/17172008/"},
+            {"t": "Garrison SR, Korownyk CS, Kolber MR, et al. Magnesium for skeletal muscle cramps. <em>Cochrane Database Syst Rev</em>. 2020.",
+             "u": "https://doi.org/10.1002/14651858.CD009402.pub3"},
+            {"t": "Schwellnus MP. Cause of exercise associated muscle cramps (EAMC)--altered neuromuscular control, dehydration or electrolyte depletion? <em>Br J Sports Med</em>. 2009.",
+             "u": "https://doi.org/10.1136/bjsm.2008.050401"},
+            {"t": "Mah J, Pitre T. Oral magnesium supplementation for insomnia in older adults: a Systematic Review &amp; Meta-Analysis. <em>BMC Complement Med Ther</em>. 2021.",
+             "u": "https://doi.org/10.1186/s12906-021-03297-z"},
         ],
     },
 ]

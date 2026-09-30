@@ -7,3 +7,4 @@ __pycache__/
 # Secrets / fichiers locaux
 .env*
 .DS_Store
+tools/donnees/ciqual-2025/

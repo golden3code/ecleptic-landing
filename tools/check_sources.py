@@ -51,6 +51,12 @@ def get(url, ua=UA, tries=3):
     return 0, b""
 
 
+def first_surname(cited):
+    """« Kodama S. et al. (2009)… » / « Morton RW, et al. … » → « kodama » / « morton »."""
+    m = re.match(r"\s*([A-Za-zÀ-ÿ'\- ]+?)[\s,]+(?:[A-Z]{1,3}\b|[A-Z]\.)", cited)
+    return unicodedata.normalize("NFKD", m.group(1)).encode("ascii", "ignore").decode().lower().strip() if m else ""
+
+
 def title_match(real_title, cited, real_year=None):
     rt, ct = norm_tokens(real_title), norm_tokens(cited)
     ratio = len(rt & ct) / max(1, len(rt))
@@ -69,7 +75,20 @@ def check(src):
         doi = m.group(1)
         st, body = get("https://api.crossref.org/works/" + urllib.request.quote(doi, safe="/:;()"))
         if st == 404:
-            return "ÉCHEC", "DOI inconnu de Crossref"
+            # DOI hors Crossref (Zenodo, jeux de données…) : on interroge DataCite, même contrôle
+            st, body = get("https://api.datacite.org/dois/" + urllib.request.quote(doi, safe="/:;()"))
+            if st == 404:
+                return "ÉCHEC", "DOI inconnu de Crossref et de DataCite"
+            if st != 200:
+                return "À VÉRIFIER", "DataCite HTTP %s" % st
+            att = json.loads(body)["data"]["attributes"]
+            real = " ".join(x.get("title", "") for x in att.get("titles") or [])
+            year = att.get("publicationYear")
+            ratio, year_ok = title_match(real, t, year)
+            if year_ok and ratio >= 0.6:
+                return "OK", "%s (%s) [DataCite]" % (real[:80], year)
+            return "ÉCHEC", "ne concorde pas avec DataCite : « %s » (%s), recouvrement %.0f %%" % (
+                real[:110], year, ratio * 100)
         if st != 200:
             return "À VÉRIFIER", "Crossref HTTP %s" % st
         msg = json.loads(body)["message"]
@@ -81,9 +100,13 @@ def check(src):
                 year = dp[0][0]
                 break
         ratio, year_ok = title_match(real, t, year)
-        if ratio < 0.6 or not year_ok:
-            return "ÉCHEC", "ne concorde pas avec Crossref : « %s » (%s), recouvrement %.0f %%" % (real[:110], year, ratio * 100)
-        return "OK", "%s (%s)" % (real[:80], year)
+        fams = {unicodedata.normalize("NFKD", a.get("family", "")).encode("ascii", "ignore").decode().lower()
+                for a in msg.get("author", [])}
+        author_ok = first_surname(t) in fams
+        if year_ok and (ratio >= 0.6 or author_ok):
+            return "OK", "%s (%s)%s" % (real[:80], year, "" if ratio >= 0.6 else " [auteur + année]")
+        return "ÉCHEC", "ne concorde pas avec Crossref : « %s » (%s), recouvrement %.0f %%, 1er auteur %s" % (
+            real[:110], year, ratio * 100, "trouvé" if author_ok else "absent")
     m = re.match(r"https://pubmed\.ncbi\.nlm\.nih\.gov/(\d+)/?$", u)
     if m:
         pmid = m.group(1)
@@ -97,9 +120,13 @@ def check(src):
         real = res.get("title", "")
         year = (re.findall(r"\d{4}", res.get("pubdate", "")) or [None])[0]
         ratio, year_ok = title_match(real, t, year)
-        if ratio < 0.6 or not year_ok:
-            return "ÉCHEC", "ne concorde pas avec PubMed : « %s » (%s), recouvrement %.0f %%" % (real[:110], year, ratio * 100)
-        return "OK", "%s (%s)" % (real[:80], year)
+        fams = {unicodedata.normalize("NFKD", a.get("name", "").rsplit(" ", 1)[0]).encode("ascii", "ignore").decode().lower()
+                for a in res.get("authors", [])}
+        author_ok = first_surname(t) in fams
+        if year_ok and (ratio >= 0.6 or author_ok):
+            return "OK", "%s (%s)%s" % (real[:80], year, "" if ratio >= 0.6 else " [auteur + année]")
+        return "ÉCHEC", "ne concorde pas avec PubMed : « %s » (%s), recouvrement %.0f %%, 1er auteur %s" % (
+            real[:110], year, ratio * 100, "trouvé" if author_ok else "absent")
     st, _ = get(u, ua=BROWSER_UA)
     if 200 <= st < 400:
         return "OK", "page accessible (HTTP %d)" % st
@@ -111,6 +138,10 @@ def check(src):
 def targets(arg):
     """Liste de (origine, source) à vérifier."""
     out = []
+    if arg and arg.endswith("textes.py"):
+        for slug, t in load(arg).TEXTES.items():
+            out += [("donnees/" + slug, s) for s in t.get("sources", [])]
+        return out
     if arg and arg.endswith(".py") and "satellites" in arg:
         for a in load(arg).ENTRIES:
             out += [(a["slug"], s) for s in a.get("sources", [])]

@@ -21,6 +21,26 @@
 <meta name="twitter:image" content="https://ecleptic.health/assets/science/file-d-etoiles-og.jpg">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Les vitaux de la nuit, signal par signal", "description": "Les vitaux de la nuit pèsent 42 points du Readiness Score : HRV, FC au repos, respiration, SpO₂, température. Comment l'app les compare à ta normale.", "datePublished": "2026-09-24", "dateModified": "2026-09-24", "inLanguage": "fr", "image": "https://ecleptic.health/assets/science/file-d-etoiles-og.jpg", "author": {"@type": "Person", "@id": "https://ecleptic.health/a-propos.html#auguste", "name": "Auguste Phily-Priou", "jobTitle": "Fondateur d'Ecleptic", "url": "https://ecleptic.health/a-propos.html", "sameAs": ["https://www.instagram.com/_optimisateur/"]}, "publisher": {"@type": "Organization", "@id": "https://ecleptic.health/#organization", "name": "Ecleptic", "url": "https://ecleptic.health/", "logo": {"@type": "ImageObject", "url": "https://ecleptic.health/assets/icons/icon-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://ecleptic.health/methode/vitaux.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ecleptic.health/"}, {"@type": "ListItem", "position": 2, "name": "Science-Based", "item": "https://ecleptic.health/science.html"}, {"@type": "ListItem", "position": 3, "name": "Les vitaux", "item": "https://ecleptic.health/methode/vitaux.html"}]}]</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment savoir si mes vitaux de la nuit sont normaux ?", "acceptedAnswer": {"@type": "Answer", "text": "Le plus fiable est de les comparer à ta propre moyenne des dernières semaines plutôt qu'à une norme générale : c'est ce que fait l'app, sur 42 jours, pour chacun des cinq signaux. Un écart d'une nuit relève souvent du bruit ; un écart qui persiste, ou qui s'accompagne de symptômes inhabituels, mérite l'avis d'un médecin."}}, {"@type": "Question", "name": "Quelle est la différence entre SDNN et RMSSD ?", "acceptedAnswer": {"@type": "Answer", "text": "Ce sont deux façons de calculer la variabilité cardiaque. Le SDNN, utilisé par Apple Santé et l'Apple Watch, est l'écart-type des intervalles entre battements ; le RMSSD, courant dans les études et sur d'autres appareils, se calcule sur les différences entre battements successifs. Les deux ne se comparent pas directement, d'où l'intérêt de te comparer à toi-même, sur le même appareil."}}, {"@type": "Question", "name": "Que se passe-t-il si ma montre n'a pas mesuré un signal cette nuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Le signal manquant est retiré pour la nuit et son poids est réparti entre les autres vitaux : rien n'est inventé pour le remplacer. Sans aucun vital, par exemple sans montre, c'est tout le pilier qui est retiré et son poids passe au sommeil, à la nutrition et au rythme, avec un indice de confiance qui le signale."}}]}</script>
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -33,6 +53,7 @@
     </span>
     <a href="/science.html" data-mega="science" class="on">Science-Based</a>
     <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
+    
   </div>
 </nav>
 <main class="wrap">
@@ -122,7 +143,7 @@
     <span class="label">La suite logique</span>
     <h2>Tu viens de lire la méthode.<br>L'app l'applique à toi.</h2>
     <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
-    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'vitaux'})">Demander l'accès</a>
+    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'vitaux',lang:'fr'})">Demander l'accès</a>
   </div>
   <div class="next">
     <span class="label">Pour aller plus loin</span>
@@ -147,7 +168,7 @@
   function track(ev,props){if(window.posthog&&POSTHOG_KEY)posthog.capture(ev,props||{});}
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
 </script>
-<script>track('methode_view',{page:'vitaux'});</script>
+<script>track('methode_view',{page:'vitaux',lang:'fr'});</script>
 <script src="/assets/nav-data.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 </body>

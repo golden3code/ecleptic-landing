@@ -1291,23 +1291,23 @@ Il soulage vraiment les courbatures et rafraîchit le mental — mais juste apr�
 
 La réponse courte : le bain froid **soulage vraiment** les courbatures et procure un authentique coup de frais mental — mais s'il est pris **juste après une séance de musculation**, il freine une partie de tes gains de force et de muscle. Ce n'est ni un effet de mode complet, ni une potion magique : c'est un outil précis, à sortir au bon moment.
 
-L'idée de base : plonger 5 à 10 minutes dans une eau à 10-15 °C fait chuter la température des tissus, resserre les vaisseaux et calme temporairement l'inflammation et la douleur. Tu ressors avec l'impression d'être *remis à zéro*. Le problème, c'est que cette inflammation que tu écrases fait aussi partie du signal qui dit à ton muscle de s'adapter.
+L'idée de base : plonger une dizaine de minutes dans une eau à 10-15 °C fait chuter la température des tissus, resserre les vaisseaux et atténue temporairement la douleur. Tu ressors avec l'impression d'être *remis à zéro*. Contrairement à une idée répandue, il ne « coupe » pas vraiment l'inflammation : un essai de 2017 avec biopsies musculaires n'a trouvé aucune différence d'inflammation avec 10 minutes de vélo léger. Le problème est ailleurs : le froid émousse aussi une partie des signaux qui disent à ton muscle de s'adapter.
 
 ## Les vrais bénéfices, documentés
 
-- **Moins de courbatures perçues.** C'est l'effet le mieux établi : le froid réduit la douleur musculaire dans les 24 à 72 heures qui suivent. Utile quand tu enchaînes vite — un tournoi, deux matchs dans le week-end, un stage.
+- **Moins de courbatures perçues.** C'est l'effet le mieux établi : selon une revue Cochrane de 2012 (17 petits essais, 366 participants), le froid réduit la douleur musculaire de 24 à 96 heures après l'effort, comparé au simple repos. Utile quand tu enchaînes vite — un tournoi, deux matchs dans le week-end, un stage.
 
-- **Un coup de frais mental et nerveux.** L'exposition au froid réveille, resserre, donne une sensation de récupération immédiate. Cet effet est réel et ne doit pas être sous-estimé : se sentir mieux aide à enchaîner.
+- **Un coup de frais mental et nerveux.** L'exposition au froid réveille, resserre, donne une sensation de récupération immédiate — la même revue relève une fatigue ressentie plus faible juste après le bain. Cet effet ne doit pas être sous-estimé : se sentir mieux aide à enchaîner.
 
-- **Une remise en route plus rapide entre deux efforts rapprochés.** Pour un sport d'endurance ou une série de compétitions, le froid peut aider à repartir plus vite le lendemain.
+- **Une remise en route plus rapide entre deux efforts rapprochés.** Une méta-analyse de 2022 (68 études) montre que le froid aide surtout à retrouver vite tes capacités d'endurance, et sur plusieurs jours ta force et ta puissance.
 
 ## Le piège : juste après la musculation
 
-Voici le point que la mode oublie de dire. Quand tu fais une séance de **prise de muscle ou de force**, l'inflammation et la signalisation qui suivent l'effort sont le message qui déclenche l'adaptation : synthèse des protéines, croissance, gains de force. Le bain froid immédiat **émousse ce signal** — plusieurs études montrent des gains de muscle et de force plus faibles quand on plonge systématiquement dans le froid après les séances de renforcement.
+Voici le point que la mode oublie de dire. Quand tu fais une séance de **prise de muscle ou de force**, la signalisation qui suit l'effort est le message qui déclenche l'adaptation : synthèse des protéines, croissance, gains de force. Le bain froid immédiat **émousse ce signal**. Dans un essai de 2015, 21 hommes ont suivi 12 semaines de musculation avec 10 minutes de bain froid ou de récupération active après chaque séance : force et masse musculaire ont moins progressé dans le groupe froid. Une méta-analyse de 2021 (8 études) confirme un effet négatif sur les gains de force, sans effet en revanche sur les progrès en endurance.
 
 La règle pratique est simple :
 
-- **Tu vises la prise de muscle ou la force ?** Évite le bain froid dans les heures qui suivent la séance. Laisse l'adaptation se faire. Si tu tiens à ton froid, décale-le d'au moins 4 à 6 heures, ou fais-le un jour sans muscu.
+- **Tu vises la prise de muscle ou la force ?** Évite le bain froid dans les heures qui suivent la séance. Laisse l'adaptation se faire. Les études testent un bain pris juste après l'effort, et personne ne connaît le délai qui annule ce frein : si tu tiens à ton froid, garde-le pour un jour sans muscu.
 
 - **Tu es en compétition ou tu dois récupérer vite ?** Là, le froid a tout son sens : la priorité n'est plus de construire, c'est d'être opérationnel demain.
 
@@ -1315,11 +1315,11 @@ Autrement dit, le bain froid et la prise de muscle tirent dans des directions op
 
 ## Comment le faire proprement
 
-- **Température et durée :** 10-15 °C, 5 à 10 minutes. Plus froid et plus long n'apporte rien de plus, et augmente surtout l'inconfort.
+- **Température et durée :** 10-15 °C, une dizaine de minutes, 15 au plus. C'est la fourchette qui donne les meilleurs résultats sur les courbatures dans une méta-analyse de 2016 (9 essais) ; plus froid ou plus long n'apporte rien de plus, et augmente surtout l'inconfort.
 
-- **Écoute la sensation, pas le chrono d'un influenceur.** Le froid extrême n'est pas un concours. Sortir avant la fin quand tu grelottes fort est la bonne décision.
+- **Écoute la sensation, pas le chrono d'un influenceur.** Le froid extrême n'est pas un concours. Sortir avant la fin quand tu grelottes fort est la bonne décision. Problème cardiaque ou tension mal contrôlée : demande l'avis d'un médecin avant.
 
-- **Ne le confonds pas avec un remède aux courbatures.** Il en soulage la sensation, il ne les répare pas plus vite — [ce qui accélère vraiment la récupération est ici](https://ecleptic.health/articles/courbatures-que-faire.html).
+- **Ne le confonds pas avec un remède aux courbatures.** Il en soulage surtout la sensation, il ne les répare pas vraiment plus vite — [ce qui accélère vraiment la récupération est ici](https://ecleptic.health/articles/courbatures-que-faire.html).
 
 ## Alternative : la douche chaude
 
@@ -1345,32 +1345,41 @@ Si tu vises la prise de muscle ou la force, non : évite-le dans les heures qui 
 
 ### Combien de temps rester dans un bain froid ?
 
-5 à 10 minutes dans une eau à 10-15 °C suffisent. Plus froid ou plus long n'apporte rien de plus et augmente l'inconfort. Écoute la sensation plutôt qu'un chrono.
+Une dizaine de minutes, 15 au plus, dans une eau à 10-15 °C : c'est la fourchette la plus efficace sur les courbatures dans les études. Plus froid ou plus long n'apporte rien de plus et augmente l'inconfort. Écoute la sensation plutôt qu'un chrono.
+
+## Sources
+
+- Bleakley C, McDonough S, Gardner E, et al. Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise. *Cochrane Database Syst Rev*. 2012. — https://doi.org/10.1002/14651858.CD008262.pub2
+- Machado AF, Ferreira PH, Micheletti JK, et al. Can Water Temperature and Immersion Time Influence the Effect of Cold Water Immersion on Muscle Soreness? A Systematic Review and Meta-Analysis. *Sports Med*. 2016. — https://doi.org/10.1007/s40279-015-0431-7
+- Choo HC, Lee M, Yeo V, et al. The effect of cold water immersion on the recovery of physical performance revisited: A systematic review with meta-analysis. *J Sports Sci*. 2022. — https://doi.org/10.1080/02640414.2023.2178872
+- Roberts LA, Raastad T, Markworth JF, et al. Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training. *J Physiol*. 2015. — https://doi.org/10.1113/JP270570
+- Malta ES, Dutra YM, Broatch JR, et al. The Effects of Regular Cold-Water Immersion Use on Training-Induced Changes in Strength and Endurance Performance: A Systematic Review with Meta-Analysis. *Sports Med*. 2021. — https://doi.org/10.1007/s40279-020-01362-0
+- Peake JM, Roberts LA, Figueiredo VC, et al. The effects of cold water immersion and active recovery on inflammation and cell stress responses in human skeletal muscle after resistance exercise. *J Physiol*. 2017. — https://doi.org/10.1113/JP272881
 
 ---
 
 # Fréquence cardiaque au repos : quelle est la normale ?
 
 URL : https://ecleptic.health/articles/frequence-cardiaque-repos-normale.html
-Thème : Readiness · Auteur : Auguste Phily-Priou · Publié le 2026-09-28
+Thème : Readiness · Auteur : Auguste Phily-Priou · Publié le 2026-09-28 · Mis à jour le 2026-09-30
 
 La fréquence cardiaque au repos normale est de 60 à 100 bpm, et de 40 à 60 chez les sportifs d'endurance. Comment la mesurer au réveil et la lire en tendance.
 
 La réponse courte : chez l'adulte, une **fréquence cardiaque au repos normale** se situe entre **60 et 100 battements par minute**. Mais si tu t'entraînes en endurance, tu es probablement plus bas — souvent **40 à 60 bpm** —, et c'est parfaitement sain : ton cœur est devenu plus efficace, il envoie plus de sang à chaque battement, donc il lui en faut moins pour faire le même travail.
 
-Une FC de repos basse est *en moyenne* le signe d'une bonne condition cardiovasculaire. Mais deux personnes en pleine forme peuvent avoir quinze battements d'écart pour une simple raison génétique. Le chiffre absolu compte donc moins que tu ne crois : ce qui parle vraiment, c'est **ta tendance à toi**, jour après jour.
+Une FC de repos basse est *en moyenne* le signe d'une bonne condition cardiovasculaire : une méta-analyse de 2016 (46 études, plus de 1,2 million de personnes) associe chaque tranche de 10 bpm supplémentaire au repos à un risque de décès toutes causes augmenté de 9 %. Mais deux personnes en pleine forme peuvent avoir quinze battements d'écart pour une simple raison génétique. Une étude de 2020 sur 92 457 adultes équipés d'un bracelet l'illustre : 65 bpm en moyenne, mais de 40 à 109 bpm selon les individus, alors que chez une même personne le chiffre reste remarquablement stable. Le chiffre absolu compte donc moins que tu ne crois : ce qui parle vraiment, c'est **ta tendance à toi**, jour après jour.
 
 ## Ce qui est normal, et pourquoi ça varie autant
 
-- **Adulte non sportif :** 60 à 100 bpm, la fourchette standard.
+- **Adulte non sportif :** 60 à 100 bpm, la fourchette standard retenue par la National Library of Medicine américaine.
 
-- **Sportif d'endurance entraîné :** souvent 40 à 60 bpm, parfois moins chez les coureurs et cyclistes aguerris. Un cœur puissant qui bat lentement au repos, c'est le résultat recherché de l'entraînement, pas une anomalie.
+- **Sportif d'endurance entraîné :** 40 à 60 bpm selon la même source, parfois moins chez les coureurs et cyclistes aguerris. Un cœur puissant qui bat lentement au repos, c'est le résultat recherché de l'entraînement, pas une anomalie.
 
 - **La génétique pèse lourd :** à condition physique égale, certains sont naturellement à 50, d'autres à 68. Ne fais pas de ton voisin ta référence.
 
 D'autres facteurs bougent le chiffre au quotidien : la caféine, la chaleur, le stress, la déshydratation et une nuit trop courte le font monter ; le calme et une bonne récupération le font descendre. D'où l'intérêt de toujours mesurer dans les mêmes conditions.
 
-Et ne confonds pas **fréquence de repos** et **fréquence maximale** : la première se mesure au calme total et descend avec l'entraînement ; la seconde, atteinte à l'effort maximal, dépend surtout de l'âge et ne se travaille quasiment pas. Deux chiffres différents, deux histoires différentes — c'est bien la fréquence de *repos* qui parle de ta récupération.
+Et ne confonds pas **fréquence de repos** et **fréquence maximale** : la première se mesure au calme total et descend avec l'entraînement ; la seconde, atteinte à l'effort maximal, dépend surtout de l'âge et ne se travaille quasiment pas — une méta-analyse de 2001 la trouve indépendante du niveau d'activité habituel. Deux chiffres différents, deux histoires différentes — c'est bien la fréquence de *repos* qui parle de ta récupération.
 
 ## Comment la mesurer correctement
 
@@ -1386,13 +1395,13 @@ Une mesure isolée ne dit presque rien. C'est la **répétition** qui transforme
 
 ## Lis-la en tendance, pas en photo
 
-Voilà le vrai usage. Une fois que tu connais ta normale — disons 52 bpm —, ce qui compte, c'est l'**écart**. Une FC de repos qui grimpe de **plusieurs battements plusieurs matins d'affilée** est un signal fiable que quelque chose ponctionne ta récupération :
+Voilà le vrai usage. Une fois que tu connais ta normale — disons 52 bpm —, ce qui compte, c'est l'**écart**. Une FC de repos qui grimpe de **plusieurs battements plusieurs matins d'affilée** est un signal sérieux que quelque chose ponctionne ta récupération :
 
 - Une **fatigue accumulée** ou un début de [surmenage](https://ecleptic.health/articles/surentrainement-signes.html) — ton corps réclame du repos.
 
-- Une **infection qui couve** : la FC de repos monte souvent un ou deux jours avant les premiers symptômes.
+- Une **infection qui couve** : la FC de repos peut monter avant même les premiers symptômes. Une étude de 2020 sur des porteurs de montre connectée estime que 63 % des cas de Covid-19 auraient pu être repérés ainsi avant les symptômes.
 
-- De l'**alcool la veille**, qui perturbe la nuit et fait nettement grimper le cœur au repos — un effet [très visible sur les données du matin](https://ecleptic.health/articles/alcool-sommeil-effets.html).
+- De l'**alcool la veille**, qui perturbe la nuit et fait grimper le cœur au repos, d'autant plus que la dose est forte — une étude finlandaise de 2018 sur 4 098 salariés le montre dès les premières heures de sommeil. Un effet [très visible sur les données du matin](https://ecleptic.health/articles/alcool-sommeil-effets.html).
 
 - Un **stress** important ou un manque de sommeil.
 
@@ -1424,16 +1433,25 @@ Au réveil, allongé et immobile, avant de te lever, car se mettre debout fait d
 
 En général oui : elle reflète souvent une bonne condition cardiovasculaire. Mais une bradycardie sous 40 bpm accompagnée de malaises, de vertiges ou d'essoufflement doit être vérifiée par un médecin.
 
+## Sources
+
+- MedlinePlus (U.S. National Library of Medicine). Pulse. Medical Encyclopedia. 2025. — https://medlineplus.gov/ency/article/003399.htm
+- Quer G, Gouda P, Galarnyk M, et al. Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. *PLoS One*. 2020. — https://doi.org/10.1371/journal.pone.0227709
+- Zhang D, Shen X, Qi X. Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis. *CMAJ*. 2016. — https://doi.org/10.1503/cmaj.150535
+- Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. *J Am Coll Cardiol*. 2001. — https://doi.org/10.1016/s0735-1097(00)01054-8
+- Mishra T, Wang M, Metwally AA, et al. Pre-symptomatic detection of COVID-19 from smartwatch data. *Nat Biomed Eng*. 2020. — https://doi.org/10.1038/s41551-020-00640-6
+- Pietilä J, Helander E, Korhonen I, et al. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep in a large real-world sample of Finnish employees: observational study. *JMIR Ment Health*. 2018. — https://doi.org/10.2196/mental.9519
+
 ---
 
 # Combien de calories par jour faut-il vraiment ?
 
 URL : https://ecleptic.health/articles/combien-de-calories-par-jour.html
-Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-09-26
+Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-09-26 · Mis à jour le 2026-09-30
 
 Combien de calories par jour ? Ça dépend de ton métabolisme et de ton activité. Ordres de grandeur, limites des formules, et comment trouver ton vrai chiffre.
 
-La réponse courte : **ça dépend de toi**. Ta dépense énergétique quotidienne — le fameux *TDEE*, pour **total daily energy expenditure** — additionne ton métabolisme de base (ce que ton corps brûle au repos, juste pour rester en vie) et tout ce que tu bouges dans la journée. En ordre de grandeur, ça donne à peu près **1 800 à 2 400 kcal** pour une femme et **2 200 à 2 900 kcal** pour un homme — mais ces fourchettes sont larges, et deux personnes du même poids peuvent avoir 500 kcal d'écart.
+La réponse courte : **ça dépend de toi**. Ta dépense énergétique quotidienne — le fameux *TDEE*, pour **total daily energy expenditure** — additionne ton métabolisme de base (ce que ton corps brûle au repos, juste pour rester en vie) et tout ce que tu bouges dans la journée. En ordre de grandeur, ça donne à peu près **1 800 à 2 400 kcal** pour une femme et **2 200 à 2 900 kcal** pour un homme, de sédentaire à actif, selon les repères de l'Autorité européenne de sécurité des aliments (EFSA) — mais ces fourchettes sont larges, et deux personnes du même poids peuvent avoir 500 kcal d'écart.
 
 Le vrai message : il n'existe pas de « bon » chiffre universel. Ton besoin dépend de ta taille, de ton poids, de ta masse musculaire, de ton âge et surtout de à quel point tu es actif — pas seulement à la salle, mais toute la journée. La bonne nouvelle, c'est que tu n'as pas besoin de le deviner parfaitement : tu pars d'une estimation correcte, puis tu laisses la réalité corriger le tir.
 
@@ -1447,13 +1465,24 @@ Quatre postes, très inégaux :
 
 - **Le sport (5-15 %)** — souvent surestimé. Une grosse séance, c'est 300 à 600 kcal, pas 1 500.
 
-- **La digestion (~10 %)** — l'énergie dépensée pour assimiler ce que tu manges, un peu plus élevée pour les protéines.
+- **La digestion (~10 %)** — l'énergie dépensée pour assimiler ce que tu manges : 5 à 15 % de la dépense selon une revue de 2004, un peu plus quand l'assiette est riche en protéines.
 
 ## Les formules : un point de départ, pas une vérité
 
-La plus fiable est celle de **Mifflin-St Jeor**. Pour un homme : 10 × poids(kg) + 6,25 × taille(cm) − 5 × âge + 5 ; pour une femme, le même calcul avec −161 à la fin. Tu obtiens ton métabolisme de base, que tu multiplies ensuite par un facteur d'activité (environ 1,2 si tu es sédentaire, jusqu'à 1,9 si tu es très actif).
+La plus fiable est celle de **Mifflin-St Jeor** : une revue systématique de 2005 a montré que c'est elle qui tombe le plus souvent à moins de 10 % du métabolisme mesuré. Pour un homme : 10 × poids(kg) + 6,25 × taille(cm) − 5 × âge + 5 ; pour une femme, le même calcul avec −161 à la fin. Tu obtiens ton métabolisme de base, que tu multiplies ensuite par un facteur d'activité : de 1,4 si tu es sédentaire à 2 si tu es très actif, selon l'EFSA.
 
-Un exemple concret : un homme de 75 kg, 178 cm, 30 ans obtient un métabolisme de base d'environ **1 720 kcal**. En s'entraînant trois ou quatre fois par semaine (facteur ~1,5), sa dépense totale tourne autour de **2 550 kcal**. Mais retiens bien : c'est une *estimation*. Les formules peuvent se tromper de 200 à 300 kcal dans un sens ou dans l'autre, parce qu'elles ne connaissent ni ta masse musculaire réelle ni ton niveau d'agitation.
+Source : EFSA (2013), besoins énergétiques moyens des adultes de 30 à 39 ans (IMC de 22), convertis en kcal.
+| Niveau d'activité | Femme | Homme |
+
+| Sédentaire (1,4) | 1 820 kcal | 2 270 kcal |
+
+| Modérément actif (1,6) | 2 080 kcal | 2 580 kcal |
+
+| Actif (1,8) | 2 340 kcal | 2 910 kcal |
+
+| Très actif (2,0) | 2 580 kcal | 3 220 kcal |
+
+Un exemple concret : un homme de 75 kg, 178 cm, 30 ans obtient un métabolisme de base d'environ **1 720 kcal**. En s'entraînant trois ou quatre fois par semaine (facteur ~1,5), sa dépense totale tourne autour de **2 580 kcal**. Mais retiens bien : c'est une *estimation*. Les formules peuvent se tromper de 200 à 300 kcal dans un sens ou dans l'autre, parce qu'elles ne connaissent ni ta masse musculaire réelle ni ton niveau d'agitation.
 
 ## La seule méthode qui ne ment pas : la balance sur 2-3 semaines
 
@@ -1471,9 +1500,9 @@ C'est exactement cette logique qui sert de base quand on veut calculer un défic
 
 - **Ta masse musculaire.** Plus tu as de muscle, plus ton métabolisme de base est haut, même au repos — un des intérêts long terme de la musculation, et une raison de [manger assez de protéines](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html).
 
-- **Ton activité de fond.** Deux personnes identiques peuvent brûler 400 kcal d'écart juste parce que l'une marche beaucoup et l'autre non. Le nombre de pas quotidiens pèse souvent plus lourd que la séance elle-même.
+- **Ton activité de fond.** Dans une étude publiée dans *Science* (2005), des personnes en surpoids restaient assises 2 heures de plus par jour que des personnes minces : environ 350 kcal de dépense en moins par jour. Le nombre de pas quotidiens pèse souvent plus lourd que la séance elle-même.
 
-- **L'âge.** La dépense baisse doucement avec les décennies, surtout parce qu'on perd du muscle et qu'on bouge moins — deux choses en partie sous ton contrôle.
+- **L'âge.** Moins qu'on ne le croit : selon une vaste étude publiée dans *Science* (2021), à masse maigre égale, la dépense reste stable de 20 à 60 ans et ne recule qu'ensuite. Ce qui baisse avant, c'est surtout le muscle et le mouvement — deux choses en partie sous ton contrôle.
 
 - **Le sommeil et le stress.** Mal dormir dérègle l'appétit et l'activité spontanée, ce qui brouille le calcul sur les bords.
 
@@ -1493,22 +1522,31 @@ En ordre de grandeur, 1 800 à 2 400 kcal par jour pour maintenir son poids, sel
 
 ### Comment calculer ses besoins caloriques ?
 
-Estime ton métabolisme de base avec la formule de Mifflin-St Jeor, multiplie par un facteur d'activité (1,2 sédentaire à 1,9 très actif), puis vérifie en suivant la moyenne de ton poids sur 2-3 semaines. L'estimation peut se tromper de 200 à 300 kcal ; la balance tranche.
+Estime ton métabolisme de base avec la formule de Mifflin-St Jeor, multiplie par un facteur d'activité (de 1,4 si tu es sédentaire à 2 si tu es très actif, selon l'EFSA), puis vérifie en suivant la moyenne de ton poids sur 2-3 semaines. L'estimation peut se tromper de 200 à 300 kcal ; la balance tranche.
 
 ### Combien de calories pour perdre du poids ?
 
-Retire 300 à 500 kcal à ta dépense totale, ce qui donne une perte d'environ 0,5 à 1 % de ton poids par semaine. Pars toujours de ta dépense réelle, pas d'un chiffre standard.
+Retire 300 à 500 kcal à ta dépense totale, ce qui fait perdre environ 0,3 à 0,5 kg par semaine au début. Pars toujours de ta dépense réelle, pas d'un chiffre standard.
+
+## Sources
+
+- EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on Dietary Reference Values for energy. *EFSA J*. 2013. — https://doi.org/10.2903/j.efsa.2013.3005
+- Mifflin MD, St Jeor ST, Hill LA, et al. A new predictive equation for resting energy expenditure in healthy individuals. *Am J Clin Nutr*. 1990. — https://doi.org/10.1093/ajcn/51.2.241
+- Frankenfield D, Roth-Yousey L, Compher C. Comparison of predictive equations for resting metabolic rate in healthy nonobese and obese adults: a systematic review. *J Am Diet Assoc*. 2005. — https://doi.org/10.1016/j.jada.2005.02.005
+- Westerterp KR. Diet induced thermogenesis. *Nutr Metab (Lond)*. 2004. — https://doi.org/10.1186/1743-7075-1-5
+- Levine JA, Lanningham-Foster LM, McCrady SK, et al. Interindividual variation in posture allocation: possible role in human obesity. *Science*. 2005. — https://doi.org/10.1126/science.1106561
+- Pontzer H, Yamada Y, Sagayama H, et al. Daily energy expenditure through the human life course. *Science*. 2021. — https://doi.org/10.1126/science.abe5017
 
 ---
 
 # Zone 2 : c'est quoi et pourquoi c'est le meilleur cardio ?
 
 URL : https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html
-Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-09-24
+Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-09-24 · Mis à jour le 2026-09-30
 
 La zone 2, c'est le cardio facile où tu peux parler en phrases complètes. Pourquoi cette intensité basse construit ta base aérobie mieux que le reste.
 
-La réponse courte : **la zone 2, c'est l'intensité basse où tu peux tenir une conversation en phrases complètes** — essoufflé, mais capable de parler sans t'arrêter. En repères, ça tombe autour de **60 à 70 % de ta fréquence cardiaque maximale**, juste sous le premier seuil ventilatoire, là où ton corps carbure encore majoritairement aux graisses. Ça paraît trop facile pour servir à quelque chose. C'est précisément l'inverse : c'est le socle de toute la condition physique.
+La réponse courte : **la zone 2, c'est l'intensité basse où tu peux tenir une conversation en phrases complètes** — essoufflé, mais capable de parler sans t'arrêter. En repères, ça tombe autour de **60 à 70 % de ta fréquence cardiaque maximale**, juste sous le premier seuil ventilatoire, là où les graisses fournissent encore une grosse part de ton énergie. Ça paraît trop facile pour servir à quelque chose. C'est précisément l'inverse : c'est le socle de toute la condition physique.
 
 Le piège du débutant motivé, c'est de tout faire « moyennement dur ». La zone 2 demande de lever le pied — souvent au point de trouver ça frustrant les premières semaines. Mais c'est à cette allure que se construisent les adaptations les plus rentables sur le long terme.
 
@@ -1516,9 +1554,9 @@ Le piège du débutant motivé, c'est de tout faire « moyennement dur ». La zo
 
 À basse intensité, ton corps travaille sur sa filière aérobie, celle qui produit de l'énergie avec de l'oxygène. Et c'est là que les adaptations les plus profondes se jouent :
 
-- **Elle multiplie tes mitochondries** — les petites usines à énergie de tes cellules. Plus tu en as, plus tu produis d'énergie longtemps sans t'épuiser. C'est l'adaptation reine de l'endurance.
+- **Elle augmente ton stock de mitochondries** — les petites usines à énergie de tes cellules. Plus tu en as, plus tu produis d'énergie longtemps sans t'épuiser. Une revue de 2018 conclut que c'est surtout le volume d'entraînement qui fait monter leur nombre : or la zone 2 est l'intensité qui permet d'en accumuler beaucoup.
 
-- **Elle améliore l'utilisation des graisses comme carburant**, ce qui épargne tes réserves de glycogène pour les moments qui comptent.
+- **Elle améliore l'utilisation des graisses comme carburant**, ce qui épargne tes réserves de glycogène pour les moments qui comptent. Une étude de 2002 montre que l'oxydation des graisses reste élevée sur une large plage d'intensités basses, culmine vers 74 % de la FC max, puis chute nettement au-delà.
 
 - **Elle densifie ton réseau de petits vaisseaux** et renforce le cœur, qui envoie plus de sang à chaque battement.
 
@@ -1528,25 +1566,25 @@ Le bénéfice final est contre-intuitif : une grosse base en zone 2 finit par fa
 
 ## Le test de la parole : ta meilleure jauge
 
-Oublie un instant le cardiofréquencemètre. Le repère le plus fiable et le plus gratuit, c'est **le test de la parole** : à la bonne intensité, tu peux dire une phrase complète sans reprendre ton souffle au milieu — mais tu ne pourrais pas chanter. Si tu es obligé de couper tes phrases pour respirer, tu es trop haut. Si tu peux réciter un poème sans effort, tu es trop bas.
+Oublie un instant le cardiofréquencemètre. Le repère le plus fiable et le plus gratuit, c'est **le test de la parole** : à la bonne intensité, tu peux dire une phrase complète sans reprendre ton souffle au milieu — mais tu ne pourrais pas chanter. Si tu es obligé de couper tes phrases pour respirer, tu es trop haut. Si tu peux réciter un poème sans effort, tu es trop bas. Une revue de 2014 le confirme : tant que tu parles confortablement, tu restes sous le seuil ventilatoire, et le test reste fiable en marchant, en courant ou à vélo.
 
 Autre signe utile : tu dois pouvoir finir ta séance en te disant « j'aurais pu continuer ». La zone 2 ne doit jamais te mettre à genoux. Sur une montre, une [fréquence cardiaque](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) stable qui ne dérive pas vers le haut au fil des minutes confirme que tu tiens la bonne allure.
 
 ## La règle du 80/20
 
-Les athlètes d'endurance, du coureur amateur au marathonien élite, passent environ **80 % de leur temps d'entraînement à basse intensité** et seulement 20 % à haute intensité. Ce n'est pas un hasard : cette répartition maximise les adaptations tout en limitant la fatigue. La zone 2 est le gros de ces 80 %.
+Les athlètes d'endurance de niveau national et international font environ **80 % de leurs séances à basse intensité** et seulement 20 % à haute intensité : c'est la répartition relevée par le physiologiste Stephen Seiler dans sa synthèse de 2010, et elle vaut aussi comme boussole pour l'amateur. Ce n'est pas un hasard : ce dosage maximise les adaptations tout en limitant la fatigue. La zone 2 est le gros de ces 80 %.
 
 L'erreur de la plupart des gens, c'est l'inverse : trop d'intensité moyenne, pas assez de vraiment facile ni de vraiment dur. Résultat, beaucoup de fatigue pour peu de progrès. Ralentir tes sorties faciles, c'est souvent ce qui débloque la progression.
 
 ## Combien, comment, pour commencer
 
-- **2 à 3 sorties de 30 à 45 minutes par semaine** suffisent pour poser une vraie base. Marche rapide, vélo, rameur, course lente : le mode compte peu, c'est l'intensité qui fait le travail.
+- **2 à 3 sorties de 30 à 45 minutes par semaine** suffisent pour poser une base ; l'OMS fixe le repère santé à 150-300 minutes d'activité modérée par semaine, marche comprise. Marche rapide, vélo, rameur, course lente : le mode compte peu, c'est l'intensité qui fait le travail.
 
 - **Reste strictement dans la zone**, même si l'ego râle. Sur les montées, marche s'il le faut pour ne pas déborder.
 
 - **Sois patient.** Les bénéfices se construisent sur des semaines et des mois, pas sur trois séances. La bonne nouvelle : ils s'accumulent et durent.
 
-Pas besoin de matériel sophistiqué pour démarrer. Si tu veux un repère chiffré, estime ta fréquence cardiaque maximale autour de 220 moins ton âge, et vise 60 à 70 % de ce chiffre — mais garde le test de la parole comme juge de paix, car cette formule reste approximative. Le plus dur est mental : accepter d'aller lentement quand tout ton instinct te pousse à accélérer. Beaucoup de coureurs découvrent qu'ils doivent alterner course lente et marche pour rester assez bas les premières semaines. C'est normal, et ça s'améliore vite : à mesure que ta base grandit, tu iras plus vite pour la même fréquence cardiaque.
+Pas besoin de matériel sophistiqué pour démarrer. Si tu veux un repère chiffré, estime ta fréquence cardiaque maximale avec 208 − 0,7 × ton âge, la formule issue d'une méta-analyse de 2001 (351 études, 18 712 sujets), plus juste que le classique 220 moins l'âge qui la sous-estime chez les plus âgés. Vise 60 à 70 % de ce chiffre — mais garde le test de la parole comme juge de paix, car toute formule reste approximative. Le plus dur est mental : accepter d'aller lentement quand tout ton instinct te pousse à accélérer. Beaucoup de coureurs découvrent qu'ils doivent alterner course lente et marche pour rester assez bas les premières semaines. C'est normal, et ça s'améliore vite : à mesure que ta base grandit, tu iras plus vite pour la même fréquence cardiaque.
 
 La zone 2 s'intègre facilement dans une semaine sans exploser ta charge — un point utile quand on cherche [le bon nombre de séances](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html) à tenir sur la durée.
 
@@ -1570,14 +1608,23 @@ Le test de la parole : tu peux dire une phrase complète sans reprendre ton souf
 
 ### Combien de temps de zone 2 par semaine ?
 
-2 à 3 sorties de 30 à 45 minutes suffisent pour poser une vraie base aérobie. L'idéal suit la règle du 80/20 : environ 80 % de ton cardio en facile, 20 % en intense.
+2 à 3 sorties de 30 à 45 minutes suffisent pour poser une base aérobie ; l'OMS vise 150 à 300 minutes d'activité modérée par semaine au total, marche comprise. L'idéal suit la règle du 80/20 : environ 80 % de tes séances en facile, 20 % en intense.
+
+## Sources
+
+- Seiler S. What is best practice for training intensity and duration distribution in endurance athletes? *Int J Sports Physiol Perform*. 2010. — https://doi.org/10.1123/ijspp.5.3.276
+- Reed JL, Pipe AL. The talk test: a useful tool for prescribing and monitoring exercise intensity. *Curr Opin Cardiol*. 2014. — https://doi.org/10.1097/HCO.0000000000000097
+- Granata C, Jamnick NA, Bishop DJ. Training-induced changes in mitochondrial content and respiratory function in human skeletal muscle. *Sports Med*. 2018. — https://doi.org/10.1007/s40279-018-0936-y
+- Achten J, Gleeson M, Jeukendrup AE. Determination of the exercise intensity that elicits maximal fat oxidation. *Med Sci Sports Exerc*. 2002. — https://doi.org/10.1097/00005768-200201000-00015
+- Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. *J Am Coll Cardiol*. 2001. — https://doi.org/10.1016/s0735-1097(00)01054-8
+- Bull FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. *Br J Sports Med*. 2020. — https://doi.org/10.1136/bjsports-2020-102955
 
 ---
 
 # Café et sommeil : combien de temps avant de dormir l'arrêter ?
 
 URL : https://ecleptic.health/articles/cafe-et-sommeil-combien-de-temps-avant.html
-Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-22
+Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-22 · Mis à jour le 2026-09-30
 
 La caféine a une demi-vie de 5 à 6 heures : un café à 16 h occupe encore ta soirée. Pourquoi couper 8 à 10 heures avant le coucher, et ce que ça change.
 
@@ -1587,13 +1634,15 @@ Concrètement, si tu vises un coucher vers 23 h, ton dernier café se situe auto
 
 ## La demi-vie, ou pourquoi 8 à 10 heures
 
-La demi-vie, c'est le délai au bout duquel il reste la moitié de la substance. Pour la caféine, compte 5 à 6 heures chez l'adulte moyen. Fais le calcul avec un expresso de 80 mg pris à 16 h :
+La demi-vie, c'est le délai au bout duquel il reste la moitié de la substance. Pour la caféine, compte 5 à 6 heures chez l'adulte moyen. Fais le calcul avec un expresso pris à 16 h, qui contient environ 80 mg de caféine selon l'Autorité européenne de sécurité des aliments (EFSA) :
 
 - **16 h** : 80 mg en circulation.
 
 - **21-22 h** : encore ~40 mg — l'équivalent d'un demi-café qui tourne au moment où tu voudrais ralentir.
 
 - **2-3 h du matin** : ~20 mg, toujours présents pendant ta nuit.
+
+Une méta-analyse de 2023 (24 études) a chiffré ce seuil : pour ne pas perdre de sommeil, un café (107 mg) doit être bu au moins 8,8 heures avant le coucher, une dose de pré-workout (217,5 mg) au moins 13,2 heures avant. L'EFSA note de son côté qu'une seule prise de 100 mg proche du coucher peut déjà perturber le sommeil de certains adultes.
 
 D'où la règle simple : **dernier café 8 à 10 heures avant le lit**. Et prudence avec les sources qu'on oublie de compter — thé, sodas, chocolat noir, pré-workout, certains antidouleurs en contiennent aussi. Le thé vert ou le matcha, réputés « doux », peuvent titrer autant qu'un café léger ; le décaféiné, lui, n'est pas totalement dépourvu de caféine, mais sa dose reste assez faible pour passer inaperçue le soir chez la plupart des gens.
 
@@ -1603,11 +1652,11 @@ La caféine ne te donne pas d'énergie : elle *masque* la fatigue. Au fil de la 
 
 ## Pourquoi certains dorment après un expresso
 
-Parce que la vitesse d'élimination est **largement génétique**. Un gène (CYP1A2) détermine si tu es un métaboliseur « rapide » ou « lent ». Les rapides nettoient la caféine en quelques heures et peuvent boire un café après le dîner sans dommage apparent. Les lents la gardent bien plus longtemps : chez eux, un simple café d'après-midi suffit à raboter la nuit. L'âge, la grossesse, certains médicaments et le tabac modifient encore la donne. Tu ne connais pas ton profil sur le papier — mais ton sommeil, lui, le connaît. Teste : coupe le café à midi pendant deux semaines et regarde si tes nuits changent. Un indice de métaboliseur lent : un café d'après-midi te laisse le cœur qui bat un peu vite ou l'esprit qui tourne au moment du coucher. Si c'est ton cas, avance ta limite encore plus tôt — mieux vaut un café de moins qu'une nuit de moins.
+Parce que la vitesse d'élimination est **largement génétique**. Une enzyme du foie, CYP1A2, élimine à elle seule 95 % de la caféine, et des variantes de son gène font de toi un métaboliseur « rapide » ou « lent ». Les rapides nettoient la caféine en quelques heures et peuvent boire un café après le dîner sans dommage apparent. Les lents la gardent bien plus longtemps : chez eux, un simple café d'après-midi suffit à raboter la nuit. L'âge, la grossesse, certains médicaments et le tabac modifient encore la donne. Tu ne connais pas ton profil sur le papier — mais ton sommeil, lui, le connaît. Teste : coupe le café à midi pendant deux semaines et regarde si tes nuits changent. Un indice de métaboliseur lent : un café d'après-midi te laisse le cœur qui bat un peu vite ou l'esprit qui tourne au moment du coucher. Si c'est ton cas, avance ta limite encore plus tôt — mieux vaut un café de moins qu'une nuit de moins.
 
 ## Le piège du « je dors quand même »
 
-C'est l'erreur la plus répandue. Beaucoup s'endorment sans problème après un café tardif et en concluent que la caféine ne les gêne pas. Sauf que s'endormir n'est pas bien dormir. Même quand elle ne retarde pas l'endormissement, la caféine résiduelle **ampute le sommeil profond** — la phase la plus réparatrice, concentrée en début de nuit — et fragmente le reste. Tu passes une nuit de durée normale mais de qualité dégradée, et tu te réveilles en ayant besoin… d'un café. La boucle est bouclée. Si tu veux vraiment [gagner du sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), la caféine tardive est le premier levier à couper — juste après l'alcool. Et si tu dors tes [7 à 9 heures](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) mais que tu restes vidé, un excès de café qui masque une dette de sommeil est l'une des [causes les plus fréquentes de fatigue durable](https://ecleptic.health/articles/toujours-fatigue-causes.html).
+C'est l'erreur la plus répandue. Beaucoup s'endorment sans problème après un café tardif et en concluent que la caféine ne les gêne pas. Sauf que s'endormir n'est pas bien dormir. Même quand elle ne retarde pas l'endormissement, la caféine résiduelle **ampute le sommeil profond** — la phase la plus réparatrice, concentrée en début de nuit — et fragmente le reste. Sur l'ensemble des études de la méta-analyse de 2023, la caféine raccourcit la nuit de 45 minutes en moyenne, retire environ 11 minutes de sommeil profond et ajoute 12 minutes d'éveil nocturne. Et dans un essai de 2013, une forte dose (400 mg) prise 6 heures avant le coucher perturbait encore nettement le sommeil. Tu passes une nuit de durée normale mais de qualité dégradée, et tu te réveilles en ayant besoin… d'un café. La boucle est bouclée. Si tu veux vraiment [gagner du sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), la caféine tardive est le premier levier à couper — juste après l'alcool. Et si tu dors tes [7 à 9 heures](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) mais que tu restes vidé, un excès de café qui masque une dette de sommeil est l'une des [causes les plus fréquentes de fatigue durable](https://ecleptic.health/articles/toujours-fatigue-causes.html).
 
 ## Ce qu'il faut retenir
 
@@ -1631,48 +1680,56 @@ Oui, même quand elle ne retarde pas l'endormissement. La caféine résiduelle a
 
 Parce que la vitesse d'élimination de la caféine est largement génétique. Les métaboliseurs rapides la nettoient en quelques heures ; les lents la gardent bien plus longtemps et voient leur nuit perturbée par un simple café d'après-midi.
 
+## Sources
+
+- Gardiner C, Weakley J, Burke LM, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. *Sleep Med Rev*. 2023. — https://doi.org/10.1016/j.smrv.2023.101764
+- Drake C, Roehrs T, Shambroom J, Roth T. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. *J Clin Sleep Med*. 2013. — https://doi.org/10.5664/jcsm.3170
+- European Food Safety Authority. Caffeine (Scientific Opinion on the safety of caffeine). 2015. — https://www.efsa.europa.eu/en/topics/topic/caffeine
+- Nehlig A. Interindividual Differences in Caffeine Metabolism and Factors Driving Caffeine Consumption. *Pharmacol Rev*. 2018. — https://doi.org/10.1124/pr.117.014407
+- Reichert CF, Deboer T, Landolt HP. Adenosine, caffeine, and sleep-wake regulation: state of the science and perspectives. *J Sleep Res*. 2022. — https://doi.org/10.1111/jsr.13597
+
 ---
 
 # Sommeil profond : comment en avoir plus ?
 
 URL : https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html
-Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-21
+Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-21 · Mis à jour le 2026-09-30
 
-Chambre fraîche, horaires fixes, sport le jour, alcool rare : les seuls leviers qui augmentent vraiment le sommeil profond — et ceux qui ne servent à rien.
+Chambre fraîche, horaires fixes, sport dans la journée, café coupé tôt : les leviers qui favorisent vraiment le sommeil profond, et ceux qui ne servent à rien.
 
-La réponse courte : tu ne peux pas « forcer » le sommeil profond directement — mais tu peux **créer les conditions qui le maximisent** : une chambre fraîche, des horaires réguliers, de l'exercice dans la journée, et pas d'alcool le soir. Le sommeil profond représente environ **15 à 25 % de la nuit** chez l'adulte, concentré dans les premières heures. C'est lui qui fait le gros du travail physique : sécrétion d'hormone de croissance, réparation des tissus, nettoyage du cerveau, consolidation du système immunitaire.
+La réponse courte : tu ne peux pas « forcer » le sommeil profond directement — mais tu peux **créer les conditions qui le maximisent** : une chambre fraîche, des horaires réguliers, de l'exercice dans la journée, et pas de caféine l'après-midi. Le sommeil profond représente environ **15 à 20 % de la nuit** chez l'adulte, concentré dans les premières heures. C'est lui qui fait le gros du travail physique : sécrétion d'hormone de croissance, réparation des tissus, nettoyage du cerveau, consolidation du système immunitaire.
 
-Première chose à savoir : la quantité de sommeil profond n'est pas un objectif à viser en valeur absolue. Elle est largement génétique, elle baisse naturellement avec l'âge, et elle se régule *toute seule* quand les conditions sont bonnes. Si tu manques de sommeil profond une nuit, ton cerveau en programme davantage la nuit suivante — c'est le rebond. Ton travail n'est pas de le fabriquer, c'est d'arrêter de le saboter.
+Première chose à savoir : la quantité de sommeil profond n'est pas un objectif à viser en valeur absolue. Elle varie beaucoup d'une personne à l'autre, en partie pour des raisons génétiques, et elle baisse naturellement avec l'âge : dans une étude de référence en polysomnographie (100 dormeurs en bonne santé, 2015), elle passe d'environ 21 % de la nuit avant 30 ans à 15 % après 60 ans. Et elle se régule *toute seule* quand les conditions sont bonnes. Si tu manques de sommeil profond une nuit, ton cerveau en programme davantage la nuit suivante — c'est le rebond. Ton travail n'est pas de le fabriquer, c'est d'arrêter de le saboter.
 
 ## Le levier nº1 : la température
 
-Pour plonger en sommeil profond, ton corps doit perdre environ 1 °C de température interne. Tout ce qui gêne cette chute ampute les premières heures de la nuit — précisément celles où le profond se joue :
+Pour plonger dans la nuit, ta température interne doit baisser. Tout ce qui gêne cette chute ampute les premières heures de la nuit — précisément celles où le profond se joue :
 
-- **Chambre entre 17 et 19 °C.** C'est le réglage au meilleur rendement de tout le sommeil.
+- **Chambre fraîche, autour de 17 à 19 °C** (le repère habituel) : le réglage au meilleur rendement de tout le sommeil.
 
-- **Douche ou bain chaud 1 à 2 heures avant le coucher** : la vasodilatation qui suit accélère la chute de température. L'effet est paradoxal mais bien documenté.
+- **Douche ou bain chaud 1 à 2 heures avant le coucher** : la vasodilatation qui suit accélère la chute de température. Paradoxal mais bien documenté : selon une méta-analyse de 2019 (17 études), une eau à 40-42,5 °C raccourcit l'endormissement, même en 10 minutes.
 
-- **Pas de sport intense dans les 2-3 heures avant le lit** — il élève la température exactement au mauvais moment. Le même sport fait dans la journée, lui, *augmente* le sommeil profond de la nuit.
+- **Pas d'effort vigoureux dans l'heure qui précède le lit.** Le sport du soir n'est pas l'ennemi qu'on croit : une autre méta-analyse de 2019 (23 études) montre qu'il augmente même légèrement le sommeil profond ; seul l'effort vigoureux fini moins d'une heure avant le coucher peut retarder l'endormissement.
 
-## Ce qui le détruit à coup sûr
+## Ce qui sabote ta nuit
 
-- **L'alcool le soir** — le saboteur le plus efficace qui existe. Même deux verres fragmentent la nuit et écrasent la récupération ; [le détail verre par verre est ici](https://ecleptic.health/articles/alcool-sommeil-effets.html).
+- **L'alcool le soir** — le saboteur le plus trompeur. Il fait plonger plus vite et gonfle même le sommeil profond en début de nuit, mais une revue de 2013 de toutes les études chez des volontaires sains montre qu'à toutes les doses, il fragmente la seconde moitié de la nuit et retarde le sommeil paradoxal ; [le détail verre par verre est ici](https://ecleptic.health/articles/alcool-sommeil-effets.html).
 
 - **Les horaires anarchiques.** Le sommeil profond est programmé par ton horloge circadienne : quand tu te couches à des heures différentes chaque soir, la pression de sommeil et l'horloge ne sont plus synchronisées, et l'architecture de la nuit se désorganise. [La régularité change plus de choses que la durée](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html).
 
-- **La caféine tardive.** Demi-vie d'environ 5 heures : un café à 16 h occupe encore la moitié de ta soirée. Dernier café 8 à 10 heures avant le coucher.
+- **La caféine tardive.** Une méta-analyse de 2023 (24 études) conclut qu'un café doit être bu au moins 8,8 heures avant le coucher pour ne pas raccourcir la nuit — et la caféine ampute en moyenne 11 minutes de sommeil profond. Un café à 16 h, c'est trop tard pour un coucher à minuit : dernier café 8 à 10 heures avant le lit.
 
 - **Manger lourd tard.** Une digestion en cours maintient la température et le cœur plus hauts — dîner idéalement 2-3 heures avant le lit.
 
 ## Et les scores de ta montre, on y croit ?
 
-Prudence. Les capteurs grand public estiment les stades de sommeil à partir des mouvements et du cœur — c'est une **estimation**, pas une mesure d'ondes cérébrales, et la précision stade par stade est moyenne. La bonne façon de les lire : ignore la valeur absolue d'une nuit (« 42 minutes de profond » ne veut pas dire grand-chose), regarde *ta tendance sur plusieurs semaines* et ce qui la fait bouger — alcool, horaires, sport, stress. Utilisée comme ça, la donnée devient réellement utile : c'est exactement la logique d'un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html).
+Prudence. Les capteurs grand public estiment les stades de sommeil à partir des mouvements et du cœur — c'est une **estimation**, pas une mesure d'ondes cérébrales. Une étude de 2021 qui a comparé sept appareils grand public à la polysomnographie les trouve bons pour détecter le sommeil, mais incohérents pour découper les stades. La bonne façon de les lire : ignore la valeur absolue d'une nuit (« 42 minutes de profond » ne veut pas dire grand-chose), regarde *ta tendance sur plusieurs semaines* et ce qui la fait bouger — alcool, horaires, sport, stress. Utilisée comme ça, la donnée devient réellement utile : c'est exactement la logique d'un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html).
 
 ## Ce qu'il faut retenir
 
 - Le sommeil profond se régule tout seul quand les conditions sont bonnes : fraîcheur, régularité, sport le jour.
 
-- Ses trois pires ennemis : l'alcool le soir, les horaires anarchiques, la caféine tardive.
+- Les trois pires ennemis de ta nuit : l'alcool le soir, les horaires anarchiques, la caféine tardive.
 
 - Lis les chiffres de ta montre en tendance sur des semaines, jamais en valeur absolue d'une nuit.
 
@@ -1680,40 +1737,51 @@ Prudence. Les capteurs grand public estiment les stades de sommeil à partir des
 
 ### Comment augmenter son sommeil profond ?
 
-On ne le force pas directement : on crée les conditions. Chambre entre 17 et 19 °C, horaires de coucher réguliers, exercice dans la journée, pas d'alcool ni de caféine le soir. Le sommeil profond se régule ensuite tout seul.
+On ne le force pas directement : on crée les conditions. Chambre fraîche (17 à 19 °C est le repère habituel), horaires de coucher réguliers, exercice dans la journée, pas de caféine dans les 8 à 10 heures avant le coucher et peu d'alcool le soir. Le sommeil profond se régule ensuite tout seul.
 
 ### Combien de sommeil profond par nuit est normal ?
 
-Environ 15 à 25 % de la nuit chez l'adulte, concentré dans les premières heures. La quantité exacte est largement génétique et baisse naturellement avec l'âge — c'est la tendance qui compte, pas la valeur d'une nuit.
+Environ 15 à 20 % de la nuit chez l'adulte, concentré dans les premières heures : autour de 21 % avant 30 ans et 15 % après 60 ans dans une étude de référence. La quantité exacte varie d'une personne à l'autre — c'est la tendance qui compte, pas la valeur d'une nuit.
 
 ### Les montres mesurent-elles bien le sommeil profond ?
 
-Elles l'estiment à partir des mouvements et de la fréquence cardiaque, sans mesurer les ondes cérébrales : la précision stade par stade est moyenne. Fiable en tendance sur plusieurs semaines, pas en valeur absolue.
+Elles l'estiment à partir des mouvements et de la fréquence cardiaque, sans mesurer les ondes cérébrales : face à la polysomnographie, elles détectent bien le sommeil mais découpent les stades de façon incohérente. Fiables en tendance sur plusieurs semaines, pas en valeur absolue.
+
+## Sources
+
+- Mitterling T, Högl B, Schönwald SV, et al. Sleep and Respiration in 100 Healthy Caucasian Sleepers — A Polysomnographic Study According to American Academy of Sleep Medicine Standards. *Sleep*. 2015. — https://doi.org/10.5665/sleep.4730
+- Haghayegh S, Khoshnevis S, Smolensky MH, et al. Before-bedtime passive body heating by warm shower or bath to improve sleep: A systematic review and meta-analysis. *Sleep Med Rev*. 2019. — https://doi.org/10.1016/j.smrv.2019.04.008
+- Stutz J, Eiholzer R, Spengler CM. Effects of Evening Exercise on Sleep in Healthy Participants: A Systematic Review and Meta-Analysis. *Sports Med*. 2019. — https://doi.org/10.1007/s40279-018-1015-0
+- Ebrahim IO, Shapiro CM, Williams AJ, et al. Alcohol and sleep I: effects on normal sleep. *Alcohol Clin Exp Res*. 2013. — https://doi.org/10.1111/acer.12006
+- Gardiner C, Weakley J, Burke LM, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. *Sleep Med Rev*. 2023. — https://doi.org/10.1016/j.smrv.2023.101764
+- Chinoy ED, Cuellar JA, Huwa KE, et al. Performance of seven consumer sleep-tracking devices compared with polysomnography. *Sleep*. 2021. — https://doi.org/10.1093/sleep/zsaa291
 
 ---
 
 # Courbatures : que faire pour récupérer plus vite ?
 
 URL : https://ecleptic.health/articles/courbatures-que-faire.html
-Thème : Récupération · Auteur : Auguste Phily-Priou · Publié le 2026-09-21
+Thème : Récupération · Auteur : Auguste Phily-Priou · Publié le 2026-09-21 · Mis à jour le 2026-09-30
 
 Bouger léger, dormir, manger assez de protéines : ce qui accélère vraiment la récupération des courbatures, ce qui ne change rien, et quand s'inquiéter.
 
-La réponse courte : **bouger léger, dormir, et attendre 24 à 72 heures**. Les courbatures — DOMS pour les intimes, *delayed onset muscle soreness* — sont des micro-lésions musculaires en cours de réparation, pas de l'acide lactique (ce mythe a la vie dure : le lactate est éliminé en moins d'une heure après l'effort). Elles apparaissent 12 à 24 heures après une séance inhabituelle, culminent vers 48 heures, et disparaissent seules. Rien ne les « soigne » vraiment, mais plusieurs choses accélèrent le retour à la normale — et deux ou trois erreurs classiques le retardent.
+La réponse courte : **bouger léger, dormir, et laisser passer le pic**. Les courbatures — DOMS pour les intimes, *delayed onset muscle soreness* — sont des micro-lésions musculaires en cours de réparation, pas de l'acide lactique (ce mythe a la vie dure : le lactate retombe à son niveau de repos peu après l'effort, bien avant que la douleur n'apparaisse). Elles s'installent dans les 24 heures après une séance inhabituelle, culminent entre 48 et 72 heures selon une revue de 2018 sur leurs mécanismes, puis disparaissent seules. Rien ne les « soigne » vraiment, mais plusieurs choses accélèrent le retour à la normale — et deux ou trois erreurs classiques le retardent.
 
 ## Ce qui aide vraiment
 
-- **La récupération active.** Marche, vélo tranquille, natation facile : 20-30 minutes de mouvement léger augmentent le flux sanguin vers les muscles et réduisent la sensation de raideur. C'est le levier le mieux documenté — et le plus contre-intuitif quand on a envie de ne plus jamais bouger.
+- **Le massage.** C'est lui qui sort en tête : une méta-analyse de 2018 (99 études) le classe comme la technique la plus efficace contre les courbatures et la fatigue perçue.
+
+- **La récupération active.** Marche, vélo tranquille, natation facile : 20-30 minutes de mouvement léger augmentent le flux sanguin vers les muscles et réduisent la sensation de raideur. Effet réel mais plus modeste dans la même méta-analyse — et le plus contre-intuitif quand on a envie de ne plus jamais bouger.
 
 - **Le sommeil.** C'est pendant la nuit que la réparation se fait : hormone de croissance en sommeil profond, synthèse protéique. Une nuit courte après une grosse séance, et les courbatures durent plus longtemps — [vise le haut de ta fourchette](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) les jours qui suivent.
 
 - **Les protéines.** Le muscle se répare avec des matériaux : [1,6 à 2,2 g par kilo et par jour](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html), répartis sur la journée, dont une prise le soir.
 
-- **La chaleur** (douche chaude, bain) détend et soulage la raideur — effet modeste mais réel sur la sensation.
+- **La chaleur** (bouillotte, douche chaude, bain) détend et soulage la raideur : selon une méta-analyse de 2021 (32 essais, 1 098 participants), le chaud comme le froid appliqués dans l'heure qui suit l'effort réduisent la douleur, et l'effet de la chaleur tient au-delà de 24 heures.
 
 ## Ce qui ne change presque rien
 
-Les étirements avant ou après la séance ne préviennent pas les courbatures — c'est l'un des résultats les plus répétés de la littérature. Le massage et les rouleaux soulagent la sensation sans accélérer la réparation ; agréables, pas indispensables. Les bains glacés réduisent un peu la douleur mais pourraient *atténuer les adaptations* à l'entraînement quand ils sont systématiques — à réserver aux périodes de compétition. Et les anti-inflammatoires en routine sont une mauvaise idée : l'inflammation fait partie du processus de reconstruction.
+Les étirements avant ou après la séance ne préviennent pas les courbatures — un des résultats les plus répétés : selon une revue Cochrane (12 essais), ils réduisent la douleur du lendemain d'un point ou moins sur une échelle de 100. Les bains glacés soulagent un peu mais peuvent *atténuer les adaptations* quand ils sont systématiques : dans un essai de 12 semaines, ceux qui prenaient un bain froid de 10 minutes après chaque séance ont gagné moins de force et de muscle que ceux qui récupéraient activement. À réserver aux périodes de compétition. Et les anti-inflammatoires en routine sont une mauvaise idée : l'inflammation fait partie de la reconstruction, et dans un essai de 8 semaines, une prise quotidienne d'ibuprofène à forte dose a divisé par deux le gain de volume musculaire par rapport à une faible dose d'aspirine. Si la douleur te pousse vers un médicament, parles-en à ton médecin ou pharmacien.
 
 ## Peut-on s'entraîner avec des courbatures ?
 
@@ -1723,9 +1791,9 @@ Deux signaux doivent te faire lever le pied plus sérieusement : des courbatures
 
 ## Ce qu'il faut retenir
 
-- Les courbatures sont une réparation en cours : 24-72 heures, mouvement léger, sommeil, protéines.
+- Les courbatures sont une réparation en cours : pic à 48-72 heures, mouvement léger, massage, sommeil, protéines.
 
-- Étirements, glace systématique et anti-inflammatoires en routine : inutiles ou contre-productifs.
+- Étirements : inutiles contre la douleur. Glace systématique et anti-inflammatoires en routine : contre-productifs pour tes progrès.
 
 - S'entraîner léger avec des courbatures est sain ; des courbatures de 5 jours répétées sont un signal de surmenage.
 
@@ -1733,7 +1801,7 @@ Deux signaux doivent te faire lever le pied plus sérieusement : des courbatures
 
 ### Comment faire passer les courbatures rapidement ?
 
-Récupération active (20-30 min de marche ou vélo tranquille), sommeil en haut de ta fourchette, 1,6-2,2 g de protéines par kilo par jour, chaleur pour la raideur. Le reste est du temps : elles culminent à 48 h et disparaissent seules.
+Massage (la technique la plus efficace selon une méta-analyse de 2018), récupération active (20-30 min de marche ou vélo tranquille), sommeil en haut de ta fourchette, 1,6-2,2 g de protéines par kilo par jour, chaleur pour la raideur. Le reste est du temps : elles culminent entre 48 et 72 h et disparaissent seules.
 
 ### Peut-on faire du sport avec des courbatures ?
 
@@ -1741,42 +1809,64 @@ Oui : normalement si elles sont légères, sur un autre groupe musculaire ou en 
 
 ### Les courbatures sont-elles dues à l'acide lactique ?
 
-Non — c'est un mythe. Le lactate est éliminé en moins d'une heure après l'effort. Les courbatures sont des micro-lésions musculaires en cours de réparation, qui apparaissent 12 à 24 heures plus tard.
+Non — c'est un mythe. Le lactate retombe à son niveau de repos peu après l'effort, bien avant que la douleur apparaisse. Les courbatures sont des micro-lésions musculaires en cours de réparation, qui s'installent dans les 24 heures et culminent entre 48 et 72 heures.
+
+## Sources
+
+- Hotfiel T, Freiwald J, Hoppe MW, et al. Advances in Delayed-Onset Muscle Soreness (DOMS): Part I: Pathogenesis and Diagnostics. *Sportverletz Sportschaden*. 2018. — https://doi.org/10.1055/a-0753-1884
+- Dupuy O, Douzi W, Theurot D, et al. An Evidence-Based Approach for Choosing Post-exercise Recovery Techniques to Reduce Markers of Muscle Damage, Soreness, Fatigue, and Inflammation: A Systematic Review With Meta-Analysis. *Front Physiol*. 2018. — https://doi.org/10.3389/fphys.2018.00403
+- Wang Y, Li S, Zhang Y, et al. Heat and cold therapy reduce pain in patients with delayed onset muscle soreness: A systematic review and meta-analysis of 32 randomized controlled trials. *Phys Ther Sport*. 2021. — https://doi.org/10.1016/j.ptsp.2021.01.004
+- Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce muscle soreness after exercise. *Cochrane Database Syst Rev*. 2011. — https://doi.org/10.1002/14651858.CD004577.pub3
+- Roberts LA, Raastad T, Markworth JF, et al. Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training. *J Physiol*. 2015. — https://doi.org/10.1113/JP270570
+- Lilja M, Mandić M, Apró W, et al. High doses of anti-inflammatory drugs compromise muscle strength and hypertrophic adaptations to resistance training in young adults. *Acta Physiol (Oxf)*. 2018. — https://doi.org/10.1111/apha.12948
 
 ---
 
 # Sieste idéale : combien de temps faut-il dormir ?
 
 URL : https://ecleptic.health/articles/sieste-ideale-duree.html
-Thème : Énergie · Auteur : Auguste Phily-Priou · Publié le 2026-09-21
+Thème : Énergie · Auteur : Auguste Phily-Priou · Publié le 2026-09-21 · Mis à jour le 2026-09-30
 
-10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est le pire choix, et quand la sieste est un signal.
+10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est un format piège, et quand la sieste est un signal.
 
-La réponse courte : **10 à 20 minutes, avant 15 heures**. C'est la sieste au meilleur rendement : assez longue pour restaurer la vigilance, l'humeur et la concentration, assez courte pour rester en sommeil léger — tu te réveilles net, opérationnel en quelques minutes. Les effets sont mesurables pendant 2 à 3 heures derrière.
+La réponse courte : **10 à 20 minutes, avant 15 heures**. C'est la sieste au meilleur rendement : assez longue pour restaurer la vigilance, l'humeur et la concentration, assez courte pour rester en sommeil léger — tu te réveilles net. Selon une revue de 2010 sur la sieste et la cognition, les bénéfices d'une sieste brève sont quasi immédiats et durent 1 à 3 heures.
 
-La règle d'or est simple : *éviter de plonger en sommeil profond*. C'est lui qui crée la fameuse « inertie de sommeil » — ce brouillard pâteux au réveil qui peut durer 30 à 60 minutes et qui fait dire que « la sieste, ce n'est pas pour moi ». Ce n'est pas la sieste le problème, c'est sa durée.
+La règle d'or est simple : *éviter de plonger en sommeil profond*. C'est le réveil en plein profond qui rend la fameuse « inertie de sommeil » la plus lourde — ce brouillard pâteux qui fait dire que « la sieste, ce n'est pas pour moi ». Sans grosse privation de sommeil, elle dépasse rarement 30 minutes, mais elle peut s'étirer bien au-delà après une nuit très courte. Ce n'est pas la sieste le problème, c'est sa durée.
 
-## 30 minutes : le pire choix possible
+## 30 minutes : le format piège
 
-Contre-intuitif mais net dans les données : la sieste de 30-45 minutes est la pire des options. Trop longue pour rester en léger, trop courte pour boucler un cycle complet, elle te réveille **en plein sommeil profond** — au moment exact où l'inertie est maximale. Si tu as déjà émergé d'une sieste plus fatigué qu'avant, c'était probablement ça. Les deux formats qui marchent :
+Contre-intuitif mais net dans les données : la sieste de 30-45 minutes est la plus piégeuse. Trop longue pour rester en léger, trop courte pour boucler un cycle complet, elle risque de te réveiller **en plein sommeil profond** — au moment où l'inertie est maximale. Si tu as déjà émergé d'une sieste plus fatigué qu'avant, c'était probablement ça. Les deux formats qui marchent :
 
-- **10-20 minutes** — la sieste d'entretien, celle de tous les jours. Mets un réveil à 20-25 minutes (le temps de t'endormir), pas plus.
+- **10-20 minutes** — la sieste d'entretien, celle de tous les jours ; plutôt 10 pour être opérationnel tout de suite. Mets un réveil à 20-25 minutes (le temps de t'endormir), pas plus.
 
 - **90 minutes** — le cycle complet, qui traverse le profond et se termine naturellement. Réservé aux vraies dettes : nuit très courte, gros bloc d'entraînement, décalage horaire. Trop lourd en usage quotidien.
 
+Ce que donne chaque durée, mesuré en laboratoire :
+
+Source : Brooks et Lack, *Sleep* (2006) — 24 jeunes adultes, sieste à 15 h après une nuit de 5 heures.
+| Minutes de sommeil | Effet sur la vigilance |
+
+| 5 minutes | Peu de bénéfice |
+
+| 10 minutes | Immédiat, jusqu'à 2 h 35 après |
+
+| 20 minutes | Au bout de 35 min, jusqu'à 2 h 05 après |
+
+| 30 minutes | Inertie d'abord, puis jusqu'à 2 h 35 après |
+
 ## L'heure compte autant que la durée
 
-La fenêtre naturelle se situe **entre 13 et 15 heures** — le creux circadien du début d'après-midi, qui existe même sans déjeuner copieux. Après 15-16 heures, la sieste entame la « pression de sommeil » que tu accumules pour la nuit : tu t'endormiras plus tard et moins facilement. Si tu protèges tes soirées, la règle est stricte : **pas de sieste après 15 heures** — et en cas de coup de barre tardif, préfère une marche dehors ou de la lumière vive.
+La fenêtre naturelle se situe **entre 13 et 15 heures** — le creux circadien du début d'après-midi, qui existe même sans déjeuner, comme le rappelle une revue de 2005 sur ce coup de barre. Après 15-16 heures, la sieste entame la « pression de sommeil » que tu accumules pour la nuit : tu t'endormiras plus tard et moins facilement. Si tu protèges tes soirées, la règle est stricte : **pas de sieste après 15 heures** — et en cas de coup de barre tardif, préfère une marche dehors ou de la lumière vive.
 
 ## Quand la sieste est un symptôme, pas une solution
 
-La sieste plaisir est une excellente habitude. Le *besoin* impérieux de sieste tous les jours, lui, est un message : tu ne dors probablement pas assez la nuit — [vérifie ton besoin réel ici](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html). Et si tu dors suffisamment mais que la somnolence de jour reste écrasante, c'est le tableau d'une [fatigue qui mérite un vrai diagnostic](https://ecleptic.health/articles/toujours-fatigue-causes.html). La sieste compense, elle ne remplace pas : ta nuit reste le socle, la sieste est un appoint. Un dernier repère : le week-end, une sieste courte vaut toujours mieux qu'une grasse matinée de trois heures, qui [décale ton horloge](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) pour les jours suivants.
+La sieste plaisir est une excellente habitude. Le *besoin* impérieux de sieste tous les jours, lui, est un message : tu ne dors probablement pas assez la nuit — [vérifie ton besoin réel ici](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html). Une méta-analyse de 2015 (11 cohortes, 151 588 personnes) associe les siestes d'une heure ou plus par jour à un risque cardiovasculaire accru de 82 %, quand celles de moins d'une heure ne sont liées à aucun surrisque — une association, pas une cause. Et si tu dors suffisamment mais que la somnolence de jour reste écrasante, c'est le tableau d'une [fatigue qui mérite un vrai diagnostic](https://ecleptic.health/articles/toujours-fatigue-causes.html) : parles-en à ton médecin. La sieste compense, elle ne remplace pas. Un dernier repère : le week-end, une sieste courte vaut toujours mieux qu'une grasse matinée de trois heures, qui [décale ton horloge](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) pour les jours suivants.
 
 ## Ce qu'il faut retenir
 
 - 10 à 20 minutes avant 15 heures : vigilance restaurée, zéro brouillard. Réveil obligatoire à 25 minutes max.
 
-- 30-45 minutes est le pire format (réveil en plein profond) ; 90 minutes se réserve aux vraies dettes.
+- 30-45 minutes est le format piège (risque de réveil en plein profond) ; 90 minutes se réserve aux vraies dettes.
 
 - Un besoin de sieste quotidien impérieux est un signal de nuits insuffisantes, pas une solution durable.
 
@@ -1788,42 +1878,61 @@ La sieste plaisir est une excellente habitude. Le *besoin* impérieux de sieste 
 
 ### Pourquoi je me réveille plus fatigué après une sieste ?
 
-Ta sieste était trop longue : à 30-45 minutes, tu te réveilles en plein sommeil profond, au maximum de l'inertie de sommeil. Raccourcis à 20 minutes, ou passe au cycle complet de 90 minutes les jours de vraie dette.
+Ta sieste était sans doute trop longue : à 30-45 minutes, tu risques de te réveiller en plein sommeil profond, au maximum de l'inertie de sommeil. Raccourcis à 20 minutes, ou passe au cycle complet de 90 minutes les jours de vraie dette.
 
 ### Jusqu'à quelle heure peut-on faire la sieste ?
 
 Avant 15 heures, dans le creux circadien de début d'après-midi. Plus tard, la sieste entame la pression de sommeil accumulée pour la nuit et retarde l'endormissement du soir.
+
+## Sources
+
+- Brooks A, Lack L. A brief afternoon nap following nocturnal sleep restriction: which nap duration is most recuperative? *Sleep*. 2006. — https://doi.org/10.1093/sleep/29.6.831
+- Lovato N, Lack L. The effects of napping on cognitive functioning. *Prog Brain Res*. 2010. — https://doi.org/10.1016/B978-0-444-53702-7.00009-9
+- Tassi P, Muzet A. Sleep inertia. *Sleep Med Rev*. 2000. — https://doi.org/10.1053/smrv.2000.0098
+- Monk TH. The post-lunch dip in performance. *Clin Sports Med*. 2005. — https://doi.org/10.1016/j.csm.2004.12.002
+- Yamada T, Hara K, Shojima N, et al. Daytime Napping and the Risk of Cardiovascular Disease and All-Cause Mortality: A Prospective Study and Dose-Response Meta-Analysis. *Sleep*. 2015. — https://doi.org/10.5665/sleep.5246
 
 ---
 
 # Combien d'heures de sommeil faut-il vraiment par nuit ?
 
 URL : https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html
-Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.
 
-La réponse courte : **entre 7 et 9 heures** pour la quasi-totalité des adultes. C'est la fourchette retenue par la National Sleep Foundation et par l'American Academy of Sleep Medicine, sur la base de centaines d'études. En dessous de 7 heures de façon répétée, les risques mesurables augmentent — métabolisme, immunité, humeur, accidents. Au-delà de 9 heures chez un adulte en bonne santé, c'est rarement un besoin : c'est souvent le signe d'une dette qui se rembourse, ou d'un sommeil de mauvaise qualité qui se compense en quantité.
+La réponse courte : **entre 7 et 9 heures** pour la quasi-totalité des adultes. C'est la fourchette retenue par la National Sleep Foundation ; l'American Academy of Sleep Medicine, elle, recommande **7 heures ou plus**, au terme d'une revue de 5 314 articles scientifiques. En dessous de 7 heures de façon répétée, les risques mesurables augmentent — métabolisme, immunité, humeur, accidents. Au-delà de 9 heures chez un adulte en bonne santé, c'est rarement un besoin, sauf chez les jeunes adultes : c'est plus souvent le signe d'une dette qui se rembourse, d'une maladie, ou d'un sommeil de mauvaise qualité qui se compense en quantité.
 
-La réponse honnête : *ça dépend de toi*, et la variation est plus grande qu'on ne le croit. Ton besoin réel est largement génétique. Certaines personnes fonctionnent parfaitement avec 7 heures. D'autres ont besoin de 9 heures pour être au même niveau. Les vrais « courts dormeurs » naturels — moins de 6 heures sans aucun déficit — existent, mais ils sont rarissimes : quelques personnes sur mille. Statistiquement, ce n'est pas toi.
+La réponse honnête : *ça dépend de toi*, et la variation est plus grande qu'on ne le croit. Ton besoin réel dépend en bonne partie de ta génétique. Certaines personnes fonctionnent parfaitement avec 7 heures. D'autres ont besoin de 9 heures pour être au même niveau. Les vrais « courts dormeurs » naturels — moins de 6 heures sans aucun déficit — existent, mais ils sont rarissimes. Statistiquement, ce n'est pas toi.
+
+Source : National Sleep Foundation (Hirshkowitz et al., 2015).
+| Âge | Sommeil recommandé |
+
+| Enfants (6-13 ans) | 9 à 11 h |
+
+| Adolescents (14-17 ans) | 8 à 10 h |
+
+| Adultes (18-64 ans) | 7 à 9 h |
+
+| 65 ans et plus | 7 à 8 h |
 
 ## Pourquoi « 8 heures » est un malentendu
 
 Le chiffre de 8 heures n'est pas faux, il est mal compris. C'est une **moyenne de population**, pas une prescription individuelle. Dire « il faut dormir 8 heures » revient à dire « il faut chausser du 42 » : c'est vrai en moyenne et faux pour la moitié des gens.
 
-Ce que la recherche montre de façon robuste, c'est la forme de la courbe : les risques pour la santé dessinent un U. Ils montent nettement sous 6 heures, restent bas entre 7 et 9, et remontent au-delà — probablement parce que dormir très longtemps est plus souvent un symptôme qu'une cause. Ta cible personnelle se trouve quelque part dans ce creux, et elle bouge selon les périodes de ta vie : charge d'entraînement, stress, maladie, sommeil en retard à rattraper.
+Ce que la recherche montre de façon robuste, c'est la forme de la courbe : les risques pour la santé dessinent un U. Une méta-analyse de 2010 (16 études, 1,38 million de participants) associe les nuits courtes à un risque de décès accru de 12 %, et les nuits longues — le plus souvent 9 heures ou plus — à un risque accru de 30 %. Le creux se situe autour de 7 à 8 heures, et les très longues nuits sont probablement plus souvent un symptôme qu'une cause. Ta cible personnelle se trouve quelque part dans ce creux, et elle bouge selon les périodes de ta vie : charge d'entraînement, stress, maladie, sommeil en retard à rattraper.
 
 ## Si tu t'entraînes, vise le haut de la fourchette
 
 L'exercice augmente le besoin de sommeil, parce que c'est pendant la nuit que l'essentiel de la réparation se produit : sécrétion d'hormone de croissance en sommeil profond, synthèse protéique, consolidation des apprentissages moteurs.
 
-Les études d'« extension de sommeil » chez les sportifs sont parlantes : quand des basketteurs universitaires sont passés à 10 heures au lit par nuit pendant plusieurs semaines, leurs sprints se sont améliorés, leur précision au tir a gagné environ 9 points de pourcentage, et leur temps de réaction a chuté. À l'inverse, une seule nuit courte dégrade la force maximale modestement — mais dégrade nettement l'endurance, la motivation et la tolérance à l'effort dès le lendemain.
+Les études d'« extension de sommeil » chez les sportifs sont parlantes : quand 11 basketteurs de Stanford ont visé 10 heures au lit par nuit pendant 5 à 7 semaines, ils ont dormi près de 2 heures de plus, leurs sprints se sont améliorés, leur précision au tir a gagné environ 9 points de pourcentage, et leur temps de réaction a chuté. À l'inverse, une seule nuit courte dégrade la force maximale modestement — mais dégrade nettement l'endurance, la motivation et la tolérance à l'effort dès le lendemain.
 
 - **Tu t'entraînes 3-4 fois par semaine :** vise 7 h 30 – 8 h 30 de sommeil réel.
 
 - **Tu t'entraînes 5 fois ou plus, ou tu es en préparation :** vise 8 – 9 heures, [sieste](https://ecleptic.health/articles/sieste-ideale-duree.html) comprise.
 
-- **Période de sèche ou de déficit calorique :** le manque de sommeil fait fondre le muscle en priorité — dans une étude célèbre, à déficit égal, les participants qui dormaient 5 h 30 perdaient 60 % de masse maigre en plus que ceux qui dormaient 8 h 30.
+- **Période de sèche ou de déficit calorique :** le manque de sommeil fait fondre le muscle en priorité — dans un essai de 2010 (10 adultes, 14 jours de régime), passer de 8 h 30 à 5 h 30 au lit augmentait de 60 % la perte de masse maigre et réduisait de 55 % la part de graisse perdue.
 
 ## Temps au lit ≠ temps de sommeil
 
@@ -1851,7 +1960,7 @@ La méthode la plus fiable ne demande aucun matériel, juste une période calme 
 
 - **Pas de réveil.** Laisse ton corps se lever seul.
 
-- Ignore les premières nuits : tu rembourses d'abord ta dette, les durées seront gonflées.
+- Ignore les premières nuits : tu rembourses d'abord ta dette, les durées seront gonflées. Une étude japonaise de 2016 a montré qu'une seule heure de dette met environ quatre jours à se résorber.
 
 - Au bout de 10 à 14 jours, ta durée de réveil spontané se stabilise. *Ce chiffre-là est ton besoin réel.*
 
@@ -1871,22 +1980,31 @@ Ensuite, le travail consiste à protéger ce volume en semaine — et c'est là 
 
 ### Combien d'heures de sommeil par nuit pour un adulte ?
 
-Entre 7 et 9 heures de sommeil réel pour la quasi-totalité des adultes. Si tu t'entraînes sérieusement, vise le haut de la fourchette : 8 à 9 heures.
+Entre 7 et 9 heures de sommeil réel selon la National Sleep Foundation, au moins 7 heures selon l'American Academy of Sleep Medicine. Si tu t'entraînes sérieusement, vise le haut de la fourchette : 8 à 9 heures.
 
 ### Est-ce que 6 heures de sommeil suffisent ?
 
-Presque jamais. Les vrais courts dormeurs — moins de 6 heures sans aucun déficit — représentent quelques personnes sur mille. Sous 7 heures répétées, les risques mesurables augmentent : métabolisme, immunité, humeur, accidents.
+Presque jamais. Les vrais courts dormeurs — moins de 6 heures sans aucun déficit — sont rarissimes. Sous 7 heures répétées, les risques mesurables augmentent : métabolisme, immunité, humeur, accidents.
 
 ### Comment connaître son besoin réel de sommeil ?
 
-Deux semaines à heure de coucher fixe, sans réveil. Ignore les premières nuits (tu rembourses ta dette), puis la durée de réveil spontané se stabilise : ce chiffre est ton besoin réel.
+Deux semaines à heure de coucher fixe, sans réveil. Ignore les premières nuits (tu rembourses ta dette : une heure de dette met environ quatre jours à se résorber), puis la durée de réveil spontané se stabilise : ce chiffre est ton besoin réel.
+
+## Sources
+
+- Hirshkowitz M, Whiton K, Albert SM, et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. *Sleep Health*. 2015. — https://doi.org/10.1016/j.sleh.2014.12.010
+- Watson NF, Badr MS, Belenky G, et al. Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society. *Sleep*. 2015. — https://doi.org/10.5665/sleep.4716
+- Cappuccio FP, D'Elia L, Strazzullo P, et al. Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies. *Sleep*. 2010. — https://doi.org/10.1093/sleep/33.5.585
+- Mah CD, Mah KE, Kezirian EJ, et al. The effects of sleep extension on the athletic performance of collegiate basketball players. *Sleep*. 2011. — https://doi.org/10.5665/SLEEP.1132
+- Nedeltcheva AV, Kilkus JM, Imperial J, et al. Insufficient sleep undermines dietary efforts to reduce adiposity. *Ann Intern Med*. 2010. — https://doi.org/10.7326/0003-4819-153-7-201010050-00006
+- Kitamura S, Katayose Y, Nakazaki K, et al. Estimating individual optimal sleep duration and potential sleep debt. *Sci Rep*. 2016. — https://doi.org/10.1038/srep35812
 
 ---
 
 # Readiness score : comment ça marche, et comment l'améliorer
 
 URL : https://ecleptic.health/articles/readiness-score-comment-ca-marche.html
-Thème : Readiness · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Readiness · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 HRV, fréquence cardiaque de repos, sommeil, charge récente : ce que mesure vraiment un score de préparation, ses limites, et comment le faire monter durablement.
 
@@ -1898,21 +2016,21 @@ Les formules varient d'une app à l'autre, mais les ingrédients sont presque to
 
 - **La variabilité de fréquence cardiaque (HRV)** — le signal le plus sensible de l'état de ton système nerveux. Elle chute quand le corps est sous pression ([on t'explique la HRV en détail ici](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html)).
 
-- **La fréquence cardiaque de repos** — mesurée la nuit. Quelques battements au-dessus de ta normale = récupération incomplète, maladie qui couve, ou alcool de la veille.
+- **La fréquence cardiaque de repos** — mesurée la nuit. Quelques battements au-dessus de ta normale = récupération incomplète, maladie qui couve, ou alcool de la veille. Une étude de Stanford de 2020 a montré qu'une hausse anormale du cœur de repos aurait permis de repérer 63 % des cas de Covid-19 avant les premiers symptômes.
 
 - **Ton sommeil** — durée et qualité de la nuit, comparées à ton besoin ([combien d'heures il te faut vraiment](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html)).
 
-- **Ta charge récente** — l'entraînement des derniers jours, parce qu'une grosse séance se paie pendant 24 à 72 heures.
+- **Ta charge récente** — l'entraînement des derniers jours, parce qu'une grosse séance se paie : selon une revue de 2013, ton système nerveux autonome récupère en 24 heures au plus d'une séance facile, en 24 à 48 heures d'une séance au seuil, et en 48 heures au moins d'une séance très intense.
 
-Le point décisif : tout est comparé à **ta propre ligne de base**, construite sur des semaines de données. Un bon score ne te compare jamais à une moyenne d'autres gens — une HRV de 45 ms peut être excellente pour toi et médiocre pour quelqu'un d'autre.
+Le point décisif : tout est comparé à **ta propre ligne de base**, construite sur des semaines de données. Un bon score ne te compare jamais à une moyenne d'autres gens — une HRV de 45 ms peut être excellente pour toi et médiocre pour quelqu'un d'autre. Sur plus de 8 millions de porteurs de montre, la HRV baisse nettement avec l'âge et varie au fil de la journée.
 
 ## Comment le lire sans se tromper
 
 Trois règles évitent l'essentiel des erreurs d'interprétation :
 
-- **La tendance bat la valeur du jour.** Un mauvais score isolé ne veut presque rien dire ; cinq matins en baisse racontent une vraie histoire.
+- **La tendance bat la valeur du jour.** Un mauvais score isolé ne veut presque rien dire ; cinq matins en baisse racontent une vraie histoire. Les chercheurs qui suivent des athlètes olympiques lissent d'ailleurs la HRV sur plusieurs jours.
 
-- **Le score est un conseil, pas un ordre.** Un 55 ne t'interdit pas de t'entraîner — il suggère d'y aller moins fort, ou de troquer l'intensité contre de la technique.
+- **Le score est un conseil, pas un ordre.** Un 55 ne t'interdit pas de t'entraîner — il suggère d'y aller moins fort, ou de troquer l'intensité contre de la technique. Même l'entraînement piloté par la HRV ne fait pas de miracles : une méta-analyse de 2021 ne lui trouve qu'un petit avantage, non significatif, sur la forme et la performance.
 
 - **Ne le vérifie pas dix fois par jour.** Il est calculé au réveil, sur ta nuit. La suite de la journée ne le change pas.
 
@@ -1920,13 +2038,13 @@ Trois règles évitent l'essentiel des erreurs d'interprétation :
 
 Les leviers sont ennuyeux et c'est une bonne nouvelle : ils sont tous sous ton contrôle.
 
-- Dormir assez, à [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) — de loin le levier nº1.
+- Dormir assez, à [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) — le premier levier.
 
 - Alterner vraiment les jours durs et les jours faciles, au lieu d'empiler du moyen tous les jours.
 
-- Limiter l'[alcool le soir](https://ecleptic.health/articles/alcool-sommeil-effets.html) : c'est l'un des rares facteurs capables d'écraser HRV, fréquence cardiaque et sommeil profond la même nuit.
+- Limiter l'[alcool le soir](https://ecleptic.health/articles/alcool-sommeil-effets.html) : chez 4 098 salariés finlandais, la récupération mesurée par la HRV baissait de 9 points avec une petite dose, et de 39 avec une forte.
 
-- Manger suffisamment les jours de grosse charge — un gros déficit calorique se lit dans les vitaux en 48 heures.
+- Manger suffisamment les jours de grosse charge — un gros déficit calorique pèse sur la récupération.
 
 ## Ce qu'il faut retenir
 
@@ -1950,42 +2068,60 @@ Un score bas isolé n'interdit pas de s'entraîner : réduis l'intensité ou tro
 
 Dormir assez à horaires réguliers (le levier nº1), alterner vraiment jours durs et jours faciles, limiter l'alcool le soir, et manger suffisamment les jours de grosse charge.
 
+## Sources
+
+- Plews DJ, Laursen PB, Stanley J, et al. Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring. *Sports Med*. 2013. — https://doi.org/10.1007/s40279-013-0071-8
+- Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. *Sports Med*. 2013. — https://doi.org/10.1007/s40279-013-0083-4
+- Natarajan A, Pantelopoulos A, Emir-Farinas H, et al. Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study. *Lancet Digit Health*. 2020. — https://doi.org/10.1016/S2589-7500(20)30246-6
+- Mishra T, Wang M, Metwally AA, et al. Pre-symptomatic detection of COVID-19 from smartwatch data. *Nat Biomed Eng*. 2020. — https://doi.org/10.1038/s41551-020-00640-6
+- Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. *JMIR Ment Health*. 2018. — https://doi.org/10.2196/mental.9519
+- Manresa-Rocamora A, Sarabia JM, Javaloyes A, et al. Heart Rate Variability-Guided Training for Enhancing Cardiac-Vagal Modulation, Aerobic Fitness, and Endurance Performance: A Methodological Systematic Review with Meta-Analysis. *Int J Environ Res Public Health*. 2021. — https://doi.org/10.3390/ijerph181910299
+
 ---
 
 # HRV : c'est quoi la variabilité de fréquence cardiaque ?
 
 URL : https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html
-Thème : Récupération · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Récupération · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 La HRV mesure les micro-variations entre deux battements de cœur — le meilleur indicateur accessible de ta récupération. Comment la lire, et ce qui la fait bouger.
 
-La **variabilité de fréquence cardiaque** (HRV, pour heart rate variability) mesure une chose contre-intuitive : ton cœur ne bat pas comme un métronome, et c'est très bien. Entre deux battements, l'intervalle varie de quelques millisecondes — 850 ms, puis 910, puis 870. La HRV quantifie ces variations. *Plus elles sont grandes, mieux c'est.*
+La **variabilité de fréquence cardiaque** (HRV, pour heart rate variability) mesure une chose contre-intuitive : ton cœur ne bat pas comme un métronome, et c'est très bien. Entre deux battements, l'intervalle varie de quelques millisecondes — 850 ms, puis 910, puis 870. La HRV quantifie ces variations. *En règle générale, plus elles sont grandes, mieux c'est.*
 
 Pourquoi ? Parce que ces micro-ajustements sont le reflet direct de ton système nerveux autonome. Le système **parasympathique** — celui du repos, de la digestion, de la réparation — freine et relâche le cœur en permanence, ce qui crée de la variabilité. Quand le corps est sous pression (entraînement non digéré, nuit courte, stress, alcool, infection), le système **sympathique** — celui de l'alerte — prend le dessus : le cœur bat plus « droit », et la HRV chute. C'est pour ça qu'elle est au cœur de tous les [scores de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html).
 
 ## Les trois règles pour la lire correctement
 
-- **Compare-toi à toi, jamais aux autres.** La HRV normale va de 20 à plus de 100 ms selon l'âge, la génétique et le niveau d'entraînement. Ta valeur absolue ne dit presque rien ; son évolution par rapport à ta moyenne des dernières semaines dit presque tout.
+- **Compare-toi à toi, jamais aux autres.** Une revue de 2010 (44 études, 21 438 adultes en bonne santé) situe la RMSSD, principal indice du parasympathique, autour de 42 ms en moyenne, avec des moyennes d'études allant de 19 à 75 ms et des écarts individuels énormes selon l'âge, la génétique et l'entraînement. Ta valeur absolue ne dit presque rien ; son évolution par rapport à ta moyenne des dernières semaines dit presque tout.
 
-- **Seule compte la mesure dans les mêmes conditions.** La référence, c'est la nuit ou le réveil, au calme. Une mesure prise debout après un café n'est pas comparable.
+- **Seule compte la mesure dans les mêmes conditions.** La référence, c'est la nuit ou le réveil, au calme. Une mesure prise debout après un café n'est pas comparable, ni une mesure de l'après-midi avec celle de la nuit.
 
-- **Raisonne en moyenne sur 7 jours.** La HRV varie naturellement d'un jour à l'autre ; une chute isolée est du bruit, une semaine en baisse est un signal.
+- **Raisonne en moyenne sur 7 jours.** La HRV varie naturellement d'un jour à l'autre ; une chute isolée est du bruit, une semaine en baisse est un signal. Les chercheurs qui suivent des champions olympiques lissent eux aussi la HRV sur plusieurs jours.
 
 ## Ce qui fait chuter ta HRV
 
-Les quatre suspects habituels, par ordre de fréquence :
+Les quatre suspects habituels :
 
-- **L'alcool** — même deux verres le soir peuvent l'écraser pendant une nuit entière, parfois deux ([voici ce que l'alcool fait vraiment à ta nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html)).
+- **L'alcool** — chez 4 098 salariés finlandais, la récupération estimée par la HRV dans les premières heures de sommeil perdait 9 points avec une petite dose, et 39 avec une forte ([voici ce que l'alcool fait vraiment à ta nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html)).
 
-- **Une grosse séance non digérée** — c'est normal 24 à 48 h après un effort intense ; c'est le corps qui répare. Si elle reste basse 4-5 jours, tu accumules plus que tu ne récupères — [les signes à surveiller ici](https://ecleptic.health/articles/surentrainement-signes.html).
+- **Une grosse séance non digérée** — c'est normal après un effort intense, c'est le corps qui répare (délais ci-dessous ; ils raccourcissent quand ta forme aérobie progresse). Si elle reste basse plusieurs jours sans raison évidente, croise-la avec tes sensations — [les signes à surveiller ici](https://ecleptic.health/articles/surentrainement-signes.html).
 
 - **Le manque de sommeil** et les couchers irréguliers.
 
-- **Le stress psychologique et la maladie** — la HRV chute souvent 24 à 48 h avant les premiers symptômes d'une infection.
+- **Le stress psychologique et la maladie** — chez des soignants équipés d'une Apple Watch, la HRV changeait dans les 7 jours précédant un diagnostic de Covid-19.
+
+Source : Stanley, Peake et Buchheit, *Sports Medicine* (2013) — séances d'endurance.
+| Séance | Retour à la normale |
+
+| Basse intensité | Jusqu'à 24 h |
+
+| Au seuil | 24 à 48 h |
+
+| Haute intensité | 48 h ou plus |
 
 ## Comment l'améliorer durablement
 
-Il n'existe aucun hack rapide, mais quatre leviers documentés : le volume et la régularité du sommeil, l'entraînement d'endurance à basse intensité (le levier le plus puissant sur le long terme), la respiration lente en fin de journée, et la sobriété les veilles de jours importants. En quelques mois d'entraînement régulier, la ligne de base monte — c'est l'un des marqueurs les plus fiables d'une condition physique qui progresse.
+Il n'existe aucun hack rapide, mais quatre leviers documentés : le volume et la régularité du sommeil, l'entraînement d'endurance régulier, la respiration lente en fin de journée — une méta-analyse de 2022 (223 études) montre qu'elle augmente la HRV pendant la séance, juste après et au fil des semaines —, et la sobriété les veilles de jours importants. En quelques mois d'entraînement régulier, la ligne de base monte — c'est l'un des signes d'une condition physique qui progresse.
 
 ## Ce qu'il faut retenir
 
@@ -1999,52 +2135,61 @@ Il n'existe aucun hack rapide, mais quatre leviers documentés : le volume et la
 
 ### Qu'est-ce qu'une bonne HRV ?
 
-Il n'existe pas de bonne valeur universelle : la HRV normale va de 20 à plus de 100 ms selon l'âge, la génétique et l'entraînement. Seule compte l'évolution par rapport à ta propre moyenne des dernières semaines.
+Il n'existe pas de bonne valeur universelle : chez l'adulte en bonne santé, la RMSSD tourne autour de 42 ms en moyenne, avec des moyennes d'études allant de 19 à 75 ms et d'énormes écarts selon l'âge, la génétique et l'entraînement. Seule compte l'évolution par rapport à ta propre moyenne des dernières semaines.
 
 ### Pourquoi ma HRV chute ?
 
-Les quatre causes les plus fréquentes, dans l'ordre : l'alcool le soir, une grosse séance non digérée (normal 24-48 h), le manque de sommeil ou des horaires irréguliers, et le stress ou une infection qui couve.
+Les quatre causes les plus fréquentes : l'alcool le soir, une grosse séance non digérée (normal jusqu'à 48 h, parfois plus après un effort très intense), le manque de sommeil ou des horaires irréguliers, et le stress ou une infection qui couve.
 
 ### Comment augmenter sa HRV ?
 
-Aucun hack rapide : sommeil suffisant et régulier, endurance à basse intensité (le levier le plus puissant à long terme), respiration lente en fin de journée, sobriété les veilles de jours importants. La ligne de base monte en quelques mois.
+Aucun hack rapide : sommeil suffisant et régulier, entraînement d'endurance régulier, respiration lente en fin de journée, sobriété les veilles de jours importants. La ligne de base monte en quelques mois.
+
+## Sources
+
+- Nunan D, Sandercock GR, Brodie DA. A quantitative systematic review of normal values for short-term heart rate variability in healthy adults. *Pacing Clin Electrophysiol*. 2010. — https://doi.org/10.1111/j.1540-8159.2010.02841.x
+- Plews DJ, Laursen PB, Stanley J, et al. Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring. *Sports Med*. 2013. — https://doi.org/10.1007/s40279-013-0071-8
+- Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. *Sports Med*. 2013. — https://doi.org/10.1007/s40279-013-0083-4
+- Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. *JMIR Ment Health*. 2018. — https://doi.org/10.2196/mental.9519
+- Hirten RP, Danieletto M, Tomalin L, et al. Use of Physiological Data From a Wearable Device to Identify SARS-CoV-2 Infection and Symptoms and Predict COVID-19 Diagnosis: Observational Study. *J Med Internet Res*. 2021. — https://doi.org/10.2196/26107
+- Laborde S, Allen MS, Borges U, et al. Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis. *Neurosci Biobehav Rev*. 2022. — https://doi.org/10.1016/j.neubiorev.2022.104711
 
 ---
 
 # Combien de protéines par jour pour prendre du muscle ?
 
 URL : https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html
-Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 1,6 à 2,2 g par kilo de poids de corps et par jour : ce que dit la recherche, pourquoi manger plus n'apporte rien, et comment répartir tes apports.
 
-La réponse courte : **1,6 à 2,2 g de protéines par kilo de poids de corps et par jour**. Pour quelqu'un de 75 kg, ça fait 120 à 165 g. C'est la fourchette qui ressort des méta-analyses les plus solides : en dessous de 1,6 g/kg, tu laisses de la croissance musculaire sur la table ; au-delà de 2,2 g/kg, les gains supplémentaires deviennent indétectables chez la quasi-totalité des gens.
+La réponse courte : **1,6 à 2,2 g de protéines par kilo de poids de corps et par jour**. Pour quelqu'un de 75 kg, ça fait 120 à 165 g. C'est la fourchette qui ressort des méta-analyses les plus solides : celle de 2018 (49 essais, 1 863 participants) situe le plateau des gains de masse musculaire autour de 1,6 g/kg en moyenne, et comme l'incertitude s'étend jusqu'à 2,2 g/kg, ses auteurs conseillent de viser jusque-là pour ne rien laisser sur la table. Au-delà de 2,2 g/kg, les gains supplémentaires deviennent indétectables chez la quasi-totalité des gens.
 
 Oublie les chiffres en grammes absolus (« il faut 150 g de protéines ») : tout se raisonne *par kilo de poids de corps*. Et oublie le réflexe « plus = mieux » : les protéines au-delà du besoin ne construisent pas plus de muscle, elles sont simplement utilisées comme énergie — une énergie chère et rassasiante, ce qui peut être utile en sèche, mais pas anabolique.
 
 ## Les cas où il faut viser plus haut
 
-- **En déficit calorique (sèche)** : monte à 2,2 – 2,6 g/kg. Quand l'énergie manque, le corps est tenté de puiser dans le muscle ; un apport protéique élevé est ta meilleure assurance anti-fonte, avec l'entraînement lourd et un [sommeil suffisant](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) — le manque de sommeil en déficit fait fondre la masse maigre à une vitesse spectaculaire.
+- **En déficit calorique (sèche)** : monte à 2,2 – 2,6 g/kg. Une revue systématique de 2014 estime le besoin des pratiquants de musculation secs en déficit à 2,3 – 3,1 g par kilo de masse maigre, d'autant plus haut que le déficit est sévère. Quand l'énergie manque, le corps est tenté de puiser dans le muscle ; un apport protéique élevé est ta meilleure assurance anti-fonte, avec l'entraînement lourd et un [sommeil suffisant](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) — le manque de sommeil en déficit fait fondre la masse maigre à une vitesse spectaculaire.
 
-- **Passé 50-60 ans** : la « résistance anabolique » augmente le besoin — vise le haut de la fourchette, et des prises plus généreuses à chaque repas.
+- **Passé 50-60 ans** : la « résistance anabolique » augmente le besoin — vise le haut de la fourchette, et des prises plus généreuses à chaque repas. Chez des hommes d'environ 71 ans, la synthèse musculaire plafonnait vers 0,40 g/kg par repas, contre 0,24 g/kg à 22 ans.
 
 - **Végétarien ou végétal** : vise aussi le haut de la fourchette et varie les sources (légumineuses + céréales + soja) pour couvrir tous les acides aminés essentiels.
 
 ## La répartition compte (un peu)
 
-Le total quotidien fait 80 % du travail. Les 20 % restants : répartir en **3 à 5 prises d'environ 0,4 g/kg** (25 à 40 g pour la plupart des gens), chacune apportant assez de leucine pour déclencher la synthèse protéique. La fameuse « fenêtre anabolique » de 30 minutes après la séance est un mythe dans sa version stricte : elle dure plutôt plusieurs heures. Un vrai repas dans les 2-3 heures qui suivent l'entraînement suffit largement.
+Le total quotidien fait 80 % du travail. Les 20 % restants : répartir en **au moins 4 prises d'environ 0,4 g/kg** (25 à 40 g pour la plupart des gens) — la cible proposée par une revue de 2018 pour atteindre au moins 1,6 g/kg par jour —, chacune apportant assez de leucine pour déclencher la synthèse protéique. La fameuse « fenêtre anabolique » de 30 minutes après la séance est un mythe dans sa version stricte : selon l'International Society of Sports Nutrition, l'effet anabolique d'une séance dure au moins 24 heures. Un vrai repas dans les 2-3 heures qui suivent l'entraînement suffit largement.
 
-Un point souvent négligé : **la prise du soir**. 30 à 40 g de protéines lentes (fromage blanc, caséine) avant le coucher améliorent la synthèse protéique nocturne — c'est pendant la nuit que l'essentiel de la réparation se joue.
+Un point souvent négligé : **la prise du soir**. Selon la même société savante, 30 à 40 g de protéines lentes (fromage blanc, caséine) avant le coucher augmentent la synthèse protéique nocturne — c'est pendant la nuit que l'essentiel de la réparation se joue.
 
 ## Et les reins, alors ?
 
-Chez une personne en bonne santé, aucune étude sérieuse n'a montré de dommage rénal aux apports dont on parle ici, y compris au-delà de 2,2 g/kg sur des années. La prudence ne s'impose qu'en cas de pathologie rénale existante — dans ce cas, c'est une discussion avec un médecin, pas avec un article.
+Chez une personne en bonne santé, une méta-analyse de 2018 (28 essais, 1 358 participants) ne trouve aucun effet défavorable des régimes riches en protéines — 1,5 g/kg et plus — sur la fonction rénale. La prudence ne s'impose qu'en cas de pathologie rénale existante — dans ce cas, c'est une discussion avec un médecin, pas avec un article.
 
 ## Ce qu'il faut retenir
 
 - **1,6 à 2,2 g/kg/jour** pour construire du muscle ; 2,2 – 2,6 g/kg en sèche.
 
-- Le total quotidien d'abord, la répartition ensuite : 3 à 5 prises de ~0,4 g/kg, dont une le soir.
+- Le total quotidien d'abord, la répartition ensuite : au moins 4 prises de ~0,4 g/kg, dont une le soir.
 
 - La fenêtre anabolique stricte est un mythe ; la régularité sur des mois est ce qui construit.
 
@@ -2052,26 +2197,46 @@ Chez une personne en bonne santé, aucune étude sérieuse n'a montré de dommag
 
 ### Combien de grammes de protéines par jour pour prendre du muscle ?
 
-1,6 à 2,2 g par kilo de poids de corps et par jour — soit 120 à 165 g pour 75 kg. Au-delà de 2,2 g/kg, les gains supplémentaires deviennent indétectables ; en sèche, monte à 2,2-2,6 g/kg.
+1,6 à 2,2 g par kilo de poids de corps et par jour — soit 120 à 165 g pour 75 kg. Les gains plafonnent en moyenne vers 1,6 g/kg et deviennent indétectables au-delà de 2,2 g/kg ; en sèche, monte à 2,2-2,6 g/kg.
 
 ### Manger trop de protéines est-il dangereux pour les reins ?
 
-Chez une personne en bonne santé, aucune étude sérieuse n'a montré de dommage rénal à ces apports, même au-delà de 2,2 g/kg sur des années. La prudence ne concerne que les pathologies rénales existantes.
+Chez une personne en bonne santé, non : une méta-analyse de 2018 (28 essais, 1 358 participants) ne montre aucun effet défavorable des régimes riches en protéines sur la fonction rénale. La prudence ne concerne que les pathologies rénales existantes, à voir avec ton médecin.
 
 ### Faut-il prendre des protéines juste après la séance ?
 
-La « fenêtre anabolique » de 30 minutes est un mythe dans sa version stricte : elle dure plutôt plusieurs heures. Un vrai repas dans les 2-3 heures qui suivent l'entraînement suffit largement.
+La « fenêtre anabolique » de 30 minutes est un mythe dans sa version stricte : l'effet anabolique d'une séance dure au moins 24 heures. Un vrai repas dans les 2-3 heures qui suivent l'entraînement suffit largement.
+
+## Sources
+
+- Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. *Br J Sports Med*. 2018. — https://doi.org/10.1136/bjsports-2017-097608
+- Jäger R, Kerksick CM, Campbell BI, et al. International Society of Sports Nutrition Position Stand: protein and exercise. *J Int Soc Sports Nutr*. 2017. — https://doi.org/10.1186/s12970-017-0177-8
+- Helms ER, Zinn C, Rowlands DS, et al. A systematic review of dietary protein during caloric restriction in resistance trained lean athletes: a case for higher intakes. *Int J Sport Nutr Exerc Metab*. 2014. — https://doi.org/10.1123/ijsnem.2013-0054
+- Moore DR, Churchward-Venne TA, Witard O, et al. Protein ingestion to stimulate myofibrillar protein synthesis requires greater relative protein intakes in healthy older versus younger men. *J Gerontol A Biol Sci Med Sci*. 2015. — https://doi.org/10.1093/gerona/glu103
+- Schoenfeld BJ, Aragon AA. How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution. *J Int Soc Sports Nutr*. 2018. — https://doi.org/10.1186/s12970-018-0215-1
+- Devries MC, Sithamparapillai A, Brimble KS, et al. Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis. *J Nutr*. 2018. — https://doi.org/10.1093/jn/nxy197
 
 ---
 
 # Surentraînement : les signes que tu en fais trop
 
 URL : https://ecleptic.health/articles/surentrainement-signes.html
-Thème : Charge · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Charge · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 Performances qui stagnent, sommeil dégradé, cœur de repos qui monte, motivation en berne : les signaux du surentraînement, et comment réagir avant de casser.
 
 Le vrai surentraînement — le syndrome médical, celui qui met des mois à se réparer — est rare. Ce qui est fréquent, c'est l'étape d'avant : le **surmenage non compensé**, quand tu empiles les séances plus vite que ton corps ne les digère. La bonne nouvelle : il prévient. La mauvaise : ses signaux ressemblent à de la « baisse de motivation », et beaucoup répondent en s'entraînant *plus*. C'est exactement l'inverse qu'il faut faire.
+
+La médecine du sport distingue trois stades. Selon une revue de 2012, environ 60 % des coureurs d'élite ont connu le deuxième au moins une fois (33 % chez des coureuses non élites) ; le troisième semble extrêmement rare.
+
+Source : Kreher et Schwartz (2012), d'après l'European College of Sport Science.
+| Stade | Retour à la normale |
+
+| Surmenage fonctionnel (baisse passagère, puis progrès) | Jours à semaines |
+
+| Surmenage non fonctionnel | Semaines à mois |
+
+| Syndrome de surentraînement | Plus de 2 mois |
 
 ## Les signaux qui doivent t'alerter
 
@@ -2079,17 +2244,17 @@ Aucun n'est suffisant seul. Trois ou quatre en même temps, pendant plus d'une s
 
 - **Tes performances stagnent ou baissent** malgré un entraînement assidu — le signe cardinal. Mêmes charges plus lourdes à bouger, allures habituelles qui piquent.
 
-- **Ta fréquence cardiaque se comporte bizarrement** : cœur de repos 5 battements au-dessus de ta normale plusieurs matins de suite, HRV en baisse sur une semaine ([comment lire ta HRV](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html)), ou cardio anormalement haut sur des efforts faciles.
+- **Ta fréquence cardiaque se comporte bizarrement** : cœur de repos au-dessus de ta normale plusieurs matins de suite, HRV qui décroche sur une semaine ([comment lire ta HRV](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html)), ou cardio anormalement haut sur des efforts faciles. Des indices, pas des preuves : selon une méta-analyse de 2016 (24 études), la HRV de repos bouge souvent peu en cas de surmenage.
 
 - **Ton sommeil se dégrade alors que tu es épuisé** — le paradoxe classique du système nerveux trop activé : endormissement difficile, réveils à 4 h du matin.
 
 - **L'envie disparaît.** Pas la flemme d'un jour : la perte d'appétit pour des séances que tu aimais, l'irritabilité, le moral en pente douce.
 
-- **Tu tombes malade en boucle** — rhumes à répétition, petite plaie qui traîne, [courbatures qui durent 4-5 jours](https://ecleptic.health/articles/courbatures-que-faire.html) au lieu de 2.
+- **Tu tombes malade en boucle** — rhumes à répétition, petite plaie qui traîne, [courbatures qui traînent bien plus que d'habitude](https://ecleptic.health/articles/courbatures-que-faire.html). Pour le Comité international olympique (2016), une charge mal gérée, stress psychologique compris, augmente le risque d'infection.
 
 ## Pourquoi ça arrive (même sans t'entraîner « énormément »)
 
-Le surmenage n'est pas une question de volume absolu : c'est un déséquilibre entre **la charge que tu imposes et la récupération que tu fournis**. Six séances par semaine avec 8 heures de sommeil, une assiette pleine et peu de stress passent très bien. Quatre séances avec 6 heures de sommeil, un déficit calorique agressif et un travail sous tension suffisent à te mettre dans le rouge. Le stress de la vie compte dans la même colonne que les séances — ton système nerveux ne fait pas la différence.
+Le surmenage n'est pas une question de volume absolu : c'est un déséquilibre entre **la charge que tu imposes et la récupération que tu fournis**. Le consensus européen et américain de médecine du sport (2013) le résume : progresser demande de la surcharge, jamais une surcharge excessive sans récupération suffisante. Six séances par semaine avec 8 heures de sommeil, une assiette pleine et peu de stress passent très bien. Quatre séances avec 6 heures de sommeil, un déficit calorique agressif et un travail sous tension suffisent à te mettre dans le rouge. Le stress de la vie compte dans la même colonne que les séances — ton système nerveux ne fait pas la différence.
 
 ## Comment réagir — le protocole simple
 
@@ -2097,9 +2262,9 @@ Le surmenage n'est pas une question de volume absolu : c'est un déséquilibre e
 
 - **Dors.** Vise le haut de ta fourchette ([ton besoin réel est ici](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html)), couche-toi plus tôt, garde des horaires fixes.
 
-- **Mange à ta maintenance**, au minimum. Ce n'est pas la semaine pour un déficit.
+- **Mange à ta maintenance**, au minimum. Ce n'est pas la semaine pour un déficit : le consensus de 2013 cite la restriction calorique parmi les causes à écarter.
 
-- **Réévalue à J+7** : cœur de repos revenu à la normale, envie de retourner t'entraîner, sommeil réparé → reprends progressivement. Sinon, encore une semaine calme — et si rien ne bouge après 3-4 semaines, consulte.
+- **Réévalue à J+7** : cœur de repos revenu à la normale, envie de retourner t'entraîner, sommeil réparé → reprends progressivement. Sinon, encore une semaine calme — et si rien ne bouge après 3-4 semaines, consulte un médecin.
 
 ## Ce qu'il faut retenir
 
@@ -2113,42 +2278,60 @@ Le surmenage n'est pas une question de volume absolu : c'est un déséquilibre e
 
 ### Quels sont les signes du surentraînement ?
 
-Performances qui stagnent ou baissent malgré l'entraînement, cœur de repos 5 battements au-dessus de la normale, HRV en baisse sur une semaine, sommeil dégradé malgré la fatigue, envie disparue, maladies à répétition. Trois ou quatre signes en même temps pendant plus d'une semaine doivent alerter.
+Performances qui stagnent ou baissent malgré l'entraînement, cœur de repos au-dessus de ta normale plusieurs matins de suite, HRV qui décroche, sommeil dégradé malgré la fatigue, envie disparue, maladies à répétition. Trois ou quatre signes en même temps pendant plus d'une semaine doivent alerter ; le cœur et la HRV restent des indices, c'est la performance qui tranche.
 
 ### Que faire en cas de surmenage ?
 
-Une semaine à volume et intensité réduits de moitié, sommeil en haut de ta fourchette à horaires fixes, calories à maintenance minimum. Réévalue à J+7 ; si rien ne bouge après 3-4 semaines, consulte.
+Une semaine à volume et intensité réduits de moitié, sommeil en haut de ta fourchette à horaires fixes, calories à maintenance minimum. Réévalue à J+7 ; si rien ne bouge après 3-4 semaines, consulte un médecin.
 
 ### Peut-on être surentraîné avec 4 séances par semaine ?
 
 Oui : le surmenage n'est pas une question de volume absolu mais d'équilibre entre charge totale (sport + stress de vie) et récupération. Quatre séances avec 6 heures de sommeil et un gros déficit calorique suffisent à te mettre dans le rouge.
+
+## Sources
+
+- Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. *Med Sci Sports Exerc*. 2013. — https://doi.org/10.1249/MSS.0b013e318279a10a
+- Kreher JB, Schwartz JB. Overtraining syndrome: a practical guide. *Sports Health*. 2012. — https://doi.org/10.1177/1941738111434406
+- Bellenger CR, Fuller JT, Thomson RL, et al. Monitoring Athletic Training Status Through Autonomic Heart Rate Regulation: A Systematic Review and Meta-Analysis. *Sports Med*. 2016. — https://doi.org/10.1007/s40279-016-0484-2
+- Schwellnus M, Soligard T, Alonso JM, et al. How much is too much? (Part 2) International Olympic Committee consensus statement on load in sport and risk of illness. *Br J Sports Med*. 2016. — https://doi.org/10.1136/bjsports-2016-096572
 
 ---
 
 # Combien de séances de sport par semaine pour progresser ?
 
 URL : https://ecleptic.health/articles/combien-seances-sport-par-semaine.html
-Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
-3 à 5 séances bien récupérées battent 6 séances subies. Ce que dit la recherche sur la fréquence idéale en musculation et en cardio, selon ton niveau.
+Combien de séances de sport par semaine ? De 2 à 5 selon ton niveau et ton objectif : ce que disent l'OMS, l'ACSM et la recherche, en musculation et en cardio.
 
 La réponse courte : **3 à 5 séances par semaine** suffisent pour progresser sérieusement — et pour la plupart des gens, 3 séances bien construites et bien récupérées battent 6 séances empilées sur un corps qui ne suit pas. La fréquence n'est pas un objectif en soi : c'est un outil pour distribuer du volume d'entraînement que tu peux *digérer*.
 
 ## En musculation : le volume prime, la fréquence distribue
 
-La recherche est assez claire : à volume hebdomadaire égal, entraîner un muscle 2 fois par semaine fait mieux qu'une fois ; au-delà, la différence devient marginale. Concrètement :
+La recherche a tranché : à volume hebdomadaire égal, la fréquence change peu de chose. Une méta-analyse de 2019 (25 études) ne trouve pas de différence significative de prise de muscle selon la fréquence, à volume égal, et la position 2026 de l'American College of Sports Medicine (ACSM) le confirme : ce qui compte, c'est au moins 10 séries par muscle et par semaine pour le volume musculaire, et au moins 2 séances par semaine pour la force. Travailler chaque muscle 2 fois par semaine reste le repère pratique : c'est le plus simple pour répartir ce volume en séances digestes. Les repères de l'ACSM (2009) selon ton niveau :
 
-- **Débutant :** 3 séances full body par semaine, un jour de repos entre chaque. C'est la formule la plus efficace qui existe, et de loin.
+- **Débutant :** 2 à 3 séances full body par semaine, un jour de repos entre chaque. C'est la formule la plus simple, et l'une des plus efficaces.
 
-- **Intermédiaire :** 3 à 5 séances, en half body (haut/bas) ou push/pull/legs. Chaque muscle travaillé 2 fois par semaine.
+- **Intermédiaire :** 3 à 4 séances, en full body ou en half body (haut/bas). Chaque muscle travaillé 2 fois par semaine.
 
-- **Avancé :** 4 à 6 séances, parce qu'il faut plus de volume pour progresser — pas parce que « plus de jours » serait magique.
+- **Avancé :** 4 à 5 séances, parce qu'il faut plus de volume pour progresser — pas parce que « plus de jours » serait magique.
 
-Un muscle a besoin de 48 à 72 heures pour se réparer après une séance dure. S'entraîner tous les jours est possible ; entraîner *la même chose* tous les jours ne l'est pas.
+Un muscle travaillé dur a besoin de temps pour se réparer. S'entraîner tous les jours est possible ; entraîner *la même chose* tous les jours ne l'est pas.
 
 ## En cardio : la règle du 80/20
 
-Pour l'endurance, la fréquence peut monter plus haut (le cardio à basse intensité se digère vite), mais la répartition des intensités est décisive : environ **80 % du temps à intensité facile** — tu peux parler en phrases complètes — et 20 % à intensité élevée. C'est la distribution qu'on retrouve chez les athlètes d'endurance à tous les niveaux. L'erreur classique du pratiquant motivé : tout courir « moyennement dur », la zone qui fatigue beaucoup et fait peu progresser.
+Pour l'endurance, la fréquence peut monter plus haut (le cardio à basse intensité se digère vite), mais la répartition des intensités est décisive : environ **80 % des séances à intensité facile** — tu peux parler en phrases complètes — et 20 % à intensité élevée. C'est la distribution que décrit Stephen Seiler (2010) chez les athlètes d'endurance de niveau national et international. L'erreur classique du pratiquant motivé : tout courir « moyennement dur », une zone qui fatigue beaucoup sans être ni vraiment facile, ni vraiment dure.
+
+Sources : OMS (2020) ; American College of Sports Medicine (2026) ; Seiler (2010).
+| Objectif | Repère par semaine |
+
+| Santé (OMS) | 150 à 300 min d'activité modérée + renforcement 2 jours ou plus |
+
+| Force (ACSM) | Au moins 2 séances |
+
+| Volume musculaire (ACSM) | Au moins 10 séries par muscle |
+
+| Endurance (Seiler) | Environ 80 % de séances faciles, 20 % intenses |
 
 ## Le vrai plafond : ta récupération
 
@@ -2160,9 +2343,9 @@ La bonne fréquence n'est pas un chiffre universel, c'est le point d'équilibre 
 
 ## Ce qu'il faut retenir
 
-- 3 à 5 séances par semaine couvrent 95 % des objectifs ; chaque muscle 2 fois par semaine en musculation.
+- 3 à 5 séances par semaine couvrent l'immense majorité des objectifs ; à volume égal, la fréquence compte peu, et 2 fois par semaine par muscle reste le repère pratique.
 
-- En cardio : 80 % facile, 20 % dur — pas tout « moyennement dur ».
+- En cardio : environ 80 % des séances faciles, 20 % dures — pas tout « moyennement dur ».
 
 - La fréquence idéale est celle que ta récupération encaisse en te laissant progresser.
 
@@ -2174,32 +2357,42 @@ La bonne fréquence n'est pas un chiffre universel, c'est le point d'équilibre 
 
 ### Combien de fois travailler un muscle par semaine ?
 
-2 fois par semaine : à volume égal, c'est mieux qu'une fois, et au-delà la différence devient marginale. Un muscle a besoin de 48 à 72 heures pour se réparer après une séance dure.
+2 fois par semaine est le repère pratique. À volume égal, une méta-analyse de 2019 (25 études) ne trouve pas de différence nette selon la fréquence : ce qui compte d'abord, c'est le volume, au moins 10 séries par muscle et par semaine selon l'American College of Sports Medicine (2026). Deux séances le rendent simplement plus digeste.
 
 ### S'entraîner tous les jours, est-ce une bonne idée ?
 
-Possible, à deux conditions : ne pas entraîner la même chose tous les jours, et garder environ 80 % du cardio à intensité facile — celle où tu peux parler en phrases complètes.
+Possible, à deux conditions : ne pas entraîner la même chose tous les jours, et garder environ 80 % de tes séances de cardio à intensité facile — celle où tu peux parler en phrases complètes.
+
+## Sources
+
+- Currier BS, D'Souza AC, Singh MAF, et al. American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. *Med Sci Sports Exerc*. 2026. — https://doi.org/10.1249/MSS.0000000000003897
+- American College of Sports Medicine. American College of Sports Medicine position stand. Progression models in resistance training for healthy adults. *Med Sci Sports Exerc*. 2009. — https://doi.org/10.1249/MSS.0b013e3181915670
+- Schoenfeld BJ, Grgic J, Krieger J. How many times per week should a muscle be trained to maximize muscle hypertrophy? A systematic review and meta-analysis of studies examining the effects of resistance training frequency. *J Sports Sci*. 2019. — https://doi.org/10.1080/02640414.2018.1555906
+- Seiler S. What is best practice for training intensity and duration distribution in endurance athletes? *Int J Sports Physiol Perform*. 2010. — https://doi.org/10.1123/ijspp.5.3.276
+- Bull FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. *Br J Sports Med*. 2020. — https://doi.org/10.1136/bjsports-2020-102955
 
 ---
 
 # Se coucher à la même heure : ce que ça change vraiment
 
 URL : https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html
-Thème : Régularité · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Régularité · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 À durée de sommeil égale, des horaires réguliers améliorent la qualité des nuits, l'énergie et même la santé métabolique. Pourquoi, et comment y arriver.
 
-Voici le secret le moins spectaculaire et le plus rentable de tout le sommeil : **te coucher et te lever à la même heure, tous les jours**. À durée égale, un sommeil à horaires réguliers est plus profond, plus continu et plus réparateur qu'un sommeil en horaires anarchiques. Dans plusieurs grandes études récentes, la régularité du sommeil prédit même la santé à long terme *mieux que la durée elle-même*.
+Voici le secret le moins spectaculaire et le plus rentable de tout le sommeil : **te coucher et te lever à la même heure, tous les jours**. À durée égale, des horaires réguliers te servent mieux que des horaires anarchiques : après examen de 63 publications, la National Sleep Foundation a conclu en 2023 que la régularité compte pour la santé, la sécurité et les performances. Dans une grande étude de 2024, elle prédit même le risque de mortalité *mieux que la durée elle-même*.
 
 ## Pourquoi ton corps y tient autant
 
-Ton organisme entier tourne sur une horloge circadienne d'environ 24 heures : température, cortisol, mélatonine, digestion, tout est programmé. Quand tu te couches à 22 h 30 en semaine et 2 h le week-end, tu imposes à cette horloge l'équivalent d'un vol Paris–New York tous les vendredis — c'est le **jetlag social**. Résultat : la mélatonine arrive au mauvais moment, l'endormissement traîne le dimanche soir, et le lundi commence en brouillard.
+Ton organisme entier tourne sur une horloge circadienne d'environ 24 heures : température, cortisol, mélatonine, digestion, tout est programmé. Quand tu te couches à 22 h 30 en semaine et 2 h le week-end, tu imposes à cette horloge trois heures et demie de décalage horaire chaque vendredi, et le trajet retour chaque lundi — c'est le **jetlag social**, associé à un IMC plus élevé, à durée de sommeil égale, dans une grande étude de 2012. Résultat : la mélatonine arrive au mauvais moment, l'endormissement traîne le dimanche soir, et le lundi commence en brouillard. Chez 61 étudiants suivis 30 jours, la mélatonine des plus irréguliers montait vers minuit, contre 21 h 30 chez les plus réguliers.
 
-La régularité fait l'inverse : à force de recevoir le signal « on dort à cette heure-là », l'horloge anticipe. La température corporelle baisse avant le coucher, la mélatonine monte au bon moment, et l'endormissement devient presque automatique. C'est aussi l'un des leviers les plus directs pour faire monter un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) : la HRV nocturne aime les horaires stables.
+Sur 60 977 adultes de la UK Biobank équipés d'un accéléromètre, les quatre cinquièmes les plus réguliers avaient un risque de mortalité 20 à 48 % plus bas que le cinquième le plus irrégulier. Dans la même cohorte, les dormeurs irréguliers avaient 26 % de risque cardiovasculaire en plus — et dormir assez ne suffisait pas à l'effacer.
+
+La régularité fait l'inverse : à force de recevoir le signal « on dort à cette heure-là », l'horloge anticipe. La température corporelle baisse avant le coucher, la mélatonine monte au bon moment, et l'endormissement devient presque automatique. C'est aussi un levier direct sur ton [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) : dans une petite étude de 2019 (33 jeunes hommes), plus le jetlag social était grand, plus la HRV du début de nuit chutait en semaine.
 
 ## L'heure du lever compte plus que celle du coucher
 
-Contre-intuitif mais central : c'est **le lever qui règle l'horloge**, parce que c'est lui qui fixe l'exposition à la lumière du matin — le signal circadien le plus puissant qui existe. Un lever stable à ±30 minutes, week-end compris, et le coucher finit par se caler tout seul : le soir, le sommeil « appuie » à la bonne heure.
+Contre-intuitif mais central : c'est **le lever qui règle l'horloge**, parce que c'est lui qui fixe l'exposition à la lumière du matin — le signal circadien le plus puissant qui existe. Chez les 61 étudiants, c'est surtout la lumière qui expliquait le décalage des irréguliers. Un lever stable à ±30 minutes, week-end compris, et le coucher finit par se caler tout seul : le soir, le sommeil « appuie » à la bonne heure.
 
 ## Comment y arriver sans en faire une prison
 
@@ -2209,11 +2402,11 @@ Contre-intuitif mais central : c'est **le lever qui règle l'horloge**, parce qu
 
 - **Lumière forte le matin, faible le soir** : dehors dans la première heure après le lever, écrans et plafonniers tamisés la dernière heure avant le coucher.
 
-- **Le week-end, limite la dérive à une heure.** Si tu sors tard, garde quand même un lever proche de l'habituel et fais une sieste courte — la grasse matinée de 3 heures coûte plus qu'elle ne rembourse.
+- **Le week-end, limite la dérive à une heure.** Si tu sors tard, garde quand même un lever proche de l'habituel et fais une sieste courte. Après une semaine trop courte, un rattrapage le week-end peut aider, admet la National Sleep Foundation — une rustine, pas une stratégie.
 
 ## Ce qu'il faut retenir
 
-- À durée égale, un sommeil régulier est objectivement plus réparateur — la régularité rivalise avec la durée.
+- À durée égale, un sommeil régulier protège mieux ta santé et tes performances — la régularité rivalise avec la durée.
 
 - Le lever fixe est la clé : il règle l'horloge via la lumière du matin.
 
@@ -2223,22 +2416,31 @@ Contre-intuitif mais central : c'est **le lever qui règle l'horloge**, parce qu
 
 ### Pourquoi se coucher à la même heure tous les soirs ?
 
-À durée égale, un sommeil à horaires réguliers est plus profond, plus continu et plus réparateur. Dans plusieurs grandes études récentes, la régularité du sommeil prédit la santé à long terme mieux que la durée elle-même.
+À durée égale, des horaires réguliers comptent pour la santé, la sécurité et les performances, selon la National Sleep Foundation (2023). Dans une étude de 2024 sur 60 977 adultes, la régularité du sommeil prédisait même le risque de mortalité mieux que la durée.
 
 ### C'est quoi le jetlag social ?
 
-Le décalage entre tes horaires de semaine et de week-end : te coucher à 22 h 30 en semaine et 2 h le samedi impose à ton horloge circadienne l'équivalent d'un vol Paris–New York chaque vendredi.
+Le décalage entre tes horaires de semaine et de week-end : te coucher à 22 h 30 en semaine et 2 h le samedi impose à ton horloge circadienne trois heures et demie de décalage horaire chaque week-end, puis le trajet retour le lundi.
 
 ### Heure de coucher fixe ou heure de lever fixe ?
 
 Le lever d'abord : c'est lui qui fixe l'exposition à la lumière du matin, le signal circadien le plus puissant. Un lever stable à ±30-45 minutes, week-end compris, et le coucher finit par se caler tout seul.
+
+## Sources
+
+- Sletten TL, Weaver MD, Foster RG, et al. The importance of sleep regularity: a consensus statement of the National Sleep Foundation sleep timing and variability panel. *Sleep Health*. 2023. — https://doi.org/10.1016/j.sleh.2023.07.016
+- Windred DP, Burns AC, Lane JM, et al. Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study. *Sleep*. 2024. — https://doi.org/10.1093/sleep/zsad253
+- Chaput JP, Biswas RK, Ahmadi M, et al. Sleep regularity and major adverse cardiovascular events: a device-based prospective study in 72 269 UK adults. *J Epidemiol Community Health*. 2025. — https://doi.org/10.1136/jech-2024-222795
+- Roenneberg T, Allebrandt KV, Merrow M, Vetter C. Social jetlag and obesity. *Curr Biol*. 2012. — https://doi.org/10.1016/j.cub.2012.03.038
+- Phillips AJK, Clerx WM, O'Brien CS, et al. Irregular sleep/wake patterns are associated with poorer academic performance and delayed circadian and sleep/wake timing. *Sci Rep*. 2017. — https://doi.org/10.1038/s41598-017-03171-4
+- Sűdy ÁR, Ella K, Bódizs R, Káldi K. Association of Social Jetlag With Sleep Quality and Autonomic Cardiac Control During Sleep in Young Healthy Men. *Front Neurosci*. 2019. — https://doi.org/10.3389/fnins.2019.00950
 
 ---
 
 # Toujours fatigué ? Les vraies causes d'une fatigue constante
 
 URL : https://ecleptic.health/articles/toujours-fatigue-causes.html
-Thème : Énergie · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Énergie · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d'une fatigue qui dure, dans l'ordre.
 
@@ -2246,7 +2448,7 @@ Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage,
 
 ## 1. Tu dors moins que tu ne crois
 
-La cause nº1, de très loin. Le piège classique : confondre temps au lit et temps de sommeil. Sept heures au lit, c'est environ six heures et quart de sommeil réel — répété cinq nuits, c'est une dette de plus de trois heures par semaine, invisible mais bien réelle. Commence par là : [mesure ton vrai besoin](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) et compare-le à ce que tu dors réellement, pas à ce que tu vises.
+La première cause à vérifier, parce que le manque de sommeil est massif : selon Santé publique France (12 637 adultes), les 18-75 ans dorment en moyenne 6 h 42 par jour en semaine, et 35,9 % dorment 6 heures ou moins. Le piège classique : confondre temps au lit et temps de sommeil. Chez 669 Américains équipés d'un actimètre, 7 h 30 au lit ne donnaient en moyenne que 6 h 06 de sommeil réel. Répété cinq nuits, cet écart fait une dette de plusieurs heures par semaine, invisible mais bien réelle. Commence par là : [mesure ton vrai besoin](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) et compare-le à ce que tu dors réellement, pas à ce que tu vises.
 
 ## 2. Tu dors à des horaires anarchiques
 
@@ -2254,7 +2456,7 @@ La cause nº1, de très loin. Le piège classique : confondre temps au lit et te
 
 ## 3. Tu ne manges pas assez (ou trop mal réparti)
 
-Fréquent chez les sportifs : un déficit calorique prolongé — volontaire ou pas — finit toujours par se payer en énergie. Le corps réduit la dépense là où il peut : thermogenèse, motivation, libido, tonus général. Signes typiques : frilosité inhabituelle, irritabilité, séances qui deviennent toutes laborieuses, sommeil qui se fragmente. Si tu cumules gros entraînement et petite assiette depuis des semaines, la fatigue n'est pas un mystère, c'est une facture.
+Fréquent chez les sportifs : un déficit calorique prolongé — volontaire ou pas — finit toujours par se payer en énergie. Le Comité international olympique en a fait un syndrome à part entière (2023) : quand l'apport ne couvre pas la dépense de l'entraînement, santé et performance se dégradent, chez les femmes comme chez les hommes. Le corps réduit la dépense là où il peut : thermogenèse, motivation, libido, tonus général. Signes typiques : frilosité inhabituelle, irritabilité, séances qui deviennent toutes laborieuses, sommeil qui se fragmente. Si tu cumules gros entraînement et petite assiette depuis des semaines, la fatigue n'est pas un mystère, c'est une facture.
 
 ## 4. Tu en fais trop, tout simplement
 
@@ -2262,7 +2464,7 @@ La fatigue qui persiste au réveil, des courbatures qui traînent, un cœur de r
 
 ## 5. Une cause médicale — à vérifier si le reste est en ordre
 
-Si tu dors assez, régulièrement, que tu manges à ta faim et que deux semaines calmes n'ont rien changé, c'est le moment d'une prise de sang. Les suspects fréquents et faciles à tester : **carence en fer** (surtout chez les femmes et les coureurs), **vitamine D** (quasi générale en hiver), **thyroïde**, et l'**apnée du sommeil** si tu ronfles et te réveilles la bouche sèche avec des maux de tête. Une fatigue qui dure des mois mérite un médecin, pas un article de blog — celui-ci sert à éliminer les causes évitables avant.
+Si tu dors assez, régulièrement, que tu manges à ta faim et que deux semaines calmes n'ont rien changé, c'est le moment de voir ton médecin pour une prise de sang. Les suspects fréquents et faciles à tester : **carence en fer** (surtout chez les femmes et les sportifs d'endurance : 15 à 35 % des sportives en manquent, selon une revue de 2019), **vitamine D** (en Europe, 13 % de la population est en déficit franc, près de 18 % en hiver), **thyroïde**, et l'**apnée du sommeil** si tu ronfles et te réveilles la bouche sèche avec des maux de tête. Le fer n'est pas un détail : dans un essai français chez 198 femmes fatiguées à ferritine basse, sans anémie, la fatigue a baissé de 48 % sous fer, contre 29 % sous placebo. Mais pas de fer à l'aveugle : c'est la prise de sang qui décide. Une fatigue qui dure des mois mérite un médecin, pas un article de blog — celui-ci sert à éliminer les causes évitables avant.
 
 ## Ce qu'il faut retenir
 
@@ -2276,22 +2478,31 @@ Si tu dors assez, régulièrement, que tu manges à ta faim et que deux semaines
 
 ### Pourquoi suis-je toujours fatigué alors que je dors ?
 
-Le piège le plus fréquent : confondre temps au lit et temps de sommeil. Sept heures au lit font environ six heures et quart de sommeil réel — répété cinq nuits, c'est une dette de plus de trois heures par semaine, invisible mais bien réelle.
+Le piège le plus fréquent : confondre temps au lit et temps de sommeil. Dans une cohorte de 669 adultes équipés d'un actimètre, 7 h 30 au lit ne donnaient en moyenne que 6 h 06 de sommeil réel. Répété cinq nuits, l'écart fait une dette de plusieurs heures par semaine, invisible mais bien réelle.
 
 ### Quand consulter pour une fatigue constante ?
 
-Si tu dors assez et régulièrement, manges à ta faim, et que deux semaines calmes n'ont rien changé : prise de sang (fer, vitamine D, thyroïde) et dépistage d'apnée du sommeil si tu ronfles et te réveilles la bouche sèche.
+Si tu dors assez et régulièrement, manges à ta faim, et que deux semaines calmes n'ont rien changé : vois ton médecin pour une prise de sang (fer, vitamine D, thyroïde) et un dépistage d'apnée du sommeil si tu ronfles et te réveilles la bouche sèche.
 
 ### Quelles carences provoquent de la fatigue ?
 
-Les suspects fréquents et faciles à tester : le fer (surtout chez les femmes et les coureurs), la vitamine D (quasi générale en hiver) et la thyroïde. Une fatigue qui dure des mois mérite un médecin.
+Les suspects fréquents et faciles à tester : le fer (15 à 35 % des sportives en manquent), la vitamine D (13 % des Européens en déficit franc, près de 18 % en hiver) et la thyroïde. Une fatigue qui dure des mois mérite un médecin.
+
+## Sources
+
+- Léger D, Zeghnoun A, Faraut B, Richard JB. Le temps de sommeil, la dette de sommeil, la restriction de sommeil et l'insomnie chronique des 18-75 ans : résultats du Baromètre de Santé publique France 2017. *Bull Epidémiol Hebd*. 2019. — https://beh.santepubliquefrance.fr/beh/2019/8-9/2019_8-9_1.html
+- Lauderdale DS, Knutson KL, Yan LL, et al. Objectively measured sleep characteristics among early-middle-aged adults: the CARDIA study. *Am J Epidemiol*. 2006. — https://doi.org/10.1093/aje/kwj199
+- Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). *Br J Sports Med*. 2023. — https://doi.org/10.1136/bjsports-2023-106994
+- Sim M, Garvican-Lewis LA, Cox GR, et al. Iron considerations for the athlete: a narrative review. *Eur J Appl Physiol*. 2019. — https://doi.org/10.1007/s00421-019-04157-y
+- Cashman KD, Dowling KG, Škrabáková Z, et al. Vitamin D deficiency in Europe: pandemic? *Am J Clin Nutr*. 2016. — https://doi.org/10.3945/ajcn.115.120873
+- Vaucher P, Druais PL, Waldvogel S, Favrat B. Effect of iron supplementation on fatigue in nonanemic menstruating women with low ferritin: a randomized controlled trial. *CMAJ*. 2012. — https://doi.org/10.1503/cmaj.110950
 
 ---
 
 # Stress et sport : pourquoi ton corps ne récupère plus
 
 URL : https://ecleptic.health/articles/stress-recuperation-sport.html
-Thème : Humeur · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Humeur · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
 Ton système nerveux ne fait pas la différence entre une semaine de rush et une semaine de gros volume : le stress mental se paie en récupération physique.
 
@@ -2299,9 +2510,9 @@ Tu as déjà vécu ça : une semaine chargée au travail, des nuits correctes, u
 
 ## Une seule jauge pour tout
 
-Le stress psychologique active exactement les mêmes systèmes que l'entraînement : l'axe du cortisol et le système nerveux sympathique — celui de l'alerte. Une deadline, un conflit, des soucis d'argent produisent la même signature physiologique qu'une grosse séance : cortisol élevé, cœur plus haut, [HRV en baisse](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html), sommeil plus léger. La conséquence pratique est énorme : *ta capacité de récupération est un budget unique*, dans lequel puisent à la fois tes séances et ta vie. Une semaine de rush professionnel est, pour ton corps, une semaine de gros volume d'entraînement — que tu l'aies choisie ou non.
+Le stress psychologique active exactement les mêmes systèmes que l'entraînement : l'axe du cortisol et le système nerveux sympathique — celui de l'alerte. Une deadline, un conflit, des soucis d'argent produisent la même signature physiologique qu'une grosse séance : cortisol élevé, cœur plus haut, [HRV en baisse](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html), sommeil plus léger. Une méta-analyse de 2018 (37 publications) le retrouve dans la plupart des études : sous stress, l'activité parasympathique — celle que lit ta HRV — chute. La conséquence pratique est énorme : *ta capacité de récupération est un budget unique*, dans lequel puisent à la fois tes séances et ta vie. Une semaine de rush professionnel est, pour ton corps, une semaine de gros volume d'entraînement — que tu l'aies choisie ou non.
 
-C'est documenté jusque dans la blessure : les périodes de stress académique ou professionnel élevé multiplient le risque de blessure chez les athlètes, et la cicatrisation elle-même est mesurablement plus lente sous stress chronique.
+Ça se mesure sur les muscles : en 2014, 31 étudiants ont fait la même grosse séance de jambes, et plus leur stress de vie était élevé, moins bien leur force, leur énergie et leurs courbatures récupéraient sur les 96 heures suivantes. C'est documenté jusque dans la blessure : chez 101 joueurs de football américain universitaires, le risque de blessure était presque doublé pendant les semaines d'examens par rapport aux semaines calmes (2016), et une méta-analyse de 48 études place la réaction au stress parmi les facteurs psychologiques les plus liés aux blessures (2017). Même la cicatrisation s'en ressent : 17 études sur 22 associent le stress à une cicatrisation plus lente ou perturbée (méta-analyse de 2009).
 
 ## Adapter l'entraînement au stress — pas l'inverse
 
@@ -2313,7 +2524,9 @@ La conclusion n'est pas « ne t'entraîne pas quand tu es stressé » : l'exerci
 
 - **Protège le sommeil en priorité** — c'est le seul moment où la jauge se recharge vraiment. En période de stress, [les horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) comptent double, et l'alcool « pour décompresser » [aggrave précisément ce qu'il prétend soulager](https://ecleptic.health/articles/alcool-sommeil-effets.html).
 
-- **Ajoute une décharge active** : 10 minutes de marche après les repas, respiration lente le soir (4-6 respirations par minute pendant 5 minutes) — des outils modestes, aux effets mesurables sur la HRV.
+- **Ajoute une décharge active** : 10 minutes de marche après les repas, respiration lente le soir (4-6 respirations par minute pendant 5 minutes). Des outils modestes, mais la respiration lente a un effet mesurable : selon une méta-analyse de 2022 (223 études), elle augmente la HRV vagale pendant la séance, juste après et après plusieurs semaines.
+
+Si le stress ne retombe pas pendant des semaines et qu'il abîme ton sommeil et ton moral, ce n'est plus une affaire d'entraînement : parles-en à ton médecin.
 
 ## Ce qu'il faut retenir
 
@@ -2327,42 +2540,66 @@ La conclusion n'est pas « ne t'entraîne pas quand tu es stressé » : l'exerci
 
 ### Le stress empêche-t-il de récupérer du sport ?
 
-Oui : le stress psychologique active les mêmes systèmes que l'entraînement (cortisol, système nerveux sympathique) et puise dans le même budget de récupération. Une semaine de rush professionnel est, pour ton corps, une semaine de gros volume.
+Oui : le stress psychologique active les mêmes systèmes que l'entraînement (cortisol, système nerveux sympathique) et puise dans le même budget de récupération. Dans une étude de 2014, plus le stress de vie d'étudiants était élevé, moins bien leur force récupérait dans les 96 heures suivant une grosse séance.
 
 ### Faut-il s'entraîner quand on est stressé ?
 
 Oui, mais moins fort : l'exercice reste l'un des meilleurs régulateurs du stress. En semaine tendue, cardio tranquille et technique ; garde les records pour les semaines calmes, et fie-toi à tes vitaux du matin plutôt qu'à ton planning.
+
+### Le stress augmente-t-il le risque de blessure ?
+
+C'est ce que suggèrent les données : chez des footballeurs universitaires américains, le risque de blessure a presque doublé pendant les semaines d'examens par rapport aux semaines sans examens (Mann et al., 2016). Stress et entraînement s'additionnent : quand ta semaine est lourde, allège l'intensité plutôt que le sommeil.
+
+## Sources
+
+- Kim HG, Cheon EJ, Bai DS, et al. Stress and Heart Rate Variability: A Meta-Analysis and Review of the Literature. *Psychiatry Investig*. 2018. — https://doi.org/10.30773/pi.2017.08.17
+- Stults-Kolehmainen MA, Bartholomew JB, Sinha R. Chronic psychological stress impairs recovery of muscular function and somatic sensations over a 96-hour period. *J Strength Cond Res*. 2014. — https://doi.org/10.1519/JSC.0000000000000335
+- Mann JB, Bryant KR, Johnstone B, et al. Effect of Physical and Academic Stress on Illness and Injury in Division 1 College Football Players. *J Strength Cond Res*. 2016. — https://doi.org/10.1519/JSC.0000000000001055
+- Ivarsson A, Johnson U, Andersen MB, et al. Psychosocial Factors and Sport Injuries: Meta-analyses for Prediction and Prevention. *Sports Med*. 2017. — https://doi.org/10.1007/s40279-016-0578-x
+- Walburn J, Vedhara K, Hankins M, et al. Psychological stress and wound healing in humans: a systematic review and meta-analysis. *J Psychosom Res*. 2009. — https://doi.org/10.1016/j.jpsychores.2009.04.002
+- Laborde S, Allen MS, Borges U, et al. Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis. *Neurosci Biobehav Rev*. 2022. — https://doi.org/10.1016/j.neubiorev.2022.104711
 
 ---
 
 # Alcool et sommeil : ce qui se passe vraiment la nuit
 
 URL : https://ecleptic.health/articles/alcool-sommeil-effets.html
-Thème : Contexte · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-21
+Thème : Contexte · Auteur : Auguste Phily-Priou · Publié le 2026-09-19 · Mis à jour le 2026-09-30
 
-L'alcool endort plus vite mais détruit la seconde moitié de la nuit : sommeil paradoxal amputé, réveils, HRV écrasée. Ce que montrent les données, verre par verre.
+L'alcool aide parfois à s'endormir, mais fragmente la seconde moitié de la nuit : sommeil paradoxal réduit, récupération cardiaque en baisse. Verre par verre.
 
-L'alcool est le somnifère le plus utilisé du monde — et l'un des pires. Le paradoxe est bien connu : un ou deux verres **aident réellement à s'endormir** (l'alcool est sédatif), et pourtant la nuit qui suit est objectivement moins réparatrice. Ce n'est pas une impression de lendemain : c'est l'un des effets les plus visibles qui soient dans les données de sommeil.
+L'alcool est l'un des somnifères les plus utilisés — et l'un des pires. Le paradoxe est bien connu : l'alcool est sédatif et **peut aider à s'endormir**, et pourtant la nuit qui suit est objectivement moins réparatrice. Ce n'est pas une impression de lendemain : c'est l'un des effets les plus visibles qui soient dans les données de sommeil.
 
 ## Le marché de dupes, heure par heure
 
-La soirée se passe en deux actes :
+La soirée se passe en deux actes, que décrit une revue de 2013 compilant les études sur le sujet :
 
-- **Première moitié de nuit :** endormissement rapide, [sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html) parfois même augmenté. Tout va bien en apparence.
+- **Première moitié de nuit :** endormissement plus rapide, [sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html) souvent même augmenté. Tout va bien en apparence.
 
-- **Seconde moitié :** le corps a métabolisé l'alcool, et l'effet rebond arrive — système nerveux en alerte, sommeil léger et fragmenté, réveils multiples (souvent vers 3-4 h du matin), soif, chaleur. Le **sommeil paradoxal** (REM), concentré en fin de nuit, est le grand sacrifié : c'est lui qui gère la mémoire et la régulation émotionnelle. Résultat au réveil : le compte d'heures semble correct, la tête dit le contraire.
+- **Seconde moitié :** le corps a métabolisé l'alcool, et l'effet rebond arrive — système nerveux en alerte, sommeil léger et fragmenté, réveils multiples, soif. Le **sommeil paradoxal** (REM), concentré en fin de nuit, est le grand sacrifié : c'est lui qui gère la mémoire et la régulation émotionnelle. Résultat au réveil : le compte d'heures semble correct, la tête dit le contraire.
+
+La méta-analyse la plus récente (2025, 27 études) précise le dosage : le sommeil paradoxal est retardé et raccourci dès une dose faible, environ deux verres standard, et l'effet s'aggrave à chaque verre. L'endormissement plus rapide, lui, n'y apparaît nettement qu'à forte dose, autour de cinq verres.
 
 ## Ce que voient les capteurs
 
-Sur les données physiologiques, l'alcool du soir laisse une signature immanquable, proportionnelle à la dose : **fréquence cardiaque nocturne en hausse** de plusieurs battements, [**HRV écrasée**](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) toute la nuit, température plus haute, et un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) qui plonge au matin. Les études sur données de bracelets sont convergentes : même une consommation modérée dégrade mesurablement la qualité de la nuit, et une consommation forte peut se lire encore la nuit *suivante*.
+Sur les données physiologiques, l'alcool du soir laisse une signature immanquable, proportionnelle à la dose : **fréquence cardiaque nocturne en hausse**, [**HRV écrasée**](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html), et un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) qui plonge au matin. En laboratoire, une étude de 2021 sur 26 adultes l'a confirmé dès des doses modérées. Sur le terrain, une étude finlandaise a comparé les nuits avec et sans alcool de 4 098 salariés :
+
+Source : Pietilä et al., *JMIR Mental Health* (2018), 3 premières heures de sommeil. Verres : estimation pour 70 kg, verre standard de 10 g.
+| Alcool dans la soirée | Indice de récupération (HRV) |
+
+| Faible : jusqu'à 0,25 g/kg (1 à 2 verres) | −9,3 points |
+
+| Modéré : 0,25 à 0,75 g/kg (2 à 5 verres) | −24,0 points |
+
+| Élevé : plus de 0,75 g/kg (plus de 5 verres) | −39,2 points |
 
 ## Limiter les dégâts sans devenir moine
 
 La dose fait tout, et le *moment* presque autant :
 
-- **L'heure compte :** le corps élimine environ un verre standard par heure. Deux verres finis à 19 h sont largement métabolisés au coucher ; les mêmes à 23 h occupent la moitié de ta nuit.
+- **L'heure compte :** le foie élimine l'alcool à rythme fixe — l'alcoolémie ne baisse que de 0,10 à 0,20 g/L par heure selon une revue de référence (2010). Compte au moins une heure par verre standard, souvent plus. Deux verres finis à 19 h sont largement métabolisés au coucher ; les mêmes à 23 h occupent une bonne partie de ta nuit.
 
-- **La règle simple :** plus tôt, moins, avec de l'eau et de la nourriture. Un verre au dîner est presque neutre ; trois verres tard, jamais.
+- **La règle simple :** plus tôt, moins, avec de l'eau et de la nourriture. Un verre tôt au dîner pèse peu, mais pas zéro ; trois verres tard, jamais.
 
 - **Choisis tes soirs :** évite l'alcool tardif les veilles de grosse séance ou de journée importante — c'est précisément là que la nuit vaut cher.
 
@@ -2370,7 +2607,7 @@ La dose fait tout, et le *moment* presque autant :
 
 ## Ce qu'il faut retenir
 
-- L'alcool endort plus vite mais casse la seconde moitié de la nuit — surtout le sommeil paradoxal.
+- L'alcool peut accélérer l'endormissement, mais il casse la seconde moitié de la nuit — surtout le sommeil paradoxal, touché dès deux verres.
 
 - Cœur plus haut, HRV écrasée : la nuit alcoolisée se voit dans les données, dose par dose.
 
@@ -2380,12 +2617,20 @@ La dose fait tout, et le *moment* presque autant :
 
 ### L'alcool aide-t-il à dormir ?
 
-Il aide à s'endormir (effet sédatif), mais il fragmente la seconde moitié de la nuit et ampute le sommeil paradoxal, concentré en fin de nuit. Le compte d'heures semble correct, la nuit est objectivement moins réparatrice.
+Il peut aider à s'endormir (effet sédatif, net surtout à forte dose), mais il fragmente la seconde moitié de la nuit et ampute le sommeil paradoxal dès environ deux verres, selon une méta-analyse de 2025. Le compte d'heures semble correct, la nuit est objectivement moins réparatrice.
 
 ### Combien de temps avant de dormir arrêter l'alcool ?
 
-Le corps élimine environ un verre standard par heure : deux verres finis à 19 h sont largement métabolisés au coucher, les mêmes à 23 h occupent la moitié de ta nuit. Plus tôt, moins, avec de l'eau et de la nourriture.
+Le foie élimine l'alcool lentement, à rythme fixe : compte au moins une heure par verre standard, souvent plus. Deux verres finis à 19 h sont largement métabolisés au coucher, les mêmes à 23 h occupent une bonne partie de ta nuit. Plus tôt, moins, avec de l'eau et de la nourriture.
 
 ### Pourquoi ma montre affiche une mauvaise nuit après l'alcool ?
 
-Parce que la signature est immanquable dans les données : fréquence cardiaque nocturne en hausse de plusieurs battements, HRV écrasée toute la nuit, température plus haute. Une consommation forte peut se lire encore la nuit suivante.
+Parce que la signature est immanquable dans les données : fréquence cardiaque nocturne en hausse et HRV en baisse, proportionnellement à la dose. Chez 4 098 salariés finlandais, l'indice de récupération tiré de la HRV perdait 9 points après une consommation faible et 39 points après une consommation élevée.
+
+## Sources
+
+- Gardiner C, Weakley J, Burke LM, et al. The effect of alcohol on subsequent sleep in healthy adults: A systematic review and meta-analysis. *Sleep Med Rev*. 2025. — https://doi.org/10.1016/j.smrv.2024.102030
+- Ebrahim IO, Shapiro CM, Williams AJ, Fenwick PB. Alcohol and sleep I: effects on normal sleep. *Alcohol Clin Exp Res*. 2013. — https://doi.org/10.1111/acer.12006
+- Pietilä J, Helander E, Korhonen I, et al. Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study. *JMIR Ment Health*. 2018. — https://doi.org/10.2196/mental.9519
+- de Zambotti M, Forouzanfar M, Javitz H, et al. Impact of evening alcohol consumption on nocturnal autonomic and cardiovascular function in adult men and women: a dose-response laboratory investigation. *Sleep*. 2021. — https://doi.org/10.1093/sleep/zsaa135
+- Jones AW. Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework. *Forensic Sci Int*. 2010. — https://doi.org/10.1016/j.forsciint.2010.02.021
