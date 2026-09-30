@@ -103,6 +103,12 @@ def check(src):
         fams = {unicodedata.normalize("NFKD", a.get("family", "")).encode("ascii", "ignore").decode().lower()
                 for a in msg.get("author", [])}
         author_ok = first_surname(t) in fams
+        # Auteur collectif (Task Force, consensus) : la revue et l'année doivent concorder.
+        journals = [j for j in (msg.get("container-title") or []) + (msg.get("short-container-title") or []) if j]
+        collective = "task force" in t.lower() or "consensus" in t.lower() or not msg.get("author")
+        journal_ok = any(j.lower() in re.sub(r"<[^>]+>", " ", t).lower() for j in journals)
+        if year_ok and collective and journal_ok:
+            return "OK", "%s (%s) [auteur collectif : revue + année]" % (real[:80], year)
         if year_ok and (ratio >= 0.6 or author_ok):
             return "OK", "%s (%s)%s" % (real[:80], year, "" if ratio >= 0.6 else " [auteur + année]")
         return "ÉCHEC", "ne concorde pas avec Crossref : « %s » (%s), recouvrement %.0f %%, 1er auteur %s" % (

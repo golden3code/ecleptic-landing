@@ -23,15 +23,16 @@ ENTRIES = [
 <li><strong>Le bruit normal :</strong> la HRV bouge naturellement d'un jour à l'autre. Un matin légèrement sous ta moyenne ne veut presque rien dire.</li>
 <li><strong>Le vrai signal :</strong> une valeur nettement sous ta fourchette habituelle, ou une moyenne sur 7 jours qui glisse vers le bas. Là, ton corps te parle.</li>
 </ul>
+<p>Pour qu'une moyenne sur 7 jours soit fiable, une étude de 2014 sur des triathlètes recommande au moins trois mesures valides par semaine.</p>
 
 <h2>Pourquoi ta HRV a-t-elle chuté ?</h2>
 <p>Dans l'immense majorité des cas, la cause est banale et se cache dans les 48 dernières heures. Les suspects habituels :</p>
 <ul>
-<li><strong>L'alcool :</strong> même deux verres le soir peuvent l'écraser pendant une nuit entière, parfois deux. C'est le grand classique des lendemains de soirée — voici <a href="/articles/alcool-sommeil-effets.html">ce que l'alcool fait vraiment à ta nuit</a>.</li>
-<li><strong>Une grosse séance pas encore digérée :</strong> une HRV plus basse 24 à 48 heures après un effort intense est normale. C'est la réparation en cours, pas un problème.</li>
+<li><strong>L'alcool :</strong> même un ou deux verres le soir la font baisser dès le début de la nuit, et l'effet grandit avec la dose. Chez 4 098 salariés finlandais suivis en 2018, la part de récupération mesurée en début de nuit reculait en moyenne de 9 points après une petite dose, de 24 après une dose modérée et de 39 après une forte dose. C'est le grand classique des lendemains de soirée — voici <a href="/articles/alcool-sommeil-effets.html">ce que l'alcool fait vraiment à ta nuit</a>.</li>
+<li><strong>Une grosse séance pas encore digérée :</strong> une HRV plus basse le lendemain d'un effort intense est normale. Selon une revue de 2013, le système nerveux met jusqu'à 24 heures à récupérer après une séance facile, 24 à 48 heures après une séance au seuil et au moins 48 heures après une séance à haute intensité. C'est la réparation en cours, pas un problème.</li>
 <li><strong>Une nuit courte ou décalée :</strong> coucher tardif, réveils multiples, horaires chamboulés.</li>
 <li><strong>Le stress :</strong> une échéance, un conflit, une surcharge mentale. Ton système nerveux ne fait pas la différence entre stress de vie et stress d'entraînement.</li>
-<li><strong>Une infection qui démarre :</strong> la HRV chute souvent un à deux jours avant les premiers symptômes. Si tu te sens « bizarre » sans raison, pense-y.</li>
+<li><strong>Une infection qui démarre :</strong> la HRV peut baisser, et le cœur de repos monter, quelques jours avant les premiers symptômes. C'est ce qu'a observé une étude de 2020 sur 2 745 personnes atteintes du Covid-19 et équipées d'un bracelet connecté. Si tu te sens « bizarre » sans raison, pense-y.</li>
 </ul>
 <p>D'autres facteurs pèsent aussi : un dîner copieux et tardif, une chambre trop chaude, une séance intense en fin de soirée, un décalage horaire, un manque d'hydratation. Le bon réflexe : <strong>remonte la veille</strong> avant d'accuser ta forme.</p>
 
@@ -42,7 +43,7 @@ ENTRIES = [
 <li><strong>Soigne ta prochaine nuit :</strong> couche-toi un peu plus tôt, à heure fixe, dans une chambre fraîche. C'est souvent le geste le plus efficace pour la HRV du lendemain.</li>
 <li><strong>Bois régulièrement</strong> dans la journée, surtout après une soirée ou une grosse séance.</li>
 <li><strong>Zéro alcool ce soir :</strong> inutile d'ajouter une deuxième nuit plombée à la première.</li>
-<li><strong>Respire lentement :</strong> quelques minutes de respiration lente en fin de journée aident ton système nerveux à repasser en mode récupération.</li>
+<li><strong>Respire lentement :</strong> quelques minutes de respiration lente en fin de journée aident ton système nerveux à repasser en mode récupération. Une méta-analyse de 2022 portant sur 223 études montre qu'elle fait monter la HRV pendant la séance, juste après, et au fil des semaines de pratique.</li>
 </ul>
 <p>En revanche, si la chute s'accompagne de fièvre, de courbatures diffuses ou d'une grosse fatigue générale, la question n'est plus l'intensité : c'est repos.</p>
 
@@ -63,7 +64,21 @@ ENTRIES = [
             {"q": "Comment faire remonter sa HRV rapidement ?",
              "a": "Retire d'abord ce qui la plombe : pas d'alcool, une nuit plus longue à heure régulière, une bonne hydratation et une journée d'entraînement allégée. Quelques minutes de respiration lente le soir aident aussi. Si la cause est passagère, elle remonte souvent en un à deux jours."},
             {"q": "L'alcool fait-il baisser la HRV ?",
-             "a": "Oui, nettement : même deux verres le soir peuvent faire chuter la HRV pendant toute la nuit, parfois sur deux nuits, et faire monter la fréquence cardiaque de repos. C'est l'une des causes les plus fréquentes d'une HRV basse au réveil."},
+             "a": "Oui, nettement : même un ou deux verres le soir font chuter la HRV et monter la fréquence cardiaque dès le début de la nuit, d'autant plus que la dose est forte. C'est l'une des causes les plus fréquentes d'une HRV basse au réveil."},
+        ],
+        "sources": [
+            {"t": "Pietilä J, Helander E, Korhonen I, et al. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep in a large real-world sample of Finnish employees: observational study. <em>JMIR Ment Health</em>. 2018.",
+             "u": "https://doi.org/10.2196/mental.9519"},
+            {"t": "Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. <em>Sports Med</em>. 2013.",
+             "u": "https://doi.org/10.1007/s40279-013-0083-4"},
+            {"t": "Natarajan A, Su HW, Heneghan C. Assessment of physiological signs associated with COVID-19 measured using wearable devices. <em>NPJ Digit Med</em>. 2020.",
+             "u": "https://doi.org/10.1038/s41746-020-00363-7"},
+            {"t": "Kim HG, Cheon EJ, Bai DS, et al. Stress and heart rate variability: a meta-analysis and review of the literature. <em>Psychiatry Investig</em>. 2018.",
+             "u": "https://doi.org/10.30773/pi.2017.08.17"},
+            {"t": "Laborde S, Allen MS, Borges U, et al. Effects of voluntary slow breathing on heart rate and heart rate variability: a systematic review and a meta-analysis. <em>Neurosci Biobehav Rev</em>. 2022.",
+             "u": "https://doi.org/10.1016/j.neubiorev.2022.104711"},
+            {"t": "Plews DJ, Laursen PB, Le Meur Y, et al. Monitoring training with heart rate-variability: how much compliance is needed for valid assessment? <em>Int J Sports Physiol Perform</em>. 2014.",
+             "u": "https://doi.org/10.1123/ijspp.2013-0455"},
         ],
     },
     {
@@ -79,24 +94,24 @@ ENTRIES = [
 <h2>Le sommeil est-il le premier levier de la HRV ?</h2>
 <p>Oui, et de loin. C'est la nuit que le système parasympathique — la branche « repos et réparation » de ton système nerveux — prend le dessus. Une nuit courte ou hachée le prive de ce temps, et ça se lit dès le lendemain matin.</p>
 <ul>
-<li><strong>La durée :</strong> vise ton vrai besoin, souvent 7 à 9 heures chez l'adulte, pas le minimum que tu tolères.</li>
+<li><strong>La durée :</strong> vise ton vrai besoin — 7 à 9 heures chez l'adulte selon la National Sleep Foundation —, pas le minimum que tu tolères.</li>
 <li><strong>La régularité :</strong> des horaires de coucher et de lever stables, week-end compris. Ton horloge interne déteste le décalage permanent — tout est détaillé dans <a href="/articles/se-coucher-meme-heure-regularite.html">l'article sur la régularité du coucher</a>.</li>
 <li><strong>Le cadre :</strong> chambre fraîche et sombre, pas de repas lourd ni de séance intense juste avant de dormir.</li>
 </ul>
 
 <h2>Quel sport fait monter la HRV ?</h2>
-<p>L'entraînement d'endurance à basse intensité est le levier le plus puissant sur le long terme. Le travail en <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a> — un effort où tu peux tenir une conversation — renforce le frein parasympathique et fait monter ta ligne de base au fil des semaines.</p>
+<p>L'entraînement d'endurance régulier est l'un des leviers les mieux documentés. Une méta-analyse de 2005 (13 études) montre qu'il renforce la composante parasympathique de la HRV, et une étude menée sur plus de 8 millions d'utilisateurs de bracelets connectés (2020) associe une activité quotidienne plus élevée à une meilleure HRV, à tout âge et de façon proportionnelle à la dose. Le travail en <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a> — un effort où tu peux tenir une conversation — permet d'accumuler ce volume sans creuser la fatigue, et fait monter ta ligne de base au fil des semaines.</p>
 <ul>
 <li><strong>Le socle :</strong> deux à quatre sorties faciles par semaine, de 30 à 60 minutes : course, vélo, natation ou marche rapide.</li>
-<li><strong>L'intensité, avec parcimonie :</strong> les séances dures sont utiles, mais elles font baisser la HRV pendant 24 à 48 heures. Empile-les sans récupération, et ta ligne de base descend au lieu de monter.</li>
+<li><strong>L'intensité, avec parcimonie :</strong> les séances dures sont utiles, mais elles font baisser la HRV : 24 à 48 heures après une séance au seuil, au moins 48 heures après une séance à haute intensité, selon une revue de 2013. Empile-les sans récupération, et ta ligne de base descend au lieu de monter.</li>
 <li><strong>La musculation :</strong> elle a toute sa place. Comme toute séance dure, elle fait baisser la HRV sur le moment ; ce qui pose problème, c'est l'excès global, pas le type d'effort.</li>
 </ul>
 <p>C'est tout le paradoxe : l'entraînement fait monter la HRV <strong>à condition d'être récupéré</strong>. Alterner vraiment jours durs et jours faciles compte plus que le volume total.</p>
 
 <h2>Alcool, stress, respiration : que changer au quotidien ?</h2>
 <ul>
-<li><strong>L'alcool :</strong> c'est l'un des facteurs qui écrasent le plus la HRV, souvent pour toute la nuit, parfois deux. Le réduire, et surtout l'éviter la veille des journées importantes, se voit très vite sur tes courbes.</li>
-<li><strong>La respiration lente :</strong> quelques minutes à environ six respirations par minute font monter la HRV sur le moment. Pratiquée chaque jour, la <a href="/articles/coherence-cardiaque-respiration.html">cohérence cardiaque</a> entraîne ton système nerveux à revenir au calme plus vite.</li>
+<li><strong>L'alcool :</strong> c'est l'un des facteurs qui écrasent le plus la HRV. Une étude de 2018 sur 4 098 salariés finlandais le montre dès les premières heures de sommeil, proportionnellement à la dose, et même chez les personnes sportives. Le réduire, et surtout l'éviter la veille des journées importantes, se voit très vite sur tes courbes.</li>
+<li><strong>La respiration lente :</strong> quelques minutes à environ six respirations par minute font monter la HRV sur le moment ; une méta-analyse de 2022 (223 études) retrouve aussi cet effet après plusieurs semaines de pratique. Pratiquée chaque jour, la <a href="/articles/coherence-cardiaque-respiration.html">cohérence cardiaque</a> entraîne ton système nerveux à revenir au calme plus vite.</li>
 <li><strong>Le stress chronique :</strong> il maintient le corps en alerte et tire la HRV vers le bas. De vraies coupures — marche dehors, temps sans écran, moments avec tes proches — pèsent plus que n'importe quel gadget.</li>
 <li><strong>Les bases :</strong> boire assez, manger à ta faim les jours de grosse charge, limiter la caféine l'après-midi pour protéger ta nuit. Rien de spectaculaire, mais tout compte.</li>
 </ul>
@@ -125,6 +140,20 @@ ENTRIES = [
             {"q": "Existe-t-il des compléments pour augmenter la HRV ?",
              "a": "Aucun complément n'a d'effet comparable au sommeil, à l'endurance et à la réduction de l'alcool. Méfie-toi des produits qui promettent de booster ta HRV ; si tu soupçonnes une carence, c'est un bilan chez le médecin qu'il faut, pas une supplémentation à l'aveugle."},
         ],
+        "sources": [
+            {"t": "Hirshkowitz M, Whiton K, Albert SM, et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. <em>Sleep Health</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.sleh.2014.12.010"},
+            {"t": "Sandercock GR, Bromley PD, Brodie DA. Effects of exercise on heart rate variability: inferences from meta-analysis. <em>Med Sci Sports Exerc</em>. 2005.",
+             "u": "https://doi.org/10.1249/01.mss.0000155388.39002.9d"},
+            {"t": "Natarajan A, Pantelopoulos A, Emir-Farinas H, Natarajan P. Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study. <em>Lancet Digit Health</em>. 2020.",
+             "u": "https://doi.org/10.1016/S2589-7500(20)30246-6"},
+            {"t": "Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. <em>Sports Med</em>. 2013.",
+             "u": "https://doi.org/10.1007/s40279-013-0083-4"},
+            {"t": "Pietilä J, Helander E, Korhonen I, et al. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep in a large real-world sample of Finnish employees: observational study. <em>JMIR Ment Health</em>. 2018.",
+             "u": "https://doi.org/10.2196/mental.9519"},
+            {"t": "Laborde S, Allen MS, Borges U, et al. Effects of voluntary slow breathing on heart rate and heart rate variability: a systematic review and a meta-analysis. <em>Neurosci Biobehav Rev</em>. 2022.",
+             "u": "https://doi.org/10.1016/j.neubiorev.2022.104711"},
+        ],
     },
     {
         "slug": "frequence-cardiaque-repos-elevee",
@@ -137,10 +166,10 @@ ENTRIES = [
 <p>Au-delà de 100 battements par minute au calme, ou avec des symptômes comme des palpitations, un essoufflement ou un malaise, on sort du simple bien-être : c'est l'affaire d'un médecin.</p>
 
 <h2>À partir de quand la fréquence cardiaque au repos est-elle trop élevée ?</h2>
-<p>Chez l'adulte, la fourchette standard va de 60 à 100 bpm, et les sportifs d'endurance descendent souvent sous 60. Tous les repères sont dans notre article sur <a href="/articles/frequence-cardiaque-repos-normale.html">la fréquence cardiaque au repos normale</a>. Deux seuils sont à distinguer :</p>
+<p>Chez l'adulte, la fourchette standard va de 60 à 100 bpm, et les sportifs d'endurance descendent souvent sous 60. Mais la « normale » change énormément d'une personne à l'autre : dans une étude de 2020 portant sur 92 457 adultes équipés d'un bracelet, la moyenne était de 65 bpm, avec des valeurs individuelles allant de 40 à 109 bpm. Tous les repères sont dans notre article sur <a href="/articles/frequence-cardiaque-repos-normale.html">la fréquence cardiaque au repos normale</a>. Deux seuils sont à distinguer :</p>
 <ul>
-<li><strong>Le seuil absolu :</strong> au-dessus de 100 bpm, au calme et de façon durable, on parle de tachycardie. Ça ne relève plus du bien-être : ça mérite un avis médical.</li>
-<li><strong>Le seuil personnel :</strong> si ta normale est à 52 et que tu te réveilles à 60, tu restes « dans les normes »… mais ton corps te dit qu'il est sous pression. C'est ce décalage, de l'ordre de cinq battements sur plusieurs matins, qui compte au quotidien.</li>
+<li><strong>Le seuil absolu :</strong> au-dessus de 100 bpm, au calme et de façon durable, on parle de tachycardie — c'est le seuil retenu par la Heart Rhythm Society américaine. Ça ne relève plus du bien-être : ça mérite un avis médical.</li>
+<li><strong>Le seuil personnel :</strong> si ta normale est à 52 et que tu te réveilles à 60, tu restes « dans les normes »… mais ton corps te dit qu'il est sous pression. Chez une même personne, la fréquence de repos reste plutôt stable d'une semaine à l'autre, selon la même étude : c'est ce décalage de plusieurs battements, sur plusieurs matins, qui compte au quotidien.</li>
 </ul>
 
 <h2>Pourquoi ton cœur bat-il plus vite au repos ?</h2>
@@ -148,11 +177,11 @@ ENTRIES = [
 <ul>
 <li><strong>La déshydratation :</strong> quand le volume de sang baisse, le cœur compense en battant plus vite pour maintenir le débit. Une journée chaude ou une grosse séance sans assez boire suffisent.</li>
 <li><strong>Le stress :</strong> le système sympathique, celui de l'alerte, accélère le cœur. Une période tendue au travail se lit très bien dans tes données du matin.</li>
-<li><strong>Une infection :</strong> la fréquence de repos monte souvent un ou deux jours avant les premiers symptômes, et la fièvre l'accélère encore.</li>
+<li><strong>Une infection :</strong> la fréquence de repos peut monter avant même les premiers symptômes. Dans une étude de 2020 menée avec des montres connectées, une hausse anormale par rapport à la normale de chacun aurait permis de repérer 63 % des cas de Covid-19 avant les symptômes. La fièvre l'accélère encore.</li>
 <li><strong>La caféine :</strong> à forte dose ou chez les personnes sensibles, elle accélère le cœur ; prise tard, elle abîme aussi ta nuit. D'où l'intérêt de savoir <a href="/articles/cafe-et-sommeil-combien-de-temps-avant.html">quand arrêter le café avant de dormir</a>.</li>
 <li><strong>La chaleur :</strong> pour évacuer la chaleur, le corps envoie plus de sang vers la peau et le cœur accélère. Une chambre surchauffée suffit à faire grimper la valeur nocturne.</li>
-<li><strong>Le surmenage :</strong> une charge d'entraînement qui dépasse ta récupération maintient le cœur de repos au-dessus de sa base plusieurs jours d'affilée.</li>
-<li><strong>L'alcool :</strong> il fait nettement monter la fréquence cardiaque pendant la nuit qui suit.</li>
+<li><strong>Le surmenage :</strong> une charge d'entraînement qui dépasse ta récupération peut maintenir le cœur de repos au-dessus de sa base plusieurs jours d'affilée.</li>
+<li><strong>L'alcool :</strong> il fait monter la fréquence cardiaque en début de nuit, proportionnellement à la dose. Selon une étude finlandaise de 2018 sur 4 098 salariés, c'est en moyenne +1,4 bpm après une petite dose, +4 après une dose modérée et +8,7 après une forte dose.</li>
 </ul>
 
 <h2>Pourquoi ta fréquence cardiaque reste-t-elle élevée la nuit ?</h2>
@@ -161,7 +190,7 @@ ENTRIES = [
 <h2>Comment faire baisser ta fréquence cardiaque au repos ?</h2>
 <ul>
 <li><strong>À court terme :</strong> bois régulièrement, dors à heures fixes, garde la chambre fraîche, évite l'alcool et le café tardif. Si une infection couve, repose-toi plutôt que de t'entraîner, et suis les règles pour <a href="/articles/reprendre-le-sport-apres-maladie.html">reprendre le sport après une maladie</a>.</li>
-<li><strong>À long terme :</strong> l'endurance régulière, surtout à intensité facile, rend le cœur plus efficace. Il éjecte plus de sang à chaque battement, donc il peut battre moins vite au repos. Compte plusieurs semaines à quelques mois pour voir la tendance baisser.</li>
+<li><strong>À long terme :</strong> l'endurance régulière, surtout à intensité facile, rend le cœur plus efficace. Il éjecte plus de sang à chaque battement, donc il peut battre moins vite au repos. Une méta-analyse de 2018 (191 études) le confirme : l'endurance fait baisser la fréquence cardiaque de repos, chez les femmes comme chez les hommes. Compte plusieurs semaines à quelques mois pour voir la tendance baisser.</li>
 <li><strong>Au quotidien :</strong> la respiration lente et de vraies coupures dans la journée aident à calmer un système nerveux qui tourne en surrégime.</li>
 </ul>
 
@@ -183,6 +212,18 @@ ENTRIES = [
             {"q": "La déshydratation fait-elle monter le rythme cardiaque ?",
              "a": "Oui : quand le volume de sang diminue, le cœur bat plus vite pour maintenir le débit. C'est net après une journée chaude ou une grosse séance sans assez boire. Une fois bien réhydraté, le rythme revient généralement vite à ta normale."},
         ],
+        "sources": [
+            {"t": "Quer G, Gouda P, Galarnyk M, Topol EJ, Steinhubl SR. Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: retrospective, longitudinal cohort study of 92,457 adults. <em>PLoS One</em>. 2020.",
+             "u": "https://doi.org/10.1371/journal.pone.0227709"},
+            {"t": "Sheldon RS, Grubb BP 2nd, Olshansky B, et al. 2015 Heart Rhythm Society expert consensus statement on the diagnosis and treatment of postural tachycardia syndrome, inappropriate sinus tachycardia, and vasovagal syncope. <em>Heart Rhythm</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.hrthm.2015.03.029"},
+            {"t": "Mishra T, Wang M, Metwally AA, et al. Pre-symptomatic detection of COVID-19 from smartwatch data. <em>Nat Biomed Eng</em>. 2020.",
+             "u": "https://doi.org/10.1038/s41551-020-00640-6"},
+            {"t": "Pietilä J, Helander E, Korhonen I, et al. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep in a large real-world sample of Finnish employees: observational study. <em>JMIR Ment Health</em>. 2018.",
+             "u": "https://doi.org/10.2196/mental.9519"},
+            {"t": "Reimers AK, Knapp G, Reimers CD. Effects of exercise on the resting heart rate: a systematic review and meta-analysis of interventional studies. <em>J Clin Med</em>. 2018.",
+             "u": "https://doi.org/10.3390/jcm7120503"},
+        ],
     },
     {
         "slug": "s-entrainer-fatigue-bonne-idee",
@@ -196,13 +237,13 @@ ENTRIES = [
 
 <h2>Fatigue mentale ou fatigue physique : quelle différence ?</h2>
 <ul>
-<li><strong>La fatigue mentale :</strong> elle vient d'une journée d'écrans, de réunions, de décisions à la chaîne. Tes muscles sont intacts ; c'est ta perception de l'effort qui grimpe. Une séance modérée la dissipe souvent, et beaucoup finissent plus frais qu'au départ.</li>
+<li><strong>La fatigue mentale :</strong> elle vient d'une journée d'écrans, de réunions, de décisions à la chaîne. Tes muscles sont intacts ; c'est ta perception de l'effort qui grimpe. Une revue systématique de 2017 (11 études) le confirme : la fatigue mentale rend l'effort d'endurance plus pénible et en réduit la performance, sans toucher la fréquence cardiaque, la force maximale ni la puissance. Une séance modérée passe donc souvent bien, et beaucoup en ressortent plus frais qu'au départ.</li>
 <li><strong>La fatigue physique :</strong> elle vient d'une charge d'entraînement pas encore digérée, d'un manque de sommeil qui dure, d'un déficit calorique ou d'une infection qui couve. Là, tes réserves sont réellement entamées, et pousser fort creuse le trou au lieu de le combler.</li>
 </ul>
 <p>Le problème, c'est qu'elles se ressemblent au moment de lacer tes chaussures. D'où deux outils simples : tes <strong>signaux du matin</strong> et un <strong>test en conditions réelles</strong>.</p>
 
 <h2>Comment savoir si tu peux t'entraîner aujourd'hui ?</h2>
-<p>Commence par tes données du réveil. Une fréquence cardiaque de repos et une variabilité cardiaque proches de ta normale plaident pour la séance ; une <a href="/articles/hrv-basse-que-faire.html">HRV basse</a> doublée d'un cœur de repos plus haut plaide pour l'alléger. C'est exactement ce qu'un <a href="/articles/readiness-score-comment-ca-marche.html">score de préparation</a> résume chaque matin.</p>
+<p>Commence par tes données du réveil. Une fréquence cardiaque de repos et une variabilité cardiaque proches de ta normale plaident pour la séance ; une <a href="/articles/hrv-basse-que-faire.html">HRV basse</a> doublée d'un cœur de repos plus haut plaide pour l'alléger. C'est exactement ce qu'un <a href="/articles/readiness-score-comment-ca-marche.html">score de préparation</a> résume chaque matin. Et ça tient la route : selon une méta-analyse de 2021 (8 études, 198 participants), ajuster son endurance à la variabilité cardiaque du matin donne des résultats au moins équivalents à un plan figé, avec moins de séances dures et moins de sportifs qui ne progressent pas.</p>
 <p>Ensuite, le <strong>test des 10 minutes</strong>, redoutable de simplicité :</p>
 <ul>
 <li><strong>Échauffe-toi 10 minutes</strong>, très progressivement, comme d'habitude.</li>
@@ -214,10 +255,10 @@ ENTRIES = [
 <h2>Quels signaux doivent te faire lever le pied ?</h2>
 <ul>
 <li><strong>Un cœur de repos</strong> plusieurs battements au-dessus de ta normale, plusieurs matins de suite.</li>
-<li><strong>Des nuits courtes qui s'enchaînent :</strong> une mauvaise nuit isolée n'empêche généralement pas une séance modérée ; une dette qui s'accumule, si.</li>
+<li><strong>Des nuits courtes qui s'enchaînent :</strong> une mauvaise nuit isolée n'empêche généralement pas une séance modérée ; une dette qui s'accumule, si. Une méta-analyse de 2022 (69 publications) chiffre à 7,6 % en moyenne la baisse de performance après une nuit de 6 heures ou moins.</li>
 <li><strong>Une douleur localisée</strong> qui s'aggrave à l'effort ou te fait boiter : ce n'est pas une courbature, c'est un stop.</li>
-<li><strong>Des performances en baisse</strong> sur plusieurs séances, une envie qui disparaît, une irritabilité inhabituelle.</li>
-<li><strong>Des symptômes d'infection :</strong> fièvre, courbatures diffuses, poitrine prise. Là, les <a href="/articles/reprendre-le-sport-apres-maladie.html">règles pour reprendre après une maladie</a> s'appliquent, et jamais d'effort intense avec de la fièvre.</li>
+<li><strong>Des performances en baisse</strong> sur plusieurs séances, une envie qui disparaît, une irritabilité inhabituelle : fatigue, contre-performances et humeur en berne sont les signes d'alerte retenus par le consensus européen et américain sur le surentraînement (2013).</li>
+<li><strong>Des symptômes d'infection :</strong> fièvre, courbatures diffuses, poitrine prise. Là, les <a href="/articles/reprendre-le-sport-apres-maladie.html">règles pour reprendre après une maladie</a> s'appliquent, et jamais d'effort intense avec de la fièvre : les spécialistes des infections chez le sportif le jugent potentiellement dangereux.</li>
 </ul>
 <p>Pendant l'effort, arrête-toi immédiatement en cas de douleur dans la poitrine, de vertiges, de palpitations ou d'essoufflement anormal, et consulte un médecin avant de reprendre. Même logique si la fatigue dure depuis des semaines sans explication claire, malgré des nuits correctes et un entraînement allégé : ce n'est plus une question de séance, c'est un bilan médical à faire.</p>
 
@@ -241,11 +282,23 @@ ENTRIES = [
 """,
         "faq": [
             {"q": "Peut-on faire du sport après une nuit blanche ?",
-             "a": "Mieux vaut éviter les séances intenses, lourdes ou très techniques : la vigilance, la coordination et la perception de l'effort sont dégradées, et le risque de faux mouvement grimpe. Une marche ou une activité légère peut en revanche t'aider à tenir la journée ; l'essentiel est de bien dormir la nuit suivante."},
+             "a": "Mieux vaut éviter les séances intenses, lourdes ou très techniques : la vigilance, la coordination et la perception de l'effort sont dégradées, et le risque de faux mouvement grimpe. Une marche ou une activité légère peut en revanche t'aider à tenir la journée. Si tu tiens à t'entraîner, fais-le plutôt le matin : la baisse de performance s'aggrave à chaque heure passée éveillé. L'essentiel reste de bien dormir la nuit suivante."},
             {"q": "Le sport donne-t-il de l'énergie quand on est fatigué ?",
              "a": "Souvent, oui, quand la fatigue est mentale : une séance modérée améliore l'humeur et la vigilance, et beaucoup finissent plus frais qu'au départ. Quand la fatigue est physique ou liée à une infection, c'est l'inverse : forcer creuse la fatigue."},
             {"q": "Faut-il faire de la musculation quand on est fatigué ?",
              "a": "Oui si l'échauffement se passe bien, mais en version allégée : moins de séries, des charges un peu plus légères, loin de l'échec. Si l'échauffement te paraît plus dur que d'habitude ou qu'une douleur apparaît, remplace la séance par de la mobilité ou du repos."},
+        ],
+        "sources": [
+            {"t": "Van Cutsem J, Marcora S, De Pauw K, et al. The effects of mental fatigue on physical performance: a systematic review. <em>Sports Med</em>. 2017.",
+             "u": "https://doi.org/10.1007/s40279-016-0672-0"},
+            {"t": "Düking P, Zinner C, Trabelsi K, et al. Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: a systematic review with meta-analysis. <em>J Sci Med Sport</em>. 2021.",
+             "u": "https://doi.org/10.1016/j.jsams.2021.04.012"},
+            {"t": "Craven J, McCartney D, Desbrow B, et al. Effects of acute sleep loss on physical performance: a systematic and meta-analytical review. <em>Sports Med</em>. 2022.",
+             "u": "https://doi.org/10.1007/s40279-022-01706-y"},
+            {"t": "Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. <em>Med Sci Sports Exerc</em>. 2013.",
+             "u": "https://doi.org/10.1249/MSS.0b013e318279a10a"},
+            {"t": "Friman G, Wesslén L. Special feature for the Olympics: effects of exercise on the immune system: infections and exercise in high-performance athletes. <em>Immunol Cell Biol</em>. 2000.",
+             "u": "https://doi.org/10.1111/j.1440-1711.2000.t01-12-.x"},
         ],
     },
     {
@@ -268,11 +321,21 @@ ENTRIES = [
 <p>Un algorithme combine le tout pour dessiner ton hypnogramme. C'est ingénieux, mais c'est une <strong>estimation</strong>, pas une mesure directe.</p>
 
 <h2>La durée de sommeil mesurée est-elle fiable ?</h2>
-<p>Plutôt, oui : c'est le point fort des montres. Chez un bon dormeur, l'heure d'endormissement, l'heure de réveil et le temps de sommeil total restent en général assez proches de la référence. Limite connue : la montre a tendance à <strong>surestimer le sommeil</strong>, car elle confond facilement éveil immobile et sommeil. Si tu restes allongé longtemps sans dormir, ou si tu traverses une période d'insomnie, elle t'accordera volontiers des minutes que tu n'as pas dormies. Les courts réveils nocturnes lui échappent aussi parfois.</p>
+<p>Plutôt, oui : c'est le point fort des montres. En 2022, des chercheurs ont comparé six appareils connectés du marché, dont quatre montres et bracelets, à une nuit en laboratoire :</p>
+<div class="tablewrap"><table>
+<caption>Source : Miller et al. (2022), six appareils grand public comparés à la polysomnographie et à l'électrocardiogramme, 53 adultes.</caption>
+<thead><tr><th>Ce que l'appareil estime</th><th class="n">Précision mesurée</th></tr></thead>
+<tbody>
+<tr><td>Sommeil ou éveil</td><td class="n">86 à 89 % d'accord</td></tr>
+<tr><td>Phase de sommeil ou éveil, période par période</td><td class="n">50 à 65 % d'accord</td></tr>
+<tr><td>Fréquence cardiaque de la nuit</td><td class="n">moins de 2 bpm d'écart pour 4 appareils sur 6</td></tr>
+</tbody>
+</table></div>
+<p>Chez un bon dormeur, l'heure d'endormissement, l'heure de réveil et le temps de sommeil total restent en général assez proches de la référence. Limite connue : la montre a tendance à <strong>surestimer le sommeil</strong>, car elle confond facilement éveil immobile et sommeil. Dans une étude de 2021 portant sur sept appareils grand public, tous repéraient au moins 93 % des moments de sommeil, mais seulement 18 à 54 % des moments d'éveil. Si tu restes allongé longtemps sans dormir, ou si tu traverses une période d'insomnie, elle t'accordera volontiers des minutes que tu n'as pas dormies. Les courts réveils nocturnes lui échappent aussi parfois.</p>
 <p>Pour savoir si ta durée colle à ton besoin, compare ta moyenne de la semaine aux repères sur <a href="/articles/combien-heures-sommeil-par-nuit.html">le nombre d'heures de sommeil par nuit</a>.</p>
 
 <h2>Sommeil profond et paradoxal : les phases affichées sont-elles justes ?</h2>
-<p>C'est là que la précision chute nettement. Distinguer l'éveil du sommeil, les montres savent faire ; séparer <strong>sommeil léger, profond et paradoxal</strong> sans lire les ondes cérébrales est bien plus difficile. D'une nuit à l'autre, les minutes de sommeil profond affichées peuvent varier sans que ta nuit ait réellement changé.</p>
+<p>C'est là que la précision chute nettement : de près de 90 % d'accord, on tombe à 50-65 %. Distinguer l'éveil du sommeil, les montres savent faire ; séparer <strong>sommeil léger, profond et paradoxal</strong> sans lire les ondes cérébrales est bien plus difficile. D'une nuit à l'autre, les minutes de sommeil profond affichées peuvent varier sans que ta nuit ait réellement changé.</p>
 <ul>
 <li><strong>Les phases :</strong> prends-les comme un ordre de grandeur, jamais comme une mesure à la minute près.</li>
 <li><strong>Une nuit isolée :</strong> une nuit « pauvre en sommeil profond » ne veut rien dire. Une baisse qui dure des semaines mérite qu'on regarde tes habitudes : voici les leviers pour <a href="/articles/sommeil-profond-comment-augmenter.html">augmenter ton sommeil profond</a>, et le <a href="/articles/sommeil-paradoxal-role.html">rôle du sommeil paradoxal</a> est détaillé à part.</li>
@@ -284,11 +347,11 @@ ENTRIES = [
 <li><strong>Regarde la tendance :</strong> ta moyenne sur 7 jours et son évolution d'un mois à l'autre. Une montre est souvent plus <em>cohérente avec elle-même</em> qu'exacte dans l'absolu, et c'est justement ce qui la rend utile.</li>
 <li><strong>Garde les mêmes conditions :</strong> même poignet, bracelet bien ajusté, batterie rechargée dans la journée pour ne pas perdre la nuit.</li>
 <li><strong>Croise avec ton ressenti :</strong> si tu te réveilles en forme après une « mauvaise » nuit selon la montre, crois ton corps.</li>
-<li><strong>Ne la prends pas pour un médecin :</strong> ronflements forts, pauses respiratoires remarquées par ton entourage, fatigue écrasante malgré des nuits longues, ça se discute avec un médecin, qui peut prescrire un vrai examen du sommeil.</li>
+<li><strong>Ne la prends pas pour un médecin :</strong> l'American Academy of Sleep Medicine rappelle que ces appareils ne peuvent servir ni à diagnostiquer ni à traiter un trouble du sommeil. Ronflements forts, pauses respiratoires remarquées par ton entourage, fatigue écrasante malgré des nuits longues, ça se discute avec un médecin, qui peut prescrire un vrai examen du sommeil.</li>
 </ul>
 
 <h2>Ton score de sommeil peut-il te faire mal dormir ?</h2>
-<p>Oui, et le phénomène a même un nom : l'<strong>orthosomnie</strong>, la quête anxieuse d'une nuit parfaite sur l'écran. Vérifier son score dès le réveil, s'inquiéter d'une note moyenne, se coucher tendu en pensant au verdict du lendemain : cette pression finit par abîmer le sommeil qu'on voulait protéger. Si tu te reconnais, fais une pause de quelques jours sans regarder, ou ne consulte plus que ta moyenne de la semaine. Tes données doivent éclairer tes décisions, pas remplacer tes sensations.</p>
+<p>Oui, et le phénomène a même un nom : l'<strong>orthosomnie</strong>, décrite en 2017 par des spécialistes américains du sommeil, la quête anxieuse d'une nuit parfaite sur l'écran. Vérifier son score dès le réveil, s'inquiéter d'une note moyenne, se coucher tendu en pensant au verdict du lendemain : cette pression finit par abîmer le sommeil qu'on voulait protéger. Si tu te reconnais, fais une pause de quelques jours sans regarder, ou ne consulte plus que ta moyenne de la semaine. Tes données doivent éclairer tes décisions, pas remplacer tes sensations.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -305,6 +368,20 @@ ENTRIES = [
             {"q": "Une montre connectée peut-elle détecter l'apnée du sommeil ?",
              "a": "Certaines montres signalent des perturbations respiratoires ou une baisse d'oxygène la nuit, mais aucune ne remplace un diagnostic médical. Si tu ronfles fort, si on remarque des pauses respiratoires ou si tu es épuisé malgré des nuits longues, parles-en à un médecin, qui pourra prescrire un examen du sommeil."},
         ],
+        "sources": [
+            {"t": "Miller DJ, Sargent C, Roach GD. A validation of six wearable devices for estimating sleep, heart rate and heart rate variability in healthy adults. <em>Sensors (Basel)</em>. 2022.",
+             "u": "https://doi.org/10.3390/s22166317"},
+            {"t": "Chinoy ED, Cuellar JA, Huwa KE, et al. Performance of seven consumer sleep-tracking devices compared with polysomnography. <em>Sleep</em>. 2021.",
+             "u": "https://doi.org/10.1093/sleep/zsaa291"},
+            {"t": "Haghayegh S, Khoshnevis S, Smolensky MH, et al. Accuracy of wristband Fitbit models in assessing sleep: systematic review and meta-analysis. <em>J Med Internet Res</em>. 2019.",
+             "u": "https://doi.org/10.2196/16273"},
+            {"t": "Khosla S, Deak MC, Gault D, et al. Consumer sleep technology: an American Academy of Sleep Medicine position statement. <em>J Clin Sleep Med</em>. 2018.",
+             "u": "https://doi.org/10.5664/jcsm.7128"},
+            {"t": "Baron KG, Abbott S, Jao N, et al. Orthosomnia: are some patients taking the quantified self too far? <em>J Clin Sleep Med</em>. 2017.",
+             "u": "https://doi.org/10.5664/jcsm.6472"},
+            {"t": "Ohayon MM, Carskadon MA, Guilleminault C, Vitiello MV. Meta-analysis of quantitative sleep parameters from childhood to old age in healthy individuals: developing normative sleep values across the human lifespan. <em>Sleep</em>. 2004.",
+             "u": "https://doi.org/10.1093/sleep/27.7.1255"},
+        ],
     },
     {
         "slug": "combien-de-jours-de-repos-par-semaine",
@@ -317,13 +394,22 @@ ENTRIES = [
 <p>Et « repos » ne veut pas forcément dire canapé : un jour de repos bien utilisé est souvent un jour où tu bouges, doucement.</p>
 
 <h2>Combien de jours de repos selon ton niveau ?</h2>
+<p>En musculation, l'American College of Sports Medicine fixe des repères de fréquence selon ton niveau :</p>
+<div class="tablewrap"><table>
+<caption>Source : American College of Sports Medicine (2009), fréquence recommandée en musculation selon le niveau.</caption>
+<thead><tr><th>Niveau</th><th class="n">Séances par semaine</th></tr></thead>
+<tbody>
+<tr><td>Débutant (aucune pratique, ou arrêt de plusieurs années)</td><td class="n">2 à 3</td></tr>
+<tr><td>Intermédiaire (environ 6 mois de pratique régulière)</td><td class="n">3 à 4</td></tr>
+<tr><td>Confirmé (plusieurs années de pratique)</td><td class="n">4 à 5</td></tr>
+</tbody>
+</table></div>
 <ul>
-<li><strong>Débutant :</strong> 3 séances par semaine, avec un jour off entre chaque. Ça fait beaucoup de jours sans séance, et c'est voulu : tes tendons et tes articulations s'adaptent plus lentement que tes muscles.</li>
-<li><strong>Intermédiaire :</strong> 4 à 5 séances et 2 jours de repos, dont au moins un complet.</li>
-<li><strong>Confirmé :</strong> 5 à 6 séances et 1 à 2 jours de repos, avec des séances faciles qui servent aussi à récupérer.</li>
-<li><strong>Selon l'intensité :</strong> plus tes séances sont dures — fractionné, charges lourdes, sports de contact —, plus le repos compte. Une sortie facile se récupère en quelques heures, une séance à bloc en deux ou trois jours.</li>
+<li><strong>Débutant :</strong> un jour off entre chaque séance. Ça fait beaucoup de jours sans séance, et c'est voulu : tes tendons et tes articulations s'adaptent plus lentement que tes muscles.</li>
+<li><strong>Intermédiaire et confirmé :</strong> si tu ajoutes du cardio ou un autre sport, garde 1 à 2 jours de repos, dont au moins un complet, et fais de tes séances faciles de vrais moments de récupération.</li>
+<li><strong>Selon l'intensité :</strong> plus tes séances sont dures — fractionné, charges lourdes, sports de contact —, plus le repos compte. Selon une revue de 2013, le système nerveux récupère en 24 heures au plus après une sortie facile, mais il lui faut au moins 48 heures après une séance à haute intensité.</li>
 </ul>
-<p>Ces repères se croisent avec <a href="/articles/combien-seances-sport-par-semaine.html">le nombre de séances par semaine</a> qui te fait progresser. Retiens surtout ceci : un muscle a besoin de 48 à 72 heures pour se réparer après une séance dure. Tu peux t'entraîner deux jours de suite, mais pas pousser fort les mêmes muscles deux jours de suite.</p>
+<p>Ces repères se croisent avec <a href="/articles/combien-seances-sport-par-semaine.html">le nombre de séances par semaine</a> qui te fait progresser. Retiens surtout ceci : après une séance dure, compte 48 à 72 heures avant de retravailler fort les mêmes muscles, surtout si tu vas jusqu'à l'échec. Une étude de 2017 montre que les séries poussées jusqu'à l'échec ralentissent nettement le retour de la détente et de la vitesse d'exécution, un retard encore visible 24 à 48 heures plus tard. Tu peux t'entraîner deux jours de suite, mais pas pousser fort les mêmes muscles deux jours de suite.</p>
 
 <h2>Faut-il un jour de repos complet chaque semaine ?</h2>
 <p>Pour la grande majorité, oui : <strong>au moins un jour sans entraînement structuré</strong> par semaine est une excellente règle. Pas parce que le corps s'effondrerait au septième jour, mais parce que ce jour-là profite à tout le reste : tendons, système nerveux, sommeil, motivation. Ceux qui s'entraînent tous les jours le font avec une vraie alternance entre séances dures et séances très faciles, et un suivi attentif de leur charge.</p>
@@ -347,7 +433,7 @@ ENTRIES = [
 <li><strong>Tes courbatures traînent</strong> au-delà de quatre ou cinq jours, ou une douleur s'installe.</li>
 <li><strong>L'envie disparaît</strong>, l'irritabilité monte, les petits rhumes s'enchaînent.</li>
 </ul>
-<p>Les jours où tu hésites, un test simple aide à décider si <a href="/articles/s-entrainer-fatigue-bonne-idee.html">s'entraîner fatigué est une bonne idée</a>. Si les signaux persistent malgré plus de repos, relis les <a href="/articles/surentrainement-signes.html">signes du surentraînement</a>. Pense aussi à ta vie hors sport : une semaine chargée au travail ou des nuits courtes justifient un jour off de plus. Et au-delà du rythme hebdomadaire, une semaine de décharge toutes les 4 à 8 semaines complète le dispositif.</p>
+<p>Les jours où tu hésites, un test simple aide à décider si <a href="/articles/s-entrainer-fatigue-bonne-idee.html">s'entraîner fatigué est une bonne idée</a>. Si les signaux persistent malgré plus de repos, relis les <a href="/articles/surentrainement-signes.html">signes du surentraînement</a> : fatigue, performances en baisse et humeur en berne sont justement ceux que retient le consensus européen et américain de 2013. Pense aussi à ta vie hors sport : une semaine chargée au travail ou des nuits courtes justifient un jour off de plus. Et au-delà du rythme hebdomadaire, une semaine de décharge régulière complète le dispositif : dans une enquête de 2024 auprès de 246 athlètes de force, elle durait environ six jours et revenait en moyenne toutes les cinq à six semaines.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -360,9 +446,23 @@ ENTRIES = [
             {"q": "Peut-on faire du sport 7 jours sur 7 ?",
              "a": "C'est possible si tu alternes vraiment : jamais deux séances dures de suite sur les mêmes muscles, et plusieurs jours très faciles dans la semaine. Pour la plupart des gens, garder au moins un jour sans entraînement structuré reste pourtant la meilleure option pour progresser sans se blesser."},
             {"q": "Perd-on du muscle pendant les jours de repos ?",
-             "a": "Non : un ou deux jours de repos ne font rien perdre, c'est même pendant le repos que le muscle se reconstruit. Il faut plusieurs semaines d'arrêt complet pour que la force et la masse musculaire commencent à baisser nettement."},
+             "a": "Non : un ou deux jours de repos ne font rien perdre, c'est même pendant le repos que le muscle se reconstruit. Il faut plusieurs semaines d'arrêt complet pour que la force commence à baisser nettement : selon une revue de 2013 menée chez des sportifs de haut niveau, elle se maintient jusqu'à environ trois semaines, puis décline plus vite."},
             {"q": "Combien de temps de repos entre deux séances de musculation ?",
              "a": "Compte 48 à 72 heures avant de retravailler durement les mêmes muscles. Tu peux t'entraîner le lendemain en ciblant d'autres groupes musculaires, ou faire une séance légère de mobilité ou de cardio facile."},
+        ],
+        "sources": [
+            {"t": "American College of Sports Medicine. American College of Sports Medicine position stand. Progression models in resistance training for healthy adults. <em>Med Sci Sports Exerc</em>. 2009.",
+             "u": "https://doi.org/10.1249/MSS.0b013e3181915670"},
+            {"t": "Stanley J, Peake JM, Buchheit M. Cardiac parasympathetic reactivation following exercise: implications for training prescription. <em>Sports Med</em>. 2013.",
+             "u": "https://doi.org/10.1007/s40279-013-0083-4"},
+            {"t": "Morán-Navarro R, Pérez CE, Mora-Rodríguez R, et al. Time course of recovery following resistance training leading or not to failure. <em>Eur J Appl Physiol</em>. 2017.",
+             "u": "https://doi.org/10.1007/s00421-017-3725-7"},
+            {"t": "Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. <em>Med Sci Sports Exerc</em>. 2013.",
+             "u": "https://doi.org/10.1249/MSS.0b013e318279a10a"},
+            {"t": "McMaster DT, Gill N, Cronin J, McGuigan M. The development, retention and decay rates of strength and power in elite rugby union, rugby league and American football: a systematic review. <em>Sports Med</em>. 2013.",
+             "u": "https://doi.org/10.1007/s40279-013-0031-3"},
+            {"t": "Rogerson D, Nolan D, Androulakis Korakakis P, et al. Deloading practices in strength and physique sports: a cross-sectional survey. <em>Sports Med Open</em>. 2024.",
+             "u": "https://doi.org/10.1186/s40798-024-00691-y"},
         ],
     },
 ]

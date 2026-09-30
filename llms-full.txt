@@ -106,9 +106,9 @@ Le Readiness Score est un outil de bien-être pour doser ton effort. Ce n'est pa
 
 ## Références
 
-- Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, *Sleep Health*.
-- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
+- Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, *Sleep Health*. [doi:10.1016/j.sleh.2014.12.010](https://doi.org/10.1016/j.sleh.2014.12.010)
+- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*. [doi:10.1007/s40279-013-0071-8](https://doi.org/10.1007/s40279-013-0071-8)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
 
 ---
 
@@ -209,11 +209,11 @@ Ce n'est pas non plus un indicateur du jour. Pour savoir si tu peux pousser aujo
 
 ## Références
 
-- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*.
-- Nes B. M. et al. (2014), un modèle simple de capacité cardiorespiratoire sans effort prédit la mortalité à long terme, *Medicine & Science in Sports & Exercise*.
-- Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, *Medicine & Science in Sports & Exercise*.
-- Daniels J. et Gilbert J. (1979), tables de performance VDOT, *Oxygen Power*.
-- OMS (2011), tour de taille et rapport taille-hanches : rapport d'une consultation d'experts.
+- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*. [doi:10.1249/MSS.0b013e31821d3f6f](https://doi.org/10.1249/MSS.0b013e31821d3f6f)
+- Nes B. M. et al. (2014), un modèle simple de capacité cardiorespiratoire sans effort prédit la mortalité à long terme, *Medicine & Science in Sports & Exercise*. [doi:10.1249/MSS.0000000000000219](https://doi.org/10.1249/MSS.0000000000000219)
+- Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, *Medicine & Science in Sports & Exercise*. [doi:10.1249/00005768-199012000-00021](https://doi.org/10.1249/00005768-199012000-00021)
+- Daniels J. et Gilbert J. (1979), tables de performance VDOT, *Oxygen Power*. [Google Livres](https://books.google.com/books?id=h7f_tgAACAAJ)
+- OMS (2011), tour de taille et rapport taille-hanches : rapport d'une consultation d'experts. [who.int](https://www.who.int/publications/i/item/9789241501491)
 
 ---
 
@@ -309,9 +309,9 @@ Si tu suis un régime lié à une maladie, si tu es enceinte, si tu prends un tr
 
 ## Références
 
-- ANSES, table de composition nutritionnelle des aliments Ciqual.
-- USDA, base de données FoodData Central.
-- Open Food Facts, base collaborative de produits alimentaires.
+- ANSES, table de composition nutritionnelle des aliments Ciqual. [ciqual.anses.fr](https://ciqual.anses.fr/)
+- USDA, base de données FoodData Central. [fdc.nal.usda.gov](https://fdc.nal.usda.gov/)
+- Open Food Facts, base collaborative de produits alimentaires. [fr.openfoodfacts.org](https://fr.openfoodfacts.org/)
 
 ---
 
@@ -400,11 +400,11 @@ Enfin, ce moteur est un outil de bien-être, pas un dispositif médical : il ne 
 
 ## Références
 
-- Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, *Circulation*.
-- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
-- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*.
-- OMS (2011), manuel de formation à l'oxymétrie de pouls.
+- Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, *Circulation*. [doi:10.1161/01.CIR.93.5.1043](https://doi.org/10.1161/01.CIR.93.5.1043)
+- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*. [doi:10.1007/s40279-013-0071-8](https://doi.org/10.1007/s40279-013-0071-8)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
+- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*. [doi:10.1371/journal.pone.0243693](https://doi.org/10.1371/journal.pone.0243693)
+- OMS (2011), manuel de formation à l'oxymétrie de pouls. [who.int](https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf)
 
 ---
 
@@ -520,8 +520,8 @@ Ce n'est pas non plus un suivi diététique médical. Ecleptic est un outil de b
 
 ## Références
 
-- Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*.
-- Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*.
+- Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
+- Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
 
 ---
 
@@ -609,10 +609,10 @@ En revanche, si une baisse s'installe sans raison apparente avec une fatigue inh
 
 ## Références
 
-- Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, *Circulation*.
-- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*.
-- Nunan D. et al. (2010), valeurs normales de la variabilité cardiaque de courte durée chez l'adulte sain, *Pacing and Clinical Electrophysiology*.
-- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*.
+- Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, *Circulation*. [doi:10.1161/01.CIR.93.5.1043](https://doi.org/10.1161/01.CIR.93.5.1043)
+- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*. [doi:10.3389/fpubh.2017.00258](https://doi.org/10.3389/fpubh.2017.00258)
+- Nunan D. et al. (2010), valeurs normales de la variabilité cardiaque de courte durée chez l'adulte sain, *Pacing and Clinical Electrophysiology*. [doi:10.1111/j.1540-8159.2010.02841.x](https://doi.org/10.1111/j.1540-8159.2010.02841.x)
+- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*. [doi:10.1007/s40279-013-0071-8](https://doi.org/10.1007/s40279-013-0071-8)
 
 ---
 
@@ -702,10 +702,10 @@ Si tu ressens des palpitations, une douleur thoracique, un malaise ou un essouff
 
 ## Références
 
-- Fox K. et al. (2007), la fréquence cardiaque de repos dans les maladies cardiovasculaires, *Journal of the American College of Cardiology*.
-- Jensen M. T. et al. (2013), fréquence cardiaque de repos, condition physique et mortalité (Copenhagen Male Study), *Heart*.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
-- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*.
+- Fox K. et al. (2007), la fréquence cardiaque de repos dans les maladies cardiovasculaires, *Journal of the American College of Cardiology*. [doi:10.1016/j.jacc.2007.04.079](https://doi.org/10.1016/j.jacc.2007.04.079)
+- Jensen M. T. et al. (2013), fréquence cardiaque de repos, condition physique et mortalité (Copenhagen Male Study), *Heart*. [doi:10.1136/heartjnl-2012-303375](https://doi.org/10.1136/heartjnl-2012-303375)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
+- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*. [doi:10.1249/MSS.0b013e31821d3f6f](https://doi.org/10.1249/MSS.0b013e31821d3f6f)
 
 ---
 
@@ -786,11 +786,11 @@ Avant de reprendre un entraînement intense après une longue pause, surtout ave
 
 ## Références
 
-- Kodama S. et al. (2009), la capacité cardiorespiratoire comme prédicteur de la mortalité toutes causes, *JAMA*.
-- Mandsager K. et al. (2018), capacité cardiorespiratoire et mortalité à long terme, *JAMA Network Open*.
-- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*.
-- Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, *Medicine & Science in Sports & Exercise*.
-- Daniels J. et Gilbert J. (1979), tables de performance VDOT, *Oxygen Power*.
+- Kodama S. et al. (2009), la capacité cardiorespiratoire comme prédicteur de la mortalité toutes causes, *JAMA*. [doi:10.1001/jama.2009.681](https://doi.org/10.1001/jama.2009.681)
+- Mandsager K. et al. (2018), capacité cardiorespiratoire et mortalité à long terme, *JAMA Network Open*. [doi:10.1001/jamanetworkopen.2018.3605](https://doi.org/10.1001/jamanetworkopen.2018.3605)
+- Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, *Medicine & Science in Sports & Exercise*. [doi:10.1249/MSS.0b013e31821d3f6f](https://doi.org/10.1249/MSS.0b013e31821d3f6f)
+- Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, *Medicine & Science in Sports & Exercise*. [doi:10.1249/00005768-199012000-00021](https://doi.org/10.1249/00005768-199012000-00021)
+- Daniels J. et Gilbert J. (1979), tables de performance VDOT, *Oxygen Power*. [Google Livres](https://books.google.com/books?id=h7f_tgAACAAJ)
 
 ---
 
@@ -872,9 +872,9 @@ Un essoufflement anormal, une douleur dans la poitrine, des palpitations ou un m
 
 ## Références
 
-- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*.
-- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
+- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*. [doi:10.1371/journal.pone.0243693](https://doi.org/10.1371/journal.pone.0243693)
+- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*. [doi:10.3389/fpubh.2017.00258](https://doi.org/10.3389/fpubh.2017.00258)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
 
 ---
 
@@ -952,8 +952,8 @@ Un essoufflement inhabituel, des lèvres ou des ongles bleutés, une douleur dan
 
 ## Références
 
-- OMS (2011), manuel de formation à l'oxymétrie de pouls.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
+- OMS (2011), manuel de formation à l'oxymétrie de pouls. [who.int](https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
 
 ---
 
@@ -1027,8 +1027,8 @@ Un malaise, une douleur dans la poitrine, un essoufflement anormal ou des palpit
 
 ## Références
 
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
-- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*.
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
+- Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, *PLOS ONE*. [doi:10.1371/journal.pone.0243693](https://doi.org/10.1371/journal.pone.0243693)
 
 ---
 
@@ -1114,9 +1114,9 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : ta ligne de ba
 
 ## Références
 
-- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*.
-- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*.
-- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*.
+- Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, *Sports Medicine*. [doi:10.1007/s40279-013-0071-8](https://doi.org/10.1007/s40279-013-0071-8)
+- Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, *Frontiers in Physiology*. [doi:10.3389/fphys.2014.00073](https://doi.org/10.3389/fphys.2014.00073)
+- Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, *Frontiers in Public Health*. [doi:10.3389/fpubh.2017.00258](https://doi.org/10.3389/fpubh.2017.00258)
 
 ---
 
@@ -1196,8 +1196,8 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne diagnost
 
 ## Références
 
-- Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, *Sleep Health*.
-- Windred D. P. et al. (2024), la régularité du sommeil prédit mieux la mortalité que sa durée, *Sleep*.
+- Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, *Sleep Health*. [doi:10.1016/j.sleh.2014.12.010](https://doi.org/10.1016/j.sleh.2014.12.010)
+- Windred D. P. et al. (2024), la régularité du sommeil prédit mieux la mortalité que sa durée, *Sleep*. [doi:10.1093/sleep/zsad253](https://doi.org/10.1093/sleep/zsad253)
 
 ---
 
@@ -1277,8 +1277,8 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ## Références
 
-- Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*.
-- Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*.
+- Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
+- Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
 
 ---
 

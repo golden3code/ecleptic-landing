@@ -21,12 +21,12 @@ ENTRIES = [
 <li><strong>La charge externe :</strong> ce que tu as fait, mesurable de l'extérieur. Kilomètres, durée, allure, watts, dénivelé — ou, en musculation, séries × répétitions × kilos.</li>
 <li><strong>La charge interne :</strong> ce que ça t'a coûté. Ta fréquence cardiaque, ton essoufflement, ton effort perçu : la réponse de ton organisme.</li>
 </ul>
-<p>La distinction est capitale, car la même charge externe ne produit pas toujours la même charge interne. Tes 10 km habituels, à la même allure, te coûtent bien plus après une nuit de 5 heures, par 30 degrés ou en pleine semaine de rush. Le stress de la vie <a href="/articles/stress-recuperation-sport.html">puise dans le même budget de récupération</a> que tes séances. C'est la charge interne qui dit ce que ton corps a réellement encaissé : c'est elle qu'on cherche à suivre en priorité.</p>
+<p>La distinction est capitale, car la même charge externe ne produit pas toujours la même charge interne. Tes 10 km habituels, à la même allure, te coûtent bien plus après une nuit de 5 heures, par 30 degrés ou en pleine semaine de rush. Le stress de la vie <a href="/articles/stress-recuperation-sport.html">puise dans le même budget de récupération</a> que tes séances. C'est la charge interne qui dit ce que ton corps a réellement encaissé, et c'est elle qui déclenche les adaptations, rappelaient en 2019 les chercheurs qui ont formalisé cette distinction dès 2003 : c'est elle qu'on cherche à suivre en priorité.</p>
 
 <h2>Comment calculer sa charge d'entraînement simplement ?</h2>
-<p>Une des méthodes les plus utilisées, du sport professionnel aux amateurs, tient en une multiplication : <strong>durée en minutes × effort perçu de la séance</strong>, de 1 à 10. On parle souvent de « RPE de séance », et le résultat s'exprime en unités arbitraires (UA).</p>
+<p>La méthode la plus utilisée, du sport professionnel aux amateurs, a été proposée en 2001 par l'équipe du physiologiste américain Carl Foster. Elle tient en une multiplication : <strong>durée en minutes × effort perçu de la séance</strong>, de 1 à 10. On parle de « RPE de séance », et le résultat s'exprime en unités arbitraires (UA). Une revue de 2017 a recensé 36 études qui confirment sa validité et sa fiabilité, chez l'enfant comme chez l'adulte, du loisir au haut niveau.</p>
 <ul>
-<li><strong>Repère :</strong> note ton effort environ 30 minutes après la séance, en jugeant la séance entière, pas seulement le dernier sprint.</li>
+<li><strong>Repère :</strong> note ton effort environ 30 minutes après la séance, en jugeant la séance entière, pas seulement le dernier sprint. C'est le délai prévu à l'origine ; une synthèse de 2021 montre d'ailleurs que la note reste stable d'une minute à 14 jours après.</li>
 <li><strong>Repère :</strong> si tu hésites sur la note, les équivalences sont détaillées dans <a href="/articles/rpe-echelle-effort-percu.html">l'échelle d'effort perçu</a>.</li>
 <li><strong>Repère :</strong> la méthode marche pour tous les sports, ce qui permet d'additionner course, vélo et musculation dans un même total.</li>
 </ul>
@@ -37,8 +37,8 @@ ENTRIES = [
 <p>Le bon pas de temps, c'est la semaine. Une séance isolée ne dit pas grand-chose : c'est l'accumulation qui fatigue, et c'est elle qui fait progresser. Trois choses à regarder :</p>
 <ul>
 <li><strong>Le total :</strong> stable, en hausse douce ou en hausse brutale par rapport aux semaines précédentes ?</li>
-<li><strong>Les pics :</strong> une semaine qui dépasse nettement ta moyenne récente est le scénario classique des blessures. Le <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a> sert précisément à les repérer.</li>
-<li><strong>La répartition :</strong> une semaine où tous les jours se ressemblent, toujours moyennement durs, fatigue plus qu'elle n'en a l'air. Alterner vrais jours durs et vrais jours faciles aide ton corps à encaisser.</li>
+<li><strong>Les pics :</strong> une semaine qui dépasse nettement ta moyenne récente est le scénario classique des blessures. Selon le consensus du Comité international olympique (2016), une charge mal gérée, hausses rapides comprises, est un facteur de risque majeur de blessure. Le <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a> sert précisément à repérer ces pics.</li>
+<li><strong>La répartition :</strong> une semaine où tous les jours se ressemblent, toujours moyennement durs, fatigue plus qu'elle n'en a l'air. Dès 1998, Carl Foster observait chez 25 athlètes qu'une bonne part des petites maladies survenaient quand leur charge, multipliée par sa monotonie, dépassait un seuil propre à chacun. Alterner vrais jours durs et vrais jours faciles aide ton corps à encaisser.</li>
 </ul>
 <p>Pour progresser, la charge doit monter avec le temps — c'est le principe de la <a href="/articles/surcharge-progressive-comment-progresser.html">surcharge progressive</a> —, mais par petites marches, entrecoupées de semaines plus légères.</p>
 
@@ -66,6 +66,20 @@ ENTRIES = [
             {"q": "La charge d'entraînement calculée par une montre est-elle fiable ?",
              "a": "En endurance, c'est un bon repère, car elle s'appuie sur ta fréquence cardiaque pendant l'effort. En musculation ou sur des efforts très courts, le cœur reflète mal l'effort fourni, et la méthode durée × effort perçu est plus juste. Dans tous les cas, compare-toi à toi-même, jamais aux chiffres d'un autre."},
         ],
+        "sources": [
+            {"t": "Foster C, Florhaug JA, Franklin J, et al. A new approach to monitoring exercise training. <em>J Strength Cond Res</em>. 2001.",
+             "u": "https://doi.org/10.1519/00124278-200102000-00019"},
+            {"t": "Foster C, Boullosa D, McGuigan M, et al. 25 years of session rating of perceived exertion: historical perspective and development. <em>Int J Sports Physiol Perform</em>. 2021.",
+             "u": "https://doi.org/10.1123/ijspp.2020-0599"},
+            {"t": "Haddad M, Stylianides G, Djaoui L, et al. Session-RPE method for training load monitoring: validity, ecological usefulness, and influencing factors. <em>Front Neurosci</em>. 2017.",
+             "u": "https://doi.org/10.3389/fnins.2017.00612"},
+            {"t": "Impellizzeri FM, Marcora SM, Coutts AJ. Internal and external training load: 15 years on. <em>Int J Sports Physiol Perform</em>. 2019.",
+             "u": "https://doi.org/10.1123/ijspp.2018-0935"},
+            {"t": "Soligard T, Schwellnus M, Alonso JM, et al. How much is too much? (Part 1) International Olympic Committee consensus statement on load in sport and risk of injury. <em>Br J Sports Med</em>. 2016.",
+             "u": "https://doi.org/10.1136/bjsports-2016-096581"},
+            {"t": "Foster C. Monitoring training in athletes with reference to overtraining syndrome. <em>Med Sci Sports Exerc</em>. 1998.",
+             "u": "https://doi.org/10.1097/00005768-199807000-00023"},
+        ],
     },
     {
         "slug": "ratio-charge-aigue-chronique",
@@ -74,7 +88,7 @@ ENTRIES = [
         "description": "Ratio charge aiguë / chronique : ta semaine comparée à tes 4 dernières. Zone prudente de 0,8 à 1,3, pics au-delà de 1,5 à éviter, et limites de l'indicateur.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : le <strong>ratio charge aiguë / chronique</strong> compare ta charge d'entraînement de la <strong>semaine en cours</strong> à ta <strong>moyenne hebdomadaire des 4 dernières semaines</strong>. Autour de 1, tu fais à peu près ce que ton corps connaît. La zone généralement jugée prudente va de <strong>0,8 à 1,3</strong> ; au-delà d'environ <strong>1,5</strong>, tu fais un pic que tes tissus n'ont pas eu le temps de préparer, et le risque de blessure grimpe.</p>
+<p>La réponse courte : le <strong>ratio charge aiguë / chronique</strong> compare ta charge d'entraînement de la <strong>semaine en cours</strong> à ta <strong>moyenne hebdomadaire des 4 dernières semaines</strong>. Autour de 1, tu fais à peu près ce que ton corps connaît. La zone généralement jugée prudente va de <strong>0,8 à 1,3</strong> ; au-delà d'environ <strong>1,5</strong>, tu fais un pic que tes tissus n'ont pas eu le temps de préparer, et plusieurs études menées dans les sports collectifs y associent davantage de blessures.</p>
 <p>L'idée est puissante parce qu'elle déplace la question. Ce qui blesse, ce n'est pas tant de s'entraîner beaucoup que de s'entraîner <strong>beaucoup plus que d'habitude, d'un coup</strong>. Précision importante : c'est un indicateur utile, pas une loi de la physique, et il est sérieusement débattu dans la littérature scientifique. On y revient plus bas.</p>
 
 <h2>Comment calculer le ratio charge aiguë / chronique ?</h2>
@@ -87,13 +101,14 @@ ENTRIES = [
 <p>Exemple pour un coureur : 28, 30, 32 et 30 km sur les quatre semaines précédentes, soit 30 km de moyenne. Une semaine à 36 km donne un ratio de 1,2 : tu progresses sans brusquer. Une semaine à 45 km donne 1,5 : c'est un pic. Selon les versions du calcul, la semaine en cours est incluse ou non dans la moyenne ; l'exclure rend les pics plus visibles.</p>
 
 <h2>Quelle valeur viser pour éviter les blessures ?</h2>
+<p>Ces repères viennent d'une synthèse publiée en 2016 par le chercheur australien Tim Gabbett : de 0,8 à 1,3, la « zone idéale » ; à 1,5 ou plus, la « zone de danger ».</p>
 <ul>
-<li><strong>Sous 0,8 :</strong> tu en fais nettement moins que d'habitude. Pas dangereux en soi, mais ta forme s'érode, et la reprise créera un pic d'autant plus brutal.</li>
+<li><strong>Sous 0,8 :</strong> tu en fais nettement moins que d'habitude. Pas le scénario le plus risqué, mais déjà hors de la zone idéale : ta forme s'érode, et la reprise créera un pic d'autant plus brutal.</li>
 <li><strong>De 0,8 à 1,3 :</strong> la zone prudente. Ta charge évolue à un rythme que ton corps suit.</li>
 <li><strong>De 1,3 à 1,5 :</strong> vigilance. Acceptable ponctuellement, pour un stage ou une semaine chargée, pas à enchaîner.</li>
-<li><strong>Au-delà de 1,5 :</strong> le pic à éviter. Les travaux qui ont popularisé l'indicateur, surtout menés dans des sports collectifs, y associent davantage de blessures dans les semaines suivantes.</li>
+<li><strong>Au-delà de 1,5 :</strong> le pic à éviter. Dans la première étude sur le sujet, chez 28 lanceurs de cricket d'élite, un ratio de 1,5 ou plus s'accompagnait d'un risque de blessure 2 à 4 fois plus élevé dans les 7 jours suivants.</li>
 </ul>
-<p>L'autre enseignement de ces travaux, souvent oublié : une <strong>charge chronique élevée, construite progressivement</strong>, semble plutôt protéger qu'exposer. Le coureur qui a patiemment monté à 50 km par semaine encaisse une sortie longue que celui qui en court 15 ne supporterait pas. Le volume n'est pas l'ennemi ; la marche trop haute, si.</p>
+<p>L'autre enseignement de ces travaux, souvent oublié : une <strong>charge chronique élevée, construite progressivement</strong>, semble plutôt protéger qu'exposer. Chez 53 joueurs de rugby à XIII professionnels suivis deux saisons (2016), ceux qui avaient une charge chronique élevée résistaient mieux aux blessures tant que le ratio restait entre 0,85 et 1,35, mais devenaient plus fragiles face aux pics autour de 1,5. Le coureur qui a patiemment monté à 50 km par semaine encaisse une sortie longue que celui qui en court 15 ne supporterait pas. Le volume n'est pas l'ennemi ; la marche trop haute, si.</p>
 
 <h2>Pourquoi se blesse-t-on souvent à la reprise ?</h2>
 <p>C'est le scénario le plus fréquent chez l'amateur. Deux ou trois semaines de coupure font fondre ta charge chronique. Si tu reprends directement ton volume d'avant, ton ratio s'envole, même si la semaine te paraît « normale ». Même logique après une blessure ou une maladie : repars plus bas, puis remonte par paliers, comme expliqué pour <a href="/articles/reprendre-le-sport-apres-maladie.html">reprendre le sport après une maladie</a>. En course à pied, la <a href="/articles/regle-des-10-pourcent-course.html">règle des 10 %</a> poursuit le même but avec un calcul plus rustique.</p>
@@ -101,7 +116,7 @@ ENTRIES = [
 <h2>Quelles sont les limites du ratio aigu/chronique ?</h2>
 <p>Soyons honnêtes : l'indicateur a été beaucoup critiqué, et à juste titre sur plusieurs points.</p>
 <ul>
-<li><strong>Association n'est pas causalité :</strong> les études sont observationnelles, souvent menées chez des sportifs professionnels. Rien ne garantit que les seuils s'appliquent tels quels à ton cas.</li>
+<li><strong>Association n'est pas causalité :</strong> les études sont observationnelles, souvent menées chez des sportifs professionnels. En 2020 puis en 2021, l'équipe du chercheur Franco Impellizzeri a conclu qu'aucune donnée ne justifie de piloter l'entraînement avec ce ratio pour réduire les blessures, et qu'il n'apporte quasiment aucun pouvoir prédictif. Chez 5 205 coureurs amateurs suivis 18 mois (2025), ses pics n'étaient d'ailleurs pas associés à plus de blessures ; une sortie isolée nettement plus longue que d'habitude, si.</li>
 <li><strong>Le calcul change le résultat :</strong> moyenne simple ou pondérée, semaine en cours incluse ou non. Un même historique peut donner des ratios différents.</li>
 <li><strong>Il devient instable à faible volume :</strong> si tu cours 10 km par semaine, une sortie de plus fait bondir le ratio sans que le risque réel ait beaucoup changé.</li>
 <li><strong>Il ignore la nature de la charge :</strong> 10 km de descente en trail ou de sprints ne sollicitent pas tes tissus comme 10 km de footing. Il ignore aussi ton sommeil, ton stress et tes antécédents de blessure.</li>
@@ -121,7 +136,21 @@ ENTRIES = [
             {"q": "Que faire si mon ratio de charge dépasse 1,5 ?",
              "a": "Allège les jours suivants pour ramener ta charge vers ta moyenne récente, en supprimant d'abord les séances les plus intenses. Surveille tes sensations et toute douleur localisée. Un pic isolé ne garantit pas une blessure, mais il justifie une semaine suivante plus calme."},
             {"q": "Le ratio aigu/chronique prédit-il vraiment les blessures ?",
-             "a": "Pas à lui seul. Il repère les pics de charge, associés à plus de blessures dans plusieurs études, mais il reste débattu : calcul variable, données surtout issues du sport professionnel, instabilité à faible volume. C'est un garde-fou, pas une prédiction."},
+             "a": "Pas à lui seul. Il repère les pics de charge, associés à plus de blessures dans plusieurs études de sports collectifs, mais il reste débattu : calcul variable, données surtout issues du sport professionnel, instabilité à faible volume, et lien absent dans une grande cohorte de coureurs amateurs. C'est un garde-fou, pas une prédiction."},
+        ],
+        "sources": [
+            {"t": "Gabbett TJ. The training-injury prevention paradox: should athletes be training smarter and harder? <em>Br J Sports Med</em>. 2016.",
+             "u": "https://doi.org/10.1136/bjsports-2015-095788"},
+            {"t": "Hulin BT, Gabbett TJ, Blanch P, et al. Spikes in acute workload are associated with increased injury risk in elite cricket fast bowlers. <em>Br J Sports Med</em>. 2014.",
+             "u": "https://doi.org/10.1136/bjsports-2013-092524"},
+            {"t": "Hulin BT, Gabbett TJ, Lawson DW, et al. The acute:chronic workload ratio predicts injury: high chronic workload may decrease injury risk in elite rugby league players. <em>Br J Sports Med</em>. 2016.",
+             "u": "https://doi.org/10.1136/bjsports-2015-094817"},
+            {"t": "Impellizzeri FM, Tenan MS, Kempton T, et al. Acute:chronic workload ratio: conceptual issues and fundamental pitfalls. <em>Int J Sports Physiol Perform</em>. 2020.",
+             "u": "https://doi.org/10.1123/ijspp.2019-0864"},
+            {"t": "Impellizzeri FM, Woodcock S, Coutts AJ, et al. What role do chronic workloads play in the acute to chronic workload ratio? Time to dismiss ACWR and its underlying theory. <em>Sports Med</em>. 2021.",
+             "u": "https://doi.org/10.1007/s40279-020-01378-6"},
+            {"t": "Schuster Brandt Frandsen J, Hulme A, Parner ET, et al. How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study. <em>Br J Sports Med</em>. 2025.",
+             "u": "https://doi.org/10.1136/bjsports-2024-109380"},
         ],
     },
     {
@@ -144,17 +173,22 @@ ENTRIES = [
 <li><strong>9 :</strong> très difficile. Parler devient impossible, l'effort ne se tient que peu de temps.</li>
 <li><strong>10 :</strong> maximal. Tu ne peux rien donner de plus.</li>
 </ul>
+<p>Les lignes directrices 2020 de l'Organisation mondiale de la santé retiennent les mêmes repères : une activité modérée correspond en général à 5 ou 6 sur 10, une activité soutenue à 7 ou 8.</p>
 
 <h2>C'est quoi le RIR en musculation ?</h2>
-<p>Le <strong>RIR</strong> (<em>reps in reserve</em>), ce sont les répétitions que tu aurais encore pu faire en fin de série, avec une technique propre. Il donne au RPE un repère concret sous la barre :</p>
-<ul>
-<li><strong>RPE 10 :</strong> 0 répétition en réserve, impossible d'en faire une de plus.</li>
-<li><strong>RPE 9 :</strong> 1 répétition en réserve.</li>
-<li><strong>RPE 8 :</strong> 2 répétitions en réserve.</li>
-<li><strong>RPE 7 :</strong> 3 répétitions en réserve.</li>
-</ul>
-<p>C'est justement la zone utile pour prendre du muscle : des séries terminées entre 0 et 3 répétitions de l'échec, quelle que soit ta fourchette (le détail est dans <a href="/articles/combien-de-repetitions-pour-prendre-du-muscle.html">combien de répétitions pour prendre du muscle</a>).</p>
-<p>Un piège à connaître : la plupart des débutants se trompent dans le même sens. Tu penses être à 2 répétitions de l'échec, il t'en reste souvent bien plus. Pour te calibrer, pousse de temps en temps une dernière série jusqu'au bout sur un exercice sans risque — presse, machine guidée, curl — et compare avec ton estimation. Évite ce test sur le squat ou le développé couché sans pareur.</p>
+<p>Le <strong>RIR</strong> (<em>reps in reserve</em>), ce sont les répétitions que tu aurais encore pu faire en fin de série, avec une technique propre. Il donne au RPE un repère concret sous la barre. Cette correspondance a été proposée et testée en 2016 sur 29 pratiquants de squat, débutants et confirmés :</p>
+<div class="tablewrap"><table>
+<caption>Source : Zourdos et al. (2016).</caption>
+<thead><tr><th>RPE</th><th class="n">Répétitions en réserve (RIR)</th></tr></thead>
+<tbody>
+<tr><td>RPE 10 : impossible d'en faire une de plus</td><td class="n">0</td></tr>
+<tr><td>RPE 9</td><td class="n">1</td></tr>
+<tr><td>RPE 8</td><td class="n">2</td></tr>
+<tr><td>RPE 7</td><td class="n">3</td></tr>
+</tbody>
+</table></div>
+<p>C'est justement la zone utile pour prendre du muscle : des séries terminées entre 0 et 3 répétitions de l'échec, quelle que soit ta fourchette (le détail est dans <a href="/articles/combien-de-repetitions-pour-prendre-du-muscle.html">combien de répétitions pour prendre du muscle</a>). Des méta-régressions publiées en 2024 montrent que la prise de muscle augmente à mesure que tu termines tes séries près de l'échec, alors que les gains de force, eux, varient peu.</p>
+<p>Un piège à connaître : presque tout le monde se trompe dans le même sens, débutant ou confirmé. Selon une méta-analyse de 2022 (12 études, 414 participants), on sous-estime en moyenne d'environ une répétition ce qu'il reste avant l'échec, et l'erreur grandit sur les séries longues, au-delà de 12 répétitions. Pour te calibrer, pousse de temps en temps une dernière série jusqu'au bout sur un exercice sans risque — presse, machine guidée, curl — et compare avec ton estimation. Évite ce test sur le squat ou le développé couché sans pareur.</p>
 
 <h2>RPE ou fréquence cardiaque : lequel croire ?</h2>
 <p>Les deux, pour des raisons différentes. La fréquence cardiaque est objective, mais lente à réagir, influencée par la chaleur, la caféine ou la déshydratation, et quasi muette sur une série de squats. Le RPE intègre tout : fatigue musculaire, souffle, état nerveux. C'est sa force et sa faiblesse, car il bouge aussi avec l'humeur ou la musique dans tes écouteurs.</p>
@@ -163,7 +197,7 @@ ENTRIES = [
 <h2>Comment utiliser le RPE au quotidien ?</h2>
 <ul>
 <li><strong>Programme en RPE, pas seulement en kilos :</strong> « 3 séries de 5 à RPE 8 » plutôt que « 3 × 5 à 100 kg ». Un jour de grande forme, la charge monte d'elle-même ; un jour de fatigue, tu allèges sans rater ta séance. C'est l'autorégulation.</li>
-<li><strong>Garde les séances faciles vraiment faciles :</strong> en endurance, une règle souvent citée place environ 80 % du temps à 3-4, le reste à 7 et au-delà. Le piège classique, c'est de tout faire à 5-6 : trop dur pour récupérer, pas assez pour progresser.</li>
+<li><strong>Garde les séances faciles vraiment faciles :</strong> selon une synthèse de 2010 du physiologiste Stephen Seiler, les athlètes d'endurance de haut niveau font environ 80 % de leurs séances à basse intensité (3-4), les 20 % restantes étant dominées par du travail intense (7 et au-delà). Le piège classique, c'est de tout faire à 5-6 : trop dur pour récupérer, pas assez pour progresser.</li>
 <li><strong>Note le RPE de chaque séance</strong> environ 30 minutes après, pour la séance entière. Multiplié par la durée, il donne ta <a href="/articles/charge-d-entrainement-c-est-quoi.html">charge d'entraînement</a>, à suivre de semaine en semaine.</li>
 </ul>
 
@@ -182,6 +216,20 @@ ENTRIES = [
             {"q": "Quelle différence entre RPE et RIR ?",
              "a": "Le RPE note l'effort sur 10, le RIR compte les répétitions qu'il te restait en fin de série. En musculation, les deux se correspondent : RPE 9 = 1 RIR, RPE 8 = 2 RIR, RPE 7 = 3 RIR. Le RIR est souvent plus simple à estimer sous la barre."},
         ],
+        "sources": [
+            {"t": "Borg GA. Psychophysical bases of perceived exertion. <em>Med Sci Sports Exerc</em>. 1982.",
+             "u": "https://doi.org/10.1249/00005768-198205000-00012"},
+            {"t": "Bull FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. <em>Br J Sports Med</em>. 2020.",
+             "u": "https://doi.org/10.1136/bjsports-2020-102955"},
+            {"t": "Zourdos MC, Klemp A, Dolan C, et al. Novel resistance training-specific rating of perceived exertion scale measuring repetitions in reserve. <em>J Strength Cond Res</em>. 2016.",
+             "u": "https://doi.org/10.1519/JSC.0000000000001049"},
+            {"t": "Halperin I, Malleron T, Har-Nir I, et al. Accuracy in predicting repetitions to task failure in resistance exercise: a scoping review and exploratory meta-analysis. <em>Sports Med</em>. 2022.",
+             "u": "https://doi.org/10.1007/s40279-021-01559-x"},
+            {"t": "Robinson ZP, Pelland JC, Remmert JF, et al. Exploring the dose-response relationship between estimated resistance training proximity to failure, strength gain, and muscle hypertrophy: a series of meta-regressions. <em>Sports Med</em>. 2024.",
+             "u": "https://doi.org/10.1007/s40279-024-02069-2"},
+            {"t": "Seiler S. What is best practice for training intensity and duration distribution in endurance athletes? <em>Int J Sports Physiol Perform</em>. 2010.",
+             "u": "https://doi.org/10.1123/ijspp.5.3.276"},
+        ],
     },
     {
         "slug": "regle-des-10-pourcent-course",
@@ -190,7 +238,7 @@ ENTRIES = [
         "description": "La règle des 10 % : pas plus de 10 % de volume en plus par semaine. Ce qu'elle vaut vraiment, ses limites, et les alternatives plus sûres pour progresser.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : la <strong>règle des 10 %</strong> dit de ne pas augmenter ton volume d'entraînement — kilomètres ou heures — de plus de <strong>10 % d'une semaine à l'autre</strong>. C'est un bon <strong>repère</strong> contre les hausses brutales, grandes pourvoyeuses de blessures chez les coureurs. Mais ce n'est pas une loi : le chiffre est arbitraire, il ignore l'intensité et il oublie les semaines de récupération. Mieux vaut monter par paliers et écouter tes signaux.</p>
+<p>La réponse courte : la <strong>règle des 10 %</strong> dit de ne pas augmenter ton volume d'entraînement — kilomètres ou heures — de plus de <strong>10 % d'une semaine à l'autre</strong>. C'est un bon <strong>repère</strong> contre les hausses brutales, associées à davantage de blessures chez les coureurs. Mais ce n'est pas une loi : le chiffre est arbitraire, il ignore l'intensité et il oublie les semaines de récupération. Mieux vaut monter par paliers et écouter tes signaux.</p>
 <p>Elle a un immense mérite : imposer la patience. Ton cœur et ton souffle progressent vite, en quelques semaines. Tes tendons et tes os, eux, s'adaptent en mois. C'est ce décalage qui piège tant de coureurs motivés : le cardio suit, les tissus non.</p>
 
 <h2>Que dit exactement la règle des 10 % ?</h2>
@@ -198,7 +246,8 @@ ENTRIES = [
 <p>Ce qu'elle cherche à éviter, c'est le scénario classique : une inscription à un semi-marathon, un pic de motivation, et le kilométrage bondit de 50 % d'un coup. Les tissus encaissent quelques semaines, puis lâchent.</p>
 
 <h2>La règle des 10 % est-elle prouvée ?</h2>
-<p>Pas vraiment. Les rares travaux qui l'ont évaluée chez des coureurs débutants n'ont pas montré qu'elle protégeait mieux qu'une progression un peu plus rapide. Ce que les données suggèrent, c'est que les petites hausses ne sont pas le problème : ce sont les <strong>gros bonds soudains</strong> qui blessent. Le chiffre de 10 % n'a rien de physiologique ; c'est un repère prudent, devenu populaire parce qu'il est rond.</p>
+<p>Pas vraiment. Un essai randomisé néerlandais de 2008 l'a testée sur 532 coureurs débutants qui préparaient une course de 6,7 km : 20,8 % de blessés avec un programme de 13 semaines bâti sur la règle des 10 %, contre 20,3 % avec le programme standard de 8 semaines. Aucune différence. Ce que les données suggèrent, c'est que les petites hausses ne sont pas le problème : ce sont les <strong>gros bonds soudains</strong> qui semblent blesser. Chez 874 débutants suivis un an (2014), ceux qui augmentaient leur volume de plus de 30 % sur deux semaines semblaient plus exposés aux blessures liées à la distance, mais une revue systématique de 2018 jugeait ces preuves très limitées. Le chiffre de 10 % n'a rien de physiologique ; c'est un repère prudent, devenu populaire parce qu'il est rond.</p>
+<p>La plus grande étude à ce jour déplace la question. Chez 5 205 coureurs suivis 18 mois avec leur montre (2025), la hausse d'une semaine sur l'autre n'était pas liée aux blessures. En revanche, une sortie dépassant de 10 à 30 % la plus longue des 30 derniers jours s'accompagnait d'un taux de blessures de surmenage 64 % plus élevé. Le seuil de 10 % vaut peut-être davantage pour ta sortie que pour ta semaine.</p>
 
 <h2>Quelles sont les limites de la règle des 10 % ?</h2>
 <ul>
@@ -213,7 +262,7 @@ ENTRIES = [
 <li><strong>Les paliers :</strong> augmente, puis stabilise ce volume deux à trois semaines avant de remonter. Tes tissus consolident à chaque marche.</li>
 <li><strong>Les semaines allégées :</strong> toutes les 3 ou 4 semaines, baisse nettement le volume, d'un quart à la moitié selon ta fatigue. C'est la version course de la <a href="/articles/semaine-de-decharge-deload.html">semaine de décharge</a>.</li>
 <li><strong>Une seule variable à la fois :</strong> la semaine où tu allonges la sortie longue, n'ajoute pas en plus du fractionné ou du dénivelé.</li>
-<li><strong>Ta moyenne récente comme référence :</strong> compare ta semaine à tes quatre dernières, comme le fait le <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a>, plutôt qu'à la seule semaine précédente.</li>
+<li><strong>Ta moyenne récente comme référence :</strong> compare ta semaine à tes quatre dernières, comme le fait le <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a>, plutôt qu'à la seule semaine précédente. Et n'allonge ta plus longue sortie que par petites touches.</li>
 </ul>
 <p>Exemple : 20 km deux semaines de suite, 22 km deux semaines, une semaine allégée à 16 km, puis 24 km. Au retour de la semaine légère, tu repars de ton palier, pas de 16 km. Tu progresses en escalier plutôt qu'en rampe : c'est la <a href="/articles/surcharge-progressive-comment-progresser.html">surcharge progressive</a> appliquée à la course.</p>
 
@@ -235,11 +284,23 @@ ENTRIES = [
 """,
         "faq": [
             {"q": "De combien augmenter son kilométrage par semaine en course à pied ?",
-             "a": "Le repère classique est 10 % maximum d'une semaine à l'autre, mais c'est une limite prudente plutôt qu'une loi. Le plus sûr : monter par paliers, stabiliser deux à trois semaines, et placer une semaine allégée toutes les 3 à 4 semaines."},
+             "a": "Le repère classique est 10 % maximum d'une semaine à l'autre, mais c'est une limite prudente plutôt qu'une loi. Le plus sûr : monter par paliers, stabiliser deux à trois semaines, placer une semaine allégée toutes les 3 à 4 semaines, et éviter qu'une sortie dépasse de plus de 10 % ta plus longue du mois écoulé."},
             {"q": "Faut-il faire une semaine de récupération en course à pied ?",
              "a": "Oui, c'est l'une des meilleures protections contre le surmenage. Toutes les 3 ou 4 semaines, réduis nettement ton volume, d'un quart à la moitié selon ta fatigue, en gardant des sorties faciles. Tu repars ensuite plus frais pour le palier suivant."},
             {"q": "Pourquoi se blesse-t-on en augmentant trop vite son kilométrage ?",
              "a": "Parce que le cœur et le souffle s'adaptent en quelques semaines, alors que les tendons et les os demandent des mois. Une hausse brutale surcharge ces tissus avant qu'ils ne se soient renforcés, d'où tendinopathies, périostites et fractures de fatigue."},
+        ],
+        "sources": [
+            {"t": "Buist I, Bredeweg SW, van Mechelen W, et al. No effect of a graded training program on the number of running-related injuries in novice runners: a randomized controlled trial. <em>Am J Sports Med</em>. 2008.",
+             "u": "https://doi.org/10.1177/0363546507307505"},
+            {"t": "Nielsen RØ, Parner ET, Nohr EA, et al. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. <em>J Orthop Sports Phys Ther</em>. 2014.",
+             "u": "https://doi.org/10.2519/jospt.2014.5164"},
+            {"t": "Damsted C, Glad S, Nielsen RO, et al. Is there evidence for an association between changes in training load and running-related injuries? A systematic review. <em>Int J Sports Phys Ther</em>. 2018.",
+             "u": "https://doi.org/10.26603/ijspt20180931"},
+            {"t": "Schuster Brandt Frandsen J, Hulme A, Parner ET, et al. How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study. <em>Br J Sports Med</em>. 2025.",
+             "u": "https://doi.org/10.1136/bjsports-2024-109380"},
+            {"t": "Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. <em>J Orthop Sports Phys Ther</em>. 2014.",
+             "u": "https://doi.org/10.2519/jospt.2014.5334"},
         ],
     },
     {
@@ -265,11 +326,11 @@ ENTRIES = [
 <li><strong>Linéaire :</strong> le volume baisse et l'intensité monte au fil des semaines. En musculation, tu passes par exemple de séries de 12 à des séries de 8, puis de 5, avec des charges de plus en plus lourdes. Lisible, idéale pour préparer une échéance.</li>
 <li><strong>Ondulatoire :</strong> l'intensité varie à l'intérieur de la semaine. Lundi lourd en séries de 5, mercredi modéré en séries de 10, vendredi plus léger en séries de 15. Plus de variété, plusieurs qualités travaillées en parallèle.</li>
 </ul>
-<p>Laquelle est la meilleure ? Les comparaisons montrent surtout qu'un entraînement structuré fait au moins aussi bien, et souvent mieux, qu'un entraînement improvisé. Entre linéaire et ondulatoire, les écarts sont faibles. Le bon modèle est celui que tu suis avec régularité et qui fait réellement monter la contrainte : la base reste la <a href="/articles/surcharge-progressive-comment-progresser.html">surcharge progressive</a>.</p>
-<p>En endurance, même logique : une phase de base riche en volume facile, puis une phase spécifique où les séances intenses prennent plus de place, puis un affûtage avant l'objectif.</p>
+<p>Laquelle est la meilleure ? D'abord, périodiser paie surtout pour la force : une méta-analyse de 2017 (18 études) trouve un effet modéré sur la charge maximale par rapport à un programme identique répété semaine après semaine. Pour la masse musculaire, à volume égal, la différence disparaît (méta-analyse de 2022, 35 études). Entre linéaire et ondulatoire, les écarts sont faibles : aucune différence sur la force dans une méta-analyse de 2015 (17 études, 510 participants), un avantage à l'ondulatoire, limité aux pratiquants déjà entraînés, dans celle de 2022. Le bon modèle est celui que tu suis avec régularité et qui fait réellement monter la contrainte : la base reste la <a href="/articles/surcharge-progressive-comment-progresser.html">surcharge progressive</a>.</p>
+<p>En endurance, même logique : une phase de base riche en volume facile, puis une phase spécifique où les séances intenses prennent plus de place, puis un affûtage avant l'objectif. Selon une méta-analyse de 2007 (27 études), le plus efficace dure environ 2 semaines, avec un volume réduit de 41 à 60 %, sans toucher à l'intensité ni à la fréquence des séances.</p>
 
 <h2>Où placer les semaines de décharge ?</h2>
-<p>À la fin de chaque mésocycle : le plus souvent après 3 semaines de montée, le fameux « 3 + 1 », parfois après 2 si la charge est très lourde ou ta vie très remplie. Le mode d'emploi est détaillé dans <a href="/articles/semaine-de-decharge-deload.html">la semaine de décharge</a> : tu réduis nettement le volume, tu gardes un peu d'intensité, et tu laisses la fatigue retomber pour que les gains apparaissent.</p>
+<p>À la fin de chaque mésocycle. Un format courant est le « 3 + 1 » : 3 semaines de montée, puis une semaine allégée, parfois après 2 si la charge est très lourde ou ta vie très remplie. Les pratiquants aguerris espacent souvent davantage : chez 246 compétiteurs de force et de physique interrogés en 2024, la décharge revenait en moyenne toutes les 5 à 6 semaines et durait environ une semaine. Le mode d'emploi est détaillé dans <a href="/articles/semaine-de-decharge-deload.html">la semaine de décharge</a> : tu réduis nettement le volume, tu gardes un peu d'intensité, et tu laisses la fatigue retomber pour que les gains apparaissent.</p>
 <p>Le calendrier n'est qu'une base. Si tes signaux s'allument avant la date prévue — sommeil dégradé, performances qui reculent, cœur de repos plus haut —, avance la décharge. Même réflexe si ton <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a> signale un pic.</p>
 
 <h2>Exemple de périodisation sur 4 semaines</h2>
@@ -295,7 +356,19 @@ ENTRIES = [
             {"q": "Faut-il périodiser son entraînement quand on est débutant ?",
              "a": "Pas besoin d'un plan complexe : au début, presque tout fait progresser. Mais une structure simple aide dès le départ : augmenter la charge sur 3 semaines, alléger la quatrième, et noter ses séances pour savoir ce qui fonctionne."},
             {"q": "Combien de temps doit durer un cycle d'entraînement ?",
-             "a": "Un bloc dure le plus souvent 3 à 6 semaines, décharge comprise, et une saison complète plusieurs mois. Le format 3 semaines de montée plus 1 semaine allégée convient à la plupart des sportifs amateurs."},
+             "a": "Un bloc dure le plus souvent 3 à 6 semaines, décharge comprise, et une saison complète plusieurs mois. Le format 3 semaines de montée plus 1 semaine allégée est un bon point de départ pour un amateur ; les pratiquants de force expérimentés allègent plutôt toutes les 5 à 6 semaines en moyenne."},
+        ],
+        "sources": [
+            {"t": "Williams TD, Tolusso DV, Fedewa MV, Esco MR. Comparison of periodized and non-periodized resistance training on maximal strength: a meta-analysis. <em>Sports Med</em>. 2017.",
+             "u": "https://doi.org/10.1007/s40279-017-0734-y"},
+            {"t": "Moesgaard L, Beck MM, Christiansen L, et al. Effects of periodization on strength and muscle hypertrophy in volume-equated resistance training programs: a systematic review and meta-analysis. <em>Sports Med</em>. 2022.",
+             "u": "https://doi.org/10.1007/s40279-021-01636-1"},
+            {"t": "Harries SK, Lubans DR, Callister R. Systematic review and meta-analysis of linear and undulating periodized resistance training programs on muscular strength. <em>J Strength Cond Res</em>. 2015.",
+             "u": "https://doi.org/10.1519/JSC.0000000000000712"},
+            {"t": "Bosquet L, Montpetit J, Arvisais D, Mujika I. Effects of tapering on performance: a meta-analysis. <em>Med Sci Sports Exerc</em>. 2007.",
+             "u": "https://doi.org/10.1249/mss.0b013e31806010e0"},
+            {"t": "Rogerson D, Nolan D, Androulakis Korakakis P, et al. Deloading practices in strength and physique sports: a cross-sectional survey. <em>Sports Med Open</em>. 2024.",
+             "u": "https://doi.org/10.1186/s40798-024-00691-y"},
         ],
     },
     {
@@ -312,7 +385,7 @@ ENTRIES = [
 <ul>
 <li><strong>La tendinopathie</strong> (on dit souvent tendinite) : tendon d'Achille, tendon rotulien, épaule, coude. Douleur au démarrage qui s'estompe une fois échauffé puis revient à froid, raideur aux premiers pas du matin, tendon sensible à la pression.</li>
 <li><strong>La périostite tibiale :</strong> douleur diffuse le long du bord interne du tibia, sur plusieurs centimètres, typique du coureur qui augmente vite son volume ou change de surface.</li>
-<li><strong>La fracture de fatigue :</strong> une fissure de l'os due à des chocs répétés, au tibia, aux métatarses du pied, parfois à la hanche ou au bassin. Douleur <strong>très localisée</strong>, sur un point précis, qui empire à l'effort puis finit par se faire sentir au repos ou la nuit.</li>
+<li><strong>La fracture de fatigue :</strong> une fissure de l'os due à des chocs répétés, au tibia, aux métatarses du pied, parfois à la hanche ou au bassin. Douleur <strong>très localisée</strong>, sur un point précis, qui empire à l'effort puis finit par se faire sentir au repos ou la nuit. Une revue de 2014 consacrée aux coureurs de fond la décrit comme l'étape d'un continuum : réaction de stress de l'os, puis fissure, et au pire fracture complète.</li>
 <li><strong>La fasciite plantaire :</strong> douleur sous le talon, vive aux premiers pas du matin ou après être resté assis.</li>
 </ul>
 <p>Le piège de la tendinopathie, c'est qu'elle « s'échauffe » : tu as mal dix minutes, puis plus rien, alors tu continues. Le soir ou le lendemain, elle te présente l'addition.</p>
@@ -320,7 +393,7 @@ ENTRIES = [
 <h2>Courbature ou blessure : comment faire la différence ?</h2>
 <ul>
 <li><strong>Localisation :</strong> la courbature est diffuse, dans le corps du muscle, souvent des deux côtés. La blessure de surmenage est précise, sur un tendon ou un os, souvent d'un seul côté.</li>
-<li><strong>Évolution :</strong> la courbature culmine 24 à 72 heures après la séance, puis s'efface. La douleur de surmenage revient à chaque séance, de plus en plus tôt.</li>
+<li><strong>Évolution :</strong> la courbature culmine en général 48 à 72 heures après la séance, selon une revue de 2018, puis s'efface. La douleur de surmenage revient à chaque séance, de plus en plus tôt.</li>
 <li><strong>Réaction au mouvement :</strong> bouger soulage la courbature. Une douleur qui augmente au fil de l'effort, ou qui modifie ta foulée, est un signal d'alarme.</li>
 </ul>
 <p>Pour ce qui relève de la simple courbature, les vrais remèdes sont ici : <a href="/articles/courbatures-que-faire.html">que faire contre les courbatures</a>.</p>
@@ -330,7 +403,7 @@ ENTRIES = [
 <ul>
 <li><strong>Une hausse de charge trop rapide :</strong> plus de kilomètres, plus d'intensité, du dénivelé ou des sauts nouveaux. C'est ce que surveille le <a href="/articles/ratio-charge-aigue-chronique.html">ratio charge aiguë / chronique</a> et ce que cherche à freiner la <a href="/articles/regle-des-10-pourcent-course.html">règle des 10 %</a>.</li>
 <li><strong>Une récupération insuffisante :</strong> séances dures enchaînées, nuits courtes, stress élevé. Le tissu n'a pas le temps de se reconstruire entre deux sollicitations.</li>
-<li><strong>Un apport énergétique trop faible :</strong> manger trop peu pour ta dépense fragilise les os. Chez la sportive, la disparition des règles est un signal d'alerte, expliqué dans <a href="/articles/cycle-menstruel-et-sport.html">cycle menstruel et sport</a>.</li>
+<li><strong>Un apport énergétique trop faible :</strong> manger trop peu pour ta dépense fragilise les os. Chez des athlètes de fond d'élite (2018), les blessures osseuses étaient environ 4,5 fois plus fréquentes en cas d'absence de règles, ou de testostérone basse chez les hommes. Chez la sportive, la disparition des règles est donc un signal d'alerte, expliqué dans <a href="/articles/cycle-menstruel-et-sport.html">cycle menstruel et sport</a>.</li>
 <li><strong>Les changements brusques :</strong> nouvelles chaussures, nouvelle surface, reprise après une coupure. Et une blessure passée au même endroit augmente le risque.</li>
 </ul>
 
@@ -338,12 +411,12 @@ ENTRIES = [
 <ul>
 <li><strong>Réduis la charge tout de suite :</strong> moins de volume, moins d'intensité, et supprime ce qui déclenche la douleur (fractionné, descentes, sauts).</li>
 <li><strong>Garde ce qui ne fait pas mal :</strong> vélo, natation ou renforcement indolore entretiennent ta forme sans agresser la zone.</li>
-<li><strong>Ne serre pas les dents :</strong> continuer malgré la douleur transforme souvent une gêne de deux semaines en arrêt de deux mois.</li>
-<li><strong>Pour un tendon :</strong> le repos total n'est pas toujours la solution. Un kinésithérapeute peut te proposer un renforcement progressif, base de la prise en charge des tendinopathies.</li>
+<li><strong>Ne serre pas les dents :</strong> continuer malgré la douleur peut faire passer une simple réaction de l'os à une vraie fracture, et une gêne de quelques semaines à un arrêt de plusieurs mois.</li>
+<li><strong>Pour un tendon :</strong> le repos total n'est pas toujours la solution. Un kinésithérapeute peut te proposer un renforcement progressif, base de la prise en charge des tendinopathies : une synthèse de 25 revues systématiques (2020) désigne les exercices excentriques comme le traitement le plus constamment efficace.</li>
 </ul>
 
 <h2>Quand faut-il consulter un médecin ?</h2>
-<p>Consulte sans attendre en cas de <strong>douleur osseuse localisée qui s'aggrave à l'effort</strong>, de <strong>gonflement</strong>, de <strong>boiterie</strong>, de douleur qui persiste au repos ou la nuit, ou de douleur à l'aine en courant. C'est le tableau d'une possible fracture de fatigue, et certaines localisations, comme la hanche, ne tolèrent aucun retard. Même consigne si une douleur ne s'améliore pas après une à deux semaines de charge réduite. Au début, une radio peut être normale : seul un professionnel pose le diagnostic.</p>
+<p>Consulte sans attendre en cas de <strong>douleur osseuse localisée qui s'aggrave à l'effort</strong>, de <strong>gonflement</strong>, de <strong>boiterie</strong>, de douleur qui persiste au repos ou la nuit, ou de douleur à l'aine en courant. C'est le tableau d'une possible fracture de fatigue, et certaines localisations, comme le col du fémur, ne tolèrent aucun retard : un diagnostic tardif augmente le risque que la fracture se déplace. Même consigne si une douleur ne s'améliore pas après une à deux semaines de charge réduite. Au début, une radio peut être normale : selon une revue systématique de 2016, elle ne repère que 12 à 56 % des fractures de fatigue, l'IRM étant l'examen le plus fiable. Seul un professionnel pose le diagnostic.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -359,6 +432,20 @@ ENTRIES = [
              "a": "Pas forcément. Il faut réduire ou supprimer ce qui déclenche la douleur, mais le repos total n'est pas toujours la meilleure option pour un tendon. Un kinésithérapeute peut proposer un renforcement progressif adapté, qui est la base de la prise en charge."},
             {"q": "Combien de temps dure une périostite tibiale ?",
              "a": "Cela dépend surtout de la précocité de la réaction : prise tôt, avec une charge réduite, elle s'améliore souvent en quelques semaines ; négligée, elle peut traîner des mois. Si la douleur se concentre sur un point précis de l'os, fais vérifier qu'il ne s'agit pas d'une fracture de fatigue."},
+        ],
+        "sources": [
+            {"t": "Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. <em>J Orthop Sports Phys Ther</em>. 2014.",
+             "u": "https://doi.org/10.2519/jospt.2014.5334"},
+            {"t": "Hotfiel T, Freiwald J, Hoppe MW, et al. Advances in delayed-onset muscle soreness (DOMS): part I: pathogenesis and diagnostics. <em>Sportverletz Sportschaden</em>. 2018.",
+             "u": "https://doi.org/10.1055/a-0753-1884"},
+            {"t": "Heikura IA, Uusitalo ALT, Stellingwerff T, et al. Low energy availability is difficult to assess but outcomes have large impact on bone injury rates in elite distance athletes. <em>Int J Sport Nutr Exerc Metab</em>. 2018.",
+             "u": "https://doi.org/10.1123/ijsnem.2017-0313"},
+            {"t": "Irby A, Gutierrez J, Chamberlin C, et al. Clinical management of tendinopathy: a systematic review of systematic reviews evaluating the effectiveness of tendinopathy treatments. <em>Scand J Med Sci Sports</em>. 2020.",
+             "u": "https://doi.org/10.1111/sms.13734"},
+            {"t": "Robertson GA, Wood AM. Femoral neck stress fractures in sport: a current concepts review. <em>Sports Med Int Open</em>. 2017.",
+             "u": "https://doi.org/10.1055/s-0043-103946"},
+            {"t": "Wright AA, Hegedus EJ, Lenchik L, et al. Diagnostic accuracy of various imaging modalities for suspected lower extremity stress fractures: a systematic review with evidence-based recommendations for clinical practice. <em>Am J Sports Med</em>. 2016.",
+             "u": "https://doi.org/10.1177/0363546515574066"},
         ],
     },
 ]

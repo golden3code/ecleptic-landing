@@ -93,11 +93,11 @@ PAGE = {
 <p>Ce n'est pas non plus un indicateur du jour. Pour savoir si tu peux pousser aujourd'hui, regarde ton <a href="/methode/readiness-score.html">Readiness Score</a> ; l'âge biologique, lui, évolue au rythme de tes habitudes. Et si tu ressens un essoufflement inhabituel, une douleur thoracique, des palpitations ou un malaise, c'est un médecin qu'il faut consulter ; en cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
-        "Nes B. M. et al. (2014), un modèle simple de capacité cardiorespiratoire sans effort prédit la mortalité à long terme, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
-        "Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
-        "Daniels J. et Gilbert J. (1979), tables de performance VDOT, <em>Oxygen Power</em>.",
-        "OMS (2011), tour de taille et rapport taille-hanches : rapport d'une consultation d'experts.",
+        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/MSS.0b013e31821d3f6f" rel="noopener" target="_blank">doi:10.1249/MSS.0b013e31821d3f6f</a>',
+        "Nes B. M. et al. (2014), un modèle simple de capacité cardiorespiratoire sans effort prédit la mortalité à long terme, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/MSS.0000000000000219" rel="noopener" target="_blank">doi:10.1249/MSS.0000000000000219</a>',
+        "Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/00005768-199012000-00021" rel="noopener" target="_blank">doi:10.1249/00005768-199012000-00021</a>',
+        "Daniels J. et Gilbert J. (1979), tables de performance VDOT, <em>Oxygen Power</em>." ' <a href="https://books.google.com/books?id=h7f_tgAACAAJ" rel="noopener" target="_blank">Google Livres</a>',
+        "OMS (2011), tour de taille et rapport taille-hanches : rapport d'une consultation d'experts." ' <a href="https://www.who.int/publications/i/item/9789241501491" rel="noopener" target="_blank">who.int</a>',
     ],
     "faq": [
         {"q": "Comment est calculé l'âge biologique dans Ecleptic ?",

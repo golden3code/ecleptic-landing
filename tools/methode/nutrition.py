@@ -85,9 +85,9 @@ PAGE = {
 <p>Si tu suis un régime lié à une maladie, si tu es enceinte, si tu prends un traitement, ou si ta relation à la nourriture devient une source d'angoisse, c'est un médecin ou un diététicien qu'il faut voir, pas une app. Et si un malaise ou un symptôme inhabituel apparaît, consulte ; en cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "ANSES, table de composition nutritionnelle des aliments Ciqual.",
-        "USDA, base de données FoodData Central.",
-        "Open Food Facts, base collaborative de produits alimentaires.",
+        "ANSES, table de composition nutritionnelle des aliments Ciqual." ' <a href="https://ciqual.anses.fr/" rel="noopener" target="_blank">ciqual.anses.fr</a>',
+        "USDA, base de données FoodData Central." ' <a href="https://fdc.nal.usda.gov/" rel="noopener" target="_blank">fdc.nal.usda.gov</a>',
+        "Open Food Facts, base collaborative de produits alimentaires." ' <a href="https://fr.openfoodfacts.org/" rel="noopener" target="_blank">fr.openfoodfacts.org</a>',
     ],
     "faq": [
         {"q": "Comment une appli calcule-t-elle les calories d'un repas en photo ?",

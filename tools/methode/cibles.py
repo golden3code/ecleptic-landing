@@ -117,8 +117,8 @@ PAGE = {
 <p>Ce n'est pas non plus un suivi diététique médical. Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose aucun diagnostic et ne remplace ni un médecin ni un diététicien. En cas de maladie chronique, de grossesse, d'antécédents de troubles du comportement alimentaire ou de perte de poids inexpliquée, c'est à un professionnel de santé de fixer tes apports.</p>
 """,
     "refs": [
-        "Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>.",
-        "Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>.",
+        "Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>." ' <a href="https://doi.org/10.1093/ajcn/51.2.241" rel="noopener" target="_blank">doi:10.1093/ajcn/51.2.241</a>',
+        "Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>." ' <a href="https://doi.org/10.1016/S0140-6736(11)60812-X" rel="noopener" target="_blank">doi:10.1016/S0140-6736(11)60812-X</a>',
     ],
     "faq": [
         {"q": "Pourquoi mes calories cibles changent-elles d'une semaine à l'autre ?",

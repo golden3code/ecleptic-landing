@@ -494,6 +494,7 @@ article caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(-
 article th{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--gold);text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);white-space:nowrap}
 article td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
 article td.n,article th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:640px){article .grp{display:none}article.data th,article.data td{font-size:14px}article.data th{white-space:normal;letter-spacing:.12em}}
 """
 
 # Visites venant d'un assistant IA (ChatGPT, Perplexity, Claude, Gemini, Copilot…) :
@@ -930,8 +931,10 @@ def article_page(a, others, lang="fr"):
     v = article_view(a, lang)
     alt_fr, alt_en = article_path(a, "fr"), article_path(a, "en")
     url = SITE + v["path"]
-    more = "\n".join('<a href="%s">%s</a>' % (article_path(o, lang), html.escape(article_view(o, lang)["title"]))
-                     for o in others[:3])
+    data_links = ['<a href="%s">%s</a>' % (data_path(k, lang), html.escape(DATA_TEXTES[k][lang]["title"].split(":")[0].strip()))
+                  for k in DATA_PAGES if a["slug"] in DATA_TEXTES[k].get("articles", [])][:1]
+    more = "\n".join(data_links + ['<a href="%s">%s</a>' % (article_path(o, lang), html.escape(article_view(o, lang)["title"]))
+                                   for o in others[:3 - len(data_links)]])
     img = img_path(a)
     og_image = ("\n" + og_image_tags(img)) if img else ""
     # Photo = élément LCP sur mobile : chargée en priorité, version adaptée à l'écran.
@@ -1607,11 +1610,10 @@ def food_name(f, lang):
 
 
 def short_food(f, lang):
-    """Nom court pour une phrase : jusqu'à la première virgule, minuscule initiale."""
-    n = re.split(r",", food_name(f, lang))[0].strip()
-    if lang == "fr" and n[:1].isupper() and not n[1:2].isupper():
-        n = n[0].lower() + n[1:]
-    return n
+    """Nom officiel complet (couper à la virgule fausserait le sens : « Oeuf, blanc, en
+    poudre » n'est pas un œuf), entre guillemets pour signaler la dénomination Ciqual."""
+    n = food_name(f, lang).strip()
+    return ("« %s »" % n) if lang == "fr" else ("“%s”" % n)
 
 
 DATA_UI = {
@@ -1631,12 +1633,12 @@ DATA_UI = {
                       "Le classement « au quotidien » écarte les épices, herbes, algues et condiments, les compléments et aliments destinés à une alimentation particulière, les aliments infantiles, l'alcool et les viandes ou poissons crus (leur version cuite est gardée). "
                       "Pour varier les exemples, un seul aliment est gardé par nom principal (le plus riche). "
                       "Les valeurs « traces » comptent pour zéro ; les valeurs inférieures au seuil de quantification ne sont pas classées.%s"),
-           "nrv_note": " Le % VNR rapporte la teneur pour 100 g à la valeur nutritionnelle de référence européenne (%s %s par jour, règlement UE nº 1169/2011), celle des étiquettes : c'est un repère, pas ton besoin personnel.",
+           "nrv_note": " Le %% VNR rapporte la teneur pour 100 g à la valeur nutritionnelle de référence européenne (%s %s par jour, règlement UE nº 1169/2011), celle des étiquettes : c'est un repère, pas ton besoin personnel.",
            "atyp": " Une valeur manifestement atypique a été écartée : %s.",
            "attribution": "Source des données : Anses. 2025. Table de composition nutritionnelle des aliments Ciqual (version du 3 novembre 2025), licence CC BY 4.0. Classement et mise en forme : Ecleptic.",
            "faq_q": "Quel aliment contient le plus de %s ?",
-           "faq_a": "Parmi les aliments du quotidien de la table Ciqual 2025 de l'ANSES, %s arrive en tête avec %s %s pour 100 g, devant %s (%s %s) et %s (%s %s).",
-           "lead": "Selon la table Ciqual 2025 de l'ANSES, les aliments du quotidien les plus riches en %s sont %s (%s %s pour 100 g), %s (%s %s) et %s (%s %s).",
+           "faq_a": "En tête des aliments du quotidien de la table Ciqual 2025 de l'ANSES : %s, avec %s %s pour 100 g, devant %s (%s %s) et %s (%s %s).",
+           "lead": "Selon la table Ciqual 2025 de l'ANSES, le trio de tête des aliments du quotidien les plus riches en %s : %s (%s %s pour 100 g), %s (%s %s) et %s (%s %s).",
            "reward_h2": "Ce que ce tableau recense,<br>l'app le compte pour toi.",
            "reward_p": "Scanne ton repas : Ecleptic retrouve chaque aliment dans les bases officielles et suit tes apports en micronutriments, jour après jour. La bêta iOS est ouverte à un petit cercle.",
            "more": "Pour aller plus loin", "others": "Les autres classements",
@@ -1662,12 +1664,12 @@ DATA_UI = {
                       "The everyday ranking leaves out spices, herbs, seaweed and condiments, supplements and foods for special medical purposes, baby foods, alcohol, and raw meat or fish (the cooked version is kept). "
                       "To keep the examples varied, only one food per main name is kept (the richest). "
                       "Values listed as “traces” count as zero; values below the quantification limit are not ranked.%s"),
-           "nrv_note": " % NRV compares the content per 100 g with the EU nutrient reference value (%s %s per day, Regulation (EU) No 1169/2011), the one used on food labels: a benchmark, not your personal requirement.",
+           "nrv_note": " %% NRV compares the content per 100 g with the EU nutrient reference value (%s %s per day, Regulation (EU) No 1169/2011), the one used on food labels: a benchmark, not your personal requirement.",
            "atyp": " One clearly atypical value was set aside: %s.",
            "attribution": "Data source: Anses. 2025. Ciqual French food composition table (version of 3 November 2025), CC BY 4.0 licence. Ranking and layout: Ecleptic.",
            "faq_q": "Which food has the most %s?",
-           "faq_a": "Among everyday foods in the 2025 Ciqual table from ANSES, %s comes first with %s %s per 100 g, ahead of %s (%s %s) and %s (%s %s).",
-           "lead": "According to the 2025 Ciqual table from ANSES, France's food safety agency, the everyday foods highest in %s are %s (%s %s per 100 g), %s (%s %s) and %s (%s %s).",
+           "faq_a": "Top of the everyday foods in the 2025 Ciqual table from ANSES: %s, with %s %s per 100 g, ahead of %s (%s %s) and %s (%s %s).",
+           "lead": "According to the 2025 Ciqual table from ANSES, France's food safety agency, the top three everyday foods highest in %s: %s (%s %s per 100 g), %s (%s %s) and %s (%s %s).",
            "reward_h2": "What this table lists,<br>the app counts for you.",
            "reward_p": "Scan your meal: Ecleptic matches every food against official databases and tracks your micronutrient intake, day after day. The iOS beta is open to a small circle.",
            "more": "Go further", "others": "Other rankings",
@@ -1687,14 +1689,14 @@ def DU(lang, k):
 def data_table(rows, lang, unit, nrv=None, value_label=None, show_group=True, numbered=True, caption=None):
     head = ((("<th class=\"n\">%s</th>" % DU(lang, "c_rank")) if numbered else "")
             + "<th>%s</th>" % DU(lang, "c_food")
-            + (("<th>%s</th>" % DU(lang, "c_grp")) if show_group else "")
-            + "<th class=\"n\">%s</th>" % (value_label or ("%s (%s)" % (DU(lang, "c_val"), unit)))
+            + (("<th class=\"grp\">%s</th>" % DU(lang, "c_grp")) if show_group else "")
+            + "<th class=\"n\">%s</th>" % (value_label or ("%s / 100 g" % unit))
             + (("<th class=\"n\">%s</th>" % DU(lang, "c_nrv")) if nrv else ""))
     body = []
     for i, f in enumerate(rows):
         body.append("<tr>" + (("<td class=\"n\">%d</td>" % (i + 1)) if numbered else "")
                     + "<td>%s</td>" % html.escape(food_name(f, lang))
-                    + (("<td>%s</td>" % html.escape(f["grp_" + lang].capitalize())) if show_group else "")
+                    + (("<td class=\"grp\">%s</td>" % html.escape(f["grp_" + lang].capitalize())) if show_group else "")
                     + "<td class=\"n\">%s</td>" % fmt_num(f["v"], lang)
                     + (("<td class=\"n\">%d %%</td>" % round(f["v"] / nrv * 100)) if nrv else "") + "</tr>")
     cap = "\n<caption>%s</caption>" % caption if caption else ""
@@ -1718,8 +1720,6 @@ def data_page(key, lang="fr"):
             "a": DU(lang, "faq_a") % (short_food(top[0], lang), fmt_num(top[0]["v"], lang), u,
                                       short_food(top[1], lang), fmt_num(top[1]["v"], lang), u,
                                       short_food(top[2], lang), fmt_num(top[2]["v"], lang), u)}] + list(t.get("faq", []))
-    if lang == "fr":
-        faq[0]["a"] = faq[0]["a"][0].upper() + faq[0]["a"][1:]
     faqblock, faqjsonld = faq_parts(faq, lang)
     cap = DU(lang, "attribution")
     tables = []
@@ -1734,8 +1734,8 @@ def data_page(key, lang="fr"):
                 fam_rows.append("<tr><td>%s</td><td>%s</td><td class=\"n\">%s</td></tr>" % (
                     html.escape(fam[lang]) if i == 0 else "", html.escape(food_name(f, lang)), fmt_num(f["v"], lang)))
         if fam_rows:
-            tables.append('<h2>%s</h2>\n<div class="tablewrap"><table>\n<caption>%s</caption>\n<thead><tr><th>%s</th><th>%s</th><th class="n">%s (%s)</th></tr></thead>\n<tbody>\n%s\n</tbody>\n</table></div>'
-                          % (DU(lang, "fam_h"), cap, DU(lang, "c_fam"), DU(lang, "c_food"), DU(lang, "c_val"), unit, "\n".join(fam_rows)))
+            tables.append('<h2>%s</h2>\n<div class="tablewrap"><table>\n<caption>%s</caption>\n<thead><tr><th>%s</th><th>%s</th><th class="n">%s / 100 g</th></tr></thead>\n<tbody>\n%s\n</tbody>\n</table></div>'
+                          % (DU(lang, "fam_h"), cap, DU(lang, "c_fam"), DU(lang, "c_food"), unit, "\n".join(fam_rows)))
         if key == "proteines" and n.get("density"):
             tables.append("<h2>%s</h2>\n<p>%s</p>\n%s" % (DU(lang, "dens_h"), DU(lang, "dens_p"),
                                                           data_table(n["density"], lang, unit, value_label=DU(lang, "c_dens"), caption=cap)))
@@ -2045,8 +2045,8 @@ def sitemap():
 
 
 def LANGS_BUILT():
-    """Le français toujours ; l'anglais dès qu'il existe au moins une page anglaise générée."""
-    return ("fr", "en") if (I.EN_ARTICLES or I.EN_METHODE or DATA_PAGES) else ("fr",)
+    """Le français toujours ; l'anglais seulement quand i18n.EN_LIVE est vrai."""
+    return ("fr", "en") if I.EN_LIVE else ("fr",)
 
 
 def _write(root, rel, content):

@@ -81,10 +81,10 @@ PAGE = {
 <p>Si tu ressens des palpitations, une douleur thoracique, un malaise ou un essoufflement anormal, consulte un médecin. En cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Fox K. et al. (2007), la fréquence cardiaque de repos dans les maladies cardiovasculaires, <em>Journal of the American College of Cardiology</em>.",
-        "Jensen M. T. et al. (2013), fréquence cardiaque de repos, condition physique et mortalité (Copenhagen Male Study), <em>Heart</em>.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
-        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
+        "Fox K. et al. (2007), la fréquence cardiaque de repos dans les maladies cardiovasculaires, <em>Journal of the American College of Cardiology</em>." ' <a href="https://doi.org/10.1016/j.jacc.2007.04.079" rel="noopener" target="_blank">doi:10.1016/j.jacc.2007.04.079</a>',
+        "Jensen M. T. et al. (2013), fréquence cardiaque de repos, condition physique et mortalité (Copenhagen Male Study), <em>Heart</em>." ' <a href="https://doi.org/10.1136/heartjnl-2012-303375" rel="noopener" target="_blank">doi:10.1136/heartjnl-2012-303375</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
+        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/MSS.0b013e31821d3f6f" rel="noopener" target="_blank">doi:10.1249/MSS.0b013e31821d3f6f</a>',
     ],
     "faq": [
         {"q": "Quelle est une fréquence cardiaque au repos normale ?",

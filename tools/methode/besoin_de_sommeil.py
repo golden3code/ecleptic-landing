@@ -73,8 +73,8 @@ PAGE = {
 <p>Ecleptic est un outil de bien-être, pas un dispositif médical : il ne diagnostique aucun trouble du sommeil. Si tu dors suffisamment mais restes épuisé, si ton entourage remarque de forts ronflements ou des pauses dans ta respiration, ou si tes difficultés à dormir durent depuis plusieurs semaines, parles-en à un médecin. Et si tu te réveilles avec une douleur thoracique, des palpitations ou un essoufflement anormal, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, <em>Sleep Health</em>.",
-        "Windred D. P. et al. (2024), la régularité du sommeil prédit mieux la mortalité que sa durée, <em>Sleep</em>.",
+        "Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, <em>Sleep Health</em>." ' <a href="https://doi.org/10.1016/j.sleh.2014.12.010" rel="noopener" target="_blank">doi:10.1016/j.sleh.2014.12.010</a>',
+        "Windred D. P. et al. (2024), la régularité du sommeil prédit mieux la mortalité que sa durée, <em>Sleep</em>." ' <a href="https://doi.org/10.1093/sleep/zsad253" rel="noopener" target="_blank">doi:10.1093/sleep/zsad253</a>',
     ],
     "faq": [
         {"q": "Combien d'heures de sommeil faut-il selon l'âge ?",

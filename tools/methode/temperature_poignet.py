@@ -69,8 +69,8 @@ PAGE = {
 <p>Un malaise, une douleur dans la poitrine, un essoufflement anormal ou des palpitations ne se surveillent pas avec une montre : consulte sans attendre et, en cas d'urgence, appelle le 15 ou le 112. Ecleptic est un outil de bien-être, pas un dispositif médical.</p>
 """,
     "refs": [
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
-        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>.",
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
+        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>." ' <a href="https://doi.org/10.1371/journal.pone.0243693" rel="noopener" target="_blank">doi:10.1371/journal.pone.0243693</a>',
     ],
     "faq": [
         {"q": "À quoi sert la température du poignet sur l'Apple Watch ?",

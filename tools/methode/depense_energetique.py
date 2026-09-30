@@ -75,8 +75,8 @@ PAGE = {
 <p>Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose aucun diagnostic. Une perte ou une prise de poids inexpliquée, sans changement de tes habitudes, mérite l'avis d'un médecin. Même chose si tu es enceinte, si tu as une maladie chronique ou des antécédents de troubles du comportement alimentaire : c'est à un professionnel de fixer tes apports. Et si tu fais des malaises, ressens des palpitations ou un essoufflement anormal en réduisant tes apports, arrête et consulte ; en urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>.",
-        "Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>.",
+        "Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, <em>American Journal of Clinical Nutrition</em>." ' <a href="https://doi.org/10.1093/ajcn/51.2.241" rel="noopener" target="_blank">doi:10.1093/ajcn/51.2.241</a>',
+        "Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, <em>The Lancet</em>." ' <a href="https://doi.org/10.1016/S0140-6736(11)60812-X" rel="noopener" target="_blank">doi:10.1016/S0140-6736(11)60812-X</a>',
     ],
     "faq": [
         {"q": "Comment calculer sa dépense énergétique journalière ?",

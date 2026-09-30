@@ -71,8 +71,8 @@ PAGE = {
 <p>Un essoufflement inhabituel, des lèvres ou des ongles bleutés, une douleur dans la poitrine ou un malaise : c'est une urgence, appelle le 15 ou le 112. Et ne compte jamais sur une montre pour te rassurer quand tu te sens mal.</p>
 """,
     "refs": [
-        "OMS (2011), manuel de formation à l'oxymétrie de pouls.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
+        "OMS (2011), manuel de formation à l'oxymétrie de pouls." ' <a href="https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf" rel="noopener" target="_blank">who.int</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
     ],
     "faq": [
         {"q": "Quel taux de saturation en oxygène est normal ?",

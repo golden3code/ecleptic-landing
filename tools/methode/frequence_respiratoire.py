@@ -73,9 +73,9 @@ PAGE = {
 <p>Un essoufflement anormal, une douleur dans la poitrine, des palpitations ou un malaise ne se surveillent pas sur une app : consulte un médecin sans attendre et, en cas d'urgence, appelle le 15 ou le 112. Ecleptic est un outil de bien-être, pas un dispositif médical.</p>
 """,
     "refs": [
-        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>.",
-        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
+        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>." ' <a href="https://doi.org/10.1371/journal.pone.0243693" rel="noopener" target="_blank">doi:10.1371/journal.pone.0243693</a>',
+        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>." ' <a href="https://doi.org/10.3389/fpubh.2017.00258" rel="noopener" target="_blank">doi:10.3389/fpubh.2017.00258</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
     ],
     "faq": [
         {"q": "Quelle est la fréquence respiratoire normale pendant le sommeil ?",

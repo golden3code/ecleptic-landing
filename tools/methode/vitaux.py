@@ -79,11 +79,11 @@ PAGE = {
 <p>Enfin, ce moteur est un outil de bien-être, pas un dispositif médical : il ne pose aucun diagnostic. Un signal sous ta normale t'invite à lever le pied, pas à t'alarmer. Si une valeur inhabituelle persiste, ou si tu ressens un malaise, une douleur thoracique, un essoufflement anormal ou des palpitations, consulte un médecin. En cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, <em>Circulation</em>.",
-        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
-        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>.",
-        "OMS (2011), manuel de formation à l'oxymétrie de pouls.",
+        "Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, <em>Circulation</em>." ' <a href="https://doi.org/10.1161/01.CIR.93.5.1043" rel="noopener" target="_blank">doi:10.1161/01.CIR.93.5.1043</a>',
+        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>." ' <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
+        "Miller D. J. et al. (2020), variations de la fréquence respiratoire nocturne et détection précoce d'une infection, <em>PLOS ONE</em>." ' <a href="https://doi.org/10.1371/journal.pone.0243693" rel="noopener" target="_blank">doi:10.1371/journal.pone.0243693</a>',
+        "OMS (2011), manuel de formation à l'oxymétrie de pouls." ' <a href="https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf" rel="noopener" target="_blank">who.int</a>',
     ],
     "faq": [
         {"q": "Comment savoir si mes vitaux de la nuit sont normaux ?",

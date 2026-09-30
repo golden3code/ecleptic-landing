@@ -20,17 +20,17 @@ ENTRIES = [
 <p>Pas en soi. Les coureurs de haut niveau courent quasiment tous les jours, parfois deux fois par jour — mais après des années de construction, et avec une immense majorité de footings lents. Le problème n'est pas la fréquence, c'est la <strong>charge</strong> qu'elle permet d'empiler sans s'en rendre compte.</p>
 <p>La course est un sport d'impact : à chaque foulée, des milliers de fois par sortie, ton corps encaisse <strong>environ deux à trois fois ton poids</strong>. Et la plupart des blessures du coureur ne viennent pas d'un accident, mais de l'accumulation :</p>
 <ul>
-<li><strong>Les classiques :</strong> périostite tibiale, tendinite d'Achille, syndrome de l'essuie-glace au genou, aponévrosite plantaire et, dans les cas extrêmes, fracture de fatigue.</li>
+<li><strong>Les classiques :</strong> périostite tibiale, tendinite d'Achille et aponévrosite plantaire — le trio de tête selon une revue systématique de 2012 (8 études, 3 500 coureurs) —, mais aussi syndrome de l'essuie-glace au genou et, dans les cas extrêmes, fracture de fatigue.</li>
 <li><strong>Le mécanisme commun :</strong> des tissus sollicités plus vite qu'ils ne se reconstruisent. Sans jour allégé, ils n'ont jamais le temps de rattraper leur retard.</li>
 <li><strong>Le suspect habituel :</strong> une hausse trop rapide du volume ou de l'intensité. Aucune paire de chaussures ne compense une charge mal dosée.</li>
 </ul>
 <p>Pour reconnaître ces douleurs avant qu'elles ne t'arrêtent des semaines, garde en tête <a href="/articles/blessure-de-surmenage-signes.html">les signes d'une blessure de surmenage</a>.</p>
 
 <h2>Courir tous les jours quand on débute : pourquoi c'est un piège</h2>
-<p>En quelques semaines, ton souffle progresse de façon spectaculaire. Tes tendons, tes os et tes cartilages, eux, s'adaptent sur <strong>des mois</strong>. Ce décalage crée une fenêtre dangereuse : tu te sens capable d'en faire plus, ton cœur dit oui, et c'est ton tendon d'Achille qui paie l'addition.</p>
+<p>En quelques semaines, ton souffle progresse de façon spectaculaire. Tes tendons, tes os et tes cartilages, eux, s'adaptent sur <strong>des mois</strong>. Ce décalage crée une fenêtre dangereuse : tu te sens capable d'en faire plus, ton cœur dit oui, et c'est ton tendon d'Achille qui paie l'addition. Les chiffres le confirment : selon une méta-analyse de 2015 (13 études), les débutants se blessent en moyenne 17,8 fois pour 1 000 heures de course, contre 7,7 chez les coureurs loisirs réguliers — plus du double.</p>
 <ul>
 <li><strong>Repère de départ :</strong> trois sorties par semaine, un jour sur deux, en alternant course et marche si besoin.</li>
-<li><strong>Repère de progression :</strong> passe à quatre sorties quand trois ne laissent plus ni douleur ni fatigue qui traîne. Augmente ensuite le volume par petits paliers — la <a href="/articles/regle-des-10-pourcent-course.html">règle des 10 %</a> est un repère empirique utile, pas une loi.</li>
+<li><strong>Repère de progression :</strong> passe à quatre sorties quand trois ne laissent plus ni douleur ni fatigue qui traîne. Augmente ensuite le volume par petits paliers — la <a href="/articles/regle-des-10-pourcent-course.html">règle des 10 %</a> est un repère empirique, pas une loi : dans un essai néerlandais de 2008 (532 débutants), un programme calqué sur elle n'a pas réduit les blessures (20,8 % de blessés contre 20,3 %). L'essentiel est d'éviter les bonds : dans une cohorte danoise de 874 débutants, ceux qui augmentaient leur distance de plus de 30 % en deux semaines semblaient plus exposés aux blessures liées au volume.</li>
 <li><strong>Repère de patience :</strong> la course quotidienne se mérite après plusieurs mois de pratique régulière sans bobo, pas après trois semaines d'enthousiasme.</li>
 </ul>
 
@@ -40,7 +40,7 @@ ENTRIES = [
 <li><strong>80 % de facile, pour de vrai.</strong> La grande majorité de tes sorties doit se courir en <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a>, à une allure où tu peux parler en phrases complètes. Courir tous les jours « moyennement vite », c'est cumuler la fatigue sans le bénéfice.</li>
 <li><strong>Une ou deux séances dures maximum</strong> par semaine — fractionné, côtes, allure tempo —, jamais deux jours de suite.</li>
 <li><strong>Au moins un jour allégé :</strong> vingt minutes très lentes, du vélo ou de la natation, ou un vrai repos. C'est ce jour-là qui rend les six autres possibles.</li>
-<li><strong>Du renforcement musculaire</strong> deux fois par semaine, en particulier pour les mollets, les cuisses et les hanches : c'est l'une des mesures qui protègent le mieux des blessures.</li>
+<li><strong>Du renforcement musculaire</strong> deux fois par semaine, en particulier pour les mollets, les cuisses et les hanches : c'est l'une des mesures qui protègent le mieux des blessures. Dans une méta-analyse de 2014 (25 essais, 26 610 sportifs), le renforcement réduisait les blessures sportives à moins d'un tiers, quand les étirements n'avaient aucun effet mesurable.</li>
 </ul>
 <p>Et soigne ton sommeil : c'est la nuit que tes tissus se réparent, pas pendant la sortie.</p>
 
@@ -61,11 +61,25 @@ ENTRIES = [
 """,
         "faq": [
             {"q": "Combien de temps courir par jour pour être en forme ?",
-             "a": "Pour la santé, 20 à 30 minutes de course facile suffisent largement, et même de petites doses apportent déjà des bénéfices. Si tu cours tous les jours, garde la plupart des sorties à une allure où tu peux parler, avec une ou deux séances plus soutenues dans la semaine."},
+             "a": "Pour la santé, 20 à 30 minutes de course facile suffisent largement, et même de petites doses apportent déjà des bénéfices : selon une méta-analyse de 2020 (14 études, 232 149 participants), la pratique de la course est associée à une mortalité inférieure de 27 %, et même une sortie par semaine vaut mieux que rien, sans gain net démontré pour les doses plus fortes. Si tu cours tous les jours, garde la plupart des sorties à une allure où tu peux parler, avec une ou deux séances plus soutenues dans la semaine."},
             {"q": "Courir tous les jours fait-il maigrir ?",
              "a": "Ça augmente ta dépense, mais la perte de gras dépend du bilan calorique de la journée, et l'appétit a tendance à suivre. Trois ou quatre sorties par semaine, du renforcement et une alimentation maîtrisée donnent souvent d'aussi bons résultats, avec moins de risque de blessure."},
             {"q": "Faut-il un jour de repos quand on court ?",
              "a": "Oui, au moins un jour allégé par semaine : repos complet, sortie très courte et très lente, ou activité sans impact comme le vélo ou la natation. C'est ce jour qui laisse aux tendons et aux os le temps de se reconstruire."},
+        ],
+        "sources": [
+            {"t": "Videbæk S, Bueno AM, Nielsen RO, Rasmussen S. Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. <em>Sports Med</em>. 2015.",
+             "u": "https://doi.org/10.1007/s40279-015-0333-8"},
+            {"t": "Lopes AD, Hespanhol Júnior LC, Yeung SS, Costa LO. What are the main running-related musculoskeletal injuries? A systematic review. <em>Sports Med</em>. 2012.",
+             "u": "https://doi.org/10.1007/BF03262301"},
+            {"t": "Buist I, Bredeweg SW, van Mechelen W, et al. No effect of a graded training program on the number of running-related injuries in novice runners: a randomized controlled trial. <em>Am J Sports Med</em>. 2008.",
+             "u": "https://doi.org/10.1177/0363546507307505"},
+            {"t": "Nielsen RØ, Parner ET, Nohr EA, et al. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. <em>J Orthop Sports Phys Ther</em>. 2014.",
+             "u": "https://doi.org/10.2519/jospt.2014.5164"},
+            {"t": "Lauersen JB, Bertelsen DM, Andersen LB. The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials. <em>Br J Sports Med</em>. 2014.",
+             "u": "https://doi.org/10.1136/bjsports-2013-092538"},
+            {"t": "Pedisic Z, Shrestha N, Kovalchik S, et al. Is running associated with a lower risk of all-cause, cardiovascular and cancer mortality, and is the more the better? A systematic review and meta-analysis. <em>Br J Sports Med</em>. 2020.",
+             "u": "https://doi.org/10.1136/bjsports-2018-100493"},
         ],
     },
     {
@@ -85,10 +99,11 @@ ENTRIES = [
 <li><strong>Pratiquant régulier :</strong> <strong>deux séances</strong> par semaine, le point d'équilibre pour la plupart des gens. C'est ce qui fait monter ta <a href="/articles/vo2max-comment-l-ameliorer.html">VO2max</a> sans exploser ta fatigue.</li>
 <li><strong>Confirmé :</strong> <strong>trois séances</strong> possibles, dans un plan structuré, avec un sommeil solide et des semaines plus légères de temps en temps.</li>
 </ul>
+<p>L'effet est réel : selon une méta-analyse de 2015 (28 études, 723 adultes), le HIIT fait gagner en moyenne 5,5 mL/kg/min de VO2max, contre 4,9 pour l'endurance continue. Dans une étude de 2007 sur le 4 × 4 minutes, trois séances par semaine pendant huit semaines ont fait grimper la VO2max de 7,2 % chez des hommes modérément entraînés.</p>
 <p>Un point que beaucoup oublient : <strong>toutes tes séances dures comptent</strong>. Un WOD de CrossFit, un match de foot, une séance de côtes ou un cours de vélo en salle poussé à fond puisent dans le même réservoir. Si tu en fais déjà deux, ton quota d'intensité est probablement rempli.</p>
 
 <h2>Pourquoi laisser 48 heures entre deux séances ?</h2>
-<p>Une séance de HIIT sollicite fort ton système nerveux, tes muscles et tes réserves de glycogène. Il faut en général <strong>autour de 48 heures</strong> pour que tout revienne à niveau — un peu moins si tu es très entraîné, davantage si tes nuits sont courtes ou ta semaine stressante.</p>
+<p>Une séance de HIIT sollicite fort ton système nerveux, tes muscles et tes réserves de glycogène. Il faut en général <strong>24 à 48 heures</strong> pour que tout revienne à niveau : une étude française de 2023 (25 participants) a même mesuré une récupération neuromusculaire complète 24 heures après une séance de sprints courts. Les 48 heures sont donc une marge de sécurité, surtout sur les formats longs, si tes nuits sont courtes ou ta semaine stressante.</p>
 <ul>
 <li><strong>Jamais deux jours d'affilée :</strong> la deuxième séance serait moins intense, donc moins efficace, et plus risquée.</li>
 <li><strong>Intercale du facile :</strong> un footing lent, du vélo souple ou un jour de repos entre deux séances dures.</li>
@@ -97,11 +112,11 @@ ENTRIES = [
 <p>Tes signaux du matin sont de bons juges : une fréquence cardiaque de repos encore haute ou des jambes lourdes disent que tu n'as pas fini de <a href="/articles/combien-de-temps-pour-recuperer-d-une-seance.html">récupérer de ta dernière séance</a>.</p>
 
 <h2>Faire plus de HIIT, est-ce progresser plus vite ?</h2>
-<p>Non, et c'est le piège le plus fréquent. Les progrès liés à l'intensité arrivent <strong>vite</strong> — quelques semaines suffisent pour les sentir — puis <strong>plafonnent</strong>. Ajouter une quatrième ou une cinquième séance ne relance pas la courbe : ça fait grimper la fatigue, dégrade le sommeil et augmente le risque de blessure.</p>
+<p>Non, et c'est le piège le plus fréquent. Les progrès liés à l'intensité arrivent <strong>vite</strong> — quelques semaines suffisent pour les sentir — puis <strong>plafonnent</strong>. Ajouter une quatrième ou une cinquième séance ne relance pas la courbe : ça fait grimper la fatigue, dégrade le sommeil et augmente le risque de blessure. Même chez les athlètes d'endurance déjà bien entraînés, une revue de 2010 ne trouve aucune preuve convaincante que miser davantage sur les intervalles apporte des gains à long terme.</p>
 <p>Pire, à force d'enchaîner, tes intervalles perdent leur intensité réelle. Tu n'es plus assez frais pour aller vraiment haut, et tout ton entraînement glisse vers un effort <em>moyennement dur</em> : ni assez facile pour construire, ni assez dur pour stimuler. Les signes que tu en fais trop : stagnation, jambes lourdes, irritabilité, envie en berne.</p>
 
 <h2>Comment associer HIIT et endurance facile ?</h2>
-<p>La répartition qui marche chez les sportifs d'endurance, de l'amateur à l'élite, suit une <strong>logique 80/20</strong> : environ 80 % du temps à basse intensité, 20 % à haute intensité. Le HIIT, ce sont les 20 %. Les 80 %, c'est de la <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a> : elle construit le moteur sur lequel l'intensité vient s'appuyer.</p>
+<p>La répartition qui marche chez les sportifs d'endurance suit une <strong>logique 80/20</strong> : selon cette même revue de 2010, les athlètes de haut niveau font environ 80 % de leurs séances à basse intensité, et 20 % comportent du travail intense. Le principe vaut aussi pour les amateurs. Le HIIT, ce sont les 20 %. Les 80 %, c'est de la <a href="/articles/zone-2-cardio-cest-quoi.html">zone 2</a> : elle construit le moteur sur lequel l'intensité vient s'appuyer.</p>
 <ul>
 <li><strong>Exemple sur quatre séances de cardio :</strong> mardi HIIT, mercredi footing facile, vendredi HIIT, dimanche sortie longue tranquille.</li>
 <li><strong>Structure d'une séance :</strong> dix minutes d'échauffement progressif, le bloc intense, puis cinq à dix minutes de retour au calme.</li>
@@ -118,11 +133,25 @@ ENTRIES = [
 """,
         "faq": [
             {"q": "Combien de temps doit durer une séance de HIIT ?",
-             "a": "Entre 20 et 45 minutes au total, échauffement et retour au calme compris. Le travail vraiment intense ne représente que quelques minutes à une vingtaine de minutes cumulées : c'est sa qualité qui compte, pas sa durée."},
+             "a": "Entre 20 et 45 minutes au total, échauffement et retour au calme compris. Le travail vraiment intense ne représente que quelques minutes à une vingtaine de minutes cumulées. Selon une méta-analyse de 2019 (53 essais), même 5 minutes de travail intense font progresser, mais les intervalles d'au moins 2 minutes et 15 minutes cumulées ou plus donnent les meilleurs gains de VO2max."},
             {"q": "Le HIIT fait-il plus maigrir que le cardio classique ?",
-             "a": "Pas vraiment : la perte de gras dépend du bilan calorique global, et la dépense supplémentaire après la séance reste modeste. Le HIIT est surtout un excellent moyen de gagner du temps et de faire progresser ta condition cardio."},
+             "a": "Pas vraiment : la perte de gras dépend du bilan calorique global, et la dépense supplémentaire après la séance reste modeste. Selon une méta-analyse de 2017 (13 essais chez des adultes en surpoids), HIIT et cardio modéré continu réduisent la masse grasse de façon similaire, le HIIT demandant environ 40 % de temps d'entraînement en moins. C'est surtout un excellent moyen de gagner du temps et de faire progresser ta condition cardio."},
             {"q": "Peut-on faire du HIIT et de la musculation la même semaine ?",
              "a": "Oui, à condition de compter le HIIT dans ta charge totale. Place-les idéalement sur des jours différents, évite le HIIT la veille d'une grosse séance de jambes et, si les deux tombent le même jour, commence par ce qui compte le plus pour toi."},
+        ],
+        "sources": [
+            {"t": "Milanović Z, Sporiš G, Weston M. Effectiveness of high-intensity interval training (HIT) and continuous endurance training for VO2max improvements: a systematic review and meta-analysis of controlled trials. <em>Sports Med</em>. 2015.",
+             "u": "https://doi.org/10.1007/s40279-015-0365-0"},
+            {"t": "Helgerud J, Høydal K, Wang E, et al. Aerobic high-intensity intervals improve VO2max more than moderate training. <em>Med Sci Sports Exerc</em>. 2007.",
+             "u": "https://doi.org/10.1249/mss.0b013e3180304570"},
+            {"t": "Wen D, Utesch T, Wu J, et al. Effects of different protocols of high intensity interval training for VO2max improvements in adults: a meta-analysis of randomised controlled trials. <em>J Sci Med Sport</em>. 2019.",
+             "u": "https://doi.org/10.1016/j.jsams.2019.01.013"},
+            {"t": "Lloria-Varella J, Koral J, Ravel A, et al. Neuromuscular and autonomic function is fully recovered within 24 h following a sprint interval training session. <em>Eur J Appl Physiol</em>. 2023.",
+             "u": "https://doi.org/10.1007/s00421-023-05249-6"},
+            {"t": "Seiler S. What is best practice for training intensity and duration distribution in endurance athletes? <em>Int J Sports Physiol Perform</em>. 2010.",
+             "u": "https://doi.org/10.1123/ijspp.5.3.276"},
+            {"t": "Wewege M, van den Berg R, Ward RE, Keech A. The effects of high-intensity interval training vs. moderate-intensity continuous training on body composition in overweight and obese adults: a systematic review and meta-analysis. <em>Obes Rev</em>. 2017.",
+             "u": "https://doi.org/10.1111/obr.12532"},
         ],
     },
     {
@@ -136,7 +165,7 @@ ENTRIES = [
 <p>Ton muscle ne sait pas s'il pousse une barre ou ton propre corps : il réagit à l'effort qu'on lui demande. Le vrai défi du poids du corps n'est donc pas de commencer, c'est de <strong>continuer à progresser</strong> quand les exercices deviennent faciles.</p>
 
 <h2>Peut-on vraiment prendre du muscle sans matériel ?</h2>
-<p>Oui, à une condition : <strong>aller près de l'échec</strong>, c'est-à-dire finir tes séries à une, deux ou trois répétitions de ta limite. De 5 à 30 répétitions, tout le spectre fait progresser tant que l'effort est réel — c'est ce que montre la recherche sur <a href="/articles/combien-de-repetitions-pour-prendre-du-muscle.html">le nombre de répétitions pour prendre du muscle</a>. Les comparaisons entre pompes et développé couché vont dans ce sens : à effort comparable, les pectoraux progressent de façon similaire.</p>
+<p>Oui, à une condition : <strong>aller près de l'échec</strong>, c'est-à-dire finir tes séries à une, deux ou trois répétitions de ta limite. Inutile d'aller jusqu'à l'échec total, mais selon une série de méta-régressions de 2024, plus tu finis près de ta limite, plus le muscle grossit. De 5 à 30 répétitions, tout le spectre fait progresser tant que l'effort est réel — c'est ce que montre la recherche sur <a href="/articles/combien-de-repetitions-pour-prendre-du-muscle.html">le nombre de répétitions pour prendre du muscle</a>. Une méta-analyse de 2017 (21 études) trouve une prise de muscle similaire avec des charges légères ou lourdes quand les séries vont à l'échec ; seule la force maximale progresse davantage avec du lourd. Les comparaisons entre pompes et développé couché vont dans ce sens : dans une étude japonaise de 2017 (18 hommes, 8 semaines), des pompes réglées pour peser autant qu'un développé couché à 40 % du maximum ont donné les mêmes gains d'épaisseur des pectoraux et de force.</p>
 <p>Deux limites à connaître, pour mieux les contourner :</p>
 <ul>
 <li><strong>Les jambes s'habituent vite</strong> au squat classique. La parade : passer tôt aux variantes sur une jambe.</li>
@@ -163,7 +192,7 @@ ENTRIES = [
 <p>La règle simple : quand tu dépasses une vingtaine de répétitions propres sur une variante, passe à la variante plus difficile. Et note tes chiffres : sans carnet, impossible de savoir si tu progresses vraiment.</p>
 
 <h2>Quel programme suivre sur une semaine ?</h2>
-<p>Trois séances en full body, un jour de repos entre chaque — lundi, mercredi, vendredi par exemple. Échauffe-toi cinq minutes, fais <strong>3 séries</strong> par exercice, repose-toi <strong>1 à 2 minutes</strong> entre les séries, et arrête chaque série à une ou deux répétitions de l'échec.</p>
+<p>Trois séances en full body, un jour de repos entre chaque — lundi, mercredi, vendredi par exemple. Chaque muscle travaille ainsi trois fois par semaine : selon une méta-analyse de 2016, au moins deux séances par muscle et par semaine font plus progresser qu'une seule. Échauffe-toi cinq minutes, fais <strong>3 séries</strong> par exercice, repose-toi <strong>1 à 2 minutes</strong> entre les séries, et arrête chaque série à une ou deux répétitions de l'échec.</p>
 <ul>
 <li><strong>Séance A — les fondamentaux :</strong> pompes, squats, tirage sous la table, planche.</li>
 <li><strong>Séance B — l'unilatéral :</strong> fentes arrière, pompes pieds surélevés (ou mains surélevées si besoin), tirage à la porte avec la serviette, planche latérale de chaque côté.</li>
@@ -186,6 +215,20 @@ ENTRIES = [
             {"q": "Peut-on faire de la musculation au poids du corps tous les jours ?",
              "a": "Pas sur les mêmes muscles : ils ont besoin d'environ 48 heures pour se réparer après une séance dure. Trois séances full body par semaine suffisent ; les autres jours, place de la marche, de la mobilité ou du cardio léger."},
         ],
+        "sources": [
+            {"t": "Schoenfeld BJ, Grgic J, Ogborn D, Krieger JW. Strength and hypertrophy adaptations between low- vs. high-load resistance training: a systematic review and meta-analysis. <em>J Strength Cond Res</em>. 2017.",
+             "u": "https://doi.org/10.1519/JSC.0000000000002200"},
+            {"t": "Robinson ZP, Pelland JC, Remmert JF, et al. Exploring the dose-response relationship between estimated resistance training proximity to failure, strength gain, and muscle hypertrophy: a series of meta-regressions. <em>Sports Med</em>. 2024.",
+             "u": "https://doi.org/10.1007/s40279-024-02069-2"},
+            {"t": "Refalo MC, Helms ER, Trexler ET, et al. Influence of resistance training proximity-to-failure on skeletal muscle hypertrophy: a systematic review with meta-analysis. <em>Sports Med</em>. 2023.",
+             "u": "https://doi.org/10.1007/s40279-022-01784-y"},
+            {"t": "Kikuchi N, Nakazato K. Low-load bench press and push-up induce similar muscle hypertrophy and strength gain. <em>J Exerc Sci Fit</em>. 2017.",
+             "u": "https://doi.org/10.1016/j.jesf.2017.06.003"},
+            {"t": "Calatayud J, Borreani S, Colado JC, et al. Bench press and push-up at comparable levels of muscle activity results in similar strength gains. <em>J Strength Cond Res</em>. 2015.",
+             "u": "https://doi.org/10.1519/JSC.0000000000000589"},
+            {"t": "Schoenfeld BJ, Ogborn D, Krieger JW. Effects of resistance training frequency on measures of muscle hypertrophy: a systematic review and meta-analysis. <em>Sports Med</em>. 2016.",
+             "u": "https://doi.org/10.1007/s40279-016-0543-8"},
+        ],
     },
     {
         "slug": "jeune-intermittent-et-sport",
@@ -194,8 +237,8 @@ ENTRIES = [
         "description": "Jeûne intermittent et sport : compatible pour l'endurance légère, moins pour les séances intenses. Où placer tes séances, tes protéines, et qui doit l'éviter.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : <strong>oui, pour beaucoup de gens, jeûne intermittent et sport sont compatibles</strong>, surtout pour l'endurance légère et la musculation modérée. Les séances <strong>intenses ou longues</strong>, en revanche, se réussissent généralement mieux quand tu as mangé : à toi de les caler dans ta fenêtre alimentaire. Et la condition non négociable, c'est de manger <strong>assez de protéines et d'énergie</strong> sur cette fenêtre.</p>
-<p>Un rappel utile avant tout : le jeûne intermittent n'a rien de magique. À apports égaux, il ne fait pas perdre plus de gras qu'une alimentation classique. C'est une façon d'organiser tes repas, qui convient à certains et pas à d'autres.</p>
+<p>La réponse courte : <strong>oui, pour beaucoup de gens, jeûne intermittent et sport sont compatibles</strong>, surtout pour l'endurance légère et la musculation modérée. Les séances <strong>longues</strong>, en revanche, se réussissent mieux quand tu as mangé, et c'est souvent le cas des séances <strong>intenses</strong> : à toi de les caler dans ta fenêtre alimentaire. Et la condition non négociable, c'est de manger <strong>assez de protéines et d'énergie</strong> sur cette fenêtre.</p>
+<p>Un rappel utile avant tout : le jeûne intermittent n'a rien de magique. À apports égaux, il ne fait pas perdre plus de gras qu'une alimentation classique : dans un essai publié en 2022 dans le <em>New England Journal of Medicine</em> (139 personnes obèses suivies 12 mois), ajouter une fenêtre de 8 heures au même régime hypocalorique n'a pas fait perdre significativement plus de poids ni de gras. C'est une façon d'organiser tes repas, qui convient à certains et pas à d'autres.</p>
 
 <h2>Peut-on faire du sport à jeun quand on jeûne ?</h2>
 <p>Le format le plus répandu, le 16/8 — seize heures sans manger, une fenêtre de huit heures —, place souvent la séance du matin en fin de jeûne. Pour une <strong>sortie facile</strong>, ça se passe bien chez la plupart des gens : après la nuit, tes muscles ont encore leurs réserves, et à allure douce ton corps puise largement dans les graisses. Quelques règles quand même :</p>
@@ -207,7 +250,7 @@ ENTRIES = [
 <p>C'est la même logique que pour <a href="/articles/que-manger-avant-le-sport.html">ce qu'il faut manger avant le sport</a> : à jeun pour le cardio léger, nourri pour la performance.</p>
 
 <h2>Et pour les séances intenses ou la musculation ?</h2>
-<p>C'est là que le jeûne coince. Le fractionné, les séances longues et la musculation lourde tournent en grande partie aux <strong>glucides</strong> stockés. Réservoir à moitié vide, tu fais moins de répétitions, tu tiens moins longtemps à haute intensité, et la séance tombe sous tes moyens.</p>
+<p>C'est là que le jeûne peut coincer. Le fractionné, les séances longues et la musculation lourde tournent en grande partie aux <strong>glucides</strong>. Selon une méta-analyse de 2018 (46 études), manger avant améliore nettement les efforts d'endurance prolongés, mais pas les efforts plus courts. Pour le fractionné et la musculation lourde, les données sont plus minces : beaucoup de gens s'y sentent simplement moins bons l'estomac vide, surtout après une journée pauvre en glucides.</p>
 <ul>
 <li><strong>La solution simple :</strong> place tes séances dures <strong>dans ta fenêtre</strong>, deux à trois heures après un vrai repas. Avec une fenêtre de 12 h à 20 h, une séance vers 15 h ou 16 h, suivie d'un dîner de récupération, coche toutes les cases.</li>
 <li><strong>Si tu t'entraînes en fin de jeûne :</strong> ouvre ta fenêtre juste après la séance, avec un repas riche en protéines et en glucides.</li>
@@ -218,10 +261,10 @@ ENTRIES = [
 <p>Le vrai risque du jeûne intermittent pour un sportif, ce n'est pas le jeûne lui-même : c'est de <strong>manger trop peu</strong> sans t'en rendre compte. Avec deux repas seulement, beaucoup de gens restent loin de leurs besoins.</p>
 <ul>
 <li><strong>Le total :</strong> vise toujours <a href="/articles/proteines-par-jour-prise-de-muscle.html">1,6 à 2,2 g de protéines par kilo et par jour</a>, fenêtre ou pas.</li>
-<li><strong>La répartition :</strong> trois prises plutôt que deux — à l'ouverture, au milieu, à la fermeture —, chacune autour de 0,4 g par kilo. Pour 75 kg, ça fait environ trois fois 30 g.</li>
+<li><strong>La répartition :</strong> trois prises plutôt que deux — à l'ouverture, au milieu, à la fermeture —, chacune autour de 0,5 à 0,7 g par kilo. Pour 75 kg, ça fait environ trois fois 40 à 55 g. Les 0,4 g par kilo et par repas souvent cités supposent au moins quatre repas, rappelle une revue de 2018 : avec trois prises, il faut viser plus haut.</li>
 <li><strong>L'énergie totale :</strong> si tu cherches à perdre du gras, garde un <a href="/articles/deficit-calorique-comment-calculer.html">déficit calorique modéré</a>. Un déficit brutal, ajouté au jeûne et à l'entraînement, c'est la recette de la fonte musculaire et de la fatigue.</li>
 </ul>
-<p>Dans ces conditions, les études disponibles suggèrent qu'on peut garder son muscle et sa force en jeûne intermittent. <em>Prendre</em> du muscle est en revanche plus difficile quand la fenêtre réduit les apports : si c'est ta priorité, ce n'est pas le format le plus pratique.</p>
+<p>Dans ces conditions, les études disponibles suggèrent qu'on peut garder son muscle et sa force en jeûne intermittent : une méta-analyse de 2021 (8 études, 221 pratiquants de musculation) ne trouve pas de perte significative de masse maigre par rapport à une alimentation classique. <em>Prendre</em> du muscle est en revanche plus difficile quand la fenêtre réduit les apports : si c'est ta priorité, ce n'est pas le format le plus pratique.</p>
 
 <h2>Qui ne doit pas faire de jeûne intermittent ?</h2>
 <p>Le jeûne n'est <strong>pas recommandé</strong> sans avis médical dans plusieurs situations :</p>
@@ -234,7 +277,7 @@ ENTRIES = [
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
-<li>Jeûne intermittent et sport sont compatibles pour beaucoup, surtout en endurance légère ; les séances intenses se réussissent mieux nourri, dans ta fenêtre.</li>
+<li>Jeûne intermittent et sport sont compatibles pour beaucoup, surtout en endurance légère ; les séances longues ou intenses se placent de préférence dans ta fenêtre.</li>
 <li>Des protéines suffisantes réparties en trois prises et une énergie totale correcte protègent ton muscle.</li>
 <li>Diabète, grossesse, antécédents de troubles alimentaires : pas de jeûne sans avis médical.</li>
 </ul>
@@ -247,6 +290,20 @@ ENTRIES = [
             {"q": "Le jeûne intermittent fait-il perdre du muscle ?",
              "a": "Pas si tu manges assez de protéines et d'énergie et que tu continues la musculation : les études suggèrent alors un bon maintien de la masse musculaire. Le risque apparaît avec un déficit trop brutal ou des protéines insuffisantes."},
         ],
+        "sources": [
+            {"t": "Liu D, Huang Y, Huang C, et al. Calorie restriction with or without time-restricted eating in weight loss. <em>N Engl J Med</em>. 2022.",
+             "u": "https://doi.org/10.1056/NEJMoa2114833"},
+            {"t": "Aird TP, Davies RW, Carson BP. Effects of fasted vs fed-state exercise on performance and post-exercise metabolism: a systematic review and meta-analysis. <em>Scand J Med Sci Sports</em>. 2018.",
+             "u": "https://doi.org/10.1111/sms.13054"},
+            {"t": "Schoenfeld BJ, Aragon AA. How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution. <em>J Int Soc Sports Nutr</em>. 2018.",
+             "u": "https://doi.org/10.1186/s12970-018-0215-1"},
+            {"t": "Ashtary-Larky D, Bagheri R, Tinsley GM, et al. Effects of intermittent fasting combined with resistance training on body composition: a systematic review and meta-analysis. <em>Physiol Behav</em>. 2021.",
+             "u": "https://doi.org/10.1016/j.physbeh.2021.113453"},
+            {"t": "Moro T, Tinsley G, Bianco A, et al. Effects of eight weeks of time-restricted feeding (16/8) on basal metabolism, maximal strength, body composition, inflammation, and cardiovascular risk factors in resistance-trained males. <em>J Transl Med</em>. 2016.",
+             "u": "https://doi.org/10.1186/s12967-016-1044-0"},
+            {"t": "Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). <em>Br J Sports Med</em>. 2023.",
+             "u": "https://doi.org/10.1136/bjsports-2023-106994"},
+        ],
     },
     {
         "slug": "glucides-et-sport-combien",
@@ -255,27 +312,33 @@ ENTRIES = [
         "description": "Glucides et sport : de 3 à 5 g/kg par jour en activité légère à 6 à 10 g/kg en endurance intense. Combien en manger, et quand les placer autour des séances.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : tout dépend de ton volume d'entraînement. Les repères consensuels de la nutrition du sport, exprimés en grammes de glucides par kilo de poids de corps et par jour, sont d'environ <strong>3 à 5 g/kg</strong> pour une activité légère, <strong>5 à 7 g/kg</strong> pour un entraînement modéré d'une heure par jour, et <strong>6 à 10 g/kg</strong> pour l'endurance intense, de une à trois heures quotidiennes. Et le moment compte presque autant que la quantité : on les place <strong>autour des séances</strong>.</p>
+<p>La réponse courte : tout dépend de ton volume d'entraînement. Les repères de l'American College of Sports Medicine et des diététiciens américains et canadiens (position commune de 2016), exprimés en grammes de glucides par kilo de poids de corps et par jour, sont d'environ <strong>3 à 5 g/kg</strong> pour une activité légère, <strong>5 à 7 g/kg</strong> pour un entraînement modéré d'une heure par jour, et <strong>6 à 10 g/kg</strong> pour l'endurance intense, de une à trois heures quotidiennes. Et le moment compte presque autant que la quantité : on les place <strong>autour des séances</strong>.</p>
 <p>Les glucides ne sont ni un poison ni un passe-droit : c'est le carburant de l'intensité. On les dose selon le travail à fournir, jour après jour.</p>
 
 <h2>Pourquoi les glucides comptent autant pour l'effort ?</h2>
 <p>Tes muscles et ton foie stockent les glucides sous forme de <strong>glycogène</strong>. C'est le carburant préféré dès que l'intensité monte : plus tu vas vite ou fort, plus la part des glucides grimpe. Les graisses, elles, forment un réservoir presque illimité mais lent à mobiliser — parfait pour marcher ou courir tranquille, insuffisant pour sprinter ou enchaîner des intervalles.</p>
-<p>Le problème, c'est que le glycogène est <strong>limité</strong> : de quoi tenir de l'ordre de 90 minutes à deux heures d'effort soutenu. Quand il se vide, c'est le fameux « mur » du marathonien : l'allure s'effondre, les jambes ne répondent plus. D'où l'intérêt de partir le plein fait et, sur les efforts longs, de remettre de l'essence en route.</p>
+<p>Le problème, c'est que le glycogène est <strong>limité</strong> : il devient le maillon faible au-delà d'environ 90 minutes d'effort soutenu. Selon une revue de 1997, partir avec des réserves gonflées retarde la fatigue d'environ 20 % sur ces efforts longs, mais n'apporte rien sur 60 à 90 minutes de course ou de vélo. Quand il se vide, c'est le fameux « mur » du marathonien : l'allure s'effondre, les jambes ne répondent plus. D'où l'intérêt de partir le plein fait et, sur les efforts longs, de remettre de l'essence en route.</p>
 
 <h2>Combien de glucides par jour selon ton entraînement ?</h2>
-<ul>
-<li><strong>Activité légère, 3 à 5 g/kg :</strong> marche, séances courtes ou techniques, musculation sans gros volume de cardio. Pour 70 kg, ça fait 210 à 350 g par jour.</li>
-<li><strong>Entraînement modéré, 5 à 7 g/kg :</strong> environ une heure de sport par jour. Pour 70 kg : 350 à 490 g.</li>
-<li><strong>Endurance intense, 6 à 10 g/kg :</strong> une à trois heures par jour, typiquement coureurs, cyclistes ou triathlètes en préparation. Pour 70 kg : 420 à 700 g.</li>
-</ul>
+<p>Les repères officiels, en grammes par kilo de poids de corps et par jour, avec leur traduction pour 70 kg :</p>
+<div class="tablewrap"><table>
+<caption>Source : American College of Sports Medicine, Academy of Nutrition and Dietetics et Dietitians of Canada (2016).</caption>
+<thead><tr><th>Entraînement</th><th class="n">Glucides par jour</th><th class="n">Pour 70 kg</th></tr></thead>
+<tbody>
+<tr><td>Léger : marche, séances courtes ou techniques</td><td class="n">3 à 5 g/kg</td><td class="n">210 à 350 g</td></tr>
+<tr><td>Modéré : environ 1 h par jour</td><td class="n">5 à 7 g/kg</td><td class="n">350 à 490 g</td></tr>
+<tr><td>Endurance intense : 1 à 3 h par jour</td><td class="n">6 à 10 g/kg</td><td class="n">420 à 700 g</td></tr>
+<tr><td>Extrême : plus de 4 à 5 h par jour</td><td class="n">8 à 12 g/kg</td><td class="n">560 à 840 g</td></tr>
+</tbody>
+</table></div>
 <p>Pour te repérer, une assiette de 250 g de pâtes cuites apporte environ 75 g de glucides, une banane autour de 25 g. La musculation seule demande en général des apports modérés, dans le bas de ces fourchettes : ce sont alors les protéines et le total de <a href="/articles/combien-de-calories-par-jour.html">calories de la journée</a> qui priment.</p>
 <p>Si tu es diabétique, ces repères sont à adapter avec ton médecin : effort et glucides interagissent directement avec ton traitement.</p>
 
 <h2>Avant, pendant, après : quand manger ses glucides ?</h2>
 <ul>
 <li><strong>Avant :</strong> un repas riche en glucides deux à trois heures avant, ou une collation légère trente à soixante minutes avant — le détail est dans <a href="/articles/que-manger-avant-le-sport.html">que manger avant le sport</a>.</li>
-<li><strong>Pendant :</strong> rien de nécessaire sous une heure, de l'eau suffit. Au-delà, vise 30 à 60 g de glucides par heure (boisson de l'effort, gel, fruits secs, banane) ; sur les très longs efforts, jusqu'à 90 g par heure, à condition d'avoir habitué ton intestin à l'entraînement. Teste toujours ta stratégie en séance, jamais pour la première fois le jour de la course.</li>
-<li><strong>Après :</strong> un repas qui associe glucides et protéines dans les heures qui suivent recharge le glycogène — voir <a href="/articles/que-manger-apres-le-sport.html">que manger après le sport</a>. Si tu enchaînes deux séances le même jour, n'attends pas : recharge dès la fin de la première.</li>
+<li><strong>Pendant :</strong> rien de nécessaire sous 45 minutes, de l'eau suffit ; autour d'une heure d'effort intense, de petites quantités, voire un simple rinçage de bouche avec une boisson sucrée, peuvent aider. Au-delà, vise 30 à 60 g de glucides par heure (boisson de l'effort, gel, fruits secs, banane) ; au-delà de 2 h 30, jusqu'à 90 g par heure selon une revue de 2011, à condition d'avoir habitué ton intestin à l'entraînement. Teste toujours ta stratégie en séance, jamais pour la première fois le jour de la course.</li>
+<li><strong>Après :</strong> un repas qui associe glucides et protéines dans les heures qui suivent recharge le glycogène — voir <a href="/articles/que-manger-apres-le-sport.html">que manger après le sport</a>. Si tu enchaînes deux séances le même jour, n'attends pas : recharge dès la fin de la première — l'International Society of Sports Nutrition conseille environ 1,2 g de glucides par kilo et par heure quand moins de 4 heures les séparent.</li>
 </ul>
 
 <h2>Faut-il manger autant de glucides les jours de repos ?</h2>
@@ -294,9 +357,23 @@ ENTRIES = [
             {"q": "Faut-il faire une recharge en glucides avant un marathon ?",
              "a": "Pour les efforts de plus de 90 minutes, oui : augmenter nettement les glucides les un à deux jours précédents, autour de 10 à 12 g par kilo, remplit le glycogène au maximum. Réduis les fibres ces jours-là et teste la stratégie à l'entraînement avant la course."},
             {"q": "Peut-on faire du sport en mangeant low carb ?",
-             "a": "Pour l'endurance facile, oui : le corps apprend à utiliser davantage les graisses. Mais les régimes très pauvres en glucides dégradent en général la performance sur les efforts intenses ; si tu en suis un, garde au minimum des glucides autour de tes séances dures."},
+             "a": "Pour l'endurance facile, oui : le corps apprend à utiliser davantage les graisses. Mais les régimes très pauvres en glucides dégradent en général la performance sur les efforts intenses : dans un essai de 2017 chez des marcheurs de haut niveau, trois semaines de régime cétogène ont annulé le gain de 5 à 7 % sur 10 km obtenu par les groupes riches en glucides. Si tu en suis un, garde au minimum des glucides autour de tes séances dures."},
             {"q": "Les glucides font-ils grossir quand on fait du sport ?",
              "a": "Pas en eux-mêmes : la prise de poids dépend du bilan calorique global, quelle que soit la source des calories. Chez un sportif, des glucides dosés selon l'entraînement servent de carburant et soutiennent la performance comme la récupération."},
+        ],
+        "sources": [
+            {"t": "Thomas DT, Erdman KA, Burke LM. American College of Sports Medicine Joint Position Statement. Nutrition and athletic performance. <em>Med Sci Sports Exerc</em>. 2016.",
+             "u": "https://doi.org/10.1249/MSS.0000000000000852"},
+            {"t": "Burke LM, Hawley JA, Wong SH, Jeukendrup AE. Carbohydrates for training and competition. <em>J Sports Sci</em>. 2011.",
+             "u": "https://doi.org/10.1080/02640414.2011.585473"},
+            {"t": "Jeukendrup A. A step towards personalized sports nutrition: carbohydrate intake during exercise. <em>Sports Med</em>. 2014.",
+             "u": "https://doi.org/10.1007/s40279-014-0148-z"},
+            {"t": "Hawley JA, Schabort EJ, Noakes TD, Dennis SC. Carbohydrate-loading and exercise performance. An update. <em>Sports Med</em>. 1997.",
+             "u": "https://doi.org/10.2165/00007256-199724020-00001"},
+            {"t": "Kerksick CM, Arent S, Schoenfeld BJ, et al. International society of sports nutrition position stand: nutrient timing. <em>J Int Soc Sports Nutr</em>. 2017.",
+             "u": "https://doi.org/10.1186/s12970-017-0189-4"},
+            {"t": "Burke LM, Ross ML, Garvican-Lewis LA, et al. Low carbohydrate, high fat diet impairs exercise economy and negates the performance benefit from intensified training in elite race walkers. <em>J Physiol</em>. 2017.",
+             "u": "https://doi.org/10.1113/JP273230"},
         ],
     },
 ]

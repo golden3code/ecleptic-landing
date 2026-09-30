@@ -79,9 +79,9 @@ PAGE = {
 <p>Ecleptic est un outil de bien-être, pas un dispositif médical : ta ligne de base ne pose aucun diagnostic. Si une valeur anormale persiste, même si ta ligne de base finit par l'absorber, ou si tu ressens un malaise, une douleur thoracique, un essoufflement anormal ou des palpitations, consulte un médecin. En cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
-        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>.",
+        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>." ' <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
+        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>." ' <a href="https://doi.org/10.3389/fpubh.2017.00258" rel="noopener" target="_blank">doi:10.3389/fpubh.2017.00258</a>',
     ],
     "faq": [
         {"q": "Qu'est-ce qu'une ligne de base en HRV ?",

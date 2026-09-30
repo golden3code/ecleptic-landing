@@ -70,11 +70,11 @@ PAGE = {
 <p>Avant de reprendre un entraînement intense après une longue pause, surtout avec des facteurs de risque cardiovasculaire, demande un avis médical. Une épreuve d'effort, idéalement avec analyse des gaz, vérifie que ton cœur suit et mesure ta VO₂max pour de bon.</p>
 """,
     "refs": [
-        "Kodama S. et al. (2009), la capacité cardiorespiratoire comme prédicteur de la mortalité toutes causes, <em>JAMA</em>.",
-        "Mandsager K. et al. (2018), capacité cardiorespiratoire et mortalité à long terme, <em>JAMA Network Open</em>.",
-        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
-        "Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, <em>Medicine &amp; Science in Sports &amp; Exercise</em>.",
-        "Daniels J. et Gilbert J. (1979), tables de performance VDOT, <em>Oxygen Power</em>.",
+        "Kodama S. et al. (2009), la capacité cardiorespiratoire comme prédicteur de la mortalité toutes causes, <em>JAMA</em>." ' <a href="https://doi.org/10.1001/jama.2009.681" rel="noopener" target="_blank">doi:10.1001/jama.2009.681</a>',
+        "Mandsager K. et al. (2018), capacité cardiorespiratoire et mortalité à long terme, <em>JAMA Network Open</em>." ' <a href="https://doi.org/10.1001/jamanetworkopen.2018.3605" rel="noopener" target="_blank">doi:10.1001/jamanetworkopen.2018.3605</a>',
+        "Nes B. M. et al. (2011), estimation de la VO₂pic sans test d'effort : l'étude HUNT, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/MSS.0b013e31821d3f6f" rel="noopener" target="_blank">doi:10.1249/MSS.0b013e31821d3f6f</a>',
+        "Jackson A. S. et al. (1990), prédiction de la capacité aérobie sans test d'effort, <em>Medicine &amp; Science in Sports &amp; Exercise</em>." ' <a href="https://doi.org/10.1249/00005768-199012000-00021" rel="noopener" target="_blank">doi:10.1249/00005768-199012000-00021</a>',
+        "Daniels J. et Gilbert J. (1979), tables de performance VDOT, <em>Oxygen Power</em>." ' <a href="https://books.google.com/books?id=h7f_tgAACAAJ" rel="noopener" target="_blank">Google Livres</a>',
     ],
     "faq": [
         {"q": "Qu'est-ce qu'une bonne VO₂max pour son âge ?",

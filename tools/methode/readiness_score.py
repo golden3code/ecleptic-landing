@@ -86,9 +86,9 @@ PAGE = {
 <p>Le Readiness Score est un outil de bien-être pour doser ton effort. Ce n'est pas un dispositif médical et il ne pose aucun diagnostic. Une journée basse n'est pas une alerte : c'est la tendance sur plusieurs jours qui compte. Si tu ressens des symptômes inhabituels, c'est un médecin qu'il faut consulter, pas un score.</p>
 """,
     "refs": [
-        "Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, <em>Sleep Health</em>.",
-        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.",
-        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>.",
+        "Hirshkowitz M. et al. (2015), recommandations de durée de sommeil de la National Sleep Foundation, <em>Sleep Health</em>." ' <a href="https://doi.org/10.1016/j.sleh.2014.12.010" rel="noopener" target="_blank">doi:10.1016/j.sleh.2014.12.010</a>',
+        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>." ' <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a>',
+        "Buchheit M. (2014), suivi de l'état d'entraînement par les mesures de fréquence cardiaque, <em>Frontiers in Physiology</em>." ' <a href="https://doi.org/10.3389/fphys.2014.00073" rel="noopener" target="_blank">doi:10.3389/fphys.2014.00073</a>',
     ],
     "faq": [
         {"q": "Comment est calculé le Readiness Score d'Ecleptic ?",

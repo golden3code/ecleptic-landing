@@ -22,6 +22,13 @@ import glob, importlib.util, os, re
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 LANGS = ("fr", "en")
 
+# Publication de la version anglaise : False tant que toutes les traductions ne sont pas
+# prêtes (aucune page, aucun hreflang, aucun bouton FR/EN). ECLEPTIC_EN=1 / 0 force
+# l'une ou l'autre valeur (tests dans une copie du dépôt).
+EN_LIVE = False
+if os.environ.get("ECLEPTIC_EN") in ("0", "1"):
+    EN_LIVE = os.environ["ECLEPTIC_EN"] == "1"
+
 # --- Interface ---------------------------------------------------------------
 UI = {
     "fr": {

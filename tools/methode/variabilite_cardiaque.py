@@ -77,10 +77,10 @@ PAGE = {
 <p>En revanche, si une baisse s'installe sans raison apparente avec une fatigue inhabituelle, ou si tu ressens des palpitations, un malaise, une douleur thoracique ou un essoufflement anormal, consulte un médecin. En cas d'urgence, appelle le 15 ou le 112.</p>
 """,
     "refs": [
-        "Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, <em>Circulation</em>.",
-        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>.",
-        "Nunan D. et al. (2010), valeurs normales de la variabilité cardiaque de courte durée chez l'adulte sain, <em>Pacing and Clinical Electrophysiology</em>.",
-        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>.",
+        "Task Force de la Société européenne de cardiologie et de la NASPE (1996), normes de mesure de la variabilité cardiaque, <em>Circulation</em>." ' <a href="https://doi.org/10.1161/01.CIR.93.5.1043" rel="noopener" target="_blank">doi:10.1161/01.CIR.93.5.1043</a>',
+        "Shaffer F. et Ginsberg J. P. (2017), panorama des indicateurs et des normes de variabilité cardiaque, <em>Frontiers in Public Health</em>." ' <a href="https://doi.org/10.3389/fpubh.2017.00258" rel="noopener" target="_blank">doi:10.3389/fpubh.2017.00258</a>',
+        "Nunan D. et al. (2010), valeurs normales de la variabilité cardiaque de courte durée chez l'adulte sain, <em>Pacing and Clinical Electrophysiology</em>." ' <a href="https://doi.org/10.1111/j.1540-8159.2010.02841.x" rel="noopener" target="_blank">doi:10.1111/j.1540-8159.2010.02841.x</a>',
+        "Plews D. J. et al. (2013), suivi de la variabilité cardiaque et adaptation à l'entraînement chez l'athlète d'endurance, <em>Sports Medicine</em>." ' <a href="https://doi.org/10.1007/s40279-013-0071-8" rel="noopener" target="_blank">doi:10.1007/s40279-013-0071-8</a>',
     ],
     "faq": [
         {"q": "Quelle est une bonne HRV pour mon âge ?",

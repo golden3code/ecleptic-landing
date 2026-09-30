@@ -18,10 +18,10 @@ ENTRIES = [
 
 <h2>Pourquoi les bonnes résolutions ne tiennent pas ?</h2>
 <p>Parce qu'elles misent tout sur l'élan du départ. « Je vais courir trois fois par semaine » : l'intention est sincère, mais rien ne dit <em>quand</em>, <em>où</em>, ni <em>après quoi</em>. Chaque séance devient une décision à reprendre, et une décision perd facilement face à la fatigue, à la pluie ou à une réunion qui déborde.</p>
-<p>Une habitude fonctionne à l'inverse : c'est un comportement déclenché par un contexte, qui ne demande plus de délibération. Une bonne partie de tes gestes quotidiens marche déjà comme ça — te brosser les dents, attraper ton téléphone au réveil. Tout l'enjeu est de faire entrer ton nouveau comportement dans cette catégorie. Pour savoir combien de temps ça prend vraiment, lis <a href="/articles/combien-de-temps-pour-prendre-une-habitude.html">ce que dit la science sur la durée de formation d'une habitude</a> — indice : ce n'est pas 21 jours.</p>
+<p>Une habitude fonctionne à l'inverse : c'est un comportement déclenché par un contexte, qui ne demande plus de délibération. Une bonne partie de tes gestes quotidiens marche déjà comme ça — te brosser les dents, attraper ton téléphone au réveil. Des études par carnet horaire publiées en 2002 le montrent : pendant un geste fait presque chaque jour dans le même contexte, l'esprit pense à autre chose, et on ressent moins de stress. Tout l'enjeu est de faire entrer ton nouveau comportement dans cette catégorie. Pour savoir combien de temps ça prend vraiment, lis <a href="/articles/combien-de-temps-pour-prendre-une-habitude.html">ce que dit la science sur la durée de formation d'une habitude</a> — indice : ce n'est pas 21 jours.</p>
 
 <h2>Comment ancrer une nouvelle habitude dans sa journée ?</h2>
-<p>Avec un déclencheur précis. Les psychologues parlent d'<strong>intention de mise en œuvre</strong> : décider à l'avance quand et où tu vas agir augmente nettement tes chances de passer à l'acte. La forme la plus simple, c'est l'<strong>empilement d'habitudes</strong> : tu greffes le nouveau geste sur un geste que tu fais déjà tous les jours sans y penser.</p>
+<p>Avec un déclencheur précis. Les psychologues parlent d'<strong>intention de mise en œuvre</strong> : décider à l'avance quand et où tu vas agir augmente nettement tes chances de passer à l'acte. Une méta-analyse de 2006 portant sur 94 tests indépendants trouve un effet moyen à fort sur l'atteinte des objectifs. La forme la plus simple, c'est l'<strong>empilement d'habitudes</strong> : tu greffes le nouveau geste sur un geste que tu fais déjà tous les jours sans y penser.</p>
 <ul>
 <li><strong>La formule :</strong> « Après [habitude existante], je [nouvelle habitude]. »</li>
 <li><strong>Des exemples :</strong> après avoir lancé le café, je fais dix squats ; après m'être brossé les dents le soir, je pose mon téléphone hors de la chambre.</li>
@@ -31,7 +31,7 @@ ENTRIES = [
 
 <h2>Faut-il vraiment commencer petit ?</h2>
 <p>Oui, bien plus petit que ce que ton enthousiasme te souffle. C'est la <strong>règle des deux minutes</strong> : la première version de ton habitude doit tenir en deux minutes. Pas « méditer vingt minutes », mais « m'asseoir et respirer une minute ». Pas « courir 5 km », mais « enfiler mes baskets et sortir ».</p>
-<p>Ça paraît dérisoire, et c'est voulu. Au début, tu n'entraînes pas ta forme : tu entraînes le fait de <strong>te présenter</strong>. Un geste impossible à rater, même les jours sans énergie, protège la répétition — et c'est la répétition dans le même contexte qui fabrique l'automatisme. Une fois que le geste part tout seul, augmente la dose par petites marches, jusqu'au <a href="/articles/combien-seances-sport-par-semaine.html">bon nombre de séances par semaine</a> pour ton objectif.</p>
+<p>Ça paraît dérisoire, et c'est voulu. Au début, tu n'entraînes pas ta forme : tu entraînes le fait de <strong>te présenter</strong>. Un geste impossible à rater, même les jours sans énergie, protège la répétition — et c'est la répétition dans le même contexte qui fabrique l'automatisme. Des psychologues de l'University College London le notent en 2012 : un geste simple, comme boire de l'eau, devient automatique plus vite qu'une routine élaborée comme enchaîner 50 abdos. Une fois que le geste part tout seul, augmente la dose par petites marches, jusqu'au <a href="/articles/combien-seances-sport-par-semaine.html">bon nombre de séances par semaine</a> pour ton objectif.</p>
 
 <h2>Comment organiser son environnement pour tenir ?</h2>
 <p>Ton environnement décide plus souvent que ta motivation. Le principe : <strong>réduire la friction</strong> du bon comportement, augmenter celle du mauvais.</p>
@@ -42,8 +42,8 @@ ENTRIES = [
 </ul>
 
 <h2>Que faire quand on rate un jour ?</h2>
-<p>Rien de dramatique : un oubli isolé ne remet pas les compteurs à zéro. Le vrai danger, c'est le deuxième jour raté, celui qui transforme l'exception en nouvelle normalité. D'où la règle : <strong>ne jamais rater deux fois de suite</strong>. Le lendemain d'un raté, fais au minimum la version de deux minutes, même symbolique.</p>
-<p>Pour tenir cette règle, rends ton suivi <strong>visible</strong> : une croix sur un calendrier, une case cochée, une série qui s'allonge. Se suivre fait partie des leviers les mieux documentés pour ancrer un changement, et chaque croix offre une petite récompense immédiate — celle qui manque aux habitudes dont les bénéfices n'arrivent que des mois plus tard. Quand l'envie retombe, c'est ce système, pas l'humeur du jour, qui te garde sur les rails : tout le sujet de <a href="/articles/motivation-ou-discipline.html">motivation ou discipline</a>.</p>
+<p>Rien de dramatique : un oubli isolé ne remet pas les compteurs à zéro. Dans une étude britannique de 2010 (96 volontaires suivis 12 semaines), rater une occasion n'a pas freiné sensiblement la formation de l'habitude. Le vrai danger, c'est le deuxième jour raté, celui qui transforme l'exception en nouvelle normalité. D'où la règle : <strong>ne jamais rater deux fois de suite</strong>. Le lendemain d'un raté, fais au minimum la version de deux minutes, même symbolique.</p>
+<p>Pour tenir cette règle, rends ton suivi <strong>visible</strong> : une croix sur un calendrier, une case cochée, une série qui s'allonge. Se suivre fait partie des leviers les mieux documentés : une méta-analyse de 2016 (138 études, près de 20 000 participants) montre que surveiller ses progrès aide à atteindre ses objectifs, surtout quand on les note physiquement. Et chaque croix offre une petite récompense immédiate — celle qui manque aux habitudes dont les bénéfices n'arrivent que des mois plus tard. Quand l'envie retombe, c'est ce système, pas l'humeur du jour, qui te garde sur les rails : tout le sujet de <a href="/articles/motivation-ou-discipline.html">motivation ou discipline</a>.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -60,29 +60,51 @@ ENTRIES = [
             {"q": "Comment ne pas abandonner une nouvelle habitude ?",
              "a": "Rends-la minuscule au départ, organise ton environnement pour qu'elle soit évidente et suis tes progrès de façon visible. Surtout, ne rate jamais deux jours d'affilée : un oubli isolé ne compromet pas l'habitude, c'est l'enchaînement des ratés qui la fait disparaître."},
         ],
+        "sources": [
+            {"t": "Gollwitzer PM, Sheeran P. Implementation intentions and goal achievement: a meta-analysis of effects and processes. <em>Adv Exp Soc Psychol</em>. 2006.",
+             "u": "https://doi.org/10.1016/S0065-2601(06)38002-1"},
+            {"t": "Gardner B, Lally P, Wardle J. Making health habitual: the psychology of 'habit-formation' and general practice. <em>Br J Gen Pract</em>. 2012.",
+             "u": "https://doi.org/10.3399/bjgp12X659466"},
+            {"t": "Lally P, van Jaarsveld CHM, Potts HWW, Wardle J. How are habits formed: modelling habit formation in the real world. <em>Eur J Soc Psychol</em>. 2010.",
+             "u": "https://doi.org/10.1002/ejsp.674"},
+            {"t": "Harkin B, Webb TL, Chang BP, et al. Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence. <em>Psychol Bull</em>. 2016.",
+             "u": "https://doi.org/10.1037/bul0000025"},
+            {"t": "Wood W, Quinn JM, Kashy DA. Habits in everyday life: thought, emotion, and action. <em>J Pers Soc Psychol</em>. 2002.",
+             "u": "https://doi.org/10.1037/0022-3514.83.6.1281"},
+        ],
     },
     {
         "slug": "combien-de-temps-pour-prendre-une-habitude",
         "cat": "Régularité",
         "title": "Combien de temps faut-il pour prendre une habitude ?",
-        "description": "Combien de temps pour prendre une habitude ? Pas 21 jours : environ 66 en moyenne selon une étude britannique, avec d'énormes écarts. Et ce qui accélère.",
+        "description": "Combien de temps pour prendre une habitude ? Pas 21 jours : environ 66 (médiane) selon une étude britannique, avec d'énormes écarts. Et ce qui accélère.",
         "date": "2026-12-01",
         "body": """
-<p>La réponse courte : <strong>pas 21 jours</strong>. Une étude britannique souvent citée, qui a suivi des volontaires pendant douze semaines, trouve qu'il faut <strong>environ 66 jours en moyenne</strong> pour qu'un nouveau geste devienne automatique — avec une <strong>variabilité énorme</strong> : de moins de trois semaines à plus de huit mois selon les personnes et les habitudes. Ce qui compte vraiment, ce ne sont pas les jours, mais les <strong>répétitions dans un contexte stable</strong>.</p>
+<p>La réponse courte : <strong>pas 21 jours</strong>. Une étude britannique souvent citée, qui a suivi des volontaires pendant douze semaines, trouve qu'il faut <strong>environ 66 jours</strong> (durée médiane) pour qu'un nouveau geste devienne automatique — avec une <strong>variabilité énorme</strong> : de moins de trois semaines à plus de huit mois selon les personnes et les habitudes. Ce qui compte vraiment, ce ne sont pas les jours, mais les <strong>répétitions dans un contexte stable</strong>.</p>
 <p>Autrement dit, la bonne question n'est pas « combien de temps ? », mais « comment rendre ce geste automatique plus vite ? ». Et là, tu as de vrais leviers.</p>
 
 <h2>D'où vient le mythe des 21 jours ?</h2>
-<p>D'un chirurgien esthétique américain des années 1960. Dans un livre de développement personnel devenu best-seller, il racontait que ses patients mettaient <strong>au moins trois semaines environ</strong> à s'habituer à leur nouveau visage. Une observation de cabinet, pas une étude — et à force de reprises, le « au moins » s'est perdu en route pour devenir une promesse : « 21 jours pour changer ».</p>
+<p>D'un chirurgien esthétique américain des années 1960. Dans un livre de développement personnel devenu best-seller, il racontait que ses patients mettaient <strong>au moins trois semaines environ</strong> à s'habituer à leur nouveau visage. Une observation de cabinet, pas une étude, comme le rappellent des psychologues de l'University College London en 2012 — et à force de reprises, le « au moins » s'est perdu en route pour devenir une promesse : « 21 jours pour changer ».</p>
 <p>Le chiffre séduit parce qu'il est court et rassurant. Le problème, c'est ce qu'il provoque : au 22e jour, le geste n'est toujours pas automatique, tu en conclus que tu as échoué ou que « ça ne marche pas pour toi », et tu lâches au moment précis où ça commençait à prendre.</p>
 
 <h2>Que dit vraiment la science ?</h2>
-<p>Dans l'étude britannique, chaque volontaire choisissait un geste de santé — manger un fruit au déjeuner, boire une bouteille d'eau au repas, courir un quart d'heure avant le dîner — à répéter chaque jour dans le même contexte, et notait chaque jour à quel point il le faisait « sans y penser ». Trois enseignements :</p>
+<p>Dans l'étude britannique, publiée en 2010, chacun des 96 volontaires choisissait un geste de santé — manger un fruit au déjeuner, boire une bouteille d'eau au repas, courir un quart d'heure avant le dîner — à répéter chaque jour dans le même contexte, et notait chaque jour à quel point il le faisait « sans y penser ». Trois enseignements :</p>
 <ul>
-<li><strong>La moyenne :</strong> environ 66 jours pour atteindre un plateau d'automatisme. Plutôt deux mois que trois semaines.</li>
-<li><strong>Les écarts :</strong> de moins de trois semaines à plus de huit mois selon les estimations. La moyenne ne dit presque rien de ton cas personnel.</li>
+<li><strong>La médiane :</strong> environ 66 jours pour atteindre un plateau d'automatisme. Plutôt deux mois que trois semaines.</li>
+<li><strong>Les écarts :</strong> de 18 à 254 jours selon les estimations, soit de moins de trois semaines à plus de huit mois. La médiane ne dit presque rien de ton cas personnel.</li>
 <li><strong>La courbe :</strong> l'automatisme grimpe vite au début, puis s'aplatit. Les premières semaines font l'essentiel du chemin, la suite consolide.</li>
 </ul>
 <p>Un dernier constat est rassurant : <strong>rater une occasion</strong> n'a pas compromis la formation de l'habitude. Un jour manqué ne remet pas le compteur à zéro — c'est l'abandon qui le fait.</p>
+<p>Une méta-analyse de 2024 (20 études, 2 601 participants) le confirme : une habitude peut commencer à s'installer en deux mois environ, avec des écarts individuels considérables.</p>
+<div class="tablewrap"><table>
+<caption>Sources : Lally et al. (2010) ; Kaushal et Rhodes (2015) ; Singh et al. (2024).</caption>
+<thead><tr><th>Étude</th><th class="n">Durée observée</th></tr></thead>
+<tbody>
+<tr><td>96 volontaires, un geste de santé quotidien</td><td class="n">66 jours (médiane), de 18 à 254 jours</td></tr>
+<tr><td>111 nouveaux inscrits en salle de sport</td><td class="n">au moins 4 séances par semaine pendant 6 semaines</td></tr>
+<tr><td>Méta-analyse, 20 études</td><td class="n">médianes de 59 à 66 jours, moyennes de 106 à 154 jours</td></tr>
+</tbody>
+</table></div>
 
 <h2>Pourquoi certaines habitudes s'installent plus vite ?</h2>
 <p>Parce que toutes ne demandent pas le même effort. Un geste simple, comme <a href="/articles/combien-d-eau-boire-par-jour.html">boire un grand verre d'eau</a> au réveil, s'automatise en général plus vite qu'un geste exigeant comme une séance d'exercice. Trois facteurs font la différence :</p>
@@ -91,11 +113,12 @@ ENTRIES = [
 <li><strong>La fréquence :</strong> une habitude quotidienne accumule les répétitions sept fois plus vite qu'une habitude hebdomadaire. Trois séances par semaine prendront donc plus de semaines de calendrier qu'un verre d'eau chaque matin.</li>
 <li><strong>La stabilité du contexte :</strong> même heure, même lieu, même déclencheur. Un contexte qui change à chaque fois oblige à redécider à chaque fois.</li>
 </ul>
+<p>Chez de nouveaux inscrits en salle, une étude canadienne de 2015 retrouve ces leviers : régularité, exercices simples, environnement favorable et plaisir.</p>
 
 <h2>Comment accélérer la prise d'une habitude ?</h2>
 <p>Tu ne raccourciras pas le processus à la force de la volonté, mais tu peux lui offrir les meilleures conditions :</p>
 <ul>
-<li><strong>Accroche-la à un déclencheur fixe :</strong> « après mon café, je… ». Le contexte stable est le carburant de l'automatisme.</li>
+<li><strong>Accroche-la à un déclencheur fixe :</strong> « après mon café, je… ». Le contexte stable est le carburant de l'automatisme. Selon la méta-analyse de 2024, les habitudes choisies soi-même et pratiquées le matin s'ancrent généralement plus fort.</li>
 <li><strong>Commence en version minimale</strong>, quitte à augmenter ensuite. Mieux vaut deux minutes tous les jours qu'une heure de temps en temps.</li>
 <li><strong>Vise la répétition quotidienne</strong> quand c'est possible, en format réduit les jours chargés.</li>
 <li><strong>Ajoute une satisfaction immédiate :</strong> une croix sur un calendrier, un morceau que tu aimes. Le cerveau retient ce qui paie tout de suite.</li>
@@ -107,18 +130,28 @@ ENTRIES = [
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
-<li>Les 21 jours sont un mythe : une étude britannique souvent citée trouve environ 66 jours en moyenne, avec des écarts énormes.</li>
+<li>Les 21 jours sont un mythe : une étude britannique souvent citée trouve une durée médiane d'environ 66 jours, avec des écarts énormes.</li>
 <li>Ce sont les répétitions dans un contexte stable qui comptent ; un jour manqué ne remet pas le compteur à zéro.</li>
 <li>Pour accélérer : déclencheur fixe, version minimale, répétition quotidienne et petite satisfaction immédiate.</li>
 </ul>
 """,
         "faq": [
             {"q": "Est-ce vrai qu'il faut 21 jours pour prendre une habitude ?",
-             "a": "Non. Ce chiffre vient d'une observation d'un chirurgien esthétique des années 1960, pas d'une étude. Une étude britannique souvent citée trouve plutôt environ 66 jours en moyenne, avec des écarts énormes d'une personne et d'une habitude à l'autre."},
+             "a": "Non. Ce chiffre vient d'une observation d'un chirurgien esthétique des années 1960, pas d'une étude. Une étude britannique souvent citée trouve plutôt une durée médiane d'environ 66 jours, avec des écarts énormes d'une personne et d'une habitude à l'autre."},
             {"q": "Pourquoi dit-on 66 jours pour créer une habitude ?",
-             "a": "C'est la durée moyenne observée dans une étude britannique où des volontaires répétaient chaque jour un geste de santé dans un contexte fixe. Selon les personnes et les gestes, les estimations allaient de moins de trois semaines à plus de huit mois."},
+             "a": "C'est la durée médiane observée dans une étude britannique publiée en 2010, où 96 volontaires répétaient chaque jour un geste de santé dans un contexte fixe. Selon les personnes et les gestes, les estimations allaient de 18 à 254 jours, soit de moins de trois semaines à plus de huit mois."},
             {"q": "Combien de temps pour prendre l'habitude de faire du sport ?",
-             "a": "Il n'y a pas de durée fixe : l'exercice demande plus d'effort qu'un geste simple et se répète souvent moins fréquemment, donc il met généralement plus de temps à devenir automatique. Des séances à jour et heure fixes, et une version courte les jours difficiles, accélèrent l'installation."},
+             "a": "Il n'y a pas de durée fixe : l'exercice demande plus d'effort qu'un geste simple et se répète souvent moins fréquemment, donc il met généralement plus de temps à devenir automatique. Chez de nouveaux inscrits en salle, une étude canadienne a observé qu'il fallait au moins quatre séances par semaine pendant six semaines. Des séances à jour et heure fixes, et une version courte les jours difficiles, accélèrent l'installation."},
+        ],
+        "sources": [
+            {"t": "Lally P, van Jaarsveld CHM, Potts HWW, Wardle J. How are habits formed: modelling habit formation in the real world. <em>Eur J Soc Psychol</em>. 2010.",
+             "u": "https://doi.org/10.1002/ejsp.674"},
+            {"t": "Gardner B, Lally P, Wardle J. Making health habitual: the psychology of 'habit-formation' and general practice. <em>Br J Gen Pract</em>. 2012.",
+             "u": "https://doi.org/10.3399/bjgp12X659466"},
+            {"t": "Singh B, Murphy A, Maher C, Smith AE. Time to form a habit: a systematic review and meta-analysis of health behaviour habit formation and its determinants. <em>Healthcare (Basel)</em>. 2024.",
+             "u": "https://doi.org/10.3390/healthcare12232488"},
+            {"t": "Kaushal N, Rhodes RE. Exercise habit formation in new gym members: a longitudinal study. <em>J Behav Med</em>. 2015.",
+             "u": "https://doi.org/10.1007/s10865-015-9640-7"},
         ],
     },
     {
@@ -140,19 +173,19 @@ ENTRIES = [
 
 <h2>C'est quoi le jet lag social ?</h2>
 <p>C'est l'écart entre ton rythme de semaine et ton rythme de week-end. Dormir de 23 h à 7 h en semaine, puis de 2 h à 10 h le samedi, revient à décaler ta nuit de trois heures, avant de la ramener brutalement le lundi. Pour ton organisme, c'est l'équivalent d'un aller-retour de trois fuseaux horaires chaque semaine — sans quitter ton lit.</p>
-<p>Le mécanisme est simple : c'est la lumière du matin qui remet ton horloge à l'heure chaque jour. Te lever à 10 h ou 11 h, c'est la recevoir bien plus tard, donc repousser l'heure à laquelle ton corps sera prêt à dormir. Le jet lag social est très répandu, et les études d'observation l'associent à plus de fatigue, à une humeur moins bonne et à une santé métabolique moins favorable. À durée égale, un sommeil à <a href="/articles/se-coucher-meme-heure-regularite.html">horaires réguliers</a> est plus réparateur.</p>
+<p>Le mécanisme est simple : c'est la lumière du matin qui remet ton horloge à l'heure chaque jour. Te lever à 10 h ou 11 h, c'est la recevoir bien plus tard, donc repousser l'heure à laquelle ton corps sera prêt à dormir. Le jet lag social touche une large partie de la population, surtout les profils du soir, et les études d'observation l'associent à un sommeil de moins bonne qualité, à une humeur moins bonne et à une santé métabolique moins favorable : une méta-analyse de 2024 (43 études, plus de 230 000 participants) le relie à un indice de masse corporelle plus élevé — une association, pas une preuve de cause. Et selon le panel d'experts de la National Sleep Foundation (2023), des <a href="/articles/se-coucher-meme-heure-regularite.html">horaires réguliers</a> de coucher et de lever comptent en eux-mêmes pour la santé, la sécurité et la performance.</p>
 
 <h2>Pourquoi dort-on mal le dimanche soir ?</h2>
 <p>C'est la facture de la grasse matinée. Levé tard, tu as accumulé moins de <strong>pression de sommeil</strong> — ce besoin de dormir qui monte à chaque heure d'éveil — et ton horloge, décalée, n'a pas encore lancé la montée de mélatonine. Résultat : à 23 h, tu es parfaitement réveillé, tu tournes dans ton lit, tu t'endors vers 1 h… et le réveil de 7 h sonne sur une nuit amputée. La semaine démarre déjà en dette, et le cycle recommence.</p>
 
 <h2>Peut-on rattraper son sommeil le week-end ?</h2>
-<p>En partie seulement. Dormir plus le week-end réduit la somnolence accumulée, mais ne répare pas entièrement une semaine de nuits trop courtes, surtout si tout recommence le lundi. Ce qui se rembourse et ce qui ne se rembourse pas est détaillé dans <a href="/articles/dette-de-sommeil-rattraper.html">comment rattraper une dette de sommeil</a>. La solution durable reste d'arrêter de creuser la dette en semaine, en avançant ton coucher d'une demi-heure.</p>
+<p>En partie seulement. Quand la semaine a été trop courte, dormir plus le week-end peut aider, reconnaît la National Sleep Foundation, mais ça ne répare pas entièrement une semaine de nuits trop courtes, surtout si tout recommence le lundi. Dans un essai randomisé de 2019, des adultes privés de sommeil en semaine ont dormi à volonté le week-end : au retour des nuits courtes, leur horloge était décalée et leur sensibilité à l'insuline avait baissé de 9 à 27 %. Ce qui se rembourse et ce qui ne se rembourse pas est détaillé dans <a href="/articles/dette-de-sommeil-rattraper.html">comment rattraper une dette de sommeil</a>. La solution durable reste d'arrêter de creuser la dette en semaine, en avançant ton coucher d'une demi-heure.</p>
 
 <h2>Comment dormir plus le week-end sans se décaler ?</h2>
 <ul>
 <li><strong>Limite l'écart à une heure environ</strong> par rapport à ton réveil de semaine. Levé à 7 h en semaine ? Vise 8 h au plus tard.</li>
 <li><strong>Récupère par le soir, pas par le matin.</strong> Te coucher plus tôt le vendredi ajoute du sommeil sans repousser la lumière du matin, donc sans décaler ton horloge.</li>
-<li><strong>Préfère une sieste courte</strong> en début d'après-midi : 10 à 20 minutes, avant 15 h, suffisent à effacer un coup de fatigue sans grignoter ta nuit — les repères sont dans <a href="/articles/sieste-ideale-duree.html">la durée idéale d'une sieste</a>.</li>
+<li><strong>Préfère une sieste courte</strong> en début d'après-midi : 10 à 20 minutes, avant 15 h, suffisent à effacer un coup de fatigue sans grignoter ta nuit. Dans une étude de 2006 chez de jeunes adultes en manque de sommeil, la sieste de 10 minutes était la plus efficace, celle de 30 minutes laissait d'abord groggy — les repères sont dans <a href="/articles/sieste-ideale-duree.html">la durée idéale d'une sieste</a>.</li>
 <li><strong>Sors dans la lumière du matin</strong>, même par temps gris, dans l'heure qui suit le lever : c'est l'ancre qui limite le décalage du dimanche soir.</li>
 <li><strong>Après une soirée tardive</strong>, garde un lever proche de l'habituel et compense par la sieste plutôt que par trois heures de rab.</li>
 </ul>
@@ -173,6 +206,18 @@ ENTRIES = [
             {"q": "Pourquoi je suis fatigué le lundi matin ?",
              "a": "Souvent à cause du jet lag social : des horaires plus tardifs le week-end décalent ton horloge, tu t'endors mal le dimanche soir et le réveil du lundi tombe en pleine nuit biologique. Garder un lever proche de celui de la semaine est le remède le plus simple."},
         ],
+        "sources": [
+            {"t": "Wittmann M, Dinich J, Merrow M, Roenneberg T. Social jetlag: misalignment of biological and social time. <em>Chronobiol Int</em>. 2006.",
+             "u": "https://doi.org/10.1080/07420520500545979"},
+            {"t": "Arab A, Karimi E, Garaulet M, Scheer FAJL. Social jetlag and obesity: a systematic review and meta-analysis. <em>Obes Rev</em>. 2024.",
+             "u": "https://doi.org/10.1111/obr.13664"},
+            {"t": "Sletten TL, Weaver MD, Foster RG, et al. The importance of sleep regularity: a consensus statement of the National Sleep Foundation sleep timing and variability panel. <em>Sleep Health</em>. 2023.",
+             "u": "https://doi.org/10.1016/j.sleh.2023.07.016"},
+            {"t": "Depner CM, Melanson EL, Eckel RH, et al. Ad libitum weekend recovery sleep fails to prevent metabolic dysregulation during a repeating pattern of insufficient sleep and weekend recovery sleep. <em>Curr Biol</em>. 2019.",
+             "u": "https://doi.org/10.1016/j.cub.2019.01.069"},
+            {"t": "Brooks A, Lack L. A brief afternoon nap following nocturnal sleep restriction: which nap duration is most recuperative? <em>Sleep</em>. 2006.",
+             "u": "https://doi.org/10.1093/sleep/29.6.831"},
+        ],
     },
     {
         "slug": "chronotype-matin-ou-soir",
@@ -189,10 +234,10 @@ ENTRIES = [
 <p>Ce n'est pas une case, c'est un <strong>continuum</strong> : entre les deux extrêmes se trouve la grande majorité des gens, avec des préférences plus ou moins marquées. Et ce n'est pas une question de volonté. Un hibou qui peine à 7 h n'est pas paresseux : son horloge interne indique une heure bien plus matinale que sa montre.</p>
 
 <h2>Le chronotype est-il génétique ?</h2>
-<p>En bonne partie, oui. Les études de jumeaux et les grandes analyses génétiques montrent qu'une part importante du chronotype est héréditaire, portée par de nombreux gènes liés à l'horloge biologique. Mais les gènes ne font pas tout :</p>
+<p>En bonne partie, oui. Une étude finlandaise portant sur 8 753 paires de jumeaux estime la part génétique à environ la moitié, et une analyse génétique de près de 700 000 personnes a relié le fait d'être du matin à 351 régions du génome, riches en gènes de l'horloge biologique. Mais les gènes ne font pas tout :</p>
 <ul>
-<li><strong>L'âge le fait bouger.</strong> Les enfants sont plutôt matinaux ; l'adolescence décale nettement l'horloge vers le soir, avec un maximum autour de 20 ans ; puis le chronotype avance peu à peu, et beaucoup de seniors redeviennent matinaux.</li>
-<li><strong>La lumière le module.</strong> Vivre enfermé, sous un éclairage faible le jour et vif le soir, retarde l'horloge. Des expériences de camping sans lumière artificielle ont montré qu'en une semaine au rythme du soleil, l'horloge des couche-tard se recale nettement plus tôt.</li>
+<li><strong>L'âge le fait bouger.</strong> Les enfants sont plutôt matinaux ; l'adolescence décale nettement l'horloge vers le soir, avec un pic vers 19 ans d'après une analyse portant sur plus de 53 000 Américains ; puis le chronotype avance peu à peu, et beaucoup de seniors redeviennent matinaux.</li>
+<li><strong>La lumière le module.</strong> Vivre enfermé, sous un éclairage faible le jour et vif le soir, retarde l'horloge. Dans une expérience de 2013, une semaine de camping sans lumière artificielle a recalé l'horloge de huit participants sur le soleil, et ce sont les couche-tard qui ont le plus avancé.</li>
 </ul>
 <p>En résumé : tes gènes fixent une tendance, ton âge et ta lumière la font glisser.</p>
 
@@ -211,7 +256,7 @@ ENTRIES = [
 <h2>Comment s'organiser selon son chronotype ?</h2>
 <ul>
 <li><strong>Place tes tâches exigeantes sur ton pic :</strong> tôt le matin pour les alouettes, plutôt en fin de matinée ou l'après-midi pour les hiboux. Garde ton creux pour le routinier.</li>
-<li><strong>Cale tes séances intelligemment :</strong> chez beaucoup de gens, la performance physique culmine en fin d'après-midi, et un profil du soir est souvent en retrait tôt le matin. Si tu t'entraînes à l'aube, soigne ton échauffement.</li>
+<li><strong>Cale tes séances intelligemment :</strong> une méta-analyse de 2022 situe le pic de puissance et de détente entre 13 h et 20 h, avec peu de preuves d'un horaire idéal pour l'endurance. Et chez des athlètes, le pic dépendait surtout du temps écoulé depuis le réveil, avec des écarts de performance allant jusqu'à 26 % dans la journée : un profil du soir est souvent en retrait tôt le matin. Si tu t'entraînes à l'aube, soigne ton échauffement.</li>
 <li><strong>Protège la régularité :</strong> les hiboux sont les premiers à subir l'écart entre semaine et week-end, le fameux <a href="/articles/grasse-matinee-week-end-sommeil.html">jet lag social des grasses matinées</a>. Un lever stable, à une heure près, reste ta meilleure assurance.</li>
 </ul>
 
@@ -230,6 +275,20 @@ ENTRIES = [
             {"q": "Vaut-il mieux être du matin ou du soir ?",
              "a": "Aucun profil n'est meilleur en soi. Les profils du soir souffrent surtout du décalage avec des horaires sociaux matinaux, qui raccourcit leurs nuits en semaine ; organiser ses journées selon son chronotype et garder des horaires réguliers limite ce handicap."},
         ],
+        "sources": [
+            {"t": "Koskenvuo M, Hublin C, Partinen M, et al. Heritability of diurnal type: a nationwide study of 8753 adult twin pairs. <em>J Sleep Res</em>. 2007.",
+             "u": "https://doi.org/10.1111/j.1365-2869.2007.00580.x"},
+            {"t": "Jones SE, Lane JM, Wood AR, et al. Genome-wide association analyses of chronotype in 697,828 individuals provides insights into circadian rhythms. <em>Nat Commun</em>. 2019.",
+             "u": "https://doi.org/10.1038/s41467-018-08259-7"},
+            {"t": "Fischer D, Lombardi DA, Marucci-Wellman H, Roenneberg T. Chronotypes in the US: influence of age and sex. <em>PLoS One</em>. 2017.",
+             "u": "https://doi.org/10.1371/journal.pone.0178782"},
+            {"t": "Wright KP Jr, McHill AW, Birks BR, et al. Entrainment of the human circadian clock to the natural light-dark cycle. <em>Curr Biol</em>. 2013.",
+             "u": "https://doi.org/10.1016/j.cub.2013.06.039"},
+            {"t": "Knaier R, Qian J, Roth R, et al. Diurnal variation in maximum endurance and maximum strength performance: a systematic review and meta-analysis. <em>Med Sci Sports Exerc</em>. 2022.",
+             "u": "https://doi.org/10.1249/MSS.0000000000002773"},
+            {"t": "Facer-Childs E, Brandstaetter R. The impact of circadian phenotype and time since awakening on diurnal performance in athletes. <em>Curr Biol</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.cub.2014.12.036"},
+        ],
     },
     {
         "slug": "comment-se-lever-tot",
@@ -243,20 +302,20 @@ ENTRIES = [
 
 <h2>Pourquoi est-ce si dur de se lever tôt ?</h2>
 <p>Parce que ton réveil sonne peut-être en pleine nuit biologique. Si ton horloge est calée tard — c'est le cas des profils du soir, voir <a href="/articles/chronotype-matin-ou-soir.html">chronotype : es-tu du matin ou du soir ?</a> —, 6 h au cadran correspond pour ton corps à une heure bien plus matinale. Ajoute une nuit trop courte, et le lever devient une épreuve quotidienne.</p>
-<p>Il y a aussi un phénomène normal qu'on confond souvent avec de la fatigue : l'<strong>inertie du sommeil</strong>, ce brouillard des premières minutes après le réveil. Elle se dissipe le plus souvent en 15 à 30 minutes, et elle pèse plus lourd quand tu manques de sommeil. Ne juge donc pas ta capacité à te lever tôt sur ton état à 6 h 05.</p>
+<p>Il y a aussi un phénomène normal qu'on confond souvent avec de la fatigue : l'<strong>inertie du sommeil</strong>, ce brouillard des premières minutes après le réveil. Sans grosse privation de sommeil, elle dépasse rarement 30 minutes, selon une revue de référence publiée en 2000, et elle pèse plus lourd quand tu manques de sommeil. Ne juge donc pas ta capacité à te lever tôt sur ton état à 6 h 05.</p>
 
 <h2>Comment avancer son heure de réveil progressivement ?</h2>
 <p>Par petites marches. Ton horloge accepte de glisser un peu chaque jour ; un saut brutal, en revanche, revient à t'infliger un décalage horaire.</p>
 <ul>
 <li><strong>Des pas de 15 minutes :</strong> avance ton réveil d'un quart d'heure, tiens ce nouvel horaire deux ou trois jours, puis recommence. Pour gagner une heure, compte environ deux semaines.</li>
 <li><strong>Le coucher suit :</strong> chaque quart d'heure gagné le matin se reprend le soir. Ton temps de sommeil doit rester intact, calé sur <a href="/articles/combien-heures-sommeil-par-nuit.html">ton vrai besoin de sommeil</a>.</li>
-<li><strong>Pas de coucher deux heures plus tôt d'un coup :</strong> dans les heures qui précèdent ton coucher habituel, ton horloge te maintient éveillé — les chronobiologistes parlent de « zone interdite » du sommeil. Tu tournerais dans ton lit, frustré.</li>
+<li><strong>Pas de coucher deux heures plus tôt d'un coup :</strong> dans les heures qui précèdent ton coucher habituel, ton horloge te maintient éveillé — les chronobiologistes parlent de « zone interdite » du sommeil, qu'une étude de 1986 situait vers 20-22 h, juste avant l'ouverture de la « porte » du sommeil nocturne. Tu tournerais dans ton lit, frustré.</li>
 </ul>
 
 <h2>Comment se réveiller sans être dans le brouillard ?</h2>
 <ul>
-<li><strong>La lumière d'abord :</strong> ouvre les volets, sors quelques minutes ou prends ton petit-déjeuner près d'une fenêtre. La lumière du matin est le signal le plus puissant pour ton horloge : elle te réveille sur le moment et, jour après jour, avance l'heure à laquelle tu auras sommeil le soir. En hiver, une lampe de luminothérapie peut prendre le relais.</li>
-<li><strong>Le réveil loin du lit :</strong> devoir te lever pour l'éteindre coupe court à la négociation. Le bouton « répéter » ne t'offre que quelques minutes d'un sommeil léger et haché.</li>
+<li><strong>La lumière d'abord :</strong> ouvre les volets, sors quelques minutes ou prends ton petit-déjeuner près d'une fenêtre. La lumière du matin est le signal le plus puissant pour ton horloge : elle te réveille sur le moment et, jour après jour, avance l'heure à laquelle tu auras sommeil le soir. La courbe de réponse à la lumière mesurée à Harvard en 2003 le confirme : reçue après le creux de température du petit matin, la lumière avance l'horloge ; reçue avant, elle la retarde. En hiver, une lampe de luminothérapie peut prendre le relais.</li>
+<li><strong>Le réveil loin du lit :</strong> devoir te lever pour l'éteindre coupe court à la négociation. Le bouton « répéter » n'est pas un poison — dans une étude suédoise de 2024, 30 minutes de snooze ne coûtaient qu'environ 6 minutes de sommeil, sans nuire aux tests du réveil chez des habitués — mais il repousse le lever et relance la négociation chaque matin.</li>
 <li><strong>Un premier geste automatique :</strong> un grand verre d'eau, quelques mouvements, une douche. Prépare-le la veille pour n'avoir rien à décider.</li>
 <li><strong>Une raison de te lever :</strong> un petit-déjeuner que tu aimes, une séance, un moment calme rien qu'à toi. Se lever tôt pour rien ne tient pas longtemps.</li>
 </ul>
@@ -266,7 +325,7 @@ ENTRIES = [
 <p>Presque. Si tu te lèves à 6 h 30 en semaine et à 10 h le samedi, tu défais en deux jours ce que tu as construit en cinq, et le lundi redevient une épreuve. Garde un lever <strong>à une heure près</strong> de ton horaire de semaine ; si tu as besoin de récupérer, couche-toi plus tôt ou fais une sieste courte. Tout est détaillé dans <a href="/articles/grasse-matinee-week-end-sommeil.html">grasse matinée le week-end : bonne ou mauvaise idée ?</a></p>
 
 <h2>Se lever tôt, est-ce vraiment mieux ?</h2>
-<p>Pas en soi. Il n'y a rien de magique à 5 h du matin : ce qui compte pour ta santé et ton énergie, c'est de <strong>dormir assez</strong> et <strong>régulièrement</strong>. Un lever à 5 h qui te laisse six heures de sommeil est une mauvaise affaire. Se lever tôt a du sens si ton rythme de vie l'exige, ou pour libérer un créneau calme pour t'entraîner ou réfléchir. Et si, malgré un coucher avancé, tu restes éveillé des heures au lit pendant des semaines, ce n'est plus une question d'organisation : parles-en à un médecin.</p>
+<p>Pas en soi. Il n'y a rien de magique à 5 h du matin : ce qui compte pour ta santé et ton énergie, c'est de <strong>dormir assez</strong> et <strong>régulièrement</strong>. Un lever à 5 h qui te laisse six heures de sommeil est une mauvaise affaire : la National Sleep Foundation recommande 7 à 9 heures par nuit entre 18 et 64 ans. Se lever tôt a du sens si ton rythme de vie l'exige, ou pour libérer un créneau calme pour t'entraîner ou réfléchir. Et si, malgré un coucher avancé, tu restes éveillé des heures au lit pendant des semaines, ce n'est plus une question d'organisation : parles-en à un médecin.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -283,6 +342,18 @@ ENTRIES = [
             {"q": "À quelle heure se coucher pour se lever à 6 h ?",
              "a": "Compte à rebours depuis ton réveil : ton besoin de sommeil, souvent entre 7 et 9 heures chez l'adulte, plus le temps d'endormissement. Pour un réveil à 6 h et un besoin de 8 heures, vise une extinction des feux vers 21 h 45."},
         ],
+        "sources": [
+            {"t": "Tassi P, Muzet A. Sleep inertia. <em>Sleep Med Rev</em>. 2000.",
+             "u": "https://doi.org/10.1053/smrv.2000.0098"},
+            {"t": "Lavie P. Ultrashort sleep-waking schedule. III. 'Gates' and 'forbidden zones' for sleep. <em>Electroencephalogr Clin Neurophysiol</em>. 1986.",
+             "u": "https://doi.org/10.1016/0013-4694(86)90123-9"},
+            {"t": "Khalsa SBS, Jewett ME, Cajochen C, Czeisler CA. A phase response curve to single bright light pulses in human subjects. <em>J Physiol</em>. 2003.",
+             "u": "https://doi.org/10.1113/jphysiol.2003.040477"},
+            {"t": "Sundelin T, Landry S, Axelsson J. Is snoozing losing? Why intermittent morning alarms are used and how they affect sleep, cognition, cortisol, and mood. <em>J Sleep Res</em>. 2024.",
+             "u": "https://doi.org/10.1111/jsr.14054"},
+            {"t": "Hirshkowitz M, Whiton K, Albert SM, et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. <em>Sleep Health</em>. 2015.",
+             "u": "https://doi.org/10.1016/j.sleh.2014.12.010"},
+        ],
     },
     {
         "slug": "motivation-ou-discipline",
@@ -296,10 +367,10 @@ ENTRIES = [
 
 <h2>Pourquoi la motivation ne suffit pas ?</h2>
 <p>Parce que c'est une émotion, pas une ressource stable. Elle dépend de ton sommeil, de ton stress, de la météo, de ta dernière séance. Si tu attends d'avoir envie pour t'entraîner, tu t'entraîneras quand tu auras envie — autrement dit, irrégulièrement. Or la progression, en sport comme ailleurs, naît de l'accumulation : c'est la <a href="/articles/surcharge-progressive-comment-progresser.html">surcharge progressive</a>, séance après séance, qui construit la force et l'endurance, pas trois séances héroïques en janvier.</p>
-<p>Autre piège : on croit qu'il faut être motivé pour agir, alors que c'est souvent l'inverse. <strong>La motivation suit souvent l'action</strong> au lieu de la précéder. Les dix premières minutes d'une séance commencée sans envie débouchent régulièrement sur une bonne séance.</p>
+<p>Autre piège : on croit qu'il faut être motivé pour agir, alors que c'est souvent l'inverse. En pratique, <strong>la motivation suit souvent l'action</strong> au lieu de la précéder. Les dix premières minutes d'une séance commencée sans envie débouchent régulièrement sur une bonne séance.</p>
 
 <h2>La discipline, est-ce une question de volonté ?</h2>
-<p>Moins qu'on ne le croit. Les recherches en psychologie sur la maîtrise de soi pointent un paradoxe : les personnes qui paraissent les plus disciplinées ne passent pas leurs journées à résister. Elles rencontrent <strong>moins de tentations</strong>, parce qu'elles ont organisé leur vie pour ça, et elles s'appuient davantage sur des <strong>habitudes</strong>. Leur secret n'est pas un mental d'acier : c'est d'avoir rendu le bon choix automatique.</p>
+<p>Moins qu'on ne le croit. Les recherches en psychologie sur la maîtrise de soi pointent un paradoxe : les personnes qui paraissent les plus disciplinées ne passent pas leurs journées à résister. Elles ont <strong>moins souvent besoin de lutter</strong> contre une tentation, parce qu'elles ont organisé leur vie pour ça, et elles s'appuient davantage sur des <strong>habitudes</strong>. Six études (2 274 participants) montrent que leur avantage passe en bonne partie par des habitudes — manger sain, s'entraîner, dormir à heures fixes —, et une méta-analyse de 102 études trouve que la maîtrise de soi prédit surtout les comportements automatiques. Leur secret n'est pas un mental d'acier : c'est d'avoir rendu le bon choix automatique.</p>
 <p>Compter sur la volonté, c'est miser sur la ressource la plus instable de ta journée : une mauvaise nuit ou une semaine chargée suffisent à la faire vaciller.</p>
 
 <h2>Comment tenir quand la motivation n'est pas là ?</h2>
@@ -307,17 +378,17 @@ ENTRIES = [
 <ul>
 <li><strong>Réduis la friction :</strong> sac prêt la veille, tenue posée en évidence, séance programmée à heure fixe. Chaque obstacle retiré, c'est une décision de moins à prendre.</li>
 <li><strong>Installe des routines :</strong> même jour, même heure, même déclencheur. Une séance calée « le mardi après le travail » n'a pas besoin d'être redécidée chaque mardi.</li>
-<li><strong>Planifie à l'avance :</strong> cale tes séances de la semaine le dimanche, comme des rendez-vous. Une séance inscrite dans l'agenda a bien plus de chances d'exister qu'une séance « à caser quand j'aurai le temps ».</li>
+<li><strong>Planifie à l'avance :</strong> cale tes séances de la semaine le dimanche, comme des rendez-vous. Une séance inscrite dans l'agenda a bien plus de chances d'exister qu'une séance « à caser quand j'aurai le temps ». Dans un essai britannique de 2002 (248 participants), la motivation seule n'a pas fait bouger la pratique ; y ajouter un plan « quand et où » a eu un effet spectaculaire.</li>
 <li><strong>Prévois une version minimale :</strong> les jours sans jus, dix minutes valent mieux que zéro. Tu entretiens le rythme, pas la performance.</li>
 </ul>
 <p>Chacune de ces briques est détaillée dans <a href="/articles/creer-une-habitude-qui-dure.html">comment créer une habitude qui dure</a>.</p>
 
 <h2>Pourquoi l'identité et le suivi changent tout ?</h2>
-<p>Parce qu'on tient mieux ce qui colle à l'image qu'on a de soi. « J'essaie de me mettre au sport » laisse la porte ouverte ; « je suis quelqu'un qui s'entraîne » rend la séance cohérente avec qui tu es. Chaque séance tenue, même courte, est une preuve de plus en faveur de cette identité.</p>
-<p>Le suivi fait le reste. Voir ses progrès — une charge qui monte, une allure qui baisse, des semaines sans trou — est un moteur puissant de motivation. La boucle se referme alors : le système produit des résultats, et les résultats nourrissent l'envie.</p>
+<p>Parce qu'on tient mieux ce qui colle à l'image qu'on a de soi : une méta-analyse de 2016 (62 jeux de données) trouve un lien net entre identité sportive et activité physique (corrélation de 0,44). « J'essaie de me mettre au sport » laisse la porte ouverte ; « je suis quelqu'un qui s'entraîne » rend la séance cohérente avec qui tu es. Chaque séance tenue, même courte, est une preuve de plus en faveur de cette identité.</p>
+<p>Le suivi fait le reste. Voir ses progrès — une charge qui monte, une allure qui baisse, des semaines sans trou — est un moteur puissant : une autre méta-analyse de 2016, sur 138 études, montre que suivre ses progrès aide réellement à atteindre ses objectifs. La boucle se referme alors : le système produit des résultats, et les résultats nourrissent l'envie.</p>
 
 <h2>Faut-il s'entraîner même sans envie ?</h2>
-<p>Souvent oui, pas toujours. Distingue le manque d'envie de la vraie fatigue. Si tu es simplement démotivé, lance la version minimale : l'envie revient souvent en route. Donne-toi dix minutes : si tout reste lourd au bout de dix minutes, rentre sans culpabiliser — tu as tenu le rendez-vous, et c'est ce qui compte pour l'habitude. Si en revanche ton sommeil se dégrade, que ton cœur de repos reste élevé et que tes performances baissent depuis des jours, forcer n'est plus de la discipline, c'est de l'entêtement — et la porte ouverte au <a href="/articles/surentrainement-signes.html">surentraînement</a>. Pour trancher au cas par cas, lis <a href="/articles/s-entrainer-fatigue-bonne-idee.html">s'entraîner fatigué : bonne ou mauvaise idée ?</a> La vraie discipline inclut le repos.</p>
+<p>Souvent oui, pas toujours. Distingue le manque d'envie de la vraie fatigue. Si tu es simplement démotivé, lance la version minimale : l'envie revient souvent en route. Donne-toi dix minutes : si tout reste lourd au bout de dix minutes, rentre sans culpabiliser — tu as tenu le rendez-vous, et c'est ce qui compte pour l'habitude. Si en revanche ton sommeil se dégrade, que ton cœur de repos reste élevé et que tes performances baissent depuis des jours, forcer n'est plus de la discipline, c'est de l'entêtement — et la porte ouverte au <a href="/articles/surentrainement-signes.html">surentraînement</a>, que le consensus européen et américain de médecine du sport (2013) décrit comme un déséquilibre prolongé entre charge et récupération. Pour trancher au cas par cas, lis <a href="/articles/s-entrainer-fatigue-bonne-idee.html">s'entraîner fatigué : bonne ou mauvaise idée ?</a> La vraie discipline inclut le repos.</p>
 
 <h2>Ce qu'il faut retenir</h2>
 <ul>
@@ -333,6 +404,20 @@ ENTRIES = [
              "a": "Parce que la motivation du départ est une émotion, et qu'une émotion retombe. Si rien ne prend le relais — routine fixe, déclencheur précis, progrès visibles —, l'envie s'éteint avant que l'habitude ne soit installée."},
             {"q": "Comment garder la motivation sur le long terme ?",
              "a": "Suis tes progrès de façon visible, fixe-toi des objectifs de régularité plutôt que de résultat, et construis-toi une identité de personne qui s'entraîne. Les résultats qui s'accumulent nourrissent l'envie bien mieux qu'un élan de départ."},
+        ],
+        "sources": [
+            {"t": "Galla BM, Duckworth AL. More than resisting temptation: beneficial habits mediate the relationship between self-control and positive life outcomes. <em>J Pers Soc Psychol</em>. 2015.",
+             "u": "https://doi.org/10.1037/pspp0000026"},
+            {"t": "de Ridder DTD, Lensvelt-Mulders G, Finkenauer C, et al. Taking stock of self-control: a meta-analysis of how trait self-control relates to a wide range of behaviors. <em>Pers Soc Psychol Rev</em>. 2012.",
+             "u": "https://doi.org/10.1177/1088868311418749"},
+            {"t": "Milne S, Orbell S, Sheeran P. Combining motivational and volitional interventions to promote exercise participation: protection motivation theory and implementation intentions. <em>Br J Health Psychol</em>. 2002.",
+             "u": "https://doi.org/10.1348/135910702169420"},
+            {"t": "Rhodes RE, Kaushal N, Quinlan A. Is physical activity a part of who I am? A review and meta-analysis of identity, schema and physical activity. <em>Health Psychol Rev</em>. 2016.",
+             "u": "https://doi.org/10.1080/17437199.2016.1143334"},
+            {"t": "Harkin B, Webb TL, Chang BP, et al. Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence. <em>Psychol Bull</em>. 2016.",
+             "u": "https://doi.org/10.1037/bul0000025"},
+            {"t": "Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. <em>Med Sci Sports Exerc</em>. 2013.",
+             "u": "https://doi.org/10.1249/MSS.0b013e318279a10a"},
         ],
     },
 ]
