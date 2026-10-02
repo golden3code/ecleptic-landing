@@ -68,6 +68,7 @@
 ### Régularité
 
 - [Thème Régularité](https://ecleptic.health/articles/regularite/): Horaires de coucher, routine du soir, décalage horaire, habitudes qui durent : pourquoi la régularité compte autant que la durée, et comment la construire.
+- [Décalage horaire : comment le récupérer vite ?](https://ecleptic.health/articles/decalage-horaire-que-faire.html): Environ un jour d'adaptation par fuseau franchi. La lumière comme levier nº1, les repas calés sur la destination : comment récupérer le jet lag plus vite.
 - [Se coucher à la même heure : ce que ça change vraiment](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html): À durée de sommeil égale, des horaires réguliers améliorent la qualité des nuits, l'énergie et même la santé métabolique. Pourquoi, et comment y arriver.
 
 ### Humeur
@@ -167,6 +168,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Consistency
 
+- [Jet lag: how to get over it fast](https://ecleptic.health/en/journal/how-to-beat-jet-lag.html): Plan on about one day of adjustment per time zone crossed. Light as your No. 1 lever, meals set to destination time: how to get over jet lag faster.
 - [Going to bed at the same time: what it really changes](https://ecleptic.health/en/journal/going-to-bed-at-the-same-time.html): For the same amount of sleep, a regular schedule improves sleep quality, energy and even metabolic health. Here's why it works, and how to make it happen.
 
 ### Mood

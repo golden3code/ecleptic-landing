@@ -1282,6 +1282,89 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Décalage horaire : comment le récupérer vite ?
+
+URL : https://ecleptic.health/articles/decalage-horaire-que-faire.html
+Thème : Régularité · Auteur : Auguste Phily-Priou · Publié le 2026-10-02
+
+Environ un jour d'adaptation par fuseau franchi. La lumière comme levier nº1, les repas calés sur la destination : comment récupérer le jet lag plus vite.
+
+La réponse courte : **compte environ un jour d'adaptation par fuseau horaire franchi vers l'est, un demi-jour vers l'ouest**, et sers-toi de la lumière comme levier principal pour aller plus vite. Le décalage horaire (*jet lag*) vient d'un désaccord : ton horloge interne est restée à l'heure de départ pendant que le monde autour de toi vit à l'heure d'arrivée. Tant que les deux ne sont pas resynchronisées, tu subis — sommeil en vrac, fatigue, digestion perturbée, tête cotonneuse.
+
+Tu ne peux pas supprimer le décalage, mais tu peux **accélérer nettement la remise à l'heure**. Une règle domine tout : cale-toi sur l'heure locale dès l'instant où tu montes dans l'avion.
+
+## La lumière, ton levier nº1
+
+Rien ne recale ton horloge aussi puissamment que la lumière. Le principe : la lumière du matin *avance* ton horloge (tu t'endors et te réveilles plus tôt), la lumière du soir la *retarde*. Tout l'art consiste à chercher la lumière au bon moment et à l'éviter au mauvais :
+
+- **Voyage vers l'est** (tu dois te coucher plus tôt) : cherche la lumière vive le **matin** à destination, évite-la en fin de journée.
+
+- **Voyage vers l'ouest** (tu dois tenir plus tard) : cherche la lumière en **fin d'après-midi et début de soirée**, évite la lumière vive trop tôt le matin.
+
+- En pratique : sors dehors. La lumière du jour est des dizaines de fois plus intense qu'un intérieur éclairé.
+
+- Les tout premiers jours comptent le plus : ne gâche pas ta lumière du matin en restant volets fermés à l'hôtel. Nuance : après plus de huit fuseaux vers l'est, la lumière du petit matin peut retarder l'horloge ; vise plutôt la fin de matinée.
+
+## Pourquoi l'est est plus dur que l'ouest
+
+Parce que ton horloge interne tourne naturellement sur un rythme un peu **supérieur à 24 heures** : 24 h 11 min en moyenne, selon une étude publiée dans *Science* en 1999. La retarder — ce qu'on fait en voyageant vers l'ouest, où la journée s'allonge — est facile : c'est son penchant naturel. L'avancer, en voyageant vers l'est, va contre son sens de rotation, et c'est toujours plus laborieux. Concrètement : Paris-New York (ouest) se récupère plus vite que New York-Paris (est), à nombre de fuseaux égal. Anticipe : pour un vol vers l'est, décale ton coucher un peu plus tôt les jours précédant le départ ; vers l'ouest, un peu plus tard. Ordre de grandeur, selon un consensus de 26 experts publié en 2021 : sans intervention, l'horloge se recale d'environ une heure par jour vers l'est, et de deux heures par jour vers l'ouest.
+
+Source : Janse van Rensburg et al., consensus d'experts (2021) ; règle empirique, sans intervention.
+| Fuseaux franchis | Vers l'ouest | Vers l'est |
+
+| 3 fuseaux | ~1,5 jour | ~3 jours |
+
+| 6 fuseaux (Paris ↔ New York) | ~3 jours | ~6 jours |
+
+| 9 fuseaux (Paris ↔ Los Angeles) | ~4,5 jours | ~9 jours |
+
+## Repas, mélatonine et heure locale
+
+- **Mange à l'heure locale.** Les repas sont un signal d'horloge secondaire : dans une étude de 2017, décaler les repas de 5 heures a retardé d'environ 5 h 40 le rythme de la glycémie, sans bouger les marqueurs de l'horloge centrale, que la lumière pilote. Cale quand même petit-déjeuner, déjeuner et dîner sur la destination dès le premier jour, même sans grande faim.
+
+- **La mélatonine, à petite dose et au bon moment.** Une revue Cochrane (10 essais) conclut qu'une petite dose prise à l'heure du coucher à destination réduit le jet lag après cinq fuseaux ou plus, surtout vers l'est ; prise trop tôt dans la journée, elle peut au contraire retarder l'adaptation. Ce n'est pas un somnifère et le timing compte plus que la dose — demande conseil à un pharmacien ou un médecin, surtout si tu prends d'autres traitements.
+
+- **Passe ta montre à l'heure d'arrivée en montant dans l'avion**, et vis mentalement à cette heure-là. Ce petit geste oriente toutes tes décisions : quand manger, quand dormir, quand chercher la lumière.
+
+- **Gère la caféine et l'alcool.** Un café stratégique le matin local aide à tenir ; l'alcool en vol, lui, dégrade un sommeil déjà fragile et accentue la déshydratation, qui alourdit encore la sensation de jet lag.
+
+## Faut-il dormir dans l'avion ?
+
+Ça dépend de l'heure qu'il sera à l'arrivée. Si tu atterris le matin, essaie de dormir en vol pour arriver avec un peu de réserve ; si tu atterris le soir, reste éveillé pour tomber de sommeil à l'heure locale. Et une fois sur place, tiens jusqu'à un coucher normal : une [sieste courte](https://ecleptic.health/articles/sieste-ideale-duree.html) de 20 minutes est permise, une sieste de trois heures ruine ta première nuit. Pour un court séjour de un à deux jours, inutile de te réadapter à fond : reste plutôt sur l'heure de ton domicile, tu éviteras un double décalage au retour — c'est aussi ce que retient l'American Academy of Sleep Medicine pour les séjours de deux jours ou moins. Le retour à un rythme stable passe par les mêmes fondations que d'habitude : des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) et une routine du soir qui redonne le cap à ton horloge.
+
+## Ce qu'il faut retenir
+
+- Environ un jour d'adaptation par fuseau franchi vers l'est, un demi-jour vers l'ouest : l'est est plus dur à récupérer.
+
+- La lumière est le levier nº1 : cherche-la ou évite-la selon la direction du voyage.
+
+- Cale repas et heure de vie sur la destination dès l'avion ; la mélatonine à petite dose peut aider au bon moment.
+
+## Questions fréquentes
+
+### Combien de temps pour récupérer du décalage horaire ?
+
+Compte environ un jour par fuseau horaire franchi vers l'est, et plutôt un demi-jour par fuseau vers l'ouest : à nombre de fuseaux égal, l'est est plus long à récupérer.
+
+### Comment lutter contre le jet lag ?
+
+Cale-toi sur l'heure locale dès l'avion, sers-toi de la lumière (à chercher ou à éviter selon la direction du voyage) et mange aux horaires de la destination. Une petite dose de mélatonine au bon moment peut aider.
+
+### Pourquoi le décalage horaire est plus dur vers l'est ?
+
+Parce que ton horloge interne tourne naturellement sur un rythme un peu supérieur à 24 heures. La retarder, lors d'un voyage vers l'ouest, est facile ; l'avancer, vers l'est, va contre son sens naturel.
+
+## Sources
+
+- Janse van Rensburg DC, Jansen van Rensburg A, Fowler PM, et al. Managing Travel Fatigue and Jet Lag in Athletes: A Review and Consensus Statement. *Sports Med*. 2021. — https://doi.org/10.1007/s40279-021-01502-0
+- Czeisler CA, Duffy JF, Shanahan TL, et al. Stability, precision, and near-24-hour period of the human circadian pacemaker. *Science*. 1999. — https://doi.org/10.1126/science.284.5423.2177
+- Sack RL, Auckley D, Auger RR, et al. Circadian rhythm sleep disorders: part I, basic principles, shift work and jet lag disorders. An American Academy of Sleep Medicine review. *Sleep*. 2007. — https://doi.org/10.1093/sleep/30.11.1460
+- Herxheimer A, Petrie KJ. Melatonin for the prevention and treatment of jet lag. *Cochrane Database Syst Rev*. 2002. — https://doi.org/10.1002/14651858.CD001520
+- Wehrens SMT, Christou S, Isherwood C, et al. Meal Timing Regulates the Human Circadian System. *Curr Biol*. 2017. — https://doi.org/10.1016/j.cub.2017.04.059
+- Khalsa SB, Jewett ME, Cajochen C, Czeisler CA. A phase response curve to single bright light pulses in human subjects. *J Physiol*. 2003. — https://doi.org/10.1113/jphysiol.2003.040477
+
+---
+
 # Bain froid : vrais bienfaits ou effet de mode ?
 
 URL : https://ecleptic.health/articles/bain-froid-recuperation-bienfaits.html
