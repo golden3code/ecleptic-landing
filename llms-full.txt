@@ -1282,6 +1282,77 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Semaine de décharge (deload) : quand et comment la faire ?
+
+URL : https://ecleptic.health/articles/semaine-de-decharge-deload.html
+Thème : Charge · Auteur : Auguste Phily-Priou · Publié le 2026-10-04
+
+Réduis le volume de 40-50 %, toutes les 4 à 8 semaines ou dès que la fatigue s'installe. Garde un peu d'intensité. Ce n'est pas de la paresse.
+
+La réponse courte : une semaine de décharge — **deload** — c'est une semaine où tu **réduis volontairement le volume d'entraînement d'environ 40 à 50 %** pour laisser ta récupération rattraper son retard. À placer environ **toutes les 4 à 8 semaines**, ou dès que les signes de fatigue s'accumulent. Ce n'est ni de la paresse ni un aveu de faiblesse : c'est exactement ce qui te permet de continuer à progresser au lieu de stagner ou de te blesser.
+
+Le principe est simple. À l'entraînement, tu crées de la fatigue et un signal d'adaptation. Le progrès n'arrive pas pendant la séance, il arrive *pendant la récupération*. Si tu empiles les semaines dures sans jamais lever le pied, la fatigue finit par masquer les gains : tu travailles dur, mais tu récupères de moins en moins. Le deload rouvre l'écart entre ta charge et ta capacité à encaisser — c'est l'idée de la surcompensation. Le consensus européen et américain sur le surentraînement (2013) le formule ainsi : un entraînement réussi doit comporter de la surcharge, mais jamais la combinaison surcharge excessive et récupération insuffisante ; une fatigue passagère bien récupérée se transforme ensuite en progrès.
+
+## Quand la placer
+
+Deux façons de décider, à combiner :
+
+- **Au calendrier :** toutes les 4 à 8 semaines de travail sérieux. Dans une enquête de 2024 auprès de 246 athlètes de force et de physique, le deload revenait en moyenne toutes les 5 à 6 semaines et durait environ une semaine. Les débutants et les séances légères peuvent tenir plus longtemps ; plus tu pousses lourd et intense, plus le deload revient souvent.
+
+- **À l'écoute des signaux :** sommeil qui se dégrade, motivation en berne, performances qui reculent séance après séance, courbatures qui traînent, irritabilité. Ce sont les [signes d'accumulation de fatigue](https://ecleptic.health/articles/surentrainement-signes.html) — quand plusieurs s'allument, ne négocie pas, décharge.
+
+Le bon réflexe : ne pas attendre d'être à plat. Un deload anticipé se paie en une semaine calme ; un surmenage installé se paie en plusieurs semaines perdues, parfois une blessure.
+
+## Comment la faire concrètement
+
+La clé, c'est de **baisser le volume en gardant un peu d'intensité**. Tu veux te reposer sans te déconditionner — sans perdre le fil de tes mouvements ni ta force.
+
+- **Coupe le volume de 40 à 50 %.** Moitié moins de séries, ou moins d'exercices par séance. C'est le levier principal. Le repère vient de l'affûtage avant compétition : une méta-analyse de 2007 (27 études) trouve les meilleurs résultats en réduisant le volume de 41 à 60 %, sans toucher à l'intensité ni à la fréquence.
+
+- **Garde un peu d'intensité.** Continue à soulever des charges correctes, mais sur très peu de séries, loin de l'échec. Ton corps garde le signal *je sais faire ça* sans l'épuisement.
+
+- **Ne va jamais à l'échec.** Toute la semaine, laisse des répétitions en réserve. L'objectif est de récupérer, pas de tester tes limites.
+
+- **Le reste suit :** dors davantage, mange normalement, bouge. La décharge marche parce que tout l'organisme souffle en même temps.
+
+Une semaine suffit dans la grande majorité des cas. Beaucoup d'athlètes décrivent de meilleures sensations à la reprise, mais la science reste mince : le seul essai contrôlé (2024, 39 pratiquants) a testé une semaine d'arrêt complet au milieu de 9 semaines de musculation, sans gain de muscle en plus, et avec un peu moins de force à la fin. Un argument de plus pour réduire plutôt que tout couper.
+
+## Deload et surcharge : les deux faces d'une même pièce
+
+Le deload n'a de sens que parce que tu pousses le reste du temps. C'est le contrepoids de la surcharge progressive : tu augmentes graduellement la contrainte pendant plusieurs semaines, puis tu relâches pour digérer tout ce travail. Sans surcharge, rien à décharger ; sans décharge, la surcharge finit par te casser. Les deux ensemble dessinent une progression en **vagues** — tu montes, tu souffles, tu remontes plus haut — bien plus efficace qu'une ligne droite qui grimpe jusqu'à ce qu'elle casse.
+
+## Ce qu'il faut retenir
+
+- Le deload : réduire le volume de 40-50 %, toutes les 4 à 8 semaines ou dès que la fatigue s'accumule.
+
+- Baisse le volume mais garde un peu d'intensité, sans jamais aller à l'échec — tu récupères sans te déconditionner.
+
+- Ce n'est pas de la paresse : c'est la semaine calme qui permet la surcompensation et la progression sur le long terme.
+
+## Questions fréquentes
+
+### C'est quoi une semaine de décharge (deload) ?
+
+Une semaine où tu réduis volontairement le volume d'entraînement d'environ 40 à 50 % pour laisser ta récupération rattraper la fatigue accumulée. Tu gardes un peu d'intensité pour ne pas te déconditionner.
+
+### Tous les combien faire un deload ?
+
+Environ toutes les 4 à 8 semaines de travail sérieux, ou dès que les signes de fatigue s'accumulent : sommeil dégradé, motivation en baisse, performances qui reculent. Mieux vaut l'anticiper que subir un surmenage.
+
+### Comment faire une semaine de décharge ?
+
+Coupe le volume de 40 à 50 % (moitié moins de séries), garde des charges correctes sur peu de séries, et ne va jamais à l'échec. Dors et mange normalement pour laisser tout l'organisme souffler.
+
+## Sources
+
+- Bell L, Strafford BW, Coleman M, et al. Integrating Deloading into Strength and Physique Sports Training Programmes: An International Delphi Consensus Approach. *Sports Med Open*. 2023. — https://doi.org/10.1186/s40798-023-00633-0
+- Rogerson D, Nolan D, Androulakis Korakakis P, et al. Deloading Practices in Strength and Physique Sports: A Cross-sectional Survey. *Sports Med Open*. 2024. — https://doi.org/10.1186/s40798-024-00691-y
+- Bosquet L, Montpetit J, Arvisais D, Mujika I. Effects of tapering on performance: a meta-analysis. *Med Sci Sports Exerc*. 2007. — https://doi.org/10.1249/mss.0b013e31806010e0
+- Coleman M, Burke R, Augustin F, et al. Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations. *PeerJ*. 2024. — https://doi.org/10.7717/peerj.16777
+- Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. *Med Sci Sports Exerc*. 2013. — https://doi.org/10.1249/MSS.0b013e318279a10a
+
+---
+
 # Décalage horaire : comment le récupérer vite ?
 
 URL : https://ecleptic.health/articles/decalage-horaire-que-faire.html
