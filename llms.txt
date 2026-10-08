@@ -86,6 +86,7 @@
 ### Énergie
 
 - [Thème Énergie](https://ecleptic.health/articles/energie/): Fatigue constante, coup de barre après manger, sieste, carence en fer, glycémie : comprendre d'où vient ta fatigue et retrouver une énergie stable toute la journée.
+- [Coup de barre après manger : pourquoi, et comment l'éviter ?](https://ecleptic.health/articles/coup-de-barre-apres-manger.html): Le creux de début d'après-midi est d'abord circadien, il existe même sans déjeuner, puis un repas lourd et sucré l'aggrave. Comment vraiment l'éviter.
 - [Sieste idéale : combien de temps faut-il dormir ?](https://ecleptic.health/articles/sieste-ideale-duree.html): 10 à 20 minutes avant 15 heures : la formule de la sieste qui recharge sans brouillard. Pourquoi 30 minutes est un format piège, et quand la sieste est un signal.
 - [Toujours fatigué ? Les vraies causes d'une fatigue constante](https://ecleptic.health/articles/toujours-fatigue-causes.html): Dette de sommeil invisible, horaires irréguliers, sous-alimentation, surmenage, carences : les causes les plus fréquentes d'une fatigue qui dure, dans l'ordre.
 
@@ -185,6 +186,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Energy
 
+- [Tired after eating: why it happens, and how to avoid it](https://ecleptic.health/en/journal/tired-after-eating.html): The early-afternoon slump is circadian first (it happens even without lunch), and a heavy, sugary meal makes it worse. How to actually avoid it.
 - [Ideal nap length: how long should you nap?](https://ecleptic.health/en/journal/ideal-nap-length.html): 10 to 20 minutes before 3 p.m.: the nap formula that recharges you without the grogginess. Why 30 minutes backfires, and when napping is a warning sign.
 - [Why am I always tired? The real causes of constant fatigue](https://ecleptic.health/en/journal/why-am-i-always-tired.html): Hidden sleep debt, irregular hours, undereating, overreaching, deficiencies: the most common causes of fatigue that won't go away, in the order to check them.
 
