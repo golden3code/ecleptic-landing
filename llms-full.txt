@@ -866,7 +866,7 @@ C'est le troisième signal du pilier, derrière la variabilité cardiaque (45 %)
 
 ## Quand en parler à un médecin
 
-Une nuit à part n'est pas une alerte. En revanche, une fréquence respiratoire qui reste nettement au-dessus de ta normale plusieurs nuits de suite, surtout avec de la fièvre, une toux ou une fatigue inhabituelle, mérite d'en parler à un médecin. Et si tu tombes malade, laisse ton corps guérir avant de t'entraîner à nouveau : les règles sont dans reprendre le sport après une maladie.
+Une nuit à part n'est pas une alerte. En revanche, une fréquence respiratoire qui reste nettement au-dessus de ta normale plusieurs nuits de suite, surtout avec de la fièvre, une toux ou une fatigue inhabituelle, mérite d'en parler à un médecin. Et si tu tombes malade, laisse ton corps guérir avant de t'entraîner à nouveau : les règles sont dans [reprendre le sport après une maladie](https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html).
 
 Un essoufflement anormal, une douleur dans la poitrine, des palpitations ou un malaise ne se surveillent pas sur une app : consulte un médecin sans attendre et, en cas d'urgence, appelle le 15 ou le 112. Ecleptic est un outil de bien-être, pas un dispositif médical.
 
@@ -1021,7 +1021,7 @@ Pourquoi si peu ? C'est un choix. La température est utile pour repérer une nu
 
 ## Quand consulter
 
-Un écart isolé, surtout après une soirée arrosée ou dans une chambre surchauffée, n'a en général rien d'inquiétant. En revanche, si tu te sens fiévreux, vérifie avec un thermomètre, et consulte un médecin si la fièvre persiste plusieurs jours ou s'accompagne de symptômes qui t'inquiètent. Laisse aussi ton corps guérir avant de t'entraîner à nouveau : les règles sont dans reprendre le sport après une maladie.
+Un écart isolé, surtout après une soirée arrosée ou dans une chambre surchauffée, n'a en général rien d'inquiétant. En revanche, si tu te sens fiévreux, vérifie avec un thermomètre, et consulte un médecin si la fièvre persiste plusieurs jours ou s'accompagne de symptômes qui t'inquiètent. Laisse aussi ton corps guérir avant de t'entraîner à nouveau : les règles sont dans [reprendre le sport après une maladie](https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html).
 
 Un malaise, une douleur dans la poitrine, un essoufflement anormal ou des palpitations ne se surveillent pas avec une montre : consulte sans attendre et, en cas d'urgence, appelle le 15 ou le 112. Ecleptic est un outil de bien-être, pas un dispositif médical.
 
@@ -1279,6 +1279,96 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Reprendre le sport après une maladie : les règles
+
+URL : https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html
+Thème : Contexte · Auteur : Auguste Phily-Priou · Publié le 2026-10-10
+
+La règle au-dessus/au-dessous du cou, la séance test à 60-70 % et l'alerte fièvre à ne jamais ignorer : reprendre le sport après une maladie sans risque.
+
+La réponse courte : applique la règle **« au-dessus / au-dessous du cou »**. Si tes symptômes sont **au-dessus du cou** — nez qui coule, gorge un peu irritée, éternuements — une activité **légère** est généralement possible, et souvent tu te sens même mieux après. Si tu as de la **fièvre, des courbatures diffuses, des symptômes dans la poitrine (toux grasse, oppression) ou une grosse fatigue générale** : c'est **repos**, sans discuter.
+
+Et une règle de sécurité qui prime sur tout le reste : **jamais d'effort intense avec de la fièvre** ou des symptômes généraux. Ce n'est pas de la prudence excessive — c'est le point où le sport peut devenir réellement risqué.
+
+## Pourquoi la fièvre change tout
+
+Faire un effort intense pendant une infection avec fièvre expose à un risque rare mais grave : la **myocardite**, une inflammation du muscle cardiaque. Une revue suédoise de 2000 est formelle : l'effort intense pendant une infection avec fièvre doit toujours être évité. Une revue de cardiologie du sport (2021) range aussi le fait de s'entraîner malade, ou de reprendre trop tôt, parmi les facteurs de risque de myocardite chez les sportifs de haut niveau. C'est pour ça que la consigne est catégorique : fièvre, courbatures diffuses, ganglions, essoufflement inhabituel → **on ne s'entraîne pas**, on récupère. Au moindre signe thoracique — douleur, oppression, palpitations, essoufflement anormal — **ou au moindre doute, consulte un médecin** avant de reprendre. Cette ligne-là ne se négocie pas.
+
+## Combien de temps faut-il attendre ?
+
+Il n'existe pas de compteur universel. Le consensus du Comité international olympique (2022) note que la règle du cou relève de l'avis d'experts, et se fie plutôt aux symptômes :
+
+Sources : Comité international olympique (2022) ; Friman et Wesslén (2000).
+| Ce que tu ressens | Ce que tu fais |
+
+| Nez qui coule, gorge irritée, sans fièvre | Activité légère possible ; prudence 1 à 3 jours, puis reprise progressive si rien ne s'aggrave |
+
+| Fièvre, frissons, courbatures diffuses, grosse fatigue | Repos tant que ces signes sont là |
+
+| Toux marquée, souffle court | Pas d'entraînement, avis médical |
+
+| Douleur ou oppression thoracique, palpitations | Stop, et médecin avant toute reprise |
+
+| Plus aucun de ces signes | Séance test : 10 à 20 minutes à 60-70 % de ton intensité habituelle |
+
+Pour le simple rhume, inutile de tout arrêter : dans un essai de 1998, des volontaires enrhumés qui faisaient 40 minutes d'exercice modéré un jour sur deux n'avaient ni un rhume plus sévère, ni plus long. Avec de la fièvre, attends qu'elle soit tombée avant toute reprise. Et après une infection fébrile d'une semaine, retrouver pleinement force et endurance peut demander plusieurs semaines, selon une revue de l'*International Journal of Sports Medicine* (1998).
+
+Pendant la convalescence, ne néglige pas les bases qui accélèrent le retour : dormir plus que d'habitude, bien t'hydrater, et manger à ta faim — ce n'est surtout pas le moment de cumuler un régime et une reprise.
+
+## Reprendre progressivement, sans tout casser
+
+Une fois remis, la tentation est de reprendre là où tu t'étais arrêté. Mauvaise idée : quelques jours d'arrêt et une infection entament ta capacité, et repartir trop fort rallonge la convalescence. La progression raisonnable :
+
+- **Commence par une séance test** : 10 à 20 minutes à 60-70 % de ton intensité habituelle, le format proposé par le consensus du CIO.
+
+- **Remonte par paliers**, séance après séance, seulement si tout va bien pendant l'effort et dans les 24 heures qui suivent : ni douleur ou oppression thoracique, ni palpitations, ni essoufflement ou fatigue excessifs, ni effort anormalement dur pour ta charge habituelle. Au moindre de ces signes, tu arrêtes et tu consultes.
+
+- **Ne rattrape rien.** Les séances manquées sont manquées ; vouloir « compenser » est le meilleur moyen de rechuter ou de basculer dans le [surmenage](https://ecleptic.health/articles/surentrainement-signes.html).
+
+## Tes deux meilleurs indicateurs objectifs
+
+Ton ressenti ment parfois : l'envie de reprendre brouille le jugement. Deux mesures au réveil, elles, sont assez honnêtes :
+
+- **Ta fréquence cardiaque de repos.** Encore élevée de plusieurs battements au-dessus de ta normale ? Ton corps n'a pas fini de récupérer — laisse-lui du temps. C'est aussi un signe typique de myocardite chez le sportif, selon la revue de cardiologie citée plus haut.
+
+- **Ta variabilité cardiaque.** La [HRV](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) chute souvent pendant l'infection et remonte quand tu récupères vraiment. Attendre qu'elle revienne vers ta ligne de base est un bien meilleur guide que le calendrier.
+
+Un dernier test, tout simple : ta première vraie séance de reprise. Si un effort modéré te paraît anormalement dur, que le cœur s'emballe pour rien ou que tu es lessivé le lendemain, c'est que tu es reparti trop tôt. Recule d'un cran, laisse encore deux ou trois jours, et retente. Il n'y a jamais rien à gagner à forcer une reprise — et souvent une rechute à la clé.
+
+C'est exactement le genre de lecture qu'un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) synthétise chaque matin : quand cœur de repos et HRV sont revenus à ta normale, le feu passe au vert. Avant, il vaut mieux patienter.
+
+## Ce qu'il faut retenir
+
+- Règle au-dessus/au-dessous du cou : symptômes légers de la tête → activité douce ; fièvre, poitrine, corps → repos.
+
+- Jamais d'effort intense avec de la fièvre (risque de myocardite) ; au moindre signe thoracique ou doute, médecin.
+
+- Reprends par une séance test à 60-70 % de ton intensité, puis par paliers, et fie-toi à ta fréquence cardiaque de repos et à ta HRV plutôt qu'à ton impatience.
+
+## Questions fréquentes
+
+### Quand reprendre le sport après une maladie ?
+
+Applique la règle au-dessus/au-dessous du cou : symptômes légers de la tête (nez, gorge) → activité douce possible ; fièvre, courbatures diffuses, symptômes dans la poitrine ou grosse fatigue → repos complet.
+
+### Peut-on faire du sport avec de la fièvre ?
+
+Non. Un effort intense avec de la fièvre expose à un risque rare mais grave de myocardite (inflammation du cœur). Au moindre signe thoracique ou au moindre doute, consulte un médecin avant de reprendre.
+
+### Comment reprendre l'entraînement après un arrêt maladie ?
+
+Commence par une séance test de 10 à 20 minutes à 60-70 % de ton intensité habituelle, puis augmente la charge séance après séance si tout va bien pendant l'effort et dans les 24 heures qui suivent. Fie-toi aussi à ta fréquence cardiaque de repos et à ta HRV au réveil : quand elles reviennent à ta normale, tu peux accélérer.
+
+## Sources
+
+- Schwellnus M, Adami PE, Bougault V, et al. International Olympic Committee (IOC) consensus statement on acute respiratory illness in athletes part 1: acute respiratory infections. *Br J Sports Med*. 2022. — https://doi.org/10.1136/bjsports-2022-105759
+- Friman G, Wesslén L. Special feature for the Olympics: effects of exercise on the immune system: infections and exercise in high-performance athletes. *Immunol Cell Biol*. 2000. — https://doi.org/10.1111/j.1440-1711.2000.t01-12-.x
+- Friman G, Ilbäck NG. Acute infection: metabolic responses, effects on performance, interaction with exercise, and myocarditis. *Int J Sports Med*. 1998. — https://doi.org/10.1055/s-2007-971990
+- Weidner TG, Cranston T, Schurr T, et al. The effect of exercise training on the severity and duration of a viral upper respiratory illness. *Med Sci Sports Exerc*. 1998. — https://doi.org/10.1097/00005768-199811000-00004
+- Halle M, Binzenhöfer L, Mahrholdt H, et al. Myocarditis in athletes: a clinical perspective. *Eur J Prev Cardiol*. 2021. — https://doi.org/10.1177/2047487320909670
 
 ---
 

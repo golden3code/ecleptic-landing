@@ -81,6 +81,7 @@
 ### Contexte
 
 - [Thème Contexte](https://ecleptic.health/articles/contexte/): Alcool, maladie, cycle menstruel, âge, tabac, chaleur, altitude : les facteurs qui changent ta récupération et tes performances, et comment t'y adapter.
+- [Reprendre le sport après une maladie : les règles](https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html): La règle au-dessus/au-dessous du cou, la séance test à 60-70 % et l'alerte fièvre à ne jamais ignorer : reprendre le sport après une maladie sans risque.
 - [Alcool et sommeil : ce qui se passe vraiment la nuit](https://ecleptic.health/articles/alcool-sommeil-effets.html): L'alcool aide parfois à s'endormir, mais fragmente la seconde moitié de la nuit : sommeil paradoxal réduit, récupération cardiaque en baisse. Verre par verre.
 
 ### Énergie
@@ -182,6 +183,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Context
 
+- [Returning to exercise after illness: the rules to follow](https://ecleptic.health/en/journal/returning-to-exercise-after-illness.html): The above/below-the-neck rule, the gradual 60-70% restart and the fever warning you must never ignore: how to return to exercise after illness safely.
 - [Alcohol and sleep: what really happens during the night](https://ecleptic.health/en/journal/alcohol-and-sleep.html): Alcohol can help you fall asleep, but it fragments the second half of the night: less REM sleep, weaker heart recovery. Here's what happens, drink by drink.
 
 ### Energy
