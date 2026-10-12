@@ -31,6 +31,7 @@
 ### Sommeil
 
 - [Thème Sommeil](https://ecleptic.health/articles/sommeil/): Durée idéale, sommeil profond, café, écrans, réveils nocturnes : des articles courts et sourcés pour comprendre ton sommeil et mieux dormir dès ce soir.
+- [Écrans avant de dormir : la lumière bleue est-elle vraiment un problème ?](https://ecleptic.health/articles/lumiere-bleue-ecrans-avant-de-dormir.html): La lumière vive du soir retarde bien l'endormissement — mais la stimulation mentale des écrans compte autant. Ce qui marche vraiment, sans les gadgets.
 - [Café et sommeil : combien de temps avant de dormir l'arrêter ?](https://ecleptic.health/articles/cafe-et-sommeil-combien-de-temps-avant.html): La caféine a une demi-vie de 5 à 6 heures : un café à 16 h occupe encore ta soirée. Pourquoi couper 8 à 10 heures avant le coucher, et ce que ça change.
 - [Sommeil profond : comment en avoir plus ?](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html): Chambre fraîche, horaires fixes, sport dans la journée, café coupé tôt : les leviers qui favorisent vraiment le sommeil profond, et ceux qui ne servent à rien.
 - [Combien d'heures de sommeil faut-il vraiment par nuit ?](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html): 7 à 9 heures pour la plupart des adultes — mais la vraie réponse dépend de toi. Ce que disent les données, et comment trouver ton besoin réel en deux semaines.
@@ -141,6 +142,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Sleep
 
+- [Screens before bed: is blue light really bad for sleep?](https://ecleptic.health/en/journal/blue-light-screens-before-bed.html): Bright evening light does delay sleep, but the mental stimulation of screens matters just as much. What actually works for better nights, without gadgets.
 - [Caffeine and sleep: when to stop drinking coffee before bed](https://ecleptic.health/en/journal/caffeine-and-sleep-when-to-stop.html): Caffeine has a half-life of 5 to 6 hours, so a 4 p.m. coffee lingers well into your evening. Why to cut it off 8 to 10 hours before bed, and what that changes.
 - [Deep sleep: how to get more of it](https://ecleptic.health/en/journal/how-to-get-more-deep-sleep.html): A cool bedroom, fixed sleep times, daytime exercise, an early caffeine cutoff: the levers that really boost deep sleep, and the ones that do nothing.
 - [How many hours of sleep do you really need?](https://ecleptic.health/en/journal/how-many-hours-of-sleep-do-you-need.html): 7 to 9 hours for most adults, but the real answer depends on you. What the data actually says, and how to find your own sleep need in just two weeks.

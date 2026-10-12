@@ -1282,6 +1282,83 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Écrans avant de dormir : la lumière bleue est-elle vraiment un problème ?
+
+URL : https://ecleptic.health/articles/lumiere-bleue-ecrans-avant-de-dormir.html
+Thème : Sommeil · Auteur : Auguste Phily-Priou · Publié le 2026-10-12
+
+La lumière vive du soir retarde bien l'endormissement — mais la stimulation mentale des écrans compte autant. Ce qui marche vraiment, sans les gadgets.
+
+La réponse courte : **oui et non**. La lumière bleue a un vrai effet — la lumière vive le soir **freine la sécrétion de mélatonine** et retarde l'endormissement — mais son rôle est largement surestimé. Le problème de tes écrans le soir, c'est *autant* ce que tu regardes que la couleur de l'écran. Un feed qui défile, une série qui tient en haleine, une notification qui appelle une réponse : cette stimulation mentale tient ton cerveau éveillé au moins autant que quelques reflets bleutés.
+
+Autrement dit : les lunettes anti-lumière bleue ne te sauveront pas si tu scrolles jusqu'à 1 h du matin. Traite les deux problèmes — la lumière *et* l'activation — et là, ça change tout.
+
+## Ce que fait vraiment la lumière le soir
+
+Ton horloge interne se règle sur la lumière. Le soir, l'obscurité déclenche la mélatonine, l'hormone qui annonce la nuit et prépare l'endormissement. Une lumière vive — plafonnier plein pot, écran lumineux à bout de bras — envoie le signal inverse : « il fait encore jour ». Résultat, la mélatonine monte plus tard et tu mets plus de temps à t'endormir. Deux précisions qui remettent les choses à l'échelle :
+
+- C'est surtout l'**intensité** qui compte, pas seulement la teinte bleue. Une pièce fortement éclairée le soir pèse plus lourd qu'un téléphone en mode sombre. Chez 116 volontaires, le simple éclairage d'une pièce (moins de 200 lux) avant le coucher a raccourci d'environ 90 minutes la période de sécrétion de mélatonine, comparé à une lumière tamisée.
+
+- La **distance** joue énormément : un plafonnier au-dessus de ta tête t'expose bien plus qu'un smartphone tenu à trente centimètres.
+
+## La stimulation mentale, l'autre moitié du problème
+
+C'est la partie que les filtres bleus ne règlent pas. Le contenu « activant » — réseaux sociaux, actualités, jeux, e-mails de travail, discussions tendues — déclenche dopamine et vigilance au moment précis où tu devrais redescendre. Ton corps est peut-être allongé, mais ton système nerveux est en réunion. C'est pour ça qu'on peut passer une heure sur son téléphone « pour se détendre » et se retrouver plus réveillé qu'au départ. Un livre papier, un podcast calme ou une série tranquille ne posent pas le même problème, même à luminosité égale : l'écran n'est pas le diable, son contenu peut l'être. Un panel de 16 experts réuni par la National Sleep Foundation (2024) a d'ailleurs conclu que le contenu regardé avant de dormir dégrade le sommeil des enfants et des ados, sans trouver de consensus sur la lumière des écrans, ni sur les adultes, faute d'études assez solides.
+
+Le test est parlant : compare une soirée passée à lire sous une lampe basse et une soirée à enchaîner les messages, écran réglé pareil. La première t'endort ; la seconde te laisse le cerveau en ébullition. La différence ne vient pas de la lumière, elle vient de l'activation — et aucun filtre ne la neutralise.
+
+## Ce qui marche, sans virer paranoïaque
+
+Pas besoin de bannir les écrans — juste de les rendre plus sobres le soir :
+
+- **Baisse la luminosité** et active le mode nuit ou lumière chaude après le coucher du soleil. Gratuit, mais pas miraculeux : dans un essai de 2021 sur 167 jeunes adultes, le mode Night Shift de l'iPhone n'a rien changé au sommeil.
+
+- **Tamise la pièce.** Éteins le plafonnier, passe à une lampe basse et chaude. C'est le levier le plus sous-estimé — l'éclairage ambiant compte plus que l'écran lui-même. Un consensus international d'experts (2022) recommande une lumière très tamisée dans les 3 heures avant le coucher, puis le noir le plus complet possible pour dormir.
+
+- **Coupe les écrans 30 à 60 minutes avant le lit**, surtout le contenu activant. Pas parfait ? Vise au moins le dernier quart d'heure sans scroll.
+
+- **Sors le téléphone de la chambre** ou mets-le en mode avion : la moitié du problème, c'est la tentation de « juste vérifier ».
+
+- **Garde la chambre pour dormir.** Le cerveau associe les lieux à des activités : si tu travailles et scrolles au lit, il apprend que le lit est un endroit où l'on reste éveillé.
+
+Ces gestes forment le cœur d'une bonne routine du soir. Combinés à des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html), ils font plus pour tes nuits que n'importe quel gadget — et notamment pour ton [sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), très sensible à ce qui se passe dans l'heure qui précède le coucher.
+
+## Faut-il croire aux lunettes anti-lumière bleue ?
+
+Prudence. Les preuves sont minces et contradictoires : une revue Cochrane de 2023 (17 essais) juge leur effet sur le sommeil indéterminé — sur les six essais qui l'ont mesuré, trois voient un mieux, trois aucune différence. Elles ne remplacent ni la baisse de luminosité, ni l'arrêt du contenu activant. Si elles t'aident à créer un rituel « je les mets, je ralentis », tant mieux — mais alors c'est le rituel qui agit, pas le verre teinté. Mets ton énergie sur l'intensité lumineuse et sur ce que tu fais, pas sur l'accessoire.
+
+## Ce qu'il faut retenir
+
+- La lumière vive du soir retarde bien l'endormissement, mais ce sont l'intensité et la distance qui comptent, pas seulement la teinte bleue.
+
+- La stimulation mentale du contenu activant pèse autant que la lumière : les filtres bleus ne la corrigent pas.
+
+- Baisse la luminosité, tamise la pièce, coupe le contenu activant 30 à 60 minutes avant : voilà ce qui marche, pas les lunettes.
+
+## Questions fréquentes
+
+### La lumière bleue empêche-t-elle vraiment de dormir ?
+
+Elle y contribue : la lumière vive du soir freine la mélatonine et retarde l'endormissement. Mais ce sont surtout l'intensité et la stimulation mentale du contenu qui comptent, pas seulement la teinte bleue.
+
+### Les lunettes anti-lumière bleue sont-elles efficaces ?
+
+Les preuves sont minces et contradictoires : une revue Cochrane de 2023 juge leur effet sur le sommeil indéterminé. Baisser la luminosité, tamiser la pièce et couper le contenu activant le soir sont bien plus efficaces.
+
+### Combien de temps avant de dormir arrêter les écrans ?
+
+Vise 30 à 60 minutes sans écran avant le lit, en priorité le contenu activant comme les réseaux, les actualités ou le travail. Même un simple dernier quart d'heure sans scroll aide déjà.
+
+## Sources
+
+- Gooley JJ, Chamberlain K, Smith KA, et al. Exposure to room light before bedtime suppresses melatonin onset and shortens melatonin duration in humans. *J Clin Endocrinol Metab*. 2011. — https://doi.org/10.1210/jc.2010-2098
+- Brown TM, Brainard GC, Cajochen C, et al. Recommendations for daytime, evening, and nighttime indoor light exposure to best support physiology, sleep, and wakefulness in healthy adults. *PLoS Biol*. 2022. — https://doi.org/10.1371/journal.pbio.3001571
+- Hartstein LE, Mathew GM, Reichenberger DA, et al. The impact of screen use on sleep health across the lifespan: A National Sleep Foundation consensus statement. *Sleep Health*. 2024. — https://doi.org/10.1016/j.sleh.2024.05.001
+- Singh S, Keller PR, Busija L, et al. Blue-light filtering spectacle lenses for visual performance, sleep, and macular health in adults. *Cochrane Database Syst Rev*. 2023. — https://doi.org/10.1002/14651858.CD013244.pub2
+- Duraccio KM, Zaugg KK, Blackburn RC, Jensen CD. Does iPhone night shift mitigate negative effects of smartphone use on sleep outcomes in emerging adults? *Sleep Health*. 2021. — https://doi.org/10.1016/j.sleh.2021.03.005
+
+---
+
 # Reprendre le sport après une maladie : les règles
 
 URL : https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html
