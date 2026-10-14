@@ -45,6 +45,7 @@
 ### Sport
 
 - [Thème Sport](https://ecleptic.health/articles/sport/): Séances par semaine, zone 2, VO₂max, répétitions, cardio ou musculation : des articles clairs et sourcés pour t'entraîner mieux, progresser et durer.
+- [VO2max : c'est quoi et comment l'améliorer ?](https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html): La VO2max, c'est la taille de ton moteur et l'un des meilleurs prédicteurs de longévité. Comment l'améliorer avec la zone 2 et les intervalles, à tout âge.
 - [Zone 2 : c'est quoi et pourquoi c'est le meilleur cardio ?](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html): La zone 2, c'est le cardio facile où tu peux parler en phrases complètes. Pourquoi cette intensité basse construit ta base aérobie mieux que le reste.
 - [Combien de séances de sport par semaine pour progresser ?](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html): Combien de séances de sport par semaine ? De 2 à 5 selon ton niveau et ton objectif : ce que disent l'OMS, l'ACSM et la recherche, en musculation et en cardio.
 
@@ -154,6 +155,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Training
 
+- [VO2 max: what is it, and how do you improve it?](https://ecleptic.health/en/journal/how-to-improve-vo2-max.html): VO2 max is the size of your engine and one of the best predictors of longevity. Here's how to improve it with zone 2 and intervals, at any age.
 - [Zone 2 cardio: what is it, and why is it the best cardio?](https://ecleptic.health/en/journal/what-is-zone-2-cardio.html): Zone 2 is easy cardio where you can still talk in full sentences. Here's why this low intensity builds your aerobic base better than anything else.
 - [How many workouts per week do you need to make progress?](https://ecleptic.health/en/journal/how-many-workouts-per-week.html): How many workouts per week? From 2 to 5, depending on your level and your goal: what the WHO, the ACSM and the research say about strength training and cardio.
 

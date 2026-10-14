@@ -199,7 +199,7 @@ Une règle évite de compter deux fois la même chose. **La fréquence cardiaque
 
 - **Une première estimation dès ton inscription**, qui s'affine à mesure que ta montre, tes séances, tes nuits et tes repas alimentent le calcul.
 
-Le levier le plus puissant reste l'ancre : ta VO₂max s'entraîne à tout âge, et chaque progrès se retrouve dans ton âge de forme. La méthode pour la faire monter : comment améliorer ta VO₂max.
+Le levier le plus puissant reste l'ancre : ta VO₂max s'entraîne à tout âge, et chaque progrès se retrouve dans ton âge de forme. La méthode pour la faire monter : [comment améliorer ta VO₂max](https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html).
 
 ## Ce que l'âge biologique n'est pas
 
@@ -754,7 +754,7 @@ Une VO₂max ne se lit donc jamais seule, mais **face aux valeurs de référence
 
 - **L'altitude :** l'air y apporte moins d'oxygène, et ta VO₂max baisse tant que tu y restes.
 
-Surtout, elle s'entraîne à tout âge. Passé 40 ans, la progression reste réelle, à condition de soigner davantage la récupération. Le plan complet : comment améliorer ta VO₂max.
+Surtout, elle s'entraîne à tout âge. Passé 40 ans, la progression reste réelle, à condition de soigner davantage la récupération. Le plan complet : [comment améliorer ta VO₂max](https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html).
 
 ## Comment Ecleptic la lit et l'utilise
 
@@ -1279,6 +1279,80 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# VO2max : c'est quoi et comment l'améliorer ?
+
+URL : https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html
+Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-10-14
+
+La VO2max, c'est la taille de ton moteur et l'un des meilleurs prédicteurs de longévité. Comment l'améliorer avec la zone 2 et les intervalles, à tout âge.
+
+La réponse courte : **on améliore sa VO2max en combinant deux ingrédients** — une grosse base d'endurance facile (la fameuse [zone 2](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html)) et des intervalles courts à haute intensité, du type 4 × 4 minutes. La VO2max, c'est ta **capacité maximale à capter et utiliser l'oxygène** pendant un effort intense. Plus elle est haute, plus ton moteur est gros.
+
+Et ce n'est pas qu'une affaire de performance sportive : la VO2max est l'un des **meilleurs prédicteurs mesurables de longévité et de santé** que l'on connaisse. Les personnes qui affichent une VO2max élevée vivent en moyenne plus longtemps et en meilleure forme. C'est une des rares métriques qu'il vaut vraiment la peine de faire monter.
+
+## La VO2max, concrètement
+
+Imagine ton corps comme une voiture. La VO2max, c'est la cylindrée du moteur : le débit maximal d'oxygène que tes poumons, ton cœur et tes muscles peuvent traiter à pleine charge. On la mesure en millilitres d'oxygène par kilo et par minute. En ordre de grandeur, un adulte sédentaire tourne autour de 30-35, un amateur entraîné dépasse facilement 45-50, les athlètes d'élite frôlent 70-85.
+
+Les montres connectées en donnent une *estimation* à partir de ta fréquence cardiaque et de tes allures. C'est imparfait en valeur absolue, mais utile pour suivre **ta tendance** sur plusieurs mois — la seule chose qui compte vraiment ici.
+
+## Les deux leviers qui la font monter
+
+Aucun raccourci : la VO2max se travaille par les deux bouts, et c'est la combinaison qui paie.
+
+- **La base aérobie, à basse intensité.** Le gros du volume, en zone 2. Elle élargit le réseau vasculaire, multiplie les mitochondries et améliore la capacité du cœur à pomper — le plancher sur lequel tout le reste s'appuie.
+
+- **Les intervalles à haute intensité.** Le protocole le mieux documenté est le **4 × 4** : 4 minutes à 90-95 % de ta FC max (tu ne peux dire que quelques mots), suivies de 3 minutes faciles, le tout répété 4 fois. Dans un essai norvégien de 2007 (40 hommes modérément entraînés, 8 semaines), il a fait gagner 7,2 % de VO2max, plus que la même quantité de travail courue à allure modérée ou au seuil.
+
+Une à deux séances d'intervalles par semaine, posées sur une base d'endurance solide, suffisent. Empiler l'intensité sans base, c'est le meilleur moyen de stagner et de se cramer — d'où l'importance de tenir [une fréquence que ta récupération encaisse](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html).
+
+## Pourquoi elle prédit si bien la santé
+
+Une VO2max élevée n'est pas qu'un chiffre de sportif : elle reflète que ton cœur, tes poumons et tes muscles fonctionnent bien ensemble. C'est un résumé de la santé de tout ton système cardiovasculaire — le même qui te protège des maladies les plus fréquentes. Une méta-analyse de 2009 (33 études, 102 980 participants) chiffre l'enjeu : chaque MET de capacité en plus — l'équivalent d'1 km/h de plus en course — s'associe à 13 % de mortalité en moins, et une capacité faible à un risque de décès 40 % plus élevé qu'une capacité intermédiaire. Ce n'est pas une raison d'en faire une obsession, mais ça explique pourquoi l'American Heart Association plaide depuis 2016 pour en faire un signe vital clinique, au même titre que la tension artérielle : elle la juge potentiellement plus prédictive de la mortalité que le tabac ou l'hypertension.
+
+## Combien de temps pour voir bouger l'aiguille ?
+
+Des **mois, pas des semaines**. Un débutant peut gagner nettement en 8 à 12 semaines de travail régulier ; plus tu es entraîné, plus les gains se méritent. C'est un chantier de patience, mais les progrès sont bien réels et se conservent tant que tu entretiens.
+
+Un mot sur la marge de manœuvre : une partie de ta VO2max est génétique, tout comme ta réponse à l'entraînement. Mais *tout le monde* progresse avec un travail structuré : dans une étude de 2017 sur 78 adultes, les « non-répondeurs » à 6 semaines d'endurance ont tous progressé une fois la dose augmentée. La génétique fixe le point de départ, pas ta capacité à t'améliorer.
+
+## L'âge : elle baisse, mais elle reste entraînable
+
+La VO2max décline avec l'âge, et de plus en plus vite : dans l'étude longitudinale de Baltimore (810 adultes suivis près de 8 ans), la baisse passe de 3 à 6 % par décennie entre 20 et 40 ans à plus de 20 % par décennie après 70 ans, actifs compris. L'entraînement ne l'efface pas, mais il te fait partir de plus haut et la VO2max **reste améliorable à tout âge** : chez les plus de 60 ans, une méta-analyse de 41 essais (2 102 participants) mesure un gain moyen de 16 % avec l'endurance. Un sexagénaire actif peut ainsi afficher une meilleure capacité qu'un trentenaire sédentaire.
+
+## Ce qu'il faut retenir
+
+- La VO2max = ta capacité maximale à utiliser l'oxygène, et l'un des meilleurs prédicteurs de longévité et de forme.
+
+- On l'améliore en combinant base en zone 2 et intervalles intenses (type 4 × 4 min), sur des mois.
+
+- Elle baisse avec l'âge, de plus en plus vite, mais reste entraînable toute la vie : l'entraînement te fait partir de plus haut.
+
+## Questions fréquentes
+
+### C'est quoi la VO2max ?
+
+Ta capacité maximale à capter et utiliser l'oxygène pendant un effort intense — en somme, la taille de ton moteur. C'est aussi l'un des meilleurs prédicteurs mesurables de longévité et de condition physique.
+
+### Comment augmenter sa VO2max ?
+
+En combinant une grosse base d'endurance facile (zone 2) et des intervalles à haute intensité comme le 4 × 4 minutes. Une à deux séances d'intervalles par semaine sur une base solide, et la progression se compte en mois.
+
+### Peut-on améliorer sa VO2max à tout âge ?
+
+Oui. Elle baisse avec l'âge, et de plus en plus vite après 70 ans, mais elle reste entraînable : chez les plus de 60 ans, l'endurance la fait progresser d'environ 16 % en moyenne. Un senior actif peut dépasser un trentenaire sédentaire.
+
+## Sources
+
+- Helgerud J, Høydal K, Wang E, et al. Aerobic high-intensity intervals improve VO2max more than moderate training. *Med Sci Sports Exerc*. 2007. — https://doi.org/10.1249/mss.0b013e3180304570
+- Kodama S, Saito K, Tanaka S, et al. Cardiorespiratory fitness as a quantitative predictor of all-cause mortality and cardiovascular events in healthy men and women: a meta-analysis. *JAMA*. 2009. — https://doi.org/10.1001/jama.2009.681
+- Ross R, Blair SN, Arena R, et al. Importance of assessing cardiorespiratory fitness in clinical practice: a case for fitness as a clinical vital sign: a scientific statement from the American Heart Association. *Circulation*. 2016. — https://doi.org/10.1161/CIR.0000000000000461
+- Montero D, Lundby C. Refuting the myth of non-response to exercise training: 'non-responders' do respond to higher dose of training. *J Physiol*. 2017. — https://doi.org/10.1113/JP273480
+- Fleg JL, Morrell CH, Bos AG, et al. Accelerated longitudinal decline of aerobic capacity in healthy older adults. *Circulation*. 2005. — https://doi.org/10.1161/CIRCULATIONAHA.105.545459
+- Huang G, Gibson CA, Tran ZV, et al. Controlled endurance exercise training and VO2max changes in older adults: a meta-analysis. *Prev Cardiol*. 2005. — https://doi.org/10.1111/j.0197-3118.2005.04324.x
 
 ---
 
@@ -2036,7 +2110,7 @@ Le piège du débutant motivé, c'est de tout faire « moyennement dur ». La zo
 
 - **Elle se récupère vite.** Contrairement aux séances dures, tu peux en accumuler beaucoup sans creuser ta dette de récupération.
 
-Le bénéfice final est contre-intuitif : une grosse base en zone 2 finit par faire monter ta VO2max et ta performance sur les efforts intenses, parce qu'elle élargit le moteur sur lequel tout le reste s'appuie.
+Le bénéfice final est contre-intuitif : une grosse base en zone 2 finit par faire monter ta [VO2max](https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html) et ta performance sur les efforts intenses, parce qu'elle élargit le moteur sur lequel tout le reste s'appuie.
 
 ## Le test de la parole : ta meilleure jauge
 
