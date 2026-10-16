@@ -1282,6 +1282,89 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Déficit calorique : comment le calculer sans se tromper ?
+
+URL : https://ecleptic.health/articles/deficit-calorique-comment-calculer.html
+Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-10-16
+
+Déficit calorique : 300 à 500 kcal sous ta dépense, soit environ 0,3 à 0,5 kg par semaine au début. Comment le calculer, le tenir et préserver ton muscle.
+
+La réponse courte : pars de ta dépense énergétique totale et **retire-lui 300 à 500 kcal par jour**. Le rythme à viser : environ **0,5 à 1 % de ton poids de corps par semaine**, celui qu'une revue de 2014 sur la sèche en musculation recommande pour préserver au mieux le muscle. Concrètement, 300 à 500 kcal de déficit font perdre environ 0,3 à 0,5 kg par semaine au début : le bas de cette fourchette pour la plupart des gens.
+
+La faute classique, c'est de calculer le déficit à partir d'un chiffre inventé. Un déficit n'a de sens que par rapport à *ta* dépense réelle : commence donc par l'estimer, puis suis ton poids pour la confirmer — [on détaille la méthode ici](https://ecleptic.health/articles/combien-de-calories-par-jour.html). Sans ce point de départ, tu calcules dans le vide.
+
+## La bonne taille de déficit
+
+Un repère utile : environ **7 000 à 7 700 kcal** correspondent à peu près à un kilo perdu. Une analyse des National Institutes of Health (2008) juge cette règle approximative : elle vaut surtout quand on a beaucoup de graisse à perdre. Un déficit de 500 kcal par jour, c'est ~3 500 kcal sur la semaine, soit à peu près un demi-kilo — un ordre de grandeur, pas une horloge suisse. Trois façons de creuser ce déficit, à combiner :
+
+- **Manger un peu moins** — surtout en réduisant les calories « faciles » : boissons sucrées, alcool, grignotage, huiles.
+
+- **Bouger un peu plus au quotidien** — l'activité de fond (marche, pas) pèse souvent plus lourd que la séance.
+
+- **Garder l'entraînement** — non pour « brûler », mais pour protéger le muscle (on y vient).
+
+## Pourquoi un déficit trop agressif se retourne contre toi
+
+Diviser tes calories par deux fait perdre du poids vite — puis casse la machine. Trop bas, trop longtemps, et tu récoltes une **fonte musculaire** (le corps puise dans le muscle quand l'énergie manque), une faim difficile à tenir, une baisse d'énergie et d'activité spontanée, et une motivation qui s'effondre. Le manque de sommeil aggrave tout : à déficit égal, mal dormir [fait fondre la masse maigre bien plus vite](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html). Dans un essai de 2010, à régime identique, deux semaines à 5 h 30 au lit au lieu de 8 h 30 ont augmenté de 60 % la perte de masse maigre. Un déficit modéré tenu trois mois bat toujours un déficit brutal tenu trois semaines.
+
+## Préserver le muscle : le trio non négociable
+
+- **Des protéines hautes** — [2,2 à 2,6 g par kilo et par jour en sèche](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html) (2,3 à 3,1 g par kilo de masse maigre selon la revue de 2014). C'est ta meilleure assurance anti-fonte, et ça rassasie.
+
+- **De la musculation** — le signal qui dit à ton corps de garder ses muscles. En déficit, on maintient les charges, on ne rogne pas d'abord sur l'intensité.
+
+- **Un déficit raisonnable** — plus il est agressif, plus la part de muscle perdue grimpe. Chez des athlètes d'élite (essai de 2011), perdre 0,7 % du poids par semaine a fait gagner 2,1 % de masse maigre, contre rien à un rythme plus rapide.
+
+Question fréquente : cardio ou muscu pour maigrir ? Les deux servent, dans des rôles différents — le déficit alimentaire crée la perte, la muscu décide de *ce que* tu perds.
+
+## Compter ses calories, ou pas ?
+
+Les deux marchent, à une condition : être honnête. Compter (application, balance de cuisine) apprend énormément les premières semaines — beaucoup de gens **sous-estiment nettement ce qu'ils mangent**, surtout les huiles, les sauces, l'alcool et les portions « à l'œil ». Dans une étude du *New England Journal of Medicine* (1992), des personnes persuadées de manger moins de 1 200 kcal par jour sous-estimaient en réalité leurs apports de 47 % en moyenne. Si tu préfères piloter sans compter, appuie-toi sur des repères : une source de protéines à chaque repas, beaucoup de légumes, la balance sous surveillance. Mais si ton poids stagne alors que tu es « sûr » d'être en déficit, la cause est presque toujours la même — l'apport réel dépasse l'apport estimé. Peser sa nourriture une semaine ou deux suffit souvent à débloquer la situation.
+
+## Ajuste sur les résultats réels, pas sur la théorie
+
+Aucun calcul n'est parfait, parce que ton corps s'adapte en chemin : il dépense un peu moins quand tu manges moins. La seule boussole fiable, c'est la tendance :
+
+- Pèse-toi le matin, suis la **moyenne sur 1 à 2 semaines**, jamais le chiffre d'un jour.
+
+- Perte dans la fourchette 0,5-1 %/semaine → ne touche à rien.
+
+- Perte à l'arrêt depuis deux semaines → retire 150-200 kcal ou ajoute de la marche.
+
+- Perte trop rapide, énergie au sol, entraînements qui s'écroulent → tu es trop bas, remonte.
+
+## Ce qu'il faut retenir
+
+- Déficit de 300-500 kcal/jour sous ta dépense réelle (~0,3 à 0,5 kg par semaine) ; rythme cible : 0,5 à 1 % du poids par semaine.
+
+- Trop agressif = fonte musculaire, faim, abandon ; le manque de sommeil accélère la perte de muscle.
+
+- Protéines hautes + musculation préservent le muscle ; ajuste sur la moyenne de poids, pas sur la formule.
+
+## Questions fréquentes
+
+### Quel déficit calorique pour perdre 1 kg par semaine ?
+
+Il faudrait environ 1 100 kcal de déficit par jour, ce qui est agressif et risqué pour le muscle et l'énergie chez la plupart des gens. Vise plutôt un déficit de 300 à 500 kcal (0,3 à 0,5 kg par semaine au début) et un rythme de 0,5 à 1 % de ton poids par semaine au maximum.
+
+### Comment calculer son déficit calorique ?
+
+Estime ta dépense énergétique totale, puis retire-lui 300 à 500 kcal. Confirme le résultat en suivant la moyenne de ton poids sur deux semaines et ajuste : c'est la réalité de la balance qui tranche, pas la formule.
+
+### Peut-on perdre de la graisse sans perdre de muscle ?
+
+En grande partie, oui : un déficit modéré, des protéines hautes (2,2 à 2,6 g/kg) et de la musculation permettent de perdre surtout du gras. Plus le déficit est agressif, plus la part de muscle perdue augmente.
+
+## Sources
+
+- Helms ER, Aragon AA, Fitschen PJ. Evidence-based recommendations for natural bodybuilding contest preparation: nutrition and supplementation. *J Int Soc Sports Nutr*. 2014. — https://doi.org/10.1186/1550-2783-11-20
+- Hall KD. What is the required energy deficit per unit weight loss? *Int J Obes (Lond)*. 2008. — https://doi.org/10.1038/sj.ijo.0803720
+- Nedeltcheva AV, Kilkus JM, Imperial J, et al. Insufficient sleep undermines dietary efforts to reduce adiposity. *Ann Intern Med*. 2010. — https://doi.org/10.7326/0003-4819-153-7-201010050-00006
+- Garthe I, Raastad T, Refsnes PE, et al. Effect of two different weight-loss rates on body composition and strength and power-related performance in elite athletes. *Int J Sport Nutr Exerc Metab*. 2011. — https://doi.org/10.1123/ijsnem.21.2.97
+- Lichtman SW, Pisarska K, Berman ER, et al. Discrepancy between self-reported and actual caloric intake and exercise in obese subjects. *N Engl J Med*. 1992. — https://doi.org/10.1056/NEJM199212313272701
+
+---
+
 # VO2max : c'est quoi et comment l'améliorer ?
 
 URL : https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html
@@ -2042,7 +2125,7 @@ Voilà comment transformer l'estimation en chiffre fiable :
 
 - Poids stable → tu as trouvé ta maintenance. Poids qui monte → ta vraie dépense est plus basse. Poids qui descend → elle est plus haute. Ajuste de 150-200 kcal et recommence.
 
-C'est exactement cette logique qui sert de base quand on veut calculer un déficit calorique proprement : on part de la dépense réelle, pas d'un chiffre théorique.
+C'est exactement cette logique qui sert de base quand on veut [calculer un déficit calorique](https://ecleptic.health/articles/deficit-calorique-comment-calculer.html) proprement : on part de la dépense réelle, pas d'un chiffre théorique.
 
 ## Ce qui déplace ton chiffre
 

@@ -59,6 +59,7 @@
 ### Alimentation
 
 - [Thème Alimentation](https://ecleptic.health/articles/alimentation/): Calories, protéines, déficit calorique, créatine, hydratation, repas autour du sport : des repères chiffrés et sourcés pour bien manger selon ton objectif.
+- [Déficit calorique : comment le calculer sans se tromper ?](https://ecleptic.health/articles/deficit-calorique-comment-calculer.html): Déficit calorique : 300 à 500 kcal sous ta dépense, soit environ 0,3 à 0,5 kg par semaine au début. Comment le calculer, le tenir et préserver ton muscle.
 - [Combien de calories par jour faut-il vraiment ?](https://ecleptic.health/articles/combien-de-calories-par-jour.html): Combien de calories par jour ? Ça dépend de ton métabolisme et de ton activité. Ordres de grandeur, limites des formules, et comment trouver ton vrai chiffre.
 - [Combien de protéines par jour pour prendre du muscle ?](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html): 1,6 à 2,2 g par kilo de poids de corps et par jour : ce que dit la recherche, pourquoi manger plus n'apporte rien, et comment répartir tes apports.
 
@@ -167,6 +168,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Nutrition
 
+- [Calorie deficit: how to calculate it the right way](https://ecleptic.health/en/journal/how-to-calculate-a-calorie-deficit.html): Calorie deficit: 300 to 500 kcal below your expenditure, or about 0.3 to 0.5 kg a week at first. How to calculate it, stick to it and keep your muscle.
 - [How many calories do you really need per day?](https://ecleptic.health/en/journal/how-many-calories-per-day.html): How many calories do you need per day? It depends on your metabolism and activity. Typical ranges, the limits of formulas, and how to find your real number.
 - [How much protein per day to build muscle?](https://ecleptic.health/en/journal/how-much-protein-per-day-to-build-muscle.html): 1.6 to 2.2 g per kilogram of body weight per day: what the research says, why eating more adds nothing, and how to spread your protein across the day.
 
