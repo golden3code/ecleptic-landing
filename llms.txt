@@ -39,6 +39,7 @@
 ### Readiness
 
 - [Thème Readiness](https://ecleptic.health/articles/readiness/): Score de préparation, fréquence cardiaque au repos, HRV basse, jours de repos : comment lire les signaux de ton corps chaque matin et décider si tu pousses.
+- [Récupération active ou passive : laquelle choisir ?](https://ecleptic.health/articles/recuperation-active-ou-passive.html): Récupération active ou passive : l'active relance la circulation après une séance, la passive repose vraiment. Comment choisir selon ton état du jour.
 - [Fréquence cardiaque au repos : quelle est la normale ?](https://ecleptic.health/articles/frequence-cardiaque-repos-normale.html): La fréquence cardiaque au repos normale est de 60 à 100 bpm, et de 40 à 60 chez les sportifs d'endurance. Comment la mesurer au réveil et la lire en tendance.
 - [Readiness score : comment ça marche, et comment l'améliorer](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html): HRV, fréquence cardiaque de repos, sommeil, charge récente : ce que mesure vraiment un score de préparation, ses limites, et comment le faire monter durablement.
 
@@ -151,6 +152,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Readiness
 
+- [Active vs. passive recovery: which one should you choose?](https://ecleptic.health/en/journal/active-vs-passive-recovery.html): Active or passive recovery? Active recovery gets your blood flowing after a workout; passive recovery is true rest. How to choose based on how you feel today.
 - [Resting heart rate: what is a normal resting heart rate?](https://ecleptic.health/en/journal/normal-resting-heart-rate.html): A normal resting heart rate is 60 to 100 bpm, and 40 to 60 bpm in endurance athletes. How to measure it when you wake up, and how to read it as a trend.
 - [Readiness score: how it works, and how to improve it](https://ecleptic.health/en/journal/readiness-score-how-it-works.html): HRV, resting heart rate, sleep, recent training load: what a readiness score really measures, where its limits are, and how to raise it for the long run.
 
