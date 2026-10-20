@@ -53,6 +53,7 @@
 ### Récupération
 
 - [Thème Récupération](https://ecleptic.health/articles/recuperation/): Courbatures, HRV, bain froid, sauna, étirements, massage : ce qui accélère vraiment la récupération après le sport, ce qui ne sert à rien, et pourquoi.
+- [Étirements : avant ou après le sport, et à quoi ça sert ?](https://ecleptic.health/articles/etirements-avant-ou-apres-le-sport.html): Avant : dynamique ; le statique long juste avant coupe la force. Après : pour la souplesse. Et non, ils ne préviennent pas vraiment les courbatures.
 - [Bain froid : vrais bienfaits ou effet de mode ?](https://ecleptic.health/articles/bain-froid-recuperation-bienfaits.html): Il soulage vraiment les courbatures et rafraîchit le mental — mais juste après la muscu, il freine tes gains. Quand l'utiliser, quand l'éviter.
 - [Courbatures : que faire pour récupérer plus vite ?](https://ecleptic.health/articles/courbatures-que-faire.html): Bouger léger, dormir, manger assez de protéines : ce qui accélère vraiment la récupération des courbatures, ce qui ne change rien, et quand s'inquiéter.
 - [HRV : c'est quoi la variabilité de fréquence cardiaque ?](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html): La HRV mesure les micro-variations entre deux battements de cœur — le meilleur indicateur accessible de ta récupération. Comment la lire, et ce qui la fait bouger.
@@ -164,6 +165,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Recovery
 
+- [Stretching: before or after exercise, and what does it do?](https://ecleptic.health/en/journal/stretching-before-or-after-exercise.html): Before: dynamic stretches, because long static holds right before exercise sap your strength. After: for flexibility. And no, it won't really prevent soreness.
 - [Ice bath benefits: real recovery tool or just a fad?](https://ecleptic.health/en/journal/cold-water-immersion-benefits.html): Ice baths really do ease soreness and reset your mind — but right after lifting, they blunt your gains. When to use a cold plunge, and when to skip it.
 - [Sore muscles: how to recover faster](https://ecleptic.health/en/journal/sore-muscles-how-to-recover-faster.html): Light movement, sleep, enough protein: what really speeds up recovery from sore muscles (DOMS), what makes no difference, and when to start worrying.
 - [HRV: what is heart rate variability?](https://ecleptic.health/en/journal/what-is-hrv-heart-rate-variability.html): HRV measures the tiny variations between two heartbeats, the most accessible marker of your recovery. How to read it, and what makes it go up or down.

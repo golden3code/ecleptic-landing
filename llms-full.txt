@@ -1282,6 +1282,83 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Étirements : avant ou après le sport, et à quoi ça sert ?
+
+URL : https://ecleptic.health/articles/etirements-avant-ou-apres-le-sport.html
+Thème : Récupération · Auteur : Auguste Phily-Priou · Publié le 2026-10-20
+
+Avant : dynamique ; le statique long juste avant coupe la force. Après : pour la souplesse. Et non, ils ne préviennent pas vraiment les courbatures.
+
+La réponse courte : **avant l'effort, étire-toi en mouvement** (étirements dynamiques, dans l'échauffement) ; **garde les étirements statiques longs pour après ou pour des séances à part**, quand ton but est de gagner en souplesse. Et surtout : les étirements ne préviennent ni les courbatures ni la plupart des blessures. Ça ne veut pas dire qu'ils sont inutiles — ça veut dire qu'on leur a longtemps prêté des pouvoirs qu'ils n'ont pas.
+
+## Avant l'effort : dynamique, pas statique
+
+Un bon échauffement prépare les muscles, les articulations et le système nerveux au mouvement à venir. Ça passe par des étirements **dynamiques** : fentes marchées, balancements de jambes, rotations, montées de genoux, gestes de l'exercice à venir en version allégée.
+
+À l'inverse, tenir un étirement statique 60 secondes ou plus par muscle juste avant un effort de **force ou de puissance** peut *réduire temporairement* ta performance — moins de force, moins d'explosivité pendant quelques minutes. Une revue de 106 études (2012) situe le seuil autour de 60 secondes, et une revue de 2016 chiffre la baisse à 4,6 % en moyenne au-delà, contre 1,1 % en dessous ; l'étirement dynamique, lui, l'améliore légèrement (+1,3 %). L'effet est modeste et transitoire, mais quand tu cherches à soulever lourd ou à sprinter, aucune raison de te saborder. Réserve donc le statique long à un autre moment.
+
+- **Avant de soulever ou de sprinter :** 5 à 10 minutes de dynamique, montée progressive en intensité.
+
+- **Ce que tu veux, c'est être chaud et mobile**, pas relâché et mou.
+
+## Après l'effort ou à distance : pour la souplesse
+
+Les étirements statiques ont un vrai usage : **gagner en amplitude sur le long terme**. Tenus régulièrement, ils augmentent la souplesse : l'American College of Sports Medicine recommande d'étirer chaque grand groupe musculaire au moins 2 jours par semaine, en cumulant environ 60 secondes par exercice. Après la séance, ils font aussi du bien sur la sensation de détente — sans accélérer la réparation musculaire, mais c'est agréable et ça ne nuit pas.
+
+Le vrai levier, ce n'est pas de s'étirer après le sport par réflexe, c'est de **travailler la mobilité comme un entraînement à part** quand tu en as besoin pour tes mouvements : profondeur de squat, épaules, hanches. Là, l'amplitude gagnée est utile et durable.
+
+## Le mythe à casser : courbatures et blessures
+
+C'est le point le plus important, parce que c'est la raison nº1 pour laquelle les gens s'étirent — et elle est fausse.
+
+- **Les étirements ne préviennent pas les courbatures.** C'est l'un des résultats les plus répétés de la recherche : selon la revue Cochrane de 2011 (12 études, dont une de 2 377 participants), s'étirer avant l'effort réduit la douleur du lendemain d'un demi-point sur une échelle de 100, et s'étirer après d'un point. Rien de perceptible. Ce qui aide vraiment, c'est [le mouvement léger, le sommeil et les protéines](https://ecleptic.health/articles/courbatures-que-faire.html).
+
+- **Ils ne préviennent pas la plupart des blessures.** Ce qui protège, c'est un bon échauffement, une progression raisonnable des charges, et de la force. Une méta-analyse de 2014 (25 essais, 26 610 participants) ne trouve aucun effet protecteur de l'étirement, alors que le renforcement musculaire ramène le risque de blessure à moins d'un tiers.
+
+## Alors, on fait quoi concrètement ?
+
+- **Avant :** échauffement dynamique, toujours. Quelques minutes suffisent.
+
+- **Après :** quelques étirements doux si ça te fait du bien, sans en attendre de miracle sur les courbatures.
+
+- **Souplesse :** si l'amplitude te manque, fais-en un objectif d'entraînement à part, régulier — comme n'importe quel autre progrès, il vient avec la répétition.
+
+- **Le carburant compte plus qu'on ne croit :** une séance bien préparée commence dans l'assiette — quoi manger avant l'effort pèse plus lourd sur ta performance que trois minutes d'étirements.
+
+Et rappelle-toi que la souplesse n'est qu'une brique parmi d'autres. Ce qui fait progresser un corps sur la durée, c'est un ensemble cohérent : [une bonne fréquence de séances](https://ecleptic.health/articles/combien-seances-sport-par-semaine.html), du sommeil, et de la régularité.
+
+## Ce qu'il faut retenir
+
+- Avant l'effort : étirements dynamiques ; le statique long juste avant peut réduire force et puissance.
+
+- Après ou à distance : le statique sert à gagner en souplesse, pas à récupérer plus vite.
+
+- Les étirements ne préviennent ni les courbatures ni la plupart des blessures — ce n'est pas leur rôle.
+
+## Questions fréquentes
+
+### Faut-il s'étirer avant ou après le sport ?
+
+Avant : des étirements dynamiques dans l'échauffement. Après, ou lors de séances dédiées : des étirements statiques pour gagner en souplesse. Tenir un étirement statique de 60 secondes ou plus juste avant un effort de force peut réduire ta performance.
+
+### Les étirements préviennent-ils les courbatures ?
+
+Non. C'est un des résultats les mieux établis : s'étirer avant ou après ne change presque rien aux courbatures. Ce qui aide, c'est le mouvement léger, le sommeil et un apport suffisant en protéines.
+
+### Les étirements évitent-ils les blessures ?
+
+Pas la plupart. Ce qui protège vraiment, c'est un bon échauffement, une progression raisonnable des charges et de la force — pas l'étirement statique avant l'effort.
+
+## Sources
+
+- Behm DG, Blazevich AJ, Kay AD, McHugh M. Acute effects of muscle stretching on physical performance, range of motion, and injury incidence in healthy active individuals: a systematic review. *Appl Physiol Nutr Metab*. 2016. — https://doi.org/10.1139/apnm-2015-0235
+- Kay AD, Blazevich AJ. Effect of acute static stretch on maximal muscle performance: a systematic review. *Med Sci Sports Exerc*. 2012. — https://doi.org/10.1249/MSS.0b013e318225cb27
+- Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce muscle soreness after exercise. *Cochrane Database Syst Rev*. 2011. — https://doi.org/10.1002/14651858.CD004577.pub3
+- Lauersen JB, Bertelsen DM, Andersen LB. The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials. *Br J Sports Med*. 2014. — https://doi.org/10.1136/bjsports-2013-092538
+- Garber CE, Blissmer B, Deschenes MR, et al. American College of Sports Medicine position stand. Quantity and quality of exercise for developing and maintaining cardiorespiratory, musculoskeletal, and neuromotor fitness in apparently healthy adults: guidance for prescribing exercise. *Med Sci Sports Exerc*. 2011. — https://doi.org/10.1249/MSS.0b013e318213fefb
+
+---
+
 # Récupération active ou passive : laquelle choisir ?
 
 URL : https://ecleptic.health/articles/recuperation-active-ou-passive.html
