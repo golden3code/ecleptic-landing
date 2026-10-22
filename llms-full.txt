@@ -1282,6 +1282,79 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Travail de nuit : comment protéger son sommeil ?
+
+URL : https://ecleptic.health/articles/travail-de-nuit-comment-mieux-dormir.html
+Thème : Régularité · Auteur : Auguste Phily-Priou · Publié le 2026-10-22
+
+Obscurité totale le jour, lunettes filtrantes au retour, horaires réguliers, sieste et caféine bien placées : protéger son sommeil quand on travaille la nuit.
+
+La réponse courte : **tu ne peux pas tromper complètement ton horloge biologique, mais tu peux limiter les dégâts** avec une obscurité totale le jour, une gestion précise de la lumière et de la caféine, et des horaires aussi réguliers que possible. Le travail de nuit force ton corps à dormir quand il est programmé pour être éveillé, et à travailler quand il réclame le sommeil. C'est un combat à contre-courant, et il faut le dire clairement : le travail posté est associé à des **risques de santé réels** à long terme. L'objectif n'est pas de « gagner » contre ta biologie, mais de la ménager au maximum.
+
+Ça se joue sur quelques leviers précis. Bien appliqués, ils font une vraie différence sur ton sommeil de jour.
+
+## Faire du jour une vraie nuit
+
+Ta priorité absolue : **l'obscurité**. La lumière du jour dit à ton cerveau « c'est l'heure d'être debout » et bloque la mélatonine — exactement ce que tu ne veux pas au moment de dormir.
+
+- **Chambre totalement noire.** Rideaux occultants complets ou masque de sommeil de qualité. Vise le noir absolu, pas la pénombre.
+
+- **Lunettes filtrantes sur le trajet du retour.** Au petit matin, la lumière que tu prends en rentrant recale ton horloge dans le mauvais sens. Des lunettes sombres, voire teintées orange, sur le chemin limitent ce signal réveillant. Dans une étude de 2003 sur 67 jeunes adultes en postes de nuit simulés, la combinaison gagnante associait lumière vive pendant le poste, lunettes aussi sombres que possible au retour et sommeil de jour dans le noir, à heure fixe.
+
+- **Silence et fraîcheur.** Bouchons d'oreille, téléphone en silencieux, chambre à 17-19 °C. Le monde vit pendant que tu dors : isole-toi.
+
+- **Préviens ton entourage.** Un mot sur la porte, des règles claires avec les proches, les livraisons coupées : ton sommeil de jour est aussi fragile que précieux, protège-le comme une vraie nuit.
+
+## La régularité, même à contre-jour
+
+Le pire pour l'organisme, c'est de basculer en permanence entre horaires de jour et de nuit. Autant que ton planning le permet, **garde le même rythme de sommeil**, y compris sur tes jours de repos. Passer en horaires « normaux » chaque week-end oblige ton corps à se réadapter sans arrêt, comme un jet lag à répétition. Si tu peux conserver un bloc de sommeil stable, tu limites le chaos — c'est le même principe que pour tout le monde : [la régularité prime sur la durée](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html). Choisis aussi ta stratégie de sommeil (dormir juste après le poste, ou fractionner en deux blocs) et tiens-t'y. Et si tu alternes semaines de jour et de nuit, décale-toi progressivement plutôt que de basculer d'un coup : ton corps encaisse mieux une transition douce qu'un renversement brutal.
+
+## Caféine et sieste : une question de timing
+
+- **Caféine en début de poste, pas en fin.** Un café au démarrage soutient la vigilance ; le même café en fin de nuit reste dans ton sang et sabote le sommeil qui suit. Coupe la caféine plusieurs heures avant ton coucher, même s'il tombe à 8 h du matin. Bien placée, elle aide : une revue Cochrane (13 essais) conclut qu'elle peut améliorer les performances des travailleurs postés et réduire leurs erreurs.
+
+- **La sieste stratégique.** Une [sieste courte de 20 minutes](https://ecleptic.health/articles/sieste-ideale-duree.html) avant ou pendant le poste, quand c'est possible, restaure la vigilance sans t'enfoncer dans le brouillard. Une revue de 13 études le confirme : la sieste pendant le poste de nuit réduit la somnolence et améliore les performances, malgré quelques minutes d'engourdissement au réveil. C'est un outil de sécurité, pas un luxe.
+
+- **Lumière vive pendant le poste.** Un environnement de travail bien éclairé t'aide à rester en phase « éveil » quand tu en as besoin. À l'inverse, baisse les lumières une à deux heures avant la fin du poste pour amorcer la descente.
+
+## Protéger ta santé sur le long terme
+
+Les chiffres invitent à la vigilance : une méta-analyse de 2018 (21 études, 173 010 participants) trouve un risque d'événement cardiovasculaire 17 % plus élevé chez les travailleurs postés, un surcroît qui apparaît surtout après cinq ans d'exposition. Et le Centre international de recherche sur le cancer classe depuis 2019 le travail de nuit « probablement cancérogène » (groupe 2A), sur des preuves encore limitées chez l'humain.
+
+Au-delà du sommeil, soigne les fondations : mange à des heures cohérentes (évite le gros repas en pleine nuit, difficile à digérer quand le corps est en mode « repos »), bouge dans la journée, et surveille les signaux qui durent — fatigue qui ne passe plus, humeur en berne, cœur qui s'emballe. Ce sont les mêmes leviers qui [favorisent un sommeil profond de qualité](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), même de jour. Et si le travail de nuit dégrade sérieusement ta santé ou ton sommeil malgré tout ça, ce n'est pas un aveu de faiblesse d'en parler à un médecin du travail : certains profils tolèrent mal le poste de nuit, et ça se gère. Un dernier repère utile : si tu accumules les micro-siestes involontaires au volant ou au travail, ce n'est plus de la fatigue passagère, c'est un signal de dette sérieuse à prendre au sérieux, pour ta sécurité comme pour ta santé.
+
+## Ce qu'il faut retenir
+
+- Obscurité totale le jour : rideaux occultants ou masque, plus des lunettes filtrantes sur le trajet du retour.
+
+- Garde des horaires aussi réguliers que possible, même les jours de repos, pour éviter le jet lag permanent.
+
+- Caféine en début de poste seulement, sieste courte stratégique — et un médecin si la santé se dégrade.
+
+## Questions fréquentes
+
+### Comment bien dormir quand on travaille de nuit ?
+
+Rends ta chambre totalement noire (rideaux occultants ou masque), garde des horaires réguliers même les jours de repos, et porte des lunettes filtrantes sur le trajet du retour au petit matin.
+
+### Quand prendre un café en travail de nuit ?
+
+En début de poste, pour soutenir la vigilance. Évite la caféine en fin de nuit : elle reste dans ton sang plusieurs heures et sabote le sommeil qui suit ton retour.
+
+### Le travail de nuit est-il mauvais pour la santé ?
+
+Le travail posté est associé à des risques de santé réels à long terme, car il va contre l'horloge biologique. On peut limiter les dégâts, mais si ta santé se dégrade, parles-en à un médecin du travail.
+
+## Sources
+
+- Torquati L, Mielke GI, Brown WJ, Kolbe-Alexander T. Shift work and the risk of cardiovascular disease. A systematic review and meta-analysis including dose-response relationship. *Scand J Work Environ Health*. 2018. — https://doi.org/10.5271/sjweh.3700
+- IARC Monographs Vol 124 group. Carcinogenicity of night shift work. *Lancet Oncol*. 2019. — https://doi.org/10.1016/S1470-2045(19)30455-3
+- Crowley SJ, Lee C, Tseng CY, Fogg LF, Eastman CI. Combinations of bright light, scheduled dark, sunglasses, and melatonin to facilitate circadian entrainment to night shift work. *J Biol Rhythms*. 2003. — https://doi.org/10.1177/0748730403258422
+- Ker K, Edwards PJ, Felix LM, Blackhall K, Roberts I. Caffeine for the prevention of injuries and errors in shift workers. *Cochrane Database Syst Rev*. 2010. — https://doi.org/10.1002/14651858.CD008508
+- Ruggiero JS, Redeker NS. Effects of napping on sleepiness and sleep-related performance deficits in night-shift workers: a systematic review. *Biol Res Nurs*. 2014. — https://doi.org/10.1177/1099800413476571
+
+---
+
 # Étirements : avant ou après le sport, et à quoi ça sert ?
 
 URL : https://ecleptic.health/articles/etirements-avant-ou-apres-le-sport.html
