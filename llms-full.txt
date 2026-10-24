@@ -1282,6 +1282,84 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Surcharge progressive : la vraie clé pour progresser
+
+URL : https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html
+Thème : Charge · Auteur : Auguste Phily-Priou · Publié le 2026-10-24
+
+Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l'équilibre avec la récup.
+
+La réponse courte : la surcharge progressive, c'est **augmenter petit à petit la contrainte que tu imposes à ton corps** — plus de charge, plus de répétitions, plus de séries, plus d'amplitude ou moins de repos. C'est *le* principe nº1 de toute progression, en musculation comme en endurance. Au tout début, presque n'importe quel entraînement fait progresser ; ensuite, sans elle, ton corps n'a plus aucune raison de changer : il s'adapte à ce qu'on lui demande, et si on lui demande toujours la même chose, il reste pareil. Plateau garanti.
+
+La logique est mécanique : tu imposes un stress un peu supérieur à ce que ton corps sait déjà encaisser, il s'adapte pour être prêt la prochaine fois, et tu montes d'un cran. Répète ce cycle des dizaines de fois et tu obtiens des mois de progrès. Le mot important, c'est **progressive** : par petits paliers, pas par bonds héroïques. La prise de position 2026 de l'American College of Sports Medicine, qui synthétise 137 revues systématiques, le confirme : les premiers progrès viennent presque tout seuls, mais pour continuer à progresser sur la durée, il faut augmenter le stimulus.
+
+## Les leviers pour surcharger
+
+Ajouter du poids sur la barre n'est qu'une façon parmi d'autres. Tu as plusieurs curseurs, et c'est une bonne nouvelle quand l'un d'eux bloque :
+
+- **La charge :** plus lourd, à répétitions égales. Le levier le plus évident.
+
+- **Les répétitions :** même charge, une ou deux reps de plus. Dans un essai de 2022 (43 pratiquants entraînés, 8 semaines), progresser ainsi a fait gagner autant de muscle, et presque autant de force, qu'ajouter du poids.
+
+- **Les séries :** une série de travail supplémentaire sur un exercice.
+
+- **L'amplitude et la technique :** descendre plus bas, contrôler mieux — une rep plus propre est une rep plus dure.
+
+- **La densité :** le même travail en moins de temps, en réduisant les repos (utile en endurance et en circuit).
+
+## La méthode qui marche : la double progression
+
+Le piège du débutant, c'est de vouloir ajouter du poids à chaque séance. Ça marche quelques semaines, puis ça casse. La méthode fiable sur la durée, c'est la **double progression** :
+
+- Tu choisis une fourchette de répétitions (par exemple 8 à 12, celle que l'ACSM conseille aux débutants).
+
+- Tu gardes la même charge jusqu'à atteindre le **haut** de la fourchette sur toutes tes séries.
+
+- Alors seulement tu **augmentes la charge**, et tu redescends en bas de la fourchette.
+
+- Puis tu recommences à grimper en répétitions. Et ainsi de suite.
+
+C'est la règle de l'American College of Sports Medicine (2009) : augmenter la charge de 2 à 10 % dès que tu réussis une à deux répétitions de plus que ta cible. C'est lent, c'est peu spectaculaire, et c'est précisément pour ça que ça fonctionne : tu progresses sans te cramer. Le choix de la fourchette dépend de ton objectif — combien de répétitions pour prendre du muscle t'aide à la caler.
+
+## Tiens un journal, ou tu tournes en rond
+
+On ne surcharge pas de mémoire. Si tu ne notes pas ce que tu as fait la dernière fois — charge, répétitions, séries, sensation —, tu ne peux pas savoir si tu progresses, et tu refais les mêmes séances sans t'en rendre compte. **Le journal est l'outil nº1 de la surcharge progressive.** Une ligne par exercice suffit : c'est ta boussole. Et le progrès mesuré est incroyablement motivant — tu vois la ligne monter.
+
+## Sans récupération, pas de surcharge
+
+Attention au contresens : surcharger ne veut pas dire pousser à fond en permanence. L'adaptation se fait au repos, pas à la séance. Le consensus européen et américain sur le surentraînement (2013) le résume : un entraînement réussi doit comporter de la surcharge, mais éviter la combinaison surcharge excessive et récupération insuffisante. Si tu montes la contrainte sans laisser ton corps suivre, tu accumules de la fatigue et tu finis par reculer — [ce sont les signes du surmenage](https://ecleptic.health/articles/surentrainement-signes.html). C'est pour ça que la surcharge va toujours de pair avec des phases de récupération, et notamment la [semaine de décharge](https://ecleptic.health/articles/semaine-de-decharge-deload.html) : tu montes plusieurs semaines, tu souffles une semaine, tu repars plus haut. La structure de ta semaine compte aussi — full-body ou split, l'important est que chaque muscle soit sollicité assez souvent pour progresser (pour la force, au moins deux séances par semaine, selon l'ACSM).
+
+## Ce qu'il faut retenir
+
+- La surcharge progressive — augmenter graduellement la contrainte — est le principe nº1 de toute progression. Sans elle, plateau.
+
+- Surcharge par petits paliers via la double progression (reps puis charge), et tiens un journal : sans trace écrite, tu tournes en rond.
+
+- Elle ne marche qu'avec de la récupération : monte plusieurs semaines, décharge, repars plus haut.
+
+## Questions fréquentes
+
+### C'est quoi la surcharge progressive ?
+
+C'est augmenter petit à petit la contrainte imposée au corps — charge, répétitions, séries, amplitude ou densité — pour le forcer à s'adapter. C'est le principe nº1 de toute progression : sans elle, on finit par stagner.
+
+### Comment appliquer la surcharge progressive ?
+
+Par petits paliers, avec la double progression : garde la même charge jusqu'à atteindre le haut de ta fourchette de répétitions, puis augmente la charge et redescends en bas. Note tout dans un journal pour suivre tes progrès.
+
+### Pourquoi je ne progresse plus en musculation ?
+
+Souvent parce que la contrainte n'augmente plus (mêmes charges, mêmes reps) ou parce que la récupération ne suit pas. Reprends une surcharge graduelle, tiens un journal, et place une semaine de décharge si la fatigue s'accumule.
+
+## Sources
+
+- Currier BS, D'Souza AC, Singh MAF, et al. American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. *Med Sci Sports Exerc*. 2026. — https://doi.org/10.1249/MSS.0000000000003897
+- American College of Sports Medicine. American College of Sports Medicine position stand. Progression models in resistance training for healthy adults. *Med Sci Sports Exerc*. 2009. — https://doi.org/10.1249/MSS.0b013e3181915670
+- Plotkin D, Coleman M, Van Every D, et al. Progressive overload without progressing load? The effects of load or repetition progression on muscular adaptations. *PeerJ*. 2022. — https://doi.org/10.7717/peerj.14142
+- Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. *Med Sci Sports Exerc*. 2013. — https://doi.org/10.1249/MSS.0b013e318279a10a
+
+---
+
 # Travail de nuit : comment protéger son sommeil ?
 
 URL : https://ecleptic.health/articles/travail-de-nuit-comment-mieux-dormir.html
@@ -2042,7 +2120,7 @@ Une semaine suffit dans la grande majorité des cas. Beaucoup d'athlètes décri
 
 ## Deload et surcharge : les deux faces d'une même pièce
 
-Le deload n'a de sens que parce que tu pousses le reste du temps. C'est le contrepoids de la surcharge progressive : tu augmentes graduellement la contrainte pendant plusieurs semaines, puis tu relâches pour digérer tout ce travail. Sans surcharge, rien à décharger ; sans décharge, la surcharge finit par te casser. Les deux ensemble dessinent une progression en **vagues** — tu montes, tu souffles, tu remontes plus haut — bien plus efficace qu'une ligne droite qui grimpe jusqu'à ce qu'elle casse.
+Le deload n'a de sens que parce que tu pousses le reste du temps. C'est le contrepoids de la [surcharge progressive](https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html) : tu augmentes graduellement la contrainte pendant plusieurs semaines, puis tu relâches pour digérer tout ce travail. Sans surcharge, rien à décharger ; sans décharge, la surcharge finit par te casser. Les deux ensemble dessinent une progression en **vagues** — tu montes, tu souffles, tu remontes plus haut — bien plus efficace qu'une ligne droite qui grimpe jusqu'à ce qu'elle casse.
 
 ## Ce qu'il faut retenir
 

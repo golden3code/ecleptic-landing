@@ -68,6 +68,7 @@
 ### Charge
 
 - [Thème Charge](https://ecleptic.health/articles/charge/): Surentraînement, surcharge progressive, repos entre les séries, RPE, semaine de décharge : doser ta charge d'entraînement pour progresser sans te blesser.
+- [Surcharge progressive : la vraie clé pour progresser](https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html): Augmenter graduellement la charge, les reps ou les séries : le principe nº1 du progrès. La double progression, le journal, l'équilibre avec la récup.
 - [Semaine de décharge (deload) : quand et comment la faire ?](https://ecleptic.health/articles/semaine-de-decharge-deload.html): Réduis le volume de 40-50 %, toutes les 4 à 8 semaines ou dès que la fatigue s'installe. Garde un peu d'intensité. Ce n'est pas de la paresse.
 - [Surentraînement : les signes que tu en fais trop](https://ecleptic.health/articles/surentrainement-signes.html): Performances qui stagnent, sommeil dégradé, cœur de repos qui monte, motivation en berne : les signaux du surentraînement, et comment réagir avant de casser.
 
@@ -179,6 +180,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Training load
 
+- [Progressive overload: the real key to making progress](https://ecleptic.health/en/journal/progressive-overload.html): Gradually add weight, reps or sets: the #1 principle of progress. How double progression works, why you need a training log, and how to balance recovery.
 - [Deload week: when to take one and how to do it](https://ecleptic.health/en/journal/deload-week.html): Cut your training volume by 40-50% every 4 to 8 weeks, or as soon as fatigue builds up. Keep some intensity. And no, a deload week isn't being lazy.
 - [Overtraining: the signs you're doing too much](https://ecleptic.health/en/journal/signs-of-overtraining.html): Stalled performance, worse sleep, a rising resting heart rate, fading motivation: the warning signs of overtraining, and how to react before you break down.
 
