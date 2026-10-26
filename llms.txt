@@ -82,6 +82,7 @@
 ### Humeur
 
 - [Thème Humeur](https://ecleptic.health/articles/humeur/): Stress, anxiété, cortisol, cohérence cardiaque, irritabilité : ce que le mental fait à ta récupération, et les leviers simples qui aident vraiment au quotidien.
+- [Cohérence cardiaque : la respiration qui calme le stress](https://ecleptic.health/articles/coherence-cardiaque-respiration.html): Respirer à six cycles par minute pendant cinq minutes calme le système nerveux et fait monter ta HRV. Le schéma 5-5, pourquoi ça marche et quand l'utiliser.
 - [Le sport contre l'anxiété : que dit la science ?](https://ecleptic.health/articles/sport-contre-anxiete-stress.html): L'exercice régulier réduit l'anxiété et la déprime légère, parfois autant que d'autres approches de référence. Les mécanismes, la bonne dose et les limites.
 - [Stress et sport : pourquoi ton corps ne récupère plus](https://ecleptic.health/articles/stress-recuperation-sport.html): Ton système nerveux ne fait pas la différence entre une semaine de rush et une semaine de gros volume : le stress mental se paie en récupération physique.
 
@@ -192,6 +193,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Mood
 
+- [Resonance breathing: a breathing exercise that calms stress](https://ecleptic.health/en/journal/resonance-breathing-for-stress.html): Breathing at six breaths per minute for five minutes calms your nervous system and raises your HRV. The 5-5 pattern, why it works and when to use it.
 - [Exercise for anxiety: what does the science say?](https://ecleptic.health/en/journal/exercise-for-anxiety-and-stress.html): Regular exercise reduces anxiety and mild depression, sometimes as much as other standard approaches. The mechanisms, the right dose and the limits.
 - [Stress and exercise: why your body stops recovering](https://ecleptic.health/en/journal/stress-and-recovery-from-exercise.html): Your nervous system can't tell a crunch week at work from a high-volume training week: mental stress gets paid for in physical recovery. Here's what to do.
 

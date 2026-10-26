@@ -574,7 +574,7 @@ Conséquence directe : comparer ta HRV à un tableau trouvé en ligne n'a presqu
 
 - **Une infection qui démarre :** ton corps mobilise ses défenses, parfois avant que tu ne te sentes malade.
 
-À l'inverse, ce qui l'aide est connu : un **sommeil régulier**, un entraînement d'**endurance** progressif, la **respiration lente**, dont la cohérence cardiaque est la forme la plus simple, et **moins d'alcool**.
+À l'inverse, ce qui l'aide est connu : un **sommeil régulier**, un entraînement d'**endurance** progressif, la **respiration lente**, dont la [cohérence cardiaque](https://ecleptic.health/articles/coherence-cardiaque-respiration.html) est la forme la plus simple, et **moins d'alcool**.
 
 ## Comment Ecleptic la lit
 
@@ -1279,6 +1279,86 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Cohérence cardiaque : la respiration qui calme le stress
+
+URL : https://ecleptic.health/articles/coherence-cardiaque-respiration.html
+Thème : Humeur · Auteur : Auguste Phily-Priou · Publié le 2026-10-26
+
+Respirer à six cycles par minute pendant cinq minutes calme le système nerveux et fait monter ta HRV. Le schéma 5-5, pourquoi ça marche et quand l'utiliser.
+
+La réponse courte : respire **lentement, à environ 6 respirations par minute, pendant à peu près 5 minutes**. C'est ça, la cohérence cardiaque. À ce rythme précis, ta respiration se synchronise avec les oscillations naturelles de ton rythme cardiaque, ce qui active le frein parasympathique — la branche « calme » de ton système nerveux — et fait retomber la tension en quelques minutes. C'est l'un des rares outils anti-stress à la fois gratuit, immédiat, sans matériel et validé.
+
+Le schéma classique tient en une phrase : **5 secondes d'inspiration, 5 secondes d'expiration**, sans forcer, en gonflant le ventre. Dix secondes par cycle, six cycles par minute. C'est tout.
+
+## Ce qui se passe dans ton corps
+
+Ton rythme cardiaque n'est pas fixe : il accélère légèrement quand tu inspires, ralentit quand tu expires. En calant ta respiration autour de six cycles par minute, tu amplifies volontairement ce balancier et tu le mets en phase — c'est la « résonance ». Les chercheurs Paul Lehrer et Richard Gevirtz (2014) le décrivent : vers 0,1 hertz, soit six respirations par minute, cœur et respiration oscillent exactement en phase, et les variations du rythme cardiaque atteignent leur amplitude maximale. Deux effets concrets :
+
+- **Le nerf vague prend la main.** L'expiration lente stimule le système parasympathique : le cœur ralentit à chaque expiration, le corps sort du mode alerte.
+
+- **Ta variabilité cardiaque monte.** La [HRV](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) — le marqueur de l'état de ton système nerveux — grimpe nettement. Une méta-analyse de 2022 (223 études) le confirme : la HRV liée au nerf vague augmente pendant la respiration lente, juste après une séance, et au terme d'un programme de plusieurs séances. C'est le signe visible que le frein fonctionne.
+
+Ce n'est pas de la relaxation vague : c'est un levier mécanique sur ta physiologie, qui agit en temps réel.
+
+## Comment la pratiquer (vraiment simple)
+
+- **Installe-toi** assis, dos droit, épaules relâchées. Pas besoin d'un endroit spécial.
+
+- **Inspire 5 secondes** par le nez en gonflant le ventre, **expire 5 secondes** doucement. L'expiration est la partie qui calme — ne la bâcle pas.
+
+- **Tiens 5 minutes.** Une appli, une vidéo ou un simple guide visuel qui monte et descend aide à tenir le rythme sans compter.
+
+- **Si 5 secondes te gênent**, commence un peu plus court (inspiration légèrement plus brève que l'expiration) : l'important est le rythme lent et l'expiration allongée, pas la précision à la seconde.
+
+Deux erreurs gâchent souvent l'exercice : **respirer trop fort** — le but est un souffle doux et régulier, surtout pas une hyperventilation — et **se crisper sur les chiffres**. Si compter te stresse, laisse-toi guider par un visuel ou une appli et oublie le chrono : le corps trouve le rythme tout seul en quelques cycles.
+
+## Le repère « 3-6-5 »
+
+En France, la méthode est souvent résumée par trois chiffres faciles à retenir : **3 fois par jour, 6 respirations par minute, pendant 5 minutes**. Trois rendez-vous quotidiens — typiquement au réveil, avant le déjeuner et en fin d'après-midi — suffisent à installer l'habitude et à lisser le stress sur toute la journée. C'est un repère pratique, pas un protocole testé tel quel : deux fois valent mieux qu'une, et une vaut mieux que zéro. Mais ce format donne un cadre concret quand « respirer pour se calmer » reste trop vague pour qu'on s'y tienne.
+
+## Quand l'utiliser
+
+- **En urgence.** Avant une prise de parole, dans un embouteillage, après une mauvaise nouvelle : même *une seule* session de 5 minutes fait retomber la pression. C'est ton bouton « reset » de poche.
+
+- **En entretien.** Pratiquée régulièrement — l'idéal étant quelques minutes par jour, par exemple matin et soir — elle entraîne ton système nerveux à revenir au calme plus vite, et s'inscrit dans une vraie [gestion du stress et de la récupération](https://ecleptic.health/articles/stress-recuperation-sport.html). Une méta-analyse de 2017 (24 études, 484 participants) associe cet entraînement, guidé par un appareil de biofeedback, à une nette baisse du stress et de l'anxiété ressentis.
+
+Un moment particulièrement rentable : **le soir**, quelques minutes avant le coucher, pour faire basculer le corps en mode repos. Et sur le fond, c'est l'un des leviers documentés pour ne pas laisser le stress chronique s'installer.
+
+## Ce que la cohérence cardiaque n'est pas
+
+Restons honnêtes sur les promesses. La respiration lente calme le stress aigu et améliore le ressenti — c'est réel et mesurable, mais d'ampleur raisonnable : une méta-analyse de 2023 (12 essais randomisés, 785 adultes) trouve un effet petit à moyen des techniques de respiration sur le stress, et ses auteurs mettent en garde contre le décalage entre l'engouement et les preuves. En revanche, ce n'est pas un remède miracle qui « guérit » l'anxiété, fait fondre la graisse ou remplace le sommeil, comme le prétendent parfois des vendeurs de méthodes. C'est un outil de régulation, excellent dans son rôle, à combiner avec les fondamentaux : bouger, dormir, manger correctement. Utilisée pour ce qu'elle est, elle rend un service énorme pour un coût nul.
+
+## Ce qu'il faut retenir
+
+- Six respirations par minute (5 s inspiration, 5 s expiration) pendant 5 minutes activent le parasympathique et font monter la HRV.
+
+- Une seule session calme déjà ; la régularité entraîne durablement ton système nerveux au retour au calme.
+
+- Gratuite, immédiate, sans matériel : à dégainer en urgence et à caler le soir.
+
+## Questions fréquentes
+
+### C'est quoi la cohérence cardiaque ?
+
+Une technique de respiration lente à environ 6 cycles par minute (5 secondes d'inspiration, 5 d'expiration) pendant 5 minutes. Elle synchronise respiration et rythme cardiaque, active le système parasympathique et calme le stress rapidement.
+
+### Comment faire la cohérence cardiaque ?
+
+Assis, dos droit : inspire 5 secondes par le nez en gonflant le ventre, expire 5 secondes doucement, et tiens 5 minutes. Un guide visuel qui monte et descend aide à garder le rythme sans compter.
+
+### La cohérence cardiaque fait-elle vraiment baisser le stress ?
+
+Oui, sur le stress aigu et le ressenti : l'expiration lente stimule le nerf vague et fait monter la variabilité cardiaque. Ce n'est pas un remède miracle, mais un outil de régulation gratuit et immédiat.
+
+## Sources
+
+- Lehrer PM, Gevirtz R. Heart rate variability biofeedback: how and why does it work? *Front Psychol*. 2014. — https://doi.org/10.3389/fpsyg.2014.00756
+- Laborde S, Allen MS, Borges U, et al. Effects of voluntary slow breathing on heart rate and heart rate variability: a systematic review and a meta-analysis. *Neurosci Biobehav Rev*. 2022. — https://doi.org/10.1016/j.neubiorev.2022.104711
+- Goessl VC, Curtiss JE, Hofmann SG. The effect of heart rate variability biofeedback training on stress and anxiety: a meta-analysis. *Psychol Med*. 2017. — https://doi.org/10.1017/S0033291717001003
+- Fincham GW, Strauss C, Montero-Marin J, et al. Effect of breathwork on stress and mental health: a meta-analysis of randomised-controlled trials. *Sci Rep*. 2023. — https://doi.org/10.1038/s41598-022-27247-y
 
 ---
 
@@ -2044,7 +2124,7 @@ On résume souvent l'effet du sport sur le moral à « ça libère des endorphin
 
 ## À combiner avec la respiration
 
-Le sport agit sur le fond, sur des semaines. Pour les pics aigus — le trac, la boule au ventre, la montée de stress avant un rendez-vous — il existe un outil immédiat et gratuit : la respiration lente en cohérence cardiaque. Les deux se complètent parfaitement : le mouvement pour la tendance de fond, le souffle pour l'urgence.
+Le sport agit sur le fond, sur des semaines. Pour les pics aigus — le trac, la boule au ventre, la montée de stress avant un rendez-vous — il existe un outil immédiat et gratuit : la [respiration lente en cohérence cardiaque](https://ecleptic.health/articles/coherence-cardiaque-respiration.html). Les deux se complètent parfaitement : le mouvement pour la tendance de fond, le souffle pour l'urgence.
 
 ## Quand ça dépasse le cadre du bien-être
 
