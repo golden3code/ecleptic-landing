@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["PFT2HWU28B.com.golden3.app"],
+        "components": [
+          { "/": "/d/*", "comment": "défi" },
+          { "/": "/p/*", "comment": "profil" },
+          { "/": "/l/*", "comment": "lieu (QR)" }
+        ]
+      },
+      {
+        "appID": "PFT2HWU28B.com.golden3.app",
+        "paths": ["/d/*", "/p/*", "/l/*"]
+      }
+    ]
+  }
+}

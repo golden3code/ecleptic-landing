@@ -7,3 +7,12 @@ exclude:
   - README.md
   - "*.py"
   - "*.json"
+
+# Liens universels (réseau social, phase 0, lot E3) : Jekyll ignore les
+# dossiers qui commencent par un point, et « *.json » est exclu plus haut.
+# include passe avant exclude : apple-app-site-association et assetlinks.json
+# sont publiés sous /.well-known/.
+include:
+  - .well-known
+  - .well-known/apple-app-site-association
+  - .well-known/assetlinks.json

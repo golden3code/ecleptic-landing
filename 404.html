@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Ecleptic</title>
+<!--
+  Page de repli des liens universels (réseau social, phase 0, lot E3 ;
+  ~/Desktop/Auros/PLAN-SOCIAL-PHASE0.md §7). GitHub Pages sert ce fichier pour
+  toute adresse inconnue : ecleptic.health/d/<code> (défi), /p/<pseudo>
+  (profil), /l/<lieu> (QR d'un lieu). Quand l'app est installée, iOS et
+  Android ouvrent l'app directement et cette page ne s'affiche pas. Sinon :
+  « Ouvre Ecleptic », les liens des stores, et le code à saisir à
+  l'inscription. Toute autre adresse : page introuvable classique.
+-->
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;min-height:100vh;display:flex;align-items:center}
+  .wrap{max-width:520px;margin:0 auto;padding:48px 20px;text-align:center;width:100%}
+  .mark{width:64px;height:64px;border-radius:16px;margin:0 auto 24px;display:block}
+  h1{font-size:26px;margin-bottom:10px}
+  p{font-size:16px;color:#CFC5B0;margin:8px 0}
+  .code{display:inline-block;margin:18px 0 6px;padding:10px 18px;border:1px solid var(--line);border-radius:12px;font-size:22px;letter-spacing:.08em;color:var(--gold);font-variant-numeric:tabular-nums;word-break:break-all}
+  .hint{font-size:13px;color:var(--muted)}
+  .btns{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+  a.btn{display:block;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:600;font-size:16px}
+  a.primary{background:var(--gold);color:#1A1407}
+  a.secondary{border:1px solid var(--line);color:var(--ink)}
+  a{color:var(--gold)}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <img class="mark" src="/apple-touch-icon.png" alt="">
+  <h1 id="title">Page introuvable</h1>
+  <p id="lead">Cette page n'existe pas ou plus.</p>
+  <div id="codeBox" hidden>
+    <div class="code" id="code"></div>
+    <p class="hint" id="codeHint"></p>
+  </div>
+  <div class="btns">
+    <a class="btn primary" id="open" href="/" hidden>Ouvrir Ecleptic</a>
+    <a class="btn secondary" id="get" href="/beta.html" hidden>Télécharger Ecleptic</a>
+    <a class="btn secondary" id="home" href="/">Accueil du site</a>
+  </div>
+</main>
+<script src="/assets/stores.js"></script>
+<script>
+(function () {
+  var fr = /^fr\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || 'fr');
+  var T = fr ? {
+    d: ['Tu as reçu un défi', 'Ouvre Ecleptic pour le voir et le relever.', 'Pas encore l’app ? Installe-la, puis saisis ce code à l’inscription.'],
+    p: ['Un profil Ecleptic', 'Ouvre Ecleptic pour voir ce profil.', 'Pas encore l’app ? Installe-la, puis cherche ce pseudo.'],
+    l: ['Pointe ta séance', 'Ouvre Ecleptic pour rattacher ta séance à ce lieu.', 'Pas encore l’app ? Installe-la, puis scanne à nouveau le QR du lieu.'],
+    open: 'Ouvrir Ecleptic', get: 'Télécharger Ecleptic', home: 'Accueil du site',
+    nf: ['Page introuvable', 'Cette page n’existe pas ou plus.']
+  } : {
+    d: ['You’ve been challenged', 'Open Ecleptic to see the challenge and take it on.', 'No app yet? Install it, then enter this code when you sign up.'],
+    p: ['An Ecleptic profile', 'Open Ecleptic to see this profile.', 'No app yet? Install it, then search for this username.'],
+    l: ['Check in your session', 'Open Ecleptic to link your session to this place.', 'No app yet? Install it, then scan the place’s QR code again.'],
+    open: 'Open Ecleptic', get: 'Get Ecleptic', home: 'Website home',
+    nf: ['Page not found', 'This page doesn’t exist or no longer exists.']
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  document.documentElement.lang = fr ? 'fr' : 'en';
+  $('home').textContent = T.home;
+  $('home').href = fr ? '/' : '/en/';
+  $('title').textContent = T.nf[0];
+  $('lead').textContent = T.nf[1];
+
+  var m = location.pathname.match(/^\/(d|p|l)\/([A-Za-z0-9._-]{1,64})\/?$/);
+  if (!m) return;
+  var kind = m[1], code = m[2], t = T[kind];
+  document.title = t[0] + ' — Ecleptic';
+  $('title').textContent = t[0];
+  $('lead').textContent = t[1];
+  $('code').textContent = kind === 'p' ? '@' + code : code;
+  $('codeHint').textContent = t[2];
+  $('codeBox').hidden = false;
+
+  // Schéma de l'app (golden3://), comme les liens de parrainage.
+  var open = $('open');
+  open.href = 'golden3://' + kind + '/' + encodeURIComponent(code);
+  open.textContent = T.open;
+  open.hidden = false;
+
+  var S = window.EclepticStores || {};
+  var ua = navigator.userAgent || '';
+  var get = $('get');
+  get.textContent = T.get;
+  if (/Android/i.test(ua) && (S.PLAY_STORE_URL || S.PLAY_TESTING_URL)) {
+    get.href = S.PLAY_STORE_URL || S.PLAY_TESTING_URL;
+  } else if (S.APP_STORE_URL) {
+    get.href = S.APP_STORE_URL;
+  } else {
+    get.href = '/beta.html';
+  }
+  get.hidden = false;
+})();
+</script>
+</body>
+</html>
