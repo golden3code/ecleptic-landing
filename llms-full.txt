@@ -1282,6 +1282,95 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Carence en fer : le premier suspect de la fatigue
+
+URL : https://ecleptic.health/articles/carence-en-fer-fatigue.html
+Thème : Énergie · Auteur : Auguste Phily-Priou · Publié le 2026-10-28
+
+Cause nutritionnelle nº1 de fatigue, surtout chez les femmes et les coureurs. Pourquoi doser la ferritine et ne jamais te supplémenter seul en fer.
+
+La réponse courte : la **carence en fer** est l'une des carences nutritionnelles les plus répandues au monde — une revue du *Lancet* (2021) la range parmi les premiers contributeurs au fardeau mondial de la maladie — et l'une des causes les plus fréquentes de fatigue durable, surtout chez les **femmes** (les règles génèrent des pertes mensuelles) et chez les **coureurs** et sportifs d'endurance. Avant de mettre ta fatigue sur le compte du stress ou du surmenage, c'est un suspect à écarter avec une simple prise de sang.
+
+Mais attention à un point décisif : on ne se supplémente **jamais** en fer « au cas où ». L'excès de fer est toxique et s'accumule : comme le rappelle une revue de l'*American Journal of Clinical Nutrition* (2010), le corps ne régule son fer que par l'absorption, faute de tout mécanisme physiologique pour l'éliminer. Le fer se dose, puis se corrige sous contrôle — jamais à l'aveugle.
+
+## Les signes qui doivent te faire penser au fer
+
+- **Une fatigue qui ne passe pas** malgré un sommeil correct — le symptôme central.
+
+- **Un essoufflement inhabituel à l'effort**, un cœur qui s'emballe pour des allures faciles : le fer transporte l'oxygène, quand il manque, le moindre effort coûte plus cher.
+
+- **Une pâleur** (visage, intérieur des paupières), des **ongles cassants**, une **chute de cheveux** diffuse.
+
+- **Le syndrome des jambes sans repos** — ce besoin irrépressible de bouger les jambes le soir — est classiquement associé à un fer bas.
+
+- Chez le sportif : des **performances qui stagnent** sans raison, une récupération qui traîne. Le tableau ressemble à s'y méprendre au [surentraînement](https://ecleptic.health/articles/surentrainement-signes.html) — d'où l'intérêt de doser plutôt que de deviner.
+
+## Qui est le plus exposé
+
+Le fer ne manque pas à tout le monde de la même façon. Les profils à surveiller de plus près :
+
+- **Les femmes qui ont des règles abondantes** — c'est l'une des premières causes de carence en fer avant la ménopause.
+
+- **Les sportifs d'endurance**, coureurs en tête : micro-pertes digestives, transpiration et impact répété des foulées, plus une hormone, l'hepcidine, qui grimpe après l'effort et freine l'absorption du fer. Selon une revue de 2019, 15 à 35 % des sportives suivies dans les études sont carencées, et 5 à 11 % des sportifs.
+
+- **Les végétariens et véganes**, dont le fer est uniquement non héminique, donc moins bien absorbé.
+
+- **Les donneurs de sang réguliers**, ainsi que les périodes de forte croissance ou de grossesse — là, le suivi médical est de toute façon la règle.
+
+Si tu coches une de ces cases et que la fatigue s'installe, ne devine pas : c'est le moment du bilan.
+
+## Pourquoi il faut doser la ferritine, pas seulement l'hémoglobine
+
+C'est l'erreur la plus fréquente. Une prise de sang standard mesure l'**hémoglobine** : quand elle est basse, on parle d'anémie — mais c'est le *dernier* stade, celui où les réserves sont déjà vides depuis longtemps. La **ferritine**, elle, reflète les *réserves* : l'Organisation mondiale de la santé la considère comme un bon marqueur des réserves de fer et recommande de s'en servir pour diagnostiquer une carence. Elle chute bien avant l'hémoglobine, et une ferritine basse avec une hémoglobine encore normale peut déjà s'accompagner de fatigue : une revue de 2018 (18 essais, 1 170 participants) montre que chez des adultes carencés sans anémie, corriger le fer réduit la fatigue ressentie — les tests de capacité physique, eux, n'y bougeaient pas. Si tu fais un bilan pour de la fatigue, la ferritine doit y figurer — demande-la explicitement.
+
+*Nuance importante :* la ferritine monte artificiellement en cas d'inflammation ou d'infection, ce qui peut masquer une carence — l'OMS recommande d'ailleurs de l'interpréter avec un marqueur d'inflammation. C'est justement pour ça que l'interprétation revient à un médecin, avec le contexte, et pas à un tableau de valeurs trouvé en ligne.
+
+## Le fer dans l'assiette : deux formes, une astuce
+
+- **Le fer héminique**, dans les produits animaux (viande rouge, abats, volaille, poisson, fruits de mer), est le mieux absorbé.
+
+- **Le fer non héminique**, dans les végétaux (légumineuses, tofu, légumes verts, céréales complètes), est moins bien absorbé — mais la **vitamine C** prise au même repas améliore son absorption. Des lentilles avec un filet de citron ou des poivrons, c'est de la chimie appliquée.
+
+- À l'inverse, les polyphénols du **thé et du café** pris pendant le repas freinent l'absorption du fer végétal : décale-les d'une heure si tu vises tes réserves. Effet net sur un repas isolé, plus modeste sur une alimentation variée.
+
+Les végétariens, les véganes et les grosses fourchettes d'endurance ont intérêt à soigner ces apports — et à surveiller leur ferritine plus que la moyenne. Un apport protéique varié aide aussi à couvrir l'ensemble ([combien de protéines par jour](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html)).
+
+## La règle de sécurité, non négociable
+
+Si tu cumules plusieurs de ces signes, la démarche est simple : **prise de sang avec ferritine, puis médecin**. Ni auto-diagnostic, ni auto-supplémentation. Une carence confirmée se corrige très bien, souvent en quelques mois — mais la dose, la forme et la durée sont l'affaire du médecin, pas d'un complément acheté à l'instinct. Une carence a aussi toujours une cause — pertes de sang, alimentation, absorption — que le médecin cherchera. Et si le fer est normal, tu auras éliminé un gros suspect et tu pourras chercher [ailleurs les causes de ta fatigue](https://ecleptic.health/articles/toujours-fatigue-causes.html).
+
+## Ce qu'il faut retenir
+
+- La carence en fer est une cause fréquente de fatigue, surtout chez les femmes réglées et les sportifs d'endurance.
+
+- C'est la **ferritine** qu'il faut doser, pas seulement l'hémoglobine : les réserves chutent bien avant l'anémie.
+
+- On ne se supplémente jamais seul — l'excès de fer est dangereux : dosage puis médecin.
+
+## Questions fréquentes
+
+### Quels sont les symptômes d'une carence en fer ?
+
+Fatigue persistante, essoufflement à l'effort, pâleur, ongles cassants, chute de cheveux et parfois un syndrome des jambes sans repos. Chez le sportif, des performances qui stagnent sans raison. Seule une prise de sang confirme.
+
+### Faut-il doser la ferritine ou l'hémoglobine pour le fer ?
+
+La ferritine, car elle mesure les réserves de fer et chute bien avant l'hémoglobine. Une ferritine basse peut expliquer une fatigue alors que l'hémoglobine est encore normale : demande-la explicitement sur ton bilan.
+
+### Peut-on prendre du fer sans ordonnance ?
+
+Ce n'est pas prudent : l'excès de fer s'accumule et devient toxique, car le corps n'a aucun mécanisme actif pour l'éliminer. On dose d'abord, puis on corrige sous contrôle d'un médecin — jamais à l'aveugle.
+
+## Sources
+
+- Pasricha SR, Tye-Din J, Muckenthaler MU, et al. Iron deficiency. *Lancet*. 2021. — https://doi.org/10.1016/S0140-6736(20)32594-0
+- World Health Organization. WHO guideline on use of ferritin concentrations to assess iron status in individuals and populations. 2020. — https://www.who.int/publications/i/item/9789240000124
+- Houston BL, Hurrie D, Graham J, et al. Efficacy of iron supplementation on fatigue and physical capacity in non-anaemic iron-deficient adults: a systematic review of randomised controlled trials. *BMJ Open*. 2018. — https://doi.org/10.1136/bmjopen-2017-019240
+- Sim M, Garvican-Lewis LA, Cox GR, et al. Iron considerations for the athlete: a narrative review. *Eur J Appl Physiol*. 2019. — https://doi.org/10.1007/s00421-019-04157-y
+- Hurrell R, Egli I. Iron bioavailability and dietary reference values. *Am J Clin Nutr*. 2010. — https://doi.org/10.3945/ajcn.2010.28674F
+
+---
+
 # Cohérence cardiaque : la respiration qui calme le stress
 
 URL : https://ecleptic.health/articles/coherence-cardiaque-respiration.html
