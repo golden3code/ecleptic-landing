@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Ecleptic · Écran de la salle</title>
+<!--
+  Écran TV d'un lieu partenaire (réseau social, phase 4, lot L ;
+  ~/Desktop/Auros/PLAN-SOCIAL-PHASE4.md, limite 9 et décision 21).
+  Lien donné au gérant approuvé dans l'app : /tv/?p=<lieu>&k=<clé>.
+  Lit la fonction Edge publique place-tv (cache de 15 min) et se rafraîchit
+  toutes les 15 minutes. Pseudos des seuls membres qui ont accepté l'écran.
+-->
+<style>
+  :root {
+    --bg: #0A0A0A; --card: #1D1D1D; --border: #2A2724; --text: #FAF8F4;
+    --muted: #8E8D8B; --gold: #F5A623; --yellow: #FFD166; --copper: #B87333;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, system-ui, sans-serif; }
+  body { overflow: hidden; }
+  .screen { height: 100vh; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: 4vw; padding: 5vh 5vw; }
+  .kicker { color: var(--gold); letter-spacing: 0.18em; text-transform: uppercase; font-size: 1.6vw; }
+  h1 { font-weight: 400; font-size: 4.2vw; line-height: 1.1; margin: 1vh 0 0; }
+  .sub { color: var(--muted); font-size: 1.6vw; margin-top: 1vh; }
+  .board { margin-top: 4vh; }
+  .row { display: flex; align-items: baseline; gap: 2vw; padding: 1.3vh 0; border-bottom: 1px solid var(--border); font-size: 2.4vw; }
+  .row .rank { color: var(--muted); width: 3vw; }
+  .row .who { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .row .days { font-weight: 600; }
+  .row.first .who, .row.first .days { color: var(--yellow); }
+  .side { display: flex; flex-direction: column; gap: 3vh; }
+  .card { background: var(--card); border-radius: 1.2vw; padding: 2.4vh 2vw; }
+  .card h2 { margin: 0 0 1.4vh; font-size: 1.4vw; color: var(--muted); font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+  .founders { display: flex; flex-wrap: wrap; gap: 0.8vh 1.6vw; font-size: 1.8vw; }
+  .founders span b { color: var(--copper); font-weight: 600; margin-right: 0.4vw; }
+  .qr { display: flex; gap: 2vw; align-items: center; }
+  .qr img { width: 15vw; height: 15vw; border-radius: 0.8vw; background: var(--text); }
+  .qr p { margin: 0; font-size: 1.9vw; line-height: 1.3; }
+  .qr p small { display: block; color: var(--muted); font-size: 1.3vw; margin-top: 1vh; }
+  .empty { color: var(--muted); font-size: 2vw; margin-top: 4vh; line-height: 1.4; }
+  .foot { color: var(--muted); font-size: 1.1vw; margin-top: auto; }
+  .message { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;
+    padding: 10vw; font-size: 2.4vw; color: var(--muted); line-height: 1.4; }
+  @media (max-aspect-ratio: 1/1) {
+    body { overflow: auto; }
+    .screen { grid-template-columns: 1fr; height: auto; }
+    .kicker, .sub { font-size: 3.4vw; } h1 { font-size: 8vw; } .row { font-size: 5vw; }
+    .row .rank { width: 7vw; } .card h2 { font-size: 3vw; } .founders { font-size: 4vw; }
+    .qr img { width: 34vw; height: 34vw; } .qr p { font-size: 4.2vw; } .qr p small { font-size: 3vw; }
+    .empty { font-size: 4.2vw; } .foot { font-size: 2.6vw; }
+  }
+</style>
+</head>
+<body>
+<main id="app" class="message">…</main>
+<script>
+(function () {
+  var ENDPOINT = 'https://avbmycfngmxhkjesdiyq.supabase.co/functions/v1/place-tv';
+  var REFRESH_MS = 15 * 60 * 1000;
+  var params = new URLSearchParams(location.search);
+  var lang = (params.get('lang') || navigator.language || 'fr').slice(0, 2) === 'en' ? 'en' : 'fr';
+  document.documentElement.lang = lang;
+  var T = {
+    fr: {
+      kicker: 'Régularité du mois', days: function (n) { return n + (n > 1 ? ' jours' : ' jour'); },
+      founders: 'Fondateurs du lieu', join: 'Rejoins le tableau', joinSub: 'Scanne avec ton téléphone : la séance pointée ici compte.',
+      empty: 'Personne ne s’affiche encore. Chaque membre choisit, dans l’app, d’apparaître sur cet écran.',
+      foot: 'Ecleptic · pseudos des membres qui ont accepté l’écran, jamais d’heure ni de tracé · mis à jour toutes les 15 minutes',
+      invalid: 'Ce lien d’écran n’est pas valide. Le gérant du lieu en trouve un nouveau dans l’app Ecleptic.',
+      error: 'Écran momentanément indisponible. Nouvel essai dans quelques minutes.'
+    },
+    en: {
+      kicker: 'This month’s consistency', days: function (n) { return n + (n > 1 ? ' days' : ' day'); },
+      founders: 'Founding members', join: 'Join the board', joinSub: 'Scan with your phone: sessions checked in here count.',
+      empty: 'Nobody shows up here yet. Each member chooses, in the app, to appear on this screen.',
+      foot: 'Ecleptic · usernames of members who opted in, never a time or a route · updated every 15 minutes',
+      invalid: 'This screen link isn’t valid. The place manager can find a new one in the Ecleptic app.',
+      error: 'Screen temporarily unavailable. Trying again in a few minutes.'
+    }
+  }[lang];
+  var app = document.getElementById('app');
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+  function message(text) {
+    app.className = 'message';
+    app.textContent = text;
+  }
+  function monthLabel(iso) {
+    var d = new Date(iso + 'T12:00:00');
+    return d.toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR', { month: 'long', year: 'numeric' });
+  }
+
+  function render(data) {
+    app.className = 'screen';
+    app.textContent = '';
+    var left = el('section');
+    left.appendChild(el('div', 'kicker', T.kicker + ' · ' + monthLabel(data.month)));
+    left.appendChild(el('h1', null, data.name));
+    if (data.city) left.appendChild(el('div', 'sub', data.city));
+    var rows = Array.isArray(data.regularity) ? data.regularity : [];
+    if (rows.length === 0) {
+      left.appendChild(el('p', 'empty', T.empty));
+    } else {
+      var board = el('div', 'board');
+      rows.forEach(function (r) {
+        var row = el('div', 'row' + (r.rank === 1 ? ' first' : ''));
+        row.appendChild(el('span', 'rank', String(r.rank)));
+        row.appendChild(el('span', 'who', '@' + r.handle));
+        row.appendChild(el('span', 'days', T.days(r.days)));
+        board.appendChild(row);
+      });
+      left.appendChild(board);
+    }
+    var side = el('section', 'side');
+    var founders = Array.isArray(data.founders) ? data.founders : [];
+    if (founders.length > 0) {
+      var fc = el('div', 'card');
+      fc.appendChild(el('h2', null, T.founders));
+      var list = el('div', 'founders');
+      founders.forEach(function (f) {
+        var s = el('span');
+        s.appendChild(el('b', null, 'nº ' + f.rank));
+        s.appendChild(document.createTextNode('@' + f.handle));
+        list.appendChild(s);
+      });
+      fc.appendChild(list);
+      side.appendChild(fc);
+    }
+    if (data.qr_svg) {
+      var qc = el('div', 'card qr');
+      var img = el('img');
+      img.alt = T.join;
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(data.qr_svg);
+      qc.appendChild(img);
+      var p = el('p', null, T.join);
+      p.appendChild(el('small', null, T.joinSub));
+      qc.appendChild(p);
+      side.appendChild(qc);
+    }
+    side.appendChild(el('div', 'foot', T.foot));
+    app.appendChild(left);
+    app.appendChild(side);
+  }
+
+  function load() {
+    var place = params.get('p') || '';
+    var key = params.get('k') || '';
+    if (!/^[0-9a-f-]{36}$/i.test(place) || !/^[A-HJKMNP-Z2-9]{8}$/i.test(key)) {
+      message(T.invalid);
+      return;
+    }
+    fetch(ENDPOINT + '?p=' + encodeURIComponent(place) + '&k=' + encodeURIComponent(key.toUpperCase()))
+      .then(function (res) {
+        if (res.status === 404 || res.status === 400) { message(T.invalid); return null; }
+        if (!res.ok) throw new Error('http ' + res.status);
+        return res.json();
+      })
+      .then(function (data) { if (data) render(data); })
+      .catch(function () { message(T.error); });
+  }
+
+  load();
+  setInterval(load, REFRESH_MS);
+})();
+</script>
+</body>
+</html>
