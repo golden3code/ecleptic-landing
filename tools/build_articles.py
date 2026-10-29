@@ -802,7 +802,7 @@ def nav_panels(idx, lang="fr"):
                 {"t": T("Demander l'accès", "Request access"), "d": T("45 secondes de questions, puis le lien d'installation.", "45 seconds of questions, then the install link."),
                  "u": "/beta.html", "gold": True}]},
             {"label": T("Ce qui t'attend", "What you get"), "items": [
-                {"t": T("Toutes les fonctionnalités Golden, offertes aux testeurs", "Every Golden feature, free for testers")},
+                {"t": T("Toutes les fonctionnalités Zenith, offertes aux testeurs", "Every Zenith feature, free for testers")},
                 {"t": T("Sur iPhone, iOS 16.4 ou plus récent", "On iPhone, iOS 16.4 or later")},
                 {"t": T("Installation via TestFlight, l'app de bêtas d'Apple", "Installed through TestFlight, Apple's beta app")},
                 {"t": T("Un bug ? Une capture d'écran suffit à nous le signaler", "A bug? A screenshot is all it takes to report it")}]},
