@@ -989,7 +989,7 @@ Il faut à ta montre **quelques nuits pour établir cette référence**, avant d
 
 ## Ce qui la fait bouger
 
-- **Le cycle menstruel :** après l'ovulation, la température de base monte de quelques dixièmes de degré et reste plus haute jusqu'aux règles suivantes. Si tu as des règles, ton écart ondule donc au fil du mois, et c'est normal. Pour adapter l'entraînement : cycle menstruel et sport.
+- **Le cycle menstruel :** après l'ovulation, la température de base monte de quelques dixièmes de degré et reste plus haute jusqu'aux règles suivantes. Si tu as des règles, ton écart ondule donc au fil du mois, et c'est normal. Pour adapter l'entraînement : [cycle menstruel et sport](https://ecleptic.health/articles/cycle-menstruel-et-sport.html).
 
 - **La fièvre ou une infection :** la température monte, et la [fréquence respiratoire](https://ecleptic.health/methode/frequence-respiratoire.html) grimpe souvent avec elle.
 
@@ -1279,6 +1279,91 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Cycle menstruel et sport : faut-il adapter son entraînement ?
+
+URL : https://ecleptic.health/articles/cycle-menstruel-et-sport.html
+Thème : Contexte · Auteur : Auguste Phily-Priou · Publié le 2026-10-30
+
+Cycle menstruel et sport : la science est limitée et très individuelle. Écoute ton corps plutôt qu'un calendrier, et l'aménorrhée n'est jamais anodine.
+
+La réponse courte : **peut-être, mais pas selon une règle rigide et universelle**. La science sur le sujet est encore **limitée** et, surtout, extrêmement **individuelle** : la variabilité d'une personne à l'autre domine tout ce qu'on pourrait vouloir généraliser. Beaucoup rapportent plus d'énergie en première moitié de cycle et plus de lourdeur avant les règles — mais ça reste une tendance moyenne, pas une loi qui s'appliquerait à toi précisément.
+
+La bonne approche n'est donc pas de suivre un calendrier théorique trouvé en ligne, mais d'**écouter ton corps et tes données**, et de moduler l'intensité selon tes sensations réelles. Ton cycle est un facteur parmi d'autres — au même titre que ton sommeil ou ton stress —, pas un programme d'entraînement en soi.
+
+## Ce que la science dit (et ne dit pas)
+
+Soyons honnêtes sur l'état des connaissances :
+
+- Les **études solides manquent** : le sujet a longtemps été négligé par la recherche, et les protocoles restent hétérogènes.
+
+- Les **effets moyens mesurés sont faibles** comparés aux différences entre individus. Une méta-analyse de 2020 (78 études) ne trouve qu'une baisse de performance « triviale » en tout début de cycle, pendant les règles, sur des preuves de faible qualité — et recommande une approche personnalisée plutôt que des règles générales. Autrement dit, la phase du cycle explique bien moins ta forme du jour que ton sommeil, ta nutrition ou ta charge d'entraînement récente.
+
+- Aucune donnée solide ne justifie de **brider systématiquement** l'entraînement à tel moment du mois. Pour la musculation, une revue de synthèse de 2023 juge prématuré d'affirmer que les variations hormonales pèsent sur la force ou la prise de muscle. Tu peux t'entraîner et progresser sur l'ensemble du cycle.
+
+Bref : méfie-toi des méthodes qui promettent un « entraînement calé sur les 4 phases » avec une précision d'horloger. Ça se vend bien, mais ça surestime largement ce que la science permet d'affirmer aujourd'hui.
+
+## Les tendances souvent rapportées
+
+Cela dit, beaucoup de femmes décrivent un ressenti assez cohérent : dans une enquête de 2021 auprès de 6 812 sportives, 86 % rapportaient de la fatigue liée au cycle et 91 % des changements d'humeur ou de l'anxiété. Un ressenti qui vaut la peine d'être observé sur *ton* cas :
+
+- **Phase folliculaire** (du premier jour des règles à l'ovulation, grosso modo la première moitié) : une fois les règles passées, souvent plus d'énergie, une bonne tolérance aux séances intenses et à la charge lourde.
+
+- **Phase lutéale et prémenstruelle** (seconde moitié, avant les règles) : parfois plus de fatigue, une récupération qui traîne, une motivation en baisse, un sommeil moins bon.
+
+- **Pendant les règles** : très variable — certaines sont gênées, d'autres se sentent parfaitement bien et performent normalement.
+
+La consigne : traite ça comme une **hypothèse à vérifier sur toi**, pas comme une vérité imposée. Note tes sensations sur deux ou trois cycles et regarde si un motif se dessine *vraiment* chez toi.
+
+## La méthode qui marche : tes sensations et tes données
+
+Plutôt qu'un calendrier rigide, pilote au ressenti et aux signaux objectifs :
+
+- Les jours où l'énergie est là, **profites-en** pour les séances exigeantes et la charge lourde.
+
+- Les jours de lourdeur, **allège sans culpabiliser** : baisse le volume ou l'intensité, garde le mouvement. Une séance modérée vaut toujours mieux qu'une séance forcée et ratée.
+
+- Appuie-toi sur tes vitaux du matin. Un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html) qui croise cœur de repos, variabilité et sommeil capte ta fatigue réelle du jour, quelle qu'en soit la cause — cycle compris — sans que tu aies à deviner.
+
+C'est plus fiable qu'un modèle théorique, parce que ça mesure ton état *réel* au lieu de le supposer.
+
+## Un signal à ne jamais banaliser : l'absence de règles
+
+Un point important, qui sort du simple confort d'entraînement. Chez une sportive, la **disparition des règles** (aménorrhée) n'est **pas** un signe de bonne forme ni une conséquence « normale » d'un gros entraînement. C'est le plus souvent le signal d'un **déficit énergétique** — pas assez de carburant pour couvrir la dépense —, un mécanisme au cœur de ce qu'on appelle le déficit énergétique relatif dans le sport (REDs), objet d'un consensus du Comité international olympique mis à jour en 2023. Selon l'American College of Sports Medicine, c'est cette faible disponibilité énergétique, souvent involontaire, qui dérègle le cycle et fragilise les os. À la longue, ça touche les hormones, la densité osseuse et la santé globale. Et ce n'est pas réservé aux athlètes de haut niveau : ça guette aussi des amatrices assidues qui, sans le vouloir, mangent trop peu au regard de tout ce qu'elles dépensent.
+
+Si tes règles disparaissent ou deviennent très irrégulières alors que tu t'entraînes, ce n'est pas un détail : commence par vérifier que tu [manges assez pour ta dépense](https://ecleptic.health/articles/deficit-calorique-comment-calculer.html), et surtout **parles-en à un médecin**. C'est un motif de consultation, pas quelque chose à laisser filer — et une cause fréquente de [fatigue persistante](https://ecleptic.health/articles/toujours-fatigue-causes.html) chez la sportive.
+
+## Ce qu'il faut retenir
+
+- La science est limitée et surtout très individuelle : pas de règle universelle pour caler l'entraînement sur le cycle.
+
+- Écoute ton corps et tes données, module l'intensité selon tes sensations plutôt que selon un calendrier théorique.
+
+- L'absence de règles chez une sportive n'est jamais « normale » : souvent un signe de déficit énergétique, et un motif de consultation médicale.
+
+## Questions fréquentes
+
+### Faut-il adapter son entraînement à son cycle menstruel ?
+
+Il n'existe pas de règle universelle : la science est limitée et très individuelle. Plutôt qu'un calendrier théorique, module l'intensité selon tes sensations et tes données du jour. Tu peux t'entraîner et progresser sur tout le cycle.
+
+### Quand a-t-on le plus d'énergie dans le cycle menstruel ?
+
+Beaucoup rapportent plus d'énergie une fois les règles passées, jusqu'à l'ovulation, et davantage de fatigue avant les règles. Mais la variabilité d'une personne à l'autre domine : observe ce qui se passe vraiment chez toi.
+
+### Perdre ses règles à cause du sport, est-ce grave ?
+
+Oui, c'est un signal à ne pas banaliser. L'absence de règles chez une sportive traduit souvent un déficit énergétique et peut affecter les hormones et les os. C'est un motif de consultation médicale, pas une conséquence normale de l'entraînement.
+
+## Sources
+
+- McNulty KL, Elliott-Sale KJ, Dolan E, et al. The effects of menstrual cycle phase on exercise performance in eumenorrheic women: a systematic review and meta-analysis. *Sports Med*. 2020. — https://doi.org/10.1007/s40279-020-01319-3
+- Colenso-Semple LM, D'Souza AC, Elliott-Sale KJ, Phillips SM. Current evidence shows no influence of women's menstrual cycle phase on acute strength performance or adaptations to resistance exercise training. *Front Sports Act Living*. 2023. — https://doi.org/10.3389/fspor.2023.1054542
+- Bruinvels G, Goldsmith E, Blagrove R, et al. Prevalence and frequency of menstrual cycle symptoms are associated with availability to train and compete: a study of 6812 exercising women recruited using the Strava exercise app. *Br J Sports Med*. 2021. — https://doi.org/10.1136/bjsports-2020-102792
+- Nattiv A, Loucks AB, Manore MM, et al. American College of Sports Medicine position stand. The female athlete triad. *Med Sci Sports Exerc*. 2007. — https://doi.org/10.1249/mss.0b013e318149f111
+- Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). *Br J Sports Med*. 2023. — https://doi.org/10.1136/bjsports-2023-106994
 
 ---
 
