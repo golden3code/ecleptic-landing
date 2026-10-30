@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ecleptic.app",
+      "sha256_cert_fingerprints": [
+        "A0:37:5E:D0:84:A7:4B:63:BE:7E:F3:6A:EB:55:2E:D8:20:B0:94:1E:D3:67:36:39:7B:83:E6:C6:26:21:21:DD"
+      ]
+    }
+  }
+]

@@ -110,6 +110,15 @@
     <h2 id="t-qtitle"></h2>
     <p class="sub" id="t-qsub"></p>
 
+    <!-- Bêta Android : visible seulement quand /assets/stores.js a un lien Play. -->
+    <div class="q" id="q-phone" hidden>
+      <label class="title" id="t-phone"></label>
+      <div class="chips">
+        <label><input type="radio" name="phone_platform" value="ios"><span>iPhone</span></label>
+        <label><input type="radio" name="phone_platform" value="android"><span>Android</span></label>
+      </div>
+    </div>
+
     <div class="q row">
       <div>
         <label class="title" for="first_name" id="t-firstname"></label>
@@ -124,7 +133,7 @@
     <div class="q">
       <label class="title" id="t-watch"></label>
       <div class="chips">
-        <label><input type="radio" name="has_apple_watch" value="apple_watch" required><span>Apple Watch</span></label>
+        <label id="chip-apple-watch"><input type="radio" name="has_apple_watch" value="apple_watch" required><span>Apple Watch</span></label>
         <label><input type="radio" name="has_apple_watch" value="autre_montre"><span id="t-watch-other"></span></label>
         <label><input type="radio" name="has_apple_watch" value="aucune"><span id="t-watch-none"></span></label>
       </div>
@@ -160,7 +169,7 @@
         <label><input type="checkbox" name="apps_used" value="mfp"><span>MyFitnessPal / Yazio</span></label>
         <label><input type="checkbox" name="apps_used" value="sleep_cycle"><span>Sleep Cycle</span></label>
         <label><input type="checkbox" name="apps_used" value="strava"><span>Strava</span></label>
-        <label><input type="checkbox" name="apps_used" value="apple_sante"><span id="t-a-health"></span></label>
+        <label><input type="checkbox" name="apps_used" value="apple_sante" id="app-health"><span id="t-a-health"></span></label>
         <label><input type="checkbox" name="apps_used" value="aucune"><span id="t-a-none"></span></label>
       </div>
     </div>
@@ -214,6 +223,7 @@
   <p class="disclaimer" id="t-disclaimer"></p>
 </footer>
 
+<script src="/assets/stores.js"></script>
 <script>
   var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
@@ -251,7 +261,28 @@
       privacy2: "Privacy policy", legal: "Legal notice",
       disclaimer: "Ecleptic is a wellness app. It does not replace medical advice and is not a medical device.",
       spots: "{n} of 150 spots left",
-      spotsFull: "Beta full — leave your email anyway, we'll ping you when a spot opens"
+      spotsFull: "Beta full — leave your email anyway, we'll ping you when a spot opens",
+      // Quand la bêta Android est ouverte (/assets/stores.js).
+      live: {
+        htmlTitle: "Ecleptic — Beta",
+        pitch: "Your sleep, your nutrition and your training don't live in three separate apps. Ecleptic crosses them into one score and tells you, every morning, what actually matters today. Beta open on iPhone and Android — free, every feature unlocked.",
+        cta: "Join the beta",
+        ctanote: "iPhone (iOS 16.4+) or Android (8.0+) · 45 seconds of questions, then your install link",
+        qsub: "8 questions, 45 seconds. It helps us know what to test with whom.",
+        phone: "Your phone"
+      },
+      // Testeur sur Android.
+      android: {
+        email: "The email of your Google account",
+        emailPh: "the one you use on Google Play",
+        watchOther: "A smartwatch / band",
+        aHealth: "Health Connect only",
+        submit: "Get my Android access",
+        step1: "1. We add your Google address to the testers list and email you as soon as it's done.",
+        step2: "2. Then, on your Android phone signed in to that Google account, open this link and accept to become a tester:",
+        install: "Join the test on Google Play",
+        step3: "3. Found a bug? Describe it on ecleptic.health/en/problemes.html or write to us: contact@ecleptic.app."
+      }
     },
     fr: {
       htmlTitle: "Ecleptic — Bêta iOS",
@@ -284,7 +315,28 @@
       privacy2: "Politique de confidentialité", legal: "Mentions légales",
       disclaimer: "Ecleptic est une application de bien-être. Elle ne remplace pas un avis médical et n'est pas un dispositif médical.",
       spots: "{n} places sur 150 restantes",
-      spotsFull: "Bêta complète — laisse quand même ton email, on te prévient dès qu'une place se libère"
+      spotsFull: "Bêta complète — laisse quand même ton email, on te prévient dès qu'une place se libère",
+      // Quand la bêta Android est ouverte (/assets/stores.js).
+      live: {
+        htmlTitle: "Ecleptic — Bêta",
+        pitch: "Ton sommeil, ton alimentation et ton sport ne vivent pas dans trois apps séparées. Ecleptic les croise en un seul score et te dit, chaque matin, ce qui compte vraiment aujourd'hui. Bêta ouverte sur iPhone et Android — gratuite, toutes fonctionnalités débloquées.",
+        cta: "Rejoindre la bêta",
+        ctanote: "iPhone (iOS 16.4+) ou Android (8.0+) · 45 secondes de questions, puis ton lien d'installation",
+        qsub: "8 questions, 45 secondes. Ça nous aide à savoir quoi tester avec qui.",
+        phone: "Ton téléphone"
+      },
+      // Testeur sur Android.
+      android: {
+        email: "L'e-mail de ton compte Google",
+        emailPh: "celui de ton Google Play",
+        watchOther: "Montre connectée / bracelet",
+        aHealth: "Santé Connect seul",
+        submit: "Obtenir mon accès Android",
+        step1: "1. On ajoute ton adresse Google à la liste des testeurs et on t'écrit dès que c'est fait.",
+        step2: "2. Ensuite, depuis ton téléphone Android connecté à ce compte Google, ouvre ce lien et accepte de devenir testeur :",
+        install: "Rejoindre le test sur Google Play",
+        step3: "3. Un bug ? Décris-le sur ecleptic.health/problemes.html ou écris-nous : contact@ecleptic.app."
+      }
     }
   };
 
@@ -302,20 +354,40 @@
   }
   if (LANG !== "fr") LANG = "en";
 
+  // Bêta Android : tout reste comme avant tant que /assets/stores.js n'a pas
+  // de lien Play (ST.androidLive faux). Ensuite, le testeur choisit son
+  // téléphone (présélection selon l'appareil) et les textes suivent.
+  var ST = window.EclepticStores || {};
+  var ANDROID_LIVE = !!ST.androidLive;
+  var PLATFORM = ANDROID_LIVE && ST.isAndroid ? "android" : "ios";
+  function tx(key){
+    var t = I18N[LANG];
+    if (ANDROID_LIVE && PLATFORM === "android" && t.android[key] != null) return t.android[key];
+    if (ANDROID_LIVE && t.live[key] != null) return t.live[key];
+    return t[key];
+  }
   function T(id, key, html){
     var el = document.getElementById(id);
-    if (el) { if (html) el.innerHTML = I18N[LANG][key]; else el.textContent = I18N[LANG][key]; }
+    if (el) { if (html) el.innerHTML = tx(key); else el.textContent = tx(key); }
   }
   function applyLang(){
-    var t = I18N[LANG];
     document.documentElement.lang = LANG;
-    document.title = t.htmlTitle;
+    document.title = tx("htmlTitle");
     T("t-title","title",true); T("t-pitch","pitch");
     T("t-shot1","shot1"); T("t-shot2","shot2"); T("t-shot3","shot3");
     T("goQuiz","cta"); T("t-ctanote","ctanote");
     T("t-qtitle","qtitle"); T("t-qsub","qsub");
     T("t-firstname","firstname"); T("t-email","email");
-    document.getElementById("email").placeholder = t.emailPh;
+    document.getElementById("email").placeholder = tx("emailPh");
+    if (ANDROID_LIVE) {
+      document.getElementById("q-phone").hidden = false;
+      T("t-phone","phone");
+      var android = PLATFORM === "android";
+      document.getElementById("chip-apple-watch").hidden = android;
+      document.getElementById("app-health").value = android ? "health_connect" : "apple_sante";
+      var tf = document.getElementById("tfLink");
+      tf.href = android ? ST.PLAY_TESTING_URL : (ST.TESTFLIGHT_URL || tf.href);
+    }
     T("t-watch","watch"); T("t-watch-other","watchOther"); T("t-watch-none","watchNone");
     T("t-freq","freq"); T("t-freq5","freq5");
     T("t-sports","sports"); T("t-multi1","multi"); T("t-multi2","multi");
@@ -357,6 +429,13 @@
     renderSpots();
   })();
   function setLang(l){ LANG = l; try { localStorage.setItem("ecleptic.lang", l); } catch(_){} applyLang(); }
+  if (ANDROID_LIVE) {
+    document.querySelectorAll('input[name="phone_platform"]').forEach(function(r){
+      r.required = true;
+      r.checked = r.value === PLATFORM;
+      r.addEventListener("change", function(){ PLATFORM = r.value; applyLang(); });
+    });
+  }
   document.getElementById("lang-en").addEventListener("click", function(){ setLang("en"); });
   document.getElementById("lang-fr").addEventListener("click", function(){ setLang("fr"); });
   applyLang();
@@ -427,7 +506,7 @@
   form.addEventListener("submit", async function(e){
     e.preventDefault();
     var btn = document.getElementById("submitBtn");
-    btn.disabled = true; btn.textContent = I18N[LANG].submitting;
+    btn.disabled = true; btn.textContent = tx("submitting");
 
     var fd = new FormData(form);
     var payload = {
@@ -442,13 +521,14 @@
       locale: LANG + " | " + (navigator.language || ""),
       user_agent: navigator.userAgent
     };
+    if (ANDROID_LIVE) payload.phone_platform = PLATFORM;
 
     var r = fd.get("website") ? { ok: true } : await saveTester(payload);
 
     // Règle absolue : le testeur obtient TOUJOURS le lien TestFlight,
     // même si l'enregistrement a échoué (réseau, bloqueur de contenu…).
     if (r.ok) {
-      track("beta_form_submitted", { watch: payload.has_apple_watch, goal: payload.main_goal, source: payload.source, lang: LANG });
+      track("beta_form_submitted", { watch: payload.has_apple_watch, goal: payload.main_goal, source: payload.source, lang: LANG, platform: PLATFORM });
     } else {
       track("beta_form_error", { detail: r.detail, lang: LANG });
     }
@@ -459,7 +539,7 @@
     done.scrollIntoView({behavior:"smooth", block:"center"});
   });
 
-  document.getElementById("tfLink").addEventListener("click", function(){ track("testflight_click", {lang: LANG}); });
+  document.getElementById("tfLink").addEventListener("click", function(){ track(PLATFORM === "android" ? "play_testing_click" : "testflight_click", {lang: LANG}); });
 </script>
 </body>
 </html>

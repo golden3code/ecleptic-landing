@@ -803,8 +803,13 @@ def nav_panels(idx, lang="fr"):
                  "u": "/beta.html", "gold": True}]},
             {"label": T("Ce qui t'attend", "What you get"), "items": [
                 {"t": T("Toutes les fonctionnalités Zenith, offertes aux testeurs", "Every Zenith feature, free for testers")},
-                {"t": T("Sur iPhone, iOS 16.4 ou plus récent", "On iPhone, iOS 16.4 or later")},
-                {"t": T("Installation via TestFlight, l'app de bêtas d'Apple", "Installed through TestFlight, Apple's beta app")},
+                *([{"t": T("Sur iPhone (iOS 16.4 ou plus récent) et Android (8.0 ou plus récent)",
+                            "On iPhone (iOS 16.4 or later) and Android (8.0 or later)")},
+                   {"t": T("Installation via TestFlight sur iPhone, via Google Play sur Android",
+                           "Installed through TestFlight on iPhone, through Google Play on Android")}]
+                  if I.ANDROID_LIVE else
+                  [{"t": T("Sur iPhone, iOS 16.4 ou plus récent", "On iPhone, iOS 16.4 or later")},
+                   {"t": T("Installation via TestFlight, l'app de bêtas d'Apple", "Installed through TestFlight, Apple's beta app")}]),
                 {"t": T("Un bug ? Une capture d'écran suffit à nous le signaler", "A bug? A screenshot is all it takes to report it")}]},
             {"label": T("Questions", "Questions"), "items": [
                 {"t": T("TestFlight, c'est quoi ?", "What is TestFlight?"), "u": "https://testflight.apple.com/"},
@@ -1452,8 +1457,8 @@ def about_page(lang="fr"):
   <p>Spotted an error, a more recent study, something to clarify? Write to me at <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>: I check, I correct, and the correction is dated.</p>
 
   <h2>Ecleptic in brief</h2>
-  <p>Ecleptic is an iOS wellness app, in private beta. It brings your sleep, nutrition and training together into one score, every morning. It does not replace medical advice and is not a medical device. The publisher and host of this website are listed in the <a href="/en/legal-notice.html">legal notice</a>.</p>
-""" % {"ig": AUTHOR["instagram"]}
+  <p>Ecleptic is %(app_kind)s, in private beta. It brings your sleep, nutrition and training together into one score, every morning. It does not replace medical advice and is not a medical device. The publisher and host of this website are listed in the <a href="/en/legal-notice.html">legal notice</a>.</p>
+""" % {"ig": AUTHOR["instagram"], "app_kind": I.APP_KIND["en"]}
         person = dict(AUTHOR_LD, worksFor={"@id": PUBLISHER_LD["@id"]})
         jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/en/about.html",
                   "name": "About Ecleptic", "inLanguage": "en", "mainEntity": person, "publisher": PUBLISHER_LD}
@@ -1477,8 +1482,8 @@ def about_page(lang="fr"):
   <p>Une erreur, une étude plus récente, un point à préciser ? Écris-moi à <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a> : je vérifie, je corrige, et la correction est datée.</p>
 
   <h2>Ecleptic en bref</h2>
-  <p>Ecleptic est une application iOS de bien-être, en bêta privée. Elle croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Elle ne remplace pas un avis médical et n'est pas un dispositif médical. L'éditeur et l'hébergeur du site sont indiqués dans les <a href="/mentions-legales.html">mentions légales</a>.</p>
-""" % {"ig": AUTHOR["instagram"]}
+  <p>Ecleptic est %(app_kind)s, en bêta privée. Elle croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Elle ne remplace pas un avis médical et n'est pas un dispositif médical. L'éditeur et l'hébergeur du site sont indiqués dans les <a href="/mentions-legales.html">mentions légales</a>.</p>
+""" % {"ig": AUTHOR["instagram"], "app_kind": I.APP_KIND["fr"]}
     person = dict(AUTHOR_LD, worksFor={"@id": PUBLISHER_LD["@id"]})
     jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/a-propos.html",
               "name": "À propos d'Ecleptic", "inLanguage": "fr", "mainEntity": person,
@@ -1644,7 +1649,7 @@ DATA_UI = {
            "faq_a": "En tête des aliments du quotidien de la table Ciqual 2025 de l'ANSES : %s, avec %s %s pour 100 g, devant %s (%s %s) et %s (%s %s).",
            "lead": "Selon la table Ciqual 2025 de l'ANSES, le trio de tête des aliments du quotidien les plus riches en %s : %s (%s %s pour 100 g), %s (%s %s) et %s (%s %s).",
            "reward_h2": "Ce que ce tableau recense,<br>l'app le compte pour toi.",
-           "reward_p": "Scanne ton repas : Ecleptic retrouve chaque aliment dans les bases officielles et suit tes apports en micronutriments, jour après jour. La bêta iOS est ouverte à un petit cercle.",
+           "reward_p": "Scanne ton repas : Ecleptic retrouve chaque aliment dans les bases officielles et suit tes apports en micronutriments, jour après jour. " + I.BETA_CIRCLE["fr"],
            "more": "Pour aller plus loin", "others": "Les autres classements",
            "hub_title": "Données nutritionnelles : les aliments les plus riches en… — Ecleptic",
            "hub_seo": "Aliments les plus riches en protéines, fer… : données Ciqual",
@@ -1675,7 +1680,7 @@ DATA_UI = {
            "faq_a": "Top of the everyday foods in the 2025 Ciqual table from ANSES: %s, with %s %s per 100 g, ahead of %s (%s %s) and %s (%s %s).",
            "lead": "According to the 2025 Ciqual table from ANSES, France's food safety agency, the top three everyday foods highest in %s: %s (%s %s per 100 g), %s (%s %s) and %s (%s %s).",
            "reward_h2": "What this table lists,<br>the app counts for you.",
-           "reward_p": "Scan your meal: Ecleptic matches every food against official databases and tracks your micronutrient intake, day after day. The iOS beta is open to a small circle.",
+           "reward_p": "Scan your meal: Ecleptic matches every food against official databases and tracks your micronutrient intake, day after day. " + I.BETA_CIRCLE["en"],
            "more": "Go further", "others": "Other rankings",
            "hub_title": "Nutrition data: foods highest in protein, iron and more — Ecleptic",
            "hub_seo": "Foods highest in protein, iron and more: Ciqual data",
@@ -2138,7 +2143,7 @@ def html_to_md(h):
 
 LLMS_INTRO = """# Ecleptic
 
-> Ecleptic est une application iOS de bien-être qui croise le sommeil, l'alimentation et l'entraînement en un seul score quotidien, le Readiness Score. Ce site publie la méthode de calcul de l'application (formules, cohortes et bases de données citées) et le Journal, des articles sourcés qui répondent aux questions les plus posées sur le sommeil, la nutrition, l'entraînement et la récupération.
+> Ecleptic est {app_kind} qui croise le sommeil, l'alimentation et l'entraînement en un seul score quotidien, le Readiness Score. Ce site publie la méthode de calcul de l'application (formules, cohortes et bases de données citées) et le Journal, des articles sourcés qui répondent aux questions les plus posées sur le sommeil, la nutrition, l'entraînement et la récupération.
 
 - Auteur et éditeur : Auguste Phily-Priou, fondateur d'Ecleptic ({site}/a-propos.html)
 - Langue : français
@@ -2149,7 +2154,7 @@ LLMS_INTRO = """# Ecleptic
 
 def llms_txt():
     """/llms.txt (format llmstxt.org) : sommaire du site pour les assistants IA."""
-    out = [LLMS_INTRO.format(site=SITE)]
+    out = [LLMS_INTRO.format(site=SITE, app_kind=I.APP_KIND["fr"])]
     out.append("## La méthode : comment l'application calcule\n")
     out += ["- [%s](%s/methode/%s.html): %s" % (p["title"], SITE, p["slug"], p["description"]) for p in METHODE]
     out.append("\n## Le Journal\n")
@@ -2198,7 +2203,7 @@ def llms_txt():
 
 def llms_full():
     """/llms-full.txt : texte intégral (Markdown) des pages de la méthode et des articles publiés."""
-    parts = [LLMS_INTRO.format(site=SITE)]
+    parts = [LLMS_INTRO.format(site=SITE, app_kind=I.APP_KIND["fr"])]
     for p in METHODE:
         parts.append("\n---\n\n# %s\n\nURL : %s/methode/%s.html\nAuteur : %s · Publié le %s\n\n%s\n\n%s" % (
             p["title"], SITE, p["slug"], AUTHOR["name"], p["date"], html_to_md(p["lead"]), html_to_md(p["body"])))

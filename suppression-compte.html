@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Supprimer ton compte — Ecleptic</title>
+<meta name="description" content="Supprimer ton compte Ecleptic et tes données : depuis l'application ou par e-mail, sans réinstaller l'app. Ce qui est effacé, ce qui est conservé et pendant combien de temps.">
+<link rel="canonical" href="https://ecleptic.health/suppression-compte.html">
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/suppression-compte.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/delete-account.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/delete-account.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 64px}
+  a{color:var(--gold);overflow-wrap:anywhere}
+  h1{font-size:28px;margin-bottom:4px}
+  .date{color:var(--muted);font-size:14px;margin-bottom:12px}
+  .lead{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:19px;margin:32px 0 8px}
+  h3{font-size:16px;margin:22px 0 6px;color:var(--ink)}
+  p,li,td,th{font-size:15.5px;color:#CFC5B0}
+  p{margin:8px 0}
+  ul{padding-left:22px;margin:6px 0}
+  li{margin:4px 0}
+  .table{overflow-x:auto;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;font-size:14px}
+  th{color:var(--ink);font-weight:600}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Supprimer ton compte Ecleptic</h1>
+  <p class="date">Application Ecleptic — éditeur : Auguste Phily-Priou</p>
+  <p class="lead">Tu peux supprimer ton compte et toutes tes données à tout moment, gratuitement, depuis l'application ou par e-mail, sans avoir à la réinstaller.</p>
+
+  <h2 id="depuis-l-application">1. Depuis l'application (immédiat)</h2>
+  <p>Ouvre Ecleptic, puis <strong>Réglages › Compte › Supprimer mon compte</strong> et confirme. Ton compte et tes données sont effacés aussitôt.</p>
+
+  <h2 id="par-e-mail">2. Sans l'application, par e-mail</h2>
+  <p><a href="mailto:contact@ecleptic.app?subject=Suppression%20de%20mon%20compte%20Ecleptic&body=Bonjour%2C%0A%0AJe%20demande%20la%20suppression%20de%20mon%20compte%20Ecleptic%20et%20de%20toutes%20mes%20donn%C3%A9es.%0A%0AE-mail%20du%20compte%20%3A%20%0APr%C3%A9nom%20du%20compte%20%3A%20%0A">Écris-nous à contact@ecleptic.app</a> depuis l'adresse de ton compte, avec l'objet « Suppression de mon compte Ecleptic ». Si tu t'es inscrit avec Apple en masquant ton e-mail, indique le prénom du compte et sa date d'inscription approximative. Nous supprimons ton compte et tes données dans les 30 jours au plus et te le confirmons par e-mail.</p>
+
+  <h2 id="abonnement">Avant de supprimer : ton abonnement</h2>
+  <p>Supprimer ton compte n'arrête pas un abonnement Zenith en cours : il est géré par ton store. Résilie-le d'abord depuis ton compte App Store (Réglages › ton nom › Abonnements) ou Google Play (Play Store › icône du profil › Paiements et abonnements › Abonnements).</p>
+
+  <h2 id="ce-qui-est-supprime">Ce qui est supprimé</h2>
+  <ul>
+    <li>ton compte (e-mail, prénom, profil, objectifs, préférences) ;</li>
+    <li>toutes tes données de suivi : sommeil, repas et photos de repas, séances, mesures, poids, scans corporels, scores, âge biologique, conversations avec Éos ;</li>
+    <li>tes fiches d'aliments privées, corrections et signalements.</li>
+  </ul>
+  <p>Les copies de sauvegarde sont purgées sous 30 jours.</p>
+
+  <h2 id="ce-qui-est-conserve">Ce qui est conservé, et pendant combien de temps</h2>
+  <ul>
+    <li><strong>Données de facturation</strong> : 10 ans (obligation comptable), en accès restreint ;</li>
+    <li><strong>Journaux techniques et de sécurité</strong> : 12 mois au plus ;</li>
+    <li><strong>Statistiques d'usage</strong> rattachées à un identifiant d'installation sans lien avec le compte : 13 mois au plus ; comptages agrégés sans identifiant : 25 mois ;</li>
+    <li><strong>Valeurs nutritionnelles</strong> que tu as fait valider et publier dans la base alimentaire commune : elles restent, sans aucun lien avec toi.</li>
+  </ul>
+  <p>Les données enregistrées dans l'app santé de ton téléphone (Apple Santé, Santé Connect) ne sont pas touchées : elles t'appartiennent et restent sur ton téléphone. Le détail est dans la <a href="/confidentialite.html#article-6-durees-de-conservation">politique de confidentialité, article 6</a>.</p>
+
+  <footer>
+    <a href="/">← Accueil</a> · <a href="/confidentialite.html">Politique de confidentialité</a> · <a href="/mentions-legales.html">Mentions légales</a> · <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>
+  </footer>
+</div>
+</body>
+</html>

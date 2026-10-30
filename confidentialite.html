@@ -38,64 +38,229 @@
   :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-  .wrap{max-width:720px;margin:0 auto;padding:48px 24px 64px}
-  a{color:var(--gold)}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 64px}
+  a{color:var(--gold);overflow-wrap:anywhere}
   h1{font-size:28px;margin-bottom:4px}
-  .date{color:var(--muted);font-size:14px;margin-bottom:28px}
-  h2{font-size:19px;margin:28px 0 8px}
-  p,li{font-size:15.5px;color:#CFC5B0}
+  .date{color:var(--muted);font-size:14px;margin-bottom:12px}
+  .lead{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:19px;margin:32px 0 8px}
+  h3{font-size:16px;margin:22px 0 6px;color:var(--ink)}
+  p,li,td,th{font-size:15.5px;color:#CFC5B0}
+  p{margin:8px 0}
   ul{padding-left:22px;margin:6px 0}
+  li{margin:4px 0}
+  .table{overflow-x:auto;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;font-size:14px}
+  th{color:var(--ink);font-weight:600}
   footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Politique de confidentialité — Ecleptic</h1>
-  <p class="date">Dernière mise à jour : 29 octobre 2026</p>
-
-  <h2>Qui sommes-nous</h2>
-  <p>Ecleptic est une application iOS de bien-être (sommeil, alimentation, activité physique). Responsable du traitement : l'éditeur d'Ecleptic, joignable à <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>.</p>
-
-  <h2>Données collectées</h2>
+  <p class="date">Dernière mise à jour : 30 octobre 2026</p>
+  <p class="lead">Ce texte est le même que celui affiché dans l'application Ecleptic. Pour supprimer ton compte : <a href="/suppression-compte.html">suppression du compte et des données</a>.</p>
+  <p>La présente politique décrit comment l'application <strong>Ecleptic</strong> (ci-après « l'Application ») traite les données personnelles de ses utilisateurs, conformément au Règlement (UE) 2016/679 (« RGPD ») et à la loi n° 78-17 du 6 janvier 1978 modifiée (« loi Informatique et Libertés »).</p>
+  <h2 id="article-1-responsable-de-traitement">Article 1 — Responsable de traitement</h2>
   <ul>
-    <li><strong>Compte</strong> : identifiant Sign in with Apple (email masqué ou réel selon ton choix). Aucun mot de passe n'est stocké.</li>
-    <li><strong>Santé et activité</strong> : sommeil, activité et vitaux lus depuis Apple Santé, en lecture seule et uniquement avec ton autorisation explicite. Ecleptic n'écrit jamais dans Apple Santé et n'utilise jamais ces données à des fins publicitaires.</li>
-    <li><strong>Alimentation</strong> : repas saisis et photos de repas que tu choisis d'analyser.</li>
-    <li><strong>Contributions</strong> (facultatif) : photos d'étiquettes nutritionnelles, fiches d'aliments que tu crées, corrections et signalements. Une fiche reste privée tant que tu ne la proposes pas à la revue ; une fois validées, seules les valeurs nutritionnelles du produit sont publiées, sans aucun lien avec ton compte, et jamais la photo.</li>
-    <li><strong>Profil</strong> : âge, taille, poids, objectif, réponses aux questionnaires in-app.</li>
-    <li><strong>Salle de sport</strong> : à la fin d'une séance de musculation enregistrée en direct, si tu autorises la localisation, la salle ouverte la plus proche est reconnue et son nom enregistré avec la séance.</li>
-    <li><strong>Usage et stabilité</strong> : événements d'usage anonymisés (PostHog) et rapports de plantage (Sentry), pour améliorer l'app.</li>
+    <li><strong>Responsable de traitement</strong> : Auguste Phily-Priou, <strong>Entrepreneur individuel (EI)</strong></li>
+    <li><strong>Adresse</strong> : 10 Rue du Commerce, 86400 Civray, France</li>
+    <li><strong>SIREN</strong> : immatriculation en cours — sera ajouté ici dès son obtention.</li>
+    <li><strong>Contact vie privée</strong> : <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a></li>
+    <li><strong>Délégué à la protection des données (DPO)</strong> : non désigné à ce jour.</li>
   </ul>
-
-  <h2>Utilisation</h2>
-  <p>Tes données servent exclusivement à faire fonctionner Ecleptic : calcul de tes scores, analyses du Labo, conseils d'Éos, l'assistante IA, suivi de tes objectifs. Elles ne sont ni vendues ni louées, et ne servent à aucun ciblage publicitaire.</p>
-
-  <h2>Analyse par IA</h2>
-  <p>Les photos de repas, les photos d'étiquettes nutritionnelles et certaines synthèses (Éos, l'assistante IA) sont traitées par des modèles d'IA hébergés chez des prestataires (Google, Anthropic). Seul le contenu nécessaire à l'analyse est transmis ; il n'est pas utilisé pour entraîner leurs modèles selon leurs conditions API entreprises.</p>
-
-  <h2>Hébergement et sous-traitants</h2>
+  <h2 id="article-2-donnees-collectees">Article 2 — Données collectées</h2>
+  <h3 id="2-1-donnees-de-compte-et-d-identification">2.1. Données de compte et d'identification</h3>
+  <p>Lors de la création du compte et du questionnaire d'accueil : adresse email (ou identifiant fourni par « Se connecter avec Apple » / Google, sur iPhone comme sur Android), prénom ou pseudonyme, date de naissance, sexe, taille, objectifs et préférences de suivi.</p>
+  <h3 id="2-2-donnees-de-sante-et-de-bien-etre-categorie-particuliere-art-9-rgpd">2.2. ⚕️ Données de santé et de bien-être (catégorie particulière — art. 9 RGPD)</h3>
+  <p>L'Application traite des données qui relèvent des <strong>catégories particulières de données</strong> au sens de l'article 9 du RGPD (données concernant la santé). Elles sont clairement identifiées et traitées avec des garanties renforcées :</p>
   <ul>
-    <li><strong>Supabase</strong> — base de données et authentification.</li>
-    <li><strong>RevenueCat</strong> — gestion des abonnements (aucune donnée bancaire ne transite par nous : le paiement est géré par Apple).</li>
-    <li><strong>PostHog</strong> (UE) — mesure d'usage. <strong>Sentry</strong> — rapports d'erreurs.</li>
-    <li><strong>Google Maps</strong> — reconnaissance de la salle de sport : reçoit une zone d'environ 110 m autour de ta position, jamais ta position exacte ni ton identité. Jusqu'au 27 septembre 2026, l'app interrogeait directement OpenStreetMap (service Overpass) pour cela.</li>
+    <li>données d'activité physique (séances, fréquence cardiaque, VO2max estimée, dépense énergétique) ;</li>
+    <li>données de sommeil (durée, phases, réveils, ressenti) ;</li>
+    <li>données de nutrition (repas, photos de repas, apports estimés, photos d'étiquettes nutritionnelles, fiches d'aliments et corrections — voir 2.6) ;</li>
+    <li>données corporelles (poids, mensurations, composition corporelle estimée, photos de scan corporel) ;</li>
+    <li>indicateurs dérivés (scores, estimation d'« âge biologique », recommandations) ;</li>
+    <li>données importées depuis les services de santé du système (Apple Santé sur iPhone, Santé Connect — Health Connect — sur Android) ou d'objets connectés, avec l'accord de l'utilisateur (voir 2.7) ;</li>
+    <li>sur Android, pendant une séance et à la demande de l'utilisateur : fréquence cardiaque et intervalles entre battements lus en direct depuis un capteur cardio <strong>Bluetooth</strong> (ceinture, montre en mode diffusion). Le Bluetooth sert uniquement à se connecter au capteur choisi : il n'est jamais utilisé pour localiser l'utilisateur ;</li>
+    <li>conversations avec Éos, l'assistante IA de l'Application (messages en texte libre, susceptibles de contenir des informations de santé) ;</li>
+    <li>position géographique approximative (pour la météo et l'altitude), position précise pendant une séance suivie par GPS et, à la fin d'une séance enregistrée en direct, position du moment pour reconnaître le lieu de la séance (voir 2.8), si l'utilisateur l'autorise.</li>
   </ul>
-
-  <h2>Durée de conservation</h2>
-  <p>Tes données sont conservées tant que ton compte est actif. La suppression du compte entraîne la purge de tes données personnelles de nos systèmes actifs.</p>
-  <p>Photo d'étiquette : conservée seulement si tu proposes ta fiche à la revue, jusqu'à la décision et 90 jours au plus. Lecture de l'étiquette par l'IA, sans lien avec ton compte : 30 jours. Les valeurs validées et publiées restent dans la base alimentaire après la suppression de ton compte, sans aucun lien avec lui.</p>
-
-  <h2>Tes droits (RGPD)</h2>
-  <p>Depuis les réglages de l'app, tu peux à tout moment <strong>exporter</strong> l'ensemble de tes données et <strong>supprimer</strong> ton compte et tes données. Pour toute autre demande (accès, rectification, opposition) : <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>. Tu peux aussi saisir la CNIL.</p>
-
-  <h2>Âge minimum</h2>
-  <p>Ecleptic est réservé aux personnes de 16 ans et plus. Certaines fonctionnalités (scan de composition corporelle, conversation avec Éos) sont réservées aux majeurs.</p>
-
-  <h2>Avertissement</h2>
-  <p>Ecleptic est une application de bien-être. Elle ne fournit pas de diagnostic médical et ne remplace pas l'avis d'un professionnel de santé.</p>
-
+  <h3 id="2-3-donnees-de-paiement">2.3. Données de paiement</h3>
+  <p>Les abonnements sont souscrits par achat intégré via l'App Store (iPhone) ou Google Play (Android) : le paiement est traité par Apple ou par Google, et l'éditeur ne reçoit <strong>jamais</strong> les données de carte bancaire. L'éditeur reçoit uniquement, via son prestataire de gestion d'abonnements (RevenueCat), des informations sur le statut de l'abonnement (offre souscrite, dates de début et d'échéance, statut de renouvellement).</p>
+  <h3 id="2-4-donnees-techniques-et-d-usage">2.4. Données techniques et d'usage</h3>
+  <p>Identifiant technique de compte, horodatages de connexion et journaux techniques côté serveur (sécurité, quotas d'utilisation des fonctionnalités d'IA, erreurs et temps de réponse des traitements). <strong>Statistiques d'usage</strong> : l'Application enregistre des événements d'usage (écran affiché, étape de l'accueil franchie, fonctionnalité utilisée, erreur rencontrée), rattachés à un <strong>identifiant d'installation aléatoire</strong>, sans lien avec le compte, renouvelé à chaque déconnexion et au plus tard tous les 13 mois. Ces événements ne contiennent <strong>jamais</strong> de donnée de santé (ni poids, ni fréquence cardiaque, ni calories, ni score, ni âge biologique, ni réponse au questionnaire), ni aucun texte saisi (recherche d'aliment, message à Éos, titre de repas). Ils portent seulement des catégories (par exemple « repas saisi par photo ») et des informations techniques (version de l'application et du système — iOS ou Android —, plateforme, modèle d'appareil, langue, région de l'appareil). Aucune adresse IP n'est conservée. Aucun dispositif publicitaire n'est intégré.</p>
+  <h3 id="2-5-caractere-obligatoire-ou-facultatif">2.5. Caractère obligatoire ou facultatif</h3>
+  <p>Les données nécessaires à la création du compte et à la fourniture du service sont signalées comme obligatoires ; leur absence empêche la fourniture du service concerné. Les autres données (notamment la plupart des données de santé) sont <strong>facultatives</strong> : l'utilisateur choisit les fonctionnalités de suivi qu'il active.</p>
+  <h3 id="2-6-contributions-a-la-base-alimentaire">2.6. Contributions à la base alimentaire</h3>
+  <p>Lorsqu'un aliment est introuvable ou qu'une fiche lui paraît fausse, l'utilisateur peut, s'il le souhaite :</p>
+  <ul>
+    <li><strong>photographier l'étiquette nutritionnelle</strong> d'un produit : la photo est lue par un modèle d'IA (voir article 4) qui en extrait les valeurs, que l'utilisateur vérifie et corrige avant d'enregistrer ;</li>
+    <li><strong>créer une fiche d'aliment</strong> à partir de ces valeurs (nom, marque, code-barres, valeurs nutritionnelles, portion) ;</li>
+    <li><strong>corriger</strong> une fiche existante ou <strong>signaler une erreur</strong> (motif et note facultative) ;</li>
+    <li><strong>corriger le rapprochement</strong> d'un aliment reconnu lors de l'analyse d'un repas.</li>
+  </ul>
+  <p>Une fiche créée reste <strong>privée</strong> : elle ne sert qu'à son auteur. Elle n'est examinée par l'éditeur que si l'utilisateur la <strong>propose à la revue</strong> ; la photo de l'étiquette n'est alors conservée que pour cette vérification. Une correction ou une fiche validée à la revue est ensuite publiée dans la base alimentaire commune, <strong>sans aucun lien avec le compte</strong> (ni nom, ni pseudonyme, ni identifiant) : seules les valeurs nutritionnelles du produit sont publiées, jamais la photo. Les signalements servent uniquement à la revue et ne sont jamais publiés.</p>
+  <p>Ces contributions sont liées à ce que l'utilisateur mange : elles reçoivent le même traitement que les données de nutrition (2.2).</p>
+  <h3 id="2-7-donnees-lues-dans-sante-connect-android-et-apple-sante-iphone-usage-limite">2.7. Données lues dans Santé Connect (Android) et Apple Santé (iPhone) — usage limité</h3>
+  <p><strong>Ce qui est lu</strong>, seulement pour les types que l'utilisateur autorise sur l'écran de Santé Connect (ou d'Apple Santé) : sommeil et ses phases ; séances (type, durée, distance, calories) ; fréquence cardiaque, fréquence cardiaque au repos, variabilité cardiaque ; VO2max ; saturation en oxygène ; fréquence respiratoire ; température cutanée (sur Android, écart à la référence) ; énergie active et énergie de repos ; pas et distance ; puissance, cadence et vitesse de course, de vélo ou d'aviron ; règles. Sur Android, l'Application demande aussi l'accès à l'<strong>historique</strong> (sans lui, Santé Connect limite la lecture aux 30 derniers jours) et la lecture <strong>en arrière-plan</strong> (mise à jour des nuits et des vitaux sans ouvrir l'Application).</p>
+  <p><strong>Ce qui est écrit</strong> : uniquement les dates de règles saisies dans l'Application, si l'utilisateur a activé le suivi de cycle.</p>
+  <p><strong>Usage limité.</strong> Les données lues dans Santé Connect ou dans Apple Santé :</p>
+  <ul>
+    <li>servent <strong>uniquement</strong> aux fonctionnalités visibles dans l'Application : historique des nuits et des séances, vitaux, Readiness Score, âge biologique, récupération, cibles caloriques, suivi de cycle, Labo, Éos (assistante IA) et, si l'utilisateur l'active, la Society (2.9), pour les seules données sportives qu'il choisit de partager ;</li>
+    <li>ne sont <strong>jamais vendues</strong>, ni transférées à des plateformes publicitaires, des courtiers en données ou des revendeurs d'informations ;</li>
+    <li>ne sont <strong>jamais utilisées pour de la publicité</strong>, personnalisée ou non ;</li>
+    <li>ne sont jamais utilisées pour évaluer une solvabilité ou accorder un crédit, ni avec un produit ou service qui pourrait relever des dispositifs médicaux, ni dans un traitement de données de santé protégées au sens de la loi américaine HIPAA ;</li>
+    <li>ne sont transmises à un tiers qu'avec le <strong>consentement explicite</strong> de l'utilisateur, pour des raisons de sécurité, pour respecter la loi, ou dans le cadre d'une fusion ou d'une acquisition dont l'utilisateur serait informé. Les prestataires techniques de l'article 4 les traitent pour le compte de l'éditeur, sans droit de les utiliser pour eux-mêmes. En particulier, lorsque l'utilisateur demande un bilan ou pose une question à <strong>Éos</strong> (l'assistante IA), un résumé de ses mesures, sans nom, e-mail ni identifiant, est transmis aux prestataires d'IA de l'article 4 (Google, Anthropic) : cet envoi est annoncé sur l'écran qui précède l'autorisation de Santé Connect ;</li>
+    <li>ne sont <strong>lues par aucun humain</strong>, sauf consentement explicite de l'utilisateur (par exemple pour traiter une demande d'assistance qu'il envoie), pour des raisons de sécurité, pour respecter la loi, ou sous forme agrégée et anonyme pour le fonctionnement interne.</li>
+  </ul>
+  <p><strong>Retrait.</strong> L'utilisateur peut retirer à tout moment l'accès de l'Application dans Santé Connect (ou dans Apple Santé) : la lecture s'arrête aussitôt. Les données déjà importées restent dans son Compte jusqu'à ce qu'il les supprime ou supprime son Compte (article 6) ; il peut aussi en demander l'effacement au contact de l'article 1.</p>
+  <h3 id="2-8-provenance-lieu-et-zones-des-seances">2.8. Provenance, lieu et zones des séances</h3>
+  <p>Ces informations servent d'abord à l'utilisateur lui-même. Elles ne sont montrées à personne d'autre tant qu'il n'a pas activé la Society (2.9).</p>
+  <ul>
+    <li><strong>Provenance</strong> d'une séance importée d'Apple Santé ou de Santé Connect : l'application qui l'a enregistrée (par exemple Strava, Garmin Connect, Nike Run Club), l'appareil (montre ou téléphone) et le fait qu'elle ait été saisie à la main. Ces informations évitent les doublons et établissent un <strong>niveau de preuve</strong> (déclarée, téléphone, montre).</li>
+    <li><strong>Lieu</strong> de la séance (salle, piscine, stade, club…), reconnu à partir de la position de fin de séance, d'un pointage ou du QR code du lieu. La position est envoyée au serveur pour cette recherche, puis elle n'est <strong>pas conservée</strong> : seul le lieu reconnu l'est.</li>
+    <li><strong>Zones</strong> traversées par une séance en extérieur : commune, arrondissement ou grand espace public (par exemple « Quais de Seine, rive gauche »), avec les kilomètres et le temps passés dans chacune. Le calcul se fait <strong>sur le téléphone</strong> : le tracé GPS ne quitte pas l'appareil pour ce calcul.</li>
+    <li><strong>Efforts</strong> : meilleures performances par séance (1RM estimé par mouvement, charge par machine, meilleurs temps de course et de nage), calculées à partir des séances.</li>
+    <li><strong>Archive Strava</strong>, si l'utilisateur importe le fichier qu'il a lui-même téléchargé chez Strava : le fichier est lu sur le téléphone. Seuls les résumés des séances (sport, date, durée, distance, fréquence cardiaque moyenne et maximale, calories, dénivelé) sont enregistrés, jamais les tracés, photos, commentaires ou abonnés. Ces séances restent « déclarées » : elles n'entrent dans aucun tableau.</li>
+  </ul>
+  <h3 id="2-9-la-society-reseau-social">2.9. La Society (réseau social)</h3>
+  <p>La <strong>Society</strong> est l'espace social de l'Application. Elle est <strong>facultative</strong> et <strong>désactivée par défaut</strong> : rien n'est partagé avec d'autres utilisateurs tant que l'utilisateur ne l'a pas activée lui-même. Après activation, chaque type de donnée a son réglage (Réglages › Réseau social) : « Personne », « Partenaires » ou « Tout le monde », ce dernier désignant les membres de la Society, jamais le public d'Internet.</p>
+  <ul>
+    <li><strong>Profil</strong> : pseudo, avatar généré (une initiale et une couleur), réglages de visibilité, mode anonyme, catégorie d'âge (majeur, mineur ou inconnue) calculée à partir de la date de naissance, statut (Légende, Fondateur, division de ligue, mois d'arrivée), spécialités et records mis en avant, chiffres de l'année et des 4 dernières semaines.</li>
+    <li><strong>Photo de profil</strong> (facultative) : recadrée en carré de 512 pixels et compressée sur le téléphone, stockée dans un espace privé sans adresse publique. Visible des partenaires par défaut.</li>
+    <li><strong>Partenaires et fil</strong> : code et QR de partenaire, demandes, partenariats, réactions. Dans le fil et sur le profil, une séance montre le sport, le jour (sans l'heure), la durée, la distance, le lieu ou la zone si les lieux sont visibles, les records et les réactions. La case « Ne pas afficher cette séance sur le profil public » la retire du profil et du fil ; elle continue de compter dans les défis, la ligue et les tableaux, qui ne montrent que des totaux.</li>
+    <li><strong>Défis</strong> : duels, Expéditions (groupes de 3 à 6) et défis publics, dont le Défi de l'Optimisateur : participation, progression et résultat. Rejoindre un défi public fait apparaître le pseudo à son tableau, sauf en mode anonyme.</li>
+    <li><strong>Tableaux de lieux et de spots</strong>, lieu par lieu et sur accord à l'entrée : valeurs, rang et mois de chaque record, jamais l'heure, le jour ni la séance. Couronnes, Fondateurs, saisons mensuelles figées et panthéon en découlent. Certains tableaux sont séparés par catégorie (femmes, hommes, tous), d'après le sexe renseigné au profil.</li>
+    <li><strong>Témoins</strong> : un partenaire adulte présent au même lieu peut confirmer une performance ; chacun voit alors la demande de l'autre.</li>
+    <li><strong>Vidéo de preuve</strong> (facultative) : 15 secondes au plus, choisies par l'utilisateur dans sa photothèque, stockées dans un espace privé. Seuls l'auteur et les vérificateurs du lieu la voient (équipe d'Ecleptic, gérant approuvé, Fondateurs du lieu encore membres).</li>
+    <li><strong>Ligue hebdomadaire</strong>, sur inscription et pour les majeurs : points d'effort, visibles des autres membres de la cohorte de 30.</li>
+    <li><strong>Coupe</strong> : classement mensuel des villes et des lieux, en totaux seulement, sans aucun nom de membre. Les jours actifs d'un membre à ses lieux y contribuent.</li>
+    <li><strong>Raquette</strong> : matchs déclarés (sport, adversaire, score, lieu facultatif), confirmés par l'adversaire sous 72 heures, et classement Elo calculé.</li>
+    <li><strong>Catégorie de poids</strong> : la catégorie du mois (classes IPF), calculée à partir du poids au 1er du mois. Seule la catégorie est gardée et partagée, jamais le poids, et elle n'est visible de personne par défaut.</li>
+    <li><strong>Propositions</strong> : un lieu absent (nom, type, ville et position prise sur place) ou un spot (nom, sports, couloir de 40 mètres autour d'un parcours raccourci de ses 500 premiers et derniers mètres et simplifié sur le téléphone). Une proposition reste liée au compte et visible de l'équipe. Une fois acceptés, le lieu ou le spot sont publics, sans aucun lien avec leur auteur.</li>
+    <li><strong>Écran de salle</strong> : sur un accord à part, décoché par défaut, donné lieu par lieu et réservé aux majeurs, le pseudo et les jours actifs du mois peuvent s'afficher sur l'écran d'une salle, visible de toute personne présente, sans photo ni heure, et jamais en mode anonyme.</li>
+    <li><strong>Gérants de lieu</strong> : demande de gérance (compte, lieu, date, décision), vérifiée par l'équipe d'Ecleptic.</li>
+    <li><strong>Bilan « Ton année »</strong> : calculé pour l'utilisateur seul ; il choisit lui-même de partager ou non sa carte.</li>
+    <li><strong>Sécurité de la Society</strong> : signalements envoyés, comptes bloqués, décisions de modération qui le concernent et leur motivation, et compteurs anti-abus (nombre de gestes par jour).</li>
+  </ul>
+  <p><strong>Ce qui n'est jamais montré aux autres utilisateurs</strong> : le tracé GPS, la position en temps réel, la fréquence cardiaque, le poids exact, l'âge exact, les données de sommeil, de nutrition et de composition corporelle.</p>
+  <p><strong>Désactivation.</strong> L'utilisateur peut désactiver la Society à tout moment (Réglages › Réseau social) : ce qu'il partageait cesse aussitôt d'être visible des autres membres. Ses données sociales restent dans son Compte, pour le cas où il réactiverait la Society ; il peut en demander l'effacement au contact de l'article 1, ou supprimer son Compte. Quitter un tableau retire tout de suite ses lignes, saisons comprises.</p>
+  <h3 id="2-10-notifications-push">2.10. Notifications push</h3>
+  <p>Si l'utilisateur a activé la Society et autorisé les notifications sur son téléphone, l'Application enregistre le <strong>jeton de notification</strong> de l'appareil (identifiant technique fourni par Apple ou Google), la plateforme, le fuseau horaire, la langue et ses réglages de notification. Le serveur prépare alors les notifications nées chez un autre membre (réaction, demande de partenariat, invitation à un défi, témoin, vidéo à vérifier, match à confirmer, couronne reprise, lieu ou spot ouvert) : 3 par jour au plus, décalées entre 22 h et 8 h. Elles contiennent le pseudo de l'autre membre ou le nom du lieu et la nature de l'événement, jamais de chiffre de santé. Le jeton est retiré à la déconnexion et quand l'utilisateur désactive la Society. L'interrupteur « Réseau social (Society) » de Réglages › Notifications les coupe à tout moment.</p>
+  <h2 id="article-3-finalites-et-bases-legales">Article 3 — Finalités et bases légales</h2>
+  <div class="table"><table>
+    <thead><tr><th>Finalité</th><th>Données concernées</th><th>Base légale (art. 6 RGPD)</th></tr></thead>
+    <tbody>
+      <tr><td>Création et gestion du compte, fourniture des Services</td><td>Données de compte</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+      <tr><td>Fonctionnalités de suivi santé/bien-être, calculs et recommandations personnalisées</td><td>Données de santé (2.2)</td><td><strong>Consentement explicite</strong> (art. 6.1.a et <strong>art. 9.2.a</strong>)</td></tr>
+      <tr><td>Lecture d'étiquettes, fiches privées, corrections et signalements ; revue par l'éditeur des contributions que l'utilisateur lui propose</td><td>Contributions (2.6)</td><td><strong>Consentement explicite</strong> (art. 6.1.a et <strong>art. 9.2.a</strong>), donné par l'action de photographier, d'enregistrer ou de proposer à la revue</td></tr>
+      <tr><td>Publication dans la base alimentaire commune des valeurs validées</td><td>Valeurs nutritionnelles d'un produit, sans lien avec le compte</td><td>Intérêt légitime (6.1.f — fiabilité de la base alimentaire) ; licence de l'article 10.5 des CGU</td></tr>
+      <tr><td>Provenance, niveau de preuve, dédoublonnage des séances</td><td>Provenance (2.8)</td><td>Exécution du contrat (6.1.b) ; consentement explicite aux données de santé déjà recueilli (art. 9.2.a)</td></tr>
+      <tr><td>Lieu et zones des séances</td><td>Lieu, zones (2.8)</td><td><strong>Consentement explicite</strong> (art. 9.2.a), recueilli avec la localisation</td></tr>
+      <tr><td>Efforts, écart des performances invraisemblables des classements</td><td>Efforts (2.8)</td><td>Exécution du contrat (6.1.b) ; intérêt légitime (6.1.f — loyauté des classements)</td></tr>
+      <tr><td>Partage dans la Society : partenaires, fil, défis, tableaux, ligue, Coupe, raquette</td><td>Données de la Society (2.9)</td><td><strong>Consentement explicite</strong> (art. 6.1.a et <strong>art. 9.2.a</strong>), donné à l'activation, réglé type de donnée par type de donnée et complété par un accord à l'entrée de chaque tableau ; retrait à tout moment</td></tr>
+      <tr><td>Photo de profil, vidéo de preuve, propositions de lieux et de spots</td><td>Photo, vidéo, position, parcours (2.9)</td><td>Consentement (6.1.a), donné par l'action d'envoyer</td></tr>
+      <tr><td>Écran de salle</td><td>Pseudo, jours actifs du mois</td><td><strong>Consentement</strong> à part (6.1.a), lieu par lieu, retirable à tout moment</td></tr>
+      <tr><td>Notifications push</td><td>Jeton de notification (2.10)</td><td>Consentement (6.1.a), donné par l'autorisation du système ; retrait dans Réglages › Notifications</td></tr>
+      <tr><td>Sécurité de la Society : filtre de pseudo, signalements, blocages, décisions motivées</td><td>Pseudo, signalements, décisions (2.9)</td><td>Obligation légale (6.1.c — règlement sur les services numériques, DSA, art. 16 et 17) ; intérêt légitime (6.1.f)</td></tr>
+      <tr><td>Gestion des abonnements et de la facturation</td><td>Compte, paiement</td><td>Exécution du contrat (6.1.b) et obligation légale (6.1.c — comptabilité)</td></tr>
+      <tr><td>Sécurité, prévention de la fraude, logs</td><td>Données techniques</td><td>Intérêt légitime (6.1.f — sécuriser le service)</td></tr>
+      <tr><td>Mesure d'audience et amélioration du produit</td><td>Événements d'usage (2.4), rattachés à un identifiant d'installation aléatoire, sans donnée de santé ni contenu</td><td>Intérêt légitime (6.1.f — savoir quelles fonctionnalités servent et où l'on décroche, pour améliorer l'Application) ; opposition à tout moment dans Réglages › Confidentialité (article 7)</td></tr>
+      <tr><td>Communications de service (emails transactionnels, alertes)</td><td>Email, compte</td><td>Exécution du contrat (6.1.b)</td></tr>
+      <tr><td>Prospection / newsletter</td><td>Email</td><td>Consentement (6.1.a), retirable à tout moment</td></tr>
+      <tr><td>Réponse aux demandes d'exercice de droits et obligations légales</td><td>Selon la demande</td><td>Obligation légale (6.1.c)</td></tr>
+    </tbody>
+  </table></div>
+  <h3 id="recueil-du-consentement-explicite-pour-les-donnees-de-sante">Recueil du consentement explicite pour les données de santé</h3>
+  <p>Lors de la première utilisation des fonctionnalités de suivi, l'Application recueille un <strong>consentement explicite, spécifique et éclairé</strong> (écran dédié, action positive distincte, information claire sur les traitements). L'utilisateur peut <strong>retirer son consentement à tout moment</strong> depuis les Réglages de l'Application (section Confidentialité), sans frais et sans que cela affecte la licéité des traitements antérieurs ; le retrait entraîne l'arrêt du traitement concerné et, selon le choix de l'utilisateur, la suppression des données associées.</p>
+  <h2 id="article-4-destinataires-et-sous-traitants">Article 4 — Destinataires et sous-traitants</h2>
+  <p>Les données sont accessibles au responsable de traitement et, dans la limite de leurs missions, aux sous-traitants suivants :</p>
+  <div class="table"><table>
+    <thead><tr><th>Prestataire</th><th>Rôle</th><th>Localisation</th></tr></thead>
+    <tbody>
+      <tr><td>Supabase, Inc.</td><td>Hébergement de la base de données, authentification, stockage des photos, exécution des traitements serveur</td><td>Union européenne (Irlande)</td></tr>
+      <tr><td>Google LLC (modèles Gemini)</td><td>Traitements IA : analyse des repas, lecture des étiquettes nutritionnelles, bilans et conversations d'Éos (assistante IA)</td><td>États-Unis</td></tr>
+      <tr><td>Anthropic, PBC (modèles Claude)</td><td>Traitements IA : analyse de photos (repas, composition corporelle), bilans d'Éos</td><td>États-Unis</td></tr>
+      <tr><td>RevenueCat, Inc.</td><td>Gestion du statut des abonnements (aucune donnée de carte)</td><td>États-Unis</td></tr>
+      <tr><td>Apple Inc.</td><td>Distribution de l'Application sur iPhone, encaissement des achats intégrés de l'App Store</td><td>États-Unis / Irlande</td></tr>
+      <tr><td>Google (Google Play)</td><td>Distribution de l'Application sur Android, encaissement des achats intégrés (Google Play Billing)</td><td>États-Unis / Irlande</td></tr>
+      <tr><td>Google LLC (connexion avec Google)</td><td>Connexion avec un compte Google, à la demande de l'utilisateur : reçoit la demande de connexion, jamais de données de santé</td><td>États-Unis</td></tr>
+      <tr><td>Google LLC (Google Maps SDK)</td><td>Affichage des cartes de l'Application, sur Android et sur les versions iPhone qui l'utilisent : reçoit les informations techniques nécessaires au chargement des fonds de carte (adresse IP, zone affichée), sans identifiant de compte ni donnée de santé</td><td>États-Unis</td></tr>
+      <tr><td>Apple Inc. (Apple Push Notification service)</td><td>Acheminement des notifications push sur iPhone : reçoit le jeton de l'appareil et le texte de la notification (2.10), sans donnée de santé</td><td>États-Unis / Irlande</td></tr>
+      <tr><td>Google LLC (Firebase Cloud Messaging)</td><td>Acheminement des notifications push sur Android : reçoit le jeton de l'appareil et le texte de la notification (2.10), sans donnée de santé</td><td>États-Unis</td></tr>
+      <tr><td>Open-Meteo</td><td>Données météo à partir d'une position approximative (aucun identifiant transmis)</td><td>Union européenne</td></tr>
+      <tr><td>Google LLC (Google Maps Platform)</td><td>Reconnaissance de la salle de sport sur les versions de l'Application qui n'utilisent pas encore le catalogue de lieux d'Ecleptic (2.8) : reçoit une zone d'environ 110 m autour de la position, sans la position exacte ni aucun identifiant de l'utilisateur</td><td>États-Unis</td></tr>
+      <tr><td>Functional Software, Inc. (Sentry)</td><td>Signalement des erreurs et plantages de l'Application (données techniques uniquement, jamais de données de santé)</td><td>États-Unis</td></tr>
+      <tr><td>PostHog, Inc.</td><td>Statistiques d'usage agrégées, <strong>à titre transitoire</strong> : jusqu'à son retrait, dix des événements d'usage (2.4) lui sont aussi relayés — fin d'onboarding ; écran d'abonnement ; achat ; ouverture d'une notification (sa catégorie) ; lecture du bilan d'Éos (sa provenance et son ancienneté), dépliage de son détail, première question posée à Éos depuis un bilan ; fréquence du bilan choisie ; récap du mois vu ou partagé. Jamais de données de santé, ni le contenu des bilans ou des messages ; identifiant anonyme distinct, sans lien avec le compte, réinitialisé à la déconnexion ; l'opposition de l'article 7 arrête aussi ce relais</td><td>Union européenne (hébergement UE)</td></tr>
+      <tr><td>Windsor Group AG (Windsor.ai)</td><td>Lecture, pour le tableau de bord interne de l'éditeur, de statistiques <strong>déjà agrégées</strong> (comptages par jour, sans aucun identifiant, même anonyme)</td><td>Suisse ; hébergement en Allemagne</td></tr>
+    </tbody>
+  </table></div>
+  <p>Jusqu'au 27 septembre 2026, les versions de l'Application reconnaissaient la salle de sport en interrogeant directement le service public <strong>Overpass</strong> d'OpenStreetMap, qui recevait alors la position de fin de séance et l'adresse IP de l'appareil, sans identifiant de compte ; ces versions continuent de le faire tant qu'elles ne sont pas mises à jour.</p>
+  <p>Les valeurs nutritionnelles de référence proviennent de la table <strong>Ciqual</strong> de l'ANSES (source de données publique, licence Etalab) : aucune donnée personnelle ne lui est transmise. Les données transmises aux prestataires d'IA sont <strong>minimisées</strong> : aucun nom, email ou identifiant direct n'est envoyé aux modèles.</p>
+  <p>Les valeurs nutritionnelles d'une contribution validée à la revue (2.6) sont visibles par tous les utilisateurs de l'Application, sans aucun lien avec le compte de leur auteur.</p>
+  <p><strong>Autres utilisateurs.</strong> Si l'utilisateur a activé la Society, les autres membres voient seulement ce qu'il a choisi de leur montrer (2.9). Quelques destinataires sont propres à certaines fonctions : les vérificateurs du lieu pour une vidéo de preuve, le témoin sollicité, l'adversaire d'un match, l'équipe d'Ecleptic pour les propositions et la modération. Le gérant d'un lieu ne reçoit aucune donnée de séance de ses pratiquants : il connaît seulement le nombre de membres affichés sur l'écran de sa salle et voit les vidéos à vérifier de son lieu. L'écran d'une salle est visible de toute personne présente.</p>
+  <p><strong>Lieux et zones.</strong> Le catalogue des lieux (Overture Maps Foundation) et les contours des zones (IGN) sont des données ouvertes importées dans la base d'Ecleptic : la position de l'utilisateur ne leur est jamais envoyée. Lieux : © Overture Maps Foundation et ses contributeurs (licences CDLA Permissive 2.0, Apache 2.0, CC0). Zones : © IGN – ADMIN EXPRESS et BD TOPO (Licence Ouverte 2.0).</p>
+  <p>Chaque sous-traitant est lié par un contrat conforme à l'article 28 du RGPD. Les données ne sont <strong>ni vendues ni louées</strong> à des tiers. Elles peuvent être communiquées aux autorités lorsque la loi l'exige.</p>
+  <h2 id="article-5-transferts-hors-de-l-union-europeenne">Article 5 — Transferts hors de l'Union européenne</h2>
+  <p>Certains sous-traitants listés à l'article 4 (Google, Anthropic, RevenueCat, Apple, Sentry) traitent des données aux <strong>États-Unis</strong>, y compris Apple et Google pour l'acheminement des notifications push ; Supabase, société américaine, héberge les données de l'Application dans l'Union européenne (Irlande). Windsor.ai est établie en <strong>Suisse</strong>, pays reconnu comme offrant un niveau de protection adéquat par la Commission européenne, et ne reçoit que des comptages sans identifiant. Lorsque des données sont transférées vers un pays hors UE/EEE n'offrant pas un niveau de protection adéquat, le transfert est encadré par des garanties appropriées : décision d'adéquation de la Commission européenne (y compris, pour les États-Unis, le cadre de protection des données UE–États-Unis pour les prestataires certifiés) ou <strong>clauses contractuelles types</strong> de la Commission, complétées si nécessaire de mesures supplémentaires. L'utilisateur peut obtenir copie des garanties applicables via le contact vie privée.</p>
+  <h2 id="article-6-durees-de-conservation">Article 6 — Durées de conservation</h2>
+  <div class="table"><table>
+    <thead><tr><th>Catégorie</th><th>Durée en base active</th><th>Ensuite</th></tr></thead>
+    <tbody>
+      <tr><td>Données de compte</td><td>Durée de vie du compte</td><td>Suppression dans les 30 jours après suppression du compte</td></tr>
+      <tr><td>Données de santé / suivi</td><td>Durée de vie du compte (ou jusqu'au retrait du consentement / suppression par l'utilisateur)</td><td>Suppression ; sauvegardes purgées sous 30 jours</td></tr>
+      <tr><td>Photos d'étiquettes nutritionnelles (2.6)</td><td>Conservées seulement si l'utilisateur propose sa fiche à la revue, jusqu'à la décision (validation ou refus) et <strong>90 jours au plus</strong> après leur envoi</td><td>Suppression automatique</td></tr>
+      <tr><td>Lectures d'étiquettes par l'IA (valeurs extraites, rattachées à une empreinte de l'image, sans lien avec le compte)</td><td>30 jours</td><td>Suppression automatique</td></tr>
+      <tr><td>Contributions : fiches, corrections, signalements (2.6)</td><td>Durée de vie du compte</td><td>Suppression avec le compte ; les valeurs validées et publiées restent dans la base alimentaire, sans lien avec le compte</td></tr>
+      <tr><td>Efforts séance par séance (2.8)</td><td>90 jours</td><td>Seul le meilleur du mois par mesure et par lieu est gardé, tant que le compte existe</td></tr>
+      <tr><td>Profil social, partenariats, réactions, défis, tableaux, couronnes, saisons, ligue, raquette, catégorie de poids, zones et lieu des séances (2.8, 2.9)</td><td>Durée de vie du compte</td><td>Suppression avec le compte</td></tr>
+      <tr><td>Photo de profil (2.9)</td><td>Tant qu'elle est en place. Remplacée ou retirée par l'utilisateur : effacée sous 2 jours. Retirée par la modération : effacée après 30 jours. Compte inactif depuis 12 mois (ni connexion, ni séance, ni changement de profil social) : effacée, l'avatar la remplace</td><td>Suppression automatique ; suppression avec le compte</td></tr>
+      <tr><td>Vidéo de preuve (2.9)</td><td>30 jours après la décision, ou 30 jours sans décision</td><td>Suppression automatique ; la décision reste, sans la vidéo</td></tr>
+      <tr><td>Propositions de lieux et de spots (2.9)</td><td>Durée de vie du compte</td><td>Suppression avec le compte ; un lieu ou un spot accepté reste public, sans lien avec le compte</td></tr>
+      <tr><td>Signalements envoyés, comptes bloqués, décisions de modération, compteurs anti-abus (2.9)</td><td>Durée de vie du compte</td><td>Suppression avec le compte</td></tr>
+      <tr><td>Jeton de notification (2.10)</td><td>Jusqu'à la déconnexion, la désactivation de la Society ou son refus par Apple ou Google</td><td>Suppression avec le compte</td></tr>
+      <tr><td>File d'envoi des notifications (2.10)</td><td>14 jours ; une notification restée 3 jours sans partir expire</td><td>Suppression automatique</td></tr>
+      <tr><td>Preuves de consentement</td><td>Durée de vie du compte</td><td>Suppression avec le compte</td></tr>
+      <tr><td>Données de facturation</td><td>10 ans (obligation comptable)</td><td>Archivage intermédiaire à accès restreint</td></tr>
+      <tr><td>Logs techniques et de sécurité</td><td>12 mois</td><td>Suppression</td></tr>
+      <tr><td>Événements d'usage (2.4) et identifiant d'installation</td><td>13 mois</td><td>Suppression automatique</td></tr>
+      <tr><td>Statistiques agrégées (comptages par jour, sans identifiant)</td><td>25 mois</td><td>Suppression automatique</td></tr>
+      <tr><td>Journaux d'erreurs et de temps de réponse</td><td>90 jours</td><td>Suppression automatique</td></tr>
+      <tr><td>Données de prospection</td><td>3 ans après le dernier contact</td><td>Suppression</td></tr>
+      <tr><td>Cookies / traceurs</td><td>Voir article 9</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+  <h2 id="article-7-droits-des-personnes">Article 7 — Droits des personnes</h2>
+  <p>Conformément aux articles 15 à 22 du RGPD et à la loi Informatique et Libertés, l'utilisateur dispose des droits suivants :</p>
+  <ul>
+    <li><strong>accès</strong> à ses données et copie ;</li>
+    <li><strong>rectification</strong> des données inexactes ;</li>
+    <li><strong>effacement</strong> (« droit à l'oubli ») dans les cas prévus par l'article 17 ;</li>
+    <li><strong>limitation</strong> du traitement ;</li>
+    <li><strong>opposition</strong> aux traitements fondés sur l'intérêt légitime, et opposition sans motif à la prospection ;</li>
+    <li><strong>portabilité</strong> des données fournies, dans un format structuré et couramment utilisé ;</li>
+    <li><strong>retrait du consentement</strong> à tout moment, pour les traitements fondés sur celui-ci ;</li>
+    <li><strong>directives post-mortem</strong> relatives au sort de ses données après son décès (art. 85 loi Informatique et Libertés) ;</li>
+    <li><strong>opposition aux statistiques d'usage</strong> : un interrupteur « Statistiques d'usage anonymes » dans Réglages › Confidentialité arrête immédiatement l'envoi des événements et vide ceux qui attendaient sur l'appareil.</li>
+  </ul>
+  <p><strong>Export des données</strong> : Réglages › Exporter mes données fournit un fichier qui comprend aussi les données de la Society : profil social, efforts, zones, partenariats, réactions, défis, tableaux, couronnes, ligue, saisons, raquette, propositions, demandes de vidéo de preuve, demandes de gérance, catégorie de poids, appareils enregistrés pour les notifications, signalements envoyés, blocages et décisions de modération. Le fichier indique le chemin de la photo de profil ; le fichier image lui-même, comme celui d'une vidéo de preuve, est fourni sur demande au contact de l'article 1.</p>
+  <p><strong>Exercice des droits</strong> : par email au contact vie privée indiqué à l'article 1, ou directement depuis les Réglages de l'Application (la suppression du compte et l'export des données y sont accessibles). Une réponse est apportée dans un délai d'un mois, prorogeable de deux mois pour les demandes complexes. Un justificatif d'identité pourra être demandé en cas de doute raisonnable sur l'identité du demandeur.</p>
+  <h2 id="article-8-securite">Article 8 — Sécurité</h2>
+  <p>Le responsable de traitement met en œuvre des mesures techniques et organisationnelles appropriées (art. 32 RGPD), notamment : chiffrement des données en transit (TLS) et au repos chez l'hébergeur, contrôle d'accès strict et authentification, cloisonnement des environnements, journalisation, minimisation des données transmises aux prestataires (dont les prestataires d'IA), sauvegardes régulières. Les tables de données sont protégées par des règles d'accès au niveau des lignes (chaque utilisateur n'accède qu'à ses propres données) et les photos sont stockées dans des espaces privés, cloisonnés par compte. Dans la Society, tout accès aux données d'un autre membre passe par un contrôle unique côté serveur, qui applique ses réglages de visibilité et ses blocages ; photos de profil et vidéos de preuve n'ont aucune adresse publique.</p>
+  <p>En cas de violation de données susceptible d'engendrer un risque pour les droits et libertés des personnes, la CNIL sera notifiée dans les 72 heures et, en cas de risque élevé, les personnes concernées seront informées (art. 33 et 34 RGPD).</p>
+  <h2 id="article-9-cookies-et-traceurs">Article 9 — Cookies et traceurs</h2>
+  <p>9.1. L'Application utilise des traceurs <strong>strictement nécessaires</strong> à son fonctionnement (jeton d'authentification, préférences locales, sécurité), exemptés de consentement, et une <strong>mesure d'audience propre à l'éditeur</strong> : un identifiant d'installation aléatoire stocké sur l'appareil, utilisé uniquement pour produire des statistiques anonymes d'usage, sans recoupement avec le compte ni avec d'autres traitements, conservé 13 mois au plus (identifiant et événements), et auquel l'utilisateur peut s'opposer à tout moment dans Réglages › Confidentialité. Ces statistiques ne sont transmises à des tiers que sous forme agrégée, à l'exception du relais transitoire vers PostHog décrit à l'article 4. Cette configuration vise l'exemption de consentement prévue par la CNIL pour la mesure d'audience. Aucun traceur publicitaire n'est intégré ; aucun suivi entre applications (pas d'App Tracking Transparency sur iPhone ; sur Android, l'identifiant publicitaire n'est ni demandé ni lu).</p>
+  <p>9.2. Si des traceurs soumis à consentement venaient à être ajoutés (par exemple un outil de mesure d'audience non exempté), un consentement préalable serait recueilli par une interface dédiée offrant, au même niveau, la possibilité d'accepter, de refuser et de paramétrer, retirable à tout moment depuis les Réglages, avec une durée de validité du choix n'excédant pas 13 mois.</p>
+  <h2 id="article-10-mineurs">Article 10 — Mineurs</h2>
+  <p>L'Application est destinée aux personnes âgées d'au moins <strong>16 ans</strong> (18 ans pour les fonctionnalités de scan de composition corporelle et de conversation avec Éos). En France, l'âge du consentement numérique est fixé à <strong>15 ans</strong> (art. 45 de la loi Informatique et Libertés) : en dessous de cet âge, le traitement fondé sur le consentement requiert le consentement conjoint du mineur et du titulaire de l'autorité parentale. Si le responsable de traitement apprend qu'un compte a été créé en violation de ces conditions, il le supprimera ainsi que les données associées.</p>
+  <p>Dans la Society, un utilisateur de 16 ou 17 ans n'apparaît <strong>jamais</strong> dans un classement public : il n'est visible que de ses partenaires, qu'il ajoute en personne (QR ou lien), et sa photo aussi. La ligue, les défis publics, l'écran de salle et la gérance d'un lieu sont réservés aux majeurs, et il ne joue à la raquette qu'avec ses partenaires. Une date de naissance inconnue vaut minorité.</p>
+  <h2 id="article-11-reclamation-aupres-de-la-cnil">Article 11 — Réclamation auprès de la CNIL</h2>
+  <p>Si l'utilisateur estime que ses droits ne sont pas respectés, il peut introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> — 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 — <a href="https://www.cnil.fr" rel="noopener">www.cnil.fr</a> — ou auprès de l'autorité de contrôle de son État membre de résidence.</p>
+  <h2 id="article-12-mise-a-jour-de-la-politique">Article 12 — Mise à jour de la politique</h2>
+  <p>La présente politique peut être mise à jour, notamment en cas d'évolution des Services ou de la réglementation. Toute modification substantielle (nouvelle finalité, nouveau destinataire, changement de base légale) sera portée à la connaissance des utilisateurs par un moyen approprié (notification dans l'Application et/ou email) avant son entrée en vigueur et, lorsque la loi l'exige, donnera lieu à un nouveau recueil de consentement.</p>
   <footer>
-    <a href="index.html">← Retour</a> · <a href="/mentions-legales.html">Mentions légales</a> · <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>
+    <a href="/">← Accueil</a> · <a href="/suppression-compte.html">Supprimer mon compte</a> · <a href="/mentions-legales.html">Mentions légales</a> · <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>
   </footer>
 </div>
 </body>

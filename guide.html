@@ -321,8 +321,8 @@
     <span class="kicker">Pour aller plus loin</span>
     <h2>Tu peux tout tenir<br>à la main. <span>Ou laisser<br>Ecleptic le faire.</span></h2>
     <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Les 7 leviers de ce guide y sont suivis automatiquement.</p>
-    <a class="btn" id="ctaMain" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
-    <p class="note" data-store-text="iPhone · gratuit sur l'App Store">iPhone · bêta gratuite via TestFlight, l'app de bêtas officielle d'Apple · bientôt sur l'App Store</p>
+    <a class="btn" id="ctaMain" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-play-text="Télécharger sur Google Play" data-play-beta-text="Rejoindre la bêta Android" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
+    <p class="note" data-play-text="Android · gratuit sur Google Play" data-play-beta-text="Android · bêta gratuite via Google Play" data-store-text="iPhone · gratuit sur l'App Store">iPhone · bêta gratuite via TestFlight, l'app de bêtas officielle d'Apple · bientôt sur l'App Store</p>
   </section>
 
   <nav class="more rv" aria-label="Articles du Journal">
@@ -335,7 +335,7 @@
 
 <div class="sticky" id="sticky">
   <span>Les 7 leviers, suivis automatiquement</span>
-  <a class="btn" id="ctaSticky" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
+  <a class="btn" id="ctaSticky" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-play-text="Télécharger sur Google Play" data-play-beta-text="Rejoindre la bêta Android" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
 </div>
 
 <footer>
@@ -343,6 +343,7 @@
   <p>Ecleptic est une application de bien-être. Ce guide et l'application ne remplacent pas un avis médical et ne constituent pas un dispositif médical.</p>
 </footer>
 
+<script src="/assets/stores.js"></script>
 <script>
   var POSTHOG_KEY = "phc_wzjqudiS3KH7MeMii8h6HmUR2onfQR5iasjhAs53AL2B";
   if (POSTHOG_KEY) {
@@ -356,12 +357,18 @@
   try { SRC = new URLSearchParams(location.search).get("src"); } catch(_) {}
   track("guide_view", {src: SRC});
 
-  // Lien de téléchargement : le jour du lancement, coller ici le lien App Store.
-  // Tous les boutons (et leurs textes) basculent seuls vers l'App Store.
-  var APP_STORE_URL = "";
-  if (APP_STORE_URL) {
-    document.querySelectorAll("[data-app]").forEach(function(a){ a.href = APP_STORE_URL; });
-    document.querySelectorAll("[data-store-text]").forEach(function(el){ el.textContent = el.getAttribute("data-store-text"); });
+  // Lien de téléchargement : les liens des stores sont dans /assets/stores.js.
+  // Sur Android, Google Play (ou la bêta Android) remplace l'App Store dès que
+  // son lien y est renseigné ; ailleurs, l'App Store dès son lancement. Sans
+  // lien, les boutons restent sur la bêta TestFlight.
+  var ST = window.EclepticStores || {};
+  var STORE = (ST.isAndroid && ST.PLAY_STORE_URL) ? { url: ST.PLAY_STORE_URL, attr: "data-play-text", store: "play" }
+    : (ST.isAndroid && ST.PLAY_TESTING_URL) ? { url: "/beta.html", attr: "data-play-beta-text", store: "play_beta" }
+    : ST.APP_STORE_URL ? { url: ST.APP_STORE_URL, attr: "data-store-text", store: "app_store" }
+    : null;
+  if (STORE) {
+    document.querySelectorAll("[data-app]").forEach(function(a){ a.href = STORE.url; });
+    document.querySelectorAll("[" + STORE.attr + "]").forEach(function(el){ el.textContent = el.getAttribute(STORE.attr); });
   }
 
   var bar = document.getElementById("bar"), sticky = document.getElementById("sticky");
@@ -401,8 +408,8 @@
     rv.forEach(function(el){ el.classList.add("in"); });
   }
 
-  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", src: SRC}); });
-  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", src: SRC}); });
+  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", store: STORE ? STORE.store : "testflight", src: SRC}); });
+  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", store: STORE ? STORE.store : "testflight", src: SRC}); });
 </script>
 </body>
 </html>

@@ -491,3 +491,24 @@ P_AGE = {
 
 
 PAGES = [P_RECUPERATION, P_APPS, P_AGE]
+
+# Bascule Android (ANDROID_LIVE, tools/i18n.py) : la ligne Ecleptic des tableaux
+# suit les plateformes ouvertes. Éteinte, les pages restent mot pour mot.
+def _android_rows():
+    import os, sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import i18n as _I
+    if not _I.ANDROID_LIVE:
+        return
+    rows = {
+        "fr": ("<td>iPhone ; montre facultative</td><td>Bêta iOS gratuite</td>",
+               "<td>iPhone et Android ; montre facultative</td><td>Bêta gratuite</td>"),
+        "en": ("<td>iPhone; watch optional</td><td>Free iOS beta</td>",
+               "<td>iPhone and Android; watch optional</td><td>Free beta</td>"),
+    }
+    for page in PAGES:
+        for lang, (old_row, new_row) in rows.items():
+            page[lang]["body"] = page[lang]["body"].replace(old_row, new_row)
+
+
+_android_rows()

@@ -29,6 +29,29 @@ EN_LIVE = True
 if os.environ.get("ECLEPTIC_EN") in ("0", "1"):
     EN_LIVE = os.environ["ECLEPTIC_EN"] == "1"
 
+# Ouverture d'Ecleptic sur Android (bêta Google Play, puis sortie) : False tant que
+# rien ne doit l'annoncer. True = « iPhone et Android » dans le bandeau « La bêta »,
+# l'À propos, les encarts de fin de page et llms.txt. À basculer le même jour que
+# PLAY_TESTING_URL dans assets/stores.js (liste complète de la bascule :
+# Auros/reports/play-store/site-lancement-android.md). ECLEPTIC_ANDROID=1 / 0 force
+# l'une ou l'autre valeur (tests dans une copie du dépôt).
+ANDROID_LIVE = False
+if os.environ.get("ECLEPTIC_ANDROID") in ("0", "1"):
+    ANDROID_LIVE = os.environ["ECLEPTIC_ANDROID"] == "1"
+
+# Phrase de fin des encarts « l'app le fait pour toi ».
+BETA_CIRCLE = {
+    "fr": ("La bêta est ouverte à un petit cercle, sur iPhone et Android." if ANDROID_LIVE
+           else "La bêta iOS est ouverte à un petit cercle."),
+    "en": ("The beta is open to a small circle, on iPhone and Android." if ANDROID_LIVE
+           else "The iOS beta is open to a small circle."),
+}
+# « Ecleptic est une application … de bien-être » (À propos, llms.txt).
+APP_KIND = {
+    "fr": "une application de bien-être pour iPhone et Android" if ANDROID_LIVE else "une application iOS de bien-être",
+    "en": "a wellness app for iPhone and Android" if ANDROID_LIVE else "an iOS wellness app",
+}
+
 # --- Interface ---------------------------------------------------------------
 UI = {
     "fr": {
@@ -38,7 +61,7 @@ UI = {
         "disclaimer": "Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.",
         "reward_label": "Pour aller plus loin",
         "reward_h2": "Ce que cet article explique,<br>l'app le mesure chez toi.",
-        "reward_p": "Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.",
+        "reward_p": "Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. " + BETA_CIRCLE["fr"],
         "cta": "Demander l'accès", "next": "À lire ensuite", "faq": "Questions fréquentes", "sources": "Sources",
         "refs": "Références", "min": "min",
         "by": "Par", "role": "fondateur d'Ecleptic", "updated": "mis à jour le",
@@ -54,7 +77,7 @@ UI = {
         "j_quote": "« Chaque décision que tu prends — de ce que tu manges à ce que tu fais de ta soirée — fait de toi qui tu seras demain. »",
         "j_quote_by": "Chris Hadfield &nbsp;·&nbsp; Astronaute, commandant de l'ISS",
         "j_read": "Lire l'article →", "j_reward_label": "Et ensuite", "j_reward_h2": "Lire, c'est bien.<br>Mesurer, c'est mieux.",
-        "j_reward_p": "Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. La bêta iOS est ouverte à un petit cercle.",
+        "j_reward_p": "Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. " + BETA_CIRCLE["fr"],
         "j_empty": "Les premiers textes sont en préparation.<br>La station ouvre bientôt son journal.",
         "j_collection": "Le Journal d'Ecleptic",
         "t_label": "Le Journal &nbsp;&middot;&nbsp; Thème", "t_article": "Article", "t_articles": "Articles",
@@ -69,7 +92,7 @@ UI = {
         "disclaimer": "Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.",
         "reward_label": "Go further",
         "reward_h2": "What this article explains,<br>the app measures for you.",
-        "reward_p": "Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.",
+        "reward_p": "Ecleptic brings your sleep, nutrition and training together in one score, every morning. " + BETA_CIRCLE["en"],
         "cta": "Request access", "next": "Read next", "faq": "Frequently asked questions", "sources": "Sources",
         "refs": "References", "min": "min",
         "by": "By", "role": "founder of Ecleptic", "updated": "updated",
@@ -84,7 +107,7 @@ UI = {
         "j_articles": "Articles", "j_themes": "Themes", "j_themes_label": "Journal themes", "j_all": "The whole journal",
         "j_quote": "", "j_quote_by": "",
         "j_read": "Read the article →", "j_reward_label": "What's next", "j_reward_h2": "Reading is good.<br>Measuring is better.",
-        "j_reward_p": "Everything the journal explains, the app tracks automatically, on your own data. The iOS beta is open to a small circle.",
+        "j_reward_p": "Everything the journal explains, the app tracks automatically, on your own data. " + BETA_CIRCLE["en"],
         "j_empty": "The first articles are on their way.",
         "j_collection": "The Ecleptic Journal",
         "t_label": "The Journal &nbsp;&middot;&nbsp; Theme", "t_article": "Article", "t_articles": "Articles",
