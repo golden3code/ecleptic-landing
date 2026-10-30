@@ -16,3 +16,6 @@ include:
   - .well-known
   - .well-known/apple-app-site-association
   - .well-known/assetlinks.json
+  # GitHub Pages (Jekyll 3) compare « include » au seul nom du fichier : sans
+  # cette ligne, « *.json » l'emporte et le fichier répond 404.
+  - assetlinks.json
