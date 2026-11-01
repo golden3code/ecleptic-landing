@@ -1398,7 +1398,7 @@ COACH_UI = {
         "consent_b": "Ton élève garde la main.", "consent": "Il choisit ce qu'il partage avec toi et peut te retirer l'accès à tout moment.",
         "g_label": "Les guides", "g_h2": "Ce qu'un coach indépendant<br>doit savoir<span class=\"gold\">.</span>",
         "g_p": "Statut, clients, tarifs, suivi : des réponses directes, avec leurs sources officielles.",
-        "g_more": " Un nouveau guide tous les deux jours.", "all": "Tout",
+        "g_more": " De nouveaux guides chaque jour.", "all": "Tout",
         "e_label": "Ouverture", "e_h2": "Sois prévenu le jour où ça ouvre.",
         "e_p": "On t'écrit une seule fois, à l'ouverture de l'espace coach.",
         "e_label_live": "Espace coach", "e_h2_live": "Suis tes élèves entre deux séances.",

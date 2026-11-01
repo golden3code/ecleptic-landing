@@ -122,10 +122,11 @@ SCHEDULE = {
 }
 
 # --- Guides pour les coachs (/coachs/) --------------------------------------
-# Calendrier séparé du Journal : un guide tous les 2 jours, le lendemain d'un article
-# du Journal. La date ne vérifie rien : pour tout décaler (app pas encore sur les
-# deux stores, 1.1 en retard), change COACH_START.
+# Calendrier séparé du Journal : tout sort en décembre pour que Google ait le temps de
+# les découvrir avant janvier, période clé (décision du user, 01/11/2026). La date ne
+# vérifie rien : pour tout décaler (app pas encore sur les deux stores), change COACH_START.
 COACH_START = date(2026, 12, 2)
+COACH_PER_DAY = 2
 COACH_ORDER = [
     "coach-sportif-auto-entrepreneur",
     "fiche-client-coach-sportif",
@@ -180,6 +181,6 @@ COACH_ORDER = [
 ]
 
 COACH_SCHEDULE = {
-    slug: (COACH_START + timedelta(days=INTERVAL_DAYS * i)).isoformat()
+    slug: (COACH_START + timedelta(days=i // COACH_PER_DAY)).isoformat()
     for i, slug in enumerate(COACH_ORDER)
 }
