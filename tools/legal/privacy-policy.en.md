@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-10-30 -->
+<!-- version-fr: 2026-11-01 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 30 October 2026**
+**Last updated: 1 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -31,7 +31,7 @@ The Application processes data that belongs to the **special categories of data*
 - derived indicators (scores, "biological age" estimate, recommendations);
 - data imported from the system's health services (Apple Health on iPhone, Health Connect on Android) or from connected devices, with the user's consent (see 2.7);
 - on Android, during a workout and at the user's request: heart rate and beat-to-beat intervals read live from a **Bluetooth** heart rate sensor (chest strap, watch in broadcast mode). Bluetooth is only used to connect to the chosen sensor: it is never used to locate the user;
-- conversations with Éos, the Application's AI assistant (free-text messages, which may contain health information);
+- conversations with Eos, the Application's AI assistant (free-text messages, which may contain health information);
 - approximate location (for weather and altitude), precise location during a GPS-tracked workout and, at the end of a session recorded live, the location at that moment to recognise the place of the session (see 2.8), if the user allows it.
 
 ### 2.3. Payment data
@@ -40,7 +40,7 @@ Subscriptions are purchased in-app through the App Store (iPhone) or Google Play
 
 ### 2.4. Technical and usage data
 
-Technical account identifier, sign-in timestamps and server-side technical logs (security, usage quotas for AI features, errors and processing times). **Usage statistics**: the Application records usage events (screen shown, onboarding step completed, feature used, error encountered), attached to a **random installation identifier**, unrelated to the account, renewed at every sign-out and at least every 13 months. These events **never** contain health data (no weight, heart rate, calories, score, biological age or questionnaire answer) or any text you typed (food search, message to Éos, meal title). They only carry categories (for example "meal logged by photo") and technical information (app and system version — iOS or Android —, platform, device model, language, device region). No IP address is stored. No advertising tool is built in.
+Technical account identifier, sign-in timestamps and server-side technical logs (security, usage quotas for AI features, errors and processing times). **Usage statistics**: the Application records usage events (screen shown, onboarding step completed, feature used, error encountered), attached to a **random installation identifier**, unrelated to the account, renewed at every sign-out and at least every 13 months. These events **never** contain health data (no weight, heart rate, calories, score, biological age or questionnaire answer) or any text you typed (food search, message to Eos, meal title). They only carry categories (for example "meal logged by photo") and technical information (app and system version — iOS or Android —, platform, device model, language, device region). No IP address is stored. No advertising tool is built in.
 
 ### 2.5. Mandatory or optional data
 
@@ -67,11 +67,11 @@ These contributions relate to what the user eats: they receive the same treatmen
 
 **Limited use.** Data read from Health Connect or Apple Health:
 
-- is used **only** for the features visible in the Application: history of nights and workouts, vitals, Readiness Score, biological age, recovery, calorie targets, cycle tracking, the Lab, Éos (AI assistant) and, if the user turns it on, the Society (2.9), for the sports data they choose to share only;
+- is used **only** for the features visible in the Application: history of nights and workouts, vitals, Readiness Score, biological age, recovery, calorie targets, cycle tracking, the Lab, Eos (AI assistant) and, if the user turns it on, the Society (2.9), for the sports data they choose to share only;
 - is **never sold**, nor transferred to advertising platforms, data brokers or information resellers;
 - is **never used for advertising**, personalised or not;
 - is never used to assess creditworthiness or for lending, nor with a product or service that may qualify as a medical device, nor in any processing of protected health information within the meaning of the US HIPAA law;
-- is only transferred to a third party with the user's **explicit consent**, for security purposes, to comply with the law, or as part of a merger or acquisition the user would be informed of. The technical providers in article 4 process it on the publisher's behalf, with no right to use it for themselves. In particular, when the user requests a report or asks **Éos** (the AI assistant) a question, a summary of their measurements, without name, email or identifier, is sent to the AI providers in article 4 (Google, Anthropic): this is stated on the screen shown before the Health Connect permission;
+- is only transferred to a third party with the user's **explicit consent**, for security purposes, to comply with the law, or as part of a merger or acquisition the user would be informed of. The technical providers in article 4 process it on the publisher's behalf, with no right to use it for themselves. In particular, when the user requests a report or asks **Eos** (the AI assistant) a question, a summary of their measurements, without name, email or identifier, is sent to the AI providers in article 4 (Google, Anthropic): this is stated on the screen shown before the Health Connect permission;
 - is **read by no human**, except with the user's explicit consent (for example to handle a support request they send), for security purposes, to comply with the law, or in aggregated and anonymous form for internal operations.
 
 **Withdrawal.** The user can withdraw the Application's access at any time in Health Connect (or in Apple Health): reading stops immediately. Data already imported stays in their Account until they delete it or delete their Account (article 6); they can also ask for it to be erased through the contact in article 1.
@@ -102,6 +102,8 @@ The **Society** is the Application's social space. It is **optional** and **off 
 - **Racket**: declared matches (sport, opponent, score, optional place), confirmed by the opponent within 72 hours, and a calculated Elo rating.
 - **Weight class**: the month's class (IPF classes), calculated from the weight on the 1st of the month. Only the class is kept and shared, never the weight, and it is visible to no one by default.
 - **Suggestions**: a missing place (name, type, city and location taken on site) or a spot (name, sports, 40-metre corridor around a route shortened by its first and last 500 metres and simplified on the phone). A suggestion stays linked to the account and visible to the team. Once accepted, the place or spot is public, with no link to its author.
+- **Team**: team name, code, weekly goal, members and administrator role. Members see each other's nickname, avatar and number of workouts for the week, never the content of those workouts. A workout hidden from the profile does not count.
+- **Coach**: on a separate agreement, unticked by default and reserved for adults, the user links to a coach approved by Ecleptic. The coach sees all their workouts, including those hidden from the public profile: date, type, duration, distance, effort and title, never the time, sleep, nutrition, weight, heart rate, tracks or places. Access stops as soon as the user withdraws their agreement.
 - **Gym screen**: on a separate agreement, unticked by default, given place by place and reserved for adults, the nickname and the month's active days may appear on a gym's screen, visible to anyone present, with no photo or time, and never in anonymous mode.
 - **Place managers**: management request (account, place, date, decision), verified by the Ecleptic team.
 - **"Your year" review**: calculated for the user alone; they choose whether or not to share its card.
@@ -109,11 +111,19 @@ The **Society** is the Application's social space. It is **optional** and **off 
 
 **What is never shown to other users**: the GPS track, real-time location, heart rate, exact weight, exact age, sleep, nutrition and body composition data.
 
-**Turning it off.** The user can turn off the Society at any time (Settings › Social network): what they shared immediately stops being visible to other members. Their social data stays in their Account in case they turn the Society back on; they can ask for it to be erased through the contact in article 1, or delete their Account. Leaving a board removes their lines at once, seasons included.
+**Turning it off and withdrawing consent.** The user can turn off the Society at any time (Settings › Social network). Their profile, photos and videos immediately stop being visible to other members; they leave their teams and their coach; their ranking lines disappear at the nightly update; their partners and the participants in their ongoing challenges only see their nickname, marked inactive. If they do not turn the Society back on within **30 days**, their Society-specific data is erased automatically. They can ask for it to be erased immediately through the contact in article 1, or delete their Account. Blocks placed on them by other members and moderation decisions follow their own retention periods (article 6). Leaving a board removes their lines at once, seasons included.
 
 ### 2.10. Push notifications
 
 If the user has turned on the Society and allowed notifications on their phone, the Application saves the device's **notification token** (a technical identifier provided by Apple or Google), the platform, the time zone, the language and their notification settings. The server then prepares the notifications that originate with another member (reaction, partnership request, challenge invitation, witness, video to review, match to confirm, crown taken back, place or spot opened): 3 per day at most, delayed between 10 pm and 8 am. They contain the other member's nickname or the place's name and the nature of the event, never a health figure. The token is removed at sign-out and when the user turns off the Society. The "Social network (Society)" switch in Settings › Notifications turns them off at any time.
+
+### 2.11. Messaging
+
+When the user uses messaging: content of messages (text, workout card they choose to share), date, conversation, read status, mute setting. Other members never receive their account identifier. Notifications never contain the text of the message.
+
+Each message goes through an automatic banned-words filter when it is sent, which keeps nothing. The Ecleptic team only reads a message if a member of the conversation reports it.
+
+Message notifications do not count towards the limit of 3 per day in article 2.10 and are not delayed at night. The "Messages" switch in Settings › Notifications turns them off at any time, and muting turns them off conversation by conversation.
 
 ## Article 3 — Purposes and legal bases
 
@@ -126,9 +136,13 @@ If the user has turned on the Society and allowed notifications on their phone, 
 | Origin, level of proof, removing duplicate workouts | Origin (2.8) | Performance of the contract (6.1.b); explicit consent to health data already collected (art. 9.2.a) |
 | Place and zones of workouts | Place, zones (2.8) | **Explicit consent** (art. 9.2.a), collected with location |
 | Efforts, excluding implausible performances from rankings | Efforts (2.8) | Performance of the contract (6.1.b); legitimate interest (6.1.f — fairness of rankings) |
-| Sharing in the Society: partners, feed, challenges, boards, league, City Cup, racket | Society data (2.9) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given when turning it on, set type of data by type of data and completed by an agreement when entering each board; withdrawable at any time |
+| Sharing in the Society: partners, feed, challenges, teams, boards, league, City Cup, racket | Society data (2.9) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given when turning it on, set type of data by type of data and completed by an agreement when entering each board; withdrawable at any time |
 | Profile photo, proof video, suggestions of places and spots | Photo, video, location, route (2.9) | Consent (6.1.a), given by the act of sending |
 | Gym screen | Nickname, active days of the month | Separate **consent** (6.1.a), place by place, withdrawable at any time |
+| Link with a coach | Workouts shown to the coach (2.9) | Separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), versioned, withdrawable at any time |
+| Delivering messages, displaying conversations | Messages (2.11) | Performance of the contract (6.1.b) |
+| Sharing a workout in a conversation | Workout card (2.11) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given by the act of sharing |
+| Sending filter, sending cap, message reports | Messages (2.11) | Legitimate interest (6.1.f — safety of members); legal obligation for reports (6.1.c — Digital Services Act) |
 | Push notifications | Notification token (2.10) | Consent (6.1.a), given through the system permission; withdrawal in Settings › Notifications |
 | Society safety: nickname filter, reports, blocks, reasoned decisions | Nickname, reports, decisions (2.9) | Legal obligation (6.1.c — Digital Services Act, DSA, art. 16 and 17); legitimate interest (6.1.f) |
 | Subscription management and billing | Account, payment | Performance of the contract (6.1.b) and legal obligation (6.1.c — accounting) |
@@ -149,8 +163,8 @@ The data is accessible to the data controller and, within the limits of their ta
 | Provider | Role | Location |
 |---|---|---|
 | Supabase, Inc. | Database hosting, authentication, photo storage, server-side processing | European Union (Ireland) |
-| Google LLC (Gemini models) | AI processing: meal analysis, nutrition label reading, Éos (AI assistant) reports and conversations | United States |
-| Anthropic, PBC (Claude models) | AI processing: photo analysis (meals, body composition), Éos reports | United States |
+| Google LLC (Gemini models) | AI processing: meal analysis, nutrition label reading, Eos (AI assistant) reports and conversations | United States |
+| Anthropic, PBC (Claude models) | AI processing: photo analysis (meals, body composition), Eos reports. Body scan photos are sent to it only for the duration of the analysis. Anthropic erases them within 30 days and does not use them to train its models | United States |
 | RevenueCat, Inc. | Subscription status management (no card data) | United States |
 | Apple Inc. | Distribution of the Application on iPhone, collection of App Store in-app purchases | United States / Ireland |
 | Google (Google Play) | Distribution of the Application on Android, collection of in-app purchases (Google Play Billing) | United States / Ireland |
@@ -161,7 +175,7 @@ The data is accessible to the data controller and, within the limits of their ta
 | Open-Meteo | Weather data from an approximate location (no identifier sent) | European Union |
 | Google LLC (Google Maps Platform) | Recognising the gym on versions of the Application that do not use Ecleptic's place catalogue yet (2.8): receives an area of about 110 m around the location, without the exact location or any user identifier | United States |
 | Functional Software, Inc. (Sentry) | Reporting the Application's errors and crashes (technical data only, never health data) | United States |
-| PostHog, Inc. | Aggregated usage statistics, **on a transitional basis**: until it is removed, ten of the usage events (2.4) are also relayed to it — end of onboarding; subscription screen; purchase; opening a notification (its category); reading the Éos report (its origin and age), expanding its details, first question asked to Éos from a report; report frequency chosen; monthly recap viewed or shared. Never health data, nor the content of reports or messages; a separate anonymous identifier, unrelated to the account, reset at sign-out; the objection in article 7 also stops this relay | European Union (EU hosting) |
+| PostHog, Inc. | Aggregated usage statistics, **on a transitional basis**: until it is removed, ten of the usage events (2.4) are also relayed to it — end of onboarding; subscription screen; purchase; opening a notification (its category); reading the Eos report (its origin and age), expanding its details, first question asked to Eos from a report; report frequency chosen; monthly recap viewed or shared. Never health data, nor the content of reports or messages; a separate anonymous identifier, unrelated to the account, reset at sign-out; the objection in article 7 also stops this relay | European Union (EU hosting) |
 | Windsor Group AG (Windsor.ai) | Reading, for the publisher's internal dashboard, statistics that are **already aggregated** (daily counts, without any identifier, even anonymous) | Switzerland; hosting in Germany |
 
 Until 27 September 2026, versions of the Application recognised the gym by directly querying OpenStreetMap's public **Overpass** service, which then received the end-of-session location and the device's IP address, without an account identifier; those versions keep doing so until they are updated.
@@ -170,7 +184,9 @@ Reference nutritional values come from the ANSES **Ciqual** table (public data s
 
 The nutritional values of a contribution approved at review (2.6) are visible to all users of the Application, with no link to their author's account.
 
-**Other users.** If the user has turned on the Society, other members only see what they have chosen to show them (2.9). A few recipients are specific to certain features: the place's reviewers for a proof video, the witness asked, the opponent in a match, the Ecleptic team for suggestions and moderation. A place's manager receives no workout data about its members: they only know the number of members shown on their gym's screen and see the videos to review for their place. A gym's screen is visible to anyone present.
+**Other users.** If the user has turned on the Society, other members only see what they have chosen to show them (2.9). The coach they have linked to sees their workouts, within the limits of 2.9. A few recipients are specific to certain features: the place's reviewers for a proof video, the witness asked, the opponent in a match, the Ecleptic team for suggestions and moderation. A place's manager receives no workout data about its members: they only know the number of members shown on their gym's screen and see the videos to review for their place. A gym's screen is visible to anyone present.
+
+**Messaging.** Messages are read by the members of the conversation. Apple and Google deliver the notification, without the text of the message.
 
 **Places and zones.** The place catalogue (Overture Maps Foundation) and the zone outlines (IGN) are open data imported into Ecleptic's database: the user's location is never sent to them. Places: © Overture Maps Foundation and its contributors (CDLA Permissive 2.0, Apache 2.0, CC0 licences). Zones: © IGN – ADMIN EXPRESS and BD TOPO (Licence Ouverte 2.0).
 
@@ -178,7 +194,7 @@ Each processor is bound by a contract compliant with article 28 GDPR. The data i
 
 ## Article 5 — Transfers outside the European Union
 
-Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentry) process data in the **United States**, including Apple and Google for delivering push notifications; Supabase, a US company, hosts the Application's data in the European Union (Ireland). Windsor.ai is established in **Switzerland**, a country recognised by the European Commission as providing an adequate level of protection, and only receives counts without identifiers. When data is transferred to a country outside the EU/EEA that does not provide an adequate level of protection, the transfer is governed by appropriate safeguards: an adequacy decision of the European Commission (including, for the United States, the EU–US Data Privacy Framework for certified providers) or the Commission's **standard contractual clauses**, supplemented where necessary by additional measures. The user can obtain a copy of the applicable safeguards through the privacy contact.
+Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentry) process data in the **United States**, including Apple and Google for delivering push notifications; Supabase, a US company, hosts the Application's data in the European Union (Ireland). For Anthropic, these are the Commission's standard contractual clauses (annexed to its data processing agreement). Windsor.ai is established in **Switzerland**, a country recognised by the European Commission as providing an adequate level of protection, and only receives counts without identifiers. When data is transferred to a country outside the EU/EEA that does not provide an adequate level of protection, the transfer is governed by appropriate safeguards: an adequacy decision of the European Commission (including, for the United States, the EU–US Data Privacy Framework for certified providers) or the Commission's **standard contractual clauses**, supplemented where necessary by additional measures. The user can obtain a copy of the applicable safeguards through the privacy contact.
 
 ## Article 6 — Retention periods
 
@@ -190,11 +206,16 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Label readings by AI (extracted values, attached to an image fingerprint, with no link to the account) | 30 days | Deleted automatically |
 | Contributions: entries, corrections, reports (2.6) | Lifetime of the account | Deleted with the account; approved and published values stay in the food database, with no link to the account |
 | Workout-by-workout efforts (2.8) | 90 days | Only the month's best per measure and per place is kept, as long as the account exists |
-| Social profile, partnerships, reactions, challenges, boards, crowns, seasons, league, racket, weight class, zones and place of workouts (2.8, 2.9) | Lifetime of the account | Deleted with the account |
+| Social profile, partnerships, reactions, challenges, teams, coach links, boards, crowns, seasons, league, racket, weight class (2.9) | As long as the Society is on | Deleted automatically **30 days** after it is turned off, unless a suspension is in progress, or with the account |
+| Messages (2.11) | **24 months** | Deleted automatically; erased with the account, or 30 days after the Society is turned off |
+| Zones and place of workouts (2.8) | Lifetime of the account | Deleted with the account |
+| Body scan photos | Stay on the phone (the last 6 scans), never on Ecleptic's servers. Sent to Anthropic for analysis, erased by this provider within 30 days | Deleted by the user in the Application or on uninstalling |
+| Body composition estimates | 24 months, or until the agreement is withdrawn | Deleted automatically, or on withdrawal in Settings |
 | Profile photo (2.9) | As long as it is in place. Replaced or removed by the user: erased within 2 days. Removed by moderation: erased after 30 days. Account inactive for 12 months (no sign-in, workout or change to the social profile): erased, the avatar replaces it | Deleted automatically; deleted with the account |
 | Proof video (2.9) | 30 days after the decision, or 30 days without a decision | Deleted automatically; the decision stays, without the video |
 | Suggestions of places and spots (2.9) | Lifetime of the account | Deleted with the account; an accepted place or spot stays public, with no link to the account |
-| Reports sent, blocked accounts, moderation decisions, anti-abuse counters (2.9) | Lifetime of the account | Deleted with the account |
+| Reports handled and moderation decisions (2.9) | **1 year** after handling or the decision | Deleted automatically, or earlier with the account of the person concerned |
+| Blocked accounts, anti-abuse counters (2.9) | Lifetime of the account | Deleted with the account |
 | Notification token (2.10) | Until sign-out, turning off the Society, or its refusal by Apple or Google | Deleted with the account |
 | Notification sending queue (2.10) | 14 days; a notification not sent after 3 days expires | Deleted automatically |
 | Proofs of consent | Lifetime of the account | Deleted with the account |
@@ -220,13 +241,13 @@ In accordance with articles 15 to 22 GDPR and the French Data Protection Act, th
 - **post-mortem instructions** on what happens to their data after their death (art. 85 of the French Data Protection Act);
 - **objection to usage statistics**: an "Anonymous usage statistics" switch in Settings › Privacy immediately stops events from being sent and empties those waiting on the device.
 
-**Data export**: Settings › Export my data provides a file that also includes Society data: social profile, efforts, zones, partnerships, reactions, challenges, boards, crowns, league, seasons, racket, suggestions, proof video requests, management requests, weight class, devices registered for notifications, reports sent, blocks and moderation decisions. The file gives the path of the profile photo; the image file itself, like that of a proof video, is provided on request through the contact in article 1.
+**Data export**: Settings › Export my data provides a file that also includes the messages written by the user, not those of others, as well as Society data: social profile, efforts, zones, partnerships, reactions, challenges, boards, crowns, league, seasons, racket, suggestions, proof video requests, management requests, weight class, devices registered for notifications, reports sent, blocks and moderation decisions. The file gives the path of the profile photo; the image file itself, like that of a proof video, is provided on request through the contact in article 1.
 
 **Exercising rights**: by email to the privacy contact in article 1, or directly from the Application's Settings (account deletion and data export are available there). A response is given within one month, extendable by two months for complex requests. Proof of identity may be requested in case of reasonable doubt about the requester's identity.
 
 ## Article 8 — Security
 
-The data controller implements appropriate technical and organisational measures (art. 32 GDPR), including: encryption of data in transit (TLS) and at rest at the host, strict access control and authentication, separated environments, logging, minimisation of data sent to providers (including AI providers), regular backups. Data tables are protected by row-level access rules (each user only accesses their own data) and photos are stored in private spaces, partitioned per account. In the Society, any access to another member's data goes through a single server-side check, which applies their visibility settings and blocks; profile photos and proof videos have no public address.
+The data controller implements appropriate technical and organisational measures (art. 32 GDPR), including: encryption of data in transit (TLS) and at rest at the host, strict access control and authentication, separated environments, logging, minimisation of data sent to providers (including AI providers), regular backups. Data tables are protected by row-level access rules (each user only accesses their own data) and photos kept on our servers are stored in private spaces, partitioned per account; body scan photos stay on the user's phone. In the Society, any access to another member's data goes through a single server-side check, which applies their visibility settings and blocks; profile photos and proof videos have no public address.
 
 In the event of a data breach likely to result in a risk to people's rights and freedoms, the CNIL will be notified within 72 hours and, in the event of a high risk, the people concerned will be informed (art. 33 and 34 GDPR).
 
@@ -238,7 +259,7 @@ In the event of a data breach likely to result in a risk to people's rights and 
 
 ## Article 10 — Minors
 
-The Application is intended for people aged at least **16** (18 for the body composition scan and the conversation with Éos). In France, the age of digital consent is set at **15** (art. 45 of the French Data Protection Act): below that age, processing based on consent requires the joint consent of the minor and the holder of parental authority. If the data controller learns that an account was created in breach of these conditions, it will delete it along with the related data.
+The Application is intended for people aged at least **16** (18 for the body composition scan and the conversation with Eos). In France, the age of digital consent is set at **15** (art. 45 of the French Data Protection Act): below that age, processing based on consent requires the joint consent of the minor and the holder of parental authority. If the data controller learns that an account was created in breach of these conditions, it will delete it along with the related data.
 
 In the Society, a 16- or 17-year-old user **never** appears in a public ranking: they are only visible to their partners, whom they add in person (QR code or link), and so is their photo. The league, public challenges, the gym screen and place management are reserved for adults, and they only play racket with their partners. An unknown date of birth counts as being a minor.
 
