@@ -208,7 +208,7 @@ def _load_dir(sub, attr):
     return out
 
 
-EN_ARTICLES = {e["fr"]: e for e in _load_dir("articles", "ENTRIES")}
+EN_ARTICLES = {e["fr"]: e for e in _load_dir("articles", "ENTRIES") + _load_dir("coachs", "ENTRIES")}
 EN_METHODE = {p["fr"]: p for p in _load_dir("methode", "PAGE")}
 
 

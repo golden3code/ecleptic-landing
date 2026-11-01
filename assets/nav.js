@@ -27,6 +27,17 @@
   var nav = document.querySelector("nav.site");
   if (!nav) return;
 
+  // Lien « Coachs » des pages écrites à la main : apparaît seul quand la rubrique ouvre.
+  if (NAV.coachs && !nav.querySelector('a[href="' + NAV.coachs.u + '"]')) {
+    var betaLink = nav.querySelector('[data-mega="beta"]');
+    if (betaLink) {
+      var coachLink = document.createElement("a");
+      coachLink.href = NAV.coachs.u;
+      coachLink.textContent = NAV.coachs.t;
+      betaLink.parentNode.insertBefore(coachLink, betaLink.nextSibling);
+    }
+  }
+
   // Panneaux visibles par tous ; les autres ne s'ouvrent qu'en aperçu.
   var LIVE = { journal: true, science: true, app: true, beta: true };
   var PREVIEW = false;

@@ -141,6 +141,27 @@ article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 .next a:hover{color:var(--gold)}
 /* INDEX ARTICLES : liste editoriale */
 .pagehead{padding:72px 0 24px}
+.transp{color:var(--muted);font-size:14px}
+.chero{padding:96px 0 104px;max-width:760px}
+.chero h1{font-size:clamp(38px,7vw,68px);margin-top:24px;text-wrap:balance}
+.chero p{color:var(--muted);font-size:17px;max-width:520px;margin-top:28px}
+.crow{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:36px}
+.chint{color:var(--muted);font-size:13px}
+.crule{height:1px;background:var(--line);margin:0 6%}
+.csec{padding:80px 0}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:44px 56px;margin-top:40px}
+.cgrid div{min-width:0}
+.cgrid h2{font-size:20px;font-weight:300}
+.cgrid p{color:var(--muted);font-size:15px;margin-top:10px}
+.cconsent{color:var(--muted);font-size:15px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);max-width:620px}
+.cconsent .gold{color:var(--gold)}
+.cguides{padding-bottom:24px}
+.cguides h2.display{font-size:clamp(26px,4.4vw,40px);line-height:1.08;margin-top:20px;text-wrap:balance}
+.clead{color:var(--muted);font-size:16px;max-width:520px;margin-top:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.chips a{color:var(--muted);text-decoration:none}
+.chips a.on{color:var(--gold)}
+.cguides .journal{margin-top:36px;max-width:860px}
 .pagehead h1{font-size:clamp(34px,7vw,60px)}
 .pagehead p{color:var(--muted);margin-top:22px;font-size:16px;max-width:480px}
 .journal{margin:92px 0 0}

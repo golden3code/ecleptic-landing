@@ -76,6 +76,49 @@ LIVE_SLUGS = {a["slug"] for a in ARTICLES}
 ARTICLE_IDX = {a["slug"]: a for a in ARTICLES_ALL}
 
 
+# --- Guides pour les coachs (/coachs/, /en/coaches/) --------------------------
+# Rubrique à part du Journal : mêmes gabarit et photos, mais son calendrier, sa page
+# d'accueil et son bloc de fin. tools/coachs/batch_*.py expose ENTRIES, dates dans
+# COACH_SCHEDULE (tools/schedule.py). Tant que le premier guide n'est pas sorti, rien
+# n'existe sur le site : ni page, ni lien du bandeau, ni entrée du sitemap.
+COACH_LIVE = False  # True à la sortie de l'espace coach (1.1) : « Me prévenir » devient « Se connecter »
+COACH_LOGIN_URL = "https://coach.ecleptic.health"  # site de connexion des coachs (console web)
+
+
+def _load_coachs():
+    import glob as _glob, importlib.util as _ilu
+    here = os.path.dirname(os.path.abspath(__file__))
+    spec = _ilu.spec_from_file_location("_ecleptic_schedule_c", os.path.join(here, "schedule.py"))
+    mod = _ilu.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    sched = dict(getattr(mod, "COACH_SCHEDULE", {}))
+    out = []
+    for f in sorted(_glob.glob(os.path.join(here, "coachs", "*.py"))):
+        if os.path.basename(f).startswith("_"):
+            continue
+        spec = _ilu.spec_from_file_location("coachs_" + os.path.basename(f)[:-3], f)
+        m = _ilu.module_from_spec(spec)
+        spec.loader.exec_module(m)
+        out.extend(getattr(m, "ENTRIES", []))
+    for a in out:
+        if a["slug"] not in sched:
+            raise ValueError("guide coach absent du calendrier : %s" % a["slug"])
+        a["silo"], a["date"] = "coachs", sched[a["slug"]]
+    return out
+
+
+COACH_ALL = _load_coachs()
+COACHS = sorted((a for a in COACH_ALL if date.fromisoformat(a["date"]) <= TODAY),
+                key=lambda a: a["date"], reverse=True)
+COACH_MORE_SOON = any(date.fromisoformat(a["date"]) > TODAY for a in COACH_ALL)
+LIVE_SLUGS |= {a["slug"] for a in COACHS}
+ARTICLE_IDX.update({a["slug"]: a for a in COACH_ALL})
+COACH_TOPICS = ["Statut et droit", "Métier", "Clients", "Tarifs et revenus", "En ligne", "Logiciels", "Formation"]
+COACH_TOPICS_EN = {"Statut et droit": "Legal status", "Métier": "The job", "Clients": "Clients",
+                   "Tarifs et revenus": "Pricing", "En ligne": "Online", "Logiciels": "Software",
+                   "Formation": "Training"}
+
+
 # --- La méthode (Science-Based) : pages moteurs et fiches ---------------------
 # tools/methode/*.py exposent chacun PAGE (ou PAGES) : slug, kind ("moteur" |
 # "fiche"), order, label (nom court), title (h1), seo_title, description,
@@ -105,7 +148,7 @@ def neutralize_links(body):
     """Retire les hyperliens vers des articles pas encore publiés (garde le texte)."""
     def repl(m):
         return m.group(2) if m.group(1) not in LIVE_SLUGS else m.group(0)
-    return re.sub(r'<a href="/articles/([a-z0-9-]+)\.html">(.*?)</a>', repl, body, flags=re.S)
+    return re.sub(r'<a href="/(?:articles|coachs)/([a-z0-9-]+)\.html">(.*?)</a>', repl, body, flags=re.S)
 
 
 DOMAINS = ["Sommeil", "Readiness", "Sport", "Récupération", "Alimentation",
@@ -411,6 +454,27 @@ article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 .next a:hover{color:var(--gold)}
 /* INDEX ARTICLES : liste editoriale */
 .pagehead{padding:72px 0 24px}
+.transp{color:var(--muted);font-size:14px}
+.chero{padding:96px 0 104px;max-width:760px}
+.chero h1{font-size:clamp(38px,7vw,68px);margin-top:24px;text-wrap:balance}
+.chero p{color:var(--muted);font-size:17px;max-width:520px;margin-top:28px}
+.crow{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:36px}
+.chint{color:var(--muted);font-size:13px}
+.crule{height:1px;background:var(--line);margin:0 6%}
+.csec{padding:80px 0}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:44px 56px;margin-top:40px}
+.cgrid div{min-width:0}
+.cgrid h2{font-size:20px;font-weight:300}
+.cgrid p{color:var(--muted);font-size:15px;margin-top:10px}
+.cconsent{color:var(--muted);font-size:15px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);max-width:620px}
+.cconsent .gold{color:var(--gold)}
+.cguides{padding-bottom:24px}
+.cguides h2.display{font-size:clamp(26px,4.4vw,40px);line-height:1.08;margin-top:20px;text-wrap:balance}
+.clead{color:var(--muted);font-size:16px;max-width:520px;margin-top:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.chips a{color:var(--muted);text-decoration:none}
+.chips a.on{color:var(--gold)}
+.cguides .journal{margin-top:36px;max-width:860px}
 .pagehead h1{font-size:clamp(34px,7vw,60px)}
 .pagehead p{color:var(--muted);margin-top:22px;font-size:16px;max-width:480px}
 .journal{margin:92px 0 0}
@@ -567,7 +631,7 @@ def U(lang, key):
 
 
 def theme_name(d, lang):
-    return d if lang == "fr" else I.THEMES_EN[d]["name"]
+    return d if lang == "fr" else (COACH_TOPICS_EN[d] if d in COACH_TOPICS_EN else I.THEMES_EN[d]["name"])
 
 
 def theme_path(d, lang="fr"):
@@ -579,10 +643,19 @@ def en_entry(a):
 
 
 def article_path(a, lang):
+    coach = a.get("silo") == "coachs"
     if lang == "fr":
-        return "/articles/%s.html" % a["slug"]
+        return ("/coachs/%s.html" if coach else "/articles/%s.html") % a["slug"]
     e = en_entry(a)
-    return ("/en/journal/%s.html" % e["slug"]) if e else None
+    return (("/en/coaches/%s.html" if coach else "/en/journal/%s.html") % e["slug"]) if e else None
+
+
+def coach_hub_path(lang):
+    return "/coachs/" if lang == "fr" else "/en/coaches/"
+
+
+def coach_live(lang):
+    return COACHS if lang == "fr" else [a for a in COACHS if en_entry(a)]
 
 
 def methode_path(p, lang):
@@ -607,7 +680,7 @@ def home_path(lang):
 def localize_href(href, lang):
     """Lien interne écrit en chemin français → chemin de la langue demandée.
     Renvoie None si la cible n'existe pas (pas encore publiée ou pas traduite)."""
-    m = re.match(r"^/articles/([a-z0-9-]+)\.html(#.*)?$", href)
+    m = re.match(r"^/(?:articles|coachs)/([a-z0-9-]+)\.html(#.*)?$", href)
     if m:
         a = ARTICLE_IDX.get(m.group(1))
         if not a or a["slug"] not in LIVE_SLUGS:
@@ -645,7 +718,7 @@ def article_view(a, lang):
     """Article prêt à rendre dans une langue (le slug français reste la clé des photos)."""
     if lang == "fr":
         return dict(a, path=article_path(a, "fr"), cat_name=cat(a), lang="fr",
-                    seo=SEO_TITLES.get(a["slug"], a["title"]), body=localize_links(a["body"].strip(), "fr"))
+                    seo=SEO_TITLES.get(a["slug"], a.get("seo_title") or a["title"]), body=localize_links(a["body"].strip(), "fr"))
     e = en_entry(a)
     v = dict(a)
     v.update({"title": e["title"], "description": e["description"], "faq": e.get("faq") or [],
@@ -695,7 +768,7 @@ def nav(section, lang="fr", fr_path=None, en_path=None):
     </span>
     <a href="%(science)s" data-mega="science" %(on_science)s>Science-Based</a>
     <a href="/beta.html" data-mega="beta">%(l_beta)s</a>
-    %(switch)s
+    %(coachs)s%(switch)s
   </div>
 </nav>""" % {
         "home": home_path(lang), "journal": journal_path(lang),
@@ -703,6 +776,8 @@ def nav(section, lang="fr", fr_path=None, en_path=None):
         "on_home": 'class="on"' if section == "home" else "",
         "on_articles": 'class="on"' if section == "articles" else "",
         "on_science": 'class="on"' if section == "science" else "",
+        "coachs": ('<a href="%s"%s>%s</a>\n    ' % (coach_hub_path(lang), ' class="on"' if section == "coachs" else "",
+                                                   COACH_UI[lang]["nav"])) if coach_live(lang) else "",
         "l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"), "l_beta": U(lang, "nav_beta"),
         "switch": I.switcher(lang, fr_path, en_path) if "en" in LANGS_BUILT() else "",
     }
@@ -738,6 +813,8 @@ def nav_data(lang="fr"):
     pop = [{"t": article_view(idx[s], lang)["title"], "u": article_path(idx[s], lang)} for s in POPULAR if s in idx][:5]
     data = {"journal": {"cats": cats, "popular": pop, "total": len(arts)}}
     data.update(nav_panels(idx, lang))
+    if coach_live(lang):  # lien ajouté par nav.js sur les pages écrites à la main
+        data["coachs"] = {"t": COACH_UI[lang]["nav"], "u": coach_hub_path(lang)}
     return ("/* Genere par tools/build_articles.py (nav_data) - ne pas editer a la main. */\n"
             "window.ECLEPTIC_NAV=%s;\n" % _json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 
@@ -968,9 +1045,17 @@ def article_page(a, others, lang="fr"):
         {"@type": "ListItem", "position": 1, "name": "Journal", "item": SITE + journal_path(lang)},
         {"@type": "ListItem", "position": 2, "name": v["cat_name"], "item": SITE + theme_path(cat(a), lang)},
         {"@type": "ListItem", "position": 3, "name": v["title"], "item": url}]} if cat(a) in THEMES else None
+    coach = a.get("silo") == "coachs"
+    if coach:
+        crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": COACH_UI[lang]["nav"], "item": SITE + coach_hub_path(lang)},
+            {"@type": "ListItem", "position": 2, "name": v["title"], "item": url}]}
     jsonld = __import__("json").dumps([x for x in (art, crumbs) if x], ensure_ascii=False)
     catlink = ('<a class="gold" href="%s">%s</a>' % (theme_path(cat(a), lang), html.escape(v["cat_name"]))
                if cat(a) in THEMES else '<span class="gold">%s</span>' % html.escape(v["cat_name"]))
+    if coach:
+        catlink = '<a class="gold" href="%s">%s</a>' % (coach_hub_path(lang), html.escape(v["cat_name"]))
+    CU = COACH_UI[lang]
     return """<!doctype html>
 <html lang="%(lang)s">
 <head>
@@ -1006,7 +1091,7 @@ def article_page(a, others, lang="fr"):
     <span class="label">%(u_rl)s</span>
     <h2>%(u_rh)s</h2>
     <p>%(u_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'%(slug)s',lang:'%(lang)s'})">%(u_cta)s</a>
+    <a class="btn gold" href="%(r_href)s" onclick="track('article_cta_click',{article:'%(slug)s',lang:'%(lang)s'})">%(u_cta)s</a>
   </div>
   <div class="next">
     <span class="label">%(u_next)s</span>
@@ -1027,11 +1112,14 @@ def article_page(a, others, lang="fr"):
         "byline": author_line(lang, a["date"], modified(v)), "sources": sources_block(v.get("sources"), lang),
         "url": url, "jsonld": jsonld, "faqjsonld": faqjsonld, "faqblock": faqblock,
         "og_image": og_image, "hero": hero, "reveal": reveal, "i18n": head_i18n(alt_fr, alt_en),
-        "nav": nav("articles", lang, alt_fr, alt_en), "date": I.date_label(a["date"], lang),
+        "nav": nav("coachs" if coach else "articles", lang, alt_fr, alt_en), "date": I.date_label(a["date"], lang),
         "mins": read_min(v), "min": U(lang, "min"),
-        "body": v["body"], "slug": a["slug"], "more": more,
-        "u_rl": U(lang, "reward_label"), "u_rh": U(lang, "reward_h2"), "u_rp": U(lang, "reward_p"),
-        "u_cta": U(lang, "cta"), "u_next": U(lang, "next"),
+        "body": coach_notice(a, lang) + v["body"], "slug": a["slug"], "more": more,
+        "u_rl": CU["reward_label"] if coach else U(lang, "reward_label"),
+        "u_rh": CU["reward_h2"] if coach else U(lang, "reward_h2"),
+        "u_rp": (CU["reward_p_live"] if COACH_LIVE else CU["reward_p_wait"]) if coach else U(lang, "reward_p"),
+        "u_cta": coach_cta_text(lang, "article") if coach else U(lang, "cta"), "u_next": U(lang, "next"),
+        "r_href": coach_cta_href(lang, "article") if coach else "/beta.html",
         "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang),
     }
 
@@ -1290,6 +1378,203 @@ def theme_articles(d, lang="fr"):
 
 def theme_meta(d, lang):
     return THEMES[d] if lang == "fr" else I.THEMES_EN[d]
+
+
+COACH_UI = {
+    "fr": {
+        "nav": "Coachs", "label": "Pour les coachs sportifs",
+        "h1": "Tes élèves,<br><span class=\"gold\">entre deux séances</span>.",
+        "lead": "Tu les vois une heure par semaine. Le reste se joue sans toi : le sommeil, la fatigue, la séance sautée. L'espace coach d'Ecleptic te donne cette vue, avec leur accord.",
+        "soon": " Il ouvre bientôt.", "cta_wait": "Me prévenir à l'ouverture", "cta_live": "Se connecter",
+        "cta_article": "Essayer l'espace coach",
+        "hint": "Un e-mail déjà prêt, tu n'as qu'à l'envoyer.",
+        "f_label": "Ce que tu y trouveras",
+        "features": [("Programmes", "Compose une séance et envoie-la en message. Ton élève la lance dans l'app, avec tes séries et tes temps de repos."),
+                     ("Fiche élève", "Objectifs, blessures, préférences, matériel et notes au même endroit."),
+                     ("Agenda et messages", "Ta semaine et tes échanges dans le même outil, sans WhatsApp à côté."),
+                     ("Progression", "Ce qui a été fait, ce qui a été sauté, ce qui avance, élève par élève."),
+                     ("Questionnaire de santé", "Le QS-SPORT et tes formulaires, remplis et signés avant la première séance."),
+                     ("Console web", "Prépare tes programmes sur grand écran, retrouve-les sur ton téléphone.")],
+        "consent_b": "Ton élève garde la main.", "consent": "Il choisit ce qu'il partage avec toi et peut te retirer l'accès à tout moment.",
+        "g_label": "Les guides", "g_h2": "Ce qu'un coach indépendant<br>doit savoir<span class=\"gold\">.</span>",
+        "g_p": "Statut, clients, tarifs, suivi : des réponses directes, avec leurs sources officielles.",
+        "g_more": " Un nouveau guide tous les deux jours.", "all": "Tout",
+        "e_label": "Ouverture", "e_h2": "Sois prévenu le jour où ça ouvre.",
+        "e_p": "On t'écrit une seule fois, à l'ouverture de l'espace coach.",
+        "e_label_live": "Espace coach", "e_h2_live": "Suis tes élèves entre deux séances.",
+        "e_p_live": "Programmes, fiche élève, agenda et messages au même endroit.",
+        "seo": "Coach sportif indépendant : guides et outils",
+        "desc": "Statut, clients, tarifs, suivi : des guides sourcés pour les coachs sportifs indépendants, et un espace pour suivre tes élèves entre deux séances.",
+        "reward_label": "Pour les coachs", "reward_h2": "Suis tes élèves<br>entre deux séances.",
+        "reward_p_wait": "Programmes, fiche élève, agenda et messages au même endroit. L'espace coach d'Ecleptic ouvre bientôt.",
+        "reward_p_live": "Programmes, fiche élève, agenda et messages au même endroit, dans l'espace coach d'Ecleptic.",
+        "notice_wait": "À savoir : ce guide est publié par Ecleptic, qui développe aussi un espace pour les coachs. Il n'est pas évalué ici.",
+        "notice_live": "À savoir : ce guide est publié par Ecleptic, qui propose aussi un espace pour les coachs. Il n'est pas évalué ici.",
+        "mail_s": "Espace coach : préviens-moi à l'ouverture",
+        "mail_b": "Bonjour,\n\nJe suis coach et je veux être prévenu à l'ouverture de l'espace coach.\n\nMerci",
+    },
+    "en": {
+        "nav": "Coaches", "label": "For fitness coaches",
+        "h1": "Your clients,<br><span class=\"gold\">between sessions</span>.",
+        "lead": "You see them one hour a week. The rest happens without you: sleep, fatigue, the skipped session. Ecleptic's coach space gives you that view, with their consent.",
+        "soon": " It opens soon.", "cta_wait": "Tell me when it opens", "cta_live": "Sign in",
+        "cta_article": "Try the coach space",
+        "hint": "An email ready to go, you just hit send.",
+        "f_label": "What you'll find",
+        "features": [("Programs", "Build a session and send it as a message. Your client starts it in the app, with your sets and rest times."),
+                     ("Client file", "Goals, injuries, preferences, equipment and notes in one place."),
+                     ("Calendar and messages", "Your week and your conversations in one tool, without WhatsApp on the side."),
+                     ("Progress", "What got done, what got skipped and what is moving, client by client."),
+                     ("Health questionnaire", "Your forms, filled in and signed before the first session."),
+                     ("Web console", "Prepare your programs on a big screen and find them on your phone.")],
+        "consent_b": "Your client stays in control.", "consent": "They choose what they share with you and can revoke your access at any time.",
+        "g_label": "Guides", "g_h2": "What an independent coach<br>needs to know<span class=\"gold\">.</span>",
+        "g_p": "Clients, pricing, follow-up: direct answers with their sources.",
+        "g_more": " A new guide every few days.", "all": "All",
+        "e_label": "Opening", "e_h2": "Hear about it the day it opens.",
+        "e_p": "We'll write to you once, when the coach space opens.",
+        "e_label_live": "Coach space", "e_h2_live": "Follow your clients between sessions.",
+        "e_p_live": "Programs, client files, calendar and messages in one place.",
+        "seo": "Independent fitness coach: guides and tools",
+        "desc": "Clients, pricing, follow-up: sourced guides for independent fitness coaches, and a space to follow your clients between sessions.",
+        "reward_label": "For coaches", "reward_h2": "Follow your clients<br>between sessions.",
+        "reward_p_wait": "Programs, client files, calendar and messages in one place. Ecleptic's coach space opens soon.",
+        "reward_p_live": "Programs, client files, calendar and messages in one place, in Ecleptic's coach space.",
+        "notice_wait": "Good to know: this guide is published by Ecleptic, which is also building a space for coaches. It is not assessed here.",
+        "notice_live": "Good to know: this guide is published by Ecleptic, which also offers a space for coaches. It is not assessed here.",
+        "mail_s": "Coach space: tell me when it opens",
+        "mail_b": "Hello,\n\nI'm a coach and I'd like to hear when the coach space opens.\n\nThanks",
+    },
+}
+
+
+def coach_notice(a, lang):
+    """Guides sur les logiciels : le lecteur doit savoir que l'éditeur du site a son propre outil."""
+    if a.get("silo") != "coachs" or cat(a) != "Logiciels":
+        return ""
+    return '<p class="transp">%s</p>\n' % COACH_UI[lang]["notice_live" if COACH_LIVE else "notice_wait"]
+
+
+def coach_cta_text(lang, place="hub"):
+    """Avant l'ouverture : « Me prévenir », partout. Après : « Se connecter » sur la page
+    coachs, et un bouton qui mène à cette page en bas des guides."""
+    if not COACH_LIVE:
+        return COACH_UI[lang]["cta_wait"]
+    return COACH_UI[lang]["cta_article" if place == "article" else "cta_live"]
+
+
+def coach_cta_href(lang, place="hub"):
+    if COACH_LIVE:
+        return coach_hub_path(lang) if place == "article" else COACH_LOGIN_URL
+    from urllib.parse import quote
+    u = COACH_UI[lang]
+    return "mailto:contact@ecleptic.app?subject=%s&amp;body=%s" % (quote(u["mail_s"]), quote(u["mail_b"]))
+
+
+def coach_hub(lang="fr"):
+    """Page d'accueil de la rubrique coachs : présentation de l'espace coach, puis guides
+    publiés, du plus récent au plus ancien, filtrables par sujet."""
+    u = COACH_UI[lang]
+    path = coach_hub_path(lang)
+    url = SITE + path
+    arts = coach_live(lang)
+    alt_fr = coach_hub_path("fr")
+    alt_en = coach_hub_path("en") if coach_live("en") else None
+    topics = [d for d in COACH_TOPICS if any(cat(a) == d for a in arts)]
+    chips = "\n".join(['<a class="on" href="#" data-topic="">%s</a>' % u["all"]] +
+                      ['<a href="#" data-topic="%s">%s</a>' % (html.escape(d, quote=True), html.escape(theme_name(d, lang)))
+                       for d in topics])
+    cards = "\n".join(entry_card(a, lang).replace('data-cat="%s"' % html.escape(article_view(a, lang)["cat_name"]),
+                                                  'data-cat="%s"' % html.escape(cat(a), quote=True)) for a in arts)
+    features = "\n".join('    <div><h2>%s</h2><p>%s</p></div>' % (html.escape(t), html.escape(d)) for t, d in u["features"])
+    jsonld = [
+        {"@context": "https://schema.org", "@type": "CollectionPage", "name": u["seo"], "description": u["desc"],
+         "url": url, "inLanguage": lang, "publisher": PUBLISHER_LD,
+         "mainEntity": {"@type": "ItemList", "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "url": SITE + article_path(a, lang)} for i, a in enumerate(arts)]}},
+    ]
+    return """<!doctype html>
+<html lang="%(lang)s">
+<head>
+<meta charset="utf-8">
+%(csp)s
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+%(icons)s
+%(metarobots)s
+<title>%(seo)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:title" content="%(seo)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(url)s">
+%(ogimg)s
+%(jsonld)s
+%(i18n)s
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+%(nav)s
+<main class="wrap-wide">
+  <section class="chero">
+    <span class="label">%(label)s</span>
+    <h1 class="display">%(h1)s</h1>
+    <p>%(lead)s</p>
+    <div class="crow">
+      <a class="btn gold" href="%(href)s" onclick="track('coach_cta_click',{place:'hero',lang:'%(lang)s'})">%(cta)s</a>%(hint)s
+    </div>
+  </section>
+  <div class="crule"></div>
+  <section class="csec">
+    <span class="label">%(f_label)s</span>
+    <div class="cgrid">
+%(features)s
+    </div>
+    <p class="cconsent"><span class="gold">%(consent_b)s</span> %(consent)s</p>
+  </section>
+  <div class="crule"></div>
+  <section class="csec cguides">
+    <span class="label">%(g_label)s</span>
+    <h2 class="display">%(g_h2)s</h2>
+    <p class="clead">%(g_p)s</p>
+    <div class="chips">
+%(chips)s
+    </div>
+    <div class="journal">
+%(cards)s
+    </div>
+  </section>
+  <div class="reward noafter">
+    <span class="label">%(e_label)s</span>
+    <h2>%(e_h2)s</h2>
+    <p>%(e_p)s</p>
+    <a class="btn gold" href="%(href)s" onclick="track('coach_cta_click',{place:'end',lang:'%(lang)s'})">%(cta)s</a>
+  </div>
+</main>
+%(footer)s
+%(posthog)s
+<script>track('coach_hub_view',{lang:'%(lang)s'});
+document.querySelectorAll('.chips a').forEach(function(c){c.addEventListener('click',function(e){
+  e.preventDefault();var t=c.getAttribute('data-topic');
+  document.querySelectorAll('.chips a').forEach(function(x){x.classList.toggle('on',x===c)});
+  document.querySelectorAll('.cguides .entry').forEach(function(x){x.hidden=!!t&&x.getAttribute('data-cat')!==t});
+})});</script>
+%(navscripts)s
+</body>
+</html>
+""" % {"lang": lang, "csp": CSP, "metarobots": META_ROBOTS, "icons": HEAD_ICONS, "seo": html.escape(title_tag(u["seo"])),
+       "desc": html.escape(u["desc"], quote=True), "url": url, "ogimg": og_image_tags("/assets/og/journal.jpg"),
+       "jsonld": ld(jsonld), "i18n": head_i18n(alt_fr, alt_en), "nav": nav("coachs", lang, alt_fr, alt_en),
+       "label": u["label"], "h1": u["h1"], "lead": html.escape(u["lead"] + ("" if COACH_LIVE else u["soon"])),
+       "href": coach_cta_href(lang), "cta": coach_cta_text(lang),
+       "hint": "" if COACH_LIVE else '\n      <span class="chint">%s</span>' % html.escape(u["hint"]),
+       "f_label": u["f_label"], "features": features, "consent_b": html.escape(u["consent_b"]), "consent": html.escape(u["consent"]),
+       "g_label": u["g_label"], "g_h2": u["g_h2"], "g_p": html.escape(u["g_p"] + (u["g_more"] if COACH_MORE_SOON else "")),
+       "chips": chips, "cards": cards,
+       "e_label": u["e_label_live" if COACH_LIVE else "e_label"], "e_h2": html.escape(u["e_h2_live" if COACH_LIVE else "e_h2"]),
+       "e_p": html.escape(u["e_p_live" if COACH_LIVE else "e_p"]),
+       "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
 
 def theme_page(d, lang="fr"):
@@ -2173,6 +2458,10 @@ def llms_txt():
     if COMPARE:
         out.append("\n## Comparatifs (informations publiques de chaque marque, sources liées)\n")
         out += ["- [%s](%s%s): %s" % (c["fr"]["title"], SITE, compare_path(c, "fr"), c["fr"]["description"]) for c in COMPARE]
+    if COACHS:
+        out.append("\n## Pour les coachs sportifs\n")
+        out.append("- [Tous les guides](%s/coachs/): guides sourcés pour les coachs sportifs indépendants." % SITE)
+        out += ["- [%s](%s/coachs/%s.html): %s" % (a["title"], SITE, a["slug"], a["description"]) for a in COACHS]
     out.append("\n## À propos\n")
     out.append("- [À propos](%s/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour." % SITE)
     out.append("- [Science-Based](%s/science.html): vue d'ensemble de la méthode et des sources." % SITE)
@@ -2268,6 +2557,10 @@ def sitemap():
             arts = theme_articles(d, lang)
             if len(arts) >= THEME_MIN_INDEX:
                 entries.append((SITE + theme_path(d, lang), max(modified(article_view(a, lang)) for a in arts)))
+        cs = coach_live(lang)
+        if cs:
+            entries.append((SITE + coach_hub_path(lang), max(modified(article_view(a, lang)) for a in cs)))
+            entries += [(SITE + article_path(a, lang), modified(article_view(a, lang))) for a in cs]
         entries.append((SITE + ALT_ABOUT[0 if lang == "fr" else 1], ABOUT_UPDATED))
         if DATA_PAGES:
             entries.append((SITE + data_hub_path(lang), DATA_DATE))
@@ -2329,6 +2622,13 @@ def main():
                {os.path.basename(methode_path(p, lang)) for p in mps})
         for p in mps:
             _write(root, methode_path(p, lang).lstrip("/"), methode_page(p, lang))
+        cs = coach_live(lang)
+        cdir = os.path.join(root, coach_hub_path(lang).strip("/"))
+        _purge(cdir, {os.path.basename(article_path(a, lang)) for a in cs} | ({"index.html"} if cs else set()))
+        for i, a in enumerate(cs):
+            _write(root, article_path(a, lang).lstrip("/"), article_page(a, cs[i + 1:] + cs[:i], lang))
+        if cs:
+            _write(root, coach_hub_path(lang).lstrip("/") + "index.html", coach_hub(lang))
         _write(root, ALT_ABOUT[0 if lang == "fr" else 1].lstrip("/"), about_page(lang))
         _write(root, ALT_LEGAL[0 if lang == "fr" else 1].lstrip("/"), legal_page(lang))
         if DATA_PAGES:
@@ -2349,9 +2649,9 @@ def main():
     _write(root, "llms-full.txt", llms_full())
     scheduled = len(ARTICLES_ALL) - len(ARTICLES)
     print("OK — %d articles publiés (%d programmés à venir), %d en anglais, %d pages méthode (%d en anglais), "
-          "%d pages de données + index, sitemap, css, menus"
+          "%d pages de données + index, sitemap, css, menus ; coachs : %d/%d guides"
           % (len(ARTICLES), scheduled, len(live_articles("en")), len(METHODE),
-             sum(1 for p in METHODE if methode_path(p, "en")), len(DATA_PAGES)))
+             sum(1 for p in METHODE if methode_path(p, "en")), len(DATA_PAGES), len(COACHS), len(COACH_ALL)))
 
 
 if __name__ == "__main__":

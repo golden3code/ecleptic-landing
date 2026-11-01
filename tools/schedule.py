@@ -120,3 +120,66 @@ SCHEDULE = {
     slug: (START + timedelta(days=INTERVAL_DAYS * i)).isoformat()
     for i, slug in enumerate(ORDER)
 }
+
+# --- Guides pour les coachs (/coachs/) --------------------------------------
+# Calendrier séparé du Journal : un guide tous les 2 jours, le lendemain d'un article
+# du Journal. La date ne vérifie rien : pour tout décaler (app pas encore sur les
+# deux stores, 1.1 en retard), change COACH_START.
+COACH_START = date(2026, 12, 2)
+COACH_ORDER = [
+    "coach-sportif-auto-entrepreneur",
+    "fiche-client-coach-sportif",
+    "trouver-des-clients-coach-sportif",
+    "tarif-coach-sportif-independant",
+    "coach-sportif-sans-diplome",
+    "bilan-forme-premier-rendez-vous",
+    "coaching-sportif-en-ligne-comment-faire",
+    "coach-sportif-bic-ou-bnc",
+    "questionnaire-sante-avant-le-sport-client",
+    "coach-sportif-google-fiche-etablissement",
+    "carte-professionnelle-educateur-sportif",
+    "combien-gagne-coach-sportif-independant",
+    "tests-physiques-nouveau-client",
+    "instagram-coach-sportif",
+    "coach-sportif-tva",
+    "tarif-coaching-en-ligne",
+    "creer-programme-personnalise-client",
+    "facture-coach-sportif",
+    "site-internet-coach-sportif",
+    "vendre-programme-sportif-en-ligne",
+    "assurance-coach-sportif",
+    "fideliser-clients-coaching-sportif",
+    "packs-abonnement-seance-coach-sportif",
+    "seance-essai-coach-sportif",
+    "cgv-coach-sportif",
+    "reglementation-vente-programme-sportif",
+    "suivre-client-a-distance",
+    "contrat-coach-sportif-client",
+    "comment-devenir-coach-sportif",
+    "coach-independant-en-salle",
+    "augmenter-ses-tarifs-coach",
+    "rgpd-donnees-sante-coach-sportif",
+    "bilan-mensuel-client-coaching",
+    "bpjeps-af-ou-cqp",
+    "coaching-sportif-en-entreprise",
+    "coach-sportif-nutrition-droit",
+    "avis-recommandations-coach-sportif",
+    "lire-etat-de-forme-client",
+    "coaching-en-visio",
+    "statut-juridique-coach-sportif",
+    "seance-annulee-regles-coach",
+    "logiciel-coach-sportif-comment-choisir",
+    "application-coach-sportif-gratuite-ou-payante",
+    "excel-whatsapp-logiciel-coaching",
+    "application-suivi-client-coach",
+    "meilleures-applications-coach-sportif",
+    "alternative-trainerize-francais",
+    "hexfit-everfit-my-pt-hub-avis",
+    "changer-logiciel-coaching",
+    "verifier-logiciel-coaching-avant-de-choisir",
+]
+
+COACH_SCHEDULE = {
+    slug: (COACH_START + timedelta(days=INTERVAL_DAYS * i)).isoformat()
+    for i, slug in enumerate(COACH_ORDER)
+}

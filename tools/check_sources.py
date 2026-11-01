@@ -15,7 +15,6 @@ import importlib.util, json, os, re, sys, time, unicodedata, urllib.request, url
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = "EclepticSourceCheck/1.0 (+https://ecleptic.health/a-propos.html)"
-BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 STOP = set("the and for with from that this into over under between among during after before their your what when how "
            "which while than then them they were been being have has had not but are was its our out off per via".split())
 
@@ -133,10 +132,10 @@ def check(src):
             return "OK", "%s (%s)%s" % (real[:80], year, "" if ratio >= 0.6 else " [auteur + année]")
         return "ÉCHEC", "ne concorde pas avec PubMed : « %s » (%s), recouvrement %.0f %%, 1er auteur %s" % (
             real[:110], year, ratio * 100, "trouvé" if author_ok else "absent")
-    st, _ = get(u, ua=BROWSER_UA)
-    if 200 <= st < 400:
+    st, _ = get(u)
+    if 200 <= st < 400 and st != 202:  # 202 vide = vérification anti-robots
         return "OK", "page accessible (HTTP %d)" % st
-    if st in (401, 403, 429, 0):
+    if st in (202, 401, 403, 429, 0):
         return "À VÉRIFIER", "HTTP %s (protection anti-robots ?)" % st
     return "ÉCHEC", "HTTP %s" % st
 
@@ -148,7 +147,7 @@ def targets(arg):
         for slug, t in load(arg).TEXTES.items():
             out += [("donnees/" + slug, s) for s in t.get("sources", [])]
         return out
-    if arg and arg.endswith(".py") and "satellites" in arg:
+    if arg and arg.endswith(".py") and ("satellites" in arg or "coachs" in arg):
         for a in load(arg).ENTRIES:
             out += [(a["slug"], s) for s in a.get("sources", [])]
         return out

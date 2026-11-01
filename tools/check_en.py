@@ -27,10 +27,11 @@ def load(path, name):
 
 def fr_articles():
     out = {}
-    for f in sorted(glob.glob(os.path.join(TOOLS, "satellites", "*.py"))):
-        if not os.path.basename(f).startswith("_"):
-            for a in load(f, "fr_" + os.path.basename(f)[:-3]).ENTRIES:
-                out[a["slug"]] = a
+    for d in ("satellites", "coachs"):
+        for f in sorted(glob.glob(os.path.join(TOOLS, d, "*.py"))):
+            if not os.path.basename(f).startswith("_"):
+                for a in load(f, "fr_%s_%s" % (d, os.path.basename(f)[:-3])).ENTRIES:
+                    out[a["slug"]] = a
     return out
 
 
@@ -58,7 +59,9 @@ def french_ratio(h):
     return len(FRENCH.findall(txt)) / n
 
 
-def common(label, en, fr, bad, body_key="body"):
+def common(label, en, fr, bad, body_key="body", adapted=False):
+    """adapted : guide coach adapté au lecteur international : passages propres au droit
+    français retirés, donc liens inclus dans ceux du français et texte plus court permis."""
     b = en.get(body_key, "")
     if not b:
         bad("corps vide")
@@ -67,17 +70,26 @@ def common(label, en, fr, bad, body_key="body"):
         o, c = len(re.findall(r"<%s[\s>]" % t, b)), len(re.findall(r"</%s>" % t, b))
         if o != c:
             bad("balises <%s> déséquilibrées (%d/%d)" % (t, o, c))
-    if links(b) != links(fr.get(body_key, "")):
-        bad("liens internes différents du français : %s ≠ %s" % (links(b), links(fr.get(body_key, ""))))
-    if b.count("<table") != fr.get(body_key, "").count("<table"):
-        bad("nombre de tableaux différent du français")
+    if adapted:
+        if not set(links(b)) <= set(links(fr.get(body_key, ""))):
+            bad("lien absent du français : %s" % sorted(set(links(b)) - set(links(fr.get(body_key, "")))))
+        if re.search(r"(?i)\b(urssaf|cnil|dgccrf|insee|bpjeps|code du sport|code de la consommation|micro-entrepr|article [lrd]\. ?\d)", b):
+            bad("référence française restée dans un guide adapté")
+        if "—" in b:
+            bad("tiret cadratin")
+    else:
+        if links(b) != links(fr.get(body_key, "")):
+            bad("liens internes différents du français : %s ≠ %s" % (links(b), links(fr.get(body_key, ""))))
+        if b.count("<table") != fr.get(body_key, "").count("<table"):
+            bad("nombre de tableaux différent du français")
     if re.search(r'href="https?://', b):
         bad("lien externe dans le corps")
     if re.search(r"ecleptic", b, re.I):
         bad("« Ecleptic » dans le corps")
     wr = words(b) / max(1, words(fr.get(body_key, "")))
-    if not 0.75 <= wr <= 1.3:
-        bad("longueur %.0f %% du français (attendu 75-130 %%)" % (wr * 100))
+    lo = 0.55 if adapted else 0.75
+    if not lo <= wr <= 1.3:
+        bad("longueur %.0f %% du français (attendu %d-130 %%)" % (wr * 100, lo * 100))
     fr_r = french_ratio(b)
     if fr_r > 0.04:
         bad("restes de français probables (%.1f %% de mots-outils français)" % (fr_r * 100))
@@ -104,7 +116,16 @@ def check_articles(path, FR, SL):
             continue
         if e.get("slug") != SL.get(fs):
             bad("slug anglais %r ≠ attendu %r (tools/en/slugs.py)" % (e.get("slug"), SL.get(fs)))
-        common(fs, e, FR[fs], bad)
+        adapted = os.sep + "coachs" + os.sep in path
+        common(fs, e, FR[fs], bad, adapted=adapted)
+        if adapted:
+            norm = lambda u: re.sub(r"[?&]hl=\w+", "", u)  # même page d'aide Google, autre langue
+            urls = {norm(x["u"]) for x in FR[fs].get("sources", [])}
+            kept = [norm(x.get("u")) for x in e.get("sources", [])]
+            if len(kept) < 2:
+                bad("au moins 2 sources attendues")
+            if not set(kept) <= urls:
+                bad("source absente du français : %s" % sorted(set(kept) - urls))
     return probs
 
 
@@ -133,6 +154,7 @@ if __name__ == "__main__":
     SL = load(os.path.join(TOOLS, "en", "slugs.py"), "slugs").EN_SLUGS
     MS = load(os.path.join(TOOLS, "i18n.py"), "i18n_chk").METHODE_EN_SLUG
     files = sys.argv[1:] or sorted(glob.glob(os.path.join(TOOLS, "en", "articles", "*.py")) +
+                                   glob.glob(os.path.join(TOOLS, "en", "coachs", "*.py")) +
                                    glob.glob(os.path.join(TOOLS, "en", "methode", "*.py")))
     files = [f for f in files if not os.path.basename(f).startswith("_")]
     FR, FRM, total = None, None, []
