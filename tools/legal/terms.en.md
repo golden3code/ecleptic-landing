@@ -204,6 +204,8 @@ A private conversation between an adult and a minor is refused, even between par
 
 Messages are text, or a workout card that the User chooses to share. Each message passes, on sending, through an **automatic filter** of forbidden words, the same one as for nicknames: a refused message is not sent and its author is informed immediately. This filter keeps nothing and produces no decision on the account.
 
+The User may reply to a message, which then appears quoted. The User may edit the text of their message for **24 hours** after sending it, unless it accompanies a workout card or the conversation is closed. The new text passes through the same filter and the message carries the mention "edited". The earlier version is not kept, except for the copy attached to a report already sent.
+
 The Ecleptic team reads a message only if a member of the conversation reports it: a copy of the message then accompanies the report. The Publisher may remove that message and take the measures provided for in article 9 bis.14, with a reasoned decision (9 bis.13) that can be contested (9 bis.15).
 
 The rules of conduct (9 bis.5) apply to messages. The User may block a member (9 bis.16), which hides that member's messages and ends their private conversation, and may turn off notifications for each conversation.

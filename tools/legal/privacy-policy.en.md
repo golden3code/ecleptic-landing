@@ -119,9 +119,11 @@ If the user has turned on the Society and allowed notifications on their phone, 
 
 ### 2.11. Messaging
 
-When the user uses messaging: content of messages (text, workout card they choose to share), date, conversation, read status, mute setting. Other members never receive their account identifier. Notifications never contain the text of the message.
+When the user uses messaging: content of messages (text, workout card they choose to share), the message they reply to, date sent and date edited, conversation, read status, mute setting. Other members never receive their account identifier. When a message is edited, its earlier version is not kept, except for the copy attached to a report already sent.
 
 Each message goes through an automatic banned-words filter when it is sent, which keeps nothing. The Ecleptic team only reads a message if a member of the conversation reports it.
+
+A message notification shows the author's nickname and the first 180 characters of the text. This text is not kept in the sending queue: it is read at the moment of sending, then passed to Apple or Google, which deliver it to the recipient's phone (article 4). It is not end-to-end encrypted, and it contains what the member wrote, including any health information. A workout card never appears in it, and a removed message is not passed on. When several messages arrive together, the notification only shows how many. On iPhone, the lock screen follows the phone's "Show Previews" setting; on Android, the text is hidden there.
 
 Message notifications do not count towards the limit of 3 per day in article 2.10 and are not delayed at night. The "Messages" switch in Settings › Notifications turns them off at any time, and muting turns them off conversation by conversation.
 
@@ -143,7 +145,7 @@ Message notifications do not count towards the limit of 3 per day in article 2.1
 | Delivering messages, displaying conversations | Messages (2.11) | Performance of the contract (6.1.b) |
 | Sharing a workout in a conversation | Workout card (2.11) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given by the act of sharing |
 | Sending filter, sending cap, message reports | Messages (2.11) | Legitimate interest (6.1.f — safety of members); legal obligation for reports (6.1.c — Digital Services Act) |
-| Push notifications | Notification token (2.10) | Consent (6.1.a), given through the system permission; withdrawal in Settings › Notifications |
+| Push notifications | Notification token (2.10), message excerpt (2.11) | Consent (6.1.a), given through the system permission; withdrawal in Settings › Notifications |
 | Society safety: nickname filter, reports, blocks, reasoned decisions | Nickname, reports, decisions (2.9) | Legal obligation (6.1.c — Digital Services Act, DSA, art. 16 and 17); legitimate interest (6.1.f) |
 | Subscription management and billing | Account, payment | Performance of the contract (6.1.b) and legal obligation (6.1.c — accounting) |
 | Security, fraud prevention, logs | Technical data | Legitimate interest (6.1.f — securing the service) |
@@ -170,8 +172,8 @@ The data is accessible to the data controller and, within the limits of their ta
 | Google (Google Play) | Distribution of the Application on Android, collection of in-app purchases (Google Play Billing) | United States / Ireland |
 | Google LLC (sign in with Google) | Sign-in with a Google account, at the user's request: receives the sign-in request, never health data | United States |
 | Google LLC (Google Maps SDK) | Displaying the Application's maps, on Android and on the iPhone versions that use it: receives the technical information needed to load map tiles (IP address, area displayed), with no account identifier or health data | United States |
-| Apple Inc. (Apple Push Notification service) | Delivering push notifications on iPhone: receives the device token and the text of the notification (2.10), with no health data | United States / Ireland |
-| Google LLC (Firebase Cloud Messaging) | Delivering push notifications on Android: receives the device token and the text of the notification (2.10), with no health data | United States |
+| Apple Inc. (Apple Push Notification service) | Delivering push notifications on iPhone: receives the device token and the text of the notification (2.10), with no health data, except what a member writes in a message excerpt (2.11) | United States / Ireland |
+| Google LLC (Firebase Cloud Messaging) | Delivering push notifications on Android: receives the device token and the text of the notification (2.10), with no health data, except what a member writes in a message excerpt (2.11) | United States |
 | Open-Meteo | Weather data from an approximate location (no identifier sent) | European Union |
 | Google LLC (Google Maps Platform) | Recognising the gym on versions of the Application that do not use Ecleptic's place catalogue yet (2.8): receives an area of about 110 m around the location, without the exact location or any user identifier | United States |
 | Functional Software, Inc. (Sentry) | Reporting the Application's errors and crashes (technical data only, never health data) | United States |
@@ -186,7 +188,7 @@ The nutritional values of a contribution approved at review (2.6) are visible to
 
 **Other users.** If the user has turned on the Society, other members only see what they have chosen to show them (2.9). The coach they have linked to sees their workouts, within the limits of 2.9. A few recipients are specific to certain features: the place's reviewers for a proof video, the witness asked, the opponent in a match, the Ecleptic team for suggestions and moderation. A place's manager receives no workout data about its members: they only know the number of members shown on their gym's screen and see the videos to review for their place. A gym's screen is visible to anyone present.
 
-**Messaging.** Messages are read by the members of the conversation. Apple and Google deliver the notification, without the text of the message.
+**Messaging.** Messages are read by the members of the conversation. Apple and Google deliver the notification, with the first 180 characters of the message (2.11).
 
 **Places and zones.** The place catalogue (Overture Maps Foundation) and the zone outlines (IGN) are open data imported into Ecleptic's database: the user's location is never sent to them. Places: © Overture Maps Foundation and its contributors (CDLA Permissive 2.0, Apache 2.0, CC0 licences). Zones: © IGN – ADMIN EXPRESS and BD TOPO (Licence Ouverte 2.0).
 
