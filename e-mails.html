@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+  Page https://ecleptic.health/e-mails (lot F4.7, PLAN-ESPACE-COACH.md §15 ; maquette « F4 · 12 »).
+  À copier telle quelle dans le dépôt du site (~/Desktop/Auros/landing/e-mails.html), puis git push.
+  Le lien de chaque e-mail ouvre cette page avec ?t=<lien signé>. Rien ne change sans un toucher :
+  les antivirus des messageries ouvrent les liens tout seuls. La page appelle l'Edge
+  email-unsubscribe (POST JSON), sans compte ni connexion.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ecleptic · E-mails</title>
+<style>
+  :root { --bg: #0A0A0A; --card: #1D1D1D; --text: #FAF8F4; --muted: #8E8D8B; --gold: #F5A623; --on-gold: #0A0A0A; --danger: #E57373; }
+  @media (prefers-color-scheme: light) { :root { --bg: #F4F1EC; --card: #FFFFFF; --text: #1A1816; --muted: #5E5A55; --gold: #8A5A00; --on-gold: #FFFFFF; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+         background: var(--bg); color: var(--text); font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; }
+  main { width: 100%; max-width: 440px; padding: 28px 24px; border-radius: 16px; background: var(--card); }
+  .brand { font-size: 13px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 10px 0 8px; font-size: 22px; font-weight: 600; }
+  p { margin: 0 0 18px; color: var(--muted); }
+  button { width: 100%; min-height: 48px; border: 0; border-radius: 12px; font: inherit; font-weight: 600; cursor: pointer;
+           background: var(--gold); color: var(--on-gold); }
+  button.secondary { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+  button[disabled] { opacity: 0.5; cursor: default; }
+  .error { color: var(--danger); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Ecleptic</div>
+  <h1 id="title"></h1>
+  <p id="body"></p>
+  <button id="action" type="button"></button>
+</main>
+<script>
+(function () {
+  var ENDPOINT = 'https://avbmycfngmxhkjesdiyq.supabase.co/functions/v1/email-unsubscribe';
+  var T = {
+    fr: { kind: { coach_unread: '« Quand mon coach m’écrit »', coach_digest: '« Résumé de mes élèves »' },
+          ask: 'Ne plus recevoir ces e-mails ?', askBody: 'Tu ne recevras plus {k}. Les notifications de l’app ne changent pas.', stop: 'Ne plus recevoir',
+          done: 'C’est noté', doneBody: 'Tu ne recevras plus {k}. Les notifications de l’app ne changent pas.', again: 'Me réabonner',
+          back: 'E-mails réactivés', backBody: 'Tu recevras de nouveau {k}.', bad: 'Ce lien n’est pas valable', badBody: 'Coupe ces e-mails depuis l’app : Réglages, E-mails.', fail: 'Une erreur est survenue. Réessaie.' },
+    en: { kind: { coach_unread: '“When my coach messages me”', coach_digest: '“Summary of my clients”' },
+          ask: 'Stop these emails?', askBody: 'You will no longer receive {k}. App notifications don’t change.', stop: 'Stop emails',
+          done: 'Done', doneBody: 'You will no longer receive {k}. App notifications don’t change.', again: 'Subscribe again',
+          back: 'Emails back on', backBody: 'You will receive {k} again.', bad: 'This link isn’t valid', badBody: 'Turn these emails off in the app: Settings, Emails.', fail: 'Something went wrong. Please try again.' },
+    es: { kind: { coach_unread: '«Cuando mi coach me escribe»', coach_digest: '«Resumen de mis clientes»' },
+          ask: '¿Dejar de recibir estos correos?', askBody: 'Ya no recibirás {k}. Las notificaciones de la app no cambian.', stop: 'Dejar de recibir',
+          done: 'Hecho', doneBody: 'Ya no recibirás {k}. Las notificaciones de la app no cambian.', again: 'Volver a suscribirme',
+          back: 'Correos reactivados', backBody: 'Volverás a recibir {k}.', bad: 'Este enlace no es válido', badBody: 'Desactiva estos correos en la app: Ajustes, Correos.', fail: 'Algo ha fallado. Inténtalo de nuevo.' },
+    de: { kind: { coach_unread: '„Wenn mein Coach mir schreibt“', coach_digest: '„Zusammenfassung meiner Klienten“' },
+          ask: 'Diese E-Mails abbestellen?', askBody: 'Du erhältst {k} nicht mehr. Die Benachrichtigungen der App bleiben.', stop: 'Abbestellen',
+          done: 'Erledigt', doneBody: 'Du erhältst {k} nicht mehr. Die Benachrichtigungen der App bleiben.', again: 'Wieder abonnieren',
+          back: 'E-Mails wieder aktiv', backBody: 'Du erhältst {k} wieder.', bad: 'Dieser Link ist ungültig', badBody: 'Schalte diese E-Mails in der App ab: Einstellungen, E-Mails.', fail: 'Etwas ist schiefgelaufen. Versuche es erneut.' },
+    it: { kind: { coach_unread: '«Quando il mio coach mi scrive»', coach_digest: '«Riepilogo dei miei clienti»' },
+          ask: 'Non ricevere più queste e-mail?', askBody: 'Non riceverai più {k}. Le notifiche dell’app non cambiano.', stop: 'Non ricevere più',
+          done: 'Fatto', doneBody: 'Non riceverai più {k}. Le notifiche dell’app non cambiano.', again: 'Iscrivimi di nuovo',
+          back: 'E-mail riattivate', backBody: 'Riceverai di nuovo {k}.', bad: 'Questo link non è valido', badBody: 'Disattiva queste e-mail dall’app: Impostazioni, E-mail.', fail: 'Si è verificato un errore. Riprova.' },
+    nl: { kind: { coach_unread: '‘Als mijn coach me schrijft’', coach_digest: '‘Samenvatting van mijn cliënten’' },
+          ask: 'Deze e-mails niet meer ontvangen?', askBody: 'Je ontvangt {k} niet meer. De meldingen van de app blijven.', stop: 'Niet meer ontvangen',
+          done: 'Gelukt', doneBody: 'Je ontvangt {k} niet meer. De meldingen van de app blijven.', again: 'Opnieuw aanmelden',
+          back: 'E-mails weer aan', backBody: 'Je ontvangt {k} weer.', bad: 'Deze link is niet geldig', badBody: 'Zet deze e-mails uit in de app: Instellingen, E-mails.', fail: 'Er ging iets mis. Probeer het opnieuw.' },
+    pt: { kind: { coach_unread: '“Quando meu coach me escreve”', coach_digest: '“Resumo dos meus clientes”' },
+          ask: 'Parar de receber estes e-mails?', askBody: 'Você não vai mais receber {k}. As notificações do app não mudam.', stop: 'Parar de receber',
+          done: 'Pronto', doneBody: 'Você não vai mais receber {k}. As notificações do app não mudam.', again: 'Voltar a receber',
+          back: 'E-mails reativados', backBody: 'Você vai voltar a receber {k}.', bad: 'Este link não é válido', badBody: 'Desative estes e-mails no app: Ajustes, E-mails.', fail: 'Algo deu errado. Tente de novo.' }
+  };
+  var lang = (navigator.language || 'fr').slice(0, 2).toLowerCase();
+  var t = T[lang] || T.fr;
+  document.documentElement.lang = T[lang] ? lang : 'fr';
+  var token = new URLSearchParams(location.search).get('t') || '';
+  var kind = 'coach_unread';
+  try { kind = atob(token.split('.')[0].replace(/-/g, '+').replace(/_/g, '/')).split('.')[1] || kind; } catch (e) { token = ''; }
+  var label = t.kind[kind] || t.kind.coach_unread;
+  var title = document.getElementById('title'), body = document.getElementById('body'), action = document.getElementById('action');
+  var subscribed = true;
+
+  function show(h, b, button, secondary) {
+    title.textContent = h; body.textContent = b.replace('{k}', label);
+    action.hidden = !button; action.textContent = button || ''; action.className = secondary ? 'secondary' : '';
+  }
+  if (!token || !t.kind[kind]) { show(t.bad, t.badBody, null); return; }
+  show(t.ask, t.askBody, t.stop);
+
+  action.addEventListener('click', function () {
+    action.disabled = true;
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ t: token, subscribe: !subscribed }) })
+      .then(function (res) { return res.ok ? res.json() : Promise.reject(res.status); })
+      .then(function (data) {
+        subscribed = data.subscribed === true;
+        if (subscribed) show(t.back, t.backBody, t.stop);
+        else show(t.done, t.doneBody, t.again, true);
+      })
+      .catch(function () { body.textContent = t.fail; body.className = 'error'; })
+      .then(function () { action.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
