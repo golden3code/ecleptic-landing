@@ -1242,7 +1242,7 @@ Pour un premier ordre de grandeur selon ton profil : [combien de calories par jo
 
 ## Ce qui la fait bouger
 
-- **Ton activité :** une séance, mais aussi la somme de tes pas et de tout ce que tu fais debout. Repères : combien de pas par jour et cardio ou muscu pour maigrir.
+- **Ton activité :** une séance, mais aussi la somme de tes pas et de tout ce que tu fais debout. Repères : [combien de pas par jour](https://ecleptic.health/articles/combien-de-pas-par-jour.html) et cardio ou muscu pour maigrir.
 
 - **Ton poids :** un corps plus léger dépense moins. Quand tu maigris, ta dépense baisse avec toi, et en déficit on bouge souvent un peu moins sans s'en rendre compte. Une cible fixée une fois pour toutes finit donc par se tromper.
 
@@ -1279,6 +1279,95 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Combien de pas par jour faut-il vraiment faire ?
+
+URL : https://ecleptic.health/articles/combien-de-pas-par-jour.html
+Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-11-03
+
+Combien de pas par jour faut-il vraiment faire ? Vise 7 000 à 8 000 pas : l'essentiel des bénéfices est là. Les 10 000 pas sont un mythe marketing.
+
+La réponse courte : **vise 7 000 à 8 000 pas par jour**. C'est là que se concentre l'essentiel des bénéfices santé — et non aux fameux 10 000 pas, un chiffre qui n'a rien de scientifique. Au-delà, la courbe des bénéfices s'aplatit peu à peu : marcher plus ne fait pas de mal, mais chaque millier de pas supplémentaire rapporte de moins en moins.
+
+Et si tu es loin du compte, la meilleure nouvelle est ailleurs : **c'est en bas de l'échelle que chaque pas compte le plus**. Passer de 3 000 à 5 000 pas apporte bien plus, proportionnellement, que passer de 9 000 à 11 000.
+
+## D'où viennent les 10 000 pas ?
+
+Pas de la science — d'un **slogan marketing**, comme le rappelait déjà une revue de Tudor-Locke et Bassett en 2004. Dans les années 1960, une entreprise japonaise a lancé un podomètre baptisé « manpo-kei », littéralement « compteur de 10 000 pas ». Le chiffre était rond, accrocheur, facile à retenir. Il est resté, et des décennies plus tard on le prend pour une recommandation médicale. Ça n'en a jamais été une.
+
+Les données modernes racontent une autre histoire. Une méta-analyse de 2025 (57 études) associe 7 000 pas par jour à une mortalité 47 % plus basse qu'à 2 000 pas. Une autre, de 2022 (15 cohortes, 47 471 adultes), situe le plateau vers 6 000-8 000 pas chez les 60 ans et plus, et vers 8 000-10 000 pas avant 60 ans. Le bénéfice dépasse la seule mortalité :
+
+Source : Ding et al., *Lancet Public Health* (2025). Associations observées, pas une garantie individuelle.
+| Risque | 7 000 pas vs 2 000 par jour |
+
+| Mortalité toutes causes | −47 % |
+
+| Maladies cardiovasculaires (nouveaux cas) | −25 % |
+
+| Mortalité par cancer | −37 % |
+
+| Diabète de type 2 | −14 % |
+
+| Démence | −38 % |
+
+| Symptômes dépressifs | −22 % |
+
+## Pourquoi la marche pèse autant
+
+La marche n'a l'air de rien, et c'est justement sa force : c'est une **activité de fond** que tu accumules sans t'en rendre compte, sans récupération à prévoir, tous les jours. Elle est le principal contributeur de ce que les physiologistes appellent le **NEAT** — la dépense énergétique de tous tes mouvements hors sport : marcher, monter les escaliers, faire les courses, bouger au bureau.
+
+Selon le chercheur James Levine, spécialiste du sujet, le NEAT explique la grande majorité de ta [dépense énergétique quotidienne](https://ecleptic.health/articles/combien-de-calories-par-jour.html) hors repos, et c'est souvent lui qui fait la différence entre deux personnes au même entraînement. Quelqu'un qui marche beaucoup dépense chaque jour, sans effort perçu, ce qu'une séance de sport apporterait — sauf que lui le fait sept jours sur sept.
+
+## Même en dessous, tu gagnes
+
+Le message le plus important pour qui part de loin : **même 4 000 pas valent nettement mieux que rester assis**. Chez 16 741 femmes de 72 ans en moyenne, environ 4 400 pas par jour s'associaient déjà à une mortalité 41 % plus basse qu'à 2 700. Il n'existe pas de seuil magique en dessous duquel « ça ne sert à rien ». La relation est continue : chaque tranche de mouvement ajoutée réduit le risque, surtout dans le bas de l'échelle.
+
+- **Sous 5 000 pas :** tu es dans la zone sédentaire. C'est ici que la moindre marche rapporte le plus — commence par ajouter 1 000 à 2 000 pas.
+
+- **7 000 à 8 000 pas :** la cible confortable où l'essentiel des bénéfices est acquis.
+
+- **Au-delà de 10 000 :** aucun mal, mais ne t'inflige pas ce chiffre comme un dogme. La régularité bat la performance ponctuelle.
+
+Un mot sur le rythme : marcher un peu vif — assez pour respirer plus fort sans être essoufflé — peut apporter un petit plus, mais ça reste secondaire face au nombre total de pas. Chez 4 840 adultes américains, la cadence n'était plus liée à la mortalité une fois le total de pas pris en compte. Ne te bloque pas sur l'allure. Pour ajouter des pas sans y penser : descends un arrêt plus tôt, prends les escaliers, cale un appel téléphonique en marchant, ou fais une boucle de dix minutes après chaque repas — ce dernier réflexe peut en plus aider ta glycémie.
+
+## La marche ne remplace pas le reste
+
+Un garde-fou : la marche est une base fantastique, mais elle ne coche pas toutes les cases. Elle ne développe pas la force musculaire, et elle ne pousse pas assez fort ton système cardio-respiratoire pour beaucoup faire monter ton endurance de pointe — pour ça, il faut un peu d'intensité, comme la [zone 2](https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html) et quelques efforts plus soutenus. Vois plutôt la marche comme le socle sur lequel le reste se pose.
+
+Dernier point : si tu marches déjà beaucoup et que tu restes épuisé, le problème est ailleurs — [les vraies causes d'une fatigue qui dure](https://ecleptic.health/articles/toujours-fatigue-causes.html) sont rarement un simple manque de pas.
+
+## Ce qu'il faut retenir
+
+- Vise 7 000 à 8 000 pas par jour : l'essentiel des bénéfices santé est là, la courbe s'aplatit ensuite.
+
+- Les 10 000 pas viennent d'un slogan marketing japonais, pas de la science.
+
+- Même 4 000 pas valent mieux que sédentaire — et c'est en bas de l'échelle que chaque pas compte le plus.
+
+## Questions fréquentes
+
+### Combien de pas par jour pour être en bonne santé ?
+
+Autour de 7 000 à 8 000 pas : c'est là que se concentre l'essentiel des bénéfices santé. Au-delà, la courbe s'aplatit (un peu plus tard avant 60 ans, vers 8 000-10 000) ; en dessous, chaque millier de pas ajouté compte beaucoup, surtout si tu pars de la zone sédentaire.
+
+### Faut-il vraiment faire 10 000 pas par jour ?
+
+Non. Les 10 000 pas viennent d'un slogan publicitaire japonais des années 1960, pas d'une recommandation scientifique. Le gros des bénéfices est déjà acquis vers 7 000-8 000 pas.
+
+### Est-ce que marcher fait maigrir ?
+
+La marche augmente ta dépense de fond (le NEAT), qui pèse dans le total quotidien. Elle aide, mais la perte de gras dépend avant tout du déficit calorique global, pas de la marche seule.
+
+## Sources
+
+- Ding D, Nguyen B, Nau T, et al. Daily steps and health outcomes in adults: a systematic review and dose-response meta-analysis. *Lancet Public Health*. 2025. — https://doi.org/10.1016/S2468-2667(25)00164-1
+- Paluch AE, Bajpai S, Bassett DR, et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. *Lancet Public Health*. 2022. — https://doi.org/10.1016/S2468-2667(21)00302-9
+- Lee IM, Shiroma EJ, Kamada M, et al. Association of step volume and intensity with all-cause mortality in older women. *JAMA Intern Med*. 2019. — https://doi.org/10.1001/jamainternmed.2019.0899
+- Saint-Maurice PF, Troiano RP, Bassett DR, et al. Association of daily step count and step intensity with mortality among US adults. *JAMA*. 2020. — https://doi.org/10.1001/jama.2020.1382
+- Tudor-Locke C, Bassett DR. How many steps/day are enough? Preliminary pedometer indices for public health. *Sports Med*. 2004. — https://doi.org/10.2165/00007256-200434010-00001
+- Levine JA. Non-exercise activity thermogenesis (NEAT). *Best Pract Res Clin Endocrinol Metab*. 2002. — https://doi.org/10.1053/beem.2002.0227
 
 ---
 
@@ -2290,7 +2379,7 @@ Une revue de 2005 parue dans *Clinics in Sports Medicine* résume bien le tablea
 
 - **Des portions raisonnables.** Un plat gargantuesque garantit la sieste involontaire. Manger à sa faim, pas au-delà, change tout l'après-midi.
 
-- **Une marche de 10 à 15 minutes après le repas.** Bouger juste après manger aide les muscles à capter le glucose et écrête le pic. Une méta-analyse de 2023 (8 essais randomisés, 116 participants) montre que l'exercice fait après le repas réduit le pic de glycémie, contrairement à celui fait avant, et d'autant mieux qu'on s'y met tôt. L'un des gestes les plus efficaces et les plus sous-estimés (et ça compte dans ton total de pas du jour).
+- **Une marche de 10 à 15 minutes après le repas.** Bouger juste après manger aide les muscles à capter le glucose et écrête le pic. Une méta-analyse de 2023 (8 essais randomisés, 116 participants) montre que l'exercice fait après le repas réduit le pic de glycémie, contrairement à celui fait avant, et d'autant mieux qu'on s'y met tôt. L'un des gestes les plus efficaces et les plus sous-estimés (et ça compte dans ton [total de pas du jour](https://ecleptic.health/articles/combien-de-pas-par-jour.html)).
 
 - **De la lumière et du mouvement.** Sortir dehors, s'exposer à la lumière vive et faire circuler le sang réveille le système nerveux mieux qu'un troisième café.
 
@@ -2790,7 +2879,7 @@ C'est exactement cette logique qui sert de base quand on veut [calculer un défi
 
 - **Ta masse musculaire.** Plus tu as de muscle, plus ton métabolisme de base est haut, même au repos — un des intérêts long terme de la musculation, et une raison de [manger assez de protéines](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html).
 
-- **Ton activité de fond.** Dans une étude publiée dans *Science* (2005), des personnes en surpoids restaient assises 2 heures de plus par jour que des personnes minces : environ 350 kcal de dépense en moins par jour. Le nombre de pas quotidiens pèse souvent plus lourd que la séance elle-même.
+- **Ton activité de fond.** Dans une étude publiée dans *Science* (2005), des personnes en surpoids restaient assises 2 heures de plus par jour que des personnes minces : environ 350 kcal de dépense en moins par jour. [Le nombre de pas quotidiens](https://ecleptic.health/articles/combien-de-pas-par-jour.html) pèse souvent plus lourd que la séance elle-même.
 
 - **L'âge.** Moins qu'on ne le croit : selon une vaste étude publiée dans *Science* (2021), à masse maigre égale, la dépense reste stable de 20 à 60 ans et ne recule qu'ensuite. Ce qui baisse avant, c'est surtout le muscle et le mouvement — deux choses en partie sous ton contrôle.
 
