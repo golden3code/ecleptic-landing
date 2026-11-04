@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-01 -->
+<!-- version-fr: 2026-11-04 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 1 November 2026**
+**Last updated: 4 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -10,7 +10,7 @@ This policy describes how the **Ecleptic** application (the "Application") proce
 
 - **Data controller**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**
 - **Address**: 10 Rue du Commerce, 86400 Civray, France
-- **SIREN**: registration in progress — it will be added here as soon as it is obtained.
+- **SIREN**: 132 170 234
 - **Privacy contact**: contact@ecleptic.app
 - **Data protection officer (DPO)**: not appointed to date.
 

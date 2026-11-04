@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-01 -->
+<!-- version-fr: 2026-11-04 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 1 November 2026**
+**Last updated: 4 November 2026**
 
 ---
 
@@ -11,8 +11,8 @@
 The **Ecleptic** application and services (the "Application") are published by:
 
 - **Publisher**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**, operating in a personal capacity
-- **Registration status**: registration in progress — the SIREN number will be added here as soon as it is issued. No paid offer is sold before this registration.
-- **EU VAT number**: VAT not applicable, article 293 B of the French General Tax Code (VAT exemption scheme) — to be confirmed upon registration.
+- **SIREN**: 132 170 234 (SIRET of the head office: 132 170 234 00018)
+- **EU VAT number**: VAT not applicable, article 293 B of the French General Tax Code (VAT exemption scheme).
 - **Business address**: 10 Rue du Commerce, 86400 Civray, France
 - **Contact email**: contact@ecleptic.app
 - **Publication director**: Auguste Phily-Priou
