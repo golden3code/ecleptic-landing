@@ -10,7 +10,7 @@ This policy describes how the **Ecleptic** application (the "Application") proce
 
 - **Data controller**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**
 - **Address**: 10 Rue du Commerce, 86400 Civray, France
-- **SIREN**: 132 170 234
+- **SIREN**: 132 170 234 R.C.S. Poitiers
 - **Privacy contact**: contact@ecleptic.app
 - **Data protection officer (DPO)**: not appointed to date.
 

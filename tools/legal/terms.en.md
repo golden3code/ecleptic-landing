@@ -11,7 +11,7 @@
 The **Ecleptic** application and services (the "Application") are published by:
 
 - **Publisher**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**, operating in a personal capacity
-- **SIREN**: 132 170 234 (SIRET of the head office: 132 170 234 00018)
+- **SIREN**: 132 170 234 R.C.S. Poitiers (Poitiers Trade and Companies Register; SIRET of the head office: 132 170 234 00018)
 - **EU VAT number**: VAT not applicable, article 293 B of the French General Tax Code (VAT exemption scheme).
 - **Business address**: 10 Rue du Commerce, 86400 Civray, France
 - **Contact email**: contact@ecleptic.app
