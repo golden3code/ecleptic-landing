@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>Retour dans Ecleptic</title>
+<!--
+  Retour de Stripe vers l'app (PLAN-ESPACE-COACH.md §18) : inscription d'un coach (lot F7.1) ou
+  paiement d'une formule par un élève (lot F7.3, « ?achat=<achat> », « &annule=1 » s'il a renoncé).
+  L'app relit tout elle-même. La page renvoie vers l'app par son schéma, ce qui ferme la session de
+  navigateur ; « ?relancer=1 » (lien d'inscription expiré) est transmis tel quel.
+  À la mise en ligne : copier vers landing/stripe/retour.html (servie sur https://ecleptic.health/stripe/retour).
+  Hors des liens universels (apple-app-site-association) : la page doit s'afficher, pas ouvrir l'app.
+-->
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:32px max(20px,env(safe-area-inset-right)) 32px max(20px,env(safe-area-inset-left))}
+  main{max-width:420px;text-align:center}
+  h1{font-weight:200;font-size:30px;letter-spacing:.04em;text-transform:uppercase;text-wrap:balance}
+  p{margin-top:14px;color:var(--muted);font-size:16px}
+  a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:28px;padding:0 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">C'est noté</h1>
+  <p id="body">Reviens dans l'app Ecleptic : l'état de ton compte Stripe se met à jour tout seul.</p>
+  <a id="back" href="golden3://stripe-retour">Revenir dans Ecleptic</a>
+</main>
+<script>
+(function(){
+  var q = location.search;
+  var again = /[?&]relancer=1(?:&|$)/.test(q);
+  var buy = (q.match(/[?&]achat=([0-9a-f-]{36})(?:&|$)/i) || [])[1] || null;
+  // Lot F7.10 : facture de séance payée en ligne, carte mise à jour.
+  var invoice = (q.match(/[?&]facture=([0-9a-f-]{36})(?:&|$)/i) || [])[1] || null;
+  var card = /[?&]carte=1(?:&|$)/.test(q);
+  var cancelled = (buy || invoice) && /[?&]annule=1(?:&|$)/.test(q);
+  var target = buy
+    ? 'golden3://stripe-paiement?achat=' + buy + (cancelled ? '&annule=1' : '')
+    : invoice
+      ? 'golden3://stripe-paiement?facture=' + invoice + (cancelled ? '&annule=1' : '')
+      : card
+        ? 'golden3://stripe-carte'
+        : 'golden3://stripe-retour' + (again ? '?relancer=1' : '');
+  var paying = buy || invoice;
+  var fr = /^fr\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || 'fr');
+  var t = fr
+    ? { title: card ? 'Carte enregistrée' : paying ? (cancelled ? 'Paiement annulé' : 'Paiement envoyé') : again ? 'Lien expiré' : "C'est noté",
+        body: card ? "Reviens dans l'app Ecleptic : Stripe réessaie ton paiement avec cette carte." : paying
+          ? (cancelled ? "Rien n'a été payé. Reviens dans l'app Ecleptic." : "Reviens dans l'app Ecleptic : ton achat s'affiche dès que Stripe l'a confirmé.")
+          : again ? "Le lien de Stripe a expiré. Reviens dans l'app Ecleptic : un nouveau lien s'ouvre." : "Reviens dans l'app Ecleptic : l'état de ton compte Stripe se met à jour tout seul.",
+        back: 'Revenir dans Ecleptic' }
+    : { title: card ? 'Card saved' : paying ? (cancelled ? 'Payment cancelled' : 'Payment sent') : again ? 'Link expired' : 'All set',
+        body: card ? 'Go back to the Ecleptic app: Stripe retries your payment with this card.' : paying
+          ? (cancelled ? 'Nothing was charged. Go back to the Ecleptic app.' : 'Go back to the Ecleptic app: your purchase shows up as soon as Stripe confirms it.')
+          : again ? 'The Stripe link has expired. Go back to the Ecleptic app: a new link opens.' : 'Go back to the Ecleptic app: your Stripe account status updates on its own.',
+        back: 'Back to Ecleptic' };
+  document.documentElement.lang = fr ? 'fr' : 'en';
+  document.title = fr ? 'Retour dans Ecleptic' : 'Back to Ecleptic';
+  document.getElementById('title').textContent = t.title;
+  document.getElementById('body').textContent = t.body;
+  var back = document.getElementById('back');
+  back.textContent = t.back;
+  back.href = target;
+  setTimeout(function(){ location.replace(target); }, 250);
+})();
+</script>
+</body>
+</html>
