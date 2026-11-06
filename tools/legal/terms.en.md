@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-04 -->
+<!-- version-fr: 2026-11-06 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 4 November 2026**
+**Last updated: 6 November 2026**
 
 ---
 
@@ -279,7 +279,7 @@ The processing of Users' personal data, including health data, is described in t
 
 17.2. In the event of a dispute, the User is invited to contact the Publisher first (email in article 1) in order to seek an amicable solution.
 
-17.3. **Consumer mediation**: in accordance with articles L612-1 et seq. of the French Consumer Code, a consumer User may refer the matter free of charge to a consumer mediator: **[TO BE COMPLETED: name, contact details and website of the designated mediator — designation required before any sale]**.
+17.3. **Consumer mediation**: in accordance with articles L612-1 et seq. of the French Consumer Code, a consumer User may, after a written complaint to the Publisher that has not been resolved and within one year of that complaint, refer the matter free of charge to the consumer mediator the Publisher belongs to: **CM2C – Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris, France – telephone +33 1 89 47 00 14 – litiges@cm2c.net – online referral: https://www.cm2c.net/declarer-un-litige.php**.
 
 17.4. Failing an amicable solution, the competent French courts under ordinary law may hear the dispute; a consumer may bring the matter, at the consumer's choice, before any of the courts with territorial jurisdiction under the French Code of Civil Procedure or the French Consumer Code.
 

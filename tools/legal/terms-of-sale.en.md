@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-04 -->
+<!-- version-fr: 2026-11-06 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGV.md. Update it, and the date above, every time the French Terms of Sale change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Sale — Ecleptic
 
-**Last updated: 4 November 2026**
+**Last updated: 6 November 2026**
 
 ---
 
@@ -146,7 +146,7 @@ Neither party shall be liable for a failure to perform its obligations caused by
 
 12.1. **Customer service**: any complaint may be sent to the contact email given in article 1; the Seller endeavours to reply within 7 working days.
 
-12.2. **Consumer mediator** (article L612-1 of the French Consumer Code): after a prior written complaint to the Seller that has not been resolved, the Customer may refer the matter free of charge to the following mediator: **[TO BE COMPLETED: name, address, website — membership of a mediation scheme is mandatory before any sale]**.
+12.2. **Consumer mediator** (articles L612-1 et seq. of the French Consumer Code): after a written complaint to the Seller (email in article 1) that has not been resolved, a consumer Customer may, within one year of that complaint, refer the matter free of charge to the consumer mediator the Seller belongs to: **CM2C – Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris, France – telephone +33 1 89 47 00 14 – litiges@cm2c.net – online referral: https://www.cm2c.net/declarer-un-litige.php**. The request is inadmissible in particular if the dispute has already been examined or is being examined by another mediator or by a court, or if it is manifestly unfounded or abusive (article L612-2 of the French Consumer Code).
 
 12.3. **Governing law and jurisdiction**: these Terms of Sale are governed by **French law**, without depriving a consumer residing in another EU Member State of the mandatory provisions of the law of that consumer's country. Failing an amicable agreement, the courts with jurisdiction under ordinary law may hear the dispute; the consumer benefits from the protective jurisdiction rules of the French Consumer Code and, where applicable, of Regulation (EU) No 1215/2012.
 
