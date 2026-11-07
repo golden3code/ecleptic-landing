@@ -1049,7 +1049,7 @@ Le principe tient en trois mots : **toi contre toi**. Une HRV de 45 ms peut êtr
 
 Parce que l'écart entre deux personnes est bien plus grand que les variations d'une même personne d'un jour à l'autre. L'âge, la génétique et la condition physique fixent le niveau de tes signaux. La [variabilité cardiaque](https://ecleptic.health/methode/variabilite-cardiaque.html) en est l'exemple parfait : ses valeurs normales s'étalent sur une plage très large d'un adulte à l'autre.
 
-Comparer ta HRV à une moyenne de population, c'est surtout mesurer qui tu es. La comparer à ta ligne de base, c'est mesurer **ce qui a changé cette nuit**, et c'est exactement ce qui renseigne sur ta récupération. C'est aussi l'approche défendue par la recherche sur le suivi des athlètes : raisonner par rapport à ses propres valeurs, et en tendance.
+Comparer ta HRV à une moyenne de population, c'est surtout mesurer qui tu es. La comparer à ta ligne de base, c'est mesurer **ce qui a changé cette nuit**, et c'est exactement ce qui renseigne sur [ta récupération](https://ecleptic.health/articles/comment-savoir-si-on-est-bien-recupere.html). C'est aussi l'approche défendue par la recherche sur le suivi des athlètes : raisonner par rapport à ses propres valeurs, et en tendance.
 
 ## Comment l'app la calcule
 
@@ -1279,6 +1279,93 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Comment savoir si tu es bien récupéré ?
+
+URL : https://ecleptic.health/articles/comment-savoir-si-on-est-bien-recupere.html
+Thème : Readiness · Auteur : Auguste Phily-Priou · Publié le 2026-11-07
+
+Comment savoir si tu es bien récupéré : les signaux du matin (cœur de repos, HRV, sommeil) et le test de la performance pour t'entraîner au bon moment.
+
+La réponse courte : tu es bien récupéré quand tes **signaux du matin sont revenus à ta normale** et que ton corps a de nouveau envie de bouger. Concrètement : fréquence cardiaque de repos et variabilité cardiaque dans leurs valeurs habituelles, une nuit qui t'a réparé, des courbatures qui s'estompent, et cette sensation de fraîcheur qui donne envie d'y aller.
+
+Le meilleur juge n'est pas ta seule motivation du matin — elle ment dans les deux sens — mais un petit faisceau d'indices, mesurés et ressentis. Pris ensemble, ils te disent bien plus honnêtement où tu en es qu'une impression au saut du lit.
+
+## Les signaux du matin
+
+- **Ta fréquence cardiaque de repos est revenue à ta base.** Encore élevée de plusieurs battements ? La récupération n'est pas finie. Pour savoir lire ce chiffre, vois [la fréquence cardiaque au repos normale](https://ecleptic.health/articles/frequence-cardiaque-repos-normale.html).
+
+- **Ta variabilité cardiaque est dans ta zone habituelle.** La [HRV](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) reflète l'état de ton système nerveux : revenue à ta normale, c'est bon signe. Basse plusieurs jours de suite, elle trahit le plus souvent une fatigue qui persiste.
+
+- **Ta nuit t'a réparé.** Un [sommeil suffisant](https://ecleptic.health/articles/combien-heures-sommeil-par-nuit.html) et de qualité est le carburant nº1 de la récupération : sans lui, aucun des autres voyants ne passera au vert.
+
+- **Tes courbatures se sont résorbées** et tu n'as plus cette raideur qui bride tes mouvements.
+
+- **Tu as envie de bouger.** Ce n'est pas rien : une baisse durable d'envie et d'humeur est un vrai marqueur de sous-récupération. Une revue systématique de 2016 (56 études) a même montré que les questionnaires de ressenti — humeur, stress, fatigue perçue — suivent la charge d'entraînement plus finement que la plupart des mesures objectives.
+
+## Le test qui ne trompe pas : la performance
+
+Les capteurs, c'est bien ; la vérité du terrain, c'est mieux. Le signe le plus fiable que tu as encaissé ta charge, c'est que **tes performances tiennent** :
+
+- Ta **force** est stable ou en hausse sur tes mouvements de référence.
+
+- Tes **allures** habituelles te paraissent aussi faciles qu'avant — pas d'effort anormalement pénible pour le même rythme.
+
+- Tes séances faciles te semblent... faciles.
+
+À l'inverse, quand une allure d'ordinaire confortable te paraît pénible, le corps te dit clairement qu'il n'a pas fini de récupérer. La performance stable ou en progression est le juge de paix — tout le reste n'est qu'indice. Un test tout bête et redoutable : refais un effort de référence que tu connais par cœur — la même côte, la même série au même poids — et compare la sensation. Là-dessus, ton corps ne triche pas.
+
+## Les signaux qui disent l'inverse
+
+Sache aussi reconnaître les voyants rouges, pour ne pas les prendre pour un simple manque de motivation :
+
+- Une **FC de repos qui reste haute** plusieurs matins d'affilée.
+
+- Un **sommeil qui se dégrade** alors que tu t'entraînes dur — paradoxal, mais typique de la surcharge.
+
+- Une **irritabilité**, une lassitude, des petites douleurs qui traînent.
+
+Quand ces signes s'accumulent, ce n'est plus de la fatigue passagère : tu entres dans le domaine du **surmenage**, et le seul remède est le repos. Ignorer ces voyants, c'est le meilleur moyen de creuser un trou dont on met des semaines à sortir.
+
+## Un signal isolé ne suffit pas
+
+Attention à ne pas surinterpréter un seul chiffre un seul matin. Ta HRV peut plonger après un repas très arrosé sans que ta récupération de fond soit en cause ; ta FC de repos peut grimper simplement parce que la chambre était trop chaude. Ce qui compte, c'est la **convergence** : quand plusieurs signaux pointent dans la même direction pendant deux ou trois jours, le message est fiable. Un voyant isolé, lui, est du bruit — lis la tendance, pas le point. Les spécialistes de la HRV conseillent d'ailleurs de raisonner sur une moyenne de plusieurs jours. Et le sens peut surprendre : chez des triathlètes en surcharge, une étude de 2013 a observé une FC de repos plus basse et une HRV plus haute. Le consensus 2013 des sociétés européenne et américaine de médecine du sport (ECSS et ACSM) le résume : aucun marqueur ne suffit seul à trancher — d'où l'intérêt de toujours croiser avec la performance.
+
+## Un seul chiffre pour tout résumer
+
+Suivre chaque marqueur à la main, c'est possible mais fastidieux. L'intérêt d'un [score de préparation](https://ecleptic.health/articles/readiness-score-comment-ca-marche.html), c'est justement d'**agréger** tout ça — cœur de repos, HRV, sommeil, charge des jours précédents — en un seul indicateur lisible au réveil. La logique est celle d'un feu tricolore : **vert**, ton corps est prêt, tu peux pousser fort et attaquer une séance dure ; **orange**, tu t'entraînes mais sans chercher l'exploit ; **rouge**, la récupération n'est pas là, lève le pied ou repose-toi. Le score ne remplace pas ton ressenti — il le met en face de tes données, pour t'éviter de forcer un jour où il fallait souffler, ou de te ménager un jour où tu étais parfaitement frais.
+
+## Ce qu'il faut retenir
+
+- Bien récupéré = FC de repos et HRV revenues à ta normale, sommeil réparateur, courbatures parties, envie de bouger.
+
+- Le test le plus fiable reste la performance : force et allures stables ou en hausse, séances faciles vécues comme faciles.
+
+- FC haute, sommeil dégradé et irritabilité qui durent = surmenage : repos. Un score de préparation résume tout ça d'un coup d'œil.
+
+## Questions fréquentes
+
+### Comment savoir si on est bien récupéré ?
+
+Quand tes signaux du matin sont revenus à ta normale : fréquence cardiaque de repos et variabilité cardiaque habituelles, sommeil réparateur, courbatures résorbées et envie de bouger. Le meilleur test reste une performance stable ou en hausse.
+
+### Quels signes montrent qu'on n'a pas assez récupéré ?
+
+Une fréquence cardiaque de repos élevée plusieurs matins de suite, un sommeil qui se dégrade malgré l'entraînement, de l'irritabilité et des allures habituelles qui paraissent pénibles. Accumulés, ces signes évoquent un surmenage : la réponse est le repos.
+
+### Combien de temps faut-il pour bien récupérer ?
+
+Ça dépend de la charge, du sommeil et de l'individu : quelques heures après une séance facile, un à trois jours après une grosse séance. Fie-toi à tes signaux du matin plutôt qu'à un délai fixe.
+
+## Sources
+
+- Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. *Med Sci Sports Exerc*. 2013. — https://doi.org/10.1249/MSS.0b013e318279a10a
+- Saw AE, Main LC, Gastin PB. Monitoring the athlete training response: subjective self-reported measures trump commonly used objective measures: a systematic review. *Br J Sports Med*. 2016. — https://doi.org/10.1136/bjsports-2015-094758
+- Plews DJ, Laursen PB, Stanley J, et al. Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring. *Sports Med*. 2013. — https://doi.org/10.1007/s40279-013-0071-8
+- Le Meur Y, Pichon A, Schaal K, et al. Evidence of parasympathetic hyperactivity in functionally overreached athletes. *Med Sci Sports Exerc*. 2013. — https://doi.org/10.1249/MSS.0b013e3182980125
+- Kellmann M, Bertollo M, Bosquet L, et al. Recovery and performance in sport: consensus statement. *Int J Sports Physiol Perform*. 2018. — https://doi.org/10.1123/ijspp.2017-0759
 
 ---
 
