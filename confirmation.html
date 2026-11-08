@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Adresse confirmée — Ecleptic</title>
+<!--
+  Page de retour de la confirmation d'e-mail (Supabase Auth, 08/11/2026).
+  La Site URL de Supabase pointe ici : après « Confirmer mon adresse » (e-mail
+  envoyé à l'inscription ou au renvoi depuis l'app), Supabase redirige vers
+  cette page avec ?code=… (PKCE : inutilisable sans l'app) ou, si le lien a
+  expiré ou déjà servi, avec ?error=…&error_code=… (ou dans le fragment #).
+  La page ne fait rien du code : elle l'efface de la barre d'adresse et dit
+  quoi faire. Aucune mesure d'audience ici : le code ne part nulle part.
+  La console coach a sa propre page de retour (coach.ecleptic.health/auth/retour).
+-->
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;min-height:100vh;display:flex;align-items:center}
+  .wrap{max-width:520px;margin:0 auto;padding:48px 20px;text-align:center;width:100%}
+  .mark{width:64px;height:64px;border-radius:16px;margin:0 auto 20px;display:block}
+  .badge{width:44px;height:44px;margin:0 auto 18px;display:block}
+  h1{font-size:26px;line-height:1.3;margin-bottom:10px}
+  p{font-size:16px;color:#CFC5B0;margin:8px 0}
+  .btns{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+  a.btn{display:block;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:600;font-size:16px}
+  a.primary{background:var(--gold);color:#1A1407}
+  a.secondary{border:1px solid var(--line);color:var(--ink)}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <img class="mark" src="/apple-touch-icon.png" alt="">
+  <div id="ok">
+    <svg class="badge" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="#D9A441" stroke-width="2.5"/><path d="M13 22.5l6 6 12-13" fill="none" stroke="#D9A441" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <h1 id="title">Ton adresse e-mail est confirmée</h1>
+  <p id="lead">Retourne dans l’app Ecleptic et connecte-toi.</p>
+  <div class="btns">
+    <a class="btn primary" id="open" href="golden3://" hidden>Ouvrir Ecleptic</a>
+    <a class="btn secondary" id="home" href="/">Accueil du site</a>
+  </div>
+</main>
+<script>
+(function () {
+  var fr = /^fr\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || 'fr');
+  var T = fr ? {
+    ok: ['Ton adresse e-mail est confirmée', 'Retourne dans l’app Ecleptic et connecte-toi.', 'Adresse confirmée'],
+    ko: ['Ce lien a expiré ou a déjà servi', 'Si ton adresse est déjà confirmée, connecte-toi dans l’app. Sinon, demande un nouveau lien depuis l’écran de connexion.', 'Lien expiré'],
+    open: 'Ouvrir Ecleptic', home: 'Accueil du site', homeHref: '/'
+  } : {
+    ok: ['Your email address is confirmed', 'Go back to the Ecleptic app and sign in.', 'Email confirmed'],
+    ko: ['This link has expired or was already used', 'If your address is already confirmed, sign in to the app. Otherwise, request a new link from the sign-in screen.', 'Link expired'],
+    open: 'Open Ecleptic', home: 'Website home', homeHref: '/en/'
+  };
+
+  // Retour de Supabase : paramètres dans la requête (PKCE) ou dans le fragment.
+  var params = new URLSearchParams(location.search);
+  new URLSearchParams(location.hash.replace(/^#/, '')).forEach(function (v, k) { params.set(k, v); });
+  var failed = params.has('error') || params.has('error_code') || params.has('error_description');
+  // Ni le code ni l'erreur ne restent dans la barre d'adresse ou l'historique.
+  if (location.search || location.hash) history.replaceState(null, '', location.pathname);
+
+  var t = failed ? T.ko : T.ok;
+  var $ = function (id) { return document.getElementById(id); };
+  document.documentElement.lang = fr ? 'fr' : 'en';
+  document.title = t[2] + ' — Ecleptic';
+  $('title').textContent = t[0];
+  $('lead').textContent = t[1];
+  $('ok').hidden = failed;
+  $('home').textContent = T.home;
+  $('home').href = T.homeHref;
+
+  // L'app ne s'ouvre que sur un téléphone ou une tablette où elle est installée.
+  var ua = navigator.userAgent || '';
+  var mobile = /iPhone|iPad|iPod|Android/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var open = $('open');
+  open.textContent = T.open;
+  open.hidden = !mobile;
+})();
+</script>
+</body>
+</html>
