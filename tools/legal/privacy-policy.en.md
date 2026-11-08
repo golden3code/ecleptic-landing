@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-04 -->
+<!-- version-fr: 2026-11-08 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 4 November 2026**
+**Last updated: 8 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -40,7 +40,7 @@ Subscriptions are purchased in-app through the App Store (iPhone) or Google Play
 
 ### 2.4. Technical and usage data
 
-Technical account identifier, sign-in timestamps and server-side technical logs (security, usage quotas for AI features, errors and processing times). **Usage statistics**: the Application records usage events (screen shown, onboarding step completed, feature used, error encountered), attached to a **random installation identifier**, unrelated to the account, renewed at every sign-out and at least every 13 months. These events **never** contain health data (no weight, heart rate, calories, score, biological age or questionnaire answer) or any text you typed (food search, message to Eos, meal title). They only carry categories (for example "meal logged by photo") and technical information (app and system version — iOS or Android —, platform, device model, language, device region). No IP address is stored. No advertising tool is built in.
+Technical account identifier, sign-in timestamps and server-side technical logs (security, usage quotas for AI features, errors and processing times). **Usage statistics**: the Application records usage events (screen shown, onboarding step completed, feature used, error encountered), attached to a **random installation identifier**, unrelated to the account, renewed at every sign-out and at least every 13 months. These events **never** contain health data (no weight, heart rate, calories, score, biological age or questionnaire answer) or any text you typed (food search, message to Eos, meal title). They only carry categories (for example "meal logged by photo") and technical information (app and system version — iOS or Android —, platform, device model, language, device region). The IP address is not stored: to prevent abusive submissions, only a salted fingerprint of the address is used to count the submissions of the hour, with no link to the events, and it is deleted after 2 hours at most. No advertising tool is built in.
 
 ### 2.5. Mandatory or optional data
 
@@ -92,7 +92,7 @@ The **Society** is the Application's social space. It is **optional** and **off 
 
 - **Profile**: nickname, generated avatar (an initial and a colour), visibility settings, anonymous mode, age group (adult, minor or unknown) calculated from the date of birth, status (Legend, Founder, league division, month of arrival), featured specialities and records, figures for the year and the last 4 weeks.
 - **Profile photo** (optional): cropped to a 512-pixel square and compressed on the phone, stored in a private space with no public address. Visible to partners by default.
-- **Partners and feed**: partner code and QR code, requests, partnerships, reactions. In the feed and on the profile, a workout shows the sport, the day (without the time), the duration, the distance, the place or zone if places are visible, records and reactions. The "Don't show this session on my public profile" box removes it from the profile and the feed; it still counts in challenges, the league and boards, which only show totals.
+- **Partners and feed**: partner code and QR code, requests, partnerships, reactions. In the feed and on the profile, a workout shows the sport, the day (without the time), the duration, the distance, the figures specific to its sport (elevation gain, score and result of a match, ski runs, routes and grades in climbing, score of a WOD or a Hyrox, number of sets), the place or zone if places are visible, records and reactions. These figures are only shared with the consent given on this version; heart rate, calories, how the session felt and loads are never part of them. The "Don't show this session on my public profile" box removes it from the profile and the feed; it still counts in challenges, the league and boards, which only show totals.
 - **Challenges**: duels, Expeditions (groups of 3 to 6) and public challenges, including the Défi de l'Optimisateur: participation, progress and result. Joining a public challenge shows the nickname on its board, except in anonymous mode.
 - **Place and spot boards**, place by place and on agreement when entering: values, rank and month of each record, never the time, the day or the session. Crowns, Founders, frozen monthly seasons and the hall of fame derive from them. Some boards are split by category (women, men, all), based on the sex entered in the profile.
 - **Witnesses**: an adult partner present at the same place can confirm a performance; each then sees the other's request.

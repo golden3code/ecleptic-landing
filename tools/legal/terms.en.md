@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-06 -->
+<!-- version-fr: 2026-11-08 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 6 November 2026**
+**Last updated: 8 November 2026**
 
 ---
 
@@ -109,7 +109,7 @@ Activation constitutes **explicit consent** to the sharing, with the people chos
 
 The nickname, the profile photo and the proof videos are content published by the User, under the User's responsibility. The User warrants holding the necessary rights, in particular the image rights of the people shown. The User grants the Publisher, free of charge, on a non-exclusive basis and only for as long as they remain online, the right to host them, to adapt them technically (cropping, compression) and to display them to authorised persons. The Society has no public free text and no workout photo. Messages between members are covered by article 9 bis.20.
 
-**Ecleptic tolerates no objectionable content and no abusive behaviour.** The profile photo is not filtered by artificial intelligence: it is checked after a report. A report hides it immediately until a moderator decides. Three confirmed removals deprive the User of a photo for 90 days.
+**Ecleptic tolerates no objectionable content and no abusive behaviour.** The profile photo is not filtered by artificial intelligence: it is checked after a report. Every report is reviewed by a moderator; once three different members have reported it, it is hidden straight away until the moderator decides. Three confirmed removals deprive the User of a photo for 90 days.
 
 ### 9 bis.4. What is never published
 
