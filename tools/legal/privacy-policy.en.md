@@ -71,7 +71,7 @@ These contributions relate to what the user eats: they receive the same treatmen
 - is **never sold**, nor transferred to advertising platforms, data brokers or information resellers;
 - is **never used for advertising**, personalised or not;
 - is never used to assess creditworthiness or for lending, nor with a product or service that may qualify as a medical device, nor in any processing of protected health information within the meaning of the US HIPAA law;
-- is only transferred to a third party with the user's **explicit consent**, for security purposes, to comply with the law, or as part of a merger or acquisition the user would be informed of. The technical providers in article 4 process it on the publisher's behalf, with no right to use it for themselves. In particular, when the user requests a report or asks **Eos** (the AI assistant) a question, a summary of their measurements, without name, email or identifier, is sent to the AI providers in article 4 (Google, Anthropic): this is stated on the screen shown before the Health Connect permission;
+- is only transferred to a third party with the user's **explicit consent**, for security purposes, to comply with the law, or as part of a merger or acquisition the user would be informed of. The technical providers in article 4 process it on the publisher's behalf, with no right to use it for themselves. In particular, when the user requests a report or asks **Eos** (the AI assistant) a question, a summary of their measurements, without name, email or identifier, is sent to the AI providers in article 4 (Google, Anthropic): this, like the photos sent by meal and label scanning, only happens after the "AI analysis" consent, asked on a dedicated screen before first use (what is sent, to whom, what never is) and withdrawable at any time in My profile › Data and privacy;
 - is **read by no human**, except with the user's explicit consent (for example to handle a support request they send), for security purposes, to comply with the law, or in aggregated and anonymous form for internal operations.
 
 **Withdrawal.** The user can withdraw the Application's access at any time in Health Connect (or in Apple Health): reading stops immediately. Data already imported stays in their Account until they delete it or delete their Account (article 6); they can also ask for it to be erased through the contact in article 1.
@@ -133,6 +133,7 @@ Message notifications do not count towards the limit of 3 per day in article 2.1
 |---|---|---|
 | Creating and managing the account, providing the Services | Account data | Performance of the contract (art. 6.1.b) |
 | Health/wellness tracking features, personalised calculations and recommendations | Health data (2.2) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**) |
+| Sending to the AI providers (Google, Anthropic) for meal and label scanning and for Eos | Scan photo and names of the foods recognised; numeric summary of nights, workouts, meals and measurements, age, sex, weight, goal and messages sent to Eos, without name, email or identifier | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), collected on the "AI analysis" screen before first use; withdrawable at any time in My profile › Data and privacy, which stops any further sending |
 | Label reading, private entries, corrections and reports; publisher review of the contributions the user submits | Contributions (2.6) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given by the act of photographing, saving or submitting for review |
 | Publication in the shared food database of approved values | A product's nutritional values, with no link to the account | Legitimate interest (6.1.f — reliability of the food database); licence in article 10.5 of the Terms of Use |
 | Origin, level of proof, removing duplicate workouts | Origin (2.8) | Performance of the contract (6.1.b); explicit consent to health data already collected (art. 9.2.a) |
@@ -165,8 +166,8 @@ The data is accessible to the data controller and, within the limits of their ta
 | Provider | Role | Location |
 |---|---|---|
 | Supabase, Inc. | Database hosting, authentication, photo storage, server-side processing | European Union (Ireland) |
-| Google LLC (Gemini models) | AI processing: meal analysis, nutrition label reading, Eos (AI assistant) reports and conversations | United States |
-| Anthropic, PBC (Claude models) | AI processing: photo analysis (meals, body composition), Eos reports. Body scan photos are sent to it only for the duration of the analysis. Anthropic erases them within 30 days and does not use them to train its models | United States |
+| Google LLC (Gemini models) | AI processing, after the "AI analysis" consent: meal analysis (photo, food recognition), nutrition label reading, Eos (AI assistant) conversations | United States |
+| Anthropic, PBC (Claude models) | AI processing: meal photo analysis and Eos reports, with their long-term memory, after the "AI analysis" consent; body composition, after its own consent. Body scan photos are sent to it only for the duration of the analysis. Anthropic erases them within 30 days and does not use them to train its models | United States |
 | RevenueCat, Inc. | Subscription status management (no card data) | United States |
 | Apple Inc. | Distribution of the Application on iPhone, collection of App Store in-app purchases | United States / Ireland |
 | Google (Google Play) | Distribution of the Application on Android, collection of in-app purchases (Google Play Billing) | United States / Ireland |
