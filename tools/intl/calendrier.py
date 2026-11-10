@@ -44,11 +44,11 @@ for i, x in enumerate(order):
 
 out = []
 out.append("# Calendrier proposé : guides pour coachs en espagnol, allemand, italien, néerlandais, portugais\n")
-out.append("Proposition du 10/11/2026 (lot L10). Rien n'est en ligne : la branche `feat/guides-coachs-5-langues` "
-           "attend le « Oui, publie » du user. Disponibles : " +
+out.append("Option A retenue par le user le 10/11/2026 (lot L10). Rien n'est en ligne : la branche "
+           "`feat/guides-coachs-5-langues` attend le « Oui, publie » du user. Disponibles : " +
            ", ".join("%s %d/28" % (l, len(INTL[l])) for l in LANGS) + ".\n")
 out.append("## Deux options\n")
-out.append("| | A · même jour que le français et l'anglais (recommandée) | B · à l'ouverture de la vague 1 |")
+out.append("| | A · même jour que le français et l'anglais (RETENUE par le user le 10/11/2026) | B · à l'ouverture de la vague 1 |")
 out.append("|---|---|---|")
 out.append("| Réglage dans `tools/schedule.py` | `INTL_COACH_START = None` (valeur actuelle) | `INTL_COACH_START = date(2026, 12, 15)` |")
 out.append("| Première sortie | 02/12/2026 | 15/12/2026 |")
