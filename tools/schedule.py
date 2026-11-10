@@ -184,3 +184,14 @@ COACH_SCHEDULE = {
     slug: (COACH_START + timedelta(days=i // COACH_PER_DAY)).isoformat()
     for i, slug in enumerate(COACH_ORDER)
 }
+
+# --- Guides pour coachs en es, de, it, nl, pt (lot L10, 09/11/2026) -----------
+# PROPOSITION à valider par le user ; rien ne part en ligne avant son « Oui, publie ».
+# Par défaut (INTL_COACH_START = None), chaque guide sort le même jour dans les 7 langues,
+# à la date de sa version française. Pour décaler (par exemple à l'ouverture de la vague 1,
+# le 15/12/2026), mets une date dans INTL_COACH_START, ou une date par langue dans
+# INTL_COACH_LANG_START : les guides sortent alors dans l'ordre de COACH_ORDER,
+# INTL_COACH_PER_DAY par jour et par langue, jamais avant leur version française.
+INTL_COACH_START = None
+INTL_COACH_PER_DAY = 2
+INTL_COACH_LANG_START = {}  # par exemple {"pt": date(2027, 2, 1)}

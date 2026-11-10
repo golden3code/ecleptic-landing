@@ -124,10 +124,25 @@ MONTHS = {
 }
 
 
+MONTHS.update({
+    "es": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+    "de": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+    "it": ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"],
+    "nl": ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"],
+    "pt": ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"],
+})
+
+
 def date_label(iso, lang):
     y, m, d = iso.split("-")
     if lang == "en":
         return "%s %d, %s" % (MONTHS["en"][int(m) - 1], int(d), y)
+    if lang in ("es", "pt"):
+        return "%d de %s de %s" % (int(d), MONTHS[lang][int(m) - 1], y)
+    if lang == "de":
+        return "%d. %s %s" % (int(d), MONTHS["de"][int(m) - 1], y)
+    if lang in ("it", "nl"):
+        return "%d %s %s" % (int(d), MONTHS[lang][int(m) - 1], y)
     return "%d %s %s" % (int(d), MONTHS["fr"][int(m) - 1], y)
 
 
@@ -268,3 +283,150 @@ def switcher(lang, fr_path, en_path):
             '<a href="%s" hreflang="en" lang="en" data-setlang="en"%s>EN</a></span>'
             % (fr, ' class="on" aria-current="true"' if lang == "fr" else "",
                en, ' class="on" aria-current="true"' if lang == "en" else ""))
+
+
+# =============================================================================
+# Guides pour coachs en espagnol, allemand, italien, néerlandais et portugais
+# (lot L10 de PLAN-COACH-INTERNATIONAL.md, 09/11/2026)
+# =============================================================================
+# Seule la rubrique coachs existe dans ces langues : /es/entrenadores/,
+# /de/personal-trainer/, etc. Le reste du site (accueil, Journal, Science-Based, bêta,
+# À propos, mentions, confidentialité) reste en anglais : le bandeau et le pied de page de
+# ces pages y mènent, avec des libellés dans la langue de la page. Contenus :
+# tools/<langue>/coachs/*.py (ENTRIES, clé "fr" = slug français, adaptés au pays du
+# lecteur à partir des versions anglaises). Une page n'existe que si sa version française
+# est publiée (même règle que l'anglais) et que sa date de tools/schedule.py est passée.
+INTL_LANGS = ("es", "de", "it", "nl", "pt")
+ALL_LANGS = ("fr", "en") + INTL_LANGS  # ordre des hreflang et du sélecteur de langue
+
+# Publication des 5 langues : False = aucune page, aucun hreflang vers elles.
+# ECLEPTIC_INTL=1 / 0 force l'une ou l'autre valeur (tests dans une copie du dépôt).
+INTL_LIVE = True
+if os.environ.get("ECLEPTIC_INTL") in ("0", "1"):
+    INTL_LIVE = os.environ["ECLEPTIC_INTL"] == "1"
+
+# <html lang> : le portugais est celui du Brésil ; le hreflang reste « pt » (lu au
+# Brésil et au Portugal).
+HTML_LANG = {"pt": "pt-BR"}
+
+# Dossier de la rubrique coachs dans chaque langue (mot que les coachs tapent sur Google).
+INTL_HUB = {"es": "entrenadores", "de": "personal-trainer", "it": "personal-trainer",
+            "nl": "personal-trainer", "pt": "personal-trainer"}
+
+UI.update({
+    "es": {
+        "nav_home": "Inicio", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "La beta",
+        "f_about": "Acerca de", "f_legal": "Aviso legal", "f_privacy": "Privacidad", "f_contact": "Contacto", "f_beta": "La beta",
+        "disclaimer": "Ecleptic es una aplicación de bienestar. Sus contenidos no sustituyen el consejo médico y no constituyen un producto sanitario.",
+        "next": "Sigue leyendo", "faq": "Preguntas frecuentes", "sources": "Fuentes", "min": "min",
+        "by": "Por", "role": "fundador de Ecleptic", "updated": "actualizado el",
+        "j_read": "Leer la guía →", "lang_name": "Español",
+    },
+    "de": {
+        "nav_home": "Start", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "Die Beta",
+        "f_about": "Über uns", "f_legal": "Impressum", "f_privacy": "Datenschutz", "f_contact": "Kontakt", "f_beta": "Die Beta",
+        "disclaimer": "Ecleptic ist eine Wellness-App. Ihre Inhalte ersetzen keinen ärztlichen Rat und sie ist kein Medizinprodukt.",
+        "next": "Weiterlesen", "faq": "Häufige Fragen", "sources": "Quellen", "min": "Min.",
+        "by": "Von", "role": "Gründer von Ecleptic", "updated": "aktualisiert am",
+        "j_read": "Zum Leitfaden →", "lang_name": "Deutsch",
+    },
+    "it": {
+        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "La beta",
+        "f_about": "Chi siamo", "f_legal": "Note legali", "f_privacy": "Privacy", "f_contact": "Contatti", "f_beta": "La beta",
+        "disclaimer": "Ecleptic è un'app di benessere. I suoi contenuti non sostituiscono il parere medico e non è un dispositivo medico.",
+        "next": "Continua a leggere", "faq": "Domande frequenti", "sources": "Fonti", "min": "min",
+        "by": "Di", "role": "fondatore di Ecleptic", "updated": "aggiornato il",
+        "j_read": "Leggi la guida →", "lang_name": "Italiano",
+    },
+    "nl": {
+        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "De bèta",
+        "f_about": "Over ons", "f_legal": "Juridische informatie", "f_privacy": "Privacy", "f_contact": "Contact", "f_beta": "De bèta",
+        "disclaimer": "Ecleptic is een wellness-app. De inhoud vervangt geen medisch advies en de app is geen medisch hulpmiddel.",
+        "next": "Lees verder", "faq": "Veelgestelde vragen", "sources": "Bronnen", "min": "min",
+        "by": "Door", "role": "oprichter van Ecleptic", "updated": "bijgewerkt op",
+        "j_read": "Lees de gids →", "lang_name": "Nederlands",
+    },
+    "pt": {
+        "nav_home": "Início", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "O beta",
+        "f_about": "Sobre", "f_legal": "Aviso legal", "f_privacy": "Privacidade", "f_contact": "Contato", "f_beta": "O beta",
+        "disclaimer": "O Ecleptic é um app de bem-estar. O conteúdo não substitui orientação médica e o app não é um dispositivo médico.",
+        "next": "Leia também", "faq": "Perguntas frequentes", "sources": "Fontes", "min": "min",
+        "by": "Por", "role": "fundador do Ecleptic", "updated": "atualizado em",
+        "j_read": "Ler o guia →", "lang_name": "Português",
+    },
+})
+
+
+def _load_intl(lang):
+    out = []
+    for f in sorted(glob.glob(os.path.join(TOOLS, lang, "coachs", "*.py"))):
+        if os.path.basename(f).startswith("_"):
+            continue
+        spec = importlib.util.spec_from_file_location("%s_coachs_%s" % (lang, os.path.basename(f)[:-3]), f)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out.extend(getattr(mod, "ENTRIES", []))
+    return out
+
+
+INTL_ARTICLES = {lang: {e["fr"]: e for e in _load_intl(lang)} for lang in INTL_LANGS}
+
+
+def alt_links_multi(alts, site):
+    """hreflang d'une page publiée dans plusieurs langues : {langue: chemin}. x-default =
+    anglais (le visiteur hors pays francophones, comme sur le reste du site)."""
+    lines = ['<link rel="alternate" hreflang="%s" href="%s%s">' % (l, site, alts[l]) for l in ALL_LANGS if alts.get(l)]
+    default = alts.get("en") or alts.get("fr")
+    if default:
+        lines.append('<link rel="alternate" hreflang="x-default" href="%s%s">' % (site, default))
+    return "\n".join(lines)
+
+
+def switcher_multi(lang, alts):
+    """Sélecteur FR · EN · ES · DE · IT · NL · PT : seulement les langues où la page existe
+    (le français et l'anglais toujours, repli sur leur accueil)."""
+    alts = dict(alts)
+    alts.setdefault("fr", "/")
+    alts.setdefault("en", "/en/")
+    out = []
+    for l in ALL_LANGS:
+        if alts.get(l):
+            out.append('<a href="%s" hreflang="%s" lang="%s" data-setlang="%s"%s>%s</a>'
+                       % (alts[l], l, HTML_LANG.get(l, l), l,
+                          ' class="on" aria-current="true"' if l == lang else "", l.upper()))
+    return '<span class="langsw">%s</span>' % "".join(out)
+
+
+# Routage des pages publiées dans plus de deux langues (rubrique coachs). Mêmes règles que
+# ROUTER_JS, plus : la première langue du téléphone parmi l'espagnol, l'allemand, l'italien,
+# le néerlandais et le portugais, avant toute préférence pour le français ou l'anglais (un
+# téléphone en catalan réglé ensuite en espagnol, par exemple), mène à la version de cette
+# langue quand elle existe, sinon à l'anglais.
+# Le choix fait au sélecteur reste lisible par l'ancien routeur des pages écrites à la main :
+# « ecleptic.lang » vaut alors « en » et « ecleptic.lang2 » garde la langue choisie.
+ROUTER_JS_MULTI = r"""<script>
+(function(){try{
+  var d=document.documentElement,page=(d.lang||'').slice(0,2),ls=window.localStorage,ua=navigator.userAgent||'';
+  var X=['es','de','it','nl','pt'];
+  function setLang(l){try{if(X.indexOf(l)>=0){ls.setItem('ecleptic.lang','en');ls.setItem('ecleptic.lang2',l)}else{ls.setItem('ecleptic.lang',l);ls.removeItem('ecleptic.lang2')}}catch(_){}}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a)setLang(a.getAttribute('data-setlang'))});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  function alt(l){return document.querySelector('link[rel="alternate"][hreflang="'+l+'"]')}
+  var m=location.search.match(/[?&]lang=(fr|en|es|de|it|nl|pt)\b/),want=m?m[1]:null;
+  if(want)setLang(want);
+  if(!want){try{var s=ls.getItem('ecleptic.lang'),s2=ls.getItem('ecleptic.lang2');want=(s==='en'&&s2)?s2:s}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var l0=(langs[0]||'').slice(0,2).toLowerCase();
+    for(var i=0;i<langs.length;i++){var li=(langs[i]||'').slice(0,2).toLowerCase();if(li==='fr'||li==='en')break;if(X.indexOf(li)>=0){want=li;break}}
+    if(!want){var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(l0==='fr'||%s.indexOf(tz)>=0)?'fr':'en'}
+  }
+  if(X.indexOf(want)>=0&&!alt(want))want='en';
+  if(want===page)return;
+  var a=alt(want);
+  if(!a)return;
+  var q=location.search.replace(/([?&])lang=(fr|en|es|de|it|nl|pt)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(a.href+q+location.hash);
+}catch(e){}})();
+</script>""" % ("[" + ",".join("'%s'" % z for z in FRANCOPHONE_TZ) + "]")
