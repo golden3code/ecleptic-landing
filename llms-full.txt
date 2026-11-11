@@ -1282,6 +1282,101 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# La routine du soir idéale pour bien dormir
+
+URL : https://ecleptic.health/articles/routine-du-soir-pour-bien-dormir.html
+Thème : Régularité · Auteur : Auguste Phily-Priou · Publié le 2026-11-11
+
+Un sas de 30 à 60 minutes avant le lit : lumière basse, chambre fraîche, écrans en retrait, respiration lente. La routine qui facilite l'endormissement.
+
+La réponse courte : **offre-toi un « sas » de 30 à 60 minutes avant le lit** — lumière basse, écrans en retrait, chambre fraîche — pour laisser ton corps passer du mode « journée » au mode « sommeil ». On ne s'endort pas sur commande : le sommeil arrive quand le système nerveux ralentit et que l'horloge interne reçoit les bons signaux. Une routine du soir, ce n'est pas un rituel bien-être optionnel, c'est la *rampe de décélération* qui rend l'endormissement facile au lieu de forcé.
+
+Le principe est simple : chaque soir, les mêmes gestes, dans la même fenêtre horaire. La répétition apprend à ton cerveau qu'après cette séquence vient le sommeil — et il commence à se préparer tout seul.
+
+Elle n'a besoin d'être ni longue ni sophistiquée. Trois ou quatre gestes simples, tenus tous les soirs, battent une routine parfaite d'une heure que tu abandonnes au bout d'une semaine. L'objectif, c'est la constance, pas la perfection.
+
+## Régler la lumière et la température
+
+Ce sont les deux signaux les plus puissants pour ton horloge, et les plus faciles à actionner :
+
+- **Baisse la lumière dès le début de soirée.** Éteins le plafonnier, passe à une lampe basse et chaude : un consensus international d'experts (2022) recommande une lumière très tamisée dans les 3 heures qui précèdent le coucher. La lumière vive du soir freine la mélatonine — et ce sont surtout l'intensité et l'éclairage de la pièce qui comptent, [plus que la seule lumière bleue des écrans](https://ecleptic.health/articles/lumiere-bleue-ecrans-avant-de-dormir.html).
+
+- **Chambre entre 17 et 19 °C.** Pour s'endormir, ton corps doit perdre un peu de température interne ; une pièce fraîche facilite cette bascule.
+
+- **Douche ou bain chaud 1 à 2 heures avant.** Contre-intuitif mais efficace : la vasodilatation qui suit accélère la chute de température et t'endort plus vite. Une méta-analyse de 2019 (17 études) le confirme.
+
+## Ralentir le corps et l'esprit
+
+Une fois la lumière tamisée, occupe ce sas avec ce qui te fait redescendre — et évite ce qui t'active :
+
+- **Mets les écrans en retrait.** Le problème n'est pas tant l'écran que le contenu activant : réseaux, actualités, e-mails de travail. Remplace le scroll par un livre, un podcast calme, de la musique douce.
+
+- **Respire lentement.** Quelques minutes de respiration à rythme lent, expiration plus longue que l'inspiration, font basculer le système nerveux en mode récupération — c'est tout l'intérêt de la [cohérence cardiaque](https://ecleptic.health/articles/coherence-cardiaque-respiration.html).
+
+- **Vide ta tête sur le papier.** Note tes trois tâches du lendemain ou ce qui te tracasse : ça évite le mental qui tourne une fois la lumière éteinte. En laboratoire du sommeil, 57 jeunes adultes qui écrivaient 5 minutes une liste précise de choses à faire se sont endormis plus vite que ceux qui notaient ce qu'ils avaient accompli.
+
+- **Choisis une activité de transition fixe.** Toujours la même — quelques pages de lecture, des étirements doux, une tisane sans théine. Répétée chaque soir, elle devient un signal que ton cerveau finit par reconnaître.
+
+Sources : Brown et al. (2022), Haghayegh et al. (2019), Stutz et al. (2019), Scullin et al. (2018).
+| Geste | Avant le coucher |
+
+| Lumière très tamisée (moins de 10 lux « mélanopiques » à l'œil) | dès 3 h |
+
+| Douche ou bain à 40-42,5 °C, 10 minutes suffisent | 1 à 2 h |
+
+| Dernier effort intense terminé | au moins 1 h |
+
+| Liste précise des tâches à faire (5 minutes) | au coucher |
+
+## Les pièges qui sabotent le sas
+
+Une bonne routine ne sert à rien si tu la ruines avec une de ces erreurs classiques :
+
+- **L'alcool tardif.** Il t'endort plus vite mais massacre la seconde moitié de la nuit — [le détail est ici](https://ecleptic.health/articles/alcool-sommeil-effets.html). Le « verre pour bien dormir » est un faux ami.
+
+- **Le café de l'après-midi**, encore actif le soir venu ; et le dîner lourd ou trop tardif, qui maintient la digestion et la température au mauvais moment.
+
+- **Le sport intense dans l'heure qui précède le lit**, qui élève la température et la vigilance. Plus tôt, aucun souci : une méta-analyse de 2019 (23 études) conclut que le sport du soir ne dégrade pas le sommeil, sauf un effort intense terminé moins d'une heure avant le coucher.
+
+- **Se coucher sans avoir sommeil.** Rester au lit à ruminer apprend à ton cerveau que le lit est un lieu d'éveil. Va te coucher quand la somnolence arrive, pas seulement parce que « c'est l'heure » : c'est l'une des consignes que l'American Academy of Sleep Medicine recommande contre l'insomnie.
+
+## La pièce maîtresse : la régularité
+
+Une routine du soir donne le meilleur d'elle-même quand elle se déclenche **à peu près à la même heure chaque soir**. Ton horloge interne adore la prévisibilité : dans une cohorte de 60 977 participants suivis par accéléromètre, la régularité du sommeil prédisait mieux le risque de mortalité que sa durée. C'est sans doute le levier le plus rentable de tous — [la régularité pèse plus lourd que la durée](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html). Et n'oublie pas l'heure de lever : te réveiller à peu près à la même heure chaque matin, week-end compris, cale l'horloge encore plus fort que l'heure de coucher.
+
+## Ce qu'il faut retenir
+
+- Un sas de 30 à 60 minutes, mêmes gestes chaque soir : lumière basse, chambre à 17-19 °C, écrans en retrait.
+
+- Ralentis le corps et l'esprit : douche chaude, lecture, respiration lente ; évite alcool, café tardif et sport intense dans l'heure avant le lit.
+
+- Déclenche la routine à heure régulière : c'est la régularité qui fait la plus grosse différence.
+
+## Questions fréquentes
+
+### Comment faire une bonne routine du soir ?
+
+Réserve un sas de 30 à 60 minutes avant le lit avec les mêmes gestes chaque soir : baisser la lumière, rafraîchir la chambre, mettre les écrans en retrait, ralentir avec une lecture ou une respiration lente.
+
+### Que faire avant de dormir pour bien dormir ?
+
+Tamise la lumière dès le début de soirée, idéalement dans les 3 heures avant le coucher, vise une chambre à 17-19 °C, prends une douche chaude 1 à 2 heures avant, et évite l'alcool tardif, le café d'après-midi et le sport intense dans l'heure qui précède le coucher.
+
+### Combien de temps doit durer une routine du soir ?
+
+Environ 30 à 60 minutes suffisent : assez pour laisser le système nerveux ralentir. Le plus important reste de la déclencher à peu près à la même heure chaque soir.
+
+## Sources
+
+- Haghayegh S, Khoshnevis S, Smolensky MH, et al. Before-bedtime passive body heating by warm shower or bath to improve sleep: A systematic review and meta-analysis. *Sleep Med Rev*. 2019. — https://doi.org/10.1016/j.smrv.2019.04.008
+- Stutz J, Eiholzer R, Spengler CM. Effects of Evening Exercise on Sleep in Healthy Participants: A Systematic Review and Meta-Analysis. *Sports Med*. 2019. — https://doi.org/10.1007/s40279-018-1015-0
+- Scullin MK, Krueger ML, Ballard HK, et al. The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. *J Exp Psychol Gen*. 2018. — https://doi.org/10.1037/xge0000374
+- Brown TM, Brainard GC, Cajochen C, et al. Recommendations for daytime, evening, and nighttime indoor light exposure to best support physiology, sleep, and wakefulness in healthy adults. *PLoS Biol*. 2022. — https://doi.org/10.1371/journal.pbio.3001571
+- Windred DP, Burns AC, Lane JM, et al. Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study. *Sleep*. 2024. — https://doi.org/10.1093/sleep/zsad253
+- Edinger JD, Arnedt JT, Bertisch SM, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline. *J Clin Sleep Med*. 2021. — https://doi.org/10.5664/jcsm.8986
+
+---
+
 # Sauna : quels bienfaits pour la récupération et la santé ?
 
 URL : https://ecleptic.health/articles/sauna-bienfaits-recuperation.html
@@ -2472,7 +2567,7 @@ Pas besoin de bannir les écrans — juste de les rendre plus sobres le soir :
 
 - **Garde la chambre pour dormir.** Le cerveau associe les lieux à des activités : si tu travailles et scrolles au lit, il apprend que le lit est un endroit où l'on reste éveillé.
 
-Ces gestes forment le cœur d'une bonne routine du soir. Combinés à des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html), ils font plus pour tes nuits que n'importe quel gadget — et notamment pour ton [sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), très sensible à ce qui se passe dans l'heure qui précède le coucher.
+Ces gestes forment le cœur d'une bonne [routine du soir](https://ecleptic.health/articles/routine-du-soir-pour-bien-dormir.html). Combinés à des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html), ils font plus pour tes nuits que n'importe quel gadget — et notamment pour ton [sommeil profond](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html), très sensible à ce qui se passe dans l'heure qui précède le coucher.
 
 ## Faut-il croire aux lunettes anti-lumière bleue ?
 
@@ -2872,7 +2967,7 @@ Source : Janse van Rensburg et al., consensus d'experts (2021) ; règle empiriqu
 
 ## Faut-il dormir dans l'avion ?
 
-Ça dépend de l'heure qu'il sera à l'arrivée. Si tu atterris le matin, essaie de dormir en vol pour arriver avec un peu de réserve ; si tu atterris le soir, reste éveillé pour tomber de sommeil à l'heure locale. Et une fois sur place, tiens jusqu'à un coucher normal : une [sieste courte](https://ecleptic.health/articles/sieste-ideale-duree.html) de 20 minutes est permise, une sieste de trois heures ruine ta première nuit. Pour un court séjour de un à deux jours, inutile de te réadapter à fond : reste plutôt sur l'heure de ton domicile, tu éviteras un double décalage au retour — c'est aussi ce que retient l'American Academy of Sleep Medicine pour les séjours de deux jours ou moins. Le retour à un rythme stable passe par les mêmes fondations que d'habitude : des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) et une routine du soir qui redonne le cap à ton horloge.
+Ça dépend de l'heure qu'il sera à l'arrivée. Si tu atterris le matin, essaie de dormir en vol pour arriver avec un peu de réserve ; si tu atterris le soir, reste éveillé pour tomber de sommeil à l'heure locale. Et une fois sur place, tiens jusqu'à un coucher normal : une [sieste courte](https://ecleptic.health/articles/sieste-ideale-duree.html) de 20 minutes est permise, une sieste de trois heures ruine ta première nuit. Pour un court séjour de un à deux jours, inutile de te réadapter à fond : reste plutôt sur l'heure de ton domicile, tu éviteras un double décalage au retour — c'est aussi ce que retient l'American Academy of Sleep Medicine pour les séjours de deux jours ou moins. Le retour à un rythme stable passe par les mêmes fondations que d'habitude : des [horaires réguliers](https://ecleptic.health/articles/se-coucher-meme-heure-regularite.html) et une [routine du soir](https://ecleptic.health/articles/routine-du-soir-pour-bien-dormir.html) qui redonne le cap à ton horloge.
 
 ## Ce qu'il faut retenir
 
