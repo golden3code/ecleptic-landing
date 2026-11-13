@@ -1282,6 +1282,90 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Combien de temps de repos entre les séries ?
+
+URL : https://ecleptic.health/articles/temps-de-repos-entre-les-series.html
+Thème : Charge · Auteur : Auguste Phily-Priou · Publié le 2026-11-13
+
+Force et muscle : 2 à 3 minutes. Isolation : 1 à 2. Endurance : 30 à 60 s. Pourquoi le repos trop court fait chuter tes gains, et la règle simple.
+
+La réponse courte : pour la **force et la prise de muscle, repose-toi 2 à 3 minutes** entre tes séries. Sur les petits exercices d'isolation, 1 à 2 minutes suffisent. Et si tu cherches l'endurance musculaire ou que tu enchaînes en circuit, 30 à 60 secondes. Longtemps on a cru qu'il fallait rester court pour *garder l'intensité* ; la science récente ne trouve aucun avantage au repos court pour prendre du muscle — plutôt un petit handicap.
+
+La règle qui résume tout : **repose-toi assez pour que la série suivante reste une bonne série**. Le muscle grandit avec du volume de qualité — des séries où tu fais tes répétitions avec une charge correcte et une technique propre. Si tu repars trop tôt, tu es encore essoufflé et fatigué, tu perds des répétitions, et tu réduis mécaniquement le travail utile.
+
+## Pourquoi 2 à 3 minutes pour la muscu
+
+C'est le point contre-intuitif que beaucoup ratent. On a longtemps pensé qu'un repos court, en maintenant les muscles sous tension et en faisant monter la fatigue, favorisait la croissance. Les travaux plus récents montrent le contraire :
+
+- **Un repos trop court fait chuter le nombre de répétitions** que tu tiens à la série suivante. Moins de reps de qualité, c'est moins de volume effectif, donc moins de gains. Dans un essai de 2016 (21 pratiquants entraînés, 8 semaines), 3 minutes de repos ont donné plus de force et plus de muscle à la cuisse qu'une minute.
+
+- **2 à 3 minutes laissent tes muscles et ta respiration récupérer** assez pour attaquer la série suivante avec de la force. Tu maintiens ton volume tout au long de la séance.
+
+- **Sur les gros exercices** (squat, développé, tractions, soulevé de terre), c'est encore plus vrai : ils sollicitent tout le corps et demandent plus de récupération entre les séries. Selon une revue de 2018 (23 études, 491 participants), il faut plus de 2 minutes pour maximiser la force quand on est entraîné ; 1 à 2 minutes suffisent aux débutants.
+
+Autrement dit, écourter le repos ne rend pas ta séance plus efficace — ça la rend juste plus fatigante pour un résultat moindre. Le seul vrai coût de 2 à 3 minutes, c'est le temps passé à la salle.
+
+Reste lucide sur la taille de l'effet : une méta-analyse de 2024 (9 études) ne trouve qu'un petit avantage à dépasser 60 secondes pour le muscle, et plus d'écart net au-delà de 90 secondes ; côté force, l'American College of Sports Medicine (2026) ne voit pas de différence nette. Le repos n'est pas magique : il sert juste à ne pas saboter ton volume.
+
+## Adapte selon l'exercice et l'objectif
+
+Sources : American College of Sports Medicine (2009) ; Schoenfeld et al. (2016) ; Grgic et al. (2018) ; Singer et al. (2024).
+| Objectif | Repos entre les séries |
+
+| Force pure, charges très lourdes (1 à 6 reps) | 3 à 5 min |
+
+| Gros exercices, pratiquant entraîné | 2 à 3 min |
+
+| Force, débutant | 1 à 2 min |
+
+| Isolation (biceps, mollets, épaules) | 1 à 2 min |
+
+| Endurance musculaire, circuit | moins de 90 s |
+
+Sur les charges très lourdes, le système nerveux a besoin de plus de temps ; l'isolation récupère plus vite ; en circuit, on cherche justement à travailler sous fatigue, d'où 30 à 60 secondes. Le nombre de répétitions que tu vises se règle à part — le détail est ici.
+
+## Comment gérer ce temps sans le perdre
+
+- **Chronomètre-le vraiment.** *À peu près deux minutes* finit souvent en 45 secondes quand on est pressé, ou en 5 minutes quand on scrolle. Un simple minuteur garde tes séances honnêtes.
+
+- **Occupe le repos intelligemment :** tu peux alterner deux exercices de groupes différents (superset) pour gagner du temps sans raccourcir le repos de chaque muscle.
+
+- **Ne remplis pas le repos par du cardio intense** si ton objectif est la force — tu réduirais la récupération dont la série a besoin.
+
+Le repos entre les séries n'est pas du temps mort : c'est ce qui rend la série suivante productive. Bien géré, il s'inscrit dans une logique plus large de progression — celle de la [surcharge progressive](https://ecleptic.health/articles/surcharge-progressive-comment-progresser.html), où chaque série de qualité compte pour ajouter, semaine après semaine, un peu de charge ou de répétitions.
+
+## Ce qu'il faut retenir
+
+- Force et prise de muscle : 2 à 3 minutes de repos, surtout sur les gros exercices — le repos court fait chuter le volume utile.
+
+- Isolation : 1 à 2 minutes ; endurance et circuit : 30 à 60 secondes.
+
+- La règle unique : te reposer assez pour que la série suivante reste une bonne série. Chronomètre-le.
+
+## Questions fréquentes
+
+### Combien de temps de repos entre les séries en musculation ?
+
+2 à 3 minutes pour la force et la prise de muscle, surtout sur les gros exercices ; 1 à 2 minutes en isolation ; 30 à 60 secondes pour l'endurance ou le circuit. La règle : te reposer assez pour que la série suivante reste de qualité.
+
+### Un repos court fait-il prendre plus de muscle ?
+
+Non, c'est plutôt l'inverse. Un repos trop court fait chuter le nombre de répétitions tenues à la série suivante, donc le volume utile. Les études trouvent un petit avantage à dépasser 60 secondes ; sur les gros exercices, vise 2 à 3 minutes pour garder des séries de qualité.
+
+### Combien de repos entre les séries pour la force ?
+
+Au moins 2 minutes sur les gros exercices, et 3 à 5 minutes sur les charges très lourdes (1 à 6 répétitions), selon l'American College of Sports Medicine. Le système nerveux a besoin de récupérer pour produire de la force à chaque série. Si tu débutes, 1 à 2 minutes suffisent.
+
+## Sources
+
+- American College of Sports Medicine. American College of Sports Medicine position stand. Progression models in resistance training for healthy adults. *Med Sci Sports Exerc*. 2009. — https://doi.org/10.1249/MSS.0b013e3181915670
+- Schoenfeld BJ, Pope ZK, Benik FM, et al. Longer Interset Rest Periods Enhance Muscle Strength and Hypertrophy in Resistance-Trained Men. *J Strength Cond Res*. 2016. — https://doi.org/10.1519/JSC.0000000000001272
+- Grgic J, Schoenfeld BJ, Skrepnik M, et al. Effects of Rest Interval Duration in Resistance Training on Measures of Muscular Strength: A Systematic Review. *Sports Med*. 2018. — https://doi.org/10.1007/s40279-017-0788-x
+- Singer A, Wolf M, Generoso L, et al. Give it a rest: a systematic review with Bayesian meta-analysis on the effect of inter-set rest interval duration on muscle hypertrophy. *Front Sports Act Living*. 2024. — https://doi.org/10.3389/fspor.2024.1429789
+- Currier BS, D'Souza AC, Singh MAF, et al. American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. *Med Sci Sports Exerc*. 2026. — https://doi.org/10.1249/MSS.0000000000003897
+
+---
+
 # La routine du soir idéale pour bien dormir
 
 URL : https://ecleptic.health/articles/routine-du-soir-pour-bien-dormir.html
