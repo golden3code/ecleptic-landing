@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-08 -->
+<!-- version-fr: 2026-11-13 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 8 November 2026**
+**Last updated: 13 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -126,6 +126,10 @@ Each message goes through an automatic banned-words filter when it is sent, whic
 A message notification shows the author's nickname and the first 180 characters of the text. This text is not kept in the sending queue: it is read at the moment of sending, then passed to Apple or Google, which deliver it to the recipient's phone (article 4). It is not end-to-end encrypted, and it contains what the member wrote, including any health information. A workout card never appears in it, and a removed message is not passed on. When several messages arrive together, the notification only shows how many. On iPhone, the lock screen follows the phone's "Show Previews" setting; on Android, the text is hidden there.
 
 Message notifications do not count towards the limit of 3 per day in article 2.10 and are not delayed at night. The "Messages" switch in Settings › Notifications turns them off at any time, and muting turns them off conversation by conversation.
+
+### 2.12. Voice dictation
+
+When the user taps the microphone in Eos's input bar, the Application turns their voice into text using the phone's speech recognition (Apple on iPhone, Google on Android). If the language is installed on the phone, transcription happens on the device and the voice does not leave it. Otherwise, the audio is sent to Apple's or Google's recognition service, which processes it under its own terms, as with keyboard dictation. The publisher never receives the recording, and the Application keeps neither the voice nor the audio. Only the resulting text is written into the input field: the user can edit it, and it is only sent when they send the message, like a written question to Eos (see 2.7 and article 4). Access to the microphone and to speech recognition can be withdrawn at any time in the phone's settings.
 
 ## Article 3 — Purposes and legal bases
 
