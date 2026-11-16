@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-08 -->
+<!-- version-fr: 2026-11-17 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 8 November 2026**
+**Last updated: 17 November 2026**
 
 ---
 
@@ -96,7 +96,7 @@ Any breach may lead to the suspension or termination of the Account under the co
 
 The **Society** is the Application's social space. It is **optional** and **off by default**. The User turns it on personally, after clear information about what will be visible and to whom. This article applies to the User from the moment of this activation, which constitutes acceptance of its rules and of which the Publisher keeps proof (timestamp, version). The User may turn the Society off at any time. The User's profile, photos and videos immediately cease to be visible and the User leaves their teams and their coach; their ranking lines disappear at the nightly update; their partners and the participants in their ongoing challenges then see only their nickname, marked inactive. If the Society is not turned back on within **30 days**, the User's Society-specific data is erased. The User's workouts and other data remain in the Account.
 
-Activation constitutes **explicit consent** to the sharing, with the people chosen, of the designated sports data (article 16 and the Privacy Policy). Each type of data has its own setting (Settings › Social network): "No one", "Partners" or "Everyone", the latter meaning Society members. By default, the profile, photo, workouts, records and places are visible to partners only; weight and age categories are visible to no one.
+Activation constitutes **explicit consent** to the sharing, with the people chosen, of the designated sports data (article 16 and the Privacy Policy). Each type of data has its own setting (Settings › Social network): "No one", "Partners" or "Everyone", the latter meaning Society members. By default, the profile, photo, workouts, records and places are visible to partners only; weight and age categories and workout details are visible to no one. The route, photos and caption of a workout are shown only if the User chooses so for that workout (9 bis.3 and 9 bis.4).
 
 ### 9 bis.2. Profile
 
@@ -107,13 +107,23 @@ Activation constitutes **explicit consent** to the sharing, with the people chos
 
 ### 9 bis.3. Members' content
 
-The nickname, the profile photo and the proof videos are content published by the User, under the User's responsibility. The User warrants holding the necessary rights, in particular the image rights of the people shown. The User grants the Publisher, free of charge, on a non-exclusive basis and only for as long as they remain online, the right to host them, to adapt them technically (cropping, compression) and to display them to authorised persons. The Society has no public free text and no workout photo. Messages between members are covered by article 9 bis.20.
+The nickname, the profile photo, the proof videos, and the photos and caption that a User attaches to a workout, are content published by the User, under the User's responsibility. The User warrants holding the necessary rights, in particular the image rights of the people shown: the User publishes the photo of a recognisable person only with their agreement, and that of a minor only with their parents' agreement. The User grants the Publisher, free of charge, on a non-exclusive basis and only for as long as they remain online, the right to host them, to adapt them technically (cropping, compression) and to display them to authorised persons.
 
-**Ecleptic tolerates no objectionable content and no abusive behaviour.** The profile photo is not filtered by artificial intelligence: it is checked after a report. Every report is reviewed by a moderator; once three different members have reported it, it is hidden straight away until the moderator decides. Three confirmed removals deprive the User of a photo for 90 days.
+**Workout photos and caption.** A User aged 18 or over may attach up to 4 photos and a caption of 140 characters to a workout. They are visible to the User's partners only, in the feed, for 30 days, and the User may remove them at any time from the workout page. The caption goes through the automatic filter of banned words when it is sent, the same as for nicknames: a refused caption is not published, and its author is told straight away. The Society has no public comments: replying to a workout opens the messages (9 bis.20).
+
+**Shared meals.** A User aged 18 or over may post in the feed a meal they have just logged: its photo, its type, its day and the names of its foods. Calories, amounts, nutrients and the time are never published. The post is visible to the User's partners only for 30 days; the User may remove it at any time from the feed, and deleting the meal removes it too. The sharing box is unticked until the User ticks it; it then stays ticked from one meal to the next until the User unticks it. A meal may reveal a diet: the User publishes only what they choose. The content and reporting rules for workout photos apply to shared meals.
+
+**Level points.** A shared workout photo or a shared meal earns level points, fewer and fewer through the day (2 points, then 1, then 0.5), for a workout or a meal of the same day or the day before. These points have no market value and give no right to any paid benefit. They are removed if the photo or the meal is removed, by the User or by Ecleptic after a report. Sharing remains optional: sharing nothing takes away no feature of the Application.
+
+**Ecleptic tolerates no objectionable content and no abusive behaviour.** Photos, whether profile, workout or meal photos, are not filtered by artificial intelligence: they are checked after a report. Every report is reviewed by a moderator. A member who reports a photo, a caption or a shared meal stops seeing it straight away; once three different members have reported the same content, it is hidden for everyone without waiting, until the decision. Three confirmed removals deprive the User of a profile photo, workout photos, captions and shared meals for 90 days.
 
 ### 9 bis.4. What is never published
 
-The GPS track of a workout, real-time location, heart rate, exact weight, exact age and health data other than sports data are never shown to other users. Rankings are updated by the day, with no time of day shown.
+The full GPS route of a workout, the start and finish of a route, real-time location, exact weight, exact age, blood oxygen, breathing, temperature, electrocardiogram, heart rate variability and health data other than sports data are never shown to other users. Only a simplified copy of the route, with its first and last 200 metres removed, may be shown to partners, and only if the User chooses so for that workout. The heart rate, calories, perceived effort, sets and loads of a workout are shown to partners only, and only if a User aged 18 or over has chosen "Partners" for the "My session details" setting (9 bis.4 bis). From a meal, only the photo, the type, the day and the names of the foods may be shown to partners, and only if the User chooses so for that meal: never calories, amounts or nutrients. Rankings are updated by the day, with no time of day shown.
+
+### 9 bis.4 bis. Workout details
+
+The "My session details" setting (Settings › Social network) is set to "No one" by default. If a User aged 18 or over chooses "Partners", the User shows partners, when they open one of the User's workouts from the last 30 days, the page of that workout: the time, heart rate (average, maximum, minimum, curve and zones), calories, perceived effort, sets and loads, tonnage, steps, lengths, pace and the details specific to the sport. The page also shows a sentence about the workout (for example a record broken or a rank among people of the same weight), whose figures are calculated by the Application on the User's phone, without ever revealing the User's weight. Switching back to "No one" removes these details from partners' view straight away. Making this choice requires accepting the version of these terms and of the Privacy Policy that describes it.
 
 ### 9 bis.5. Rules of conduct
 
@@ -125,6 +135,7 @@ In addition to article 9, the User shall not, in the Society:
 - impersonate anyone, including a coach, a gym or a brand;
 - **cheat**: claim a performance that was not achieved, alter data to gain a place, use a third party's device or account, confirm a witness statement or a video that the User knows to be false, declare a match that did not take place;
 - publish a third party's data without their agreement;
+- post the photo of a recognisable person without their agreement, or any photo in which a minor is recognisable without their parents' agreement;
 - advertise, solicit or spam;
 - seek to locate, follow or meet a user against their will.
 
@@ -160,15 +171,15 @@ The User may suggest a missing place or a spot. The Ecleptic team remains free t
 
 ### 9 bis.12. Reporting content or behaviour
 
-Any user may report from the Application a profile (nickname included), a profile photo, a performance in a ranking or a team, by choosing a reason. A user may report any other content by writing to **contact@ecleptic.app**, the single point of contact for users and authorities. Reports are limited to 20 per day per account, and are handled as quickly as possible, with a target of 24 hours. An abusive report is itself a breach.
+Any user may report from the Application a profile (nickname included), a profile photo, a workout photo or caption, a performance in a ranking or a team, by choosing a reason. A user may report any other content by writing to **contact@ecleptic.app**, the single point of contact for users and authorities. Reports are limited to 20 per day per account, and are handled as quickly as possible, with a target of 24 hours. An abusive report is itself a breach.
 
 ### 9 bis.13. Decisions and reasons
 
-Each moderation decision (nickname refusal, hiding or removal of a photo, removal of a performance from rankings, suspension from the Society, etc.) is **reasoned** and communicated to the person concerned, in Settings › Social network: the facts, the rule applied, whether or not the decision is automatic, and how to contest it. The following are automatic: the nickname filter, the hiding of a photo after a report, the exclusion of an implausible performance and the placing of a record under verification. Every other decision is taken by a person.
+Each moderation decision (nickname refusal, hiding or removal of a photo, removal of a performance from rankings, suspension from the Society, etc.) is **reasoned** and communicated to the person concerned, in Settings › Social network: the facts, the rule applied, whether or not the decision is automatic, and how to contest it. The following are automatic: the nickname filter, the workout caption filter, the hiding of a photo or a caption after a report, the exclusion of an implausible performance and the placing of a record under verification. Every other decision is taken by a person.
 
 ### 9 bis.14. Graduated sanctions
 
-Depending on the seriousness and the repetition: warning; hiding of the content; removal of a performance or a distinction; exclusion from rankings; removal of the photo; removal of a team; suspension from the Society (from 7 days to permanent); termination of the Account (article 13). A threat to a person's life or safety may be reported to the authorities.
+Depending on the seriousness and the repetition: warning; hiding of the content; removal of a performance or a distinction; exclusion from rankings; removal of the photo; loss of photos and captions (90 days); removal of a team; suspension from the Society (from 7 days to permanent); termination of the Account (article 13). A threat to a person's life or safety, or manifestly illegal content, may be reported to the authorities.
 
 ### 9 bis.15. Contesting a decision
 
@@ -180,7 +191,7 @@ The User may block another user: the blocked user no longer sees the User and ca
 
 ### 9 bis.17. Minors
 
-A user aged 16 or 17 may turn on the Society, but **never appears in public rankings**: their performances are visible only to their partners, whom they add in person. They join a team only with their partners. A private conversation with an adult is refused to them (9 bis.20). The league, public challenges, the gym screen, managing a place and the link with a coach are closed to them. A user whose date of birth is unknown is treated as a minor.
+A user aged 16 or 17 may turn on the Society, but **never appears in public rankings**: their performances are visible only to their partners, whom they add in person. They join a team only with their partners. They may attach no route, photo or caption to their workouts, and may not share meals. A private conversation with an adult is refused to them (9 bis.20). The league, public challenges, the gym screen, managing a place and the link with a coach are closed to them. A user whose date of birth is unknown is treated as a minor.
 
 ### 9 bis.18. Teams
 
