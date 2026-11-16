@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-17 -->
+<!-- version-fr: 2026-11-18 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 17 November 2026**
+**Last updated: 18 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -42,6 +42,10 @@ Subscriptions are purchased in-app through the App Store (iPhone) or Google Play
 ### 2.4. Technical and usage data
 
 Technical account identifier, sign-in timestamps and server-side technical logs (security, usage quotas for AI features, errors and processing times). **Usage statistics**: the Application records usage events (screen shown, onboarding step completed, feature used, error encountered), attached to a **random installation identifier**, unrelated to the account, renewed at every sign-out and at least every 13 months. These events **never** contain health data (no weight, heart rate, calories, score, biological age or questionnaire answer) or any text you typed (food search, message to Eos, meal title). They only carry categories (for example "meal logged by photo") and technical information (app and system version — iOS or Android —, platform, device model, language, device region). The IP address is not stored: to prevent abusive submissions, only a salted fingerprint of the address is used to count the submissions of the hour, with no link to the events, and it is deleted after 2 hours at most. No advertising tool is built in.
+
+**Last day opened**: for each account, Ecleptic keeps the last day on which the Application or the coaches' website was opened, the platform (iPhone, Android or website) and the version of the Application. It is a single line per account, replaced at most once a day, with no health data. It is used to count active accounts and to know whether a coach still uses their space. It never triggers a reminder: a reminder email is only sent to people who have agreed to it.
+
+**A coach's origin**: when a user signs up as a coach, Ecleptic keeps the code of the link through which they arrived (for example that of a partner school or trainer), the name of that link's campaign and their optional answer to "Who sent you?". This information is used to know which channels bring coaches and, where applicable, to pay the partner who recommended them. It can no longer be changed two days after the application is sent.
 
 ### 2.5. Mandatory or optional data
 
@@ -192,6 +196,8 @@ The Application never names a situation the user has not declared, and uses the 
 | Subscription management and billing | Account, payment | Performance of the contract (6.1.b) and legal obligation (6.1.c — accounting) |
 | Security, fraud prevention, logs | Technical data | Legitimate interest (6.1.f — securing the service) |
 | Audience measurement and product improvement | Usage events (2.4), attached to a random installation identifier, with no health data or content | Legitimate interest (6.1.f — knowing which features are used and where people drop off, to improve the Application); objection at any time in Settings › Privacy (article 7) |
+| Counting active accounts, following coaches' activity | Last day opened, platform, version (2.4) | Legitimate interest (6.1.f — knowing the real use of the service and coaches' activity); objection at any time (article 7) |
+| Knowing through which channel a coach arrived, paying the partner who recommended them | Arrival link code, campaign, answer to "Who sent you?" (2.4) | Legitimate interest (6.1.f — measuring the channels that bring coaches and paying partners); objection at any time (article 7) |
 | Service communications (transactional emails, alerts) | Email, account | Performance of the contract (6.1.b) |
 | Marketing / newsletter | Email | Consent (6.1.a), withdrawable at any time |
 | Responding to requests to exercise rights and legal obligations | Depending on the request | Legal obligation (6.1.c) |
@@ -274,6 +280,8 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Billing data | 10 years (accounting obligation) | Intermediate archiving with restricted access |
 | Technical and security logs | 12 months | Deleted |
 | Usage events (2.4) and installation identifier | 13 months | Deleted automatically |
+| Last day opened (2.4) | Lifetime of the account, a single line replaced at most once a day | Deleted with the account |
+| A coach's origin (2.4) | Lifetime of the account | Deleted with the account |
 | Aggregated statistics (daily counts, without identifier) | 25 months | Deleted automatically |
 | Error and response-time logs | 90 days | Deleted automatically |
 | Marketing data | 3 years after the last contact | Deleted |
