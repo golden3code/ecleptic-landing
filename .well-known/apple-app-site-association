@@ -6,12 +6,13 @@
         "components": [
           { "/": "/d/*", "comment": "défi" },
           { "/": "/p/*", "comment": "profil" },
-          { "/": "/l/*", "comment": "lieu (QR)" }
+          { "/": "/l/*", "comment": "lieu (QR)" },
+          { "/": "/c/*", "comment": "invitation d'un coach" }
         ]
       },
       {
         "appID": "PFT2HWU28B.com.golden3.app",
-        "paths": ["/d/*", "/p/*", "/l/*"]
+        "paths": ["/d/*", "/p/*", "/l/*", "/c/*"]
       }
     ]
   }

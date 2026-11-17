@@ -59,12 +59,14 @@
     d: ['Tu as reçu un défi', 'Ouvre Ecleptic pour le voir et le relever.', 'Pas encore l’app ? Installe-la, puis saisis ce code à l’inscription.'],
     p: ['Un profil Ecleptic', 'Ouvre Ecleptic pour voir ce profil.', 'Pas encore l’app ? Installe-la, puis cherche ce pseudo.'],
     l: ['Pointe ta séance', 'Ouvre Ecleptic pour rattacher ta séance à ce lieu.', 'Pas encore l’app ? Installe-la, puis scanne à nouveau le QR du lieu.'],
+    c: ['Ton coach t’invite', 'Ouvre Ecleptic pour le rejoindre.', 'Pas encore l’app ? Installe-la, puis entre ce code dans Labo, Équipe, Ajouter mon coach.'],
     open: 'Ouvrir Ecleptic', get: 'Télécharger Ecleptic', home: 'Accueil du site',
     nf: ['Page introuvable', 'Cette page n’existe pas ou plus.']
   } : {
     d: ['You’ve been challenged', 'Open Ecleptic to see the challenge and take it on.', 'No app yet? Install it, then enter this code when you sign up.'],
     p: ['An Ecleptic profile', 'Open Ecleptic to see this profile.', 'No app yet? Install it, then search for this username.'],
     l: ['Check in your session', 'Open Ecleptic to link your session to this place.', 'No app yet? Install it, then scan the place’s QR code again.'],
+    c: ['Your coach invited you', 'Open Ecleptic to join them.', 'No app yet? Install it, then enter this code in Lab, Team, Add my coach.'],
     open: 'Open Ecleptic', get: 'Get Ecleptic', home: 'Website home',
     nf: ['Page not found', 'This page doesn’t exist or no longer exists.']
   };
@@ -75,7 +77,7 @@
   $('title').textContent = T.nf[0];
   $('lead').textContent = T.nf[1];
 
-  var m = location.pathname.match(/^\/(d|p|l)\/([A-Za-z0-9._-]{1,64})\/?$/);
+  var m = location.pathname.match(/^\/(d|p|l|c)\/([A-Za-z0-9._-]{1,64})\/?$/);
   if (!m) return;
   var kind = m[1], code = m[2], t = T[kind];
   document.title = t[0] + ' — Ecleptic';
