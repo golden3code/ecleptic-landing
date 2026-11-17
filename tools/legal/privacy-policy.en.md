@@ -1,8 +1,9 @@
-<!-- version-fr: 2026-11-18 -->
+<!-- version-fr: 2026-11-19 -->
+<!-- empreinte-fr: 5933323398f2 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 18 November 2026**
+**Last updated: 19 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -163,7 +164,15 @@ The Application never names a situation the user has not declared, and uses the 
 
 **Adults only.** The "My situation" questions and the detection of a health state (illness, body fat, age) are reserved for users aged 18 and over; an unknown date of birth closes them. Heat and altitude, which describe the context rather than the person, apply to everyone.
 
-**Sharing.** This information is never sold, used for advertising, shown to other members or passed on to a coach. If the user has accepted "AI analysis" in its version of 15 November 2026 or a later one, Eos and the report receive the user's situation to adapt their advice: declared situations in the user's own words; measured or detected situations only as a pointer (for example "favour low-impact workouts"), without naming them. Acceptance of an earlier version remains valid for meal scanning and for Eos, but does not trigger this transfer.
+**Sharing.** This information is never sold, used for advertising or shown to other members. It is passed on to a coach only if the user decides so, situation by situation (see "Exchange with a coach" below). If the user has accepted "AI analysis" in its version of 15 November 2026 or a later one, Eos and the report receive the user's situation to adapt their advice: declared situations in the user's own words; measured or detected situations only as a pointer (for example "favour low-impact workouts"), without naming them. Acceptance of an earlier version remains valid for meal scanning and for Eos, but does not trigger this transfer.
+
+**Exchange with a coach.** A user linked to a coach (2.9) can, from the "Coach" page of the Application:
+
+- **share their situation with their coach**: they choose, one by one, the situations they have declared themselves and want to show their coach. A measured or detected situation cannot be shared. The coach sees the name of the situation, the area of an injury and the date of sharing, nothing else: not the treatment, the measurements or the detections. A first share requires a separate agreement, dated and kept as proof. The user can stop sharing at any time: it disappears from the coach's side at once. A situation that ends is no longer shown;
+- **answer a suggestion from their coach**: a coach can note for their student a situation the student told them about (among high blood pressure, high cholesterol, diabetes or prediabetes, sleep apnoea, low iron, vitamin D or vitamin B12, smoking, night or shift work, fasting, current injury or surgery; never periods or menopause). This suggestion changes nothing in the calculations. The user confirms it, corrects it or says it is not right. What they confirm is recorded as their own declaration, with the same dated proof as in "My situation", and shared with that coach. What they decline is erased: the coach only learns that the suggestion was not kept, without knowing whether it was declined or left unanswered. A suggestion left unanswered is erased after **30 days**;
+- **fill in or confirm their details**: injuries, sports background, preferences, equipment and availability. The coach can enter them; the user sees them, confirms them, corrects them or says they are not right. The user can also fill them in themselves. The coach's personal notes are not shown to the user, who can ask the coach, responsible for them, to disclose them.
+
+Sharing a situation and a coach's suggestions are reserved for users aged **18 or over**. A coach is not a health professional: they undertake to note only what their student told them, and to give no medical advice. Everything is erased when the user leaves their coach or withdraws the "My situation" agreement.
 
 **Withdrawal.** In My profile › Data and privacy › "My situation", "Withdraw my consent and erase everything" erases at once the answers, their log, all situations (declared, measured or detected) and detector results, and stops any new detection for the account until consent is given again. Proof of the withdrawal (date, version of the text) is kept with the other proofs of consent.
 
@@ -184,6 +193,7 @@ The Application never names a situation the user has not declared, and uses the 
 | Profile photo, proof video, suggestions of places and spots | Photo, video, location, route (2.9) | Consent (6.1.a), given by the act of sending |
 | Gym screen | Nickname, active days of the month | Separate **consent** (6.1.a), place by place, withdrawable at any time |
 | Link with a coach | Workouts shown to the coach (2.9) | Separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), versioned, withdrawable at any time |
+| Sharing one's situation with one's coach; answering what the coach noted; confirming one's details | Declared situations the user chooses (2.13), area of an injury, details | Separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), versioned, given before the first share; withdrawable at any time, situation by situation |
 | Delivering messages, displaying conversations | Messages (2.11) | Performance of the contract (6.1.b) |
 | Sharing a workout in a conversation | Workout card (2.11) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), given by the act of sharing |
 | Sending filter, sending cap, message reports | Messages (2.11) | Legitimate interest (6.1.f — safety of members); legal obligation for reports (6.1.c — Digital Services Act) |
@@ -235,7 +245,7 @@ Reference nutritional values come from the ANSES **Ciqual** table (public data s
 
 The nutritional values of a contribution approved at review (2.6) are visible to all users of the Application, with no link to their author's account.
 
-**Other users.** If the user has turned on the Society, other members only see what they have chosen to show them (2.9). The simplified track, photos and note of a workout are only seen by their partners. The coach they have linked to sees their workouts, within the limits of 2.9. A few recipients are specific to certain features: the place's reviewers for a proof video, the witness asked, the opponent in a match, the Ecleptic team for suggestions and moderation. A place's manager receives no workout data about its members: they only know the number of members shown on their gym's screen and see the videos to review for their place. A gym's screen is visible to anyone present.
+**Other users.** If the user has turned on the Society, other members only see what they have chosen to show them (2.9). The simplified track, photos and note of a workout are only seen by their partners. The coach they have linked to sees their workouts, within the limits of 2.9. The coach also sees the situations the user has chosen to share with them and their details, within the limits of 2.13. A few recipients are specific to certain features: the place's reviewers for a proof video, the witness asked, the opponent in a match, the Ecleptic team for suggestions and moderation. A place's manager receives no workout data about its members: they only know the number of members shown on their gym's screen and see the videos to review for their place. A gym's screen is visible to anyone present.
 
 **Messaging.** Messages are read by the members of the conversation. Apple and Google deliver the notification, with the first 180 characters of the message (2.11).
 
@@ -262,6 +272,8 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Contributions: entries, corrections, reports (2.6) | Lifetime of the account | Deleted with the account; approved and published values stay in the food database, with no link to the account |
 | Workout-by-workout efforts (2.8) | 90 days | Only the month's best per measure and per place is kept, as long as the account exists |
 | Social profile, partnerships, reactions, challenges, teams, coach links, boards, crowns, seasons, league, racket, weight class (2.9) | As long as the Society is on | Deleted automatically **30 days** after it is turned off, unless a suspension is in progress, or with the account |
+| Situations shared with a coach (2.13) | As long as the user shares them, the situation is ongoing and the link with the coach lasts | Deleted when sharing stops, when the situation ends (the following night at the latest), when the link ends, when the "My situation" agreement is withdrawn or with the account |
+| A coach's suggestion about the situation (2.13) | Until the answer, **30 days** at most | Content erased on refusal and after 30 days without an answer; only the date and the outcome remain. Deleted when the link ends or with the account |
 | Messages (2.11) | **24 months** | Deleted automatically; erased with the account, or 30 days after the Society is turned off |
 | Zones and place of workouts (2.8) | Lifetime of the account | Deleted with the account |
 | Body scan photos | Stay on the phone (the last 6 scans), never on Ecleptic's servers. Sent to Anthropic for analysis, erased by this provider within 30 days | Deleted by the user in the Application or on uninstalling |
