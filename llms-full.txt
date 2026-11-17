@@ -1282,6 +1282,99 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Tabac, nicotine et sport : quels effets sur la performance ?
+
+URL : https://ecleptic.health/articles/tabac-nicotine-et-sport.html
+Thème : Contexte · Auteur : Auguste Phily-Priou · Publié le 2026-11-17
+
+Tabac, nicotine et sport : le monoxyde de carbone plombe la VO2max, la nicotine freine la récup. Les effets réels sur la performance, et arrêter paie vite.
+
+La réponse courte : le tabac **dégrade nettement** la performance et la récupération, sur plusieurs fronts à la fois. Le monoxyde de carbone de la fumée prend la place de l'oxygène dans ton sang, la nicotine resserre les vaisseaux, et l'ensemble perturbe ton sommeil. Pour un sportif, c'est un handicap mesurable — et la bonne nouvelle, c'est qu'il est en grande partie réversible quand on arrête.
+
+Restons factuels, sans moralisme : l'idée n'est pas de culpabiliser qui que ce soit, mais de comprendre *par quels mécanismes* le tabac et la nicotine pèsent sur ton corps de sportif, et ce que ça change concrètement.
+
+## Pourquoi la fumée plombe l'endurance
+
+- **Le monoxyde de carbone vole la place de l'oxygène.** Il se fixe sur l'hémoglobine bien plus facilement que l'oxygène, donc ton sang en transporte moins à chaque battement. Résultat direct : moins d'oxygène aux muscles, une [VO2max plus basse](https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html) et un essoufflement plus rapide à l'effort. Une revue de 1999 confirme que ce CO réduit la capacité aérobie maximale et avance la fatigue.
+
+- **Les voies respiratoires s'irritent.** La fumée agresse les bronches et réduit à terme la capacité pulmonaire — l'endurance en prend un coup, et pas seulement chez les gros fumeurs. Dans des cohortes américaines de 25 352 personnes, le déclin respiratoire des fumeurs de moins de cinq cigarettes par jour atteignait 68 % de celui des fumeurs d'au moins trente.
+
+- **Le cœur travaille plus pour moins.** À effort égal, il doit compenser le déficit d'oxygène, ce qui rend chaque séance plus coûteuse.
+
+Concrètement : mêmes jambes, même entraînement, mais un plafond plus bas et des sensations plus dures. Et l'effet n'a rien de réservé à l'effort maximal : même une sortie facile réclame de l'oxygène, donc même ton endurance de base trinque. Le tabac ne te vole pas seulement de la performance — il te vole de la marge de progression.
+
+## La nicotine, même sans fumée
+
+C'est le point que le vapotage ne règle pas. La nicotine, isolée de la fumée, garde ses propres effets sur ton corps de sportif :
+
+- **Vasoconstriction :** elle resserre les vaisseaux de la peau et du cœur, et accélère le rythme cardiaque. Mais elle dilate ceux des muscles, et selon une revue de 2016, sans combustion, ses risques cardiovasculaires restent faibles face à la cigarette. Son vrai coût pour ta récup passe par le sommeil.
+
+- **Stimulant :** elle perturbe l'endormissement comme la qualité du sommeil, surtout consommée en soirée — une revue de 2009 (52 études) relève chez les consommateurs un endormissement plus long, un sommeil plus fragmenté et moins de sommeil profond. Et un mauvais sommeil, c'est une [récupération sabotée](https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html) à la racine.
+
+- **Dépendance :** elle crée une accoutumance forte, ce qui rend l'arrêt difficile et entretient la consommation.
+
+Le vapotage ou les sachets de nicotine suppriment le monoxyde de carbone et les goudrons de combustion — c'est un vrai avantage sur ce point précis — mais ils **maintiennent la nicotine**, donc la vasoconstriction, les effets sur le sommeil et la dépendance. « Sans fumée » n'est pas « sans effet ».
+
+## Ce que ça change sur tes données
+
+Si tu suis tes vitaux, le tabac et la nicotine laissent des traces lisibles : une [variabilité cardiaque](https://ecleptic.health/articles/hrv-variabilite-frequence-cardiaque.html) souvent plus basse (signe d'un système nerveux moins bien régulé, retrouvé dans la grande majorité des études selon une revue de 2013), une fréquence cardiaque de repos plutôt tirée vers le haut, et un sommeil plus fragmenté les soirs de consommation. Ce ne sont pas des jugements, ce sont des mesures — et elles bougent quand la consommation bouge.
+
+Un point pour les fumeurs occasionnels : même une consommation « sociale », le week-end, laisse une empreinte sur les nuits concernées. Pas besoin d'un paquet par jour pour que l'effet se voie sur ton sommeil et sur ta récupération du lendemain.
+
+## La bonne nouvelle : arrêter, ça se voit vite
+
+C'est la partie qui motive, et de loin. Le corps répare une bonne partie des dégâts, souvent bien plus vite qu'on ne l'imagine. Le calendrier de l'OMS :
+
+Source : Organisation mondiale de la Santé (2020).
+| Après la dernière cigarette | Ce qui change |
+
+| 20 minutes | Fréquence cardiaque et tension artérielle baissent |
+
+| 12 heures | Le monoxyde de carbone du sang revient à la normale |
+
+| 2 à 12 semaines | La circulation s'améliore, la fonction pulmonaire augmente |
+
+| 1 à 9 mois | La toux et l'essoufflement diminuent |
+
+| 1 an | Le risque coronarien tombe à environ la moitié de celui d'un fumeur |
+
+En douze heures, ton sang retransporte donc l'oxygène normalement ; en quelques semaines, beaucoup décrivent des séances « qui repassent » et un souffle retrouvé. La récupération et le sommeil se normalisent ensuite à mesure que la nicotine quitte l'équation, après quelques nuits parfois agitées le temps du sevrage.
+
+Autrement dit, chaque semaine sans tabac est un gain de performance quasi gratuit — l'un des rares « progrès » qu'on obtient sans s'entraîner davantage. Si tu veux arrêter et que la dépendance rend ça difficile, un médecin ou un tabacologue peut t'accompagner : c'est un domaine où l'aide fait une vraie différence.
+
+## Ce qu'il faut retenir
+
+- Le tabac dégrade l'endurance : le monoxyde de carbone réduit le transport d'oxygène et fait baisser la VO2max.
+
+- La nicotine seule (vape incluse) garde ses effets : vaisseaux resserrés, cœur accéléré, sommeil perturbé — donc récupération freinée — et dépendance.
+
+- Arrêter améliore la capacité respiratoire en quelques semaines ; pour la dépendance, un médecin ou un tabacologue peut aider.
+
+## Questions fréquentes
+
+### Quels sont les effets du tabac sur le sport ?
+
+Le tabac réduit la performance et la récupération : le monoxyde de carbone diminue le transport d'oxygène et fait baisser la VO2max, la fumée irrite les bronches, et la nicotine perturbe le sommeil, ce qui freine la récupération.
+
+### Le vapotage est-il moins mauvais que la cigarette pour le sport ?
+
+Le vapotage supprime le monoxyde de carbone et les goudrons de combustion, ce qui est un avantage. Mais il maintient la nicotine, donc la vasoconstriction, les effets sur le sommeil et la dépendance restent bien présents.
+
+### Combien de temps pour récupérer son souffle après avoir arrêté de fumer ?
+
+Selon l'OMS, le monoxyde de carbone du sang revient à la normale en 12 heures, et la circulation comme la fonction pulmonaire s'améliorent en 2 à 12 semaines. Toux et essoufflement diminuent ensuite entre 1 et 9 mois, et les bénéfices continuent de s'accumuler avec le temps.
+
+## Sources
+
+- World Health Organization. Tobacco: health benefits of smoking cessation. 2020. — https://www.who.int/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation
+- McDonough P, Moffatt RJ. Smoking-induced elevations in blood carboxyhaemoglobin levels. Effect on maximal oxygen uptake. *Sports Med*. 1999. — https://doi.org/10.2165/00007256-199927050-00001
+- Oelsner EC, Balte PP, Bhatt SP, et al. Lung function decline in former smokers and low-intensity current smokers: a secondary data analysis of the NHLBI Pooled Cohorts Study. *Lancet Respir Med*. 2020. — https://doi.org/10.1016/S2213-2600(19)30276-0
+- Benowitz NL, Burbank AD. Cardiovascular toxicity of nicotine: implications for electronic cigarette use. *Trends Cardiovasc Med*. 2016. — https://doi.org/10.1016/j.tcm.2016.03.001
+- Jaehne A, Loessl B, Bárkai Z, et al. Effects of nicotine on sleep during consumption, withdrawal and replacement therapy. *Sleep Med Rev*. 2009. — https://doi.org/10.1016/j.smrv.2008.12.003
+- Dinas PC, Koutedakis Y, Flouris AD. Effects of active and passive tobacco cigarette smoking on heart rate variability. *Int J Cardiol*. 2013. — https://doi.org/10.1016/j.ijcard.2011.10.140
+
+---
+
 # Cortisol : comment faire baisser le stress chronique ?
 
 URL : https://ecleptic.health/articles/cortisol-comment-le-faire-baisser.html
