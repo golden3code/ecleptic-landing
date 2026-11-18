@@ -12,7 +12,8 @@ On retire, comme dans l'app, les encadrés internes « > ⚠️ … » et la sec
 
 Usage (après chaque modification des CGU ou des CGV) :
     python3 tools/build_terms.py
-Écrit cgu.html, cgv.html, en/terms.html et en/terms-of-sale.html. Échoue si une
+Écrit cgu.html, cgv.html, en/terms.html, en/terms-of-sale.html et cgv-coachs.html
+(CGV des coachs, ~/Desktop/Auros/legal/cgv-coachs.md, en français seul). Échoue si une
 traduction anglaise ne correspond plus à la date de la version française (ligne
 « <!-- version-fr: AAAA-MM-JJ --> » en tête de la traduction).
 """
@@ -53,6 +54,18 @@ DOCS = [
             "description": "Terms of Sale of Ecleptic: Copper and Golden offers, price, renewal, cancellation, withdrawal and guarantees.",
             "lead": "This is an English translation of the French Terms of Sale shown in the Ecleptic app; the French version prevails.",
             "footer": FOOT_EN % '<a href="/en/terms.html">Terms of Use</a>'}},
+]
+
+# Pages en français seul, sans traduction anglaise publiée. CGV des coachs (B2B) : les
+# traductions de legal/international/cgv-coachs/ visent les coachs établis hors de France
+# et ne sont pas publiées. Source : en-tête « **Dernière mise à jour : … ** » obligatoire ;
+# les notes internes vont dans un encadré « > ⚠️ … », retiré par clean().
+FR_ONLY = [
+    {"fr_source": "cgv-coachs.md",
+     "fr": {"file": "cgv-coachs.html", "title": "Conditions générales de vente des coachs — Ecleptic",
+            "description": "Conditions générales de vente de l'espace coach d'Ecleptic : paliers et prix, essai, abonnement, vente des séances, frais de service, outils reliés et données.",
+            "lead": "Conditions de l'abonnement des coachs professionnels à l'espace coach d'Ecleptic, dans l'app et sur coach.ecleptic.health.",
+            "footer": FOOT_FR % '<a href="/cgu.html">Conditions d\'utilisation</a> · <a href="/cgv.html">Conditions de vente</a>'}},
 ]
 
 
@@ -156,7 +169,10 @@ def head(lang, doc):
     """En-tête de la page Confidentialité (CSP, icônes, routage de langue), adapté à la page."""
     src = open(os.path.join(ROOT, "confidentialite.html"), encoding="utf-8").read()
     h = src[: src.index("<style>")]
-    page, fr_url, en_url = doc[lang], "https://ecleptic.health/" + doc["fr"]["file"], "https://ecleptic.health/" + doc["en"]["file"]
+    page, fr_url = doc[lang], "https://ecleptic.health/" + doc["fr"]["file"]
+    if "en" not in doc:  # français seul : pas de version anglaise, donc pas de renvoi de langue
+        h = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n', "", h)
+    en_url = "https://ecleptic.health/" + doc["en"]["file"] if "en" in doc else fr_url
     h = h.replace('<html lang="fr">', '<html lang="%s">' % lang)
     h = re.sub(r"<title>.*?</title>", "<title>%s</title>" % html.escape(page["title"], quote=False), h)
     h = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="%s">' % html.escape(page["description"]), h)
@@ -188,6 +204,10 @@ def main():
                      "%s est daté du %s." % (doc["en_source"], m.group(1) if m else "?", doc["fr_source"], version))
         build("fr", doc, clean(fr_raw))
         build("en", doc, clean(en_raw))
+    for doc in FR_ONLY:
+        fr_raw = open(os.path.join(LEGAL_DIR, doc["fr_source"]), encoding="utf-8").read()
+        fr_version(fr_raw, doc["fr_source"])
+        build("fr", doc, clean(fr_raw))
 
 
 if __name__ == "__main__":
