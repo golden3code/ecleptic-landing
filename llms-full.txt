@@ -1242,7 +1242,7 @@ Pour un premier ordre de grandeur selon ton profil : [combien de calories par jo
 
 ## Ce qui la fait bouger
 
-- **Ton activité :** une séance, mais aussi la somme de tes pas et de tout ce que tu fais debout. Repères : [combien de pas par jour](https://ecleptic.health/articles/combien-de-pas-par-jour.html) et cardio ou muscu pour maigrir.
+- **Ton activité :** une séance, mais aussi la somme de tes pas et de tout ce que tu fais debout. Repères : [combien de pas par jour](https://ecleptic.health/articles/combien-de-pas-par-jour.html) et [cardio ou muscu pour maigrir](https://ecleptic.health/articles/cardio-ou-muscu-pour-maigrir.html).
 
 - **Ton poids :** un corps plus léger dépense moins. Quand tu maigris, ta dépense baisse avec toi, et en déficit on bouge souvent un peu moins sans s'en rendre compte. Une cible fixée une fois pour toutes finit donc par se tromper.
 
@@ -1279,6 +1279,88 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 - Mifflin M. D., St Jeor S. T. et al. (1990), nouvelle équation du métabolisme de repos chez l'adulte sain, *American Journal of Clinical Nutrition*. [doi:10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241)
 - Hall K. D. et al. (2011), quantification de l'effet d'un déséquilibre énergétique sur le poids, *The Lancet*. [doi:10.1016/S0140-6736(11)60812-X](https://doi.org/10.1016/S0140-6736(11)60812-X)
+
+---
+
+# Cardio ou musculation pour perdre du gras ?
+
+URL : https://ecleptic.health/articles/cardio-ou-muscu-pour-maigrir.html
+Thème : Sport · Auteur : Auguste Phily-Priou · Publié le 2026-11-19
+
+Cardio ou muscu pour perdre du gras ? La perte vient du déficit calorique. Le rôle exact de chacun, et le plan qui garde le muscle en maigrissant.
+
+La réponse courte : **ni l'un ni l'autre ne fait maigrir tout seul**. La perte de gras vient d'un [déficit calorique](https://ecleptic.health/articles/deficit-calorique-comment-calculer.html) — tu dépenses plus que tu ne manges — pas du type d'exercice que tu choisis. Cardio ou muscu, la vraie question n'est pas « lequel brûle le gras », mais « lequel t'aide le mieux à créer et tenir ce déficit tout en gardant un corps qui te plaît ». Et là, chacun a un rôle distinct.
+
+Le raccourci « cardio pour maigrir, muscu pour se muscler » est trompeur. En réalité, la combinaison des deux, posée sur un déficit maîtrisé, donne le meilleur bilan : le gras perdu grâce au cardio, le muscle gardé grâce à la muscu.
+
+## Ce que fait le cardio
+
+Le cardio **brûle plus de calories sur l'instant**. Une sortie de course ou de vélo creuse la dépense du moment plus efficacement qu'une séance de musculation de durée équivalente. C'est un outil pratique pour agrandir ton déficit sans trop couper dans l'assiette. Dans l'essai STRRIDE AT/RT (119 adultes en surpoids, 8 mois), le cardio a fait perdre plus de poids et de gras que la muscu, qui a en revanche davantage augmenté la masse maigre.
+
+Mais il a deux limites. D'abord, le corps s'adapte : l'appétit grimpe, et une analyse de 1 754 adultes estime qu'il compense en moyenne 28 % des calories dépensées en bougeant, en baissant sa dépense de base. Ensuite, le cardio seul protège moins bien ta masse musculaire : chez 160 seniors obèses au régime, tous ont perdu 9 % de leur poids, mais la masse maigre a fondu de 5 % avec le cardio seul, contre 2 à 3 % quand la muscu faisait partie du programme. Tu risques de finir « plus léger mais mou ».
+
+## Ce que fait la musculation
+
+La muscu ne brûle pas énormément de calories pendant la séance. Son rôle est ailleurs, et il est décisif : elle **préserve et construit le muscle pendant que tu perds du gras**. C'est ce qui change tout, pour deux raisons.
+
+- **Elle protège ta dépense de repos.** Au repos, un kilo de muscle brûle environ 13 kcal par jour, près de trois fois plus qu'un kilo de gras. L'effet est modeste, mais perdre du muscle fait baisser tes besoins et rend la suite plus dure.
+
+- **Elle sculpte la « forme » du corps.** À poids égal, garder du muscle donne un corps ferme et dessiné plutôt que simplement dégonflé. La muscu décide de *l'allure* que tu auras au bout du déficit.
+
+Pour que ce soit efficace, un point est non négociable : mange assez de [protéines](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html). C'est le carburant qui permet de garder le muscle en période de restriction.
+
+## La vraie réponse : les deux, plus la marche
+
+Le plan qui marche pour perdre du gras et garder une belle allure tient en quatre points :
+
+- **Un déficit calorique modéré** — la base, sans laquelle rien ne bouge. Vise une perte lente et régulière.
+
+- **De la musculation**, 2 à 4 fois par semaine, pour garder le muscle et le métabolisme.
+
+- **Un peu de cardio** pour élargir le déficit et entretenir le cœur, sans en faire une punition.
+
+- **Beaucoup de marche.** Souvent sous-estimée, elle creuse la dépense de fond sans fatigue ni récupération — [le compte de pas qui compte vraiment est ici](https://ecleptic.health/articles/combien-de-pas-par-jour.html).
+
+Assez de protéines par-dessus, et tu perds du gras en gardant le muscle : exactement le résultat que la plupart des gens visent sans le formuler.
+
+## Et l'afterburn, l'ordre des exercices ?
+
+Deux détails qu'on surestime. L'afterburn — les calories brûlées après la séance, ce que les physiologistes appellent l'EPOC — existe, mais il est modeste : une revue de 2006 l'estime à 6 à 15 % du coût énergétique de la séance, soit quelques dizaines de calories, pas de quoi bouleverser ton bilan. Ne choisis pas une méthode d'entraînement pour ça. Quant à l'ordre, si tu enchaînes muscu et cardio dans la même séance, commence par la muscu quand ta priorité est de garder du muscle : tu attaques les charges frais, en pleine force. Mais à l'échelle d'une semaine, ce détail pèse peu à côté du déficit, des protéines et de la régularité — ne le laisse pas te distraire de l'essentiel.
+
+## Et le « cardio à jeun », les « brûleurs de graisse » ?
+
+Beaucoup de bruit pour rien. Le cardio à jeun ne fait pas fondre plus de gras sur la durée : dans un essai de 2014, des femmes en déficit faisant le même cardio, à jeun ou après un repas, ont perdu autant de gras. Ce qui compte, c'est le bilan calorique de la journée entière. Quant aux compléments « brûleurs », leur effet est modeste au mieux. Ne perds pas d'énergie sur ces détails tant que les quatre leviers ci-dessus ne sont pas en place.
+
+## Ce qu'il faut retenir
+
+- La perte de gras vient du déficit calorique, pas du type d'exercice choisi.
+
+- Le cardio brûle plus sur l'instant ; la muscu protège muscle et métabolisme et décide de ton allure finale.
+
+- L'idéal : déficit + musculation + un peu de cardio + beaucoup de marche, avec assez de protéines.
+
+## Questions fréquentes
+
+### Cardio ou musculation pour perdre du gras ?
+
+Les deux, sur un déficit calorique. Le cardio brûle plus de calories sur l'instant ; la musculation préserve le muscle et le métabolisme pendant que tu perds du gras. Seul, aucun ne fait maigrir : c'est le déficit qui décide.
+
+### La musculation fait-elle maigrir ?
+
+Pas directement — elle brûle peu de calories pendant la séance. Mais elle est essentielle en perte de poids : elle garde le muscle et le métabolisme, ce qui donne un corps ferme plutôt que simplement dégonflé.
+
+### Le cardio à jeun brûle-t-il plus de gras ?
+
+Non, pas sur la durée. Ce qui compte, c'est le bilan calorique de la journée entière, pas le carburant utilisé pendant la séance. Le cardio à jeun n'a pas d'avantage démontré pour la perte de gras.
+
+## Sources
+
+- Willis LH, Slentz CA, Bateman LA, et al. Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults. *J Appl Physiol*. 2012. — https://doi.org/10.1152/japplphysiol.01370.2011
+- Villareal DT, Aguirre L, Gurney AB, et al. Aerobic or resistance exercise, or both, in dieting obese older adults. *N Engl J Med*. 2017. — https://doi.org/10.1056/NEJMoa1616338
+- Careau V, Halsey LG, Pontzer H, et al. Energy compensation and adiposity in humans. *Curr Biol*. 2021. — https://doi.org/10.1016/j.cub.2021.08.016
+- Wang Z, Ying Z, Bosy-Westphal A, et al. Specific metabolic rates of major organs and tissues across adulthood: evaluation by mechanistic model of resting energy expenditure. *Am J Clin Nutr*. 2010. — https://doi.org/10.3945/ajcn.2010.29885
+- LaForgia J, Withers RT, Gore CJ. Effects of exercise intensity and duration on the excess post-exercise oxygen consumption. *J Sports Sci*. 2006. — https://doi.org/10.1080/02640410600552064
+- Schoenfeld BJ, Aragon AA, Wilborn CD, et al. Body composition changes associated with fasted versus non-fasted aerobic exercise. *J Int Soc Sports Nutr*. 2014. — https://doi.org/10.1186/s12970-014-0054-7
 
 ---
 
@@ -2657,7 +2739,7 @@ Diviser tes calories par deux fait perdre du poids vite — puis casse la machin
 
 - **Un déficit raisonnable** — plus il est agressif, plus la part de muscle perdue grimpe. Chez des athlètes d'élite (essai de 2011), perdre 0,7 % du poids par semaine a fait gagner 2,1 % de masse maigre, contre rien à un rythme plus rapide.
 
-Question fréquente : cardio ou muscu pour maigrir ? Les deux servent, dans des rôles différents — le déficit alimentaire crée la perte, la muscu décide de *ce que* tu perds.
+Question fréquente : [cardio ou muscu pour maigrir](https://ecleptic.health/articles/cardio-ou-muscu-pour-maigrir.html) ? Les deux servent, dans des rôles différents — le déficit alimentaire crée la perte, la muscu décide de *ce que* tu perds.
 
 ## Compter ses calories, ou pas ?
 
