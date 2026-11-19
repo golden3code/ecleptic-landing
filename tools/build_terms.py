@@ -65,7 +65,12 @@ FR_ONLY = [
      "fr": {"file": "cgv-coachs.html", "title": "Conditions générales de vente des coachs — Ecleptic",
             "description": "Conditions générales de vente de l'espace coach d'Ecleptic : paliers et prix, essai, abonnement, vente des séances, frais de service, outils reliés et données.",
             "lead": "Conditions de l'abonnement des coachs professionnels à l'espace coach d'Ecleptic, dans l'app et sur coach.ecleptic.health.",
-            "footer": FOOT_FR % '<a href="/cgu.html">Conditions d\'utilisation</a> · <a href="/cgv.html">Conditions de vente</a>'}},
+            "footer": FOOT_FR % '<a href="/sous-traitance-coachs.html">Accord de sous-traitance</a> · <a href="/cgu.html">Conditions d\'utilisation</a>'}},
+    {"fr_source": "sous-traitance-coach.md",
+     "fr": {"file": "sous-traitance-coachs.html", "title": "Accord de sous-traitance des coachs — Ecleptic",
+            "description": "Accord de sous-traitance (article 28 du RGPD) annexé aux conditions de vente des coachs d'Ecleptic : données traitées pour le coach, sous-traitants ultérieurs, sécurité et durées.",
+            "lead": "Annexe des conditions générales de vente des coachs : Ecleptic traite pour le coach les données de ses élèves, prospects et participants.",
+            "footer": FOOT_FR % '<a href="/cgv-coachs.html">Conditions de vente des coachs</a>'}},
 ]
 
 
@@ -101,7 +106,7 @@ def inline(text):
 
 def to_html(md):
     """Markdown → HTML, pour le sous-ensemble des textes juridiques (dont le formulaire en citation)."""
-    out, para, items, quote = [], [], [], []
+    out, para, items, quote, table = [], [], [], [], []
     title, date = "", ""
 
     def flush():
@@ -114,6 +119,13 @@ def to_html(md):
         if quote:
             out.append("  <blockquote>%s</blockquote>" % "<br>\n    ".join(inline(q) for q in quote))
             quote.clear()
+        if table:
+            head, body = table[0], [r for r in table[1:] if not all(re.match(r"^:?-+:?$", c) for c in r)]
+            t = ['  <div class="table"><table>', "    <thead><tr>%s</tr></thead>" % "".join("<th>%s</th>" % inline(c) for c in head), "    <tbody>"]
+            t += ["      <tr>%s</tr>" % "".join("<td>%s</td>" % inline(c) for c in r) for r in body]
+            t += ["    </tbody>", "  </table></div>"]
+            out.append("\n".join(t))
+            table.clear()
 
     for raw in md.split("\n"):
         line = raw.rstrip()
@@ -125,20 +137,24 @@ def to_html(md):
             flush(); out.append('  <h3 id="%s">%s</h3>' % (slug(line[4:]), inline(line[4:])))
         elif line.startswith("## "):
             flush(); out.append('  <h2 id="%s">%s</h2>' % (slug(line[3:]), inline(line[3:])))
+        elif line.startswith("|"):
+            if para or items or quote:
+                flush()
+            table.append([c.strip() for c in line.strip().strip("|").split("|")])
         elif line.startswith(">"):
-            if para or items:
+            if para or items or table:
                 flush()
             text = line[1:].strip()
             if text:
                 quote.append(text)
         elif line.startswith("- "):
-            if para or quote:
+            if para or quote or table:
                 flush()
             items.append(line[2:])
         elif line.strip() in ("", "---"):
             flush()
         else:
-            if items or quote:
+            if items or quote or table or re.match(r"^\d+\. ", line):
                 flush()
             para.append(line.strip())
     flush()
@@ -156,7 +172,11 @@ STYLE = """<style>
   .lead{color:var(--muted);font-size:14px;margin-bottom:28px}
   h2{font-size:19px;margin:32px 0 8px}
   h3{font-size:16px;margin:22px 0 6px;color:var(--ink)}
-  p,li{font-size:15.5px;color:#CFC5B0}
+  p,li,td,th{font-size:15.5px;color:#CFC5B0}
+  .table{overflow-x:auto;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{color:var(--ink);font-weight:600}
   p{margin:8px 0}
   ul{padding-left:22px;margin:6px 0}
   li{margin:4px 0}

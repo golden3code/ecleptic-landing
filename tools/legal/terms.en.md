@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-17 -->
+<!-- version-fr: 2026-11-20 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 17 November 2026**
+**Last updated: 20 November 2026**
 
 ---
 
@@ -41,7 +41,7 @@ They apply to any use of the Application, free or paid. The financial terms of s
 
 ## Article 4 — Acceptance and enforceability
 
-Use of the Application is subject to the prior and unreserved acceptance of these Terms of Use. Acceptance takes place when the Account is created (checkbox or equivalent mechanism). A User who does not accept the Terms of Use must not use the Application.
+Use of the Application is subject to the prior and unreserved acceptance of these Terms of Use. Acceptance takes place when the Account is created (checkbox or equivalent mechanism). When the Account is created by activating a purchase made from a coach on their public page, with the code received by email, the User accepts the Terms of Use and declares being 15 or over at that step, before the purchase is attached to the Account. A User who does not accept the Terms of Use must not use the Application.
 
 The applicable Terms of Use are those in force on the day of use, available at any time from the Application. The Publisher keeps proof of acceptance (timestamp, accepted version).
 
@@ -201,11 +201,13 @@ The administrator (the person who creates the team, then the member who joined e
 
 ### 9 bis.19. Coaches
 
-A coach is an adult member whose account has been validated by the Ecleptic team. An adult may link to one coach only at a time, using the coach's code, after a **separate agreement**, unticked by default, of which the Publisher keeps proof (timestamp, version). The coach then sees all of that student's workouts, including those hidden from the public profile: date, type, duration, distance, effort and title. The coach never sees sleep, nutrition, weight, heart rate, tracks or places.
+A coach is an adult member whose account has been validated by the Ecleptic team. An adult may link to one coach only at a time, using the coach's code or link, after a **separate agreement**, unticked by default, of which the Publisher keeps proof (timestamp, version). The coach then sees all of that student's workouts, including those hidden from the public profile: date and time, type, duration, distance, effort, title, exercises, sets, loads and calories. The coach sees the rest (goal and profile, body and age, recovery, nutrition and meal log, watch, progress photos, meal photos, AI-written report) only if the student ticks the matching box in "What my coach sees". The coach never sees tracks or places. Details are in the privacy policy (article 2.14).
 
-The student may withdraw this agreement at any time, in Team: access stops immediately. Blocking the coach, turning off the Society or the withdrawal of coach status also end it.
+The student may untick each box, or withdraw the agreement, at any time, from the "Coach" page: access stops immediately. Blocking the coach or the withdrawal of coach status also end it; turning off the Society ends it after 30 days, when the Society data is erased.
 
-The coach undertakes to use these workouts only to support the student, not to distribute them, and to comply with the rules applicable to their activity, in particular those of the French Sports Code if they teach for remuneration. Before any validation, the coach accepts the coach's commitment and, if they teach for remuneration, provides their professional sports educator card (carte professionnelle d'éducateur sportif). Validation of a coach account guarantees neither the coach's qualifications nor their advice. The Publisher is not a party to any relationship between a coach and a student, and is not involved in any payment between them.
+The coach may email the student from Ecleptic without seeing their address; the student may stop these emails at any time, from the email or in the app. The student may also give their phone number to their coach to receive text messages sent from the coach's own phone; they remove it whenever they wish, and it is erased when the coaching ends. Finally, the student may separately agree that the tools connected by their coach (spreadsheet, management software, Zapier) are notified of a completed session or a filled-in check-in; these tools are chosen by the coach, who is responsible for them.
+
+The coach undertakes to use the student's data only to support the student, not to distribute it, and to comply with the rules applicable to their activity, in particular those of the French Sports Code if they teach for remuneration. Before any validation, the coach accepts the coach's commitment and, if they teach for remuneration, provides their professional sports educator card (carte professionnelle d'éducateur sportif). Validation of a coach account guarantees neither the coach's qualifications nor their advice. The Publisher is not a party to any relationship between a coach and a student. When the student buys a service from their coach, the coach is the only seller: the payment goes to the coach's Stripe account, under the coach's terms of sale. A referral reward (free session) is an offer from the coach, who decides on it each time.
 
 ### 9 bis.20. Messaging
 

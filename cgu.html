@@ -45,7 +45,11 @@
   .lead{color:var(--muted);font-size:14px;margin-bottom:28px}
   h2{font-size:19px;margin:32px 0 8px}
   h3{font-size:16px;margin:22px 0 6px;color:var(--ink)}
-  p,li{font-size:15.5px;color:#CFC5B0}
+  p,li,td,th{font-size:15.5px;color:#CFC5B0}
+  .table{overflow-x:auto;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{color:var(--ink);font-weight:600}
   p{margin:8px 0}
   ul{padding-left:22px;margin:6px 0}
   li{margin:4px 0}
@@ -56,7 +60,7 @@
 <body>
 <div class="wrap">
   <h1>Conditions Générales d'Utilisation (CGU) — Ecleptic</h1>
-  <p class="date">Dernière mise à jour : 17 novembre 2026</p>
+  <p class="date">Dernière mise à jour : 20 novembre 2026</p>
   <p class="lead">Ce texte est le même que celui affiché dans l'application Ecleptic.</p>
   <h2 id="article-1-mentions-legales">Article 1 — Mentions légales</h2>
   <p>L'application et les services <strong>Ecleptic</strong> (ci-après « l'Application ») sont édités par :</p>
@@ -88,7 +92,7 @@
   <p>Les présentes CGU ont pour objet de définir les conditions d'accès et d'utilisation de l'Application par l'Utilisateur, ainsi que les droits et obligations respectifs de l'Éditeur et de l'Utilisateur.</p>
   <p>Elles s'appliquent à toute utilisation de l'Application, gratuite ou payante. Les conditions financières des abonnements sont régies par les CGV, qui complètent les présentes CGU. En cas de contradiction sur une question de vente, les CGV prévalent.</p>
   <h2 id="article-4-acceptation-et-opposabilite">Article 4 — Acceptation et opposabilité</h2>
-  <p>L'utilisation de l'Application est subordonnée à l'acceptation préalable et sans réserve des présentes CGU. Cette acceptation est matérialisée lors de la création du Compte (case à cocher ou mécanisme équivalent). L'Utilisateur qui n'accepte pas les CGU doit s'abstenir d'utiliser l'Application.</p>
+  <p>L'utilisation de l'Application est subordonnée à l'acceptation préalable et sans réserve des présentes CGU. Cette acceptation est matérialisée lors de la création du Compte (case à cocher ou mécanisme équivalent). Quand le Compte est créé par l'activation d'un achat fait auprès d'un coach sur sa page publique, avec le code reçu par e-mail, l'Utilisateur accepte les CGU et atteste avoir 15 ans ou plus à cette étape, avant que l'achat ne soit rattaché au Compte. L'Utilisateur qui n'accepte pas les CGU doit s'abstenir d'utiliser l'Application.</p>
   <p>Les CGU applicables sont celles en vigueur au jour de l'utilisation, accessibles à tout moment depuis l'Application. L'Éditeur conserve la preuve de l'acceptation (horodatage, version acceptée).</p>
   <h2 id="article-5-conditions-d-acces-et-d-inscription">Article 5 — Conditions d'accès et d'inscription</h2>
   <p>5.1. L'Application est réservée aux personnes physiques âgées d'au moins <strong>16 ans</strong>. Un mineur de 16 ou 17 ans peut créer un compte et consentir seul au traitement de ses données (article 45 de la loi Informatique et Libertés). La souscription d'un abonnement payant par un mineur suppose l'accord de ses représentants légaux. Les fonctionnalités de scan de composition corporelle et de conversation avec Éos, l'assistante IA, sont réservées aux personnes majeures.</p>
@@ -186,9 +190,10 @@
   <p>Un membre peut créer une équipe ou en rejoindre une avec son code. Un compte n'appartient qu'à une équipe à la fois, et une équipe compte 12 membres au plus. Les membres voient le nom de l'équipe, ainsi que le pseudo, l'avatar et le nombre de séances de la semaine de chacun, jamais le contenu de ces séances. Une séance masquée du profil ne compte pas.</p>
   <p>L'administrateur (celui qui crée l'équipe, puis le membre arrivé le plus tôt parmi ceux qui restent) choisit le nom et l'objectif, renouvelle le code et peut retirer un membre. Le nom d'une équipe est un contenu publié sous la responsabilité de son administrateur : il obéit aux mêmes règles que le pseudo (9 bis.2), un membre peut le signaler, et la modération peut retirer l'équipe. Quitter une équipe ou désactiver la Society retire le membre aussitôt ; l'équipe disparaît avec son dernier membre. Une équipe est un jeu entre membres, sans enjeu financier ni lot.</p>
   <h3 id="9-bis-19-coachs">9 bis.19. Coachs</h3>
-  <p>Un coach est un membre majeur dont le compte a été validé par l'équipe d'Ecleptic. Un adulte peut se relier à un seul coach à la fois, avec son code, après un <strong>accord à part</strong>, décoché par défaut, dont l'Éditeur conserve la preuve (horodatage, version). Le coach voit alors toutes les séances de cet élève, y compris celles masquées du profil public : date, type, durée, distance, effort et titre. Il ne voit jamais le sommeil, l'alimentation, le poids, la fréquence cardiaque, les tracés ni les lieux.</p>
-  <p>L'élève peut retirer cet accord à tout moment, dans Équipe : l'accès s'arrête aussitôt. Bloquer le coach, désactiver la Society ou le retrait du statut de coach y mettent fin aussi.</p>
-  <p>Le coach s'engage à n'utiliser ces séances que pour accompagner l'élève, à ne pas les diffuser et à respecter les règles applicables à son activité, notamment celles du Code du sport s'il enseigne contre rémunération. Avant toute validation, le coach accepte l'engagement du coach et, s'il enseigne contre rémunération, communique sa carte professionnelle d'éducateur sportif. La validation d'un compte coach ne garantit ni ses qualifications ni ses conseils. L'Éditeur n'est partie à aucune relation entre un coach et son élève, et n'intervient dans aucun paiement entre eux.</p>
+  <p>Un coach est un membre majeur dont le compte a été validé par l'équipe d'Ecleptic. Un adulte peut se relier à un seul coach à la fois, avec son code ou son lien, après un <strong>accord à part</strong>, décoché par défaut, dont l'Éditeur conserve la preuve (horodatage, version). Le coach voit alors toutes les séances de cet élève, y compris celles masquées du profil public : date et heure, type, durée, distance, effort, titre, exercices, séries, charges et calories. Il ne voit le reste (objectif et fiche, corps et âge, récupération, alimentation et journal des repas, montre, photos de progression, photos des repas, bilan rédigé par une IA) que si l'élève coche la case correspondante dans « Ce que mon coach voit ». Il ne voit jamais les tracés ni les lieux. Le détail figure dans la politique de confidentialité (article 2.14).</p>
+  <p>L'élève peut retirer chaque case, ou son accord, à tout moment, depuis la page « Coach » : l'accès s'arrête aussitôt. Bloquer le coach ou le retrait du statut de coach y mettent fin aussi ; désactiver la Society y met fin au bout de 30 jours, avec l'effacement des données de la Society.</p>
+  <p>Le coach peut écrire à l'élève par e-mail depuis Ecleptic, sans voir son adresse ; l'élève peut couper ces e-mails à tout moment, depuis l'e-mail ou dans l'app. L'élève peut aussi donner son numéro à son coach pour recevoir des SMS envoyés depuis le téléphone du coach ; il le retire quand il veut, et il est effacé à la fin du suivi. L'élève peut enfin accepter, à part, que les outils reliés par son coach (tableur, logiciel de gestion, Zapier) soient prévenus d'une séance faite ou d'un bilan rempli ; ces outils sont choisis par le coach, qui en est responsable.</p>
+  <p>Le coach s'engage à n'utiliser les données de l'élève que pour l'accompagner, à ne pas les diffuser et à respecter les règles applicables à son activité, notamment celles du Code du sport s'il enseigne contre rémunération. Avant toute validation, le coach accepte l'engagement du coach et, s'il enseigne contre rémunération, communique sa carte professionnelle d'éducateur sportif. La validation d'un compte coach ne garantit ni ses qualifications ni ses conseils. L'Éditeur n'est partie à aucune relation entre un coach et son élève. Quand l'élève achète une prestation à son coach, le coach est le seul vendeur : le paiement va sur le compte Stripe du coach, selon les conditions de vente du coach. Une récompense de parrainage (séance offerte) est une offre du coach, qu'il décide à chaque fois.</p>
   <h3 id="9-bis-20-messagerie">9 bis.20. Messagerie</h3>
   <p>La messagerie permet d'écrire à ses partenaires, à son équipe et à son Expédition. Elle est réservée aux membres dont la Society est active. Un membre ne peut écrire à une personne seule que si les deux sont partenaires.</p>
   <p>Une conversation privée entre un adulte et un mineur est refusée, même entre partenaires.</p>
