@@ -231,7 +231,38 @@ function signatureOk(header, rawBody, secret) {
       <tr><td>503</td><td><code>unavailable</code></td><td>Service unavailable: try again later</td></tr>
     </tbody>
   </table></div>
-  <h2 id="8-changes">8. Changes</h2>
+  <h2 id="8-team-api">8. Team API</h2>
+  <p>A structure (gym, studio) that brings several coaches together in an Ecleptic team can connect its software with a <strong>team key</strong>. This key reads the management data of <strong>all coaches who are members of the team</strong>, the manager included.</p>
+  <ul>
+    <li>Only the <strong>manager</strong> creates a key, in the console: <strong>Team › API › New key</strong>. Same rules as a coach key: <code>ecl_…</code>, shown only once, 1 year, 90 days or no end date, revocable at any time, 5 active keys at most per team.</li>
+    <li>Same base URL and routes as a coach's API (<code>/me</code>, <code>/students</code>, <code>/sessions</code>, <code>/sales</code>, <code>/bookings</code>, <code>/webhooks</code>), same pages, same limits (60 calls per minute, 5,000 per day, per key), same errors. Server-to-server calls only.</li>
+    <li>Every row also carries <code>coach</code>: <code>{"id": "coa_…", "name": "…"}</code>, a code specific to the team and the coach's username.</li>
+    <li><code>student.id</code> is a code specific to the team: the same whichever coach the client has in the team, and different from the code each coach sees in their own API.</li>
+    <li><code>GET /me</code> returns <code>org.name</code> (the team's name), <code>coaches</code> (codes and usernames of the member coaches), <code>key</code> and <code>limits</code>.</li>
+    <li><code>/students</code> returns one row per follow-up: the latest one of each client with each coach of the team.</li>
+    <li>Only <strong>current</strong> members are read: a coach who leaves the team no longer appears.</li>
+  </ul>
+  <p><strong>No activity data</strong>: a session is only ever <code>planned</code> or <code>cancelled</code>, never <code>done</code> or <code>missed</code>. No check-ins, no forms. Nothing listed in section 6 leaves either.</p>
+  <h3 id="team-webhooks">Team webhooks</h3>
+  <ul>
+    <li>No address is typed in the console: the software subscribes itself through the API (<code>POST /webhooks</code>, <code>DELETE /webhooks/{id}</code>), with a key that has the “webhooks” box.</li>
+    <li>3 addresses at most per team. Same deliveries, signature, retries and turn-off as for a coach (section 3).</li>
+    <li><strong>5 management events only</strong>:</li>
+  </ul>
+  <div class="table"><table>
+    <thead><tr><th>Event</th><th>When</th><th><code>data</code></th></tr></thead>
+    <tbody>
+      <tr><td><code>student.joined</code></td><td>A client starts a follow-up with a coach of the team (including after a change of coach)</td><td><code>student</code>, <code>coach</code>, <code>status</code>, <code>started_at</code>, <code>ended_at</code></td></tr>
+      <tr><td><code>student.left</code></td><td>A follow-up ends</td><td>same fields</td></tr>
+      <tr><td><code>sale.paid</code></td><td>A payment is received</td><td><code>sale</code>, <code>student</code>, <code>coach</code>, <code>package</code>, <code>package_kind</code>, <code>amount_cents</code>, <code>currency</code>, <code>occurred_at</code>, <code>invoice_number</code>, <code>livemode</code></td></tr>
+      <tr><td><code>sale.refunded</code></td><td>A refund is made</td><td>same fields</td></tr>
+      <tr><td><code>class.booked</code></td><td>A place in a class is confirmed</td><td><code>booking</code>, <code>class</code> (<code>id</code>, <code>title</code>, <code>starts_at</code>, <code>minutes</code>), <code>student</code>, <code>coach</code>, <code>guest</code>, <code>status</code></td></tr>
+    </tbody>
+  </table></div>
+  <p><code>form.signed</code>, <code>checkin.submitted</code> and <code>session.completed</code> do not exist for a team.</p>
+  <p>Manager's subscription ended (read-only): reading still works, nothing is sent. Team closed: everything stops.</p>
+  <p>A manager who creates a team key gives their software the management data of every coach in the team: they are responsible for it (coach terms of sale, article 3 ter), keep the key like a password and revoke it as soon as it is no longer used.</p>
+  <h2 id="9-changes">9. Changes</h2>
   <p>The version is in the URL (<code>/v1</code>). Fields, routes or events may be added without a new version: your tool must ignore what it does not know. Before removing or changing a field, a route or an event, Ecleptic tells coaches in the coach space.</p>
   <p>Questions: <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>.</p>
   <footer>

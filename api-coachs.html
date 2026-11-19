@@ -231,7 +231,38 @@ function signatureOk(header, rawBody, secret) {
       <tr><td>503</td><td><code>unavailable</code></td><td>Service indisponible : réessaie plus tard</td></tr>
     </tbody>
   </table></div>
-  <h2 id="8-changements">8. Changements</h2>
+  <h2 id="8-api-de-l-equipe">8. API de l'équipe</h2>
+  <p>Une structure (salle, studio) qui réunit plusieurs coachs dans une équipe Ecleptic peut relier son logiciel avec une <strong>clé d'équipe</strong>. Cette clé lit les données de gestion de <strong>tous les coachs membres de l'équipe</strong>, gérant compris.</p>
+  <ul>
+    <li>Seul le <strong>gérant</strong> crée une clé, dans la console : <strong>Équipe › API › Nouvelle clé</strong>. Mêmes règles qu'une clé de coach : <code>ecl_…</code>, affichée une seule fois, 1 an, 90 jours ou sans fin, révocable à tout moment, 5 actives au plus par équipe.</li>
+    <li>Même adresse et mêmes routes que l'API d'un coach (<code>/me</code>, <code>/students</code>, <code>/sessions</code>, <code>/sales</code>, <code>/bookings</code>, <code>/webhooks</code>), mêmes pages, mêmes limites (60 appels par minute, 5 000 par jour, par clé), mêmes erreurs. Appels de serveur à serveur seulement.</li>
+    <li>Chaque ligne porte en plus <code>coach</code> : <code>{"id": "coa_…", "name": "…"}</code>, un code propre à l'équipe et le pseudo du coach.</li>
+    <li><code>student.id</code> est un code propre à l'équipe : le même quel que soit le coach de l'élève dans l'équipe, différent du code que voit chaque coach dans sa propre API.</li>
+    <li><code>GET /me</code> rend <code>org.name</code> (nom de l'équipe), <code>coaches</code> (codes et pseudos des coachs membres), <code>key</code> et <code>limits</code>.</li>
+    <li><code>/students</code> rend une ligne par suivi : le dernier de chaque élève avec chaque coach de l'équipe.</li>
+    <li>Seuls les coachs <strong>actuellement</strong> membres sont lus : un coach qui quitte l'équipe n'apparaît plus.</li>
+  </ul>
+  <p><strong>Aucune donnée d'activité</strong> : une séance n'y est que <code>planned</code> ou <code>cancelled</code>, jamais <code>done</code> ni <code>missed</code>. Pas de bilan, pas de formulaire. Tout ce qui ne sort jamais (section 6) ne sort pas davantage.</p>
+  <h3 id="webhooks-de-l-equipe">Webhooks de l'équipe</h3>
+  <ul>
+    <li>Aucune adresse ne se saisit dans la console : le logiciel s'abonne lui-même par l'API (<code>POST /webhooks</code>, <code>DELETE /webhooks/{id}</code>), avec une clé qui a la case « webhooks ».</li>
+    <li>3 adresses au plus par équipe. Mêmes envois, même signature, mêmes nouveaux essais et même coupure que pour un coach (section 3).</li>
+    <li><strong>5 événements de gestion seulement</strong> :</li>
+  </ul>
+  <div class="table"><table>
+    <thead><tr><th>Événement</th><th>Quand</th><th><code>data</code></th></tr></thead>
+    <tbody>
+      <tr><td><code>student.joined</code></td><td>Un élève commence un suivi avec un coach de l'équipe (y compris après un changement de coach)</td><td><code>student</code>, <code>coach</code>, <code>status</code>, <code>started_at</code>, <code>ended_at</code></td></tr>
+      <tr><td><code>student.left</code></td><td>Un suivi se termine</td><td>mêmes champs</td></tr>
+      <tr><td><code>sale.paid</code></td><td>Un paiement est reçu</td><td><code>sale</code>, <code>student</code>, <code>coach</code>, <code>package</code>, <code>package_kind</code>, <code>amount_cents</code>, <code>currency</code>, <code>occurred_at</code>, <code>invoice_number</code>, <code>livemode</code></td></tr>
+      <tr><td><code>sale.refunded</code></td><td>Un remboursement est fait</td><td>mêmes champs</td></tr>
+      <tr><td><code>class.booked</code></td><td>Une place à un cours est confirmée</td><td><code>booking</code>, <code>class</code> (<code>id</code>, <code>title</code>, <code>starts_at</code>, <code>minutes</code>), <code>student</code>, <code>coach</code>, <code>guest</code>, <code>status</code></td></tr>
+    </tbody>
+  </table></div>
+  <p><code>form.signed</code>, <code>checkin.submitted</code> et <code>session.completed</code> n'existent pas pour une équipe.</p>
+  <p>Abonnement du gérant terminé (lecture seule) : les lectures restent possibles, rien ne part. Équipe fermée : tout s'arrête.</p>
+  <p>Le gérant qui crée une clé d'équipe donne à son logiciel les données de gestion de tous les coachs de l'équipe : il en est responsable (conditions de vente des coachs, article 3 ter), garde la clé comme un mot de passe et la révoque dès qu'elle ne sert plus.</p>
+  <h2 id="9-changements">9. Changements</h2>
   <p>La version est dans l'adresse (<code>/v1</code>). Des champs, des routes ou des événements peuvent s'ajouter sans changer de version : ton outil doit ignorer ce qu'il ne connaît pas. Avant de retirer ou de changer un champ, une route ou un événement, Ecleptic en informe les coachs dans l'espace coach.</p>
   <p>Une question : <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>.</p>
   <footer>

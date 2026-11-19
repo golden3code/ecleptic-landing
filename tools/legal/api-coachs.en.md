@@ -204,7 +204,41 @@ An error returns `{"error": "…", "message": "…"}`:
 | 429 | `rate_limited` | Too many calls |
 | 503 | `unavailable` | Service unavailable: try again later |
 
-## 8. Changes
+## 8. Team API
+
+A structure (gym, studio) that brings several coaches together in an Ecleptic team can connect its software with a **team key**. This key reads the management data of **all coaches who are members of the team**, the manager included.
+
+- Only the **manager** creates a key, in the console: **Team › API › New key**. Same rules as a coach key: `ecl_…`, shown only once, 1 year, 90 days or no end date, revocable at any time, 5 active keys at most per team.
+- Same base URL and routes as a coach's API (`/me`, `/students`, `/sessions`, `/sales`, `/bookings`, `/webhooks`), same pages, same limits (60 calls per minute, 5,000 per day, per key), same errors. Server-to-server calls only.
+- Every row also carries `coach`: `{"id": "coa_…", "name": "…"}`, a code specific to the team and the coach's username.
+- `student.id` is a code specific to the team: the same whichever coach the client has in the team, and different from the code each coach sees in their own API.
+- `GET /me` returns `org.name` (the team's name), `coaches` (codes and usernames of the member coaches), `key` and `limits`.
+- `/students` returns one row per follow-up: the latest one of each client with each coach of the team.
+- Only **current** members are read: a coach who leaves the team no longer appears.
+
+**No activity data**: a session is only ever `planned` or `cancelled`, never `done` or `missed`. No check-ins, no forms. Nothing listed in section 6 leaves either.
+
+### Team webhooks
+
+- No address is typed in the console: the software subscribes itself through the API (`POST /webhooks`, `DELETE /webhooks/{id}`), with a key that has the “webhooks” box.
+- 3 addresses at most per team. Same deliveries, signature, retries and turn-off as for a coach (section 3).
+- **5 management events only**:
+
+| Event | When | `data` |
+|---|---|---|
+| `student.joined` | A client starts a follow-up with a coach of the team (including after a change of coach) | `student`, `coach`, `status`, `started_at`, `ended_at` |
+| `student.left` | A follow-up ends | same fields |
+| `sale.paid` | A payment is received | `sale`, `student`, `coach`, `package`, `package_kind`, `amount_cents`, `currency`, `occurred_at`, `invoice_number`, `livemode` |
+| `sale.refunded` | A refund is made | same fields |
+| `class.booked` | A place in a class is confirmed | `booking`, `class` (`id`, `title`, `starts_at`, `minutes`), `student`, `coach`, `guest`, `status` |
+
+`form.signed`, `checkin.submitted` and `session.completed` do not exist for a team.
+
+Manager's subscription ended (read-only): reading still works, nothing is sent. Team closed: everything stops.
+
+A manager who creates a team key gives their software the management data of every coach in the team: they are responsible for it (coach terms of sale, article 3 ter), keep the key like a password and revoke it as soon as it is no longer used.
+
+## 9. Changes
 
 The version is in the URL (`/v1`). Fields, routes or events may be added without a new version: your tool must ignore what it does not know. Before removing or changing a field, a route or an event, Ecleptic tells coaches in the coach space.
 
