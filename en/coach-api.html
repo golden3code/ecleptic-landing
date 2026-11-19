@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://eu.i.posthog.com https://eu-assets.i.posthog.com; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://avbmycfngmxhkjesdiyq.supabase.co; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Coach API: documentation — Ecleptic</title>
+<meta name="description" content="Documentation of the Ecleptic coach API: keys, reading clients, sessions, sales and bookings, signed webhooks, limits. No health data ever leaves.">
+<link rel="canonical" href="https://ecleptic.health/en/coach-api.html">
+<link rel="alternate" hreflang="fr" href="https://ecleptic.health/api-coachs.html">
+<link rel="alternate" hreflang="en" href="https://ecleptic.health/en/coach-api.html">
+<link rel="alternate" hreflang="x-default" href="https://ecleptic.health/en/coach-api.html">
+<script>
+(function(){try{
+  var d=document.documentElement,page=d.lang,ls=window.localStorage,ua=navigator.userAgent||'';
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-setlang]');if(a){try{ls.setItem('ecleptic.lang',a.getAttribute('data-setlang'))}catch(_){}}});
+  if(/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebook|whatsapp|telegram|twitter|linkedin|slack|discord|embed|preview|lighthouse|headless|pagespeed|gtmetrix|semrush|ahrefs|gpt|openai|oai-|perplexity|claude|anthropic|ccbot|applebot|amazonbot|bytespider|petal|mistral|cohere/i.test(ua))return;
+  var m=location.search.match(/[?&]lang=(fr|en)\b/),want=m?m[1]:null;
+  if(want){try{ls.setItem('ecleptic.lang',want)}catch(_){}}
+  if(!want){try{want=ls.getItem('ecleptic.lang')}catch(_){}}
+  if(!want){
+    var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(_){}
+    want=(/^fr\b/i.test(langs[0]||'')||['Europe/Paris','Europe/Monaco','America/Martinique','America/Guadeloupe','America/Cayenne','America/St_Barthelemy','America/Marigot','America/Miquelon','Indian/Reunion','Indian/Mayotte','Pacific/Noumea','Pacific/Tahiti','Pacific/Marquesas','Pacific/Gambier','Pacific/Wallis','Indian/Kerguelen','Africa/Casablanca','Africa/El_Aaiun','Africa/Algiers','Africa/Tunis','Africa/Abidjan','Africa/Dakar','Africa/Bamako','Africa/Ouagadougou','Africa/Niamey','Africa/Conakry','Africa/Lome','Africa/Porto-Novo','Africa/Douala','Africa/Libreville','Africa/Brazzaville','Africa/Kinshasa','Africa/Lubumbashi','Africa/Bangui','Africa/Ndjamena','Africa/Nouakchott','Africa/Djibouti','Africa/Kigali','Africa/Bujumbura','Indian/Antananarivo','Indian/Comoro','Indian/Mahe','Indian/Mauritius','America/Port-au-Prince'].indexOf(tz)>=0)?'fr':'en';
+  }
+  if(want===page)return;
+  var alt=document.querySelector('link[rel="alternate"][hreflang="'+want+'"]');
+  if(!alt)return;
+  var q=location.search.replace(/([?&])lang=(fr|en)\b&?/,'$1').replace(/[?&]$/,'');
+  location.replace(alt.href+q+location.hash);
+}catch(e){}})();
+</script>
+<style>
+  :root{--gold:#D9A441;--ink:#F2EBDD;--muted:#9A8E77;--bg:#0B0A08;--line:#2A241B;color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 64px}
+  a{color:var(--gold);overflow-wrap:anywhere}
+  h1{font-size:28px;margin-bottom:4px}
+  .date{color:var(--muted);font-size:14px;margin-bottom:12px}
+  .lead{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:19px;margin:32px 0 8px}
+  h3{font-size:16px;margin:22px 0 6px;color:var(--ink)}
+  p,li,td,th{font-size:15.5px;color:#CFC5B0}
+  .table{overflow-x:auto;margin:12px 0}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{color:var(--ink);font-weight:600}
+  p{margin:8px 0}
+  ul{padding-left:22px;margin:6px 0}
+  li{margin:4px 0}
+  blockquote{border-left:2px solid var(--line);padding:6px 0 6px 14px;margin:12px 0;font-size:15px;color:#CFC5B0}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}
+</style>
+<style>
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;color:var(--ink);background:#17140F;border:1px solid var(--line);border-radius:4px;padding:1px 5px;overflow-wrap:anywhere}
+  pre{background:#17140F;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto}
+  pre code{background:none;border:0;padding:0;font-size:13.5px;line-height:1.55;white-space:pre;overflow-wrap:normal}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Coach API: documentation</h1>
+  <p class="date">Last updated: 19 November 2026</p>
+  <p class="lead">To connect your coach space to a spreadsheet, your accounting, your gym software or Zapier. English translation of the French documentation; the French version prevails.</p>
+  <p>The Ecleptic API connects your coach space to your other tools: a spreadsheet, your accounting, your gym software, Zapier. It does two things:</p>
+  <ul>
+    <li><strong>read</strong> your management data (clients, planned sessions, sales, class bookings) with a key;</li>
+    <li><strong>notify</strong> your tool when something happens (client joined, sale, class booked…) through a webhook: Ecleptic sends a short message to the address you choose.</li>
+  </ul>
+  <p>It is open to every plan, trial included. It is read-only: no key can create, change or delete a client, a session or a sale. <strong>No health data ever leaves through the API or the webhooks</strong>, whatever the settings.</p>
+  <p>You choose the tools you connect, and you are responsible for them (coach terms of sale, article 9 octies, in French: <a href="https://ecleptic.health/cgv-coachs.html" rel="noopener">https://ecleptic.health/cgv-coachs.html</a>). What happens to your clients' data is explained in the privacy policy, section 2.14: <a href="https://ecleptic.health/en/privacy.html" rel="noopener">https://ecleptic.health/en/privacy.html</a>.</p>
+  <h2 id="1-keys">1. Keys</h2>
+  <ul>
+    <li>Create a key in the console, <strong>Settings › Connections and API</strong>, at <a href="https://coach.ecleptic.health" rel="noopener">https://coach.ecleptic.health</a>.</li>
+    <li>Tick what it can read: clients, planned sessions, sales, bookings. The “Manages its webhooks (Zapier)” box also lets it subscribe an address to your events. Tick as little as possible.</li>
+    <li>Validity: 1 year, 90 days or no end date. You can revoke it at any time: it stops working at once.</li>
+    <li>Keys start with <code>ecl_</code>. A key is shown <strong>only once</strong>, when it is created. Ecleptic only keeps a fingerprint of it: nobody can read it again. If you lose it, revoke it and create another one.</li>
+    <li>5 active keys at most.</li>
+    <li>Keep it like a password. It must never live in a web page: a call made from a browser (one that carries an <code>Origin</code> header) is refused.</li>
+  </ul>
+  <p>Every call carries the key in the <code>Authorization</code> header:</p>
+  <pre><code>GET https://avbmycfngmxhkjesdiyq.supabase.co/functions/v1/coach-api/v1/sales?since=2026-11-01T00:00:00Z
+Authorization: Bearer ecl_…</code></pre>
+  <h2 id="2-reading">2. Reading</h2>
+  <p>Base URL: <code>https://avbmycfngmxhkjesdiyq.supabase.co/functions/v1/coach-api/v1</code></p>
+  <div class="table"><table>
+    <thead><tr><th>Route</th><th>Box to tick</th><th>What it returns</th></tr></thead>
+    <tbody>
+      <tr><td><code>GET /me</code></td><td>none</td><td>Your name, the key's name, its boxes, its end date, the limits</td></tr>
+      <tr><td><code>GET /students</code></td><td>Clients</td><td>One row per client (their latest follow-up), without prospects</td></tr>
+      <tr><td><code>GET /sessions</code></td><td>Planned sessions</td><td>Sessions and appointments planned for a client, without your personal slots</td></tr>
+      <tr><td><code>GET /sales</code></td><td>Sales</td><td>Payments and refunds</td></tr>
+      <tr><td><code>GET /bookings</code></td><td>Bookings</td><td>Places booked in your classes</td></tr>
+    </tbody>
+  </table></div>
+  <h3 id="pages">Pages</h3>
+  <p>The four lists take the same parameters:</p>
+  <ul>
+    <li><code>since</code> and <code>until</code>: date bounds, in ISO 8601 (<code>2026-11-01</code> or <code>2026-11-01T08:00:00+01:00</code>). <code>since</code> is included, <code>until</code> is not. Always give a time zone (<code>Z</code> for UTC).</li>
+    <li><code>limit</code>: 1 to 100 rows per page, 50 by default.</li>
+    <li><code>cursor</code>: the <code>next_cursor</code> value of the previous page, to read the next one (with the same <code>since</code> and <code>until</code>).</li>
+  </ul>
+  <p>The response is always <code>{"data": [...], "next_cursor": "…"}</code>. Rows go from oldest to newest. <code>next_cursor</code> is <code>null</code> on the last page.</p>
+  <p>The date used for the bounds and the order: start of the follow-up for <code>/students</code>, session time for <code>/sessions</code>, payment or refund date for <code>/sales</code>, booking date for <code>/bookings</code>.</p>
+  <h3 id="fields">Fields</h3>
+  <p>A client always appears in the same form: <code>{"id": "stu_…", "name": "…"}</code>. <code>id</code> is a code specific to your space: it stays the same from one follow-up to the next, is used nowhere else, and is never the client's account identifier. <code>name</code> is the username you see in your list; it is <code>null</code> for someone who has never been your client.</p>
+  <div class="table"><table>
+    <thead><tr><th>Route</th><th>Fields</th></tr></thead>
+    <tbody>
+      <tr><td><code>/me</code></td><td><code>coach.name</code>; <code>key.name</code>, <code>key.scopes</code>, <code>key.expires_at</code> (<code>null</code> with no end date); <code>limits.per_minute</code> (60), <code>limits.per_day</code> (5,000), <code>limits.page_max</code> (100)</td></tr>
+      <tr><td><code>/students</code></td><td><code>id</code>, <code>name</code>, <code>status</code> (<code>active</code> or <code>ended</code>), <code>started_at</code>, <code>ended_at</code></td></tr>
+      <tr><td><code>/sessions</code></td><td><code>id</code>, <code>kind</code> (<code>workout</code> or <code>appointment</code>), <code>title</code>, <code>starts_at</code>, <code>minutes</code> (planned length), <code>status</code>, <code>student</code></td></tr>
+      <tr><td><code>/sales</code></td><td><code>id</code>, <code>type</code> (<code>payment</code> or <code>refund</code>), <code>student</code>, <code>package</code> (name of the offer), <code>package_kind</code> (<code>unit</code>, <code>pack</code>, <code>subscription</code> or <code>class</code>), <code>amount_cents</code>, <code>currency</code> (<code>eur</code>), <code>occurred_at</code>, <code>invoice_number</code>, <code>refunded_cents</code> (on a payment: total already refunded on the purchase), <code>livemode</code> (<code>false</code> for a Stripe test payment)</td></tr>
+      <tr><td><code>/bookings</code></td><td><code>id</code>, <code>class</code> (<code>id</code>, <code>title</code>, <code>starts_at</code>, <code>minutes</code>, <code>status</code>: <code>scheduled</code> or <code>cancelled</code>), <code>student</code> (<code>null</code> for a participant without an account), <code>guest</code> (<code>true</code> for a participant without an account), <code>status</code> (<code>pending</code>, <code>confirmed</code> or <code>cancelled</code>), <code>created_at</code>, <code>confirmed_at</code>, <code>cancelled_at</code></td></tr>
+    </tbody>
+  </table></div>
+  <p>A session's <code>status</code> is <code>planned</code> or <code>cancelled</code>. It is only <code>done</code> or <code>missed</code> for a client in an active follow-up who gave the “Connected tools” consent in their app (section 5); for everyone else, a session that is not cancelled always reads <code>planned</code>.</p>
+  <p>Amounts are in cents. Dates are in ISO 8601, in UTC. A field with no value is <code>null</code>.</p>
+  <h2 id="3-webhooks">3. Webhooks</h2>
+  <p>A webhook tells your tool as soon as an event happens, without it having to poll the API.</p>
+  <h3 id="addresses">Addresses</h3>
+  <ul>
+    <li>Create an address in the console (<strong>Settings › Connections and API › Add an address</strong>), or through the API with a key that “manages its webhooks” (section 4).</li>
+    <li>3 addresses at most, however they were created. <code>https</code> only, on port 443, to a public address: no address written as an IP number, no local network. Ecleptic checks it when it is saved and before every delivery.</li>
+    <li>You choose which events are sent. You can pause the address, turn it back on, delete it.</li>
+    <li>“Send a test” sends a <code>webhook.test</code> event (<code>{"test": true}</code>), once a minute at most, with no retry if it fails.</li>
+  </ul>
+  <h3 id="events">Events</h3>
+  <div class="table"><table>
+    <thead><tr><th>Event</th><th>When</th><th><code>data</code></th></tr></thead>
+    <tbody>
+      <tr><td><code>student.joined</code></td><td>A client starts their follow-up (or a prospect becomes a client)</td><td><code>student</code>, <code>status</code>, <code>started_at</code>, <code>ended_at</code></td></tr>
+      <tr><td><code>student.left</code></td><td>A follow-up ends</td><td><code>student</code>, <code>status</code>, <code>started_at</code>, <code>ended_at</code></td></tr>
+      <tr><td><code>sale.paid</code></td><td>A payment is received</td><td><code>sale</code> (the same <code>id</code> as in <code>/sales</code>), <code>student</code>, <code>package</code>, <code>package_kind</code>, <code>amount_cents</code>, <code>currency</code>, <code>occurred_at</code>, <code>invoice_number</code>, <code>livemode</code></td></tr>
+      <tr><td><code>sale.refunded</code></td><td>A refund is made</td><td>same fields (<code>amount_cents</code>: amount refunded)</td></tr>
+      <tr><td><code>class.booked</code></td><td>A place in a class is confirmed</td><td><code>booking</code>, <code>class</code> (<code>id</code>, <code>title</code>, <code>starts_at</code>, <code>minutes</code>), <code>student</code>, <code>guest</code>, <code>status</code></td></tr>
+      <tr><td><code>form.signed</code></td><td>A form is signed</td><td><code>form</code> (<code>kind</code>: <code>form</code> or <code>health</code>, <code>title</code>), <code>student</code>, <code>signed_at</code></td></tr>
+      <tr><td><code>checkin.submitted</code></td><td>A recurring check-in is filled in</td><td><code>student</code>, <code>submitted_at</code></td></tr>
+      <tr><td><code>session.completed</code></td><td>A planned session is done</td><td><code>session</code>, <code>title</code>, <code>starts_at</code>, <code>student</code></td></tr>
+    </tbody>
+  </table></div>
+  <p>Events about the client's activity are only sent with their consent (section 5).</p>
+  <h3 id="delivery">Delivery</h3>
+  <p>Each event is sent as a <code>POST</code> with a JSON body:</p>
+  <pre><code>{"id": "evt_…", "type": "sale.paid", "created_at": "2026-11-19T09:12:03.512345+00:00", "data": {…}}</code></pre>
+  <p>Headers: <code>Content-Type: application/json</code>, <code>User-Agent: Ecleptic-Webhooks/1.0</code>, <code>Ecleptic-Event-Id</code> (the event's <code>id</code>), <code>Ecleptic-Event-Type</code>, <code>Ecleptic-Signature</code>.</p>
+  <ul>
+    <li>Answer with a 2xx code within <strong>10 seconds</strong>. The body of your answer is not read.</li>
+    <li>Ecleptic follows <strong>no redirect</strong>: a 3xx answer counts as a failure.</li>
+    <li>If a delivery fails, it is tried again after 1 minute, 10 minutes, then 1 hour (4 deliveries in all). The first one leaves within a minute of the event.</li>
+    <li>After <strong>20 failures in a row</strong>, the address is turned off. You are told in the console and on your dashboard, and you turn it back on in one click.</li>
+    <li>The same event may arrive twice (a lost answer, for example): keep the <code>Ecleptic-Event-Id</code> values you have already handled. The order of arrival is not guaranteed: rely on <code>created_at</code>.</li>
+    <li>A delivery weighs 8 KB at most.</li>
+  </ul>
+  <h3 id="signature">Signature</h3>
+  <p>Every delivery is signed with the address's secret. The secret starts with <code>whsec_</code>. It is shown only once, when the address is created and each time you regenerate it.</p>
+  <pre><code>Ecleptic-Signature: t=1795165923,v1=5f2b…</code></pre>
+  <ul>
+    <li><code>t</code>: the time of sending, in seconds since 1 January 1970 (UTC).</li>
+    <li><code>v1</code>: the HMAC-SHA256, in hexadecimal, of the text <code>t</code> + <code>.</code> + the body received, keyed with the whole secret (<code>whsec_…</code> included).</li>
+  </ul>
+  <p>To check a delivery:</p>
+  <p>1. Read the <strong>raw</strong> body, exactly as received, before any JSON parsing.</p>
+  <p>2. Compute the HMAC-SHA256 of <code>t.body</code> with your secret and compare it with <code>v1</code>, in constant time.</p>
+  <p>3. Refuse the delivery if <code>t</code> is more than 5 minutes away from your clock.</p>
+  <p>Example in Node.js:</p>
+  <pre><code>const crypto = require('crypto');
+
+function signatureOk(header, rawBody, secret) {
+  const parts = Object.fromEntries(header.split(',').map((p) =&gt; p.trim().split('=')));
+  const t = Number(parts.t);
+  if (!t || Math.abs(Date.now() / 1000 - t) &gt; 300) return false;
+  const expected = crypto.createHmac('sha256', secret).update(t + '.' + rawBody).digest('hex');
+  const given = Buffer.from(parts.v1 || '', 'hex');
+  return given.length === 32 &amp;&amp; crypto.timingSafeEqual(given, Buffer.from(expected, 'hex'));
+}</code></pre>
+  <h2 id="4-subscribing-an-address-through-the-api-zapier-and-similar-tools">4. Subscribing an address through the API (Zapier and similar tools)</h2>
+  <p>With a key that “manages its webhooks”, a tool can create and remove its own address:</p>
+  <ul>
+    <li><code>POST /webhooks</code>, body <code>{"url": "https://…", "events": ["sale.paid", "student.joined"]}</code> (1 to 8 events from the list above). Answer <code>201</code>: <code>{"id", "url", "events", "secret"}</code>. The secret is only returned at that moment.</li>
+    <li><code>DELETE /webhooks/{id}</code>: removes an address created by the same key. Answer <code>200</code>: <code>{"deleted": true}</code>.</li>
+  </ul>
+  <p>An address created this way shows in your console, counts towards the 3, and goes away with the key when you revoke it.</p>
+  <p>The Ecleptic app for Zapier will be offered by invitation. Until then, any tool that can receive a webhook or call an address with a key can use the API.</p>
+  <h2 id="5-what-is-only-sent-with-the-client-s-consent">5. What is only sent with the client's consent</h2>
+  <p>The client gives this consent in their app, in “What my coach sees”, box “Tools connected by” their coach. They can withdraw it whenever they want: deliveries still waiting for them are cancelled. The consent ends with the follow-up. It cannot be given during a trial. Do not ask for it any other way than through the app.</p>
+  <p>Without this consent, none of this is sent:</p>
+  <ul>
+    <li><code>session.completed</code> (session done): the title of the session you sent, its date, the client;</li>
+    <li><code>checkin.submitted</code> (check-in filled in): the date, the client;</li>
+    <li><code>form.signed</code> for a <strong>health questionnaire</strong>: only the kind (<code>health</code>) and the date, the client, never the title or the answers;</li>
+    <li>in <code>/sessions</code>, the <code>done</code> or <code>missed</code> status.</li>
+  </ul>
+  <p>Even with consent, no figure is sent: no actual duration, effort, load or set.</p>
+  <p>Without consent, an ordinary signed form is sent (kind <code>form</code>, its title, the date, the client), because it is data you manage.</p>
+  <h2 id="6-what-never-leaves">6. What never leaves</h2>
+  <p>Through no key, no webhook, no setting:</p>
+  <ul>
+    <li>weight, measurements, body fat, photos;</li>
+    <li>sleep, Readiness, physiological state, heart rate and heart rate variability, watch data;</li>
+    <li>actual duration, perceived effort, loads and sets of a session done;</li>
+    <li>meals, intake, followed meal plans;</li>
+    <li>answers to forms and check-ins, result of the health questionnaire;</li>
+    <li>the client's file, notes and tags, messages, voice notes, weekly reports;</li>
+    <li>the client's email address, phone number, date of birth, age, sex, account identifier;</li>
+    <li>first name and email of a buyer or participant without an account, place and video link of a class, Stripe references, service fees.</li>
+  </ul>
+  <p>The titles you write (sessions, classes, forms) can leave: never write health data in them.</p>
+  <h2 id="7-limits-and-errors">7. Limits and errors</h2>
+  <ul>
+    <li><strong>60 calls per minute and 5,000 per day</strong> (UTC day), per key. Beyond that: a <code>429</code> answer with a <code>Retry-After</code> header (in seconds).</li>
+    <li>Every call is logged for 30 days: the key, the route without its parameters, the answer, the duration, and a fingerprint of the caller's IP address, never the address itself. You see the latest calls in the console.</li>
+    <li>Subscription ended (read-only): the API can still be read, webhooks stop, no key or address can be created. Coach space suspended or closed: everything stops.</li>
+  </ul>
+  <p>An error returns <code>{"error": "…", "message": "…"}</code>:</p>
+  <div class="table"><table>
+    <thead><tr><th>Code</th><th><code>error</code></th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>400</td><td><code>bad_since</code>, <code>bad_until</code>, <code>bad_limit</code>, <code>bad_cursor</code>, <code>bad_webhook</code>, <code>bad_url</code>, <code>bad_events</code></td><td>Malformed parameter or body</td></tr>
+      <tr><td>401</td><td><code>unauthorized</code></td><td>Key missing, unknown, revoked or expired, or coach space suspended (always the same answer)</td></tr>
+      <tr><td>403</td><td><code>forbidden</code>, <code>browser_not_allowed</code>, <code>read_only</code>, <code>not_coach</code></td><td>Box not ticked for this route, call from a browser, subscription ended (to create an address), coach space not active</td></tr>
+      <tr><td>404</td><td><code>not_found</code></td><td>Unknown route or address</td></tr>
+      <tr><td>405</td><td><code>method_not_allowed</code></td><td>Method refused (the <code>Allow</code> header says which one to use)</td></tr>
+      <tr><td>409</td><td><code>too_many</code>, <code>duplicate</code></td><td>Already 3 addresses, or address already saved</td></tr>
+      <tr><td>429</td><td><code>rate_limited</code></td><td>Too many calls</td></tr>
+      <tr><td>503</td><td><code>unavailable</code></td><td>Service unavailable: try again later</td></tr>
+    </tbody>
+  </table></div>
+  <h2 id="8-changes">8. Changes</h2>
+  <p>The version is in the URL (<code>/v1</code>). Fields, routes or events may be added without a new version: your tool must ignore what it does not know. Before removing or changing a field, a route or an event, Ecleptic tells coaches in the coach space.</p>
+  <p>Questions: <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>.</p>
+  <footer>
+    <a href="/en/">← Home</a> · <a href="/cgv-coachs.html">Coach terms of sale (French)</a> · <a href="/en/privacy.html">Privacy</a> · <a href="/en/legal-notice.html">Legal notice</a> · <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>
+  </footer>
+</div>
+</body>
+</html>

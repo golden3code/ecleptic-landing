@@ -12,8 +12,11 @@ On retire, comme dans l'app, les encadrés internes « > ⚠️ … » et la sec
 
 Usage (après chaque modification des CGU ou des CGV) :
     python3 tools/build_terms.py
-Écrit cgu.html, cgv.html, en/terms.html, en/terms-of-sale.html et cgv-coachs.html
-(CGV des coachs, ~/Desktop/Auros/legal/cgv-coachs.md, en français seul). Échoue si une
+Écrit cgu.html, cgv.html, en/terms.html, en/terms-of-sale.html, cgv-coachs.html
+(CGV des coachs, ~/Desktop/Auros/legal/cgv-coachs.md, en français seul), sous-traitance-coachs.html
+et la documentation de l'API des coachs (api-coachs.html et en/coach-api.html, source
+~/Desktop/Auros/legal/api-coachs.md, traduction tools/legal/api-coachs.en.md ; seule page avec
+du code : `code` en ligne et blocs entre trois accents graves). Échoue si une
 traduction anglaise ne correspond plus à la date de la version française (ligne
 « <!-- version-fr: AAAA-MM-JJ --> » en tête de la traduction).
 """
@@ -54,6 +57,17 @@ DOCS = [
             "description": "Terms of Sale of Ecleptic: Copper and Golden offers, price, renewal, cancellation, withdrawal and guarantees.",
             "lead": "This is an English translation of the French Terms of Sale shown in the Ecleptic app; the French version prevails.",
             "footer": FOOT_EN % '<a href="/en/terms.html">Terms of Use</a>'}},
+    # Documentation publique de l'API des coachs (plan « Parité », lot C10) : clés, lectures,
+    # webhooks, signature, limites. Vérifiée dans le code de coach-api et coach-webhook-send.
+    {"fr_source": "api-coachs.md", "en_source": "api-coachs.en.md", "code": True,
+     "fr": {"file": "api-coachs.html", "title": "API des coachs : documentation — Ecleptic",
+            "description": "Documentation de l'API des coachs d'Ecleptic : clés, lectures des élèves, séances, ventes et réservations, webhooks signés, limites. Aucune donnée de santé ne sort.",
+            "lead": "Pour relier ton espace coach à un tableur, à ta comptabilité, au logiciel de ta salle ou à Zapier.",
+            "footer": FOOT_FR % '<a href="/cgv-coachs.html">Conditions de vente des coachs</a>'},
+     "en": {"file": "en/coach-api.html", "title": "Coach API: documentation — Ecleptic",
+            "description": "Documentation of the Ecleptic coach API: keys, reading clients, sessions, sales and bookings, signed webhooks, limits. No health data ever leaves.",
+            "lead": "To connect your coach space to a spreadsheet, your accounting, your gym software or Zapier. English translation of the French documentation; the French version prevails.",
+            "footer": FOOT_EN % '<a href="/cgv-coachs.html">Coach terms of sale (French)</a>'}},
 ]
 
 # Pages en français seul, sans traduction anglaise publiée. CGV des coachs (B2B) : les
@@ -96,7 +110,13 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
-def inline(text):
+def inline(text, code=False):
+    """Gras, e-mails et adresses en liens ; avec code=True, `code` en ligne (rien n'est lié dedans)."""
+    if code and "`" in text:
+        parts = text.split("`")
+        if len(parts) % 2 == 1:
+            return "".join(("<code>%s</code>" % html.escape(p, quote=False)) if i % 2 else inline(p)
+                           for i, p in enumerate(parts))
     t = html.escape(text, quote=False)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![\w/@.])([\w.+-]+@[\w-]+\.[\w.]+\w)", r'<a href="mailto:\1">\1</a>', t)
@@ -104,10 +124,16 @@ def inline(text):
     return t
 
 
-def to_html(md):
-    """Markdown → HTML, pour le sous-ensemble des textes juridiques (dont le formulaire en citation)."""
+def to_html(md, code=False):
+    """Markdown → HTML, pour le sous-ensemble des textes juridiques (dont le formulaire en citation).
+    code=True (documentation de l'API) : `code` en ligne et blocs ``` recopiés tels quels."""
     out, para, items, quote, table = [], [], [], [], []
     title, date = "", ""
+    fence = None
+    _inline = globals()["inline"]
+
+    def inline(text):  # noqa: F811 — même fonction, avec le code en ligne si la page en a
+        return _inline(text, code)
 
     def flush():
         if para:
@@ -129,6 +155,16 @@ def to_html(md):
 
     for raw in md.split("\n"):
         line = raw.rstrip()
+        if code and fence is not None:
+            if line.strip() == "```":
+                out.append("  <pre><code>%s</code></pre>" % html.escape("\n".join(fence), quote=False))
+                fence = None
+            else:
+                fence.append(raw)
+            continue
+        if code and line.strip().startswith("```"):
+            flush(); fence = []
+            continue
         if line.startswith("# "):
             flush(); title = line[2:].strip()
         elif re.match(r"^\*\*(Dernière mise à jour|Last updated)", line):
@@ -202,10 +238,18 @@ def head(lang, doc):
     return h
 
 
+CODE_STYLE = """<style>
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;color:var(--ink);background:#17140F;border:1px solid var(--line);border-radius:4px;padding:1px 5px;overflow-wrap:anywhere}
+  pre{background:#17140F;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:12px 0;overflow-x:auto}
+  pre code{background:none;border:0;padding:0;font-size:13.5px;line-height:1.55;white-space:pre;overflow-wrap:normal}
+</style>"""
+
+
 def build(lang, doc, md):
     page = doc[lang]
-    title, date, body = to_html(md)
-    out = (head(lang, doc) + STYLE + "\n</head>\n<body>\n<div class=\"wrap\">\n"
+    title, date, body = to_html(md, doc.get("code", False))
+    style = STYLE + ("\n" + CODE_STYLE if doc.get("code") else "")
+    out = (head(lang, doc) + style + "\n</head>\n<body>\n<div class=\"wrap\">\n"
            "  <h1>%s</h1>\n  <p class=\"date\">%s</p>\n  <p class=\"lead\">%s</p>\n%s\n"
            "  <footer>\n    %s\n  </footer>\n</div>\n</body>\n</html>\n"
            % (inline(title), inline(date), page["lead"], body, page["footer"]))
