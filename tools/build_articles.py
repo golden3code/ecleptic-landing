@@ -303,7 +303,8 @@ AUTHOR_LD = {"@type": "Person", "@id": SITE + "/a-propos.html#auguste", "name": 
              "jobTitle": "Fondateur d'Ecleptic", "url": AUTHOR["url"], "sameAs": [AUTHOR["instagram"]]}
 PUBLISHER_LD = {"@type": "Organization", "@id": SITE + "/#organization", "name": "Ecleptic", "url": SITE + "/",
                 "logo": {"@type": "ImageObject", "url": SITE + "/assets/icons/icon-512.png", "width": 512, "height": 512}}
-ABOUT_UPDATED = "2026-09-30"   # date affichée et lastmod de /a-propos.html et /mentions-legales.html
+ABOUT_UPDATED = "2026-09-30"   # date affichée et lastmod de /a-propos.html
+LEGAL_UPDATED = "2026-11-21"   # date affichée de /mentions-legales.html et /en/legal-notice.html (SIREN, TVA intracommunautaire, CM2C)
 
 # Titres Google (<title>) : Google coupe vers 60 caractères. Le suffixe « — Ecleptic »
 # n'est ajouté que s'il tient ; au-delà de 60 sans suffixe, un titre court dédié.
@@ -2096,7 +2097,7 @@ def theme_page(d, lang="fr"):
        "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
 
-def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event, lang="fr", alt=(None, None)):
+def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event, lang="fr", alt=(None, None), updated=None):
     """Page de texte simple (À propos, mentions légales) : même typographie que les articles."""
     url = SITE + "/" + path
     return """<!doctype html>
@@ -2141,7 +2142,7 @@ def prose_page(path, seo, desc, label, h1, body, jsonld, og, track_event, lang="
 """ % {"lang": lang, "csp": CSP, "icons": HEAD_ICONS, "metarobots": META_ROBOTS, "seo": html.escape(seo),
        "desc": html.escape(desc, quote=True), "url": url, "ogimg": og_image_tags(og), "jsonld": ld(jsonld),
        "i18n": head_i18n(*alt), "nav": nav("", lang, *alt), "label": label,
-       "h1": h1, "body": body.strip(), "updated": U(lang, "last_updated") % I.date_label(ABOUT_UPDATED, lang),
+       "h1": h1, "body": body.strip(), "updated": U(lang, "last_updated") % I.date_label(updated or ABOUT_UPDATED, lang),
        "footer": footer(lang), "posthog": POSTHOG, "track": track_event, "navscripts": nav_scripts(lang)}
 
 
@@ -2211,7 +2212,10 @@ def legal_page(lang="fr"):
   <p>The website ecleptic.health is published by <strong>Auguste Phily-Priou</strong>, sole trader (entrepreneur individuel, EI, under French law).<br>
   Address: 10 Rue du Commerce, 86400 Civray, France<br>
   Email: <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a><br>
-  SIREN (French business registration number): registration in progress; the number will be added here as soon as it is issued.</p>
+  Phone: +33 7 66 44 90 99<br>
+  SIREN (French business registration number): 132 170 234 R.C.S. Poitiers (Poitiers Trade and Companies Register; SIRET of the head office: 132 170 234 00018)<br>
+  EU VAT number: FR 31 132170234<br>
+  VAT not applicable, article 293 B of the French General Tax Code</p>
 
   <h2>Publication director</h2>
   <p>Auguste Phily-Priou.</p>
@@ -2228,6 +2232,9 @@ def legal_page(lang="fr"):
   <h2>Health disclaimer</h2>
   <p>The content of this website is for information only. It does not replace medical advice, diagnosis or treatment. Ecleptic is a wellness app, not a medical device.</p>
 
+  <h2>Consumer mediation</h2>
+  <p>In accordance with the French Consumer Code on the mediation of consumer disputes, after contacting us and if our answer does not satisfy you, you may refer the matter free of charge to a consumer mediation procedure with: <strong>CM2C</strong>, 49 rue de Ponthieu, 75008 Paris, France — telephone: +33 1 89 47 00 14 — <a href="https://www.cm2c.net/declarer-un-litige.php" rel="noopener" target="_blank">www.cm2c.net/declarer-un-litige.php</a> — <a href="mailto:litiges@cm2c.net">litiges@cm2c.net</a>.</p>
+
   <h2>Contact</h2>
   <p><a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a></p>
 
@@ -2238,13 +2245,16 @@ def legal_page(lang="fr"):
         return prose_page("en/legal-notice.html", "Legal notice — Ecleptic",
                           "Legal notice for ecleptic.health: publisher, publication director, host, intellectual property and contact details.",
                           "Legal information", "Legal notice", body, jsonld,
-                          "/assets/og/accueil.jpg", "legal_view", "en", ALT_LEGAL)
+                          "/assets/og/accueil.jpg", "legal_view", "en", ALT_LEGAL, updated=LEGAL_UPDATED)
     body = """
   <h2>Éditeur du site</h2>
   <p>Le site ecleptic.health est édité par <strong>Auguste Phily-Priou</strong>, entrepreneur individuel (EI).<br>
   Adresse : 10 Rue du Commerce, 86400 Civray, France<br>
   E-mail : <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a><br>
-  SIREN : immatriculation en cours, le numéro sera ajouté ici dès son obtention.</p>
+  Téléphone : +33 7 66 44 90 99<br>
+  SIREN : 132 170 234 R.C.S. Poitiers (SIRET du siège : 132 170 234 00018)<br>
+  Numéro de TVA intracommunautaire : FR 31 132170234<br>
+  TVA non applicable, art. 293 B du CGI</p>
 
   <h2>Directeur de la publication</h2>
   <p>Auguste Phily-Priou.</p>
@@ -2261,6 +2271,9 @@ def legal_page(lang="fr"):
   <h2>Avertissement santé</h2>
   <p>Les contenus du site sont informatifs. Ils ne remplacent pas un avis médical, un diagnostic ou un traitement. Ecleptic est une application de bien-être, pas un dispositif médical.</p>
 
+  <h2>Médiation de la consommation</h2>
+  <p>Conformément aux dispositions du Code de la consommation concernant le processus de médiation des litiges de la consommation, après nous avoir sollicités et à défaut de réponse vous satisfaisant, vous avez la possibilité de recourir gratuitement à une procédure de médiation de la consommation auprès de : <strong>CM2C</strong>, 49 rue de Ponthieu, 75008 Paris — téléphone : 01 89 47 00 14 — <a href="https://www.cm2c.net/declarer-un-litige.php" rel="noopener" target="_blank">www.cm2c.net/declarer-un-litige.php</a> — <a href="mailto:litiges@cm2c.net">litiges@cm2c.net</a>.</p>
+
   <h2>Contact</h2>
   <p><a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a></p>
 """
@@ -2269,7 +2282,7 @@ def legal_page(lang="fr"):
     return prose_page("mentions-legales.html", "Mentions légales — Ecleptic",
                       "Mentions légales du site ecleptic.health : éditeur, directeur de la publication, hébergeur, propriété intellectuelle et contact.",
                       "Informations légales", "Mentions légales", body, jsonld,
-                      "/assets/og/accueil.jpg", "legal_view", "fr", ALT_LEGAL)
+                      "/assets/og/accueil.jpg", "legal_view", "fr", ALT_LEGAL, updated=LEGAL_UPDATED)
 
 
 # ============================================================================
