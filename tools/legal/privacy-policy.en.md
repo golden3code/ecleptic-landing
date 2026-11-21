@@ -1,9 +1,9 @@
-<!-- version-fr: 2026-11-22 -->
-<!-- empreinte-fr: 77511d095d22 -->
+<!-- version-fr: 2026-11-23 -->
+<!-- empreinte-fr: 10e4b5bad087 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
-**Last updated: 22 November 2026**
+**Last updated: 23 November 2026**
 
 This policy describes how the **Ecleptic** application (the "Application") processes its users' personal data, in accordance with Regulation (EU) 2016/679 ("GDPR") and the amended French Data Protection Act no. 78-17 of 6 January 1978 ("loi Informatique et Libertés").
 
@@ -230,6 +230,10 @@ Never body scan photos. Nothing is shared, apart from workouts, before the user 
 - **"Stable weight" rule**: if the coach turns it on and the user shares "Body and age", Ecleptic looks every night at their weigh-ins over the last 14 days. When the weight barely moves any more (at least 4 weigh-ins, less than 0.2 kg apart), Ecleptic suggests, in the coach's name, a new target 100 kcal higher or lower. The user accepts or declines it; nothing applies by itself. Never below the floor, one suggestion every 14 days at most.
 - **Meal plans, recipes and supplements**: meals planned per day, instructions, recipes, supplements suggested from Ecleptic's catalogue (dose below the ANSES ceiling). The user notes "I ate this", "Something else" or "Swap" (one of the alternatives planned by the coach, or an Ecleptic recipe for the same meal): the coach sees these answers and the title and calories of the meal chosen. A meal noted this way enters the user's journal as a manual entry. A suggested supplement is only added if the user chooses it.
 - **Tasks**: title, instruction, planned days and what the user ticks (done, or a value); a reminder, if they choose one, is scheduled on their phone only.
+- **Hydration plan**: if the user ticks “Nutrition”, their coach reads the water goal they chose in the Water Cycle and can suggest a plan: a daily goal (1 to 4 litres), an extra amount on training days, a number of reminders (0 to 6 per day) and, if the coach plans it, an evening check. The user accepts or declines; nothing changes without their agreement, and they can go back to their own setting whenever they like. The water recommendation calculated by Ecleptic from the weight is shown to the coach only if the user shares “Body and age”. The Water Cycle estimates the water drunk, it does not measure it: the coach reads no volume drunk, only the evening answer (“goal reached”, yes or no) when the plan asks for it.
+- **Reminders set by the coach**: once the hydration plan is accepted, the coach sets the number of water reminders. They can also turn off the morning score reminder, the bedtime reminder and the body scan reminder, or space out the weigh-in reminder. They can never turn back on a reminder the user turned off, nor add one of another kind: the user's settings and those of their phone have the last word. So that the coach sees what is actually on, the Application tells them, for each family of reminders, whether the user leaves them on (yes or no), with no other detail. These reminders remain scheduled on the user's phone: the coach's setting applies the next time the Application is opened.
+- **“Too many reminders?”**: the user can tell their coach that their reminders are too many or badly timed (one reason out of three, once a day at most). The coach reads it on the user's file.
+- Water settings and the state of reminders are sent to Ecleptic's servers only for a user linked to a coach; without a coach, they stay on the phone.
 - This is not medical follow-up: the coach undertakes to make no plan for an illness, an eating disorder or a pregnancy, and to refer to a health professional.
 
 **Weekly review written by an AI.** If the user ticks, in "What my coach sees", the box "My coach can have an AI write a review of my week from the data I share with them", their coach can receive a draft review every week. This box is separate from the others: it is never ticked by "Share everything"; the coach can ask for it, but only the user ticks it. It also requires the "AI analysis" consent and health consent.
@@ -514,6 +518,9 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Log of automatic messaging emails and of the Monday summary | **30 days** | Deleted automatically |
 | Technique video | **3 days** after sending (until the decision if it is reported); the message card, without the video, follows the retention period of messages | Deleted automatically; a copy saved by the coach is their responsibility |
 | Tasks and ticked boxes, plans and meals followed or swapped, recipes received, coach's targets | **30 days** after the link ends | Deleted automatically |
+| Coach's hydration plans, reminder pace set by the coach | **30 days** after the link ends | Deleted automatically |
+| “Too many reminders” signal sent to the coach | **90 days**, or 30 days after the link ends | Deleted automatically |
+| Water settings, state of reminders and evening checks of a user linked to a coach | As long as the account exists | Deleted with the account; included in the export |
 | Number given to the coach and its date | As long as the user leaves it and the coaching lasts | Erased on removal, when the coaching ends, or with the account |
 | Log of a coach's emails to their students (date, status, template) | **12 months** after sending | Deleted automatically; with the coach's account |
 | Opt-out fingerprint for a coach's emails (students and prospects) | As long as the coach's account exists; carried over to the new address when the user changes their account's address | Deleted with the coach's account |
