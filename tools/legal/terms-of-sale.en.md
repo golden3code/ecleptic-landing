@@ -10,7 +10,7 @@
 
 - **Seller**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**
 - **SIREN**: 132 170 234 R.C.S. Poitiers (Poitiers Trade and Companies Register; SIRET of the head office: 132 170 234 00018)
-- **VAT**: VAT not applicable, article 293 B of the French General Tax Code (VAT exemption scheme).
+- **EU VAT number**: FR 31 132170234 (VAT not applicable, article 293 B of the French General Tax Code, VAT exemption scheme).
 - **Business address**: 10 Rue du Commerce, 86400 Civray, France
 - **Contact / customer service email**: contact@ecleptic.app
 - **Phone**: +33 7 66 44 90 99

@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-20 -->
+<!-- version-fr: 2026-12-07 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGU.md. Update it, and the date above, every time the French Terms of Use change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Use — Ecleptic
 
-**Last updated: 20 November 2026**
+**Last updated: 7 December 2026**
 
 ---
 
@@ -12,7 +12,7 @@ The **Ecleptic** application and services (the "Application") are published by:
 
 - **Publisher**: Auguste Phily-Priou, **sole trader (Entrepreneur individuel, EI)**, operating in a personal capacity
 - **SIREN**: 132 170 234 R.C.S. Poitiers (Poitiers Trade and Companies Register; SIRET of the head office: 132 170 234 00018)
-- **EU VAT number**: VAT not applicable, article 293 B of the French General Tax Code (VAT exemption scheme).
+- **EU VAT number**: FR 31 132170234 (VAT not applicable, article 293 B of the French General Tax Code, VAT exemption scheme).
 - **Business address**: 10 Rue du Commerce, 86400 Civray, France
 - **Contact email**: contact@ecleptic.app
 - **Publication director**: Auguste Phily-Priou
@@ -201,7 +201,7 @@ The administrator (the person who creates the team, then the member who joined e
 
 ### 9 bis.19. Coaches
 
-A coach is an adult member whose account has been validated by the Ecleptic team. An adult may link to one coach only at a time, using the coach's code or link, after a **separate agreement**, unticked by default, of which the Publisher keeps proof (timestamp, version). The coach then sees all of that student's workouts, including those hidden from the public profile: date and time, type, duration, distance, effort, title, exercises, sets, loads and calories. The coach sees the rest (goal and profile, body and age, recovery, nutrition and meal log, watch, progress photos, meal photos, AI-written report) only if the student ticks the matching box in "What my coach sees". The coach never sees tracks or places. Details are in the privacy policy (article 2.14).
+A coach is an adult member whose account has been validated by the Ecleptic team. An adult may link to one coach only at a time, using the coach's code or link, after a **separate agreement**, unticked by default, of which the Publisher keeps proof (timestamp, version). The coach then sees all of that student's workouts, including those hidden from the public profile: date and time, type, duration, distance, effort, title, exercises, sets, loads and calories. The coach sees the rest (goal and profile, body and age, recovery, nutrition and meal log, watch, progress photos, meal photos, AI-written report) only if the student ticks the matching box in "What my coach sees". The coach never sees tracks or places. Details are in the privacy policy (article 2.14). A linked student may also book their appointments in their coach's available slots, by session type, and leave a review of the coach (article 9 bis.22).
 
 The student may untick each box, or withdraw the agreement, at any time, from the "Coach" page: access stops immediately. Blocking the coach or the withdrawal of coach status also end it; turning off the Society ends it after 30 days, when the Society data is erased.
 
@@ -224,6 +224,30 @@ The Ecleptic team reads a message only if a member of the conversation reports i
 The rules of conduct (9 bis.5) apply to messages. The User may block a member (9 bis.16), which hides that member's messages and ends their private conversation, and may turn off notifications for each conversation.
 
 A new member of a team or an Expedition does not see the messages written before their arrival. A member who leaves no longer has access to them, and that member's messages remain visible to the other members, unless the member's Account is deleted. Writing in an Expedition closes 7 days after its end.
+
+### 9 bis.21. Finding a coach
+
+The "Find my coach" page shows, on a map and in a list, the coaches who have chosen to appear there. A coach appears there only if their professional sports educator card has been verified by the Ecleptic team, their public page is open and they have chosen to appear; the coach also chooses their point (their gym, their address or the centre of their town), their specialities (five at most) and the requests they accept. For the time being, the map covers France.
+
+**Ranking.** Coaches are ranked from nearest to farthest from the search point (the device's location or the centre of the chosen town), then by name; online coaches are ranked by name. The area (the town alone, or a radius of 1 to 50 km), the speciality and the "Online" filter remove coaches from the list without changing the order. No coach pays to be ranked higher, and the review rating does not enter into the ranking. These rules are restated in the Application ("How coaches are ranked").
+
+**Location.** For "Near me", the Application reads the device's location, with the phone's permission. It sends it rounded to the hundredth of a degree (about 1 km), and Ecleptic does not keep it. It is always possible to search by town without giving one's location.
+
+**Requests.** From a coach's profile, a member aged 18 or over may ask for a trial session (in a slot, if the coach has opened a "Trial session") or ask to become the coach's student, with a goal to choose and a note of 280 characters at most. The coach receives the first name, the goal, the note and the slot; the member is asked not to write any health data. Only one open request per coach, three at most at the same time, ten per day. The coach accepts or refuses, with a note; without a reply, the request expires after 14 days (48 hours with a slot). Once accepted, it gives the member a 14-day trial link or the coach's code, both valid for 14 days; the member joins the coach through the agreement in article 9 bis.19. The member may withdraw their request whenever they wish. The Publisher is not a party to any relationship between the member and the coach, and guarantees neither the coach's qualifications nor their advice.
+
+### 9 bis.22. Reviews of a coach
+
+**Who may leave a review.** Only a student linked to a coach on Ecleptic, after a first session or a first appointment has taken place, or after 14 days of being linked, may leave a review of that coach: a rating from 1 to 5 and, if they wish, a text of 1,000 characters at most. Only one review per student per coach. The review is signed with the account's first name and shows how long its author has been the coach's student.
+
+**What a review must be.** It is about its author's experience with that coach. It contains no health data, no information about a third party, no contact details and no remarks prohibited by article 9 bis.5. No one pays for it: neither Ecleptic nor the coach gives anything in return for a review, and a review written in return for something, or by anyone other than the student, is prohibited.
+
+**Publication and checks.** The review is published straight away, on the coach's profile in the Application and on their public web page, without being read beforehand. When it is sent, the text goes through a word filter; a refused text is not published and its author sees the reason. Any member, and the coach, may report a review (article 9 bis.12): the review disappears for the person who reported it and, once there are three open reports from different accounts, for everyone, while the Ecleptic team decides. The Ecleptic team removes a review that breaches these rules and gives its author the reason (articles 9 bis.13 and 9 bis.15).
+
+**Display.** Reviews are listed from newest to oldest. Each review shows its publication date, the date it was last edited and how long its author has been a student. The average rating is shown from three reviews onwards; before that, the coach is "New". These rules are restated next to the reviews ("How reviews work").
+
+**Editing, removal, duration.** The author may edit their review while they are linked to the coach and remove it whenever they wish, even after the coaching has ended: it is then erased. The review stays online as long as its author does not remove it and keeps their account. A review removed by the Ecleptic team is erased six months after the decision. The author cannot be contacted from their review.
+
+**The coach.** The coach may reply once to each review, publicly, and edit their reply. The coach may neither delete nor edit a review; they may report it, giving a reason. The coach may ask their students for a review: each one receives at most one notification a month.
 
 ## Article 10 — Intellectual property
 
