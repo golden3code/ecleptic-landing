@@ -249,6 +249,14 @@ The "Find my coach" page shows, on a map and in a list, the coaches who have cho
 
 **The coach.** The coach may reply once to each review, publicly, and edit their reply. The coach may neither delete nor edit a review; they may report it, giving a reason. The coach may ask their students for a review: each one receives at most one notification a month.
 
+### 9 bis.23. Daily check-in and periods
+
+**Daily check-in.** Users can say each day how they feel: energy, mood, stress, motivation and, when their coach has sent them a meal plan or a target, hunger, each on a scale of 1 to 5, with tags to tick and a note of up to 280 characters. Without a coach, the answer feeds their own tips and analyses. With a coach, it is sent to the coach only if the user has ticked "Daily check-in" in "What my coach sees"; the coach chooses the days on which the question is asked (session days, every day or never). The answer can be changed until the start of the session it relates to.
+
+**Periods.** A user who tracks her cycle can enter the approximate date of her last period and its usual length; the App derives an estimate of the next period, wide while only one date is known, and asks her, when the time comes, whether her period has started. Only her answer or her own entry counts. She can share with her coach whether her period is ongoing and when it is expected, after a separate written consent; the coach cannot ask her for it and never sees the flow, contraception, ovulation or history.
+
+**Limits.** These features are reserved for people aged 18 or over where a coach is involved. They help the coach adapt a session; they are not medical advice, do not replace a consultation, and the period estimate is neither a method of contraception nor a conception tool (Article 11). A lighter session suggested by the App remains a suggestion.
+
 ## Article 10 — Intellectual property
 
 10.1. The Application, its structure, code, interfaces, texts, graphics, logos, databases and any other component are the exclusive property of the Publisher or are licensed to the Publisher. They are protected by intellectual property law.
