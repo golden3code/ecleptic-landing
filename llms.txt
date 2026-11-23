@@ -99,6 +99,7 @@
 ### Contexte
 
 - [Thème Contexte](https://ecleptic.health/articles/contexte/): Alcool, maladie, cycle menstruel, âge, tabac, chaleur, altitude : les facteurs qui changent ta récupération et tes performances, et comment t'y adapter.
+- [Récupérer après 40 ans : ce qui change vraiment](https://ecleptic.health/articles/recuperation-apres-40-ans.html): Récupérer après 40 ans : ça ralentit moins qu'on ne le croit si tu restes actif. Musculation, protéines, sommeil, échauffement : les vrais ajustements.
 - [Tabac, nicotine et sport : quels effets sur la performance ?](https://ecleptic.health/articles/tabac-nicotine-et-sport.html): Tabac, nicotine et sport : le monoxyde de carbone plombe la VO2max, la nicotine freine la récup. Les effets réels sur la performance, et arrêter paie vite.
 - [Cycle menstruel et sport : faut-il adapter son entraînement ?](https://ecleptic.health/articles/cycle-menstruel-et-sport.html): Cycle menstruel et sport : la science est limitée et très individuelle. Écoute ton corps plutôt qu'un calendrier, et l'aménorrhée n'est jamais anodine.
 - [Reprendre le sport après une maladie : les règles](https://ecleptic.health/articles/reprendre-le-sport-apres-maladie.html): La règle au-dessus/au-dessous du cou, la séance test à 60-70 % et l'alerte fièvre à ne jamais ignorer : reprendre le sport après une maladie sans risque.
@@ -222,6 +223,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Context
 
+- [Recovery after 40: what really changes](https://ecleptic.health/en/journal/recovery-after-40.html): Recovery after 40 slows down less than you think if you stay active. Strength training, protein, sleep, warm-ups: the adjustments that actually matter.
 - [Smoking, nicotine and exercise: how do they affect performance?](https://ecleptic.health/en/journal/smoking-nicotine-and-exercise.html): Smoking, nicotine and exercise: carbon monoxide drags down VO2 max, nicotine slows recovery. The real effects on performance, and why quitting pays off fast.
 - [Menstrual cycle and exercise: should you adjust your training?](https://ecleptic.health/en/journal/menstrual-cycle-and-training.html): Menstrual cycle and training: the science is limited and highly individual. Listen to your body, not a calendar. And losing your period is never trivial.
 - [Returning to exercise after illness: the rules to follow](https://ecleptic.health/en/journal/returning-to-exercise-after-illness.html): The above/below-the-neck rule, the gradual 60-70% restart and the fever warning you must never ignore: how to return to exercise after illness safely.
