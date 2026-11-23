@@ -1,5 +1,5 @@
 <!-- version-fr: 2026-12-07 -->
-<!-- empreinte-fr: 6b9c43ba9af2 -->
+<!-- empreinte-fr: 264806c4ea23 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
@@ -207,6 +207,7 @@ A user can link to a coach approved by Ecleptic. The link is **optional**, given
 - **Watch**: resting heart rate and workout heart rate, heart rate variability, VO2 max, steps, active calories; never oxygen saturation, breathing or temperature;
 - **Progress photos**;
 - **Daily check-in**: energy, mood, stress, motivation, hunger and the note of the day, on the day itself, and the last thirty days as charts, without the note or the tags (see 2.17);
+- **Diet and tolerances**: the declared diet, recipe ratings and digestion answers (see 2.18). This box is separate and for adults only; "Share everything" does not tick it.
 - **Period**: whether it is ongoing ("ongoing, day 2") and when it is expected ("around 8-16 December"), and the period-related tags; never the flow, contraception, ovulation or cycle history. This box can only be ticked after a separate written consent; the coach cannot request it (see 2.17).
 
 Never body scan photos. Nothing is shared, apart from workouts, before the user chooses. The coach can ask for a category; the user accepts all, part or none of it. After a refusal, the coach can only ask for the same thing again 7 days later; a request left unanswered expires after 14 days, without counting as a refusal. Photos (progress and meal photos), the health questionnaire and the "Connected tools" agreement can never be requested. Each choice is kept as proof, with the version of the text displayed. Unticking a box removes access at once: the coach reads this data on Ecleptic's servers, each time they open it.
@@ -381,6 +382,20 @@ The period is shared only if the user ticks "Period" after reading what the coac
 
 Neither the check-in nor the period is used for an automated decision: the lighter session the App may suggest remains a suggestion. They are not sent to Éos or to any AI provider. They are never shown before the age of 18, never used for advertising, and never sent to audience measurement, which only receives kinds, counts and booleans, without any value.
 
+### 2.18. Recipe ratings and digestion
+
+After a meal logged from one of the App's recipes (its page, "For you now", building a meal, or a meal from the coach's plan made of a single recipe), Home may ask, no earlier than 30 minutes after logging and for 48 hours, "Did you like this recipe?". The rating, from one to five stars, is **optional**; it can be changed or removed on the recipe page. A five-star rating adds the recipe to favourites. The question is asked once per recipe (one reminder only if the card is deleted without rating).
+
+After a one- or two-star rating, the App may ask "Did you have digestive problems?" (yes or no). This answer is **health data**: it is only asked of people aged 18 or over who have given the health consent (2.2), and is no longer accepted once that consent is withdrawn. A poorly digested recipe is no longer suggested in "For you now".
+
+For each rated recipe, Ecleptic keeps the rating and its date; for each meal, the digestion answer and the day of the meal.
+
+**Averages.** For an Ecleptic recipe, the average rating and the number of ratings are shown to all members from 5 ratings, never saying who rated what. For a coach's recipe, the average of their clients' ratings is shown to that coach only, from 5 ratings. Digestion is never part of any average.
+
+**Sharing with the coach.** The "Diet and tolerances" box (2.14), unticked by default, shows the coach the declared diet (boxes and "Other" text), recipe ratings and digestion answers. A diet may reveal a religious belief (halal, kosher) or a health condition (allergy, intolerance): the box requires separate, explicit consent, for people aged 18 or over only; "Share everything" does not tick it. The coach may request this box. With it, the App leaves out of what it suggests to the coach the recipes outside the diet and those the user digested poorly, and shows the coach the ingredients found in at least two poorly digested recipes, "worth watching", never as a diagnosis. The coach sees nothing any more as soon as the box is unticked, the link ends or the health consent is withdrawn.
+
+Ratings and answers are not used for any automated decision, are sent neither to Éos nor to any AI provider, are not used for advertising and are included in the data export. Audience measurement only receives where the action came from (Home card or recipe page), the kind of recipe (Ecleptic or coach) and the number of stars, never the recipe or the digestion answer.
+
 ## Article 3 — Purposes and legal bases
 
 | Purpose | Data concerned | Legal basis (art. 6 GDPR) |
@@ -401,6 +416,7 @@ Neither the check-in nor the period is used for an automated decision: the light
 | Showing the coach the meal journal, meal by meal | Per meal: time of day, time, title, foods and quantities, calories and macronutrients, name of scanned products; per day: total and target (2.14) | **Explicit consent** (art. 6.1.a and **art. 9.2.a**), dated, given by ticking "Nutrition" under its current text; withdrawable at any time |
 | Showing the coach the meal photos | Meal photos (one year back); log of displays by the coach (2.14) | Separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), dated, given from the "My meal photos" panel; withdrawable at any time |
 | Daily check-in for oneself (tips, Lab) and for the coach; period shared with the coach | Daily check-in, period dates entered, period status sent (2.17) | **Explicit consent** (Art. 6.1.a and **Art. 9.2.a**): health consent; "Daily check-in" box; separate written consent for "Period" (version "cycle-v1"), withdrawable at any time |
+| Recipe ratings, averages, recipes suggested less after poor digestion; diet and tolerances shown to the coach | Rating, date, recipe; digestion answer and day of the meal; declared diet (2.18) | Rating: performance of the contract (6.1.b), at the user's initiative; public average without names: legitimate interest (6.1.f — helping choose a recipe); digestion: **explicit consent** (art. 9.2.a), health consent; sharing with the coach: separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), "Diet and tolerances" box, versioned, withdrawable at any time |
 | Reading from Health the daily intake recorded by another app, weight and body fat | Daily totals, original app; weigh-ins, body fat and their origin (2.7) | **Explicit consent** (art. 9.2.a), given by turning on the setting and through the Health permission |
 | Goal, target and expenditure chosen by the coach, "stable weight" rule, meal plans, recipes, supplements, tasks | Coach's content, the values they choose, the user's answers, meals followed or swapped, weigh-ins for the rule, the day's sessions for the training day, Ecleptic's values shown to the coach (2.14) | User's consent to the link (6.1.a), return to Ecleptic's values at any time; nutrition and weight: **explicit consent** (art. 9.2.a), through the shared boxes |
 | Writing, at the coach's request, a weekly review by an AI provider | Figures for the week calculated from the data shared with the coach, closed answers to their check-in, first name, language, coach's tone instruction (2.14) | Separate **explicit consent** (art. 6.1.a and **art. 9.2.a**), versioned, given through a distinct box; withdrawable at any time |
@@ -529,6 +545,7 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Measured or detected situations (2.13) | While ongoing, then **24 months** after they end; erased earlier when "My situation" consent is withdrawn | Automatic deletion; deletion with the account |
 | Background detector results (2.13) | **90 days**; erased earlier when "My situation" consent is withdrawn | Automatic deletion; deletion with the account |
 | Daily check-in (2.17) | **12 months** | Automatically erased every night |
+| Recipe ratings and digestion answers (2.18) | Lifetime of the account; a rating or answer removed on the recipe page is erased | Deleted with the account; after the health consent is withdrawn, like other health data (article 3) |
 | Period status sent to the coach (2.17) | Until the box is unticked, the link ends, period tracking is turned off or a consent is withdrawn | Erased immediately |
 | Period dates entered (2.17) | Until the user erases them ("Turn off and erase everything") or the account is deleted | Deletion |
 | Nutrition label photos (2.6) | Kept only if the user submits their entry for review, until the decision (approval or rejection) and **90 days at most** after they are sent | Deleted automatically |

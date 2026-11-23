@@ -263,6 +263,12 @@ A user linked to a coach accepts that this coach may choose for them their goal 
 
 The coach's target never goes below the floor calculated by Ecleptic from the user's profile. These values are nutrition and sports guidance; they are not medical advice and do not replace a consultation (Article 11).
 
+### 9 bis.25. Recipe ratings and diet shared with the coach
+
+After a meal made from one of the App's recipes, the user may give it a rating from one to five stars; this is optional, and the rating can be changed or removed on the recipe page. After a one- or two-star rating, the App may ask whether they had digestive problems; this question is only asked of an adult who has given consent to health data. The average rating of an Ecleptic recipe and the number of ratings are shown to everyone from five ratings, never saying who rated what; the digestion answer is never part of any average. Ratings are not a review of a product or of a professional.
+
+A user linked to a coach may, if they wish, tick the "Diet and tolerances" box: their coach then sees their declared diet, ratings and digestion answers, in order to suggest recipes that suit them. This box is separate, for adults only, and can be unticked at any time. Recipes left out and ingredients flagged "worth watching" are nutrition guidance; they are not medical advice or a diagnosis of allergy or intolerance, and do not replace a consultation (Article 11).
+
 ## Article 10 — Intellectual property
 
 10.1. The Application, its structure, code, interfaces, texts, graphics, logos, databases and any other component are the exclusive property of the Publisher or are licensed to the Publisher. They are protected by intellectual property law.
