@@ -257,6 +257,12 @@ The "Find my coach" page shows, on a map and in a list, the coaches who have cho
 
 **Limits.** These features are reserved for people aged 18 or over where a coach is involved. They help the coach adapt a session; they are not medical advice, do not replace a consultation, and the period estimate is neither a method of contraception nor a conception tool (Article 11). A lighter session suggested by the App remains a suggestion.
 
+### 9 bis.24. Goal, target and expenditure chosen by the coach
+
+A user linked to a coach accepts that this coach may choose for them their goal in the App, their calorie and macronutrient target (with, if the coach wishes, one value for rest days and another for training days) and their daily expenditure. These values apply the next time the App is opened, with no further agreement; the user is told by a notification and reads, on the "Target & burn" page, that they were chosen by their coach. They can go back to the values calculated by Ecleptic at any time, from that page.
+
+The coach's target never goes below the floor calculated by Ecleptic from the user's profile. These values are nutrition and sports guidance; they are not medical advice and do not replace a consultation (Article 11).
+
 ## Article 10 — Intellectual property
 
 10.1. The Application, its structure, code, interfaces, texts, graphics, logos, databases and any other component are the exclusive property of the Publisher or are licensed to the Publisher. They are protected by intellectual property law.
