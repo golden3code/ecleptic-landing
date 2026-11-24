@@ -81,10 +81,10 @@
   .go .login:hover{color:var(--au)}
 
   /* Réseau des Fondateurs : le badge en sceau sur le filet, puis les trois avantages. */
-  .fond{padding-top:64px}
-  .seal{display:flex;align-items:center;gap:32px}
+  .fond{padding-top:84px}
+  .seal{display:flex;align-items:center;gap:24px}
   .seal::before,.seal::after{content:"";flex:1;border-top:1px solid var(--ln)}
-  .seal svg{display:block;width:104px;height:104px}
+  .seal svg{display:block;width:64px;height:64px}
   .av3{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
   .av3 > div{padding:4px 20px;text-align:center}
   .av3 > div + div{border-left:1px solid var(--ln)}
@@ -94,7 +94,7 @@
   .av3 .d2{margin-top:4px;font-size:13px;color:var(--mu)}
   .note{margin:40px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:18px;color:var(--mu)}
 
-  .sect{padding-top:104px}
+  .sect{padding-top:160px}
   .sect h2,.fin h2{font-size:clamp(24px,2.6cqw,34px);line-height:1.15;text-align:center}
 
   /* Les paliers : une seule grille à filets. */
@@ -119,7 +119,7 @@
   .etapes strong{display:block;margin-top:12px;font-size:19px;line-height:26px;font-weight:300}
   .etapes span{display:block;margin-top:6px;font-size:14px;color:var(--mu)}
 
-  .fin{margin-top:104px;border-top:1px solid var(--ln);padding:72px 0 0;text-align:center}
+  .fin{margin-top:160px;border-top:1px solid var(--ln);padding:104px 0 24px;text-align:center}
   .fin h2{max-width:760px;margin:0 auto}
   .fin p{margin-top:12px;font-size:14px;color:var(--mu)}
   .fin .ctacol{margin-top:34px}
@@ -147,15 +147,15 @@
     .go .ctacol small{text-align:center}
     .go .login{line-height:44px;text-align:center}
     .co a.cta{height:56px;padding:0 24px}
-    .fond{padding-top:48px}
-    .seal{gap:20px}
-    .seal svg{width:88px;height:88px}
+    .fond{padding-top:64px}
+    .seal{gap:18px}
+    .seal svg{width:56px;height:56px}
     .av3{margin-top:16px;grid-template-columns:minmax(0,1fr)}
     .av3 > div{padding:28px 0}
     .av3 > div + div{border-left:0;border-top:1px solid var(--ln)}
     .av3 .big{font-size:clamp(30px,8.6cqw,40px)}
     .note{margin-top:8px}
-    .sect{padding-top:72px}
+    .sect{padding-top:112px}
     .paliers{margin-top:30px;grid-template-columns:minmax(0,1fr)}
     .paliers .p{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:16px;padding:20px}
     .paliers .p + .p{border-left:0;border-top:1px solid var(--ln)}
@@ -166,7 +166,7 @@
     .etapes li{padding:0 0 30px 26px}
     .etapes li:last-child{padding-bottom:0}
     .etapes li::before{top:5px;left:-4px}
-    .fin{margin-top:72px;padding-top:56px}
+    .fin{margin-top:112px;padding-top:80px}
     .fin .ctacol{display:flex;align-items:stretch}
   }
   @container (max-width:560px){
