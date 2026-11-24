@@ -9,6 +9,14 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Ecleptic</title>
+<script>
+// Invite ton coach (PLAN-OFFRE-FONDATEURS.md, lot L2) : /invite/<jeton> ouvre la page Coachs,
+// le jeton suit jusqu'à l'inscription. Pas de lien universel : le coach n'a pas l'app.
+(function () {
+  var m = location.pathname.match(/^\/invite\/([A-Za-z0-9_-]{1,64})\/?$/);
+  if (m) location.replace('/coachs.html?invite=' + encodeURIComponent(m[1]) + location.search.replace(/^\?/, '&') + location.hash);
+})();
+</script>
 <!--
   Page de repli des liens universels (réseau social, phase 0, lot E3 ;
   ~/Desktop/Auros/PLAN-SOCIAL-PHASE0.md §7). GitHub Pages sert ce fichier pour

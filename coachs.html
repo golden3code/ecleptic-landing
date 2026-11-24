@@ -36,6 +36,11 @@
   var d = document.documentElement;
   if (now >= FIN) { d.className += " fin-offre"; window.ECL_MOIS = 0; }
   else window.ECL_MOIS = now >= JANVIER ? 1 : 2;
+  // Lien d'un élève (lot L2) : la tête reste masquée le temps de lire l'invitation (1,5 s au plus).
+  if (/[?&]invite=[A-Za-z0-9_-]/.test(location.search)) {
+    d.className += " inv-attente";
+    setTimeout(function () { d.className = d.className.replace(" inv-attente", ""); }, 1500);
+  }
 })();
 </script>
 <link rel="stylesheet" href="/assets/site.css">
@@ -103,6 +108,28 @@
   .fin .ttl + div{margin-top:6px;font-size:14px;color:var(--mu)}
   .guides{margin-top:28px;font-size:14px}
 
+  /* Planche 8 : ce que reçoit le coach invité par un élève (/invite/<jeton>). */
+  .inv-attente .top,.inv-attente .hero{visibility:hidden}
+  .avec-invite .top,.avec-invite .hero{display:none}
+  .invite{max-width:560px;padding:34px 0 64px}
+  .invite .qui{display:flex;align-items:center;gap:12px;font-size:15px;line-height:21px;color:var(--t2)}
+  .invite .qui b{color:var(--tx);font-weight:600}
+  .invite .av{width:48px;height:48px;border-radius:50%;background:#D9965A;color:#0A0A0A;font-size:20px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+  .invite h1{margin-top:24px;font-size:34px;line-height:40px;font-weight:200;letter-spacing:-.3px}
+  .invite ul{margin-top:22px;list-style:none;display:flex;flex-direction:column;gap:12px}
+  .invite li{display:flex;align-items:center;gap:10px;font-size:15px;line-height:20px}
+  .invite li svg{flex:none}
+  .reseau{margin-top:28px;padding:18px}
+  .reseau .lbl{color:var(--y)}
+  .reseau .trois{margin-top:12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .reseau .trois b{display:block;font-size:22px;font-weight:300;letter-spacing:-.3px}
+  .reseau .trois span{display:block;font-size:12px;line-height:16px;color:var(--t2)}
+  .reseau .s{margin-top:12px;font-size:13px;color:var(--mu)}
+  .reseau .xs{margin-top:6px;font-size:11px;line-height:15px;color:var(--mu)}
+  .fdr a.cta-or{margin-top:28px;display:flex;align-items:center;justify-content:center;height:52px;border-radius:16px;background:var(--y);color:#0A0A0A;font-size:16px;font-weight:600}
+  .fdr a.cta-or:hover{background:var(--y2);color:#0A0A0A}
+  .invite .relie{margin-top:14px;font-size:13px;line-height:18px;color:var(--mu);text-align:center}
+
   /* Après le 31/01/2027 : page d'essai normale de 15 jours, sans badge ni avantages. */
   .fin-offre [data-f]{display:none !important}
   html:not(.fin-offre) [data-n]{display:none !important}
@@ -141,6 +168,29 @@
   </div>
 </nav>
 <main class="fdr">
+
+<!-- Invite ton coach (planche 8) : rempli par get_coach_invite_public, sinon reste caché. -->
+<section class="invite" id="invite" hidden>
+  <div class="qui"><span class="av" id="inv-av" aria-hidden="true"></span><div><b id="inv-nom"></b> <span id="inv-phrase">t'invite à suivre ses séances sur Ecleptic.</span></div></div>
+  <h1>Suis tes élèves, là où ils suivent tout.</h1>
+  <ul>
+    <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#F5A623" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Ses séances, dès que tu es relié</li>
+    <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#F5A623" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Tes programmes et tes plans, envoyés dans l'app</li>
+    <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#F5A623" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Tes séances payées et tes factures</li>
+  </ul>
+  <div class="box reseau" data-f>
+    <div class="lbl">Réseau des Fondateurs · <span id="inv-mois">jusqu'au 31 janvier 2027</span></div>
+    <div class="trois">
+      <div><b>15 jours</b><span>d'essai, sans carte</span></div>
+      <div><b>+15 jours</b><span>offerts avec ton code</span></div>
+      <div><b>À vie</b><span>ton prix bloqué*</span></div>
+    </div>
+    <div class="s">À partir de 24,99 € par mois. Ton code Fondateur arrive à l'inscription.</div>
+    <div class="xs">* Le prix du palier choisi avec l'offre. Un changement de palier après une hausse se fait au prix du jour.</div>
+  </div>
+  <a class="cta-or" data-essai="invite" href="https://coach.ecleptic.health/connexion?inscription=1">Commencer mon essai</a>
+  <p class="relie" id="inv-relie"></p>
+</section>
 
 <div class="top">
   <a class="login" href="https://coach.ecleptic.health/connexion">Se connecter</a>
@@ -251,7 +301,7 @@
   var mois = window.ECL_MOIS;
   // Mois restants (D8) : « 2 mois restants » en décembre, « 1 mois restant » en janvier.
   if (mois) {
-    document.getElementById("restant").textContent = mois === 1 ? "1 mois restant" : "2 mois restants";
+    document.getElementById("restant").textContent = document.getElementById("inv-mois").textContent = mois === 1 ? "1 mois restant" : "2 mois restants";
     document.getElementById("plusque").textContent = "Plus que " + mois + " mois pour intégrer le réseau des Fondateurs";
   }
   // Lien d'invitation d'un coach (lot L2) : ?invite=<jeton> suit jusqu'à l'inscription.
@@ -266,6 +316,7 @@
     });
   }
   track("coach_offer_view", { founders: !!mois, months_left: mois || 0, invite: !!invite });
+
   // Les guides des coachs (/coachs/) : lien affiché seulement quand ils sont sortis.
   document.addEventListener("DOMContentLoaded", function () {
     var g = (window.ECLEPTIC_NAV || {}).coachGuides;
@@ -274,6 +325,39 @@
     p.firstChild.href = g.u;
     p.hidden = false;
   });
+
+  // Invite ton coach (lot L2, planche 8). get_coach_invite_public(p_token) rend
+  // {ok, student: « Léa D. » (D9), gender: female | male | null, offer_ends_at},
+  // ou {ok: false, reason: 'unknown_token'}. Jeton inconnu ou serveur muet : la page normale.
+  var html = document.documentElement;
+  function fin() { html.className = html.className.replace(" inv-attente", ""); }
+  if (!invite) return fin();
+  var SB = "https://avbmycfngmxhkjesdiyq.supabase.co";
+  var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";
+  fetch(SB + "/rest/v1/rpc/get_coach_invite_public", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "apikey": KEY, "Authorization": "Bearer " + KEY },
+    body: JSON.stringify({ p_token: invite })
+  }).then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { montrer(d); fin(); }, function () { montrer(null); fin(); });
+
+  function montrer(d) {
+    if (Array.isArray(d)) d = d[0];
+    var nom = d && d.ok && typeof d.student === "string" ? d.student.replace(/\s+/g, " ").trim().slice(0, 40) : "";
+    track("coach_invite_opened", { known: !!nom });
+    if (!nom) return;
+    var g = d.gender === "female" ? "f" : d.gender === "male" ? "m" : "";
+    document.getElementById("inv-av").textContent = Array.from(nom)[0].toUpperCase();
+    document.getElementById("inv-nom").textContent = nom;
+    document.getElementById("inv-phrase").textContent =
+      g === "f" ? "t'invite à la suivre sur Ecleptic." : g === "m" ? "t'invite à le suivre sur Ecleptic." : "t'invite à suivre ses séances sur Ecleptic.";
+    document.getElementById("inv-relie").textContent =
+      g ? nom + " sera " + (g === "f" ? "reliée" : "relié") + " à toi dès ton inscription, avec son accord."
+        : nom + " et toi serez reliés dès ton inscription, avec son accord.";
+    document.getElementById("invite").hidden = false;
+    document.querySelector("main.fdr").className += " avec-invite";
+    track("coach_invite_shown", {});
+  }
 })();
 </script>
 <script src="/assets/nav-data.js" defer></script>
