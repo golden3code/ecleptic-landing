@@ -134,6 +134,10 @@
 - [Quelle app pour relier sommeil, alimentation et sport sur iPhone ?](https://ecleptic.health/comparatifs/application-sommeil-alimentation-sport-iphone.html): Whoop, Oura, Athlytic, Apple Santé, MyFitnessPal, Yazio, Ecleptic : ce que chaque app relie entre sommeil, alimentation et sport, d'après ses pages officielles.
 - [Âge biologique, âge cardio, âge de forme : comment les apps le calculent](https://ecleptic.health/comparatifs/age-biologique-application-whoop-garmin-oura.html): Âge physique Garmin, WHOOP Age, âge cardiovasculaire Oura, VO₂max Apple, âge biologique Ecleptic : ce que chaque app estime et avec quelles données.
 
+## Pour les coachs sportifs
+
+- [Ecleptic pour les coachs](https://ecleptic.health/coachs.html): la console des coachs, ses 4 paliers (de 24,99 à 44,99 € par mois), l'essai de 15 jours sans carte et l'offre Fondateurs jusqu'au 31 janvier 2027.
+
 ## À propos
 
 - [À propos](https://ecleptic.health/a-propos.html): qui écrit, comment les articles sont sourcés et mis à jour.

@@ -910,11 +910,25 @@ def nav(section, lang="fr", fr_path=None, en_path=None, alts=None):
         "on_home": 'class="on"' if section == "home" else "",
         "on_articles": 'class="on"' if section == "articles" else "",
         "on_science": 'class="on"' if section == "science" else "",
-        "coachs": ('<a href="%s"%s>%s</a>\n    ' % (coach_hub_path(lang), ' class="on"' if section == "coachs" else "",
-                                                   COACH_UI[lang]["nav"])) if coach_live(lang) else "",
+        "coachs": coach_nav_link(lang, section),
         "l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"), "l_beta": U(lang, "nav_beta"),
         "switch": (I.switcher_multi(lang, alts) if multi else I.switcher(lang, fr_path, en_path)) if "en" in LANGS_BUILT() else "",
     }
+
+
+# Page Coach « Fondateurs » (coachs.html, écrite à la main, en français seulement : D7 de
+# PLAN-OFFRE-FONDATEURS.md). En français, « Coachs » du bandeau y mène toujours ; les guides
+# (/coachs/) sont liés depuis cette page. Ailleurs, le lien reste celui des guides, à leur sortie.
+COACH_OFFER_PAGE = "/coachs.html"
+
+
+def coach_nav_link(lang, section):
+    on = ' class="on"' if section == "coachs" else ""
+    if lang == "fr":
+        return '<a href="%s"%s>%s</a>\n    ' % (COACH_OFFER_PAGE, on, COACH_UI[lang]["nav"])
+    if coach_live(lang):
+        return '<a href="%s"%s>%s</a>\n    ' % (coach_hub_path(lang), on, COACH_UI[lang]["nav"])
+    return ""
 
 
 def footer(lang="fr"):
@@ -947,7 +961,12 @@ def nav_data(lang="fr"):
     pop = [{"t": article_view(idx[s], lang)["title"], "u": article_path(idx[s], lang)} for s in POPULAR if s in idx][:5]
     data = {"journal": {"cats": cats, "popular": pop, "total": len(arts)}}
     data.update(nav_panels(idx, lang))
-    if coach_live(lang):  # lien ajouté par nav.js sur les pages écrites à la main
+    # Lien ajouté par nav.js sur les pages écrites à la main ; « guides » : lien de coachs.html.
+    if lang == "fr":
+        data["coachs"] = {"t": COACH_UI[lang]["nav"], "u": COACH_OFFER_PAGE}
+        if coach_live(lang):
+            data["coachGuides"] = {"t": COACH_UI[lang]["label"], "u": coach_hub_path(lang)}
+    elif coach_live(lang):
         data["coachs"] = {"t": COACH_UI[lang]["nav"], "u": coach_hub_path(lang)}
     return ("/* Genere par tools/build_articles.py (nav_data) - ne pas editer a la main. */\n"
             "window.ECLEPTIC_NAV=%s;\n" % _json.dumps(data, ensure_ascii=False, separators=(",", ":")))
@@ -2896,8 +2915,9 @@ def llms_txt():
     if COMPARE:
         out.append("\n## Comparatifs (informations publiques de chaque marque, sources liées)\n")
         out += ["- [%s](%s%s): %s" % (c["fr"]["title"], SITE, compare_path(c, "fr"), c["fr"]["description"]) for c in COMPARE]
+    out.append("\n## Pour les coachs sportifs\n")
+    out.append("- [Ecleptic pour les coachs](%s/coachs.html): la console des coachs, ses 4 paliers (de 24,99 à 44,99 € par mois), l'essai de 15 jours sans carte et l'offre Fondateurs jusqu'au 31 janvier 2027." % SITE)
     if COACHS:
-        out.append("\n## Pour les coachs sportifs\n")
         out.append("- [Tous les guides](%s/coachs/): guides sourcés pour les coachs sportifs indépendants." % SITE)
         out += ["- [%s](%s/coachs/%s.html): %s" % (a["title"], SITE, a["slug"], a["description"]) for a in COACHS]
     out.append("\n## À propos\n")
@@ -2988,6 +3008,7 @@ def sitemap():
     entries = [("%s/" % SITE, git_lastmod("index.html")),
                ("%s/beta.html" % SITE, git_lastmod("beta.html")),
                ("%s/science.html" % SITE, git_lastmod("science.html")),
+               ("%s/coachs.html" % SITE, git_lastmod("coachs.html")),
                ("%s/articles/" % SITE, git_lastmod("articles/index.html"))]
     for lang in LANGS_BUILT():
         if lang == "en":
