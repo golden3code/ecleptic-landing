@@ -65,11 +65,11 @@
   /* Tête : la photo occupe la largeur, le texte se lit à gauche sur le noir. */
   .hero{position:relative;display:flex;align-items:center;min-height:clamp(540px,45cqw,680px);overflow:hidden}
   .hero .ph{position:absolute;top:0;right:0;bottom:0;width:78%;display:block}
-  .hero .ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:72% 22%}
+  .hero .ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
   .hero .ph::after{content:"";position:absolute;inset:0;background:
-    linear-gradient(90deg,#0B0A08 0%,rgba(11,10,8,.9) 16%,rgba(11,10,8,.45) 38%,rgba(11,10,8,0) 60%),
-    linear-gradient(0deg,#0B0A08 0%,rgba(11,10,8,0) 26%),
-    linear-gradient(180deg,#0B0A08 0%,rgba(11,10,8,.5) 7%,rgba(11,10,8,0) 20%)}
+    linear-gradient(90deg,#0B0A08 0%,rgba(11,10,8,.96) 24%,rgba(11,10,8,.8) 34%,rgba(11,10,8,.35) 46%,rgba(11,10,8,0) 60%),
+    linear-gradient(0deg,#0B0A08 0%,rgba(11,10,8,0) 18%),
+    linear-gradient(180deg,#0B0A08 0%,rgba(11,10,8,0) 12%)}
   .hero .cw{position:relative;width:100%}
   .hero .txt{max-width:480px}
   .restant{font-size:26px;line-height:32px;font-weight:200;color:var(--au)}
@@ -84,14 +84,12 @@
   .fond{padding-top:64px}
   .seal{display:flex;align-items:center;gap:32px}
   .seal::before,.seal::after{content:"";flex:1;border-top:1px solid var(--ln)}
-  .seal svg{display:block;width:124px;height:124px}
-  .fond .cap{margin-top:14px;text-align:center;font-size:13px;color:var(--mu)}
-  .av3{margin-top:48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-  .av3 > div{padding:4px 28px;text-align:center}
+  .seal svg{display:block;width:104px;height:104px}
+  .av3{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .av3 > div{padding:4px 20px;text-align:center}
   .av3 > div + div{border-left:1px solid var(--ln)}
-  .av3 .big{font-size:clamp(28px,3.1cqw,40px);line-height:1.14;font-weight:200;letter-spacing:-.01em;color:var(--t3)}
-  .av3 .big b{display:block;font-weight:200;color:var(--tx)}
-  .av3 .big i{font-style:normal;color:var(--t3)}
+  .av3 .big{font-size:clamp(26px,2.9cqw,38px);line-height:1.14;font-weight:200;letter-spacing:-.01em;color:var(--t3)}
+  .av3 .big b{display:block;font-weight:200;color:var(--tx);white-space:nowrap}
   .av3 .d1{margin-top:16px;font-size:15px;line-height:22px;color:var(--t2)}
   .av3 .d2{margin-top:4px;font-size:13px;color:var(--mu)}
   .note{margin:40px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:18px;color:var(--mu)}
@@ -136,7 +134,7 @@
   @container (max-width:900px){
     .hero{display:block;min-height:0}
     .hero .ph{position:relative;width:100%;aspect-ratio:1.18;max-height:520px}
-    .hero .ph img{object-position:60% 20%}
+    .hero .ph img{object-position:50% 50%}
     .hero .ph::after{background:
       linear-gradient(0deg,#0B0A08 0%,rgba(11,10,8,.62) 16%,rgba(11,10,8,0) 44%),
       linear-gradient(180deg,#0B0A08 0%,rgba(11,10,8,.4) 8%,rgba(11,10,8,0) 20%)}
@@ -151,8 +149,8 @@
     .co a.cta{height:56px;padding:0 24px}
     .fond{padding-top:48px}
     .seal{gap:20px}
-    .seal svg{width:104px;height:104px}
-    .av3{margin-top:28px;grid-template-columns:minmax(0,1fr)}
+    .seal svg{width:88px;height:88px}
+    .av3{margin-top:16px;grid-template-columns:minmax(0,1fr)}
     .av3 > div{padding:28px 0}
     .av3 > div + div{border-left:0;border-top:1px solid var(--ln)}
     .av3 .big{font-size:clamp(30px,8.6cqw,40px)}
@@ -206,8 +204,8 @@
 <!-- Tête -->
 <section class="hero">
   <picture class="ph">
-    <source media="(max-width:760px)" srcset="/assets/coachs/coach-eleve-m-640.jpg 640w, /assets/coachs/coach-eleve-m-1000.jpg 1000w" sizes="100vw">
-    <img src="/assets/coachs/coach-eleve-1600.jpg" srcset="/assets/coachs/coach-eleve-1000.jpg 1000w, /assets/coachs/coach-eleve-1600.jpg 1600w, /assets/coachs/coach-eleve-2400.jpg 2400w" sizes="(max-width:900px) 100vw, 78vw" width="2400" height="1350" fetchpriority="high" alt="Un coach note le programme de son élève, qui sourit, assis côte à côte dans une salle de sport.">
+    <source media="(max-width:760px)" srcset="/assets/coachs/helice-m-640.jpg 640w, /assets/coachs/helice-m-1000.jpg 1000w" sizes="100vw">
+    <img src="/assets/coachs/helice-1600.jpg" srcset="/assets/coachs/helice-1000.jpg 1000w, /assets/coachs/helice-1600.jpg 1600w, /assets/coachs/helice-2400.jpg 2400w" sizes="(max-width:900px) 100vw, 78vw" width="2400" height="1350" fetchpriority="high" alt="Une double hélice d'ADN faite de tubes de métal, sur fond noir.">
   </picture>
   <div class="cw">
     <div class="txt">
@@ -235,7 +233,6 @@
       <text x="100" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" letter-spacing="1.6" fill="#0A0A0A">FONDATEUR</text>
     </svg>
   </div>
-  <p class="cap">Ton badge et ton numéro de membre fondateur dès l'inscription</p>
   <div class="av3">
     <div>
       <div class="big">Prix bloqué <b>à vie</b></div>
@@ -247,7 +244,7 @@
       <p class="d2">Essai jusqu'à 10 élèves.</p>
     </div>
     <div>
-      <div class="big">1 parrainage <b><i>=</i> 1 mois offert</b></div>
+      <div class="big">1 parrainage = <b>1 mois offert en&nbsp;+</b></div>
       <p class="d1">Jusqu'à une année complète offerte.</p>
     </div>
   </div>
@@ -284,7 +281,6 @@
 <section class="fin">
   <div data-f>
     <h2 id="plusque">Jusqu'au 31 janvier 2027 pour intégrer le réseau des Fondateurs</h2>
-    <p>Ensuite, l'essai reste, les avantages Fondateurs s'arrêtent.</p>
   </div>
   <div data-n>
     <h2>15 jours pour essayer Ecleptic</h2>
