@@ -502,7 +502,7 @@ article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 .reward p{color:var(--muted);font-size:15px;max-width:420px;margin:0 auto 28px}
 /* telechargement : App Store et Google Play, inactifs tant que assets/stores.js n'a pas de lien */
 .stores{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;position:relative;z-index:1}
-.storebtn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:216px;padding:13px 28px 14px;border:1px solid var(--line);color:var(--muted);text-decoration:none;cursor:default;transition:background .25s,color .25s,border-color .25s}
+.storebtn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:260px;padding:13px 24px 14px;border:1px solid var(--line);color:var(--muted);text-decoration:none;cursor:default;transition:background .25s,color .25s,border-color .25s}
 .storebtn small{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
 .storebtn b{margin-top:4px;font-size:14px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
 .storebtn[href]{border-color:var(--gold);color:var(--gold);cursor:pointer}

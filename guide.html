@@ -106,6 +106,15 @@
     font-size:12px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background .2s,color .2s}
   .btn:hover{background:transparent;color:var(--gold)}
   .cta .note{margin:18px auto 0;font-size:12.5px;color:var(--muted);max-width:420px}
+  /* App Store et Google Play : inactifs tant que /assets/stores.js n'a pas de lien */
+  .stores{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+  .storebtn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:260px;padding:13px 24px 14px;border:1px solid var(--line);color:var(--muted);text-decoration:none;cursor:default;transition:background .2s,color .2s,border-color .2s}
+  .storebtn small{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+  .storebtn b{margin-top:4px;font-size:14px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+  .storebtn[href]{border-color:var(--gold);background:var(--gold);color:#16120B;cursor:pointer}
+  .storebtn[href] b{color:#16120B}
+  .storebtn[href]:hover{background:transparent;color:var(--gold)}
+  .storebtn[href]:hover b{color:var(--gold)}
 
   .more{padding:84px 0 0}
   .more a{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:300}
@@ -321,8 +330,8 @@
     <span class="kicker">Pour aller plus loin</span>
     <h2>Tu peux tout tenir<br>à la main. <span>Ou laisser<br>Ecleptic le faire.</span></h2>
     <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Les 7 leviers de ce guide y sont suivis automatiquement.</p>
-    <a class="btn" id="ctaMain" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-play-text="Télécharger sur Google Play" data-play-beta-text="Rejoindre la bêta Android" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
-    <p class="note" data-play-text="Android · gratuit sur Google Play" data-play-beta-text="Android · bêta gratuite via Google Play" data-store-text="iPhone · gratuit sur l'App Store">iPhone · bêta gratuite via TestFlight, l'app de bêtas officielle d'Apple · bientôt sur l'App Store</p>
+    <div class="stores"><a class="storebtn" data-store="ios" aria-disabled="true"><small data-live="Télécharger l&#x27;application">Bientôt disponible</small><b>App Store</b></a>
+    <a class="storebtn" data-store="android" aria-disabled="true"><small data-live="Télécharger l&#x27;application">Bientôt disponible</small><b>Google Play</b></a></div>
   </section>
 
   <nav class="more rv" aria-label="Articles du Journal">
@@ -335,7 +344,7 @@
 
 <div class="sticky" id="sticky">
   <span>Les 7 leviers, suivis automatiquement</span>
-  <a class="btn" id="ctaSticky" data-app href="https://testflight.apple.com/join/H5CQgDa7" data-play-text="Télécharger sur Google Play" data-play-beta-text="Rejoindre la bêta Android" data-store-text="Télécharger sur l'App Store">Télécharger l'app</a>
+  <a class="btn" id="ctaSticky" href="#cta">Télécharger l'app</a>
 </div>
 
 <footer>
@@ -357,19 +366,8 @@
   try { SRC = new URLSearchParams(location.search).get("src"); } catch(_) {}
   track("guide_view", {src: SRC});
 
-  // Lien de téléchargement : les liens des stores sont dans /assets/stores.js.
-  // Sur Android, Google Play (ou la bêta Android) remplace l'App Store dès que
-  // son lien y est renseigné ; ailleurs, l'App Store dès son lancement. Sans
-  // lien, les boutons restent sur la bêta TestFlight.
-  var ST = window.EclepticStores || {};
-  var STORE = (ST.isAndroid && ST.PLAY_STORE_URL) ? { url: ST.PLAY_STORE_URL, attr: "data-play-text", store: "play" }
-    : (ST.isAndroid && ST.PLAY_TESTING_URL) ? { url: ST.PLAY_TESTING_URL, attr: "data-play-beta-text", store: "play_beta" }
-    : ST.APP_STORE_URL ? { url: ST.APP_STORE_URL, attr: "data-store-text", store: "app_store" }
-    : null;
-  if (STORE) {
-    document.querySelectorAll("[data-app]").forEach(function(a){ a.href = STORE.url; });
-    document.querySelectorAll("[" + STORE.attr + "]").forEach(function(el){ el.textContent = el.getAttribute(STORE.attr); });
-  }
+  // Téléchargement : les deux boutons du bloc final (App Store, Google Play) restent inactifs
+  // tant que /assets/stores.js n'a pas de lien ; ce script les active seul. La barre du bas y mène.
 
   var bar = document.getElementById("bar"), sticky = document.getElementById("sticky");
   var cover = document.querySelector(".cover"), cta = document.getElementById("cta");
@@ -408,8 +406,10 @@
     rv.forEach(function(el){ el.classList.add("in"); });
   }
 
-  document.getElementById("ctaMain").addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", store: STORE ? STORE.store : "testflight", src: SRC}); });
-  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", store: STORE ? STORE.store : "testflight", src: SRC}); });
+  document.querySelectorAll("#cta .storebtn").forEach(function(a){
+    a.addEventListener("click", function(){ track("guide_cta_click", {placement: "outro", store: a.getAttribute("data-store"), live: a.hasAttribute("href"), src: SRC}); });
+  });
+  document.getElementById("ctaSticky").addEventListener("click", function(){ track("guide_cta_click", {placement: "sticky", store: "anchor", src: SRC}); });
 </script>
 </body>
 </html>
