@@ -55,7 +55,6 @@
     <a href="/articles/" data-mega="journal" class="on">Journal</a>
     </span>
     <a href="/science.html" data-mega="science" >Science-Based</a>
-    <a href="/beta.html" data-mega="beta">La b&ecirc;ta</a>
     <a href="/coachs.html">Coachs</a>
     <span class="langsw"><a href="/articles/hrv-variabilite-frequence-cardiaque.html" hreflang="fr" lang="fr" data-setlang="fr" class="on" aria-current="true">FR</a><a href="/en/journal/what-is-hrv-heart-rate-variability.html" hreflang="en" lang="en" data-setlang="en">EN</a></span>
   </div>
@@ -159,8 +158,9 @@
   <div class="reward">
     <span class="label">Pour aller plus loin</span>
     <h2>Ce que cet article explique,<br>l'app le mesure chez toi.</h2>
-    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. La bêta iOS est ouverte à un petit cercle.</p>
-    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'hrv-variabilite-frequence-cardiaque',lang:'fr'})">Demander l'accès</a>
+    <p>Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin.</p>
+    <div class="stores"><a class="storebtn" data-store="ios" aria-disabled="true" onclick="track('article_cta_click',{article:'hrv-variabilite-frequence-cardiaque',lang:'fr',store:'ios'})"><small data-live="Télécharger l&#x27;application">Bientôt disponible</small><b>App Store</b></a>
+    <a class="storebtn" data-store="android" aria-disabled="true" onclick="track('article_cta_click',{article:'hrv-variabilite-frequence-cardiaque',lang:'fr',store:'android'})"><small data-live="Télécharger l&#x27;application">Bientôt disponible</small><b>Google Play</b></a></div>
   </div>
   <div class="next">
     <span class="label">À lire ensuite</span>
@@ -172,7 +172,7 @@
 </main>
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">La b&ecirc;ta</a></p>
+    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
     <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
   </div>
 </footer>
@@ -183,6 +183,7 @@
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
 </script>
 <script>track('article_view',{article:'hrv-variabilite-frequence-cardiaque',lang:'fr'});</script>
+<script src="/assets/stores.js" defer></script>
 <script src="/assets/nav-data.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 </body>

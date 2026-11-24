@@ -55,7 +55,6 @@
     <a href="/en/journal/" data-mega="journal" >Journal</a>
     </span>
     <a href="/en/science.html" data-mega="science" class="on">Science-Based</a>
-    <a href="/beta.html" data-mega="beta">The beta</a>
     <span class="langsw"><a href="/methode/variabilite-cardiaque.html" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/method/heart-rate-variability.html" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
   </div>
 </nav>
@@ -143,8 +142,9 @@
   <div class="reward">
     <span class="label">The next step</span>
     <h2>You just read the method.<br>The app applies it to you.</h2>
-    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning. The iOS beta is open to a small circle.</p>
-    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'variabilite-cardiaque',lang:'en'})">Request access</a>
+    <p>Ecleptic brings your sleep, nutrition and training together in one score, every morning.</p>
+    <div class="stores"><a class="storebtn" data-store="ios" aria-disabled="true" onclick="track('methode_cta_click',{page:'variabilite-cardiaque',lang:'en',store:'ios'})"><small data-live="Download the app">Coming soon</small><b>App Store</b></a>
+    <a class="storebtn" data-store="android" aria-disabled="true" onclick="track('methode_cta_click',{page:'variabilite-cardiaque',lang:'en',store:'android'})"><small data-live="Download the app">Coming soon</small><b>Google Play</b></a></div>
   </div>
   <div class="next">
     <span class="label">Go further</span>
@@ -159,7 +159,7 @@
 </main>
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;&middot;&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
     <p class="disclaimer">Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.</p>
   </div>
 </footer>
@@ -170,6 +170,7 @@
   (function(){try{var r=(document.referrer||'').toLowerCase(),m=location.search.match(/[?&]utm_source=([^&#]+)/),u=m?decodeURIComponent(m[1]).toLowerCase():'',s=r+' '+u,src=/chatgpt|openai/.test(s)?'chatgpt':/perplexity/.test(s)?'perplexity':/claude\.ai|anthropic/.test(s)?'claude':/gemini\.google|bard\.google/.test(s)?'gemini':/copilot|bing\.com\/chat/.test(s)?'copilot':/chat\.mistral|mistral\.ai/.test(s)?'mistral':/you\.com/.test(s)?'you':/deepseek/.test(s)?'deepseek':/meta\.ai/.test(s)?'meta':'';if(src){if(window.posthog&&posthog.register_once)posthog.register_once({first_ai_source:src});track('ai_referral',{source:src,page:location.pathname});}}catch(e){}})();
 </script>
 <script>track('methode_view',{page:'variabilite-cardiaque',lang:'en'});</script>
+<script src="/assets/stores.js" defer></script>
 <script src="/assets/nav-data-en.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 </body>

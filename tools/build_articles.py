@@ -492,7 +492,7 @@ article .hero img{width:100%;height:auto;display:block;border:1px solid var(--li
 /* FAQ : questions frequentes (balisees FAQPage en JSON-LD) */
 article .faq h3{font-size:16.5px;font-weight:600;color:var(--ink);margin:26px 0 8px;line-height:1.4}
 article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
-/* fin d'article : la beta comme recompense */
+/* fin d'article : l'app comme recompense */
 .reward{margin:64px 0 8px;padding:52px 0;text-align:center;position:relative}
 .reward::before{content:"";position:absolute;top:0;left:6%;right:6%;border-top:1px solid var(--line)}
 .reward::after{content:"";position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line)}
@@ -500,6 +500,15 @@ article .faq p{color:var(--muted);font-size:15.5px;margin-bottom:0}
 .reward .label{display:block;margin-bottom:20px}
 .reward h2{font-size:clamp(20px,3.6vw,28px);font-weight:200;text-transform:uppercase;letter-spacing:0;color:var(--ink);margin:0 0 14px;line-height:1.2}
 .reward p{color:var(--muted);font-size:15px;max-width:420px;margin:0 auto 28px}
+/* telechargement : App Store et Google Play, inactifs tant que assets/stores.js n'a pas de lien */
+.stores{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;position:relative;z-index:1}
+.storebtn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:216px;padding:13px 28px 14px;border:1px solid var(--line);color:var(--muted);text-decoration:none;cursor:default;transition:background .25s,color .25s,border-color .25s}
+.storebtn small{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.storebtn b{margin-top:4px;font-size:14px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.storebtn[href]{border-color:var(--gold);color:var(--gold);cursor:pointer}
+.storebtn[href] b{color:var(--gold)}
+.storebtn[href]:hover{background:var(--gold);color:#1C1710}
+.storebtn[href]:hover b{color:#1C1710}
 .next{padding:40px 0 8px}
 .next .label{display:block;margin-bottom:18px}
 .next a{display:block;text-decoration:none;padding:16px 0;font-weight:300;position:relative;
@@ -868,7 +877,8 @@ def head_i18n_alts(alts):
 def nav_scripts(lang="fr"):
     if lang in I.INTL_LANGS:  # pas de méga-menu : les panneaux n'existent qu'en français et en anglais
         return ""
-    return """<script src="/assets/%s" defer></script>
+    return """<script src="/assets/stores.js" defer></script>
+<script src="/assets/%s" defer></script>
 <script src="/assets/nav.js" defer></script>""" % ("nav-data.js" if lang == "fr" else "nav-data-en.js")
 
 
@@ -886,11 +896,10 @@ def nav(section, lang="fr", fr_path=None, en_path=None, alts=None):
     <a href="/en/">%(l_home)s</a>
     <a href="/en/journal/">%(l_journal)s</a>
     <a href="/en/science.html">Science-Based</a>
-    <a href="/beta.html">%(l_beta)s</a>
     <a href="%(hub)s"%(on)s>%(l_coachs)s</a>
     %(switch)s
   </div>
-</nav>""" % {"l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"), "l_beta": U(lang, "nav_beta"),
+</nav>""" % {"l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"),
              "hub": coach_hub_path(lang), "on": ' class="on"' if section == "coachs" else "",
              "l_coachs": COACH_UI[lang]["nav"], "switch": I.switcher_multi(lang, alts)}
     return """<nav class="site">
@@ -901,7 +910,6 @@ def nav(section, lang="fr", fr_path=None, en_path=None, alts=None):
     <a href="%(journal)s" data-mega="journal" %(on_articles)s>%(l_journal)s</a>
     </span>
     <a href="%(science)s" data-mega="science" %(on_science)s>Science-Based</a>
-    <a href="/beta.html" data-mega="beta">%(l_beta)s</a>
     %(coachs)s%(switch)s
   </div>
 </nav>""" % {
@@ -911,7 +919,7 @@ def nav(section, lang="fr", fr_path=None, en_path=None, alts=None):
         "on_articles": 'class="on"' if section == "articles" else "",
         "on_science": 'class="on"' if section == "science" else "",
         "coachs": coach_nav_link(lang, section),
-        "l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"), "l_beta": U(lang, "nav_beta"),
+        "l_home": U(lang, "nav_home"), "l_journal": U(lang, "nav_journal"),
         "switch": (I.switcher_multi(lang, alts) if multi else I.switcher(lang, fr_path, en_path)) if "en" in LANGS_BUILT() else "",
     }
 
@@ -931,16 +939,31 @@ def coach_nav_link(lang, section):
     return ""
 
 
+def store_buttons(lang, event, props):
+    """Les deux boutons de téléchargement (App Store, Google Play) qui remplacent l'ancienne page
+    bêta. Inactifs (sans lien) tant que assets/stores.js n'a ni APP_STORE_URL ni PLAY_STORE_URL :
+    ce script pose le lien et le libellé « Télécharger l'application » dès qu'un lien y est écrit."""
+    soon, live = (("Bientôt disponible", "Télécharger l'application") if lang == "fr"
+                  else ("Coming soon", "Download the app"))
+
+    def one(store, name):
+        return ('<a class="storebtn" data-store="%s" aria-disabled="true" '
+                'onclick="track(\'%s\',{%s,store:\'%s\'})">'
+                '<small data-live="%s">%s</small><b>%s</b></a>'
+                % (store, event, props, store, html.escape(live, quote=True), soon, name))
+    return '<div class="stores">%s\n    %s</div>' % (one("ios", "App Store"), one("android", "Google Play"))
+
+
 def footer(lang="fr"):
     p = {"fr": ("/a-propos.html", "/mentions-legales.html", "/confidentialite.html")}.get(
         lang, ("/en/about.html", "/en/legal-notice.html", "/en/privacy.html"))
     return """<footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">%s</a> &nbsp;&middot;&nbsp; <a href="/beta.html">%s</a></p>
+    <p class="flinks"><a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="%s">%s</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">%s</a></p>
     <p class="disclaimer">%s</p>
   </div>
 </footer>""" % (p[0], U(lang, "f_about"), p[1], U(lang, "f_legal"), p[2], U(lang, "f_privacy"),
-                 U(lang, "f_contact"), U(lang, "f_beta"), U(lang, "disclaimer"))
+                 U(lang, "f_contact"), U(lang, "disclaimer"))
 
 
 FOOTER = footer("fr")
@@ -1022,29 +1045,10 @@ def nav_panels(idx, lang="fr"):
                 {"t": T("Tes vitaux, lus sur ta ligne de base", "Your vitals, read against your baseline"), "u": mp("vitaux", "vitaux")},
                 {"t": T("Tes cibles, recalibrées en continu", "Your targets, recalibrated continuously"), "u": mp("cibles", "cibles")}]},
             {"label": T("Commencer", "Get started"), "items": [
-                {"t": T("Demander l'accès à la bêta", "Request beta access"), "u": "/beta.html", "gold": True},
                 {"t": T("Lire le Journal", "Read the Journal"), "u": journal_path(lang)},
                 {"t": T("La méthode scientifique", "The scientific method"), "u": science},
                 contact]}]},
         "science": {"cols": science_cols},
-        "beta": {"cols": [
-            {"label": T("Rejoindre la bêta", "Join the beta"), "big": True, "spots": True, "items": [
-                {"t": T("Demander l'accès", "Request access"), "d": T("45 secondes de questions, puis le lien d'installation.", "45 seconds of questions, then the install link."),
-                 "u": "/beta.html", "gold": True}]},
-            {"label": T("Ce qui t'attend", "What you get"), "items": [
-                {"t": T("Toutes les fonctionnalités Zenith, offertes aux testeurs", "Every Zenith feature, free for testers")},
-                *([{"t": T("Sur iPhone (iOS 16.4 ou plus récent) et Android (8.0 ou plus récent)",
-                            "On iPhone (iOS 16.4 or later) and Android (8.0 or later)")},
-                   {"t": T("Installation via TestFlight sur iPhone, via Google Play sur Android",
-                           "Installed through TestFlight on iPhone, through Google Play on Android")}]
-                  if I.ANDROID_LIVE else
-                  [{"t": T("Sur iPhone, iOS 16.4 ou plus récent", "On iPhone, iOS 16.4 or later")},
-                   {"t": T("Installation via TestFlight, l'app de bêtas d'Apple", "Installed through TestFlight, Apple's beta app")}]),
-                {"t": T("Un bug ? Une capture d'écran suffit à nous le signaler", "A bug? A screenshot is all it takes to report it")}]},
-            {"label": T("Questions", "Questions"), "items": [
-                {"t": T("TestFlight, c'est quoi ?", "What is TestFlight?"), "u": "https://testflight.apple.com/"},
-                {"t": T("Confidentialité", "Privacy"), "u": "/en/privacy.html" if en else "/confidentialite.html"},
-                contact]}]},
     }
 
 
@@ -1245,7 +1249,7 @@ def article_page(a, others, lang="fr"):
     <span class="label">%(u_rl)s</span>
     <h2>%(u_rh)s</h2>
     <p>%(u_rp)s</p>
-    <a class="btn gold" href="%(r_href)s" onclick="track('article_cta_click',{article:'%(slug)s',lang:'%(lang)s'})">%(u_cta)s</a>
+    %(r_cta)s
   </div>
   <div class="next">
     <span class="label">%(u_next)s</span>
@@ -1274,7 +1278,9 @@ def article_page(a, others, lang="fr"):
         "u_rh": CU["reward_h2"] if coach else U(lang, "reward_h2"),
         "u_rp": (CU["reward_p_live"] if coach_open(lang) else CU["reward_p_wait"]) if coach else U(lang, "reward_p"),
         "u_cta": coach_cta_text(lang, "article") if coach else U(lang, "cta"), "u_next": U(lang, "next"),
-        "r_href": coach_cta_href(lang, "article") if coach else "/beta.html",
+        "r_cta": ('<a class="btn gold" href="%s" onclick="track(\'article_cta_click\',{article:\'%s\',lang:\'%s\'})">%s</a>'
+                  % (coach_cta_href(lang, "article"), a["slug"], lang, coach_cta_text(lang, "article"))) if coach
+                 else store_buttons(lang, "article_cta_click", "article:'%s',lang:'%s'" % (a["slug"], lang)),
         "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang),
     }
 
@@ -1360,7 +1366,7 @@ def methode_page(p, lang="fr"):
     <span class="label">%(u_rl)s</span>
     <h2>%(u_rh)s</h2>
     <p>%(u_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('methode_cta_click',{page:'%(slug)s',lang:'%(lang)s'})">%(u_cta)s</a>
+    %(stores)s
   </div>%(more)s
 </article>
 </main>
@@ -1379,6 +1385,7 @@ def methode_page(p, lang="fr"):
         "science": science, "nav": nav("science", lang, alt_fr, alt_en), "label": html.escape(v["label"]), "kicker": kicker,
         "lead": lead, "body": body, "refsblock": refsblock, "faqblock": faqblock,
         "u_rl": U(lang, "m_reward_label"), "u_rh": U(lang, "m_reward_h2"), "u_rp": U(lang, "reward_p"), "u_cta": U(lang, "cta"),
+        "stores": store_buttons(lang, "methode_cta_click", "page:'%s',lang:'%s'" % (p["slug"], lang)),
         "slug": p["slug"], "more": more, "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang),
     }
 
@@ -1463,7 +1470,7 @@ def index_page(lang="fr"):
     <span class="label">%(j_rl)s</span>
     <h2>%(j_rh)s</h2>
     <p>%(j_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'index',lang:'%(lang)s'})">%(cta)s</a>
+    %(stores)s
   </div>
 </main>
 %(footer)s
@@ -1520,6 +1527,7 @@ track('articles_index_view',{lang:'%(lang)s'});
                      "publisher": PUBLISHER_LD}),
        "empty": empty, "narticles": len(arts), "nthemes": len(DOMAINS),
        "popular": __import__("json").dumps(pop), "cta": U(lang, "cta"),
+       "stores": store_buttons(lang, "article_cta_click", "article:'index',lang:'%s'" % lang),
        "j_title": U(lang, "j_title"), "j_desc": U(lang, "j_desc"), "j_ogdesc": U(lang, "j_ogdesc"),
        "j_label": U(lang, "j_label"), "j_h1": U(lang, "j_h1"), "j_p": U(lang, "j_p"),
        "j_articles": U(lang, "j_articles"), "j_themes": U(lang, "j_themes"), "j_themes_label": U(lang, "j_themes_label"),
@@ -2095,7 +2103,7 @@ def theme_page(d, lang="fr"):
     <span class="label">%(j_rl)s</span>
     <h2>%(j_rh)s</h2>
     <p>%(j_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('article_cta_click',{article:'theme-%(slug)s',lang:'%(lang)s'})">%(cta)s</a>
+    %(stores)s
   </div>
 </main>
 %(footer)s
@@ -2113,6 +2121,7 @@ def theme_page(d, lang="fr"):
        "n": n, "nlabel": U(lang, "t_article") if n == 1 else U(lang, "t_articles"), "cards": cards, "empty": empty,
        "mblock": mblock, "others": others, "t_others": U(lang, "t_others"), "slug": THEMES[d]["slug"],
        "j_rl": U(lang, "j_reward_label"), "j_rh": U(lang, "j_reward_h2"), "j_rp": U(lang, "j_reward_p"), "cta": U(lang, "cta"),
+       "stores": store_buttons(lang, "article_cta_click", "article:'theme-%s',lang:'%s'" % (THEMES[d]["slug"], lang)),
        "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
 
@@ -2187,7 +2196,7 @@ def about_page(lang="fr"):
   <p>Spotted an error, a more recent study, something to clarify? Write to me at <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a>: I check, I correct, and the correction is dated.</p>
 
   <h2>Ecleptic in brief</h2>
-  <p>Ecleptic is %(app_kind)s, in private beta. It brings your sleep, nutrition and training together into one score, every morning. It does not replace medical advice and is not a medical device. The publisher and host of this website are listed in the <a href="/en/legal-notice.html">legal notice</a>.</p>
+  <p>Ecleptic is %(app_kind)s. It brings your sleep, nutrition and training together into one score, every morning. It does not replace medical advice and is not a medical device. The publisher and host of this website are listed in the <a href="/en/legal-notice.html">legal notice</a>.</p>
 """ % {"ig": AUTHOR["instagram"], "app_kind": I.APP_KIND["en"]}
         person = dict(AUTHOR_LD, worksFor={"@id": PUBLISHER_LD["@id"]})
         jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/en/about.html",
@@ -2212,7 +2221,7 @@ def about_page(lang="fr"):
   <p>Une erreur, une étude plus récente, un point à préciser ? Écris-moi à <a href="mailto:contact@ecleptic.app">contact@ecleptic.app</a> : je vérifie, je corrige, et la correction est datée.</p>
 
   <h2>Ecleptic en bref</h2>
-  <p>Ecleptic est %(app_kind)s, en bêta privée. Elle croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Elle ne remplace pas un avis médical et n'est pas un dispositif médical. L'éditeur et l'hébergeur du site sont indiqués dans les <a href="/mentions-legales.html">mentions légales</a>.</p>
+  <p>Ecleptic est %(app_kind)s. Elle croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. Elle ne remplace pas un avis médical et n'est pas un dispositif médical. L'éditeur et l'hébergeur du site sont indiqués dans les <a href="/mentions-legales.html">mentions légales</a>.</p>
 """ % {"ig": AUTHOR["instagram"], "app_kind": I.APP_KIND["fr"]}
     person = dict(AUTHOR_LD, worksFor={"@id": PUBLISHER_LD["@id"]})
     jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/a-propos.html",
@@ -2391,7 +2400,7 @@ DATA_UI = {
            "faq_a": "En tête des aliments du quotidien de la table Ciqual 2025 de l'ANSES : %s, avec %s %s pour 100 g, devant %s (%s %s) et %s (%s %s).",
            "lead": "Selon la table Ciqual 2025 de l'ANSES, le trio de tête des aliments du quotidien les plus riches en %s : %s (%s %s pour 100 g), %s (%s %s) et %s (%s %s).",
            "reward_h2": "Ce que ce tableau recense,<br>l'app le compte pour toi.",
-           "reward_p": "Scanne ton repas : Ecleptic retrouve chaque aliment dans les bases officielles et suit tes apports en micronutriments, jour après jour. " + I.BETA_CIRCLE["fr"],
+           "reward_p": "Scanne ton repas : Ecleptic retrouve chaque aliment dans les bases officielles et suit tes apports en micronutriments, jour après jour.",
            "more": "Pour aller plus loin", "others": "Les autres classements",
            "hub_title": "Données nutritionnelles : les aliments les plus riches en… — Ecleptic",
            "hub_seo": "Aliments les plus riches en protéines, fer… : données Ciqual",
@@ -2422,7 +2431,7 @@ DATA_UI = {
            "faq_a": "Top of the everyday foods in the 2025 Ciqual table from ANSES: %s, with %s %s per 100 g, ahead of %s (%s %s) and %s (%s %s).",
            "lead": "According to the 2025 Ciqual table from ANSES, France's food safety agency, the top three everyday foods highest in %s: %s (%s %s per 100 g), %s (%s %s) and %s (%s %s).",
            "reward_h2": "What this table lists,<br>the app counts for you.",
-           "reward_p": "Scan your meal: Ecleptic matches every food against official databases and tracks your micronutrient intake, day after day. " + I.BETA_CIRCLE["en"],
+           "reward_p": "Scan your meal: Ecleptic matches every food against official databases and tracks your micronutrient intake, day after day.",
            "more": "Go further", "others": "Other rankings",
            "hub_title": "Nutrition data: foods highest in protein, iron and more — Ecleptic",
            "hub_seo": "Foods highest in protein, iron and more: Ciqual data",
@@ -2577,7 +2586,7 @@ def data_page(key, lang="fr"):
     <span class="label">%(u_rl)s</span>
     <h2>%(u_rh)s</h2>
     <p>%(u_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('data_cta_click',{page:'%(key)s',lang:'%(lang)s'})">%(u_cta)s</a>
+    %(stores)s
   </div>%(more)s
   <div class="next">
     <span class="label">%(u_others)s</span>
@@ -2600,6 +2609,7 @@ def data_page(key, lang="fr"):
        "byline": author_line(lang, DATA_DATE, None), "body": body, "faqblock": faqblock,
        "sources": sources_block(srcs, lang), "u_rl": U(lang, "reward_label"), "u_rh": DU(lang, "reward_h2"),
        "u_rp": DU(lang, "reward_p"), "u_cta": U(lang, "cta"), "key": key, "more": more,
+       "stores": store_buttons(lang, "data_cta_click", "page:'%s',lang:'%s'" % (key, lang)),
        "u_others": DU(lang, "others"), "others": others,
        "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
@@ -2779,7 +2789,7 @@ def compare_page(c, lang="fr"):
     <span class="label">%(u_rl)s</span>
     <h2>%(u_rh)s</h2>
     <p>%(u_rp)s</p>
-    <a class="btn gold" href="/beta.html" onclick="track('compare_cta_click',{page:'%(key)s',lang:'%(lang)s'})">%(u_cta)s</a>
+    %(stores)s
   </div>
   <div class="next">
     <span class="label">%(u_others)s</span>
@@ -2802,6 +2812,7 @@ def compare_page(c, lang="fr"):
        "lead": localize_links(t.get("lead", ""), lang), "byline": author_line(lang, c.get("date", DATA_DATE), c.get("updated")),
        "body": localize_links(t["body"].strip(), lang), "faqblock": faqblock, "sources": sources_block(srcs, lang),
        "u_rl": U(lang, "reward_label"), "u_rh": U(lang, "reward_h2"), "u_rp": U(lang, "reward_p"), "u_cta": U(lang, "cta"),
+       "stores": store_buttons(lang, "compare_cta_click", "page:'%s',lang:'%s'" % (c["key"], lang)),
        "key": c["key"], "u_others": CU["others"], "others": others,
        "footer": footer(lang), "posthog": POSTHOG, "navscripts": nav_scripts(lang)}
 
@@ -3006,7 +3017,6 @@ def sitemap():
     # Articles : clé "updated" si postérieure à la publication, sinon "date".
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     entries = [("%s/" % SITE, git_lastmod("index.html")),
-               ("%s/beta.html" % SITE, git_lastmod("beta.html")),
                ("%s/science.html" % SITE, git_lastmod("science.html")),
                ("%s/coachs.html" % SITE, git_lastmod("coachs.html")),
                ("%s/articles/" % SITE, git_lastmod("articles/index.html"))]

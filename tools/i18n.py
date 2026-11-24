@@ -39,13 +39,6 @@ ANDROID_LIVE = False
 if os.environ.get("ECLEPTIC_ANDROID") in ("0", "1"):
     ANDROID_LIVE = os.environ["ECLEPTIC_ANDROID"] == "1"
 
-# Phrase de fin des encarts « l'app le fait pour toi ».
-BETA_CIRCLE = {
-    "fr": ("La bêta est ouverte à un petit cercle, sur iPhone et Android." if ANDROID_LIVE
-           else "La bêta iOS est ouverte à un petit cercle."),
-    "en": ("The beta is open to a small circle, on iPhone and Android." if ANDROID_LIVE
-           else "The iOS beta is open to a small circle."),
-}
 # « Ecleptic est une application … de bien-être » (À propos, llms.txt).
 APP_KIND = {
     "fr": "une application de bien-être pour iPhone et Android" if ANDROID_LIVE else "une application iOS de bien-être",
@@ -55,13 +48,13 @@ APP_KIND = {
 # --- Interface ---------------------------------------------------------------
 UI = {
     "fr": {
-        "nav_home": "Accueil", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "La b&ecirc;ta",
+        "nav_home": "Accueil", "nav_journal": "Journal", "nav_science": "Science-Based",
         "f_about": "&Agrave; propos", "f_legal": "Mentions l&eacute;gales", "f_privacy": "Confidentialit&eacute;",
-        "f_contact": "Contact", "f_beta": "La b&ecirc;ta",
+        "f_contact": "Contact",
         "disclaimer": "Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.",
         "reward_label": "Pour aller plus loin",
         "reward_h2": "Ce que cet article explique,<br>l'app le mesure chez toi.",
-        "reward_p": "Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin. " + BETA_CIRCLE["fr"],
+        "reward_p": "Ecleptic croise ton sommeil, ton alimentation et ton entraînement en un seul score, chaque matin.",
         "cta": "Demander l'accès", "next": "À lire ensuite", "faq": "Questions fréquentes", "sources": "Sources",
         "refs": "Références", "min": "min",
         "by": "Par", "role": "fondateur d'Ecleptic", "updated": "mis à jour le",
@@ -77,7 +70,7 @@ UI = {
         "j_quote": "« Chaque décision que tu prends — de ce que tu manges à ce que tu fais de ta soirée — fait de toi qui tu seras demain. »",
         "j_quote_by": "Chris Hadfield &nbsp;·&nbsp; Astronaute, commandant de l'ISS",
         "j_read": "Lire l'article →", "j_reward_label": "Et ensuite", "j_reward_h2": "Lire, c'est bien.<br>Mesurer, c'est mieux.",
-        "j_reward_p": "Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données. " + BETA_CIRCLE["fr"],
+        "j_reward_p": "Tout ce que le journal explique, l'app le suit automatiquement, sur tes propres données.",
         "j_empty": "Les premiers textes sont en préparation.<br>La station ouvre bientôt son journal.",
         "j_collection": "Le Journal d'Ecleptic",
         "t_label": "Le Journal &nbsp;&middot;&nbsp; Thème", "t_article": "Article", "t_articles": "Articles",
@@ -87,12 +80,12 @@ UI = {
         "lang_name": "Français",
     },
     "en": {
-        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "The beta",
-        "f_about": "About", "f_legal": "Legal notice", "f_privacy": "Privacy", "f_contact": "Contact", "f_beta": "The beta",
+        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "About", "f_legal": "Legal notice", "f_privacy": "Privacy", "f_contact": "Contact",
         "disclaimer": "Ecleptic is a wellness app. Its content does not replace medical advice, and it is not a medical device.",
         "reward_label": "Go further",
         "reward_h2": "What this article explains,<br>the app measures for you.",
-        "reward_p": "Ecleptic brings your sleep, nutrition and training together in one score, every morning. " + BETA_CIRCLE["en"],
+        "reward_p": "Ecleptic brings your sleep, nutrition and training together in one score, every morning.",
         "cta": "Request access", "next": "Read next", "faq": "Frequently asked questions", "sources": "Sources",
         "refs": "References", "min": "min",
         "by": "By", "role": "founder of Ecleptic", "updated": "updated",
@@ -107,7 +100,7 @@ UI = {
         "j_articles": "Articles", "j_themes": "Themes", "j_themes_label": "Journal themes", "j_all": "The whole journal",
         "j_quote": "", "j_quote_by": "",
         "j_read": "Read the article →", "j_reward_label": "What's next", "j_reward_h2": "Reading is good.<br>Measuring is better.",
-        "j_reward_p": "Everything the journal explains, the app tracks automatically, on your own data. " + BETA_CIRCLE["en"],
+        "j_reward_p": "Everything the journal explains, the app tracks automatically, on your own data.",
         "j_empty": "The first articles are on their way.",
         "j_collection": "The Ecleptic Journal",
         "t_label": "The Journal &nbsp;&middot;&nbsp; Theme", "t_article": "Article", "t_articles": "Articles",
@@ -315,40 +308,40 @@ INTL_HUB = {"es": "entrenadores", "de": "personal-trainer", "it": "personal-trai
 
 UI.update({
     "es": {
-        "nav_home": "Inicio", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "La beta",
-        "f_about": "Acerca de", "f_legal": "Aviso legal", "f_privacy": "Privacidad", "f_contact": "Contacto", "f_beta": "La beta",
+        "nav_home": "Inicio", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "Acerca de", "f_legal": "Aviso legal", "f_privacy": "Privacidad", "f_contact": "Contacto",
         "disclaimer": "Ecleptic es una aplicación de bienestar. Sus contenidos no sustituyen el consejo médico y no constituyen un producto sanitario.",
         "next": "Sigue leyendo", "faq": "Preguntas frecuentes", "sources": "Fuentes", "min": "min",
         "by": "Por", "role": "fundador de Ecleptic", "updated": "actualizado el",
         "j_read": "Leer la guía →", "lang_name": "Español",
     },
     "de": {
-        "nav_home": "Start", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "Die Beta",
-        "f_about": "Über uns", "f_legal": "Impressum", "f_privacy": "Datenschutz", "f_contact": "Kontakt", "f_beta": "Die Beta",
+        "nav_home": "Start", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "Über uns", "f_legal": "Impressum", "f_privacy": "Datenschutz", "f_contact": "Kontakt",
         "disclaimer": "Ecleptic ist eine Wellness-App. Ihre Inhalte ersetzen keinen ärztlichen Rat und sie ist kein Medizinprodukt.",
         "next": "Weiterlesen", "faq": "Häufige Fragen", "sources": "Quellen", "min": "Min.",
         "by": "Von", "role": "Gründer von Ecleptic", "updated": "aktualisiert am",
         "j_read": "Zum Leitfaden →", "lang_name": "Deutsch",
     },
     "it": {
-        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "La beta",
-        "f_about": "Chi siamo", "f_legal": "Note legali", "f_privacy": "Privacy", "f_contact": "Contatti", "f_beta": "La beta",
+        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "Chi siamo", "f_legal": "Note legali", "f_privacy": "Privacy", "f_contact": "Contatti",
         "disclaimer": "Ecleptic è un'app di benessere. I suoi contenuti non sostituiscono il parere medico e non è un dispositivo medico.",
         "next": "Continua a leggere", "faq": "Domande frequenti", "sources": "Fonti", "min": "min",
         "by": "Di", "role": "fondatore di Ecleptic", "updated": "aggiornato il",
         "j_read": "Leggi la guida →", "lang_name": "Italiano",
     },
     "nl": {
-        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "De bèta",
-        "f_about": "Over ons", "f_legal": "Juridische informatie", "f_privacy": "Privacy", "f_contact": "Contact", "f_beta": "De bèta",
+        "nav_home": "Home", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "Over ons", "f_legal": "Juridische informatie", "f_privacy": "Privacy", "f_contact": "Contact",
         "disclaimer": "Ecleptic is een wellness-app. De inhoud vervangt geen medisch advies en de app is geen medisch hulpmiddel.",
         "next": "Lees verder", "faq": "Veelgestelde vragen", "sources": "Bronnen", "min": "min",
         "by": "Door", "role": "oprichter van Ecleptic", "updated": "bijgewerkt op",
         "j_read": "Lees de gids →", "lang_name": "Nederlands",
     },
     "pt": {
-        "nav_home": "Início", "nav_journal": "Journal", "nav_science": "Science-Based", "nav_beta": "O beta",
-        "f_about": "Sobre", "f_legal": "Aviso legal", "f_privacy": "Privacidade", "f_contact": "Contato", "f_beta": "O beta",
+        "nav_home": "Início", "nav_journal": "Journal", "nav_science": "Science-Based",
+        "f_about": "Sobre", "f_legal": "Aviso legal", "f_privacy": "Privacidade", "f_contact": "Contato",
         "disclaimer": "O Ecleptic é um app de bem-estar. O conteúdo não substitui orientação médica e o app não é um dispositivo médico.",
         "next": "Leia também", "faq": "Perguntas frequentes", "sources": "Fontes", "min": "min",
         "by": "Por", "role": "fundador do Ecleptic", "updated": "atualizado em",

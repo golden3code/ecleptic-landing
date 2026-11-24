@@ -37,9 +37,27 @@
     });
   };
 
+  // Boutons « App Store » et « Google Play » (ils remplacent l'ancienne page bêta) :
+  //   <a class="storebtn" data-store="ios|android" aria-disabled="true">
+  //     <small data-live="Télécharger l'application">Bientôt disponible</small><b>App Store</b></a>
+  // Sans APP_STORE_URL / PLAY_STORE_URL, le bouton reste inactif (pas de lien). Dès qu'un lien
+  // est écrit ci-dessus, le bouton correspondant devient cliquable sur tout le site.
+  S.buttons = function (root) {
+    (root || document).querySelectorAll("a.storebtn[data-store]").forEach(function (a) {
+      var url = a.getAttribute("data-store") === "ios" ? S.APP_STORE_URL : S.PLAY_STORE_URL;
+      if (!url) return;
+      a.href = url;
+      a.rel = "noopener";
+      a.removeAttribute("aria-disabled");
+      var s = a.querySelector("small[data-live]");
+      if (s) s.textContent = s.getAttribute("data-live");
+    });
+  };
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () { S.apply(); });
+    document.addEventListener("DOMContentLoaded", function () { S.apply(); S.buttons(); });
   } else {
     S.apply();
+    S.buttons();
   }
 })();

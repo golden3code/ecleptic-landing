@@ -10,7 +10,7 @@
 <link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Ecleptic — Sleep, Nutrition, Training: Everything Aligns</title>
-<meta name="description" content="Ecleptic connects your sleep, nutrition and training in one score and tells you every morning what really matters. Journal, science, iOS beta.">
+<meta name="description" content="Ecleptic connects your sleep, nutrition and training in one score and tells you every morning what really matters. Journal, science, iPhone and Android app.">
 <link rel="canonical" href="https://ecleptic.health/en/">
 <meta property="og:title" content="Ecleptic — Everything aligns.">
 <meta property="og:description" content="Sleep, nutrition, training: one score, one AI that understands it all.">
@@ -128,6 +128,7 @@
   .fadeblack{height:38vh;background:linear-gradient(var(--bg), #000)}
   .finale{padding:110px 24px 0;text-align:center;margin-top:0;background:#000}
   .finale .btn{position:relative;z-index:1}
+  .finale .stores{margin-bottom:30px}
   /* Lune : le sommet du disque (a 51 % de la hauteur de moon.jpg, image carree)
      est cale pour affleurer le bouton, quel que soit l'ecran. */
   .moonzone{position:relative;height:min(340px,44vw);overflow:hidden;margin:-46px -24px 0;pointer-events:none}
@@ -152,7 +153,6 @@
     <a href="/en/journal/" data-mega="journal">Journal</a>
     </span>
     <a href="/en/science.html" data-mega="science">Science-Based</a>
-    <a href="/beta.html" data-mega="beta">The beta</a>
     <span class="langsw"><a href="/" hreflang="fr" lang="fr" data-setlang="fr">FR</a><a href="/en/" hreflang="en" lang="en" data-setlang="en" class="on" aria-current="true">EN</a></span>
   </div>
 </nav>
@@ -305,16 +305,17 @@
 <div class="fadeblack" aria-hidden="true"></div>
 
 <section class="finale">
-  <span class="label">By invitation</span>
-  <h2>The beta is not<br>for everyone.<br><span class="gold">Maybe for you.</span></h2>
-  <p>A small circle of testers, every feature unlocked, in exchange for honest feedback. <span data-android-text="iPhone (iOS 16.4+) and Android (8.0+).">iPhone, iOS 16.4+.</span></p>
-  <a class="btn gold" href="/beta.html" onclick="track('home_cta_click',{placement:'finale',lang:'en'})">Request access</a>
+  <span class="label">The app</span>
+  <h2>Ecleptic is not<br>for everyone.<br><span class="gold">Maybe for you.</span></h2>
+  <p>Your sleep, nutrition and training, brought together in one score, every morning.</p>
+  <div class="stores"><a class="storebtn" data-store="ios" aria-disabled="true" onclick="track('home_cta_click',{placement:'finale',lang:'en',store:'ios'})"><small data-live="Download the app">Coming soon</small><b>App Store</b></a>
+    <a class="storebtn" data-store="android" aria-disabled="true" onclick="track('home_cta_click',{placement:'finale',lang:'en',store:'android'})"><small data-live="Download the app">Coming soon</small><b>Google Play</b></a></div>
   <div class="moonzone" aria-hidden="true"></div>
 </section>
 
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;·&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;·&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;·&nbsp; <a href="/beta.html">The beta</a></p>
+    <p class="flinks"><a href="/en/about.html">About</a> &nbsp;·&nbsp; <a href="/en/legal-notice.html">Legal notice</a> &nbsp;·&nbsp; <a href="/en/privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
     <p class="disclaimer">Ecleptic is a wellness app. It does not replace medical advice and is not a medical device.</p>
   </div>
 </footer>

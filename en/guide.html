@@ -363,7 +363,7 @@
   // lien, les boutons restent sur la bêta TestFlight.
   var ST = window.EclepticStores || {};
   var STORE = (ST.isAndroid && ST.PLAY_STORE_URL) ? { url: ST.PLAY_STORE_URL, attr: "data-play-text", store: "play" }
-    : (ST.isAndroid && ST.PLAY_TESTING_URL) ? { url: "/beta.html", attr: "data-play-beta-text", store: "play_beta" }
+    : (ST.isAndroid && ST.PLAY_TESTING_URL) ? { url: ST.PLAY_TESTING_URL, attr: "data-play-beta-text", store: "play_beta" }
     : ST.APP_STORE_URL ? { url: ST.APP_STORE_URL, attr: "data-store-text", store: "app_store" }
     : null;
   if (STORE) {

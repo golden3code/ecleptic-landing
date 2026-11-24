@@ -47,7 +47,7 @@
   </div>
   <div class="btns">
     <a class="btn primary" id="open" href="/" hidden>Ouvrir Ecleptic</a>
-    <a class="btn secondary" id="get" href="/beta.html" hidden>Télécharger Ecleptic</a>
+    <a class="btn secondary" id="get" href="/" hidden>Télécharger Ecleptic</a>
     <a class="btn secondary" id="home" href="/">Accueil du site</a>
   </div>
 </main>
@@ -102,7 +102,7 @@
   } else if (S.APP_STORE_URL) {
     get.href = S.APP_STORE_URL;
   } else {
-    get.href = '/beta.html';
+    return;   // pas encore de lien de store : le bouton reste caché
   }
   get.hidden = false;
 })();

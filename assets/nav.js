@@ -29,17 +29,17 @@
 
   // Lien « Coachs » des pages écrites à la main : apparaît seul quand la rubrique ouvre.
   if (NAV.coachs && !nav.querySelector('a[href="' + NAV.coachs.u + '"]')) {
-    var betaLink = nav.querySelector('[data-mega="beta"]');
-    if (betaLink) {
+    var lastLink = nav.querySelector('[data-mega="science"]');
+    if (lastLink) {
       var coachLink = document.createElement("a");
       coachLink.href = NAV.coachs.u;
       coachLink.textContent = NAV.coachs.t;
-      betaLink.parentNode.insertBefore(coachLink, betaLink.nextSibling);
+      lastLink.parentNode.insertBefore(coachLink, lastLink.nextSibling);
     }
   }
 
   // Panneaux visibles par tous ; les autres ne s'ouvrent qu'en aperçu.
-  var LIVE = { journal: true, science: true, app: true, beta: true };
+  var LIVE = { journal: true, science: true, app: true };
   var PREVIEW = false;
   try {
     var ap = new URLSearchParams(location.search).get("apercu");
@@ -137,7 +137,8 @@
     showCat(0);
   }
 
-  // Places restantes de la bêta (même source que /beta.html), chargées à la
+  // Places restantes de la bêta : plus aucun panneau ne les demande depuis la suppression de la
+  // page bêta (24/11/2026) ; le code reste inerte. Elles étaient chargées à la
   // première ouverture du panneau ; en cas d'échec, la ligne ne s'affiche pas.
   var SUPABASE_URL = "https://avbmycfngmxhkjesdiyq.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Ym15Y2ZuZ214aGtqZXNkaXlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzQ1OTksImV4cCI6MjA5OTI1MDU5OX0.uPvzmY5zV9e78ATohW4VyAwrYRKP33VphOhyFDe6GbI";   // clé publique « anon », déjà servie par beta.html

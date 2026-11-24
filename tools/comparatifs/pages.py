@@ -51,7 +51,7 @@ P_RECUPERATION = {
 <tr><td>Oura</td><td>Score de préparation</td><td>0 à 100</td><td>9 contributeurs : FC au repos, HRV, température, indice de récupération, sommeil, activité</td><td>14 jours face à 2 ou 3 mois</td><td>Bague Oura</td><td>Non pour le score du jour ; oui pour le détail</td></tr>
 <tr><td>Garmin</td><td>Préparation à l'entraînement</td><td>1 à 100</td><td>Sommeil, temps de récupération, état HRV, charge aiguë, stress des 3 derniers jours</td><td>HRV : moyenne sur 7 jours face à ta plage de référence</td><td>Montre Garmin compatible</td><td>Non, calculé par la montre</td></tr>
 <tr><td>Apple Watch</td><td>Score de préparation</td><td>0 à 10</td><td>Activité et charge d'entraînement, signes vitaux de nuit et de jour, score de sommeil</td><td>Au moins 7 des 49 dernières nuits</td><td>Series 12 ou Ultra 4</td><td>Aucun dans les prérequis</td></tr>
-<tr><td>Ecleptic</td><td>Readiness Score</td><td>Sur 100</td><td>Vitaux de la nuit, sommeil, nutrition, rythme et charge</td><td>Vitaux : 42 jours</td><td>iPhone ; montre facultative</td><td>Bêta iOS gratuite</td></tr>
+<tr><td>Ecleptic</td><td>Readiness Score</td><td>Sur 100</td><td>Vitaux de la nuit, sommeil, nutrition, rythme et charge</td><td>Vitaux : 42 jours</td><td>iPhone ; montre facultative</td><td>Sortie à venir</td></tr>
 </tbody>
 </table></div>
 
@@ -108,7 +108,7 @@ P_RECUPERATION = {
 <tr><td>Oura</td><td>Readiness Score</td><td>0 to 100</td><td>9 contributors: resting heart rate, HRV, temperature, recovery index, sleep, activity</td><td>14 days vs. 2 or 3 months</td><td>Oura Ring</td><td>No for the daily score; yes for the details</td></tr>
 <tr><td>Garmin</td><td>Training Readiness</td><td>1 to 100</td><td>Sleep, recovery time, HRV status, acute load, stress over the last 3 days</td><td>HRV: 7-day average vs. your baseline range</td><td>Compatible Garmin watch</td><td>No, calculated on the watch</td></tr>
 <tr><td>Apple Watch</td><td>Readiness score</td><td>0 to 10</td><td>Activity and training load, overnight and daytime vitals, sleep score</td><td>At least 7 of the past 49 nights</td><td>Series 12 or Ultra 4</td><td>None among the requirements</td></tr>
-<tr><td>Ecleptic</td><td>Readiness Score</td><td>Out of 100</td><td>Overnight vitals, sleep, nutrition, rhythm and load</td><td>Vitals: 42 days</td><td>iPhone; watch optional</td><td>Free iOS beta</td></tr>
+<tr><td>Ecleptic</td><td>Readiness Score</td><td>Out of 100</td><td>Overnight vitals, sleep, nutrition, rhythm and load</td><td>Vitals: 42 days</td><td>iPhone; watch optional</td><td>Coming soon</td></tr>
 </tbody>
 </table></div>
 
@@ -217,7 +217,7 @@ P_APPS = {
 <tr><td>Apple Santé et Fitness</td><td>Score de sommeil</td><td>Via d'autres apps, dont Santé centralise les données</td><td>Activité, charge d'entraînement</td><td>Score de préparation (activité, signes vitaux, sommeil)</td><td>Apple Watch Series 12 ou Ultra 4 pour la Préparation</td><td>Aucun dans les prérequis</td></tr>
 <tr><td>MyFitnessPal</td><td>Non décrit sur sa fiche</td><td>Calories et macros ; scans code-barres et repas en Premium</td><td>Séances et pas ; plus de 40 appareils et apps connectables</td><td>Objectifs caloriques et macros</td><td>iPhone</td><td>Non pour le journal ; Premium pour les scans</td></tr>
 <tr><td>Yazio</td><td>Non décrit sur sa fiche</td><td>Compteur de calories assisté par IA, code-barres, jeûne</td><td>Pas et activité ; synchro Fitbit ou Garmin en Pro</td><td>Objectif calorique</td><td>iPhone</td><td>Non pour le compteur ; Pro pour les fonctions avancées</td></tr>
-<tr><td>Ecleptic</td><td>Oui</td><td>Scan photo, code-barres, recherche ; valeurs Ciqual, USDA, Open Food Facts</td><td>Séances, charge d'entraînement</td><td>Readiness Score (vitaux, sommeil, nutrition, rythme)</td><td>iPhone ; montre facultative</td><td>Bêta iOS gratuite</td></tr>
+<tr><td>Ecleptic</td><td>Oui</td><td>Scan photo, code-barres, recherche ; valeurs Ciqual, USDA, Open Food Facts</td><td>Séances, charge d'entraînement</td><td>Readiness Score (vitaux, sommeil, nutrition, rythme)</td><td>iPhone ; montre facultative</td><td>Sortie à venir</td></tr>
 </tbody>
 </table></div>
 
@@ -276,7 +276,7 @@ P_APPS = {
 <tr><td>Apple Health and Fitness</td><td>Sleep score</td><td>Through other apps, whose data Health brings together</td><td>Activity, training load</td><td>Readiness score (activity, vitals, sleep)</td><td>Apple Watch Series 12 or Ultra 4 for Readiness</td><td>None among the requirements</td></tr>
 <tr><td>MyFitnessPal</td><td>Not described in its listing</td><td>Calories and macros; barcode and meal scan with Premium</td><td>Workouts and steps; 40+ devices and apps can connect</td><td>Calorie and macro goals</td><td>iPhone</td><td>No for the log; Premium for scanning</td></tr>
 <tr><td>Yazio</td><td>Not described in its listing</td><td>AI-assisted calorie counter, barcode scanner, fasting</td><td>Steps and activity; Fitbit or Garmin sync with Pro</td><td>Calorie goal</td><td>iPhone</td><td>No for the counter; Pro for advanced features</td></tr>
-<tr><td>Ecleptic</td><td>Yes</td><td>Photo scan, barcode, search; values from Ciqual, USDA, Open Food Facts</td><td>Workouts, training load</td><td>Readiness Score (vitals, sleep, nutrition, rhythm)</td><td>iPhone; watch optional</td><td>Free iOS beta</td></tr>
+<tr><td>Ecleptic</td><td>Yes</td><td>Photo scan, barcode, search; values from Ciqual, USDA, Open Food Facts</td><td>Workouts, training load</td><td>Readiness Score (vitals, sleep, nutrition, rhythm)</td><td>iPhone; watch optional</td><td>Coming soon</td></tr>
 </tbody>
 </table></div>
 
@@ -376,7 +376,7 @@ P_AGE = {
 <tr><td>Oura</td><td>Âge cardiovasculaire</td><td>Ton système cardiovasculaire</td><td>Onde de pouls estimée par capteur optique</td><td>14 nuits sur 30 jours</td><td>Bague Gen3 ou plus récente</td><td>Oui</td></tr>
 <tr><td>Apple</td><td>Santé cardiovasculaire</td><td>Ta VO₂max, par âge et sexe</td><td>Effort cardiaque en extérieur, profil, traitements</td><td>Plusieurs séances en extérieur</td><td>Apple Watch</td><td>Aucun dans les prérequis</td></tr>
 <tr><td>Athlytic</td><td>Athlytic Age</td><td>Un âge de forme</td><td>FC au repos, VO₂max, sommeil, composition corporelle, pas, entraînement</td><td>Non précisé</td><td>iPhone et Apple Watch</td><td>Oui pour l'app complète</td></tr>
-<tr><td>Ecleptic</td><td>Âge biologique</td><td>L'âge de ton corps</td><td>VO₂max, puis 7 facteurs du quotidien</td><td>Dès l'inscription</td><td>iPhone ; montre facultative</td><td>Bêta iOS gratuite</td></tr>
+<tr><td>Ecleptic</td><td>Âge biologique</td><td>L'âge de ton corps</td><td>VO₂max, puis 7 facteurs du quotidien</td><td>Dès l'inscription</td><td>iPhone ; montre facultative</td><td>Sortie à venir</td></tr>
 </tbody>
 </table></div>
 
@@ -429,7 +429,7 @@ P_AGE = {
 <tr><td>Oura</td><td>Cardiovascular Age</td><td>Your cardiovascular system</td><td>Pulse wave estimated by the optical sensor</td><td>14 nights in 30 days</td><td>Gen3 ring or later</td><td>Yes</td></tr>
 <tr><td>Apple</td><td>Cardio Fitness</td><td>Your VO₂ max, by age and sex</td><td>Heart effort outdoors, profile, medications</td><td>Several outdoor workouts</td><td>Apple Watch</td><td>None among the requirements</td></tr>
 <tr><td>Athlytic</td><td>Athlytic Age</td><td>A fitness age</td><td>Resting heart rate, VO₂ max, sleep, body composition, steps, training</td><td>Not specified</td><td>iPhone and Apple Watch</td><td>Yes for the full app</td></tr>
-<tr><td>Ecleptic</td><td>Biological age</td><td>Your body's age</td><td>VO₂ max, then 7 everyday factors</td><td>From sign-up</td><td>iPhone; watch optional</td><td>Free iOS beta</td></tr>
+<tr><td>Ecleptic</td><td>Biological age</td><td>Your body's age</td><td>VO₂ max, then 7 everyday factors</td><td>From sign-up</td><td>iPhone; watch optional</td><td>Coming soon</td></tr>
 </tbody>
 </table></div>
 
@@ -501,10 +501,10 @@ def _android_rows():
     if not _I.ANDROID_LIVE:
         return
     rows = {
-        "fr": ("<td>iPhone ; montre facultative</td><td>Bêta iOS gratuite</td>",
-               "<td>iPhone et Android ; montre facultative</td><td>Bêta gratuite</td>"),
-        "en": ("<td>iPhone; watch optional</td><td>Free iOS beta</td>",
-               "<td>iPhone and Android; watch optional</td><td>Free beta</td>"),
+        "fr": ("<td>iPhone ; montre facultative</td><td>Sortie à venir</td>",
+               "<td>iPhone et Android ; montre facultative</td><td>Sortie à venir</td>"),
+        "en": ("<td>iPhone; watch optional</td><td>Coming soon</td>",
+               "<td>iPhone and Android; watch optional</td><td>Coming soon</td>"),
     }
     for page in PAGES:
         for lang, (old_row, new_row) in rows.items():

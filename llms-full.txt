@@ -4873,7 +4873,7 @@ Informations publiées par chaque marque, vérifiées le 30 septembre 2026. Sour
 
 | Apple Watch | Score de préparation | 0 à 10 | Activité et charge d'entraînement, signes vitaux de nuit et de jour, score de sommeil | Au moins 7 des 49 dernières nuits | Series 12 ou Ultra 4 | Aucun dans les prérequis |
 
-| Ecleptic | Readiness Score | Sur 100 | Vitaux de la nuit, sommeil, nutrition, rythme et charge | Vitaux : 42 jours | iPhone ; montre facultative | Bêta iOS gratuite |
+| Ecleptic | Readiness Score | Sur 100 | Vitaux de la nuit, sommeil, nutrition, rythme et charge | Vitaux : 42 jours | iPhone ; montre facultative | Sortie à venir |
 
 ## Whoop : la Recovery, de 0 à 100 %
 
@@ -4966,7 +4966,7 @@ Fonctionnalités décrites par chaque éditeur (pages d'assistance ou fiche App 
 
 | Yazio | Non décrit sur sa fiche | Compteur de calories assisté par IA, code-barres, jeûne | Pas et activité ; synchro Fitbit ou Garmin en Pro | Objectif calorique | iPhone | Non pour le compteur ; Pro pour les fonctions avancées |
 
-| Ecleptic | Oui | Scan photo, code-barres, recherche ; valeurs Ciqual, USDA, Open Food Facts | Séances, charge d'entraînement | Readiness Score (vitaux, sommeil, nutrition, rythme) | iPhone ; montre facultative | Bêta iOS gratuite |
+| Ecleptic | Oui | Scan photo, code-barres, recherche ; valeurs Ciqual, USDA, Open Food Facts | Séances, charge d'entraînement | Readiness Score (vitaux, sommeil, nutrition, rythme) | iPhone ; montre facultative | Sortie à venir |
 
 ## Whoop et Oura : le capteur d'abord
 
@@ -5046,7 +5046,7 @@ Informations publiées par chaque marque, vérifiées le 30 septembre 2026. Sour
 
 | Athlytic | Athlytic Age | Un âge de forme | FC au repos, VO₂max, sommeil, composition corporelle, pas, entraînement | Non précisé | iPhone et Apple Watch | Oui pour l'app complète |
 
-| Ecleptic | Âge biologique | L'âge de ton corps | VO₂max, puis 7 facteurs du quotidien | Dès l'inscription | iPhone ; montre facultative | Bêta iOS gratuite |
+| Ecleptic | Âge biologique | L'âge de ton corps | VO₂max, puis 7 facteurs du quotidien | Dès l'inscription | iPhone ; montre facultative | Sortie à venir |
 
 ## Garmin : l'âge physique
 
