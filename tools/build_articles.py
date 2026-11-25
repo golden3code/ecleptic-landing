@@ -928,12 +928,14 @@ def nav(section, lang="fr", fr_path=None, en_path=None, alts=None):
 # PLAN-OFFRE-FONDATEURS.md). En français, « Coachs » du bandeau y mène toujours ; les guides
 # (/coachs/) sont liés depuis cette page. Ailleurs, le lien reste celui des guides, à leur sortie.
 COACH_OFFER_PAGE = "/coachs.html"
+# Miroir anglais écrit à la main (25/11) : en/coaches.html, à tenir à jour avec coachs.html.
+COACH_OFFER_PAGES = {"fr": COACH_OFFER_PAGE, "en": "/en/coaches.html"}
 
 
 def coach_nav_link(lang, section):
     on = ' class="on"' if section == "coachs" else ""
-    if lang == "fr":
-        return '<a href="%s"%s>%s</a>\n    ' % (COACH_OFFER_PAGE, on, COACH_UI[lang]["nav"])
+    if lang in COACH_OFFER_PAGES:
+        return '<a href="%s"%s>%s</a>\n    ' % (COACH_OFFER_PAGES[lang], on, COACH_UI[lang]["nav"])
     if coach_live(lang):
         return '<a href="%s"%s>%s</a>\n    ' % (coach_hub_path(lang), on, COACH_UI[lang]["nav"])
     return ""
@@ -985,8 +987,8 @@ def nav_data(lang="fr"):
     data = {"journal": {"cats": cats, "popular": pop, "total": len(arts)}}
     data.update(nav_panels(idx, lang))
     # Lien ajouté par nav.js sur les pages écrites à la main ; « guides » : lien de coachs.html.
-    if lang == "fr":
-        data["coachs"] = {"t": COACH_UI[lang]["nav"], "u": COACH_OFFER_PAGE}
+    if lang in COACH_OFFER_PAGES:
+        data["coachs"] = {"t": COACH_UI[lang]["nav"], "u": COACH_OFFER_PAGES[lang]}
         if coach_live(lang):
             data["coachGuides"] = {"t": COACH_UI[lang]["label"], "u": coach_hub_path(lang)}
     elif coach_live(lang):
@@ -2940,6 +2942,7 @@ def llms_txt():
         out.append("The whole site is also available in English (visitors outside French-speaking countries see it by default).")
         out.append("- [Home](%s/en/): Ecleptic in English." % SITE)
         out.append("- [Science-Based](%s/en/science.html): the method and its sources." % SITE)
+        out.append("- [Ecleptic for coaches](%s/en/coaches.html): the coach console, its 4 tiers (from €24.99 to €44.99 a month), the 15-day trial with no card and the Founders offer until 31 January 2027." % SITE)
         out += ["- [%s](%s%s): %s" % (methode_view(p, "en")["title"], SITE, methode_path(p, "en"), methode_view(p, "en")["description"])
                 for p in METHODE if methode_path(p, "en")]
         out.append("- [The Journal](%s/en/journal/): short, sourced articles by theme." % SITE)
@@ -3023,6 +3026,7 @@ def sitemap():
     for lang in LANGS_BUILT():
         if lang == "en":
             for rel, path in (("en/index.html", "/en/"), ("en/science.html", "/en/science.html"),
+                              ("en/coaches.html", "/en/coaches.html"),
                               ("en/journal/index.html", "/en/journal/")):
                 if os.path.exists(os.path.join(root, rel)):
                     entries.append((SITE + path, git_lastmod(rel)))
