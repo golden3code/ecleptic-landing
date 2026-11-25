@@ -64,6 +64,10 @@
 <style>
   /* Page Coachs, refonte du 24/11 : identité du site (noir, ivoire, or, filets fins), photo en bannière.
      Les seuils suivent la largeur de la page (@container sur main.co). */
+  /* Page seule (25/11) : plus de bandeau du site, seulement la marque, sans lien. */
+  .marque{max-width:1080px;margin:0 auto;padding:28px 24px;line-height:1.75}
+  .marque span{font-size:16px;letter-spacing:.45em;text-transform:uppercase;color:#F2EBDD;font-weight:300}
+  @media (max-width:760px){.marque{padding:22px 20px}.marque span{font-size:13px;letter-spacing:.35em}}
   .co{--au:#D9A441;--tx:#F2EBDD;--t2:#C9C1B0;--t3:#A9A08D;--mu:#9A8E77;--ln:rgba(242,235,221,.14);--bg:#0B0A08;
     container-type:inline-size;color:var(--tx);font-size:15px;line-height:1.55}
   .co .cw{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px}
@@ -199,7 +203,6 @@
   /* Téléphone : le bouton reste à portée de pouce dès que celui de la tête est sorti de l'écran. */
   .stick{display:none}
   @media (max-width:760px){
-    nav.site{padding-left:20px;padding-right:20px}
     .stick{display:block;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(11,10,8,.94);border-top:1px solid rgba(242,235,221,.14);transform:translateY(110%);transition:transform .3s ease}
     .stick.on{transform:none}
     .stick a{display:flex;align-items:center;justify-content:center;height:52px;background:#D9A441;color:#1C1710;font-size:11.5px;font-weight:600;letter-spacing:.12em;white-space:nowrap;text-transform:uppercase;text-decoration:none}
@@ -209,18 +212,7 @@
 </style>
 </head>
 <body>
-<nav class="site">
-  <a class="logo" href="/">Ecleptic</a>
-  <div class="links">
-    <a href="/" data-mega="app" >Accueil</a>
-    <span class="navjournal">
-    <a href="/articles/" data-mega="journal" >Journal</a>
-    </span>
-    <a href="/science.html" data-mega="science" >Science-Based</a>
-    <a href="/coachs.html" class="on" aria-current="page">Coachs</a>
-    <span class="langsw"><a href="/coachs.html" hreflang="fr" lang="fr" data-setlang="fr" class="on" aria-current="true">FR</a><a href="/en/coaches.html" hreflang="en" lang="en" data-setlang="en">EN</a></span>
-  </div>
-</nav>
+<header class="marque"><span>Ecleptic</span></header>
 <main class="co">
 
 <!-- Tête -->
@@ -321,7 +313,7 @@
 <div class="stick" id="stick"><a data-essai="barre" href="https://coach.ecleptic.health/connexion?inscription=1">Commencer mon essai · 100 % gratuit</a></div>
 <footer class="site">
   <div class="wrap">
-    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/cgv-coachs.html">CGV coachs</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a></p>
+    <p class="flinks"><a href="/a-propos.html">&Agrave; propos</a> &nbsp;&middot;&nbsp; <a href="/mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="/cgv-coachs.html">CGV coachs</a> &nbsp;&middot;&nbsp; <a href="/confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@ecleptic.app">Contact</a> &nbsp;&middot;&nbsp; <a href="/en/coaches.html" hreflang="en" lang="en" data-setlang="en">English</a></p>
     <p class="disclaimer">Ecleptic est une application de bien-&ecirc;tre. Ses contenus ne remplacent pas un avis m&eacute;dical et ne constituent pas un dispositif m&eacute;dical.</p>
   </div>
 </footer>
@@ -372,6 +364,5 @@
 })();
 </script>
 <script src="/assets/nav-data.js" defer></script>
-<script src="/assets/nav.js" defer></script>
 </body>
 </html>
