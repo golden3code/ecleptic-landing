@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ecleptic.health/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ecleptic.health/science.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://ecleptic.health/coachs.html</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://ecleptic.health/coachs.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/articles/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://ecleptic.health/articles/sommeil-profond-comment-augmenter.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://ecleptic.health/articles/courbatures-que-faire.html</loc><lastmod>2026-09-30</lastmod></url>
@@ -21,6 +21,7 @@
   <url><loc>https://ecleptic.health/articles/deficit-calorique-comment-calculer.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://ecleptic.health/articles/creatine-bienfaits-comment-la-prendre.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://ecleptic.health/articles/que-manger-avant-le-sport.html</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ecleptic.health/articles/que-manger-apres-le-sport.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/articles/zone-2-cardio-cest-quoi.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://ecleptic.health/articles/vo2max-comment-l-ameliorer.html</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://ecleptic.health/articles/combien-de-pas-par-jour.html</loc><lastmod>2026-11-03</lastmod></url>
@@ -68,7 +69,7 @@
   <url><loc>https://ecleptic.health/articles/readiness/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://ecleptic.health/articles/sport/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://ecleptic.health/articles/recuperation/</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://ecleptic.health/articles/alimentation/</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ecleptic.health/articles/alimentation/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/articles/charge/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://ecleptic.health/articles/regularite/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://ecleptic.health/articles/humeur/</loc><lastmod>2026-11-15</lastmod></url>
@@ -93,7 +94,7 @@
   <url><loc>https://ecleptic.health/comparatifs/age-biologique-application-whoop-garmin-oura.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://ecleptic.health/en/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://ecleptic.health/en/science.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://ecleptic.health/en/coaches.html</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://ecleptic.health/en/coaches.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/how-to-get-more-deep-sleep.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/sore-muscles-how-to-recover-faster.html</loc><lastmod>2026-09-30</lastmod></url>
@@ -112,6 +113,7 @@
   <url><loc>https://ecleptic.health/en/journal/how-to-calculate-a-calorie-deficit.html</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/creatine-benefits-how-to-take-it.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/what-to-eat-before-a-workout.html</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ecleptic.health/en/journal/what-to-eat-after-a-workout.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/what-is-zone-2-cardio.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/how-to-improve-vo2-max.html</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/how-many-steps-a-day.html</loc><lastmod>2026-11-03</lastmod></url>
@@ -159,7 +161,7 @@
   <url><loc>https://ecleptic.health/en/journal/readiness/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/training/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/recovery/</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://ecleptic.health/en/journal/nutrition/</loc><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://ecleptic.health/en/journal/nutrition/</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/training-load/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/consistency/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://ecleptic.health/en/journal/mood/</loc><lastmod>2026-11-15</lastmod></url>

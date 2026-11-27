@@ -67,6 +67,7 @@
 ### Alimentation
 
 - [Thème Alimentation](https://ecleptic.health/articles/alimentation/): Calories, protéines, déficit calorique, créatine, hydratation, repas autour du sport : des repères chiffrés et sourcés pour bien manger selon ton objectif.
+- [Que manger après le sport pour bien récupérer ?](https://ecleptic.health/articles/que-manger-apres-le-sport.html): Que manger après le sport : 20 à 40 g de protéines et des glucides. Pourquoi la fenêtre anabolique de 30 minutes est un mythe, et des exemples concrets.
 - [Que manger avant le sport pour performer ?](https://ecleptic.health/articles/que-manger-avant-le-sport.html): Que manger avant le sport ? Des glucides, surtout. Un vrai repas 2-3 h avant ou une collation légère 30-60 min avant, exemples concrets et hydratation.
 - [Créatine : bienfaits et comment la prendre](https://ecleptic.health/articles/creatine-bienfaits-comment-la-prendre.html): Créatine monohydrate, 3 à 5 g par jour, tous les jours : bienfaits réels, comment la prendre, phase de charge inutile et mythes. Le complément le plus étudié.
 - [Déficit calorique : comment le calculer sans se tromper ?](https://ecleptic.health/articles/deficit-calorique-comment-calculer.html): Déficit calorique : 300 à 500 kcal sous ta dépense, soit environ 0,3 à 0,5 kg par semaine au début. Comment le calculer, le tenir et préserver ton muscle.
@@ -201,6 +202,7 @@ The whole site is also available in English (visitors outside French-speaking co
 
 ### Nutrition
 
+- [What to eat after a workout for better recovery](https://ecleptic.health/en/journal/what-to-eat-after-a-workout.html): What to eat after a workout: 20 to 40 g of protein plus carbs. Why the 30-minute anabolic window is a myth, with concrete post-workout meal examples.
 - [What to eat before a workout to perform your best](https://ecleptic.health/en/journal/what-to-eat-before-a-workout.html): What to eat before a workout? Carbs, mainly. A real meal 2-3 hours before or a light snack 30-60 minutes before, with concrete examples and hydration tips.
 - [Creatine: benefits and how to take it](https://ecleptic.health/en/journal/creatine-benefits-how-to-take-it.html): Creatine monohydrate, 3 to 5 g a day, every day: the real benefits, how to take it, why loading is unnecessary, and the myths. The most studied supplement.
 - [Calorie deficit: how to calculate it the right way](https://ecleptic.health/en/journal/how-to-calculate-a-calorie-deficit.html): Calorie deficit: 300 to 500 kcal below your expenditure, or about 0.3 to 0.5 kg a week at first. How to calculate it, stick to it and keep your muscle.

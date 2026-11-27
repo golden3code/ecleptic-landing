@@ -279,7 +279,7 @@ Tes repas ne servent pas qu'à tenir un journal. Ils nourrissent le pilier nutri
 
 - **L'adéquation à tes cibles — 40 %.** Calories, protéines, glucides et lipides de la journée, face aux cibles calculées par le moteur [Les cibles](https://ecleptic.health/methode/cibles.html).
 
-- **Le refuel après l'effort — 25 %.** Les protéines que tu apportes après une séance, qui donnent au muscle les matériaux de sa réparation (que manger après le sport). Les jours de repos, ce critère est retiré et son poids est redistribué entre les autres.
+- **Le refuel après l'effort — 25 %.** Les protéines que tu apportes après une séance, qui donnent au muscle les matériaux de sa réparation ([que manger après le sport](https://ecleptic.health/articles/que-manger-apres-le-sport.html)). Les jours de repos, ce critère est retiré et son poids est redistribué entre les autres.
 
 - **Les micronutriments — 20 %.** La couverture de tes besoins, calculée à partir des valeurs des fiches officielles.
 
@@ -1282,6 +1282,89 @@ Ecleptic est un outil de bien-être, pas un dispositif médical : il ne pose auc
 
 ---
 
+# Que manger après le sport pour bien récupérer ?
+
+URL : https://ecleptic.health/articles/que-manger-apres-le-sport.html
+Thème : Alimentation · Auteur : Auguste Phily-Priou · Publié le 2026-11-27
+
+Que manger après le sport : 20 à 40 g de protéines et des glucides. Pourquoi la fenêtre anabolique de 30 minutes est un mythe, et des exemples concrets.
+
+La réponse courte : **des protéines (20 à 40 g) et des glucides**. Les protéines fournissent les briques pour réparer le muscle, les glucides rechargent le glycogène que l'effort a entamé. Un repas normal contenant les deux, dans les **deux à trois heures** qui suivent la séance, couvre l'essentiel — pas besoin de te jeter sur un shaker à la seconde où tu reposes la barre.
+
+C'est le point qui surprend le plus : la fameuse **« fenêtre anabolique » de 30 minutes est un mythe**, du moins dans sa version stricte et stressante.
+
+## Le duo protéines + glucides
+
+Après l'effort, deux choses se rejouent. D'un côté, la **synthèse des protéines musculaires** est stimulée : un apport de 20 à 40 g de protéines de qualité (0,25 à 0,4 g par kilo de poids de corps), la dose que retient l'International Society of Sports Nutrition, fournit assez d'acides aminés pour en tirer le maximum. De l'autre, tes réserves de **glycogène** se reconstituent : des glucides accélèrent le plein, surtout après une grosse séance ou du cardio long. Les deux ensemble font un repas de récupération complet.
+
+## La fenêtre de 30 minutes est un mythe
+
+Longtemps, on a cru qu'il fallait manger dans la demi-heure sous peine de « perdre » sa séance. Les données ont corrigé ça : la fenêtre dure en réalité **plusieurs heures**. Une méta-analyse de 2013 (une vingtaine d'essais, plus de 500 participants) va plus loin : une fois l'apport total en protéines pris en compte, le timing autour de la séance ne change rien à la prise de muscle ni de force. Bref, [c'est ton apport total sur la journée qui construit](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html), bien plus que la minute exacte du repas post-séance. Autrement dit : respire. Un vrai repas dans les deux-trois heures suffit très largement pour la plupart des objectifs.
+
+## Les seuls cas où le timing compte vraiment
+
+- **Tu enchaînes deux séances** à quelques heures d'écart : là, recharger vite les glucides a un vrai intérêt — l'ISSN parle de recharge rapide quand moins de 4 heures séparent les efforts.
+
+- **Tu t'es entraîné à jeun** ou plusieurs heures après ton dernier repas : manger assez vite après devient plus utile. Au-delà de 3 à 4 heures sans manger avant la séance, une revue de 2013 conseille au moins 25 g de protéines dès que possible.
+
+- **Sport d'endurance à gros volume :** reconstituer le glycogène rapidement aide à tenir la charge des jours suivants.
+
+En dehors de ces situations, l'urgence est un faux problème.
+
+## Et si tu es en déficit pour perdre du gras ?
+
+Même en sèche, le principe ne bouge pas : des protéines pour protéger le muscle, un peu de glucides pour recharger. La seule différence, c'est que ces calories doivent **tenir dans ton total de la journée** — tu ne les ajoutes pas en plus. Le repas d'après-séance reste d'ailleurs le meilleur endroit où placer une bonne part de tes glucides quand tu en as peu : c'est le moment où ton corps les utilise le mieux.
+
+## Des exemples concrets
+
+- Fromage blanc ou skyr + fruits + flocons d'avoine.
+
+- Poulet ou poisson + riz + légumes.
+
+- Œufs + pain complet + un fruit.
+
+- Pressé ou sans faim juste après : un shaker de protéines + une banane, en dépannage — pas une obligation.
+
+## Manger ne fait pas tout
+
+Le repas d'après-séance n'est qu'une pièce de la récupération. Le reste se joue sur ton [apport en protéines réparti sur la journée](https://ecleptic.health/articles/proteines-par-jour-prise-de-muscle.html) (environ 0,4 g par kilo à au moins quatre repas, selon une revue de 2018), sur ton sommeil, et sur ta gestion de la charge. Et non, aucun repas ne « soigne » les [courbatures](https://ecleptic.health/articles/courbatures-que-faire.html) : elles suivent leur cours quoi que tu avales. Prépare aussi ta prochaine séance en soignant [ce que tu manges avant](https://ecleptic.health/articles/que-manger-avant-le-sport.html).
+
+## Pense à te réhydrater
+
+La réhydratation fait partie de la récupération, surtout après avoir beaucoup transpiré. Bois à ta soif dans les heures qui suivent, un peu plus s'il faisait chaud — de quelle quantité tu as besoin, c'est ici. Inutile d'engloutir des litres d'un coup : refais le plein progressivement.
+
+## Ce qu'il faut retenir
+
+- Après l'effort : 20 à 40 g de protéines + des glucides, dans un repas normal sous 2-3 heures.
+
+- La fenêtre anabolique stricte de 30 minutes est un mythe ; c'est le total du jour qui compte.
+
+- Le timing serré ne compte vraiment que si tu enchaînes les séances ou t'entraînes à jeun.
+
+## Questions fréquentes
+
+### Faut-il manger juste après le sport ?
+
+Pas dans l'urgence : la fenêtre anabolique de 30 minutes est un mythe. Un repas avec protéines et glucides dans les deux à trois heures suffit. Le timing serré ne compte que si tu enchaînes deux séances ou t'es entraîné à jeun.
+
+### Que manger après la musculation pour récupérer ?
+
+20 à 40 g de protéines (0,25 à 0,4 g par kilo) et des glucides : fromage blanc + fruits + flocons, poulet + riz + légumes, ou œufs + pain. Les protéines réparent le muscle, les glucides rechargent le glycogène.
+
+### Faut-il boire un shaker de protéines après l'entraînement ?
+
+Ce n'est pas obligatoire. Un shaker est pratique si tu es pressé ou sans appétit, mais un vrai repas fait aussi bien. C'est ton total de protéines sur la journée qui compte, pas la boisson juste après la séance.
+
+## Sources
+
+- Schoenfeld BJ, Aragon AA, Krieger JW. The effect of protein timing on muscle strength and hypertrophy: a meta-analysis. *J Int Soc Sports Nutr*. 2013. — https://doi.org/10.1186/1550-2783-10-53
+- Aragon AA, Schoenfeld BJ. Nutrient timing revisited: is there a post-exercise anabolic window? *J Int Soc Sports Nutr*. 2013. — https://doi.org/10.1186/1550-2783-10-5
+- Kerksick CM, Arent S, Schoenfeld BJ, et al. International society of sports nutrition position stand: nutrient timing. *J Int Soc Sports Nutr*. 2017. — https://doi.org/10.1186/s12970-017-0189-4
+- Jäger R, Kerksick CM, Campbell BI, et al. International Society of Sports Nutrition Position Stand: protein and exercise. *J Int Soc Sports Nutr*. 2017. — https://doi.org/10.1186/s12970-017-0177-8
+- Schoenfeld BJ, Aragon AA. How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution. *J Int Soc Sports Nutr*. 2018. — https://doi.org/10.1186/s12970-018-0215-1
+
+---
+
 # Full body ou split : quel programme choisir ?
 
 URL : https://ecleptic.health/articles/full-body-ou-split-musculation.html
@@ -1494,7 +1577,7 @@ La caféine est l'un des rares « boosters » dont l'effet sur la performance es
 
 ## N'oublie pas de boire
 
-Arriver déshydraté plombe la performance autant qu'un réservoir vide : l'American College of Sports Medicine conseille de commencer l'effort bien hydraté, en buvant dès quelques heures avant. Bois normalement dans les heures qui précèdent, un verre ou deux avant de commencer, et ajuste selon la chaleur et la transpiration. Et pense à l'après tout de suite : ce que tu manges après la séance compte autant pour ta récupération.
+Arriver déshydraté plombe la performance autant qu'un réservoir vide : l'American College of Sports Medicine conseille de commencer l'effort bien hydraté, en buvant dès quelques heures avant. Bois normalement dans les heures qui précèdent, un verre ou deux avant de commencer, et ajuste selon la chaleur et la transpiration. Et pense à l'après tout de suite : [ce que tu manges après la séance](https://ecleptic.health/articles/que-manger-apres-le-sport.html) compte autant pour ta récupération.
 
 ## Ce qu'il faut retenir
 
