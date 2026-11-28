@@ -1,5 +1,5 @@
 <!-- version-fr: 2026-12-07 -->
-<!-- empreinte-fr: 264806c4ea23 -->
+<!-- empreinte-fr: f6d5bc1cf7a9 -->
 <!-- English translation of ~/Desktop/Auros/legal/politique-de-confidentialite.md. Update it, and the date above, every time the French policy changes; tools/build_privacy.py refuses to build otherwise. -->
 # Privacy policy — Ecleptic
 
@@ -41,6 +41,8 @@ The Application processes data that belongs to the **special categories of data*
 ### 2.3. Payment data
 
 Subscriptions are purchased in-app through the App Store (iPhone) or Google Play (Android): payment is handled by Apple or by Google, and the publisher **never** receives card details. Through its subscription management provider (RevenueCat), the publisher only receives information about the subscription status (plan purchased, start and expiry dates, renewal status).
+
+**Trial month.** At sign-up, Ecleptic records the end date of the free Zenith trial month, attached to the account, to show it to the user and to remind them 7, 3 and 1 day before. No payment method is asked for. Moving to Orbit at the end of the month erases no data.
 
 **A coach's subscription.** A coach can also take out the coach space subscription on the website, through a **Stripe** payment page: the card is never entered at Ecleptic. Ecleptic receives from Stripe the tier, the status, the dates, the customer and subscription identifiers, and the amounts paid or refunded, never the card number.
 
@@ -550,6 +552,10 @@ Some processors listed in article 4 (Google, Anthropic, RevenueCat, Apple, Sentr
 | Period dates entered (2.17) | Until the user erases them ("Turn off and erase everything") or the account is deleted | Deletion |
 | Nutrition label photos (2.6) | Kept only if the user submits their entry for review, until the decision (approval or rejection) and **90 days at most** after they are sent | Deleted automatically |
 | Label readings by AI (extracted values, attached to an image fingerprint, with no link to the account) | 30 days | Deleted automatically |
+| Conversations with Éos (messages) | **6 months** | Deleted automatically every night; erased with the account |
+| Éos reports | **12 months** | Deleted automatically every night; erased with the account |
+| Éos memory (summaries of the reports by month, quarter, half-year, year) | Lifetime of the account | Deleted with the account |
+| Trial month and free months (end date, reason) (2.3) | Lifetime of the account | Deleted with the account |
 | Contributions: entries, corrections, reports (2.6) | Lifetime of the account | Deleted with the account; approved and published values stay in the food database, with no link to the account |
 | Workout-by-workout efforts (2.8) | 90 days | Only the month's best per measure and per place is kept, as long as the account exists |
 | Social profile, partnerships, reactions, challenges, teams, coach links, boards, crowns, seasons, league, racket, weight class (2.9) | As long as the Society is on | Deleted automatically **30 days** after it is turned off, unless a suspension is in progress, or with the account |

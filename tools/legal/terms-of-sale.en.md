@@ -1,8 +1,8 @@
-<!-- version-fr: 2026-11-06 -->
+<!-- version-fr: 2026-11-28 -->
 <!-- English translation of ~/Desktop/Auros/legal/CGV.md. Update it, and the date above, every time the French Terms of Sale change; tools/build_terms.py refuses to build otherwise. -->
 # Terms of Sale — Ecleptic
 
-**Last updated: 6 November 2026**
+**Last updated: 28 November 2026**
 
 ---
 
@@ -28,8 +28,9 @@ Any subscription implies the prior and unreserved acceptance of these Terms of S
 The Application offers the following:
 
 - **Free offer ("Orbit")**: basic tracking of sleep, nutrition, physical activity and habits, with limited access to advanced insights and artificial intelligence features.
+- **Free trial month at sign-up**: when creating an account, the User receives Zenith access free of charge for **30 days**, with no payment method to provide. The end date is shown from the first day and in My profile › Subscription; it is never pushed back or reset. On that date, access returns to Orbit **with no charge and no renewal**: no subscription is taken out without an action by the User on the store's purchase screen. Moving to Orbit deletes no data: everything recorded stays visible and keeps being recorded, and the advanced insights are recalculated, days on Orbit included, if the User takes Zenith again. An account receives only one trial month; free months from referrals are added to it.
 - **"Zenith" subscription, monthly or yearly**: full access to advanced insights, Éos (the AI assistant), the Lab and premium features, **at the price shown by the store (App Store on iPhone, Google Play on Android) at the time of subscription**. The price, duration and renewal terms are restated on the purchase screen before any confirmation.
-- **Free trial**: when a free trial is offered, its duration is the one shown by the store at the time of subscription. Only one free trial is granted per Apple account (App Store) or Google account (Google Play), according to the store's eligibility rules. Unless cancelled before the end of the trial (at least 24 hours before on the App Store), the paid subscription starts automatically.
+- **Free trial**: when a free trial is offered, its duration is the one shown by the store at the time of subscription. Only one free trial is granted per Apple account (App Store) or Google account (Google Play), according to the store's eligibility rules. Unless cancelled before the end of the trial (at least 24 hours before on the App Store), the paid subscription starts automatically. The store's free trial is separate from the free trial month given at sign-up: it starts on subscription, on the purchase screen, which states its duration, price and renewal.
 
 The prices in force are those shown by the store at the time of subscription; they may differ depending on the country of the Customer's Apple or Google account.
 
