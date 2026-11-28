@@ -88,8 +88,9 @@
   .ctacol{display:inline-flex;flex-direction:column;align-items:center;gap:10px}
   .ctacol small{font-size:12px;letter-spacing:.04em;color:var(--mu)}
 
-  /* Tête : la photo occupe la largeur, le texte se lit à gauche sur le noir. */
-  .hero{position:relative;display:flex;align-items:center;min-height:clamp(540px,45cqw,680px);overflow:hidden}
+  /* Tête : la photo occupe la largeur, le texte se lit à gauche sur le noir.
+     Depuis le 28/11, la page n'a plus que cette tête : sur ordinateur, elle remplit l'écran sous la marque (84 px). */
+  .hero{position:relative;display:flex;align-items:center;min-height:clamp(540px,45cqw,680px);min-height:max(clamp(540px,45cqw,680px),calc(100vh - 84px));min-height:max(clamp(540px,45cqw,680px),calc(100svh - 84px));overflow:hidden}
   .hero .ph{position:absolute;top:0;right:0;bottom:0;width:78%;display:block}
   .hero .ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
   .hero .ph::after{content:"";position:absolute;inset:0;background:
@@ -105,20 +106,6 @@
   .go{margin-top:34px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px 30px}
   .go .login{font-size:13px;line-height:60px;color:var(--t2);text-decoration:underline;text-decoration-color:rgba(242,235,221,.3);text-underline-offset:5px}
   .go .login:hover{color:var(--au)}
-
-  /* Réseau des Fondateurs : le badge en sceau sur le filet, puis les trois avantages. */
-  .fond{padding-top:84px}
-  .seal{display:flex;align-items:center;gap:24px}
-  .seal::before,.seal::after{content:"";flex:1;border-top:1px solid var(--ln)}
-  .seal svg{display:block;width:64px;height:64px}
-  .av3{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-  .av3 > div{padding:4px 20px;text-align:center}
-  .av3 > div + div{border-left:1px solid var(--ln)}
-  .av3 .big{font-size:clamp(26px,2.9cqw,38px);line-height:1.14;font-weight:200;letter-spacing:-.01em;color:var(--t3)}
-  .av3 .big b{display:block;font-weight:200;color:var(--tx);white-space:nowrap}
-  .av3 .d1{margin-top:16px;font-size:15px;line-height:22px;color:var(--t2)}
-  .av3 .d2{margin-top:4px;font-size:13px;color:var(--mu)}
-  .note{margin:40px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:18px;color:var(--mu)}
 
   .guides{margin-top:36px;text-align:center;font-size:13px}
   .guides a{color:var(--au);text-decoration:none}
@@ -144,14 +131,6 @@
     .go .ctacol small{text-align:center}
     .go .login{line-height:44px;text-align:center}
     .co a.cta{height:56px;padding:0 24px}
-    .fond{padding-top:64px}
-    .seal{gap:18px}
-    .seal svg{width:56px;height:56px}
-    .av3{margin-top:16px;grid-template-columns:minmax(0,1fr)}
-    .av3 > div{padding:28px 0}
-    .av3 > div + div{border-left:0;border-top:1px solid var(--ln)}
-    .av3 .big{font-size:clamp(30px,8.6cqw,40px)}
-    .note{margin-top:8px}
   }
   @container (max-width:560px){
     .co .cw{padding-left:20px;padding-right:20px}
@@ -193,34 +172,6 @@
       </div>
     </div>
   </div>
-</section>
-
-<!-- Réseau des Fondateurs : badge et avantages -->
-<section class="fond cw" data-f>
-  <div class="seal">
-    <svg role="img" aria-label="Badge membre fondateur" viewBox="0 0 200 200">
-      <defs><linearGradient id="bf1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#B87333"></stop><stop offset=".55" stop-color="#F5A623"></stop><stop offset="1" stop-color="#FFD166"></stop></linearGradient></defs>
-      <path fill="url(#bf1)" d="M100.0 7.5 L103.2 7.9 L106.4 9.0 L109.4 10.7 L112.2 12.9 L114.9 15.3 L117.5 17.8 L119.9 20.2 L122.3 22.3 L124.7 24.0 L127.2 25.2 L129.9 25.9 L132.9 26.2 L136.0 26.1 L139.4 25.8 L143.0 25.5 L146.6 25.4 L150.2 25.6 L153.6 26.2 L156.7 27.4 L159.4 29.2 L161.6 31.5 L163.4 34.4 L164.6 37.6 L165.4 41.1 L165.9 44.7 L166.2 48.3 L166.5 51.7 L167.0 54.8 L167.7 57.7 L168.9 60.2 L170.5 62.5 L172.6 64.6 L175.1 66.6 L177.9 68.5 L180.8 70.6 L183.7 72.8 L186.3 75.3 L188.5 77.9 L190.1 80.8 L191.0 83.9 L191.2 87.2 L190.7 90.5 L189.6 93.7 L187.9 96.9 L186.0 100.0 L184.0 102.9 L182.0 105.7 L180.3 108.4 L179.1 111.1 L178.3 113.8 L178.1 116.6 L178.4 119.5 L179.0 122.7 L179.9 126.0 L180.8 129.4 L181.6 133.0 L182.0 136.5 L182.0 140.0 L181.3 143.3 L180.1 146.2 L178.1 148.8 L175.6 151.0 L172.6 152.8 L169.3 154.2 L165.9 155.3 L162.4 156.2 L159.1 157.1 L156.1 158.1 L153.4 159.4 L151.1 160.9 L149.2 162.9 L147.5 165.4 L146.0 168.2 L144.5 171.2 L143.0 174.5 L141.3 177.7 L139.4 180.7 L137.1 183.3 L134.5 185.4 L131.6 186.9 L128.5 187.6 L125.1 187.7 L121.7 187.1 L118.3 186.1 L114.9 184.7 L111.7 183.2 L108.6 181.8 L105.6 180.6 L102.8 179.8 L100.0 179.6 L97.2 179.8 L94.4 180.6 L91.4 181.8 L88.3 183.2 L85.1 184.7 L81.7 186.1 L78.3 187.1 L74.9 187.7 L71.5 187.6 L68.4 186.9 L65.5 185.4 L62.9 183.3 L60.6 180.7 L58.7 177.7 L57.0 174.5 L55.5 171.2 L54.0 168.2 L52.5 165.4 L50.8 162.9 L48.9 160.9 L46.6 159.4 L43.9 158.1 L40.9 157.1 L37.6 156.2 L34.1 155.3 L30.7 154.2 L27.4 152.8 L24.4 151.0 L21.9 148.8 L19.9 146.2 L18.7 143.3 L18.0 140.0 L18.0 136.5 L18.4 133.0 L19.2 129.4 L20.1 126.0 L21.0 122.7 L21.6 119.5 L21.9 116.6 L21.7 113.8 L20.9 111.1 L19.7 108.4 L18.0 105.7 L16.0 102.9 L14.0 100.0 L12.1 96.9 L10.4 93.7 L9.3 90.5 L8.8 87.2 L9.0 83.9 L9.9 80.8 L11.5 77.9 L13.7 75.3 L16.3 72.8 L19.2 70.6 L22.1 68.5 L24.9 66.6 L27.4 64.6 L29.5 62.5 L31.1 60.2 L32.3 57.7 L33.0 54.8 L33.5 51.7 L33.8 48.3 L34.1 44.7 L34.6 41.1 L35.4 37.6 L36.6 34.4 L38.4 31.5 L40.6 29.2 L43.3 27.4 L46.4 26.2 L49.8 25.6 L53.4 25.4 L57.0 25.5 L60.6 25.8 L64.0 26.1 L67.1 26.2 L70.1 25.9 L72.8 25.2 L75.3 24.0 L77.7 22.3 L80.1 20.2 L82.5 17.8 L85.1 15.3 L87.8 12.9 L90.6 10.7 L93.6 9.0 L96.8 7.9 Z"></path>
-      <path d="M73 90 L93 110 L129 74" fill="none" stroke="#0A0A0A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
-      <text x="100" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" letter-spacing="1.6" fill="#0A0A0A">FONDATEUR</text>
-    </svg>
-  </div>
-  <div class="av3">
-    <div>
-      <div class="big">Prix bloqué <b>à vie</b></div>
-      <p class="d1">Tant que tu restes abonné*</p>
-    </div>
-    <div>
-      <div class="big">1 mois <b>offert</b></div>
-      <p class="d1">dès l'abonnement, après tes 15 jours d'essai</p>
-      <p class="d2">Essai jusqu'à 10 élèves.</p>
-    </div>
-    <div>
-      <div class="big">1 parrainage = <b>1 mois offert en&nbsp;+</b></div>
-      <p class="d1">Jusqu'à une année complète offerte.</p>
-    </div>
-  </div>
-  <p class="note">* Le prix bloqué est celui du palier choisi avec l'offre Fondateurs. Si tu changes de palier après une hausse des prix, le nouveau palier est au prix du jour. Le mois offert commence à la fin de l'essai : premier prélèvement 45 jours après l'inscription. Un mois de parrainage est offert dès que nous recevons le premier paiement du coach parrainé.</p>
 </section>
 
 <div class="cw">
